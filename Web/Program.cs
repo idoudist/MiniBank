@@ -1,6 +1,7 @@
-/*create builder*/
 using Web.Extensions;
+using Web.Middleware;
 
+/*create builder*/
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -25,7 +26,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1"));
 }
-
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseHttpsRedirection();
 //allow cors
 app
