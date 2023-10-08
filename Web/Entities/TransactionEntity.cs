@@ -9,7 +9,7 @@ public class TransactionEntity : BaseEntity
     public float Credit { get; set; }
     [DataType(DataType.DateTime)]
     [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-    public DateTime Date { get; set; }
+    public DateTime? Date { get; set; }
     public TransactionType TransactionType { get; set; }
 }
 
