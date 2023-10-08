@@ -13,7 +13,7 @@ public class TransactionService : ITransactionService
         _mapper = mapper;
     }
 
-    public async Task AddDeposit(OperationDto operation)
+    public async Task<bool> AddDeposit(OperationDto operation)
     {
         TransactionEntity transaction = new TransactionEntity
         {
@@ -22,6 +22,7 @@ public class TransactionService : ITransactionService
             TransactionType = TransactionType.Deposit
         };
         await _unitOfWork.TransactionRepository.AddTransactionAsync(transaction);
+        return await _unitOfWork.Complete();
     }
 
     public async Task<float> GetBalance()
@@ -35,7 +36,7 @@ public class TransactionService : ITransactionService
         return _mapper.Map<List<TransactionDto>>(transactions);
     }
 
-    public async Task Withdrow(OperationDto operation)
+    public async Task<bool> Withdrow(OperationDto operation)
     {
         TransactionEntity transaction = new TransactionEntity
         {
@@ -44,5 +45,6 @@ public class TransactionService : ITransactionService
             TransactionType = TransactionType.Withdrowl
         };
         await _unitOfWork.TransactionRepository.AddTransactionAsync(transaction);
+        return await _unitOfWork.Complete();
     }
 }

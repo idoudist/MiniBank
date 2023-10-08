@@ -17,15 +17,23 @@ namespace Web.Controllers
         [HttpPost("deposit")]
         public async Task<ActionResult> AddDeposit([FromBody] OperationDto operation)
         {
-            await _transactionService.AddDeposit(operation);
-            return Ok();
+            var result = await _transactionService.AddDeposit(operation);
+            if (result)
+            {
+                return Ok();
+            }
+            return BadRequest();
         }
 
         [HttpPost("withdrow")]
         public async Task<ActionResult> Withdrow([FromBody] OperationDto operation)
         {
-            await _transactionService.Withdrow(operation);
-            return Ok();
+            var result = await _transactionService.Withdrow(operation);
+            if (result)
+            {
+                return Ok();
+            }
+            return BadRequest();
         }
 
         [HttpGet("balance")]
