@@ -19,7 +19,8 @@ public class TransactionService : ITransactionService
         {
             Credit = operation.Amount,
             Debit = 0,
-            TransactionType = TransactionType.Deposit
+            TransactionType = TransactionType.Deposit,
+            Date = DateTime.Now
         };
         await _unitOfWork.TransactionRepository.AddTransactionAsync(transaction);
         return await _unitOfWork.Complete();
@@ -42,7 +43,8 @@ public class TransactionService : ITransactionService
         {
             Credit = 0,
             Debit = operation.Amount,
-            TransactionType = TransactionType.Withdrowl
+            TransactionType = TransactionType.Withdrowl,
+            Date = DateTime.Now
         };
         await _unitOfWork.TransactionRepository.AddTransactionAsync(transaction);
         return await _unitOfWork.Complete();
