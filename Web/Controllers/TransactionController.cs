@@ -8,36 +8,38 @@ namespace Web.Controllers
     [ApiController]
     public class TransactionController : ControllerBase
     {
-        public TransactionController()
+        private readonly ITransactionService _transactionService;
+        public TransactionController(ITransactionService transactionService)
         {
+            _transactionService = transactionService;
         }
 
         [HttpPost("deposit")]
-        public async Task<ActionResult<bool>> AddDeposit([FromBody] OperationDto operation)
+        public async Task<ActionResult> AddDeposit([FromBody] OperationDto operation)
         {
-            await DummyOneSecondWait();
-            return Ok(true);
+            await _transactionService.AddDeposit(operation);
+            return Ok();
         }
 
         [HttpPost("withdrow")]
-        public async Task<ActionResult<bool>> Withdrow([FromBody] OperationDto operation)
+        public async Task<ActionResult> Withdrow([FromBody] OperationDto operation)
         {
-            await DummyOneSecondWait();
-            return Ok(true);
+            await _transactionService.Withdrow(operation);
+            return Ok();
         }
 
         [HttpGet("balance")]
         public async Task<ActionResult<float>> GetBalance()
         {
-            await DummyOneSecondWait();
-            return Ok(0);
+            float balance = await _transactionService.GetBalance();
+            return Ok(balance);
         }
 
         [HttpGet("transactions")]
         public async Task<ActionResult<IEnumerable<TransactionDto>>> GetTransactions()
         {
-            await DummyOneSecondWait();
-            return Ok(null);
+            var transactions = await _transactionService.GetTransactions();
+            return Ok(transactions);
         }
 
         private async Task DummyOneSecondWait()

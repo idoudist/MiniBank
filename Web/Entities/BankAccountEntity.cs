@@ -1,6 +1,6 @@
 ﻿namespace Web.Entities;
 
-public class BankAccount : BaseEntity
+public class BankAccountEntity : BaseEntity
 {
     public string CurrentBalance { get; set; }
 }

@@ -1,27 +1,48 @@
-﻿using Web.Dtos;
-using Web.Interfaces;
+﻿using AutoMapper;
 
 namespace Web.Services;
 
 public class TransactionService : ITransactionService
 {
-    public Task<bool> AddDeposit(OperationDto operation)
+    private readonly IUnitOfWork _unitOfWork;
+    private readonly IMapper _mapper;
+
+    public TransactionService(IUnitOfWork unitOfWork, IMapper mapper)
     {
-        throw new NotImplementedException();
+        _unitOfWork = unitOfWork;
+        _mapper = mapper;
     }
 
-    public Task<float> GetBalance()
+    public async Task AddDeposit(OperationDto operation)
     {
-        throw new NotImplementedException();
+        TransactionEntity transaction = new TransactionEntity
+        {
+            Credit = operation.Amount,
+            Debit = 0,
+            TransactionType = TransactionType.Deposit
+        };
+        await _unitOfWork.TransactionRepository.AddTransactionAsync(transaction);
     }
 
-    public Task<IEnumerable<TransactionDto>> GetTransactions()
+    public async Task<float> GetBalance()
     {
-        throw new NotImplementedException();
+        return await _unitOfWork.TransactionRepository.GetBalanceAsync();
     }
 
-    public Task<bool> Withdrow(OperationDto operation)
+    public async Task<IEnumerable<TransactionDto>> GetTransactions()
     {
-        throw new NotImplementedException();
+        var transactions = await _unitOfWork.TransactionRepository.GetTransactionsAsync();
+        return _mapper.Map<List<TransactionDto>>(transactions);
+    }
+
+    public async Task Withdrow(OperationDto operation)
+    {
+        TransactionEntity transaction = new TransactionEntity
+        {
+            Credit = 0,
+            Debit = operation.Amount,
+            TransactionType = TransactionType.Withdrowl
+        };
+        await _unitOfWork.TransactionRepository.AddTransactionAsync(transaction);
     }
 }

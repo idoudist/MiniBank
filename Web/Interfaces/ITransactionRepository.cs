@@ -1,10 +1,8 @@
-﻿using Web.Entities;
-
-namespace Web.Interfaces;
+﻿namespace Web.Interfaces;
 
 public interface ITransactionRepository
 {
-    Task<bool> AddTransaction(TransactionEntity transaction);
-    Task<float> GetBalance();
-    Task<IEnumerable<TransactionEntity>> GetTransactions();
+    Task AddTransactionAsync(TransactionEntity transaction);
+    Task<float> GetBalanceAsync();
+    Task<IEnumerable<TransactionEntity>> GetTransactionsAsync();
 }
