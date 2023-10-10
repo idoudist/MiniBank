@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Web.Dtos.Requests;
+using Web.Dtos.Responses;
 
 namespace Web.Services;
 
@@ -13,7 +15,7 @@ public class TransactionService : ITransactionService
         _mapper = mapper;
     }
 
-    public async Task<bool> AddDeposit(OperationDto operation)
+    public async Task<bool> AddDepositAsync(OperationDto operation)
     {
         TransactionEntity transaction = new TransactionEntity
         {
@@ -26,18 +28,23 @@ public class TransactionService : ITransactionService
         return await _unitOfWork.Complete();
     }
 
-    public async Task<float> GetBalance()
+    public async Task<float> GetBalanceAsync()
     {
         return await _unitOfWork.TransactionRepository.GetBalanceAsync();
     }
 
-    public async Task<IEnumerable<TransactionDto>> GetTransactions()
+    public async Task<PagedList<TransactionDto>> GetTransactionsAsync(TransactionParams transactionParams)
     {
-        var transactions = await _unitOfWork.TransactionRepository.GetTransactionsAsync();
-        return _mapper.Map<List<TransactionDto>>(transactions);
+        return await _unitOfWork.TransactionRepository.GetTransactionsAsync(transactionParams);
     }
 
-    public async Task<bool> Withdrow(OperationDto operation)
+    public async Task<TransactionDto> GetTransactionAsync(int id)
+    {
+        var transaction = await _unitOfWork.TransactionRepository.GetTransactionAsync(id);
+        return _mapper.Map<TransactionDto>(transaction);
+    }
+
+    public async Task<bool> WithdrowAsync(OperationDto operation)
     {
         TransactionEntity transaction = new TransactionEntity
         {

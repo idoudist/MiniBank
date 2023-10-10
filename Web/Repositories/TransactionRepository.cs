@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using Web.Data;
-using Web.Entities;
-using Web.Interfaces;
 
 namespace Web.Repositories;
 
@@ -26,8 +25,17 @@ public class TransactionRepository : ITransactionRepository
         return await _context.Transactions.SumAsync( t => t.Credit - t.Debit );
     }
 
-    public async Task<IEnumerable<TransactionEntity>> GetTransactionsAsync()
+    public async Task<PagedList<TransactionDto>> GetTransactionsAsync(TransactionParams transactionParams)
     {
-        return await _context.Transactions.ToListAsync();
+        var query = _context.Transactions.AsQueryable();
+        // projected queries to TransactionDto (create a custom select query instead of select * )
+        var projectedQuery = query.ProjectTo<TransactionDto>(_mapper.ConfigurationProvider).AsNoTracking();
+        return await PagedList<TransactionDto>.CreateAsync(projectedQuery, transactionParams.PageNumber, transactionParams.PageSize);
+    }
+
+    public async Task<TransactionEntity> GetTransactionAsync(int id)
+    {
+        return await _context.Transactions.FindAsync(id);
     }
 }
+

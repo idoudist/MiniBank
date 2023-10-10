@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Web.Dtos;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Web.Controllers
 {
@@ -17,7 +15,7 @@ namespace Web.Controllers
         [HttpPost("deposit")]
         public async Task<ActionResult> AddDeposit([FromBody] OperationDto operation)
         {
-            var result = await _transactionService.AddDeposit(operation);
+            var result = await _transactionService.AddDepositAsync(operation);
             if (result)
             {
                 return Ok();
@@ -28,7 +26,7 @@ namespace Web.Controllers
         [HttpPost("withdrow")]
         public async Task<ActionResult> Withdrow([FromBody] OperationDto operation)
         {
-            var result = await _transactionService.Withdrow(operation);
+            var result = await _transactionService.WithdrowAsync(operation);
             if (result)
             {
                 return Ok();
@@ -39,20 +37,24 @@ namespace Web.Controllers
         [HttpGet("balance")]
         public async Task<ActionResult<float>> GetBalance()
         {
-            float balance = await _transactionService.GetBalance();
+            float balance = await _transactionService.GetBalanceAsync();
             return Ok(balance);
         }
 
         [HttpGet("transactions")]
-        public async Task<ActionResult<IEnumerable<TransactionDto>>> GetTransactions()
+        public async Task<ActionResult<IEnumerable<TransactionDto>>> GetTransactions([FromQuery] TransactionParams transactionParams)
         {
-            var transactions = await _transactionService.GetTransactions();
+            var transactions = await _transactionService.GetTransactionsAsync(transactionParams);
+            // add pagination header
+            Response.AddPaginationHeader(transactions.CurrentPage, transactions.PageSize, transactions.TotalCount, transactions.TotalPages);
             return Ok(transactions);
         }
 
-        private async Task DummyOneSecondWait()
+        [HttpGet("transaction/{id}")]
+        public async Task<ActionResult<IEnumerable<TransactionDto>>> GetTransactionById(int id)
         {
-            await Task.Delay(1000);
+            var transaction = await _transactionService.GetTransactionAsync(id);
+            return Ok(transaction);
         }
 
     }
