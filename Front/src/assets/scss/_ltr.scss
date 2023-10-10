@@ -1,0 +1,14 @@
+@import './mixins';
+
+.header__inputs__mailUs--area {
+  @include rtl(right, -300px, 0);
+  @include rtl(left, 0, -300px);
+  .icon{
+    @include rtl(left, initial, 10px);
+    @include rtl(right, 10px, initial);
+  }
+  input{
+    @include rtl(padding-left, 0, 50px);
+    @include rtl(padding-right, 50px, 0);
+  }
+}

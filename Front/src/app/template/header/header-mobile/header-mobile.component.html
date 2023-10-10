@@ -1,0 +1,65 @@
+<div class="top-bar-mobile mobile-template">
+    <div class="container ">
+        <nav class="header-mobile navbar navbar-expand-lg rtl-direction">
+
+            <div class="full-image-wrap">
+                <div class="img-wrapper logos">
+                    <div class="navbar-brand" routerLink="/">
+                        <img src="assets/images/logos/logo-en.svg" alt="logo" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="ltr">
+                <ng-select (change)="changeLang($event)" class="langue" [searchable]="false" [clearable]="false"
+                    [items]="langues" bindLabel="name" bindValue="id" dropdownPosition="bottom"
+                    [(ngModel)]="selectedLangue">
+                    <ng-template ng-label-tmp let-item="item">
+                        <img height="22" width="22" [src]="item.flag" alt="flag" />
+                        <b class="px-2">{{item.name}}</b>
+                    </ng-template>
+                    <ng-template ng-option-tmp let-item="item" let-index="index">
+                        <img height="22" width="22" [src]="item.flag" alt="flag" />
+                        <b class="px-2">{{item.name}}</b>
+                    </ng-template>
+                </ng-select>
+            </div>
+
+            <button class="navbar-toggler rtl-direction" type="button" (click)="isMenuCollapsed = !isMenuCollapsed"
+                alt="Portfolio">
+
+                <div class="full-image-wrap">
+                    <div class="img-wrapper bars">
+                        <div class="navbar-brand">
+                            <img src="assets/images/icons/menu.svg" alt="menu" class="toggle-menu"
+                                *ngIf="isMenuCollapsed" />
+                            <img src="assets/images/icons/cross.svg" alt="cross" class="toggle-menu"
+                                *ngIf="!isMenuCollapsed" />
+                        </div>
+                    </div>
+                </div>
+
+            </button>
+
+        </nav>
+
+
+        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse ">
+
+            <div class="mobile-links rtl-bloc">
+                <div>
+                    <div *ngFor="let item of headerItems" class="link-wrap rtl-text">
+                        <div class="rtl-bloc item" [routerLink]="item.link" routerLinkActive="item-selected" [routerLinkActiveOptions]="{exact: true}" (click)="isMenuCollapsed=true">
+                            <span class="rtl-float">{{item.label.toUpperCase() | translate}}</span>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

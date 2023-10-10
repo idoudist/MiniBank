@@ -1,0 +1,23 @@
+/*
+property : css property
+rtl-value : right to left value
+ltr-value : left to right value
+*/
+@mixin rtl($property, $rtl-value, $ltr-value) {
+
+  #{$property}: $rtl-value;
+
+  /*
+  lang = en : left to right
+  lang != en : right to left
+  */
+  html[lang=en] & {
+    #{$property}: $ltr-value !important;
+  }
+  html[lang=fr] & {
+    #{$property}: $ltr-value !important;
+  }
+  html[lang=de] & {
+    #{$property}: $ltr-value !important;
+  }
+}

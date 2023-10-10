@@ -1,0 +1,19 @@
+{
+    "SHARED": {
+        "LEARNING": "Learning",
+        "BEGINNER": "Beginner",
+        "INTERMEDIATE": "Intermediate",
+        "ADVANCED": "Advanced",
+        "NATIVE": "Native",
+        "ENGLISH": "English",
+        "FRENCH": "French"
+    },
+    "HEADER": {
+        "HOME": "Home",
+        "TRANSACTION": "Transaction",
+        "HISTORY": "History"
+    },
+    "FOOTER": {
+        "SHARE": "If you like this website please share it with your freinds"
+    }
+}
