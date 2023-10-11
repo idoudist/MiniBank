@@ -21,7 +21,7 @@ export class TranslateServerLoader implements TranslateLoader {
       const assetsFolder = join(
         process.cwd(),
         'dist',
-        'Portfolio', // Your project name here
+        'MiniBank', // Your project name here
         'browser',
         'assets',
         this.prefix

@@ -8,16 +8,15 @@ import { LanguesService } from './services/internal/langues.service';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SsrService } from './services/internal/ssr.service';
-import { translateBrowserLoaderFactory } from './configurations/translate-browser-loader';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 import { SeoService } from './services/internal/seo.service';
 import { ToastrModule } from 'ngx-toastr';
 import { NotificationService } from './services/internal/notification.service';
 
 // AoT requires an exported function for factories
-export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
-}
+export const createTranslateLoader = (httpClient: HttpClient) : TranslateHttpLoader => {
+  return new TranslateHttpLoader(httpClient, '/assets/i18n/', '.json');
+};
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -30,7 +29,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: translateBrowserLoaderFactory,
+        useFactory: createTranslateLoader,
         deps: [HttpClient, TransferState],
       },
     }),

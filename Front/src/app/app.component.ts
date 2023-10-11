@@ -7,7 +7,7 @@ import { LanguesService } from './services/internal/langues.service';
   template: '<router-outlet></router-outlet>',
 })
 export class AppComponent {
-  title = 'Portfolio';
+  title = 'MiniBank';
 
   constructor(private translateService: TranslateService, private langueService: LanguesService) {
     const currentLang = this.langueService.getCurrentLangue();
