@@ -1,10 +1,5 @@
 {
     "SHARED": {
-        "LEARNING": "Learning",
-        "BEGINNER": "Beginner",
-        "INTERMEDIATE": "Intermediate",
-        "ADVANCED": "Advanced",
-        "NATIVE": "Native",
         "ENGLISH": "English",
         "FRENCH": "French"
     },
@@ -14,6 +9,9 @@
         "HISTORY": "History"
     },
     "FOOTER": {
-        "SHARE": "If you like this website please share it with your freinds"
+    },
+    "HOME": {
+      "TITLE": "Welcome To Mini Bank",
+      "SLOGAN": "Small App, Big Savings"
     }
 }

@@ -4,7 +4,6 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './intro/intro.component';
 import { DetailsComponent } from './details/details.component';
-import { HomeService } from 'src/app/services/api/home.service';
 
 
 @NgModule({
@@ -20,7 +19,6 @@ import { HomeService } from 'src/app/services/api/home.service';
         DetailsComponent,
     ],
     providers: [
-        HomeService,
     ]
 })
 
