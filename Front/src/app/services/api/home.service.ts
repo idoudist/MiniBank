@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { EnLangue, FrLangue } from 'src/app/constants/langues.constant';
-import { HOME_INFO_AR, HOME_INFO_EN, HOME_INFO_FR, HOME_SLIDES } from 'src/app/data/home.data';
+import { HOME_INFO_EN, HOME_INFO_FR, HOME_SLIDES } from 'src/app/data/home.data';
 import { Home } from 'src/app/models/home.model';
 import { LanguesService } from '../internal/langues.service';
 

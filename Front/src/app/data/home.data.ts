@@ -26,9 +26,3 @@ export const HOME_INFO_FR: Home = {
     title: 'intro paragraph home page',
     infoText: ''
 };
-
-export const HOME_INFO_AR: Home = {
-    welcome: 'intro text home page',
-    title: 'intro paragraph home page',
-    infoText: ''
-};
