@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Portfolio": {
+    "MiniBank": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -77,18 +77,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Portfolio:build"
+            "browserTarget": "MiniBank:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Portfolio:build:production"
+              "browserTarget": "MiniBank:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Portfolio:build"
+            "browserTarget": "MiniBank:build"
           }
         },
         "test": {
@@ -115,18 +115,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Portfolio:serve"
+            "devServerTarget": "MiniBank:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Portfolio:serve:production"
+              "devServerTarget": "MiniBank:serve:production"
             }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/Portfolio/server",
+            "outputPath": "dist/MiniBank/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "sourceMap": true,
@@ -150,21 +150,21 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "Portfolio:build",
-            "serverTarget": "Portfolio:server"
+            "browserTarget": "MiniBank:build",
+            "serverTarget": "MiniBank:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Portfolio:build:production",
-              "serverTarget": "Portfolio:server:production"
+              "browserTarget": "MiniBank:build:production",
+              "serverTarget": "MiniBank:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "Portfolio:build:production",
-            "serverTarget": "Portfolio:server:production",
+            "browserTarget": "MiniBank:build:production",
+            "serverTarget": "MiniBank:server:production",
             "routes": [
               "/"
             ]

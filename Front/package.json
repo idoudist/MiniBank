@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-template",
+  "name": "minibank-template",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,10 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run Portfolio:serve-ssr",
-    "serve:ssr": "node dist/Portfolio/server/main.js",
-    "build:ssr": "ng build --configuration production && ng run Portfolio:server:production",
-    "prerender": "ng run Portfolio:prerender",
+    "dev:ssr": "ng run MiniBank:serve-ssr",
+    "serve:ssr": "node dist/MiniBank/server/main.js",
+    "build:ssr": "ng build --configuration production && ng run MiniBank:server:production",
+    "prerender": "ng run MiniBank:prerender",
     "universal": "npm run dev:ssr"
   },
   "private": true,
