@@ -176,5 +176,7 @@
       }
     }
   },
-  "defaultProject": "Portfolio"
+  "cli": {
+    "analytics": false
+  }
 }
