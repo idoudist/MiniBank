@@ -30,10 +30,4 @@ export class HomeService {
     });
   }
 
-  getHomeSlides(): Observable<any> {
-    return new Observable( observer => {
-      observer.next(HOME_SLIDES);
-    });
-  }
-
 }

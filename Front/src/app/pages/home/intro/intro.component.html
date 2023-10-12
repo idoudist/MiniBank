@@ -1,24 +1,7 @@
-<div class="intro ">
-    <ngb-carousel>
-
-        <ng-template ngbSlide *ngFor="let slide of slides; let i = index ">
-
-            <!--with link-->
-            <a *ngIf="slide.url != '' " [href]="slide.url" target="_blank">
-                <div class="slide-wrapper full-image-wrap">
-                    <div class="img-wrapper">
-                        <img [src]="slide.image" alt="slide 1">
-                    </div>
-                </div>
-            </a>
-            <!--without link-->
-            <div class="slide-wrapper full-image-wrap" *ngIf="slide.url == '' ">
-                <div class="img-wrapper">
-                    <img [src]="slide.image" alt="slide 2">
-                </div>
-            </div>
-
-        </ng-template>
-
-    </ngb-carousel>
+<div class="intro">
+  <div class="full-image-wrap">
+    <div class="img-wrapper">
+      <img src="/assets/images/photos/intro-1.jpg" alt="main-photo" />
+    </div>
+  </div>
 </div>

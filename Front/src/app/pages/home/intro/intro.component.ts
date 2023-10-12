@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { HomeService } from 'src/app/services/api/home.service';
 
@@ -7,21 +7,9 @@ import { HomeService } from 'src/app/services/api/home.service';
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss'],
 })
-export class IntroComponent implements OnInit, OnDestroy {
+export class IntroComponent {
   private getHomeSlidesSubscription: Subscription = new Subscription();
-  slides: any[] = [];
 
   constructor(private homeService: HomeService) {}
 
-  ngOnInit(): void {
-    this.getHomeSlidesSubscription = this.homeService
-      .getHomeSlides()
-      .subscribe((data) => {
-        this.slides = data;
-      });
-  }
-
-  ngOnDestroy(): void {
-    this.getHomeSlidesSubscription.unsubscribe();
-  }
 }
