@@ -2,8 +2,8 @@ export class TransactionParams {
   pageNumber: number;
   pageSize: number;
 
-  constructor() {
-      this.pageNumber = 1;
-      this.pageSize = 10;
-    }
+  constructor(pageNumber: number) {
+    this.pageNumber = pageNumber;
+    this.pageSize = 10;
+  }
 }
