@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  hostUrl: 'http://localhost:5000/',
+  hostUrl: 'https://localhost:5001/',
   backendUrl: ''
 };

@@ -11,104 +11,113 @@
 
 /* fonts */
 @font-face {
-    font-family: font-regular;
-    src: url(assets/fonts/Cairo-Regular.ttf) format("opentype");
+  font-family: font-regular;
+  src: url(assets/fonts/Cairo-Regular.ttf) format("opentype");
 }
 
 @font-face {
-    font-family: font-bold;
-    src: url(assets/fonts/Cairo-Bold.ttf) format("opentype");
+  font-family: font-bold;
+  src: url(assets/fonts/Cairo-Bold.ttf) format("opentype");
 }
 
 /* body */
-body { margin: 0; font-family: font-regular }
+body {
+  margin: 0;
+  font-family: font-regular
+}
 
 /* mobile */
 
 @media screen and (max-width: 767px) {
-    h1 {
-        font-family: font-regular !important;
-        font-weight: bold !important;
-    }
+  h1 {
+    font-family: font-regular !important;
+    font-weight: bold !important;
+  }
 
-    h2 {
-        font-family: font-regular !important;
-        font-weight: bold !important;
-    }
+  h2 {
+    font-family: font-regular !important;
+    font-weight: bold !important;
+  }
 
-    h3 {
-        font-family: font-bold !important;
-        font-weight: normal !important;
-    }
-    h4 {
-        font-family: font-bold !important;
-        font-weight: normal !important;
-    }
+  h3 {
+    font-family: font-bold !important;
+    font-weight: normal !important;
+  }
 
-    p {
-        font-size: 14px;
-    }
+  h4 {
+    font-family: font-bold !important;
+    font-weight: normal !important;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
 
 /* web */
 
 @media screen and (min-width: 768px) {
-    h1 {
-        font-family: font-regular !important;
-        font-weight: bold !important;
-    }
+  h1 {
+    font-family: font-regular !important;
+    font-weight: bold !important;
+  }
 
-    h2 {
-        font-family: font-regular !important;
-        font-weight: bold !important;
-    }
+  h2 {
+    font-family: font-regular !important;
+    font-weight: bold !important;
+  }
 
-    h3 {
-        font-family: font-regular !important;
-        font-weight: normal !important;
-    }
-    h4 {
-        font-family: font-bold !important;
-        font-weight: normal !important;
-    }
-    p {
-        font-size: 21px;
-    }
+  h3 {
+    font-family: font-regular !important;
+    font-weight: normal !important;
+  }
+
+  h4 {
+    font-family: font-bold !important;
+    font-weight: normal !important;
+  }
+
+  p {
+    font-size: 21px;
+  }
 }
 
 /******************** images ************************/
 
 .full-image-wrap {
-    .img-wrapper {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-    img {
-        padding: 0;
-        margin: 0;
-        width:100%;
-        height: 100% !important;
-    }
+  .img-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100% !important;
+  }
 }
 
 .centered-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /******************** ng select ************************/
 
-.ng-option , .ng-option-selected, .ng-option-marked{
-    padding-bottom: 2px;
+.ng-option,
+.ng-option-selected,
+.ng-option-marked {
+  padding-bottom: 2px;
 }
 
 .ng-dropdown-panel-items {
-    border-style: solid;
-    border-width: 1px;
-    max-width: 110px;
-    background-color: white;
-    padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  max-width: 110px;
+  background-color: white;
+  padding: 5px;
 }
 
 /******************** template styling ********************/
@@ -116,69 +125,159 @@ body { margin: 0; font-family: font-regular }
 /* web */
 
 @media screen and (min-width: 768px) {
-    .page-wrapper {
-        padding-top: 40px !important;
-        padding-bottom: 20px !important;
-        padding-right: 9% !important;
-        padding-left: 9% !important;
-    }
-    .top-element {
-        padding-top: 100px !important;
-        padding-bottom: 20px !important;
-        padding-right: 9% !important;
-        padding-left: 9% !important;
-    }
+  .page-wrapper {
+    padding-top: 80px !important;
+    padding-bottom: 20px !important;
+    padding-right: 9% !important;
+    padding-left: 9% !important;
+  }
+
+  .top-element {
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+    padding-right: 9% !important;
+    padding-left: 9% !important;
+  }
+
+  .page-content {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-right: 9% !important;
+    padding-left: 9% !important;
+  }
 
 }
 
 /* mobile */
 
 @media screen and (max-width: 767px) {
-    .page-wrapper {
-        padding-top: 40px !important;
-        padding-bottom: 20px !important;
-        padding-right: 5% !important;
-        padding-left: 5% !important;
-    }
-    .top-element {
-        padding-top: 100px !important;
-        padding-bottom: 20px !important;
-        padding-right: 5% !important;
-        padding-left: 5% !important;
-    }
+  .page-wrapper {
+    padding-top: 80px !important;
+    padding-bottom: 20px !important;
+    padding-right: 5% !important;
+    padding-left: 5% !important;
+  }
+
+  .top-element {
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+    padding-right: 5% !important;
+    padding-left: 5% !important;
+  }
+
+  .page-content {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-right: 9% !important;
+    padding-left: 9% !important;
+  }
 }
 
 /************************ Override bootstrap **********************/
 
 .row {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
-.container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+.container,
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
-.container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 100% !important;
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+  max-width: 100% !important;
 }
 
-.col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1,
-.col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1,
-.col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1,
-.col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1,
-.col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+.col-xl,
+.col-xl-auto,
+.col-xl-12,
+.col-xl-11,
+.col-xl-10,
+.col-xl-9,
+.col-xl-8,
+.col-xl-7,
+.col-xl-6,
+.col-xl-5,
+.col-xl-4,
+.col-xl-3,
+.col-xl-2,
+.col-xl-1,
+.col-lg,
+.col-lg-auto,
+.col-lg-12,
+.col-lg-11,
+.col-lg-10,
+.col-lg-9,
+.col-lg-8,
+.col-lg-7,
+.col-lg-6,
+.col-lg-5,
+.col-lg-4,
+.col-lg-3,
+.col-lg-2,
+.col-lg-1,
+.col-md,
+.col-md-auto,
+.col-md-12,
+.col-md-11,
+.col-md-10,
+.col-md-9,
+.col-md-8,
+.col-md-7,
+.col-md-6,
+.col-md-5,
+.col-md-4,
+.col-md-3,
+.col-md-2,
+.col-md-1,
+.col-sm,
+.col-sm-auto,
+.col-sm-12,
+.col-sm-11,
+.col-sm-10,
+.col-sm-9,
+.col-sm-8,
+.col-sm-7,
+.col-sm-6,
+.col-sm-5,
+.col-sm-4,
+.col-sm-3,
+.col-sm-2,
+.col-sm-1,
+.col,
+.col-auto,
+.col-12,
+.col-11,
+.col-10,
+.col-9,
+.col-8,
+.col-7,
+.col-6,
+.col-5,
+.col-4,
+.col-3,
+.col-2,
+.col-1 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 /************************ Generic **********************/
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /***************************** no rtl ****************************/

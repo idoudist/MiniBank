@@ -1,1 +1,30 @@
-<p>history works!</p>
+<div class="page-wrapper history">
+  <p>balance = {{transactionService.getBalance() | async}}</p>
+
+  <div class="container mt-3">
+
+    <div class="row mt-3">
+      <div class="col-2" *ngFor="let transaction of transactions.result">
+        <div>{{transaction.amount}}</div>
+      </div>
+    </div>
+  </div>
+  <!--Pagination-->
+  <div class="d-flex justify-content-center">
+    <ng-container *ngIf="pagination">
+      <!-- <pagination
+        [boundaryLinks]="true"
+        [totalItems]="pagination.totalItems"
+        [itemsPerPage]="pagination.itemsPerPage"
+        [(ngModel)]="pagination.currentPage"
+        (pageChanged)="pageChanged($event)"
+        previousText="&lsaquo;"
+        nextText="&rsaquo;"
+        firstText="&laquo;"
+        lastText="&raquo;"
+      >
+      </pagination> -->
+    </ng-container>
+  </div>
+
+</div>
