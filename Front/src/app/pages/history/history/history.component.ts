@@ -11,19 +11,33 @@ import { TransactionService } from 'src/app/services/api/transaction.service';
 export class HistoryComponent implements OnInit {
 
   transactions: PaginatedResult<Transaction[]> = new PaginatedResult();
+  balance: number = 0;
   //pagination variables
   pageNumber = 1;
-  pageSize = 5;
+  pageSize = 10;
   pagination: Pagination = {} as Pagination;
 
   constructor(public transactionService: TransactionService) { }
 
   ngOnInit(): void {
-    this.getTransactions(1, 10);
+    this.getBalance();
+    this.getTransactions();
   }
 
-  getTransactions(pageNumber: number, pageSize: number){
-    this.transactionService.getTransactions(pageNumber, pageSize).subscribe(res => this.transactions = res);
+  getBalance(){
+    this.transactionService.getBalance().subscribe(res => this.balance = res);
+  }
+
+  getTransactions() {
+    this.transactionService.getTransactions(this.pageNumber, this.pageSize).subscribe(res => {
+      this.transactions = res;
+      this.pagination = res.pagination || {} as Pagination;
+    });
+  }
+
+  pageChanged(event: any) {
+    this.pageNumber = event.page;
+    this.getTransactions();
   }
 
 }

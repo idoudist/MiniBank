@@ -1,10 +1,10 @@
 <div class="page-wrapper history">
-  <p>balance = {{transactionService.getBalance() | async}}</p>
+  <p>balance = {{balance}}</p>
 
   <div class="container mt-3">
 
-    <div class="row mt-3">
-      <div class="col-2" *ngFor="let transaction of transactions.result">
+    <div class="row mt-3" *ngFor="let transaction of transactions.result">
+      <div class="col-2" >
         <div>{{transaction.amount}}</div>
       </div>
     </div>
@@ -12,7 +12,7 @@
   <!--Pagination-->
   <div class="d-flex justify-content-center">
     <ng-container *ngIf="pagination">
-      <!-- <pagination
+      <pagination
         [boundaryLinks]="true"
         [totalItems]="pagination.totalItems"
         [itemsPerPage]="pagination.itemsPerPage"
@@ -23,7 +23,7 @@
         firstText="&laquo;"
         lastText="&raquo;"
       >
-      </pagination> -->
+      </pagination>
     </ng-container>
   </div>
 
