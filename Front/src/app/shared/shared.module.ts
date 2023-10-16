@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
@@ -12,7 +12,8 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
         FormsModule,
         NgbModule,
         TranslateModule,
-        PaginationModule.forRoot()
+        PaginationModule.forRoot(),
+        ReactiveFormsModule
     ],
     declarations: [
 
@@ -22,7 +23,8 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
         FormsModule,
         NgbModule,
         TranslateModule,
-        PaginationModule
+        PaginationModule,
+        ReactiveFormsModule
     ]
 })
 

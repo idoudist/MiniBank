@@ -13,5 +13,17 @@
     "HOME": {
       "TITLE": "Bienvenue à Mini Bank",
       "SLOGAN": "Petite Appli, Grandes Économies"
+    },
+    "TRANSACTION": {
+      "DEPOSIT": "Dépot",
+      "WITHDROW": "Retrait",
+      "AMOUNT": "Montant",
+      "SUBMIT": "Valider"
+    },
+    "HISTORY": {
+      "AMOUNT": "Montant",
+      "DATE": "Date",
+      "OPERATION": "Operation",
+      "BALANCE": "Solde Courant"
     }
 }

@@ -1,17 +1,28 @@
 {
-    "SHARED": {
-        "ENGLISH": "English",
-        "FRENCH": "French"
-    },
-    "HEADER": {
-        "HOME": "Home",
-        "TRANSACTION": "Transaction",
-        "HISTORY": "History"
-    },
-    "FOOTER": {
-    },
-    "HOME": {
-      "TITLE": "Welcome To Mini Bank",
-      "SLOGAN": "Small App, Big Savings"
-    }
+  "SHARED": {
+    "ENGLISH": "English",
+    "FRENCH": "French"
+  },
+  "HEADER": {
+    "HOME": "Home",
+    "TRANSACTION": "Transaction",
+    "HISTORY": "History"
+  },
+  "FOOTER": {},
+  "HOME": {
+    "TITLE": "Welcome To Mini Bank",
+    "SLOGAN": "Small App, Big Savings"
+  },
+  "TRANSACTION": {
+    "DEPOSIT": "Deposit",
+    "WITHDROW": "Withdrow",
+    "AMOUNT": "Amount",
+    "SUBMIT": "Submit"
+  },
+  "HISTORY": {
+    "AMOUNT": "Amount",
+    "DATE": "Date",
+    "OPERATION": "Operation",
+    "BALANCE": "Current balance"
+  }
 }

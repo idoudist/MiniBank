@@ -1,4 +1,31 @@
-
 <div class="page-wrapper transaction">
-  <p>transaction works!</p>
+  <h2>{{ "TRANSACTION.DEPOSIT" | translate }}</h2>
+  <form [formGroup]="depositForm" (ngSubmit)="deposit()">
+    <div class="row mt-3">
+      <label for="amount">{{ "TRANSACTION.AMOUNT" | translate }}</label>
+    </div>
+    <div class="row mt-3">
+      <input id="depositAmount" type="number" formControlName="amount" />
+    </div>
+    <div class="row mt-3">
+      <button type="submit" [disabled]="!depositForm.valid">
+        {{ "TRANSACTION.SUBMIT" | translate }}
+      </button>
+    </div>
+  </form>
+
+  <h2 class="mt-4">{{ "TRANSACTION.WITHDROW" | translate }}</h2>
+  <form [formGroup]="withdrowForm" (ngSubmit)="withdrow()">
+    <div class="row mt-3">
+      <label for="amount">{{ "TRANSACTION.AMOUNT" | translate }}</label>
+    </div>
+    <div class="row mt-3">
+      <input id="withdrowAmount" type="number" formControlName="amount" />
+    </div>
+    <div class="row mt-3">
+      <button type="submit" [disabled]="!withdrowForm.valid">
+        {{ "TRANSACTION.SUBMIT" | translate }}
+      </button>
+    </div>
+  </form>
 </div>

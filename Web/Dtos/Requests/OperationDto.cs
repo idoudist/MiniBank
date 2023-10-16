@@ -1,9 +1,8 @@
 ﻿using Web.Enums;
 
-namespace Web.Dtos.Requests
+namespace Web.Dtos.Requests;
+
+public class OperationDto
 {
-    public class OperationDto
-    {
-        public float Amount { get; set; }
-    }
+    public float Amount { get; set; }
 }

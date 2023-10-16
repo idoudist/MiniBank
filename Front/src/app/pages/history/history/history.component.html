@@ -1,11 +1,22 @@
 <div class="page-wrapper history">
-  <p>balance = {{balance}}</p>
+  <p>{{"HISTORY.BALANCE" | translate}} = {{balance}}</p>
 
-  <div class="container mt-3">
+  <div class="container mt-3 ">
+    <div class="row mt-3 table-header" >
+      <div class="col-3">{{"HISTORY.AMOUNT" | translate}}</div>
+      <div class="col-3">{{"HISTORY.OPERATION" | translate}}</div>
+      <div class="col-3">{{"HISTORY.DATE" | translate}}</div>
+    </div>
 
     <div class="row mt-3" *ngFor="let transaction of transactions.result">
-      <div class="col-2" >
+      <div class="col-3" >
         <div>{{transaction.amount}}</div>
+      </div>
+      <div class="col-3" >
+        <div>{{(transaction.transactionType == 1 ?  "TRANSACTION.DEPOSIT" : "TRANSACTION.WITHDROW") | translate}}</div>
+      </div>
+      <div class="col-3" >
+        <div>{{transaction.date | date :'dd/MM/yyyy, HH:mm '}}</div>
       </div>
     </div>
   </div>
