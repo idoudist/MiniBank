@@ -1,0 +1,103 @@
+@import "src/assets/scss/template-variables.scss";
+
+.top-bar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 8%;
+  padding-left: 8%; 
+  background-color: #FFF;
+  width: 100%;
+  box-shadow: 0 3px 2px -2px #DCDCDC;
+  position: fixed;
+  z-index: 2;
+  ul {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    li {
+      display:inline-block;
+    }
+  }
+    
+  li .item {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000 ;
+  }
+
+  .item-selected {   
+    color: #F39100 !important;
+  }
+
+  .web-menu {
+    a {
+      font-size: 17px !important;
+      color: $blackish;
+      font-weight: bold;
+      font-family: font-bold; 
+    }
+        
+  }
+
+  .logos{
+    img {
+      max-height: 200px !important;
+      max-width: 200px !important;
+    }  
+  }
+  
+  
+
+  .langue-wrap {
+    display: flex;
+  }
+  
+  .langue { 
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column !important;
+    justify-content: flex-start !important ;
+    align-items: flex-start !important;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 65px;
+    &:hover {
+       cursor: pointer;
+    }   
+  }
+  
+  .ng-option , .ng-option-selected, .ng-option-marked{
+    background-color: white;
+  }
+  
+  .contact-button {
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: #F39100;
+    color: white;
+    cursor: pointer;
+  }
+
+  .translate {
+    display: flex;
+  }
+
+  .navbar-brand{
+    cursor: pointer;
+  }
+    
+}
+
+

@@ -1,0 +1,8 @@
+.intro {
+    .img-wrapper{
+        height: 600px;
+        @media screen and (max-width: 767px) {
+            height: 350px;
+        }
+    }
+}

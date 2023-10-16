@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://fadi-idoudi.herokuapp.com//sitemap.xml

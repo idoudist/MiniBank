@@ -1,0 +1,37 @@
+.footer{
+    background-color: #FFFFFF;
+
+    /* web */
+
+    @media screen and (min-width: 768px) {
+        .menu{
+            padding-right: 60px;
+            padding-left: 60px;
+        }
+
+    }
+
+    /* mobile */
+
+    @media screen and (max-width: 767px) {
+        .menu{
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+    }
+
+    .copy-right {
+        background-color: #FFFFFF;
+        color: #797979;
+        p {
+            padding-top: 5px !important;
+            font-size: 16px !important;
+            text-align: center;
+        }
+    }
+
+
+}
+
+
+

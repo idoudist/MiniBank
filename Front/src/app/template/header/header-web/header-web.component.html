@@ -1,0 +1,50 @@
+<!--**************** web template ****************-->
+<nav class="top-bar">
+
+    <div class="row container-fluid rtl-direction">
+
+        <div class="col-2 full-image-wrap rtl-bloc">
+            <div class="img-wrapper logos">
+                <div class="navbar-brand" routerLink="/">
+                    <img src="assets/images/logos/logo-en.svg" alt="logo" />
+                </div>
+            </div>
+        </div>
+
+        <!--header menu-->
+        <div class="col-8">
+            <ul>
+                <li *ngFor="let item of headerItems; let i = index" class="web-menu">
+                    <div class="item" [routerLink]="item.link" routerLinkActive="item-selected" [routerLinkActiveOptions]="{exact: true}">
+                        {{item.label.toUpperCase() | translate}}
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-2 rtl-direction rtl-text">
+
+            <div class="translate">
+
+                <ng-select (change)="changeLang($event)" class="langue pt-3" [searchable]="false" [clearable]="false"
+                    [items]="langues" bindLabel="name" bindValue="id" dropdownPosition="bottom"
+                    [(ngModel)]="selectedLangue">
+                    <ng-template ng-label-tmp let-item="item">
+                        <img height="22" width="22" [src]="item.flag" alt="flag" />
+                        <b class="px-2">{{item.name}}</b>
+                    </ng-template>
+                    <ng-template ng-option-tmp let-item="item" let-index="index">
+                        <img height="22" width="22" [src]="item.flag" alt="flag" />
+                        <b class="px-2">{{item.name}}</b>
+                    </ng-template>
+                </ng-select>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</nav>

@@ -1,0 +1,41 @@
+<div class="page-wrapper history">
+  <p>{{"HISTORY.BALANCE" | translate}} = {{balance}}</p>
+
+  <div class="container mt-3 ">
+    <div class="row mt-3 table-header" >
+      <div class="col-3">{{"HISTORY.AMOUNT" | translate}}</div>
+      <div class="col-3">{{"HISTORY.OPERATION" | translate}}</div>
+      <div class="col-3">{{"HISTORY.DATE" | translate}}</div>
+    </div>
+
+    <div class="row mt-3" *ngFor="let transaction of transactions.result">
+      <div class="col-3" >
+        <div>{{transaction.amount}}</div>
+      </div>
+      <div class="col-3" >
+        <div>{{(transaction.transactionType == 1 ?  "TRANSACTION.DEPOSIT" : "TRANSACTION.WITHDROW") | translate}}</div>
+      </div>
+      <div class="col-3" >
+        <div>{{transaction.date | date :'dd/MM/yyyy, HH:mm '}}</div>
+      </div>
+    </div>
+  </div>
+  <!--Pagination-->
+  <div class="d-flex justify-content-center">
+    <ng-container *ngIf="pagination">
+      <pagination
+        [boundaryLinks]="true"
+        [totalItems]="pagination.totalItems"
+        [itemsPerPage]="pagination.itemsPerPage"
+        [(ngModel)]="pagination.currentPage"
+        (pageChanged)="pageChanged($event)"
+        previousText="&lsaquo;"
+        nextText="&rsaquo;"
+        firstText="&laquo;"
+        lastText="&raquo;"
+      >
+      </pagination>
+    </ng-container>
+  </div>
+
+</div>

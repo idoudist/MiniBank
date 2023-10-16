@@ -1,0 +1,105 @@
+/* right to left */
+@import './mixins';
+
+// with mixin
+// property , rtl , ltr
+
+.rtl-direction {
+  @include rtl(direction, rtl, ltr);
+}
+  
+.rtl-text{
+  @include rtl(text-align, right, left);
+  ::-webKit-input-placeholder { /* WebKit browsers */
+    @include rtl(direction, rtl, ltr);
+    @include rtl(float, right, left);
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    @include rtl(direction, rtl, ltr);
+    @include rtl(float, right, left);
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */
+    @include rtl(direction, rtl, ltr);
+    @include rtl(float, right, left);
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    @include rtl(direction, rtl, ltr);
+    @include rtl(float, right, left);
+  }
+  input::placeholder {
+    @include rtl(text-align, right, left);
+  }
+  input::-webkit-input-placeholder {
+    @include rtl(text-align, center, left);
+  }
+}
+
+.rtl-bloc {
+  @include rtl(float, right, left);
+  @include rtl(text-align, right, left);
+}
+  
+.all-right {
+  @include rtl(direction, rtl, ltr);
+  @include rtl(float, right, none);
+  @include rtl(text-align, right, left);
+}
+
+.rtl-float {
+  @include rtl(float, right, none);
+}
+
+.rtl-float-2 {
+  @include rtl(float, right, left);
+}
+
+// reverse
+
+.rtl-reverse-text{
+  @include rtl(text-align, left, right);
+  ::-webKit-input-placeholder { /* WebKit browsers */
+    @include rtl(direction, ltr, rtl);
+    @include rtl(float, left, right);
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    @include rtl(direction, ltr, rtl);
+    @include rtl(float, left, right);
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */
+    @include rtl(direction, ltr, rtl);
+    @include rtl(float, left, right);
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    @include rtl(direction, ltr, rtl);
+    @include rtl(float, left, right);
+  }
+  input::placeholder {
+    @include rtl(text-align, left, right);
+  }
+  input::-webkit-input-placeholder {
+    @include rtl(text-align, center, right);
+  }
+}
+
+.rtl-reverse-bloc {
+  @include rtl(float, left, right);
+  @include rtl(text-align, left, right);
+}
+
+.rtl-reverse-float {
+  @include rtl(float, left, right);
+}
+
+// without mixin
+
+.phone-display {
+  direction: ltr !important;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+
+.rtl {
+  direction: rtl !important;
+}
