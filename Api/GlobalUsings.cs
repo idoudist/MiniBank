@@ -7,6 +7,8 @@ global using System.Text.Json;
 global using Domain.Helpers.Pagination;
 global using Domain.Dtos.Requests;
 global using Domain.Dtos.Responses;
+global using Domain.Entities.Identity;
 global using Application.Transactions;
+global using Application.Users;
 global using Api.Extensions;
 global using Api.Errors;

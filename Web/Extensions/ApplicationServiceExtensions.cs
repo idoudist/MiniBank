@@ -9,6 +9,7 @@ public static class ApplicationServiceExtensions
         /* configure automapper */
         services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
         /* add services */
+        services.AddScoped<IUserService, UserService>();
         services.AddScoped<ITransactionService, TransactionService>();
         /* add unit of work */
         services.AddScoped<IUnitOfWork, UnitOfWork>();

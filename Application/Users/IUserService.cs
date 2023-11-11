@@ -2,7 +2,7 @@
 
 namespace Application.Users;
 
-public interface IUserRepository
+public interface IUserService
 {
     Task<AppUser> GetUserByIdAsync(int id);
     Task<AppUser> GetUserByUsernameAsync(string username);
