@@ -1,6 +1,4 @@
-﻿using AutoMapper;
-
-namespace Web.Helpers.Automapper;
+﻿namespace Domain.Helpers.Automapper;
 
 public class AutoMapperProfiles : Profile
 {

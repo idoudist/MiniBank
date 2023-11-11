@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Web.Data;
-using Web.Helpers.Automapper;
 
 namespace Web.Extensions;
 
