@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace Web.Data;
+﻿namespace Data.Configurations;
 
 public class DataContext : DbContext
 {

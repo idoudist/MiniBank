@@ -15,11 +15,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{E303F4E6-BCBB-4FB4-A8F2-E50BB510A5C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{BC07BE69-13A6-4ED8-BD8D-83228B76D948}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{BC07BE69-13A6-4ED8-BD8D-83228B76D948}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{7C28B186-3D05-417A-AC2C-5925DD64A83A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{7C28B186-3D05-417A-AC2C-5925DD64A83A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Unit.Tests", "Application.Unit.Tests\Application.Unit.Tests.csproj", "{ADB90DF1-7DDB-4DEB-A7A5-52E6ED5A19DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Unit.Tests", "Application.Unit.Tests\Application.Unit.Tests.csproj", "{ADB90DF1-7DDB-4DEB-A7A5-52E6ED5A19DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C59F47C5-4F94-4771-97ED-7AB5201E56DB}"
+	ProjectSection(SolutionItems) = preProject
+		database.md = database.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{D539BA7B-36EE-4BFD-93EC-BBC902139DBF}"
+	ProjectSection(SolutionItems) = preProject
+		minibank.db = minibank.db
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
