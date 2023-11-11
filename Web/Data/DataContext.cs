@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Web.Entities;
 
 namespace Web.Data;
 

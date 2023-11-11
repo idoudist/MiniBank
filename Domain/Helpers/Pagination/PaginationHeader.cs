@@ -1,4 +1,4 @@
-﻿namespace Web.Helpers.Pagination;
+﻿namespace Domain.Helpers.Pagination;
 
 public class PaginationHeader
 {

@@ -1,7 +1,4 @@
-﻿using Web.Dtos.Requests;
-using Web.Dtos.Responses;
-
-namespace Web.Interfaces;
+﻿namespace Web.Interfaces;
 
 public interface ITransactionService
 {

@@ -1,6 +1,4 @@
-﻿using Web.Enums;
-
-namespace Web.Dtos.Responses;
+﻿namespace Domain.Dtos.Responses;
 
 public class TransactionDto
 {

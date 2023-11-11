@@ -1,4 +1,4 @@
-﻿namespace Web.Entities;
+﻿namespace Domain.Entities;
 
 public class BankAccountEntity : BaseEntity
 {

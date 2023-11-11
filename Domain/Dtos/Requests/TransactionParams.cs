@@ -1,6 +1,4 @@
-﻿using Web.Helpers.Pagination;
-
-namespace Web.Dtos.Requests
+﻿namespace Domain.Dtos.Requests
 {
     public class TransactionParams : PaginationParams
     {

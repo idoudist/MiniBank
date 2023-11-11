@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace Web.Helpers.Pagination;
+﻿namespace Domain.Helpers.Pagination;
 
 public class PagedList<T> : List<T>
 {

@@ -1,9 +1,9 @@
 ﻿global using Microsoft.OpenApi.Models;
-global using Web.Entities;
+global using Domain.Entities;
+global using Domain.Enums;
+global using Domain.Helpers.Pagination;
+global using Domain.Dtos.Requests;
+global using Domain.Dtos.Responses;
 global using Web.Interfaces;
-global using Web.Enums;
 global using Web.Repositories;
-global using Web.Dtos.Requests;
-global using Web.Dtos.Responses;
-global using Web.Helpers.Pagination;
 global using Web.Extensions;

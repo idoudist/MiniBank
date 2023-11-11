@@ -1,6 +1,4 @@
-﻿using Web.Enums;
-
-namespace Web.Dtos.Requests;
+﻿namespace Domain.Dtos.Requests;
 
 public class OperationDto
 {

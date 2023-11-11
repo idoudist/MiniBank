@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using Web.Dtos.Requests;
-using Web.Dtos.Responses;
 
 namespace Web.Services;
 
