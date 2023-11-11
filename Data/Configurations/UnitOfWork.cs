@@ -1,4 +1,4 @@
-﻿namespace Web.Data;
+﻿namespace Data.Configurations;
 
 public class UnitOfWork : IUnitOfWork
 {

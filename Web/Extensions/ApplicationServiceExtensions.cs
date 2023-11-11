@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Web.Data;
+﻿
 
 namespace Web.Extensions;
 
