@@ -1,7 +1,4 @@
-﻿using AutoMapper.QueryableExtensions;
-using Microsoft.EntityFrameworkCore;
-
-namespace Web.Repositories;
+﻿namespace Data.Repositories;
 
 public class TransactionRepository : ITransactionRepository
 {

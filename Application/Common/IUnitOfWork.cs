@@ -1,4 +1,4 @@
-﻿namespace Web.Interfaces;
+﻿namespace Application.Common;
 
 public interface IUnitOfWork
 {

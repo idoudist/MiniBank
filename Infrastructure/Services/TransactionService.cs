@@ -1,6 +1,4 @@
-﻿using AutoMapper;
-
-namespace Web.Services;
+﻿namespace Infrastructure.Services;
 
 public class TransactionService : ITransactionService
 {

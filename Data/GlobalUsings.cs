@@ -1,2 +1,9 @@
 ﻿global using Microsoft.EntityFrameworkCore;
+global using AutoMapper.QueryableExtensions;
 global using Domain.Entities;
+global using Domain.Dtos.Requests;
+global using Domain.Dtos.Responses;
+global using Domain.Helpers.Pagination;
+global using Application.Transactions;
+global using Data.Configurations;
+global using AutoMapper;
