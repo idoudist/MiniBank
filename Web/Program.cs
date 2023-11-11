@@ -15,8 +15,6 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
 });
 
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

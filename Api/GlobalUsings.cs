@@ -10,4 +10,3 @@ global using Domain.Dtos.Responses;
 global using Application.Transactions;
 global using Api.Extensions;
 global using Api.Errors;
-

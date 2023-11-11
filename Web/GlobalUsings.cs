@@ -7,5 +7,3 @@ global using Application.Common;
 global using Infrastructure.Services;
 global using Api.Middleware;
 global using Web.Extensions;
-
-

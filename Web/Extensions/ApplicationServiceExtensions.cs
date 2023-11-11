@@ -27,6 +27,5 @@ public static class ApplicationServiceExtensions
             LogTo(Console.WriteLine, LogLevel.Information);
         });
         
-
     }
 }

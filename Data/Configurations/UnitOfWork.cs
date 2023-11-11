@@ -11,6 +11,8 @@ public class UnitOfWork : IUnitOfWork
         _mapper = mapper;
     }
 
+    public IUserRepository UserRepository => new UserRepository(_context, _mapper);
+
     public ITransactionRepository TransactionRepository => new TransactionRepository(_context, _mapper);
 
     public async Task<bool> Complete()
