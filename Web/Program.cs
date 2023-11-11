@@ -1,4 +1,4 @@
-using Web.Middleware;
+using Api.Middleware;
 
 /*create builder*/
 var builder = WebApplication.CreateBuilder(args);

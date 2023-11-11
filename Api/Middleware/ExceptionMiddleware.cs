@@ -1,8 +1,4 @@
-﻿using System.Net;
-using System.Text.Json;
-using Web.Errors;
-
-namespace Web.Middleware;
+﻿namespace Api.Middleware;
 
 public class ExceptionMiddleware
 {

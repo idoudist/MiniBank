@@ -1,6 +1,4 @@
-﻿
-
-namespace Web.Extensions;
+﻿namespace Web.Extensions;
 
 public static class ApplicationServiceExtensions
 {
