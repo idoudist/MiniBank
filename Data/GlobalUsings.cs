@@ -4,7 +4,7 @@ global using Domain.Entities;
 global using Domain.Dtos.Requests;
 global using Domain.Dtos.Responses;
 global using Domain.Helpers.Pagination;
-global using Application.Common;
+global using Application.Utils;
 global using Application.Users;
 global using Application.Transactions;
 global using Data.Configurations;

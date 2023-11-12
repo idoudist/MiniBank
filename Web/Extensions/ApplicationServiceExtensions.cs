@@ -1,4 +1,6 @@
-﻿namespace Web.Extensions;
+﻿using Api.Helpers;
+
+namespace Web.Extensions;
 
 public static class ApplicationServiceExtensions
 {
@@ -8,9 +10,12 @@ public static class ApplicationServiceExtensions
         services.RegisterDbConnection(config);
         /* configure automapper */
         services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
+        /* add service Filter */
+        services.AddScoped<LogUserActivity>();
         /* add services */
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<ITransactionService, TransactionService>();
+        services.AddScoped<ITokenService, TokenService>();
         /* add unit of work */
         services.AddScoped<IUnitOfWork, UnitOfWork>();
 

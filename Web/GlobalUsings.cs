@@ -1,10 +1,12 @@
 ﻿global using Microsoft.EntityFrameworkCore;
 global using Microsoft.OpenApi.Models;
+global using System.Text;
 global using Domain.Helpers.Automapper;
 global using Data.Configurations;
 global using Application.Transactions;
-global using Application.Common;
+global using Application.Utils;
 global using Application.Users;
 global using Infrastructure.Services;
+global using Infrastructure.Utils;
 global using Api.Middleware;
 global using Web.Extensions;

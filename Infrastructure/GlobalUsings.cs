@@ -6,5 +6,5 @@ global using Domain.Dtos.Responses;
 global using Domain.Helpers.Pagination;
 global using Application.Users;
 global using Application.Transactions;
-global using Application.Common;
+global using Application.Utils;
 global using AutoMapper;
