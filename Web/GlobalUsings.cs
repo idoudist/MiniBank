@@ -1,7 +1,6 @@
 ﻿global using Microsoft.EntityFrameworkCore;
 global using Microsoft.OpenApi.Models;
 global using System.Text;
-global using Domain.Helpers.Automapper;
 global using Data.Configurations;
 global using Application.Transactions;
 global using Application.Utils;

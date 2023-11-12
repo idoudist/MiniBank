@@ -1,4 +1,4 @@
-﻿namespace Domain.Helpers.Automapper.Profiles;
+﻿namespace Domain.Automapper.Profiles;
 
 public class TransactionProfile : Profile
 {

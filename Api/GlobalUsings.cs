@@ -1,4 +1,5 @@
-﻿global using Microsoft.AspNetCore.Http;
+﻿global using Microsoft.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Http;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Logging;
@@ -10,6 +11,7 @@ global using Domain.Helpers.Pagination;
 global using Domain.Dtos.Requests;
 global using Domain.Dtos.Responses;
 global using Domain.Entities.Identity;
+global using Domain.Dtos.Shared;
 global using Application.Transactions;
 global using Application.Utils;
 global using Api.Extensions;

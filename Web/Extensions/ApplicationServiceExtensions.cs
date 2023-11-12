@@ -1,4 +1,5 @@
 ﻿using Api.Helpers;
+using Domain.Automapper;
 
 namespace Web.Extensions;
 
