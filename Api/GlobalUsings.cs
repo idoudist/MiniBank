@@ -14,6 +14,7 @@ global using Domain.Entities.Identity;
 global using Domain.Dtos.Shared;
 global using Application.Transactions;
 global using Application.Utils;
+global using Application.BankAccounts;
 global using Api.Extensions;
 global using Api.Errors;
 global using Api.Controllers;

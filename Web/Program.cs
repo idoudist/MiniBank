@@ -1,12 +1,18 @@
 /*create builder*/
 
+using Data.SeedData;
+using Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
+using System.Text.Json.Serialization;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+/* Add services to the container. */
 
 builder.Services.AddApplicationServices(builder.Configuration);
 builder.Services.AddIdentityServices(builder.Configuration);
 builder.Services.AddControllers();
+
 builder.Services.AddCors();
 // swagger
 builder.Services.AddSwaggerGen(c =>
@@ -38,7 +44,26 @@ app
 app.UseAuthentication();
 //4 authorize
 app.UseAuthorization();
-//defined endpoints
+//5 defined endpoints
 app.MapControllers();
+
+//6 Seed Data
+using var scope = app.Services.CreateScope();
+var services = scope.ServiceProvider;
+try
+{
+    // inject services (because we are seeding data before injecting dependencies)
+    var context = services.GetRequiredService<DataContext>();
+    var userManager = services.GetRequiredService<UserManager<AppUser>>();
+    var roleManager = services.GetRequiredService<RoleManager<AppRole>>();
+    var unitOfWork = services.GetRequiredService<IUnitOfWork>();
+    await context.Database.MigrateAsync();
+    await Seed.SeedUsers(userManager, roleManager, unitOfWork);
+}
+catch (Exception ex)
+{
+    var logger = services.GetRequiredService<ILogger<Program>>();
+    logger.LogError(ex, "An error occurred during migration");
+}
 
 await app.RunAsync();

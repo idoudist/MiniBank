@@ -26,18 +26,16 @@ public class DataContext : IdentityDbContext<AppUser, AppRole, int, IdentityUser
             .WithOne(ur => ur.User)
             .HasForeignKey(ur => ur.UserId)
             .IsRequired();
+        builder.Entity<AppUser>()
+            .HasMany(u => u.BankAccounts)
+            .WithOne(ur => ur.AppUser)
+            .HasForeignKey(ur => ur.AppUserId)
+            .IsRequired();
         // configure relation roke - userRole
         builder.Entity<AppRole>()
             .HasMany(u => u.UserRoles)
             .WithOne(ur => ur.Role)
             .HasForeignKey(ur => ur.RoleId)
-            .IsRequired();
-
-        /*configure BankAccount relations*/
-        builder.Entity<BankAccountEntity>()
-            .HasOne(ba => ba.AppUser)
-            .WithMany(u => u.BankAccounts)
-            .HasForeignKey(ba => ba.AppUserId)
             .OnDelete(DeleteBehavior.Restrict);
 
         /*configure Transactions relations*/

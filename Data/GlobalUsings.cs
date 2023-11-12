@@ -7,6 +7,7 @@ global using Domain.Helpers.Pagination;
 global using Application.Utils;
 global using Application.Users;
 global using Application.Transactions;
+global using Application.BankAccounts;
 global using Data.Configurations;
 global using Data.Repositories;
 global using AutoMapper;

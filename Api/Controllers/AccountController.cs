@@ -5,14 +5,16 @@ public class AccountController : BaseApiController
     private readonly UserManager<AppUser> _userManager;
     private readonly SignInManager<AppUser> _signInManager;
     private readonly ITokenService _tokenService;
+    private readonly IBankAccountService _bankAccountService;
     private readonly IMapper _mapper;
 
     public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
-        ITokenService tokenService, IMapper mapper)
+        ITokenService tokenService, IBankAccountService bankAccountService, IMapper mapper)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _tokenService = tokenService;
+        _bankAccountService = bankAccountService;
         _mapper = mapper;
     }
 
@@ -45,7 +47,19 @@ public class AccountController : BaseApiController
             return BadRequest(result.Errors);
         }
 
-        // TODO:create Bank Account
+        // create Bank Account
+
+        var accountCreated = await _bankAccountService.AddBankAccountAsync(new BankAccountCreationRequest{
+            Name = "Main Account",
+            AppUserId = user.Id,
+            IsLocked = false,
+            IsMain = true
+        });
+
+        if (!accountCreated)
+        {
+            return BadRequest("Error creating account");
+        }
 
         // return results
         return new UserDto

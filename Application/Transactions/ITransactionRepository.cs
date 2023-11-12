@@ -6,4 +6,7 @@ public interface ITransactionRepository
     Task<float> GetBalanceAsync();
     Task<PagedList<TransactionDto>> GetTransactionsAsync(TransactionParams transactionParams);
     Task<TransactionEntity> GetTransactionAsync(int id);
+
+    // sql based command
+    void TruncateGroupTables();
 }

@@ -32,5 +32,10 @@ public class TransactionRepository : ITransactionRepository
     {
         return await _context.Transactions.FindAsync(id);
     }
+
+    public void TruncateGroupTables()
+    {
+        _context.Transactions.FromSqlRaw("DELETE FROM [Transactions]");
+    }
 }
 

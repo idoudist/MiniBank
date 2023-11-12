@@ -1,7 +1,4 @@
-﻿using Api.Helpers;
-using Domain.Automapper;
-
-namespace Web.Extensions;
+﻿namespace Web.Extensions;
 
 public static class ApplicationServiceExtensions
 {
@@ -16,6 +13,7 @@ public static class ApplicationServiceExtensions
         /* add services */
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<ITransactionService, TransactionService>();
+        services.AddScoped<IBankAccountService, BankAccountService>();
         services.AddScoped<ITokenService, TokenService>();
         /* add unit of work */
         services.AddScoped<IUnitOfWork, UnitOfWork>();

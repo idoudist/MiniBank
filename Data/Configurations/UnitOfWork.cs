@@ -15,6 +15,8 @@ public class UnitOfWork : IUnitOfWork
 
     public ITransactionRepository TransactionRepository => new TransactionRepository(_context, _mapper);
 
+    public IBankAccountRepository BankAccountRepository => new BankAccountRepository(_context, _mapper);
+
     public async Task<bool> Complete()
     {
         return await _context.SaveChangesAsync() > 0; ;

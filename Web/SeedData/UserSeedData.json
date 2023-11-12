@@ -1,0 +1,50 @@
+[
+  {
+    "UserName": "Liza",
+    "Gender": "female",
+    "DateOfBirth": "1971-02-16",
+    "Created": "2020-05-16",
+    "LastActive": "2019-11-08",
+    "City": "Lille",
+    "Country": "France",
+    "BankAccounts": [
+      {
+        "Name": "Main",
+        "IsMain": true,
+        "IsLocked": false
+      }
+    ]
+  },
+  {
+    "UserName": "Dana",
+    "Gender": "female",
+    "DateOfBirth": "1988-06-15",
+    "Created": "2000-01-20",
+    "LastActive": "2019-02-11",
+    "City": "Hendersonville",
+    "Country": "Central African Republic",
+    "BankAccounts": [
+      {
+        "Name": "Main",
+        "IsMain": true,
+        "IsLocked": false
+      }
+    ]
+  },
+  {
+    "UserName": "Fadi",
+    "Gender": "Male",
+    "DateOfBirth": "1992-11-06",
+    "Created": "2020-01-16",
+    "LastActive": "2019-03-24",
+    "City": "Bordeaux",
+    "Country": "France",
+    "BankAccounts": [
+      {
+        "Name": "Main",
+        "IsMain": true,
+        "IsLocked":  false
+      }
+    ]
+  }
+]

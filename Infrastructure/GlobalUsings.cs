@@ -7,4 +7,5 @@ global using Domain.Helpers.Pagination;
 global using Application.Users;
 global using Application.Transactions;
 global using Application.Utils;
+global using Application.BankAccounts;
 global using AutoMapper;
