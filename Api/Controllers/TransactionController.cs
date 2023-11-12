@@ -1,9 +1,7 @@
-﻿using Api.Controllers;
+﻿
 
 namespace Web.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class TransactionController : BaseApiController
     {
         private readonly ITransactionService _transactionService;
