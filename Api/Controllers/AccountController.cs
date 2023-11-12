@@ -1,9 +1,4 @@
-﻿using Application.Utils;
-using AutoMapper;
-using Domain.Entities.Identity;
-using Microsoft.AspNetCore.Identity;
-
-namespace Api.Controllers;
+﻿namespace Api.Controllers;
 
 public class AccountController : BaseApiController
 {

@@ -9,7 +9,7 @@ public static class ApplicationServiceExtensions
         /* configure db context*/
         services.RegisterDbConnection(config);
         /* configure automapper */
-        services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
+        services.AddAutoMapper(typeof(AutoMapperMappings).Assembly);
         /* add service Filter */
         services.AddScoped<LogUserActivity>();
         /* add services */

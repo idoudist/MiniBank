@@ -1,8 +1,8 @@
-﻿namespace Domain.Helpers.Automapper;
+﻿namespace Domain.Helpers.Automapper.Profiles;
 
-public class AutoMapperProfiles : Profile
+public class TransactionProfile : Profile
 {
-    public AutoMapperProfiles()
+    public TransactionProfile()
     {
         CreateMap<TransactionEntity, TransactionDto>()
             .ForMember(dest => dest.Amount, opt => opt

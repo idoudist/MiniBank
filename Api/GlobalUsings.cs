@@ -2,12 +2,16 @@
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Logging;
+global using Microsoft.AspNetCore.Identity;
 global using System.Net;
 global using System.Text.Json;
+global using AutoMapper;
 global using Domain.Helpers.Pagination;
 global using Domain.Dtos.Requests;
 global using Domain.Dtos.Responses;
+global using Domain.Entities.Identity;
 global using Application.Transactions;
+global using Application.Utils;
 global using Api.Extensions;
 global using Api.Errors;
 global using Api.Controllers;
