@@ -33,5 +33,19 @@ public class DataContext : IdentityDbContext<AppUser, AppRole, int, IdentityUser
             .HasForeignKey(ur => ur.RoleId)
             .IsRequired();
 
+        /*configure BankAccount relations*/
+        builder.Entity<BankAccountEntity>()
+            .HasOne(ba => ba.AppUser)
+            .WithMany(u => u.BankAccounts)
+            .HasForeignKey(ba => ba.AppUserId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        /*configure Transactions relations*/
+        builder.Entity<TransactionEntity>()
+            .HasOne(t => t.BankAccount)
+            .WithMany(u => u.Transactions)
+            .HasForeignKey(t => t.BankAccountId)
+            .OnDelete(DeleteBehavior.Restrict);
+
     }
 }

@@ -2,11 +2,12 @@
 
 namespace Domain.Helpers.Automapper;
 
-public static class AutoMapperMappings
+public class AutoMapperMappings
 {
-    public static void ConfigureMappings(this IMapperConfigurationExpression config)    
+    public AutoMapperMappings()    
     {
-        config.AddProfile<TransactionProfile>();
+        var configuration = new MapperConfiguration(cfg => {
+            cfg.AddProfile<TransactionProfile>();
+        });
     }
-
 }
