@@ -1,6 +1,6 @@
 import { environment } from 'src/environments/environment';
 
-const baseUrl = environment.hostUrl + '/';
+const baseUrl = environment.apiUrl + '/';
 
 export const APP_URLS = {
     home: baseUrl,

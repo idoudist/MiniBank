@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 })
 export class FooterComponent implements OnInit {
 
-  appLink = environment.hostUrl;
+  appLink = environment.apiUrl;
 
   constructor() { }
 
