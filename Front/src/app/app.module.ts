@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, TransferState } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LanguesService } from './services/internal/langues.service';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -12,6 +12,7 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 import { SeoService } from './services/internal/seo.service';
 import { ToastrModule } from 'ngx-toastr';
 import { NotificationService } from './services/internal/notification.service';
+import { JwtInterceptor } from './interceptors/jwt.interceptor';
 
 // AoT requires an exported function for factories
 export const createTranslateLoader = (httpClient: HttpClient) : TranslateHttpLoader => {
@@ -36,7 +37,13 @@ export const createTranslateLoader = (httpClient: HttpClient) : TranslateHttpLoa
     // toaster
     ToastrModule.forRoot(),
   ],
-  providers: [LanguesService, SsrService, SeoService, HttpClient, NotificationService],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
+    LanguesService,
+    SsrService,
+    SeoService,
+    HttpClient,
+    NotificationService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
