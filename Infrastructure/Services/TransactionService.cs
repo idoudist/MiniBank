@@ -18,15 +18,16 @@ public class TransactionService : ITransactionService
             Credit = operation.Amount,
             Debit = 0,
             TransactionType = TransactionType.Deposit,
-            Date = DateTime.Now
+            Date = DateTime.Now,
+            BankAccountId = operation.BankAccountId,
         };
         await _unitOfWork.TransactionRepository.AddTransactionAsync(transaction);
         return await _unitOfWork.Complete();
     }
 
-    public async Task<float> GetBalanceAsync()
+    public async Task<float> GetBalanceAsync(int accountId)
     {
-        return await _unitOfWork.TransactionRepository.GetBalanceAsync();
+        return await _unitOfWork.TransactionRepository.GetBalanceAsync(accountId);
     }
 
     public async Task<PagedList<TransactionDto>> GetTransactionsAsync(TransactionParams transactionParams)
@@ -47,7 +48,8 @@ public class TransactionService : ITransactionService
             Credit = 0,
             Debit = operation.Amount,
             TransactionType = TransactionType.Withdrowl,
-            Date = DateTime.Now
+            Date = DateTime.Now,
+            BankAccountId = operation.BankAccountId
         };
         await _unitOfWork.TransactionRepository.AddTransactionAsync(transaction);
         return await _unitOfWork.Complete();

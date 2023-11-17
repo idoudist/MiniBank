@@ -15,14 +15,16 @@ public class TransactionRepository : ITransactionRepository
         await _context.Transactions.AddAsync(transaction);
     }
 
-    public async Task<float> GetBalanceAsync()
+    public async Task<float> GetBalanceAsync(int accountId)
     {
-        return await _context.Transactions.SumAsync( t => t.Credit - t.Debit );
+        return await _context.Transactions.Where(x => x.BankAccountId == accountId).SumAsync( t => t.Credit - t.Debit );
     }
 
     public async Task<PagedList<TransactionDto>> GetTransactionsAsync(TransactionParams transactionParams)
     {
-        var query = _context.Transactions.AsQueryable();
+        var query = _context.Transactions
+            .Where(t => t.BankAccountId == transactionParams.AccountId)
+            .AsQueryable();
         // projected queries to TransactionDto (create a custom select query instead of select * )
         var projectedQuery = query.ProjectTo<TransactionDto>(_mapper.ConfigurationProvider).AsNoTracking();
         return await PagedList<TransactionDto>.CreateAsync(projectedQuery, transactionParams.PageNumber, transactionParams.PageSize);

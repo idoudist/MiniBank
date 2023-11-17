@@ -33,9 +33,10 @@ namespace Web.Controllers
         }
 
         [HttpGet("balance")]
-        public async Task<ActionResult<float>> GetBalance()
+        public async Task<ActionResult<float>> GetBalance(int accountId)
         {
-            float balance = await _transactionService.GetBalanceAsync();
+            // TODO: you may need to add same control to check that this account belong to the current user
+            float balance = await _transactionService.GetBalanceAsync(accountId);
             return Ok(balance);
         }
 
