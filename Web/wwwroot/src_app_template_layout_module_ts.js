@@ -51,27 +51,11 @@ class AuthGuard {
   canActivate() {
     const storedUser = localStorage.getItem('user');
     if (storedUser === null || storedUser === undefined) {
+      this.toastr.error('you do not have required permission!');
       this.router.navigateByUrl('/login');
       return false;
     }
     return true;
-    /*return this.accountService.currentUser$.pipe(
-      map((user: User) => {
-        if (user) {
-          return true;
-        } else {
-          this.toastr.error('you do not have required permission!');
-          console.log('error auth');
-          this.router.navigateByUrl('/login');
-          return false;
-        }
-      }),
-      catchError(err => {
-        console.log('error auth');
-        this.router.navigateByUrl('/login');
-        return of(false);
-      }),
-    );*/
   }
   static #_ = this.ɵfac = function AuthGuard_Factory(t) {
     return new (t || AuthGuard)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_services_api_account_service__WEBPACK_IMPORTED_MODULE_0__.AccountService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](ngx_toastr__WEBPACK_IMPORTED_MODULE_2__.ToastrService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__.Router));
@@ -790,90 +774,6 @@ function debounceTime(dueTime, scheduler = _scheduler_async__WEBPACK_IMPORTED_MO
 
 /***/ }),
 
-/***/ 3018:
-/*!*******************************************************************************!*\
-  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/AnimationFrameAction.js ***!
-  \*******************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AnimationFrameAction": () => (/* binding */ AnimationFrameAction)
-/* harmony export */ });
-/* harmony import */ var _AsyncAction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncAction */ 5198);
-/* harmony import */ var _animationFrameProvider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./animationFrameProvider */ 2915);
-
-
-class AnimationFrameAction extends _AsyncAction__WEBPACK_IMPORTED_MODULE_0__.AsyncAction {
-  constructor(scheduler, work) {
-    super(scheduler, work);
-    this.scheduler = scheduler;
-    this.work = work;
-  }
-  requestAsyncId(scheduler, id, delay = 0) {
-    if (delay !== null && delay > 0) {
-      return super.requestAsyncId(scheduler, id, delay);
-    }
-    scheduler.actions.push(this);
-    return scheduler._scheduled || (scheduler._scheduled = _animationFrameProvider__WEBPACK_IMPORTED_MODULE_1__.animationFrameProvider.requestAnimationFrame(() => scheduler.flush(undefined)));
-  }
-  recycleAsyncId(scheduler, id, delay = 0) {
-    var _a;
-    if (delay != null ? delay > 0 : this.delay > 0) {
-      return super.recycleAsyncId(scheduler, id, delay);
-    }
-    const {
-      actions
-    } = scheduler;
-    if (id != null && ((_a = actions[actions.length - 1]) === null || _a === void 0 ? void 0 : _a.id) !== id) {
-      _animationFrameProvider__WEBPACK_IMPORTED_MODULE_1__.animationFrameProvider.cancelAnimationFrame(id);
-      scheduler._scheduled = undefined;
-    }
-    return undefined;
-  }
-}
-
-/***/ }),
-
-/***/ 9415:
-/*!**********************************************************************************!*\
-  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/AnimationFrameScheduler.js ***!
-  \**********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AnimationFrameScheduler": () => (/* binding */ AnimationFrameScheduler)
-/* harmony export */ });
-/* harmony import */ var _AsyncScheduler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncScheduler */ 5744);
-
-class AnimationFrameScheduler extends _AsyncScheduler__WEBPACK_IMPORTED_MODULE_0__.AsyncScheduler {
-  flush(action) {
-    this._active = true;
-    const flushId = this._scheduled;
-    this._scheduled = undefined;
-    const {
-      actions
-    } = this;
-    let error;
-    action = action || actions.shift();
-    do {
-      if (error = action.execute(action.state, action.delay)) {
-        break;
-      }
-    } while ((action = actions[0]) && action.id === flushId && actions.shift());
-    this._active = false;
-    if (error) {
-      while ((action = actions[0]) && action.id === flushId && actions.shift()) {
-        action.unsubscribe();
-      }
-      throw error;
-    }
-  }
-}
-
-/***/ }),
-
 /***/ 4594:
 /*!*********************************************************************!*\
   !*** ./node_modules/rxjs/dist/esm/internal/scheduler/AsapAction.js ***!
@@ -955,72 +855,6 @@ class AsapScheduler extends _AsyncScheduler__WEBPACK_IMPORTED_MODULE_0__.AsyncSc
     }
   }
 }
-
-/***/ }),
-
-/***/ 8184:
-/*!*************************************************************************!*\
-  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/animationFrame.js ***!
-  \*************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "animationFrame": () => (/* binding */ animationFrame),
-/* harmony export */   "animationFrameScheduler": () => (/* binding */ animationFrameScheduler)
-/* harmony export */ });
-/* harmony import */ var _AnimationFrameAction__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AnimationFrameAction */ 3018);
-/* harmony import */ var _AnimationFrameScheduler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AnimationFrameScheduler */ 9415);
-
-
-const animationFrameScheduler = new _AnimationFrameScheduler__WEBPACK_IMPORTED_MODULE_0__.AnimationFrameScheduler(_AnimationFrameAction__WEBPACK_IMPORTED_MODULE_1__.AnimationFrameAction);
-const animationFrame = animationFrameScheduler;
-
-/***/ }),
-
-/***/ 2915:
-/*!*********************************************************************************!*\
-  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/animationFrameProvider.js ***!
-  \*********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "animationFrameProvider": () => (/* binding */ animationFrameProvider)
-/* harmony export */ });
-/* harmony import */ var _Subscription__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Subscription */ 6078);
-
-const animationFrameProvider = {
-  schedule(callback) {
-    let request = requestAnimationFrame;
-    let cancel = cancelAnimationFrame;
-    const {
-      delegate
-    } = animationFrameProvider;
-    if (delegate) {
-      request = delegate.requestAnimationFrame;
-      cancel = delegate.cancelAnimationFrame;
-    }
-    const handle = request(timestamp => {
-      cancel = undefined;
-      callback(timestamp);
-    });
-    return new _Subscription__WEBPACK_IMPORTED_MODULE_0__.Subscription(() => cancel === null || cancel === void 0 ? void 0 : cancel(handle));
-  },
-  requestAnimationFrame(...args) {
-    const {
-      delegate
-    } = animationFrameProvider;
-    return ((delegate === null || delegate === void 0 ? void 0 : delegate.requestAnimationFrame) || requestAnimationFrame)(...args);
-  },
-  cancelAnimationFrame(...args) {
-    const {
-      delegate
-    } = animationFrameProvider;
-    return ((delegate === null || delegate === void 0 ? void 0 : delegate.cancelAnimationFrame) || cancelAnimationFrame)(...args);
-  },
-  delegate: undefined
-};
 
 /***/ }),
 

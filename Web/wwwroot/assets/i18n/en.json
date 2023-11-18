@@ -32,5 +32,16 @@
     "PASSWORD": "Password",
     "NO-ACCOUNT": "Don't have an account? ",
     "REGISTER": "Register here"
+  },
+  "SIGN-UP": {
+    "REGISTER": "Sign up",
+    "ME": "I am a",
+    "MALE": "Male",
+    "FEMALE": "Female",
+    "USERNAME": "Username",
+    "DOB": "Date Of Birth",
+    "CITY": "City",
+    "COUNTRY": "Country",
+    "PASSWORD": "Password",
   }
 }

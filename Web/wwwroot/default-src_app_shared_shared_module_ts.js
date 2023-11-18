@@ -1,6 +1,215 @@
 "use strict";
 (self["webpackChunkMiniBank"] = self["webpackChunkMiniBank"] || []).push([["default-src_app_shared_shared_module_ts"],{
 
+/***/ 8139:
+/*!*****************************************************************!*\
+  !*** ./src/app/shared/forms/date-input/date-input.component.ts ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DateInputComponent": () => (/* binding */ DateInputComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 4666);
+/* harmony import */ var ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-bootstrap/datepicker */ 1863);
+
+
+
+
+function DateInputComponent_div_2_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r0.label, " is required ");
+  }
+}
+class DateInputComponent {
+  constructor(ngControl) {
+    this.ngControl = ngControl;
+    this.label = "";
+    this.maxDate = new Date(8640000000000000);
+    this.minDate = new Date(-8640000000000000);
+    // partial means it is not necessari to implement all fields
+    this.bsConfig = {};
+    this.ngControl.valueAccessor = this;
+    this.bsConfig = {
+      containerClass: 'theme-red',
+      dateInputFormat: 'DD MMMM YYYY'
+    };
+  }
+  writeValue(obj) {}
+  registerOnChange(fn) {}
+  registerOnTouched(fn) {}
+  // string checking for FormControl Type
+  convertToFormControl(absCtrl) {
+    const ctrl = absCtrl;
+    return ctrl;
+  }
+  static #_ = this.ɵfac = function DateInputComponent_Factory(t) {
+    return new (t || DateInputComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControl, 2));
+  };
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+    type: DateInputComponent,
+    selectors: [["app-date-input"]],
+    inputs: {
+      label: "label",
+      maxDate: "maxDate",
+      minDate: "minDate"
+    },
+    decls: 3,
+    vars: 8,
+    consts: [[1, "form-group", "mt-2"], ["type", "text", "bsDatepicker", "", 1, "form-control", 3, "formControl", "placeholder", "bsConfig", "maxDate", "minDate"], ["class", "invalid-feedback", 4, "ngIf"], [1, "invalid-feedback"]],
+    template: function DateInputComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, DateInputComponent_div_2_Template, 2, 1, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("is-invalid", ctx.ngControl.touched && ctx.ngControl.invalid);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", ctx.label);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formControl", ctx.convertToFormControl(ctx.ngControl.control))("bsConfig", ctx.bsConfig)("maxDate", ctx.maxDate)("minDate", ctx.minDate);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.ngControl.control == null ? null : ctx.ngControl.control.errors == null ? null : ctx.ngControl.control.errors["required"]);
+      }
+    },
+    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatus, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_3__.BsDatepickerDirective, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_3__.BsDatepickerInputDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControlDirective],
+    styles: ["\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+  });
+}
+
+/***/ }),
+
+/***/ 3649:
+/*!*****************************************************************!*\
+  !*** ./src/app/shared/forms/text-input/text-input.component.ts ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TextInputComponent": () => (/* binding */ TextInputComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 4666);
+
+
+
+function TextInputComponent_div_2_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Please enter a ", ctx_r0.label, " ");
+  }
+}
+function TextInputComponent_div_3_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r1.label, " must be at least ", ctx_r1.ngControl.control == null ? null : ctx_r1.ngControl.control.errors == null ? null : ctx_r1.ngControl.control.errors["minlength"]["requiredLength"], " ");
+  }
+}
+function TextInputComponent_div_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r2.label, " must be at most ", ctx_r2.ngControl.control == null ? null : ctx_r2.ngControl.control.errors == null ? null : ctx_r2.ngControl.control.errors["maxlength"]["requiredLength"], " ");
+  }
+}
+function TextInputComponent_div_5_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Password do not match ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+class TextInputComponent {
+  constructor(ngControl) {
+    this.ngControl = ngControl;
+    this.label = "";
+    this.type = "text";
+    this.ngControl.valueAccessor = this;
+  }
+  writeValue(obj) {}
+  registerOnChange(fn) {}
+  registerOnTouched(fn) {}
+  // string checking for FormControl Type
+  convertToFormControl(absCtrl) {
+    const ctrl = absCtrl;
+    return ctrl;
+  }
+  static #_ = this.ɵfac = function TextInputComponent_Factory(t) {
+    return new (t || TextInputComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControl, 2));
+  };
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+    type: TextInputComponent,
+    selectors: [["app-text-input"]],
+    inputs: {
+      label: "label",
+      type: "type"
+    },
+    decls: 6,
+    vars: 9,
+    consts: [[1, "form-group", "mt-2"], [1, "form-control", 3, "type", "formControl", "placeholder"], ["class", "invalid-feedback", 4, "ngIf"], [1, "invalid-feedback"]],
+    template: function TextInputComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, TextInputComponent_div_2_Template, 2, 1, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, TextInputComponent_div_3_Template, 2, 2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, TextInputComponent_div_4_Template, 2, 2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, TextInputComponent_div_5_Template, 2, 0, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("is-invalid", ctx.ngControl.touched && ctx.ngControl.invalid);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("type", ctx.type);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", ctx.label);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formControl", ctx.convertToFormControl(ctx.ngControl.control));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.ngControl.control == null ? null : ctx.ngControl.control.errors == null ? null : ctx.ngControl.control.errors["required"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.ngControl.control == null ? null : ctx.ngControl.control.errors == null ? null : ctx.ngControl.control.errors["minlength"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.ngControl.control == null ? null : ctx.ngControl.control.errors == null ? null : ctx.ngControl.control.errors["maxlength"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.ngControl.control == null ? null : ctx.ngControl.control.errors == null ? null : ctx.ngControl.control.errors["isMatching"]);
+      }
+    },
+    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControlDirective],
+    styles: ["\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+  });
+}
+
+/***/ }),
+
 /***/ 4466:
 /*!*****************************************!*\
   !*** ./src/app/shared/shared.module.ts ***!
@@ -11,12 +220,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SharedModule": () => (/* binding */ SharedModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ 4666);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 4534);
-/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ngx-translate/core */ 3935);
-/* harmony import */ var ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ngx-bootstrap/pagination */ 4448);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 4666);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 4534);
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ngx-translate/core */ 3935);
+/* harmony import */ var ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-bootstrap/pagination */ 4448);
+/* harmony import */ var _forms_text_input_text_input_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./forms/text-input/text-input.component */ 3649);
+/* harmony import */ var _forms_date_input_date_input_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./forms/date-input/date-input.component */ 8139);
+/* harmony import */ var ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ngx-bootstrap/datepicker */ 1863);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+
+
 
 
 
@@ -28,17 +244,20 @@ class SharedModule {
   static #_ = this.ɵfac = function SharedModule_Factory(t) {
     return new (t || SharedModule)();
   };
-  static #_2 = this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
+  static #_2 = this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({
     type: SharedModule
   });
-  static #_3 = this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
-    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormsModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__.TranslateModule, ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_5__.PaginationModule.forRoot(), _angular_forms__WEBPACK_IMPORTED_MODULE_2__.ReactiveFormsModule, _angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormsModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__.TranslateModule, ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_5__.PaginationModule, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.ReactiveFormsModule]
+  static #_3 = this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({
+    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormsModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_6__.TranslateModule, ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_7__.PaginationModule.forRoot(), ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_8__.BsDatepickerModule.forRoot(), _angular_forms__WEBPACK_IMPORTED_MODULE_4__.ReactiveFormsModule, _angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormsModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_6__.TranslateModule, ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_7__.PaginationModule, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.ReactiveFormsModule]
   });
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](SharedModule, {
-    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormsModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__.TranslateModule, ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_5__.PaginationModule, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.ReactiveFormsModule],
-    exports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormsModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__.TranslateModule, ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_5__.PaginationModule, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.ReactiveFormsModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](SharedModule, {
+    declarations: [_forms_text_input_text_input_component__WEBPACK_IMPORTED_MODULE_0__.TextInputComponent, _forms_date_input_date_input_component__WEBPACK_IMPORTED_MODULE_1__.DateInputComponent],
+    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormsModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_6__.TranslateModule, ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_7__.PaginationModule, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_8__.BsDatepickerModule, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.ReactiveFormsModule],
+    exports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormsModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_6__.TranslateModule, ngx_bootstrap_pagination__WEBPACK_IMPORTED_MODULE_7__.PaginationModule, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.ReactiveFormsModule,
+    // components
+    _forms_text_input_text_input_component__WEBPACK_IMPORTED_MODULE_0__.TextInputComponent, _forms_date_input_date_input_component__WEBPACK_IMPORTED_MODULE_1__.DateInputComponent]
   });
 })();
 
@@ -3087,6 +3306,90 @@ class Action extends _Subscription__WEBPACK_IMPORTED_MODULE_0__.Subscription {
 
 /***/ }),
 
+/***/ 3018:
+/*!*******************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/AnimationFrameAction.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AnimationFrameAction": () => (/* binding */ AnimationFrameAction)
+/* harmony export */ });
+/* harmony import */ var _AsyncAction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncAction */ 5198);
+/* harmony import */ var _animationFrameProvider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./animationFrameProvider */ 2915);
+
+
+class AnimationFrameAction extends _AsyncAction__WEBPACK_IMPORTED_MODULE_0__.AsyncAction {
+  constructor(scheduler, work) {
+    super(scheduler, work);
+    this.scheduler = scheduler;
+    this.work = work;
+  }
+  requestAsyncId(scheduler, id, delay = 0) {
+    if (delay !== null && delay > 0) {
+      return super.requestAsyncId(scheduler, id, delay);
+    }
+    scheduler.actions.push(this);
+    return scheduler._scheduled || (scheduler._scheduled = _animationFrameProvider__WEBPACK_IMPORTED_MODULE_1__.animationFrameProvider.requestAnimationFrame(() => scheduler.flush(undefined)));
+  }
+  recycleAsyncId(scheduler, id, delay = 0) {
+    var _a;
+    if (delay != null ? delay > 0 : this.delay > 0) {
+      return super.recycleAsyncId(scheduler, id, delay);
+    }
+    const {
+      actions
+    } = scheduler;
+    if (id != null && ((_a = actions[actions.length - 1]) === null || _a === void 0 ? void 0 : _a.id) !== id) {
+      _animationFrameProvider__WEBPACK_IMPORTED_MODULE_1__.animationFrameProvider.cancelAnimationFrame(id);
+      scheduler._scheduled = undefined;
+    }
+    return undefined;
+  }
+}
+
+/***/ }),
+
+/***/ 9415:
+/*!**********************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/AnimationFrameScheduler.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AnimationFrameScheduler": () => (/* binding */ AnimationFrameScheduler)
+/* harmony export */ });
+/* harmony import */ var _AsyncScheduler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncScheduler */ 5744);
+
+class AnimationFrameScheduler extends _AsyncScheduler__WEBPACK_IMPORTED_MODULE_0__.AsyncScheduler {
+  flush(action) {
+    this._active = true;
+    const flushId = this._scheduled;
+    this._scheduled = undefined;
+    const {
+      actions
+    } = this;
+    let error;
+    action = action || actions.shift();
+    do {
+      if (error = action.execute(action.state, action.delay)) {
+        break;
+      }
+    } while ((action = actions[0]) && action.id === flushId && actions.shift());
+    this._active = false;
+    if (error) {
+      while ((action = actions[0]) && action.id === flushId && actions.shift()) {
+        action.unsubscribe();
+      }
+      throw error;
+    }
+  }
+}
+
+/***/ }),
+
 /***/ 5198:
 /*!**********************************************************************!*\
   !*** ./node_modules/rxjs/dist/esm/internal/scheduler/AsyncAction.js ***!
@@ -3232,6 +3535,129 @@ class AsyncScheduler extends _Scheduler__WEBPACK_IMPORTED_MODULE_0__.Scheduler {
 
 /***/ }),
 
+/***/ 5864:
+/*!**********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/QueueAction.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "QueueAction": () => (/* binding */ QueueAction)
+/* harmony export */ });
+/* harmony import */ var _AsyncAction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncAction */ 5198);
+
+class QueueAction extends _AsyncAction__WEBPACK_IMPORTED_MODULE_0__.AsyncAction {
+  constructor(scheduler, work) {
+    super(scheduler, work);
+    this.scheduler = scheduler;
+    this.work = work;
+  }
+  schedule(state, delay = 0) {
+    if (delay > 0) {
+      return super.schedule(state, delay);
+    }
+    this.delay = delay;
+    this.state = state;
+    this.scheduler.flush(this);
+    return this;
+  }
+  execute(state, delay) {
+    return delay > 0 || this.closed ? super.execute(state, delay) : this._execute(state, delay);
+  }
+  requestAsyncId(scheduler, id, delay = 0) {
+    if (delay != null && delay > 0 || delay == null && this.delay > 0) {
+      return super.requestAsyncId(scheduler, id, delay);
+    }
+    scheduler.flush(this);
+    return 0;
+  }
+}
+
+/***/ }),
+
+/***/ 4615:
+/*!*************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/QueueScheduler.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "QueueScheduler": () => (/* binding */ QueueScheduler)
+/* harmony export */ });
+/* harmony import */ var _AsyncScheduler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncScheduler */ 5744);
+
+class QueueScheduler extends _AsyncScheduler__WEBPACK_IMPORTED_MODULE_0__.AsyncScheduler {}
+
+/***/ }),
+
+/***/ 8184:
+/*!*************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/animationFrame.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "animationFrame": () => (/* binding */ animationFrame),
+/* harmony export */   "animationFrameScheduler": () => (/* binding */ animationFrameScheduler)
+/* harmony export */ });
+/* harmony import */ var _AnimationFrameAction__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AnimationFrameAction */ 3018);
+/* harmony import */ var _AnimationFrameScheduler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AnimationFrameScheduler */ 9415);
+
+
+const animationFrameScheduler = new _AnimationFrameScheduler__WEBPACK_IMPORTED_MODULE_0__.AnimationFrameScheduler(_AnimationFrameAction__WEBPACK_IMPORTED_MODULE_1__.AnimationFrameAction);
+const animationFrame = animationFrameScheduler;
+
+/***/ }),
+
+/***/ 2915:
+/*!*********************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/animationFrameProvider.js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "animationFrameProvider": () => (/* binding */ animationFrameProvider)
+/* harmony export */ });
+/* harmony import */ var _Subscription__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Subscription */ 6078);
+
+const animationFrameProvider = {
+  schedule(callback) {
+    let request = requestAnimationFrame;
+    let cancel = cancelAnimationFrame;
+    const {
+      delegate
+    } = animationFrameProvider;
+    if (delegate) {
+      request = delegate.requestAnimationFrame;
+      cancel = delegate.cancelAnimationFrame;
+    }
+    const handle = request(timestamp => {
+      cancel = undefined;
+      callback(timestamp);
+    });
+    return new _Subscription__WEBPACK_IMPORTED_MODULE_0__.Subscription(() => cancel === null || cancel === void 0 ? void 0 : cancel(handle));
+  },
+  requestAnimationFrame(...args) {
+    const {
+      delegate
+    } = animationFrameProvider;
+    return ((delegate === null || delegate === void 0 ? void 0 : delegate.requestAnimationFrame) || requestAnimationFrame)(...args);
+  },
+  cancelAnimationFrame(...args) {
+    const {
+      delegate
+    } = animationFrameProvider;
+    return ((delegate === null || delegate === void 0 ? void 0 : delegate.cancelAnimationFrame) || cancelAnimationFrame)(...args);
+  },
+  delegate: undefined
+};
+
+/***/ }),
+
 /***/ 6936:
 /*!****************************************************************!*\
   !*** ./node_modules/rxjs/dist/esm/internal/scheduler/async.js ***!
@@ -3280,6 +3706,26 @@ const intervalProvider = {
   },
   delegate: undefined
 };
+
+/***/ }),
+
+/***/ 5650:
+/*!****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm/internal/scheduler/queue.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "queue": () => (/* binding */ queue),
+/* harmony export */   "queueScheduler": () => (/* binding */ queueScheduler)
+/* harmony export */ });
+/* harmony import */ var _QueueAction__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QueueAction */ 5864);
+/* harmony import */ var _QueueScheduler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./QueueScheduler */ 4615);
+
+
+const queueScheduler = new _QueueScheduler__WEBPACK_IMPORTED_MODULE_0__.QueueScheduler(_QueueAction__WEBPACK_IMPORTED_MODULE_1__.QueueAction);
+const queue = queueScheduler;
 
 /***/ }),
 
@@ -28162,6 +28608,13926 @@ NgbModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ�
 
 /***/ }),
 
+/***/ 10:
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/chronos/fesm2020/ngx-bootstrap-chronos.mjs ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "add": () => (/* binding */ add),
+/* harmony export */   "arLocale": () => (/* binding */ arLocale),
+/* harmony export */   "bgLocale": () => (/* binding */ bgLocale),
+/* harmony export */   "caLocale": () => (/* binding */ caLocale),
+/* harmony export */   "csLocale": () => (/* binding */ csLocale),
+/* harmony export */   "daLocale": () => (/* binding */ daLocale),
+/* harmony export */   "deLocale": () => (/* binding */ deLocale),
+/* harmony export */   "defineLocale": () => (/* binding */ defineLocale),
+/* harmony export */   "enGbLocale": () => (/* binding */ enGbLocale),
+/* harmony export */   "endOf": () => (/* binding */ endOf),
+/* harmony export */   "esDoLocale": () => (/* binding */ esDoLocale),
+/* harmony export */   "esLocale": () => (/* binding */ esLocale),
+/* harmony export */   "esPrLocale": () => (/* binding */ esPrLocale),
+/* harmony export */   "esUsLocale": () => (/* binding */ esUsLocale),
+/* harmony export */   "etLocale": () => (/* binding */ etLocale),
+/* harmony export */   "fiLocale": () => (/* binding */ fiLocale),
+/* harmony export */   "formatDate": () => (/* binding */ formatDate),
+/* harmony export */   "frLocale": () => (/* binding */ frLocale),
+/* harmony export */   "getDay": () => (/* binding */ getDay),
+/* harmony export */   "getFirstDayOfMonth": () => (/* binding */ getFirstDayOfMonth),
+/* harmony export */   "getFullYear": () => (/* binding */ getFullYear),
+/* harmony export */   "getLocale": () => (/* binding */ getLocale),
+/* harmony export */   "getMonth": () => (/* binding */ getMonth),
+/* harmony export */   "getSetGlobalLocale": () => (/* binding */ getSetGlobalLocale),
+/* harmony export */   "glLocale": () => (/* binding */ glLocale),
+/* harmony export */   "heLocale": () => (/* binding */ heLocale),
+/* harmony export */   "hiLocale": () => (/* binding */ hiLocale),
+/* harmony export */   "hrLocale": () => (/* binding */ hrLocale),
+/* harmony export */   "huLocale": () => (/* binding */ huLocale),
+/* harmony export */   "idLocale": () => (/* binding */ idLocale),
+/* harmony export */   "isAfter": () => (/* binding */ isAfter),
+/* harmony export */   "isArray": () => (/* binding */ isArray),
+/* harmony export */   "isBefore": () => (/* binding */ isBefore),
+/* harmony export */   "isDate": () => (/* binding */ isDate),
+/* harmony export */   "isDateValid": () => (/* binding */ isDateValid),
+/* harmony export */   "isDisabledDay": () => (/* binding */ isDisabledDay),
+/* harmony export */   "isFirstDayOfWeek": () => (/* binding */ isFirstDayOfWeek),
+/* harmony export */   "isSame": () => (/* binding */ isSame),
+/* harmony export */   "isSameDay": () => (/* binding */ isSameDay$1),
+/* harmony export */   "isSameMonth": () => (/* binding */ isSameMonth),
+/* harmony export */   "isSameYear": () => (/* binding */ isSameYear),
+/* harmony export */   "itLocale": () => (/* binding */ itLocale),
+/* harmony export */   "jaLocale": () => (/* binding */ jaLocale),
+/* harmony export */   "kaLocale": () => (/* binding */ kaLocale),
+/* harmony export */   "kkLocale": () => (/* binding */ kkLocale),
+/* harmony export */   "koLocale": () => (/* binding */ koLocale),
+/* harmony export */   "listLocales": () => (/* binding */ listLocales),
+/* harmony export */   "ltLocale": () => (/* binding */ ltLocale),
+/* harmony export */   "lvLocale": () => (/* binding */ lvLocale),
+/* harmony export */   "mnLocale": () => (/* binding */ mnLocale),
+/* harmony export */   "nbLocale": () => (/* binding */ nbLocale),
+/* harmony export */   "nlBeLocale": () => (/* binding */ nlBeLocale),
+/* harmony export */   "nlLocale": () => (/* binding */ nlLocale),
+/* harmony export */   "parseDate": () => (/* binding */ parseDate),
+/* harmony export */   "plLocale": () => (/* binding */ plLocale),
+/* harmony export */   "ptBrLocale": () => (/* binding */ ptBrLocale),
+/* harmony export */   "roLocale": () => (/* binding */ roLocale),
+/* harmony export */   "ruLocale": () => (/* binding */ ruLocale),
+/* harmony export */   "setFullDate": () => (/* binding */ setFullDate),
+/* harmony export */   "shiftDate": () => (/* binding */ shiftDate),
+/* harmony export */   "skLocale": () => (/* binding */ skLocale),
+/* harmony export */   "slLocale": () => (/* binding */ slLocale),
+/* harmony export */   "sqLocale": () => (/* binding */ sqLocale),
+/* harmony export */   "startOf": () => (/* binding */ startOf),
+/* harmony export */   "subtract": () => (/* binding */ subtract),
+/* harmony export */   "svLocale": () => (/* binding */ svLocale),
+/* harmony export */   "thBeLocale": () => (/* binding */ thBeLocale),
+/* harmony export */   "thLocale": () => (/* binding */ thLocale),
+/* harmony export */   "trLocale": () => (/* binding */ trLocale),
+/* harmony export */   "ukLocale": () => (/* binding */ ukLocale),
+/* harmony export */   "updateLocale": () => (/* binding */ updateLocale),
+/* harmony export */   "utcAsLocal": () => (/* binding */ utcAsLocal),
+/* harmony export */   "viLocale": () => (/* binding */ viLocale),
+/* harmony export */   "zhCnLocale": () => (/* binding */ zhCnLocale)
+/* harmony export */ });
+function mod(n, x) {
+  return (n % x + x) % x;
+}
+function absFloor(num) {
+  return num < 0 ? Math.ceil(num) || 0 : Math.floor(num);
+}
+function isString(str) {
+  return typeof str === 'string';
+}
+function isDate(value) {
+  return value instanceof Date || Object.prototype.toString.call(value) === '[object Date]';
+}
+function isBoolean(value) {
+  return value === true || value === false;
+}
+function isDateValid(date) {
+  return date && date.getTime && !isNaN(date.getTime());
+}
+// eslint-disable-next-line @typescript-eslint/ban-types
+function isFunction(fn) {
+  return fn instanceof Function || Object.prototype.toString.call(fn) === '[object Function]';
+}
+function isNumber(value) {
+  return typeof value === 'number' || Object.prototype.toString.call(value) === '[object Number]';
+}
+function isArray(input) {
+  return input instanceof Array || Object.prototype.toString.call(input) === '[object Array]';
+}
+function hasOwnProp(a /*object*/, b) {
+  return Object.prototype.hasOwnProperty.call(a, b);
+}
+function isObject(input /*object*/) {
+  // IE8 will treat undefined and null as object if it wasn't for
+  // input != null
+  return input != null && Object.prototype.toString.call(input) === '[object Object]';
+}
+function isObjectEmpty(obj) {
+  if (Object.getOwnPropertyNames) {
+    return Object.getOwnPropertyNames(obj).length === 0;
+  }
+  let k;
+  for (k in obj) {
+    // eslint-disable-next-line no-prototype-builtins
+    if (obj.hasOwnProperty(k)) {
+      return false;
+    }
+  }
+  return true;
+}
+function isUndefined(input) {
+  return input === void 0;
+}
+function toInt(argumentForCoercion) {
+  const coercedNumber = +argumentForCoercion;
+  let value = 0;
+  if (coercedNumber !== 0 && isFinite(coercedNumber)) {
+    value = absFloor(coercedNumber);
+  }
+  return value;
+}
+const aliases = {};
+const _mapUnits = {
+  date: 'day',
+  hour: 'hours',
+  minute: 'minutes',
+  second: 'seconds',
+  millisecond: 'milliseconds'
+};
+function addUnitAlias(unit, shorthand) {
+  const lowerCase = unit.toLowerCase();
+  let _unit = unit;
+  if (lowerCase in _mapUnits) {
+    _unit = _mapUnits[lowerCase];
+  }
+  aliases[lowerCase] = aliases[`${lowerCase}s`] = aliases[shorthand] = _unit;
+}
+function normalizeUnits(units) {
+  return isString(units) ? aliases[units] || aliases[units.toLowerCase()] : undefined;
+}
+function normalizeObjectUnits(inputObject) {
+  const normalizedInput = {};
+  let normalizedProp;
+  let prop;
+  for (prop in inputObject) {
+    if (hasOwnProp(inputObject, prop)) {
+      normalizedProp = normalizeUnits(prop);
+      if (normalizedProp) {
+        normalizedInput[normalizedProp] = inputObject[prop];
+      }
+    }
+  }
+  return normalizedInput;
+}
+
+// place in new Date([array])
+const YEAR = 0;
+const MONTH = 1;
+const DATE = 2;
+const HOUR = 3;
+const MINUTE = 4;
+const SECOND = 5;
+const MILLISECOND = 6;
+const WEEK = 7;
+const WEEKDAY = 8;
+function zeroFill(num, targetLength, forceSign) {
+  const absNumber = `${Math.abs(num)}`;
+  const zerosToFill = targetLength - absNumber.length;
+  const sign = num >= 0;
+  const _sign = sign ? forceSign ? '+' : '' : '-';
+  // todo: this is crazy slow
+  const _zeros = Math.pow(10, Math.max(0, zerosToFill)).toString().substr(1);
+  return _sign + _zeros + absNumber;
+}
+const formatFunctions = {};
+const formatTokenFunctions = {};
+const formattingTokens = /(\[[^\[]*\])|(\\)?([Hh]mm(ss)?|Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Qo?|YYYYYY|YYYYY|YYYY|YY|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|kk?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g;
+// token:    'M'
+// padded:   ['MM', 2]
+// ordinal:  'Mo'
+// callback: function () { this.month() + 1 }
+function addFormatToken(token, padded, ordinal, callback) {
+  if (token) {
+    formatTokenFunctions[token] = callback;
+  }
+  if (padded) {
+    formatTokenFunctions[padded[0]] = function () {
+      return zeroFill(callback.apply(null, arguments), padded[1], padded[2]);
+    };
+  }
+  if (ordinal) {
+    formatTokenFunctions[ordinal] = function (date, opts) {
+      return opts.locale.ordinal(callback.apply(null, arguments), token);
+    };
+  }
+}
+function makeFormatFunction(format) {
+  const array = format.match(formattingTokens);
+  const length = array.length;
+  const formatArr = new Array(length);
+  for (let i = 0; i < length; i++) {
+    formatArr[i] = formatTokenFunctions[array[i]] ? formatTokenFunctions[array[i]] : removeFormattingTokens(array[i]);
+  }
+  return function (date, locale, isUTC, offset = 0) {
+    let output = '';
+    for (let j = 0; j < length; j++) {
+      output += isFunction(formatArr[j]) ? formatArr[j].call(null, date, {
+        format,
+        locale,
+        isUTC,
+        offset
+      }) : formatArr[j];
+    }
+    return output;
+  };
+}
+function removeFormattingTokens(input) {
+  if (input.match(/\[[\s\S]/)) {
+    return input.replace(/^\[|\]$/g, '');
+  }
+  return input.replace(/\\/g, '');
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function createUTCDate(y, m, d) {
+  // eslint-disable-next-line prefer-rest-params
+  const date = new Date(Date.UTC.apply(null, arguments));
+  // the Date.UTC function remaps years 0-99 to 1900-1999
+  if (y < 100 && y >= 0 && isFinite(date.getUTCFullYear())) {
+    date.setUTCFullYear(y);
+  }
+  return date;
+}
+function createDate(y, m = 0, d = 1, h = 0, M = 0, s = 0, ms = 0) {
+  const date = new Date(y, m, d, h, M, s, ms);
+  // the date constructor remaps years 0-99 to 1900-1999
+  if (y < 100 && y >= 0 && isFinite(date.getFullYear())) {
+    date.setFullYear(y);
+  }
+  return date;
+}
+function getHours(date, isUTC = false) {
+  return isUTC ? date.getUTCHours() : date.getHours();
+}
+function getMinutes(date, isUTC = false) {
+  return isUTC ? date.getUTCMinutes() : date.getMinutes();
+}
+function getSeconds(date, isUTC = false) {
+  return isUTC ? date.getUTCSeconds() : date.getSeconds();
+}
+function getMilliseconds(date, isUTC = false) {
+  return isUTC ? date.getUTCMilliseconds() : date.getMilliseconds();
+}
+function getTime(date) {
+  return date.getTime();
+}
+function getDay(date, isUTC = false) {
+  return isUTC ? date.getUTCDay() : date.getDay();
+}
+function getDate(date, isUTC = false) {
+  return isUTC ? date.getUTCDate() : date.getDate();
+}
+function getMonth(date, isUTC = false) {
+  return isUTC ? date.getUTCMonth() : date.getMonth();
+}
+function getFullYear(date, isUTC = false) {
+  return isUTC ? date.getUTCFullYear() : date.getFullYear();
+}
+function getUnixTime(date) {
+  return Math.floor(date.valueOf() / 1000);
+}
+function unix(date) {
+  return Math.floor(date.valueOf() / 1000);
+}
+function getFirstDayOfMonth(date) {
+  return createDate(date.getFullYear(), date.getMonth(), 1, date.getHours(), date.getMinutes(), date.getSeconds());
+}
+function daysInMonth$1(date) {
+  return _daysInMonth(date.getFullYear(), date.getMonth());
+}
+function _daysInMonth(year, month) {
+  return new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
+}
+function isFirstDayOfWeek(date, firstDayOfWeek) {
+  return date.getDay() === Number(firstDayOfWeek);
+}
+function isSameMonth(date1, date2) {
+  if (!date1 || !date2) {
+    return false;
+  }
+  return isSameYear(date1, date2) && getMonth(date1) === getMonth(date2);
+}
+function isSameYear(date1, date2) {
+  if (!date1 || !date2) {
+    return false;
+  }
+  return getFullYear(date1) === getFullYear(date2);
+}
+function isSameDay$1(date1, date2) {
+  if (!date1 || !date2) {
+    return false;
+  }
+  return isSameYear(date1, date2) && isSameMonth(date1, date2) && getDate(date1) === getDate(date2);
+}
+const match1 = /\d/; //       0 - 9
+const match2 = /\d\d/; //      00 - 99
+const match3 = /\d{3}/; //     000 - 999
+const match4 = /\d{4}/; //    0000 - 9999
+const match6 = /[+-]?\d{6}/; // -999999 - 999999
+const match1to2 = /\d\d?/; //       0 - 99
+const match3to4 = /\d\d\d\d?/; //     999 - 9999
+const match5to6 = /\d\d\d\d\d\d?/; //   99999 - 999999
+const match1to3 = /\d{1,3}/; //       0 - 999
+const match1to4 = /\d{1,4}/; //       0 - 9999
+const match1to6 = /[+-]?\d{1,6}/; // -999999 - 999999
+const matchUnsigned = /\d+/; //       0 - inf
+const matchSigned = /[+-]?\d+/; //    -inf - inf
+const matchOffset = /Z|[+-]\d\d:?\d\d/gi; // +00:00 -00:00 +0000 -0000 or Z
+const matchShortOffset = /Z|[+-]\d\d(?::?\d\d)?/gi; // +00 -00 +00:00 -00:00 +0000 -0000 or Z
+const matchTimestamp = /[+-]?\d+(\.\d{1,3})?/; // 123456789 123456789.123
+// any word (or two) characters or numbers including two/three word month in arabic.
+// includes scottish gaelic two word and hyphenated months
+const matchWord = /[0-9]{0,256}['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]{1,256}|[\u0600-\u06FF\/]{1,256}(\s*?[\u0600-\u06FF]{1,256}){1,2}/i;
+const regexes = {};
+function addRegexToken(token, regex, strictRegex) {
+  if (isFunction(regex)) {
+    regexes[token] = regex;
+    return;
+  }
+  regexes[token] = function (isStrict, locale) {
+    return isStrict && strictRegex ? strictRegex : regex;
+  };
+}
+function getParseRegexForToken(token, locale) {
+  const _strict = false;
+  if (!hasOwnProp(regexes, token)) {
+    return new RegExp(unescapeFormat(token));
+  }
+  return regexes[token](_strict, locale);
+}
+// Code from http://stackoverflow.com/questions/3561493/is-there-a-regexp-escape-function-in-javascript
+function unescapeFormat(str) {
+  return regexEscape(str.replace('\\', '').replace(/\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g, (matched, p1, p2, p3, p4) => p1 || p2 || p3 || p4));
+}
+function regexEscape(str) {
+  return str.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+}
+const tokens = {};
+function addParseToken(token, callback) {
+  const _token = isString(token) ? [token] : token;
+  let func = callback;
+  if (isNumber(callback)) {
+    func = function (input, array, config) {
+      array[callback] = toInt(input);
+      return config;
+    };
+  }
+  if (isArray(_token) && isFunction(func)) {
+    let i;
+    for (i = 0; i < _token.length; i++) {
+      tokens[_token[i]] = func;
+    }
+  }
+}
+function addWeekParseToken(token, callback) {
+  addParseToken(token, function (input, array, config, _token) {
+    config._w = config._w || {};
+    return callback(input, config._w, config, _token);
+  });
+}
+function addTimeToArrayFromToken(token, input, config) {
+  if (input != null && hasOwnProp(tokens, token)) {
+    tokens[token](input, config._a, config, token);
+  }
+  return config;
+}
+const priorities = {};
+function addUnitPriority(unit, priority) {
+  priorities[unit] = priority;
+}
+/*
+export function getPrioritizedUnits(unitsObj) {
+  const units = [];
+  let unit;
+  for (unit in unitsObj) {
+    if (unitsObj.hasOwnProperty(unit)) {
+      units.push({ unit, priority: priorities[unit] });
+    }
+  }
+  units.sort(function (a, b) {
+    return a.priority - b.priority;
+  });
+
+  return units;
+}
+*/
+
+function initDayOfMonth() {
+  // FORMATTING
+  addFormatToken('D', ['DD', 2, false], 'Do', function (date, opts) {
+    return getDate(date, opts.isUTC).toString(10);
+  });
+  // ALIASES
+  addUnitAlias('date', 'D');
+  // PRIOROITY
+  addUnitPriority('date', 9);
+  // PARSING
+  addRegexToken('D', match1to2);
+  addRegexToken('DD', match1to2, match2);
+  addRegexToken('Do', function (isStrict, locale) {
+    return locale._dayOfMonthOrdinalParse || locale._ordinalParse;
+  });
+  addParseToken(['D', 'DD'], DATE);
+  addParseToken('Do', function (input, array, config) {
+    array[DATE] = toInt(input.match(match1to2)[0]);
+    return config;
+  });
+}
+function defaultParsingFlags() {
+  // We need to deep clone this object.
+  return {
+    empty: false,
+    unusedTokens: [],
+    unusedInput: [],
+    overflow: -2,
+    charsLeftOver: 0,
+    nullInput: false,
+    invalidMonth: null,
+    invalidFormat: false,
+    userInvalidated: false,
+    iso: false,
+    parsedDateParts: [],
+    meridiem: null,
+    rfc2822: false,
+    weekdayMismatch: false
+  };
+}
+function getParsingFlags(config) {
+  if (config._pf == null) {
+    config._pf = defaultParsingFlags();
+  }
+  return config._pf;
+}
+
+// FORMATTING
+function getYear(date, opts) {
+  if (opts.locale.getFullYear) {
+    return opts.locale.getFullYear(date, opts.isUTC).toString();
+  }
+  return getFullYear(date, opts.isUTC).toString();
+}
+function initYear() {
+  addFormatToken('Y', null, null, function (date, opts) {
+    const y = getFullYear(date, opts.isUTC);
+    return y <= 9999 ? y.toString(10) : `+${y}`;
+  });
+  addFormatToken(null, ['YY', 2, false], null, function (date, opts) {
+    return (getFullYear(date, opts.isUTC) % 100).toString(10);
+  });
+  addFormatToken(null, ['YYYY', 4, false], null, getYear);
+  addFormatToken(null, ['YYYYY', 5, false], null, getYear);
+  addFormatToken(null, ['YYYYYY', 6, true], null, getYear);
+  // ALIASES
+  addUnitAlias('year', 'y');
+  // PRIORITIES
+  addUnitPriority('year', 1);
+  // PARSING
+  addRegexToken('Y', matchSigned);
+  addRegexToken('YY', match1to2, match2);
+  addRegexToken('YYYY', match1to4, match4);
+  addRegexToken('YYYYY', match1to6, match6);
+  addRegexToken('YYYYYY', match1to6, match6);
+  addParseToken(['YYYYY', 'YYYYYY'], YEAR);
+  addParseToken('YYYY', function (input, array, config) {
+    array[YEAR] = input.length === 2 ? parseTwoDigitYear(input) : toInt(input);
+    return config;
+  });
+  addParseToken('YY', function (input, array, config) {
+    array[YEAR] = parseTwoDigitYear(input);
+    return config;
+  });
+  addParseToken('Y', function (input, array, config) {
+    array[YEAR] = parseInt(input, 10);
+    return config;
+  });
+}
+function parseTwoDigitYear(input) {
+  return toInt(input) + (toInt(input) > 68 ? 1900 : 2000);
+}
+function daysInYear(year) {
+  return isLeapYear(year) ? 366 : 365;
+}
+function isLeapYear(year) {
+  return year % 4 === 0 && year % 100 !== 0 || year % 400 === 0;
+}
+
+// todo: this is duplicate, source in date-getters.ts
+function daysInMonth(year, month) {
+  if (isNaN(year) || isNaN(month)) {
+    return NaN;
+  }
+  const modMonth = mod(month, 12);
+  const _year = year + (month - modMonth) / 12;
+  return modMonth === 1 ? isLeapYear(_year) ? 29 : 28 : 31 - modMonth % 7 % 2;
+}
+function initMonth() {
+  // FORMATTING
+  addFormatToken('M', ['MM', 2, false], 'Mo', function (date, opts) {
+    return (getMonth(date, opts.isUTC) + 1).toString(10);
+  });
+  addFormatToken('MMM', null, null, function (date, opts) {
+    return opts.locale.monthsShort(date, opts.format, opts.isUTC);
+  });
+  addFormatToken('MMMM', null, null, function (date, opts) {
+    return opts.locale.months(date, opts.format, opts.isUTC);
+  });
+  // ALIASES
+  addUnitAlias('month', 'M');
+  // PRIORITY
+  addUnitPriority('month', 8);
+  // PARSING
+  addRegexToken('M', match1to2);
+  addRegexToken('MM', match1to2, match2);
+  addRegexToken('MMM', function (isStrict, locale) {
+    return locale.monthsShortRegex(isStrict);
+  });
+  addRegexToken('MMMM', function (isStrict, locale) {
+    return locale.monthsRegex(isStrict);
+  });
+  addParseToken(['M', 'MM'], function (input, array, config) {
+    array[MONTH] = toInt(input) - 1;
+    return config;
+  });
+  addParseToken(['MMM', 'MMMM'], function (input, array, config, token) {
+    const month = config._locale.monthsParse(input, token, config._strict);
+    // if we didn't find a month name, mark the date as invalid.
+    if (month != null) {
+      array[MONTH] = month;
+    } else {
+      getParsingFlags(config).invalidMonth = !!input;
+    }
+    return config;
+  });
+}
+const defaultTimeUnit = {
+  year: 0,
+  month: 0,
+  day: 0,
+  hour: 0,
+  minute: 0,
+  seconds: 0
+};
+function shiftDate(date, unit) {
+  const _unit = Object.assign({}, defaultTimeUnit, unit);
+  const year = date.getFullYear() + (_unit.year || 0);
+  const month = date.getMonth() + (_unit.month || 0);
+  let day = date.getDate() + (_unit.day || 0);
+  if (_unit.month && !_unit.day) {
+    day = Math.min(day, daysInMonth(year, month));
+  }
+  return createDate(year, month, day, date.getHours() + (_unit.hour || 0), date.getMinutes() + (_unit.minute || 0), date.getSeconds() + (_unit.seconds || 0));
+}
+function setFullDate(date, unit) {
+  return createDate(getNum(date.getFullYear(), unit.year), getNum(date.getMonth(), unit.month), 1,
+  // day, to avoid issue with wrong months selection at the end of current month (#5371)
+  getNum(date.getHours(), unit.hour), getNum(date.getMinutes(), unit.minute), getNum(date.getSeconds(), unit.seconds), getNum(date.getMilliseconds(), unit.milliseconds));
+}
+function getNum(def, num) {
+  return isNumber(num) ? num : def;
+}
+function setFullYear(date, value, isUTC) {
+  const _month = getMonth(date, isUTC);
+  const _date = getDate(date, isUTC);
+  const _year = getFullYear(date, isUTC);
+  if (isLeapYear(_year) && _month === 1 && _date === 29) {
+    const _daysInMonth = daysInMonth(value, _month);
+    isUTC ? date.setUTCFullYear(value, _month, _daysInMonth) : date.setFullYear(value, _month, _daysInMonth);
+  }
+  isUTC ? date.setUTCFullYear(value) : date.setFullYear(value);
+  return date;
+}
+function setMonth(date, value, isUTC) {
+  const dayOfMonth = Math.min(getDate(date), daysInMonth(getFullYear(date), value));
+  isUTC ? date.setUTCMonth(value, dayOfMonth) : date.setMonth(value, dayOfMonth);
+  return date;
+}
+function setDay(date, value, isUTC) {
+  isUTC ? date.setUTCDate(value) : date.setDate(value);
+  return date;
+}
+function setHours(date, value, isUTC) {
+  isUTC ? date.setUTCHours(value) : date.setHours(value);
+  return date;
+}
+function setMinutes(date, value, isUTC) {
+  isUTC ? date.setUTCMinutes(value) : date.setMinutes(value);
+  return date;
+}
+function setSeconds(date, value, isUTC) {
+  isUTC ? date.setUTCSeconds(value) : date.setSeconds(value);
+  return date;
+}
+function setMilliseconds(date, value, isUTC) {
+  isUTC ? date.setUTCMilliseconds(value) : date.setMilliseconds(value);
+  return date;
+}
+function setDate(date, value, isUTC) {
+  isUTC ? date.setUTCDate(value) : date.setDate(value);
+  return date;
+}
+function setTime(date, value) {
+  date.setTime(value);
+  return date;
+}
+
+// fastest way to clone date
+// https://jsperf.com/clone-date-object2
+function cloneDate(date) {
+  return new Date(date.getTime());
+}
+function startOf(date, unit, isUTC) {
+  const _date = cloneDate(date);
+  // the following switch intentionally omits break keywords
+  // to utilize falling through the cases.
+  switch (unit) {
+    case 'year':
+      setMonth(_date, 0, isUTC);
+    /* falls through */
+    case 'quarter':
+    case 'month':
+      setDate(_date, 1, isUTC);
+    /* falls through */
+    case 'week':
+    case 'isoWeek':
+    case 'day':
+    case 'date':
+      setHours(_date, 0, isUTC);
+    /* falls through */
+    case 'hours':
+      setMinutes(_date, 0, isUTC);
+    /* falls through */
+    case 'minutes':
+      setSeconds(_date, 0, isUTC);
+    /* falls through */
+    case 'seconds':
+      setMilliseconds(_date, 0, isUTC);
+  }
+  // weeks are a special case
+  if (unit === 'week') {
+    setLocaleDayOfWeek(_date, 0, {
+      isUTC
+    });
+  }
+  if (unit === 'isoWeek') {
+    setISODayOfWeek(_date, 1);
+  }
+  // quarters are also special
+  if (unit === 'quarter') {
+    setMonth(_date, Math.floor(getMonth(_date, isUTC) / 3) * 3, isUTC);
+  }
+  return _date;
+}
+function endOf(date, unit, isUTC) {
+  let _unit = unit;
+  // 'date' is an alias for 'day', so it should be considered as such.
+  if (_unit === 'date') {
+    _unit = 'day';
+  }
+  const start = startOf(date, _unit, isUTC);
+  const _step = add(start, 1, _unit === 'isoWeek' ? 'week' : _unit, isUTC);
+  const res = subtract(_step, 1, 'milliseconds', isUTC);
+  return res;
+}
+function initDayOfYear() {
+  // FORMATTING
+  addFormatToken('DDD', ['DDDD', 3, false], 'DDDo', function (date) {
+    return getDayOfYear(date).toString(10);
+  });
+  // ALIASES
+  addUnitAlias('dayOfYear', 'DDD');
+  // PRIORITY
+  addUnitPriority('dayOfYear', 4);
+  addRegexToken('DDD', match1to3);
+  addRegexToken('DDDD', match3);
+  addParseToken(['DDD', 'DDDD'], function (input, array, config) {
+    config._dayOfYear = toInt(input);
+    return config;
+  });
+}
+function getDayOfYear(date, isUTC) {
+  const date1 = +startOf(date, 'day', isUTC);
+  const date2 = +startOf(date, 'year', isUTC);
+  const someDate = date1 - date2;
+  const oneDay = 1000 * 60 * 60 * 24;
+  return Math.round(someDate / oneDay) + 1;
+}
+function setDayOfYear(date, input) {
+  const dayOfYear = getDayOfYear(date);
+  return add(date, input - dayOfYear, 'day');
+}
+
+/**
+ *
+ * @param {number} year
+ * @param {number} dow - start-of-first-week
+ * @param {number} doy - start-of-year
+ * @returns {number}
+ */
+function firstWeekOffset(year, dow, doy) {
+  // first-week day -- which january is always in the first week (4 for iso, 1 for other)
+  const fwd = dow - doy + 7;
+  // first-week day local weekday -- which local weekday is fwd
+  const fwdlw = (createUTCDate(year, 0, fwd).getUTCDay() - dow + 7) % 7;
+  return -fwdlw + fwd - 1;
+}
+// https://en.wikipedia.org/wiki/ISO_week_date#Calculating_a_date_given_the_year.2C_week_number_and_weekday
+function dayOfYearFromWeeks(year, week, weekday, dow, doy) {
+  const localWeekday = (7 + weekday - dow) % 7;
+  const weekOffset = firstWeekOffset(year, dow, doy);
+  const dayOfYear = 1 + 7 * (week - 1) + localWeekday + weekOffset;
+  let resYear;
+  let resDayOfYear;
+  if (dayOfYear <= 0) {
+    resYear = year - 1;
+    resDayOfYear = daysInYear(resYear) + dayOfYear;
+  } else if (dayOfYear > daysInYear(year)) {
+    resYear = year + 1;
+    resDayOfYear = dayOfYear - daysInYear(year);
+  } else {
+    resYear = year;
+    resDayOfYear = dayOfYear;
+  }
+  return {
+    year: resYear,
+    dayOfYear: resDayOfYear
+  };
+}
+function weekOfYear(date, dow, doy, isUTC) {
+  const weekOffset = firstWeekOffset(getFullYear(date, isUTC), dow, doy);
+  const week = Math.floor((getDayOfYear(date, isUTC) - weekOffset - 1) / 7) + 1;
+  let resWeek;
+  let resYear;
+  if (week < 1) {
+    resYear = getFullYear(date, isUTC) - 1;
+    resWeek = week + weeksInYear(resYear, dow, doy);
+  } else if (week > weeksInYear(getFullYear(date, isUTC), dow, doy)) {
+    resWeek = week - weeksInYear(getFullYear(date, isUTC), dow, doy);
+    resYear = getFullYear(date, isUTC) + 1;
+  } else {
+    resYear = getFullYear(date, isUTC);
+    resWeek = week;
+  }
+  return {
+    week: resWeek,
+    year: resYear
+  };
+}
+function weeksInYear(year, dow, doy) {
+  const weekOffset = firstWeekOffset(year, dow, doy);
+  const weekOffsetNext = firstWeekOffset(year + 1, dow, doy);
+  return (daysInYear(year) - weekOffset + weekOffsetNext) / 7;
+}
+const MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/;
+const defaultLocaleMonths = 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_');
+const defaultLocaleMonthsShort = 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_');
+const defaultLocaleWeekdays = 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_');
+const defaultLocaleWeekdaysShort = 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_');
+const defaultLocaleWeekdaysMin = 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_');
+const defaultLongDateFormat = {
+  LTS: 'h:mm:ss A',
+  LT: 'h:mm A',
+  L: 'MM/DD/YYYY',
+  LL: 'MMMM D, YYYY',
+  LLL: 'MMMM D, YYYY h:mm A',
+  LLLL: 'dddd, MMMM D, YYYY h:mm A'
+};
+const defaultOrdinal = '%d';
+const defaultDayOfMonthOrdinalParse = /\d{1,2}/;
+const defaultMonthsShortRegex = matchWord;
+const defaultMonthsRegex = matchWord;
+class Locale {
+  constructor(config) {
+    if (config) {
+      this.set(config);
+    }
+  }
+  set(config) {
+    let confKey;
+    for (confKey in config) {
+      // eslint-disable-next-line no-prototype-builtins
+      if (!config.hasOwnProperty(confKey)) {
+        continue;
+      }
+      const prop = config[confKey];
+      const key = isFunction(prop) ? confKey : `_${confKey}`;
+      this[key] = prop;
+    }
+    this._config = config;
+  }
+  calendar(key, date, now) {
+    const output = this._calendar[key] || this._calendar["sameElse"];
+    return isFunction(output) ? output.call(null, date, now) : output;
+  }
+  longDateFormat(key) {
+    const format = this._longDateFormat[key];
+    const formatUpper = this._longDateFormat[key.toUpperCase()];
+    if (format || !formatUpper) {
+      return format;
+    }
+    this._longDateFormat[key] = formatUpper.replace(/MMMM|MM|DD|dddd/g, function (val) {
+      return val.slice(1);
+    });
+    return this._longDateFormat[key];
+  }
+  get invalidDate() {
+    return this._invalidDate;
+  }
+  set invalidDate(val) {
+    this._invalidDate = val;
+  }
+  ordinal(num, token) {
+    return this._ordinal.replace('%d', num.toString(10));
+  }
+  preparse(str, format) {
+    return str;
+  }
+  getFullYear(date, isUTC = false) {
+    return getFullYear(date, isUTC);
+  }
+  postformat(str) {
+    return str;
+  }
+  relativeTime(num, withoutSuffix, str, isFuture) {
+    const output = this._relativeTime[str];
+    return isFunction(output) ? output(num, withoutSuffix, str, isFuture) : output.replace(/%d/i, num.toString(10));
+  }
+  pastFuture(diff, output) {
+    const format = this._relativeTime[diff > 0 ? 'future' : 'past'];
+    return isFunction(format) ? format(output) : format.replace(/%s/i, output);
+  }
+  months(date, format, isUTC = false) {
+    if (!date) {
+      return isArray(this._months) ? this._months : this._months.standalone;
+    }
+    if (isArray(this._months)) {
+      return this._months[getMonth(date, isUTC)];
+    }
+    const key = (this._months.isFormat || MONTHS_IN_FORMAT).test(format) ? 'format' : 'standalone';
+    return this._months[key][getMonth(date, isUTC)];
+  }
+  monthsShort(date, format, isUTC = false) {
+    if (!date) {
+      return isArray(this._monthsShort) ? this._monthsShort : this._monthsShort.standalone;
+    }
+    if (isArray(this._monthsShort)) {
+      return this._monthsShort[getMonth(date, isUTC)];
+    }
+    const key = MONTHS_IN_FORMAT.test(format) ? 'format' : 'standalone';
+    return this._monthsShort[key][getMonth(date, isUTC)];
+  }
+  monthsParse(monthName, format, strict) {
+    let date;
+    let regex;
+    if (this._monthsParseExact) {
+      return this.handleMonthStrictParse(monthName, format, strict);
+    }
+    if (!this._monthsParse) {
+      this._monthsParse = [];
+      this._longMonthsParse = [];
+      this._shortMonthsParse = [];
+    }
+    // TODO: add sorting
+    // Sorting makes sure if one month (or abbr) is a prefix of another
+    // see sorting in computeMonthsParse
+    let i;
+    for (i = 0; i < 12; i++) {
+      // make the regex if we don't have it already
+      date = new Date(Date.UTC(2000, i));
+      if (strict && !this._longMonthsParse[i]) {
+        const _months = this.months(date, '', true).replace('.', '');
+        const _shortMonths = this.monthsShort(date, '', true).replace('.', '');
+        this._longMonthsParse[i] = new RegExp(`^${_months}$`, 'i');
+        this._shortMonthsParse[i] = new RegExp(`^${_shortMonths}$`, 'i');
+      }
+      if (!strict && !this._monthsParse[i]) {
+        regex = `^${this.months(date, '', true)}|^${this.monthsShort(date, '', true)}`;
+        this._monthsParse[i] = new RegExp(regex.replace('.', ''), 'i');
+      }
+      // testing the regex
+      if (strict && format === 'MMMM' && this._longMonthsParse[i].test(monthName)) {
+        return i;
+      }
+      if (strict && format === 'MMM' && this._shortMonthsParse[i].test(monthName)) {
+        return i;
+      }
+      if (!strict && this._monthsParse[i].test(monthName)) {
+        return i;
+      }
+    }
+  }
+  monthsRegex(isStrict) {
+    if (this._monthsParseExact) {
+      if (!hasOwnProp(this, '_monthsRegex')) {
+        this.computeMonthsParse();
+      }
+      if (isStrict) {
+        return this._monthsStrictRegex;
+      }
+      return this._monthsRegex;
+    }
+    if (!hasOwnProp(this, '_monthsRegex')) {
+      this._monthsRegex = defaultMonthsRegex;
+    }
+    return this._monthsStrictRegex && isStrict ? this._monthsStrictRegex : this._monthsRegex;
+  }
+  monthsShortRegex(isStrict) {
+    if (this._monthsParseExact) {
+      if (!hasOwnProp(this, '_monthsRegex')) {
+        this.computeMonthsParse();
+      }
+      if (isStrict) {
+        return this._monthsShortStrictRegex;
+      }
+      return this._monthsShortRegex;
+    }
+    if (!hasOwnProp(this, '_monthsShortRegex')) {
+      this._monthsShortRegex = defaultMonthsShortRegex;
+    }
+    return this._monthsShortStrictRegex && isStrict ? this._monthsShortStrictRegex : this._monthsShortRegex;
+  }
+  /** Week */
+  week(date, isUTC) {
+    return weekOfYear(date, this._week.dow, this._week.doy, isUTC).week;
+  }
+  firstDayOfWeek() {
+    return this._week.dow;
+  }
+  firstDayOfYear() {
+    return this._week.doy;
+  }
+  weekdays(date, format, isUTC) {
+    if (!date) {
+      return isArray(this._weekdays) ? this._weekdays : this._weekdays.standalone;
+    }
+    if (isArray(this._weekdays)) {
+      return this._weekdays[getDay(date, isUTC)];
+    }
+    const _key = this._weekdays.isFormat.test(format) ? 'format' : 'standalone';
+    return this._weekdays[_key][getDay(date, isUTC)];
+  }
+  weekdaysMin(date, format, isUTC) {
+    return date ? this._weekdaysMin[getDay(date, isUTC)] : this._weekdaysMin;
+  }
+  weekdaysShort(date, format, isUTC) {
+    return date ? this._weekdaysShort[getDay(date, isUTC)] : this._weekdaysShort;
+  }
+  // proto.weekdaysParse  =        localeWeekdaysParse;
+  weekdaysParse(weekdayName, format, strict) {
+    let i;
+    let regex;
+    if (this._weekdaysParseExact) {
+      return this.handleWeekStrictParse(weekdayName, format, strict);
+    }
+    if (!this._weekdaysParse) {
+      this._weekdaysParse = [];
+      this._minWeekdaysParse = [];
+      this._shortWeekdaysParse = [];
+      this._fullWeekdaysParse = [];
+    }
+    for (i = 0; i < 7; i++) {
+      // make the regex if we don't have it already
+      // fix: here is the issue
+      const date = setDayOfWeek(new Date(Date.UTC(2000, 1)), i, null, true);
+      if (strict && !this._fullWeekdaysParse[i]) {
+        this._fullWeekdaysParse[i] = new RegExp(`^${this.weekdays(date, '', true).replace('.', '\.?')}$`, 'i');
+        this._shortWeekdaysParse[i] = new RegExp(`^${this.weekdaysShort(date, '', true).replace('.', '\.?')}$`, 'i');
+        this._minWeekdaysParse[i] = new RegExp(`^${this.weekdaysMin(date, '', true).replace('.', '\.?')}$`, 'i');
+      }
+      if (!this._weekdaysParse[i]) {
+        regex = `^${this.weekdays(date, '', true)}|^${this.weekdaysShort(date, '', true)}|^${this.weekdaysMin(date, '', true)}`;
+        this._weekdaysParse[i] = new RegExp(regex.replace('.', ''), 'i');
+      }
+      if (!isArray(this._fullWeekdaysParse) || !isArray(this._shortWeekdaysParse) || !isArray(this._minWeekdaysParse) || !isArray(this._weekdaysParse)) {
+        return;
+      }
+      // testing the regex
+      if (strict && format === 'dddd' && this._fullWeekdaysParse[i].test(weekdayName)) {
+        return i;
+      } else if (strict && format === 'ddd' && this._shortWeekdaysParse[i].test(weekdayName)) {
+        return i;
+      } else if (strict && format === 'dd' && this._minWeekdaysParse[i].test(weekdayName)) {
+        return i;
+      } else if (!strict && this._weekdaysParse[i].test(weekdayName)) {
+        return i;
+      }
+    }
+  }
+  // proto.weekdaysRegex       =        weekdaysRegex;
+  weekdaysRegex(isStrict) {
+    if (this._weekdaysParseExact) {
+      if (!hasOwnProp(this, '_weekdaysRegex')) {
+        this.computeWeekdaysParse();
+      }
+      if (isStrict) {
+        return this._weekdaysStrictRegex;
+      } else {
+        return this._weekdaysRegex;
+      }
+    } else {
+      if (!hasOwnProp(this, '_weekdaysRegex')) {
+        this._weekdaysRegex = matchWord;
+      }
+      return this._weekdaysStrictRegex && isStrict ? this._weekdaysStrictRegex : this._weekdaysRegex;
+    }
+  }
+  // proto.weekdaysShortRegex  =        weekdaysShortRegex;
+  // proto.weekdaysMinRegex    =        weekdaysMinRegex;
+  weekdaysShortRegex(isStrict) {
+    if (this._weekdaysParseExact) {
+      if (!hasOwnProp(this, '_weekdaysRegex')) {
+        this.computeWeekdaysParse();
+      }
+      if (isStrict) {
+        return this._weekdaysShortStrictRegex;
+      } else {
+        return this._weekdaysShortRegex;
+      }
+    } else {
+      if (!hasOwnProp(this, '_weekdaysShortRegex')) {
+        this._weekdaysShortRegex = matchWord;
+      }
+      return this._weekdaysShortStrictRegex && isStrict ? this._weekdaysShortStrictRegex : this._weekdaysShortRegex;
+    }
+  }
+  weekdaysMinRegex(isStrict) {
+    if (this._weekdaysParseExact) {
+      if (!hasOwnProp(this, '_weekdaysRegex')) {
+        this.computeWeekdaysParse();
+      }
+      if (isStrict) {
+        return this._weekdaysMinStrictRegex;
+      } else {
+        return this._weekdaysMinRegex;
+      }
+    } else {
+      if (!hasOwnProp(this, '_weekdaysMinRegex')) {
+        this._weekdaysMinRegex = matchWord;
+      }
+      return this._weekdaysMinStrictRegex && isStrict ? this._weekdaysMinStrictRegex : this._weekdaysMinRegex;
+    }
+  }
+  isPM(input) {
+    // IE8 Quirks Mode & IE7 Standards Mode do not allow accessing strings like arrays
+    // Using charAt should be more compatible.
+    return input.toLowerCase().charAt(0) === 'p';
+  }
+  meridiem(hours, minutes, isLower) {
+    if (hours > 11) {
+      return isLower ? 'pm' : 'PM';
+    }
+    return isLower ? 'am' : 'AM';
+  }
+  formatLongDate(key) {
+    this._longDateFormat = this._longDateFormat ? this._longDateFormat : defaultLongDateFormat;
+    const format = this._longDateFormat[key];
+    const formatUpper = this._longDateFormat[key.toUpperCase()];
+    if (format || !formatUpper) {
+      return format;
+    }
+    this._longDateFormat[key] = formatUpper.replace(/MMMM|MM|DD|dddd/g, val => {
+      return val.slice(1);
+    });
+    return this._longDateFormat[key];
+  }
+  handleMonthStrictParse(monthName, format, strict) {
+    const llc = monthName.toLocaleLowerCase();
+    let i;
+    let ii;
+    let mom;
+    if (!this._monthsParse) {
+      // this is not used
+      this._monthsParse = [];
+      this._longMonthsParse = [];
+      this._shortMonthsParse = [];
+      for (i = 0; i < 12; ++i) {
+        mom = new Date(2000, i);
+        this._shortMonthsParse[i] = this.monthsShort(mom, '').toLocaleLowerCase();
+        this._longMonthsParse[i] = this.months(mom, '').toLocaleLowerCase();
+      }
+    }
+    if (strict) {
+      if (format === 'MMM') {
+        ii = this._shortMonthsParse.indexOf(llc);
+        return ii !== -1 ? ii : null;
+      }
+      ii = this._longMonthsParse.indexOf(llc);
+      return ii !== -1 ? ii : null;
+    }
+    if (format === 'MMM') {
+      ii = this._shortMonthsParse.indexOf(llc);
+      if (ii !== -1) {
+        return ii;
+      }
+      ii = this._longMonthsParse.indexOf(llc);
+      return ii !== -1 ? ii : null;
+    }
+    ii = this._longMonthsParse.indexOf(llc);
+    if (ii !== -1) {
+      return ii;
+    }
+    ii = this._shortMonthsParse.indexOf(llc);
+    return ii !== -1 ? ii : null;
+  }
+  handleWeekStrictParse(weekdayName, format, strict) {
+    let ii;
+    const llc = weekdayName.toLocaleLowerCase();
+    if (!this._weekdaysParse) {
+      this._weekdaysParse = [];
+      this._shortWeekdaysParse = [];
+      this._minWeekdaysParse = [];
+      let i;
+      for (i = 0; i < 7; ++i) {
+        const date = setDayOfWeek(new Date(Date.UTC(2000, 1)), i, null, true);
+        this._minWeekdaysParse[i] = this.weekdaysMin(date).toLocaleLowerCase();
+        this._shortWeekdaysParse[i] = this.weekdaysShort(date).toLocaleLowerCase();
+        this._weekdaysParse[i] = this.weekdays(date, '').toLocaleLowerCase();
+      }
+    }
+    if (!isArray(this._weekdaysParse) || !isArray(this._shortWeekdaysParse) || !isArray(this._minWeekdaysParse)) {
+      return;
+    }
+    if (strict) {
+      if (format === 'dddd') {
+        ii = this._weekdaysParse.indexOf(llc);
+        return ii !== -1 ? ii : null;
+      } else if (format === 'ddd') {
+        ii = this._shortWeekdaysParse.indexOf(llc);
+        return ii !== -1 ? ii : null;
+      } else {
+        ii = this._minWeekdaysParse.indexOf(llc);
+        return ii !== -1 ? ii : null;
+      }
+    } else {
+      if (format === 'dddd') {
+        ii = this._weekdaysParse.indexOf(llc);
+        if (ii !== -1) {
+          return ii;
+        }
+        ii = this._shortWeekdaysParse.indexOf(llc);
+        if (ii !== -1) {
+          return ii;
+        }
+        ii = this._minWeekdaysParse.indexOf(llc);
+        return ii !== -1 ? ii : null;
+      } else if (format === 'ddd') {
+        ii = this._shortWeekdaysParse.indexOf(llc);
+        if (ii !== -1) {
+          return ii;
+        }
+        ii = this._weekdaysParse.indexOf(llc);
+        if (ii !== -1) {
+          return ii;
+        }
+        ii = this._minWeekdaysParse.indexOf(llc);
+        return ii !== -1 ? ii : null;
+      } else {
+        ii = this._minWeekdaysParse.indexOf(llc);
+        if (ii !== -1) {
+          return ii;
+        }
+        ii = this._weekdaysParse.indexOf(llc);
+        if (ii !== -1) {
+          return ii;
+        }
+        ii = this._shortWeekdaysParse.indexOf(llc);
+        return ii !== -1 ? ii : null;
+      }
+    }
+  }
+  computeMonthsParse() {
+    const shortPieces = [];
+    const longPieces = [];
+    const mixedPieces = [];
+    let date;
+    let i;
+    for (i = 0; i < 12; i++) {
+      // make the regex if we don't have it already
+      date = new Date(2000, i);
+      shortPieces.push(this.monthsShort(date, ''));
+      longPieces.push(this.months(date, ''));
+      mixedPieces.push(this.months(date, ''));
+      mixedPieces.push(this.monthsShort(date, ''));
+    }
+    // Sorting makes sure if one month (or abbr) is a prefix of another it
+    // will match the longer piece.
+    shortPieces.sort(cmpLenRev);
+    longPieces.sort(cmpLenRev);
+    mixedPieces.sort(cmpLenRev);
+    for (i = 0; i < 12; i++) {
+      shortPieces[i] = regexEscape(shortPieces[i]);
+      longPieces[i] = regexEscape(longPieces[i]);
+    }
+    for (i = 0; i < 24; i++) {
+      mixedPieces[i] = regexEscape(mixedPieces[i]);
+    }
+    this._monthsRegex = new RegExp(`^(${mixedPieces.join('|')})`, 'i');
+    this._monthsShortRegex = this._monthsRegex;
+    this._monthsStrictRegex = new RegExp(`^(${longPieces.join('|')})`, 'i');
+    this._monthsShortStrictRegex = new RegExp(`^(${shortPieces.join('|')})`, 'i');
+  }
+  computeWeekdaysParse() {
+    const minPieces = [];
+    const shortPieces = [];
+    const longPieces = [];
+    const mixedPieces = [];
+    let i;
+    for (i = 0; i < 7; i++) {
+      // make the regex if we don't have it already
+      // let mom = createUTC([2000, 1]).day(i);
+      const date = setDayOfWeek(new Date(Date.UTC(2000, 1)), i, null, true);
+      const minp = this.weekdaysMin(date);
+      const shortp = this.weekdaysShort(date);
+      const longp = this.weekdays(date);
+      minPieces.push(minp);
+      shortPieces.push(shortp);
+      longPieces.push(longp);
+      mixedPieces.push(minp);
+      mixedPieces.push(shortp);
+      mixedPieces.push(longp);
+    }
+    // Sorting makes sure if one weekday (or abbr) is a prefix of another it
+    // will match the longer piece.
+    minPieces.sort(cmpLenRev);
+    shortPieces.sort(cmpLenRev);
+    longPieces.sort(cmpLenRev);
+    mixedPieces.sort(cmpLenRev);
+    for (i = 0; i < 7; i++) {
+      shortPieces[i] = regexEscape(shortPieces[i]);
+      longPieces[i] = regexEscape(longPieces[i]);
+      mixedPieces[i] = regexEscape(mixedPieces[i]);
+    }
+    this._weekdaysRegex = new RegExp(`^(${mixedPieces.join('|')})`, 'i');
+    this._weekdaysShortRegex = this._weekdaysRegex;
+    this._weekdaysMinRegex = this._weekdaysRegex;
+    this._weekdaysStrictRegex = new RegExp(`^(${longPieces.join('|')})`, 'i');
+    this._weekdaysShortStrictRegex = new RegExp(`^(${shortPieces.join('|')})`, 'i');
+    this._weekdaysMinStrictRegex = new RegExp(`^(${minPieces.join('|')})`, 'i');
+  }
+}
+function cmpLenRev(a, b) {
+  return b.length - a.length;
+}
+const defaultCalendar = {
+  sameDay: '[Today at] LT',
+  nextDay: '[Tomorrow at] LT',
+  nextWeek: 'dddd [at] LT',
+  lastDay: '[Yesterday at] LT',
+  lastWeek: '[Last] dddd [at] LT',
+  sameElse: 'L'
+};
+const defaultInvalidDate = 'Invalid date';
+const defaultLocaleWeek = {
+  dow: 0,
+  doy: 6 // The week that contains Jan 1st is the first week of the year.
+};
+
+const defaultLocaleMeridiemParse = /[ap]\.?m?\.?/i;
+const defaultRelativeTime = {
+  future: 'in %s',
+  past: '%s ago',
+  s: 'a few seconds',
+  ss: '%d seconds',
+  m: 'a minute',
+  mm: '%d minutes',
+  h: 'an hour',
+  hh: '%d hours',
+  d: 'a day',
+  dd: '%d days',
+  M: 'a month',
+  MM: '%d months',
+  y: 'a year',
+  yy: '%d years'
+};
+const baseConfig = {
+  calendar: defaultCalendar,
+  longDateFormat: defaultLongDateFormat,
+  invalidDate: defaultInvalidDate,
+  ordinal: defaultOrdinal,
+  dayOfMonthOrdinalParse: defaultDayOfMonthOrdinalParse,
+  relativeTime: defaultRelativeTime,
+  months: defaultLocaleMonths,
+  monthsShort: defaultLocaleMonthsShort,
+  week: defaultLocaleWeek,
+  weekdays: defaultLocaleWeekdays,
+  weekdaysMin: defaultLocaleWeekdaysMin,
+  weekdaysShort: defaultLocaleWeekdaysShort,
+  meridiemParse: defaultLocaleMeridiemParse
+};
+
+// compare two arrays, return the number of differences
+function compareArrays(array1, array2, dontConvert) {
+  const len = Math.min(array1.length, array2.length);
+  const lengthDiff = Math.abs(array1.length - array2.length);
+  let diffs = 0;
+  let i;
+  for (i = 0; i < len; i++) {
+    if (dontConvert && array1[i] !== array2[i] || !dontConvert && toInt(array1[i]) !== toInt(array2[i])) {
+      diffs++;
+    }
+  }
+  return diffs + lengthDiff;
+}
+
+// FORMATTING
+function initWeek() {
+  addFormatToken('w', ['ww', 2, false], 'wo', function (date, opts) {
+    return getWeek(date, opts.locale).toString(10);
+  });
+  addFormatToken('W', ['WW', 2, false], 'Wo', function (date) {
+    return getISOWeek(date).toString(10);
+  });
+  // ALIASES
+  addUnitAlias('week', 'w');
+  addUnitAlias('isoWeek', 'W');
+  // PRIORITIES
+  addUnitPriority('week', 5);
+  addUnitPriority('isoWeek', 5);
+  // PARSING
+  addRegexToken('w', match1to2);
+  addRegexToken('ww', match1to2, match2);
+  addRegexToken('W', match1to2);
+  addRegexToken('WW', match1to2, match2);
+  addWeekParseToken(['w', 'ww', 'W', 'WW'], function (input, week, config, token) {
+    week[token.substr(0, 1)] = toInt(input);
+    return config;
+  });
+  // export function getSetWeek (input) {
+  //   var week = this.localeData().week(this);
+  //   return input == null ? week : this.add((input - week) * 7, 'd');
+  // }
+}
+
+function setWeek(date, input, locale = getLocale()) {
+  const week = getWeek(date, locale);
+  return add(date, (input - week) * 7, 'day');
+}
+function getWeek(date, locale = getLocale(), isUTC) {
+  return locale.week(date, isUTC);
+}
+// export function getSetISOWeek (input) {
+//   var week = weekOfYear(this, 1, 4).week;
+//   return input == null ? week : this.add((input - week) * 7, 'd');
+// }
+function setISOWeek(date, input) {
+  const week = getISOWeek(date);
+  return add(date, (input - week) * 7, 'day');
+}
+function getISOWeek(date, isUTC) {
+  return weekOfYear(date, 1, 4, isUTC).week;
+}
+
+// FORMATTING
+function initWeekYear() {
+  addFormatToken(null, ['gg', 2, false], null, function (date, opts) {
+    // return this.weekYear() % 100;
+    return (getWeekYear(date, opts.locale) % 100).toString();
+  });
+  addFormatToken(null, ['GG', 2, false], null, function (date) {
+    // return this.isoWeekYear() % 100;
+    return (getISOWeekYear(date) % 100).toString();
+  });
+  addWeekYearFormatToken('gggg', _getWeekYearFormatCb);
+  addWeekYearFormatToken('ggggg', _getWeekYearFormatCb);
+  addWeekYearFormatToken('GGGG', _getISOWeekYearFormatCb);
+  addWeekYearFormatToken('GGGGG', _getISOWeekYearFormatCb);
+  // ALIASES
+  addUnitAlias('weekYear', 'gg');
+  addUnitAlias('isoWeekYear', 'GG');
+  // PRIORITY
+  addUnitPriority('weekYear', 1);
+  addUnitPriority('isoWeekYear', 1);
+  // PARSING
+  addRegexToken('G', matchSigned);
+  addRegexToken('g', matchSigned);
+  addRegexToken('GG', match1to2, match2);
+  addRegexToken('gg', match1to2, match2);
+  addRegexToken('GGGG', match1to4, match4);
+  addRegexToken('gggg', match1to4, match4);
+  addRegexToken('GGGGG', match1to6, match6);
+  addRegexToken('ggggg', match1to6, match6);
+  addWeekParseToken(['gggg', 'ggggg', 'GGGG', 'GGGGG'], function (input, week, config, token) {
+    week[token.substr(0, 2)] = toInt(input);
+    return config;
+  });
+  addWeekParseToken(['gg', 'GG'], function (input, week, config, token) {
+    week[token] = parseTwoDigitYear(input);
+    return config;
+  });
+}
+function addWeekYearFormatToken(token, getter) {
+  addFormatToken(null, [token, token.length, false], null, getter);
+}
+function _getWeekYearFormatCb(date, opts) {
+  return getWeekYear(date, opts.locale).toString();
+}
+function _getISOWeekYearFormatCb(date) {
+  return getISOWeekYear(date).toString();
+}
+// MOMENTS
+function getSetWeekYear(date, input, locale = getLocale(), isUTC) {
+  return getSetWeekYearHelper(date, input,
+  // this.week(),
+  getWeek(date, locale, isUTC),
+  // this.weekday(),
+  getLocaleDayOfWeek(date, locale, isUTC), locale.firstDayOfWeek(), locale.firstDayOfYear(), isUTC);
+}
+function getWeekYear(date, locale = getLocale(), isUTC) {
+  return weekOfYear(date, locale.firstDayOfWeek(), locale.firstDayOfYear(), isUTC).year;
+}
+function getSetISOWeekYear(date, input, isUTC) {
+  return getSetWeekYearHelper(date, input, getISOWeek(date, isUTC), getISODayOfWeek(date, isUTC), 1, 4);
+}
+function getISOWeekYear(date, isUTC) {
+  return weekOfYear(date, 1, 4, isUTC).year;
+}
+function getISOWeeksInYear(date, isUTC) {
+  return weeksInYear(getFullYear(date, isUTC), 1, 4);
+}
+function getWeeksInYear(date, isUTC, locale = getLocale()) {
+  return weeksInYear(getFullYear(date, isUTC), locale.firstDayOfWeek(), locale.firstDayOfYear());
+}
+function getSetWeekYearHelper(date, input, week, weekday, dow, doy, isUTC) {
+  if (!input) {
+    return getWeekYear(date, void 0, isUTC);
+  }
+  const weeksTarget = weeksInYear(input, dow, doy);
+  const _week = week > weeksTarget ? weeksTarget : week;
+  return setWeekAll(date, input, _week, weekday, dow, doy);
+}
+function setWeekAll(date, weekYear, week, weekday, dow, doy) {
+  const dayOfYearData = dayOfYearFromWeeks(weekYear, week, weekday, dow, doy);
+  const _date = createUTCDate(dayOfYearData.year, 0, dayOfYearData.dayOfYear);
+  setFullYear(date, getFullYear(_date, true), true);
+  setMonth(date, getMonth(_date, true), true);
+  setDate(date, getDate(_date, true), true);
+  return date;
+}
+
+// todo: add support for timezones
+function initTimezone() {
+  // FORMATTING
+  addFormatToken('z', null, null, function (date, opts) {
+    return opts.isUTC ? 'UTC' : '';
+  });
+  addFormatToken('zz', null, null, function (date, opts) {
+    return opts.isUTC ? 'Coordinated Universal Time' : '';
+  });
+}
+// MOMENTS
+function getZoneAbbr(isUTC) {
+  return isUTC ? 'UTC' : '';
+}
+function getZoneName(isUTC) {
+  return isUTC ? 'Coordinated Universal Time' : '';
+}
+function initTimestamp() {
+  // FORMATTING
+  addFormatToken('X', null, null, function (date) {
+    return unix(date).toString(10);
+  });
+  addFormatToken('x', null, null, function (date) {
+    return date.valueOf().toString(10);
+  });
+  // PARSING
+  addRegexToken('x', matchSigned);
+  addRegexToken('X', matchTimestamp);
+  addParseToken('X', function (input, array, config) {
+    config._d = new Date(parseFloat(input) * 1000);
+    return config;
+  });
+  addParseToken('x', function (input, array, config) {
+    config._d = new Date(toInt(input));
+    return config;
+  });
+}
+function initSecond() {
+  // FORMATTING
+  addFormatToken('s', ['ss', 2, false], null, function (date, opts) {
+    return getSeconds(date, opts.isUTC).toString(10);
+  });
+  // ALIASES
+  addUnitAlias('second', 's');
+  // PRIORITY
+  addUnitPriority('second', 15);
+  // PARSING
+  addRegexToken('s', match1to2);
+  addRegexToken('ss', match1to2, match2);
+  addParseToken(['s', 'ss'], SECOND);
+}
+function initQuarter() {
+  // FORMATTING
+  addFormatToken('Q', null, 'Qo', function (date, opts) {
+    return getQuarter(date, opts.isUTC).toString(10);
+  });
+  // ALIASES
+  addUnitAlias('quarter', 'Q');
+  // PRIORITY
+  addUnitPriority('quarter', 7);
+  // PARSING
+  addRegexToken('Q', match1);
+  addParseToken('Q', function (input, array, config) {
+    array[MONTH] = (toInt(input) - 1) * 3;
+    return config;
+  });
+}
+// MOMENTS
+function getQuarter(date, isUTC = false) {
+  return Math.ceil((getMonth(date, isUTC) + 1) / 3);
+}
+function setQuarter(date, quarter, isUTC) {
+  return setMonth(date, (quarter - 1) * 3 + getMonth(date, isUTC) % 3, isUTC);
+}
+// export function getSetQuarter(input) {
+//   return input == null
+//     ? Math.ceil((this.month() + 1) / 3)
+//     : this.month((input - 1) * 3 + this.month() % 3);
+// }
+
+// FORMATTING
+function addOffsetFormatToken(token, separator) {
+  addFormatToken(token, null, null, function (date, config) {
+    let offset = getUTCOffset(date, {
+      _isUTC: config.isUTC,
+      _offset: config.offset
+    });
+    let sign = '+';
+    if (offset < 0) {
+      offset = -offset;
+      sign = '-';
+    }
+    return sign + zeroFill(~~(offset / 60), 2) + separator + zeroFill(~~offset % 60, 2);
+  });
+}
+function initOffset() {
+  addOffsetFormatToken('Z', ':');
+  addOffsetFormatToken('ZZ', '');
+  // PARSING
+  addRegexToken('Z', matchShortOffset);
+  addRegexToken('ZZ', matchShortOffset);
+  addParseToken(['Z', 'ZZ'], function (input, array, config) {
+    config._useUTC = true;
+    config._tzm = offsetFromString(matchShortOffset, input);
+    return config;
+  });
+}
+// HELPERS
+// timezone chunker
+// '+10:00' > ['10',  '00']
+// '-1530'  > ['-15', '30']
+const chunkOffset = /([\+\-]|\d\d)/gi;
+function offsetFromString(matcher, str) {
+  const matches = (str || '').match(matcher);
+  if (matches === null) {
+    return null;
+  }
+  const chunk = matches[matches.length - 1];
+  const parts = chunk.match(chunkOffset) || ['-', '0', '0'];
+  const minutes = parseInt(parts[1], 10) * 60 + toInt(parts[2]);
+  const _min = parts[0] === '+' ? minutes : -minutes;
+  return minutes === 0 ? 0 : _min;
+}
+// Return a moment from input, that is local/utc/zone equivalent to model.
+function cloneWithOffset(input, date, config = {}) {
+  if (!config._isUTC) {
+    return input;
+  }
+  const res = cloneDate(date);
+  // todo: input._d - res._d + ((res._offset || 0) - (input._offset || 0))*60000
+  const offsetDiff = (config._offset || 0) * 60000;
+  const diff = input.valueOf() - res.valueOf() + offsetDiff;
+  // Use low-level api, because this fn is low-level api.
+  res.setTime(res.valueOf() + diff);
+  // todo: add timezone handling
+  // hooks.updateOffset(res, false);
+  return res;
+}
+function getDateOffset(date) {
+  // On Firefox.24 Date#getTimezoneOffset returns a floating point.
+  // https://github.com/moment/moment/pull/1871
+  return -Math.round(date.getTimezoneOffset() / 15) * 15;
+}
+// HOOKS
+// This function will be called whenever a moment is mutated.
+// It is intended to keep the offset in sync with the timezone.
+// todo: it's from moment timezones
+// hooks.updateOffset = function () {
+// };
+// MOMENTS
+// keepLocalTime = true means only change the timezone, without
+// affecting the local hour. So 5:31:26 +0300 --[utcOffset(2, true)]-->
+// 5:31:26 +0200 It is possible that 5:31:26 doesn't exist with offset
+// +0200, so we adjust the time as needed, to be valid.
+//
+// Keeping the time actually adds/subtracts (one hour)
+// from the actual represented time. That is why we call updateOffset
+// a second time. In case it wants us to change the offset again
+// _changeInProgress == true case, then we have to adjust, because
+// there is no such time in the given timezone.
+function getUTCOffset(date, config = {}) {
+  const _offset = config._offset || 0;
+  return config._isUTC ? _offset : getDateOffset(date);
+}
+function setUTCOffset(date, input, keepLocalTime, keepMinutes, config = {}) {
+  const offset = config._offset || 0;
+  let localAdjust;
+  let _input = input;
+  let _date = date;
+  if (isString(_input)) {
+    _input = offsetFromString(matchShortOffset, _input);
+    if (_input === null) {
+      return _date;
+    }
+  } else if (isNumber(_input) && Math.abs(_input) < 16 && !keepMinutes) {
+    _input = _input * 60;
+  }
+  if (!config._isUTC && keepLocalTime) {
+    localAdjust = getDateOffset(_date);
+  }
+  config._offset = _input;
+  config._isUTC = true;
+  if (localAdjust != null) {
+    _date = add(_date, localAdjust, 'minutes');
+  }
+  if (offset !== _input) {
+    if (!keepLocalTime || config._changeInProgress) {
+      _date = add(_date, _input - offset, 'minutes', config._isUTC);
+      // addSubtract(this, createDuration(_input - offset, 'm'), 1, false);
+    } else if (!config._changeInProgress) {
+      config._changeInProgress = true;
+      // todo: add timezone handling
+      // hooks.updateOffset(this, true);
+      config._changeInProgress = null;
+    }
+  }
+  return _date;
+}
+/*
+export function getSetZone(input, keepLocalTime) {
+  if (input != null) {
+    if (typeof input !== 'string') {
+      input = -input;
+    }
+
+    this.utcOffset(input, keepLocalTime);
+
+    return this;
+  } else {
+    return -this.utcOffset();
+  }
+}
+*/
+function setOffsetToUTC(date, keepLocalTime) {
+  return setUTCOffset(date, 0, keepLocalTime);
+}
+function isDaylightSavingTime(date) {
+  return getUTCOffset(date) > getUTCOffset(setMonth(cloneDate(date), 0)) || getUTCOffset(date) > getUTCOffset(setMonth(cloneDate(date), 5));
+}
+/*export function setOffsetToLocal(date: Date, isUTC?: boolean, keepLocalTime?: boolean) {
+  if (this._isUTC) {
+    this.utcOffset(0, keepLocalTime);
+    this._isUTC = false;
+
+    if (keepLocalTime) {
+      this.subtract(getDateOffset(this), 'm');
+    }
+  }
+  return this;
+}*/
+function setOffsetToParsedOffset(date, input, config = {}) {
+  if (config._tzm != null) {
+    return setUTCOffset(date, config._tzm, false, true, config);
+  }
+  if (isString(input)) {
+    const tZone = offsetFromString(matchOffset, input);
+    if (tZone != null) {
+      return setUTCOffset(date, tZone, false, false, config);
+    }
+    return setUTCOffset(date, 0, true, false, config);
+  }
+  return date;
+}
+function hasAlignedHourOffset(date, input) {
+  const _input = input ? getUTCOffset(input, {
+    _isUTC: false
+  }) : 0;
+  return (getUTCOffset(date) - _input) % 60 === 0;
+}
+// DEPRECATED
+/*export function isDaylightSavingTimeShifted() {
+  if (!isUndefined(this._isDSTShifted)) {
+    return this._isDSTShifted;
+  }
+
+  const c = {};
+
+  copyConfig(c, this);
+  c = prepareConfig(c);
+
+  if (c._a) {
+    const other = c._isUTC ? createUTC(c._a) : createLocal(c._a);
+    this._isDSTShifted = this.isValid() &&
+      compareArrays(c._a, other.toArray()) > 0;
+  } else {
+    this._isDSTShifted = false;
+  }
+
+  return this._isDSTShifted;
+}*/
+// in Khronos
+/*export function isLocal() {
+  return this.isValid() ? !this._isUTC : false;
+}
+
+export function isUtcOffset() {
+  return this.isValid() ? this._isUTC : false;
+}
+
+export function isUtc() {
+  return this.isValid() ? this._isUTC && this._offset === 0 : false;
+}*/
+
+function initMinute() {
+  // FORMATTING
+  addFormatToken('m', ['mm', 2, false], null, function (date, opts) {
+    return getMinutes(date, opts.isUTC).toString(10);
+  });
+  // ALIASES
+  addUnitAlias('minute', 'm');
+  // PRIORITY
+  addUnitPriority('minute', 14);
+  // PARSING
+  addRegexToken('m', match1to2);
+  addRegexToken('mm', match1to2, match2);
+  addParseToken(['m', 'mm'], MINUTE);
+}
+
+// FORMATTING
+function initMillisecond() {
+  addFormatToken('S', null, null, function (date, opts) {
+    return (~~(getMilliseconds(date, opts.isUTC) / 100)).toString(10);
+  });
+  addFormatToken(null, ['SS', 2, false], null, function (date, opts) {
+    return (~~(getMilliseconds(date, opts.isUTC) / 10)).toString(10);
+  });
+  addFormatToken(null, ['SSS', 3, false], null, function (date, opts) {
+    return getMilliseconds(date, opts.isUTC).toString(10);
+  });
+  addFormatToken(null, ['SSSS', 4, false], null, function (date, opts) {
+    return (getMilliseconds(date, opts.isUTC) * 10).toString(10);
+  });
+  addFormatToken(null, ['SSSSS', 5, false], null, function (date, opts) {
+    return (getMilliseconds(date, opts.isUTC) * 100).toString(10);
+  });
+  addFormatToken(null, ['SSSSSS', 6, false], null, function (date, opts) {
+    return (getMilliseconds(date, opts.isUTC) * 1000).toString(10);
+  });
+  addFormatToken(null, ['SSSSSSS', 7, false], null, function (date, opts) {
+    return (getMilliseconds(date, opts.isUTC) * 10000).toString(10);
+  });
+  addFormatToken(null, ['SSSSSSSS', 8, false], null, function (date, opts) {
+    return (getMilliseconds(date, opts.isUTC) * 100000).toString(10);
+  });
+  addFormatToken(null, ['SSSSSSSSS', 9, false], null, function (date, opts) {
+    return (getMilliseconds(date, opts.isUTC) * 1000000).toString(10);
+  });
+  // ALIASES
+  addUnitAlias('millisecond', 'ms');
+  // PRIORITY
+  addUnitPriority('millisecond', 16);
+  // PARSING
+  addRegexToken('S', match1to3, match1);
+  addRegexToken('SS', match1to3, match2);
+  addRegexToken('SSS', match1to3, match3);
+  let token;
+  for (token = 'SSSS'; token.length <= 9; token += 'S') {
+    addRegexToken(token, matchUnsigned);
+  }
+  function parseMs(input, array, config) {
+    array[MILLISECOND] = toInt(parseFloat(`0.${input}`) * 1000);
+    return config;
+  }
+  for (token = 'S'; token.length <= 9; token += 'S') {
+    addParseToken(token, parseMs);
+  }
+  // MOMENTS
+}
+
+function initHour() {
+  // FORMATTING
+  function hFormat(date, isUTC) {
+    return getHours(date, isUTC) % 12 || 12;
+  }
+  function kFormat(date, isUTC) {
+    return getHours(date, isUTC) || 24;
+  }
+  addFormatToken('H', ['HH', 2, false], null, function (date, opts) {
+    return getHours(date, opts.isUTC).toString(10);
+  });
+  addFormatToken('h', ['hh', 2, false], null, function (date, opts) {
+    return hFormat(date, opts.isUTC).toString(10);
+  });
+  addFormatToken('k', ['kk', 2, false], null, function (date, opts) {
+    return kFormat(date, opts.isUTC).toString(10);
+  });
+  addFormatToken('hmm', null, null, function (date, opts) {
+    const _h = hFormat(date, opts.isUTC);
+    const _mm = zeroFill(getMinutes(date, opts.isUTC), 2);
+    return `${_h}${_mm}`;
+  });
+  addFormatToken('hmmss', null, null, function (date, opts) {
+    const _h = hFormat(date, opts.isUTC);
+    const _mm = zeroFill(getMinutes(date, opts.isUTC), 2);
+    const _ss = zeroFill(getSeconds(date, opts.isUTC), 2);
+    return `${_h}${_mm}${_ss}`;
+  });
+  addFormatToken('Hmm', null, null, function (date, opts) {
+    const _H = getHours(date, opts.isUTC);
+    const _mm = zeroFill(getMinutes(date, opts.isUTC), 2);
+    return `${_H}${_mm}`;
+  });
+  addFormatToken('Hmmss', null, null, function (date, opts) {
+    const _H = getHours(date, opts.isUTC);
+    const _mm = zeroFill(getMinutes(date, opts.isUTC), 2);
+    const _ss = zeroFill(getSeconds(date, opts.isUTC), 2);
+    return `${_H}${_mm}${_ss}`;
+  });
+  function meridiem(token, lowercase) {
+    addFormatToken(token, null, null, function (date, opts) {
+      return opts.locale.meridiem(getHours(date, opts.isUTC), getMinutes(date, opts.isUTC), lowercase);
+    });
+  }
+  meridiem('a', true);
+  meridiem('A', false);
+  // ALIASES
+  addUnitAlias('hour', 'h');
+  // PRIORITY
+  addUnitPriority('hour', 13);
+  // PARSING
+  function matchMeridiem(isStrict, locale) {
+    return locale._meridiemParse;
+  }
+  addRegexToken('a', matchMeridiem);
+  addRegexToken('A', matchMeridiem);
+  addRegexToken('H', match1to2);
+  addRegexToken('h', match1to2);
+  addRegexToken('k', match1to2);
+  addRegexToken('HH', match1to2, match2);
+  addRegexToken('hh', match1to2, match2);
+  addRegexToken('kk', match1to2, match2);
+  addRegexToken('hmm', match3to4);
+  addRegexToken('hmmss', match5to6);
+  addRegexToken('Hmm', match3to4);
+  addRegexToken('Hmmss', match5to6);
+  addParseToken(['H', 'HH'], HOUR);
+  addParseToken(['k', 'kk'], function (input, array, config) {
+    const kInput = toInt(input);
+    array[HOUR] = kInput === 24 ? 0 : kInput;
+    return config;
+  });
+  addParseToken(['a', 'A'], function (input, array, config) {
+    config._isPm = config._locale.isPM(input);
+    config._meridiem = input;
+    return config;
+  });
+  addParseToken(['h', 'hh'], function (input, array, config) {
+    array[HOUR] = toInt(input);
+    getParsingFlags(config).bigHour = true;
+    return config;
+  });
+  addParseToken('hmm', function (input, array, config) {
+    const pos = input.length - 2;
+    array[HOUR] = toInt(input.substr(0, pos));
+    array[MINUTE] = toInt(input.substr(pos));
+    getParsingFlags(config).bigHour = true;
+    return config;
+  });
+  addParseToken('hmmss', function (input, array, config) {
+    const pos1 = input.length - 4;
+    const pos2 = input.length - 2;
+    array[HOUR] = toInt(input.substr(0, pos1));
+    array[MINUTE] = toInt(input.substr(pos1, 2));
+    array[SECOND] = toInt(input.substr(pos2));
+    getParsingFlags(config).bigHour = true;
+    return config;
+  });
+  addParseToken('Hmm', function (input, array, config) {
+    const pos = input.length - 2;
+    array[HOUR] = toInt(input.substr(0, pos));
+    array[MINUTE] = toInt(input.substr(pos));
+    return config;
+  });
+  addParseToken('Hmmss', function (input, array, config) {
+    const pos1 = input.length - 4;
+    const pos2 = input.length - 2;
+    array[HOUR] = toInt(input.substr(0, pos1));
+    array[MINUTE] = toInt(input.substr(pos1, 2));
+    array[SECOND] = toInt(input.substr(pos2));
+    return config;
+  });
+}
+
+// internal storage for locale config files
+const locales = {};
+const localeFamilies = {};
+let globalLocale;
+function normalizeLocale(key) {
+  return key ? key.toLowerCase().replace('_', '-') : key;
+}
+// pick the locale from the array
+// try ['en-au', 'en-gb'] as 'en-au', 'en-gb', 'en', as in move through the list trying each
+// substring from most specific to least,
+// but move to the next array item if it's a more specific variant than the current root
+function chooseLocale(names) {
+  let next;
+  let locale;
+  let i = 0;
+  while (i < names.length) {
+    const split = normalizeLocale(names[i]).split('-');
+    let j = split.length;
+    next = normalizeLocale(names[i + 1]);
+    next = next ? next.split('-') : null;
+    while (j > 0) {
+      locale = loadLocale(split.slice(0, j).join('-'));
+      if (locale) {
+        return locale;
+      }
+      if (next && next.length >= j && compareArrays(split, next, true) >= j - 1) {
+        // the next array item is better than a shallower substring of this one
+        break;
+      }
+      j--;
+    }
+    i++;
+  }
+  return null;
+}
+function mergeConfigs(parentConfig, childConfig) {
+  const res = Object.assign({}, parentConfig);
+  for (const childProp in childConfig) {
+    if (!hasOwnProp(childConfig, childProp)) {
+      continue;
+    }
+    if (isObject(parentConfig[childProp]) && isObject(childConfig[childProp])) {
+      res[childProp] = {};
+      Object.assign(res[childProp], parentConfig[childProp]);
+      Object.assign(res[childProp], childConfig[childProp]);
+    } else if (childConfig[childProp] != null) {
+      res[childProp] = childConfig[childProp];
+    } else {
+      delete res[childProp];
+    }
+  }
+  for (const parentProp in parentConfig) {
+    if (hasOwnProp(parentConfig, parentProp) && !hasOwnProp(childConfig, parentProp) && isObject(parentConfig[parentProp])) {
+      // make sure changes to properties don't modify parent config
+      res[parentProp] = Object.assign({}, res[parentProp]);
+    }
+  }
+  return res;
+}
+function loadLocale(name) {
+  // no way!
+  /* var oldLocale = null;
+   // TODO: Find a better way to register and load all the locales in Node
+   if (!locales[name] && (typeof module !== 'undefined') &&
+     module && module.exports) {
+     try {
+       oldLocale = globalLocale._abbr;
+       var aliasedRequire = require;
+       aliasedRequire('./locale/' + name);
+       getSetGlobalLocale(oldLocale);
+     } catch (e) {}
+   }*/
+  if (!locales[name]) {
+    console.error(`Khronos locale error: please load locale "${name}" before using it`);
+    // throw new Error(`Khronos locale error: please load locale "${name}" before using it`);
+  }
+
+  return locales[name];
+}
+// This function will load locale and then set the global locale.  If
+// no arguments are passed in, it will simply return the current global
+// locale key.
+function getSetGlobalLocale(key, values) {
+  let data;
+  if (key) {
+    if (isUndefined(values)) {
+      data = getLocale(key);
+    } else if (isString(key)) {
+      data = defineLocale(key, values);
+    }
+    if (data) {
+      globalLocale = data;
+    }
+  }
+  return globalLocale && globalLocale._abbr;
+}
+function defineLocale(name, config) {
+  if (config === null) {
+    // useful for testing
+    delete locales[name];
+    globalLocale = getLocale('en');
+    return null;
+  }
+  if (!config) {
+    return;
+  }
+  let parentConfig = baseConfig;
+  config.abbr = name;
+  if (config.parentLocale != null) {
+    if (locales[config.parentLocale] != null) {
+      parentConfig = locales[config.parentLocale]._config;
+    } else {
+      if (!localeFamilies[config.parentLocale]) {
+        localeFamilies[config.parentLocale] = [];
+      }
+      localeFamilies[config.parentLocale].push({
+        name,
+        config
+      });
+      return null;
+    }
+  }
+  locales[name] = new Locale(mergeConfigs(parentConfig, config));
+  if (localeFamilies[name]) {
+    localeFamilies[name].forEach(function (x) {
+      defineLocale(x.name, x.config);
+    });
+  }
+  // backwards compat for now: also set the locale
+  // make sure we set the locale AFTER all child locales have been
+  // created, so we won't end up with the child locale set.
+  getSetGlobalLocale(name);
+  return locales[name];
+}
+function updateLocale(name, config) {
+  let _config = config;
+  if (_config != null) {
+    let parentConfig = baseConfig;
+    // MERGE
+    const tmpLocale = loadLocale(name);
+    if (tmpLocale != null) {
+      parentConfig = tmpLocale._config;
+    }
+    _config = mergeConfigs(parentConfig, _config);
+    const locale = new Locale(_config);
+    locale.parentLocale = locales[name];
+    locales[name] = locale;
+    // backwards compat for now: also set the locale
+    getSetGlobalLocale(name);
+  } else {
+    // pass null for config to unupdate, useful for tests
+    if (locales[name] != null) {
+      if (locales[name].parentLocale != null) {
+        locales[name] = locales[name].parentLocale;
+      } else if (locales[name] != null) {
+        delete locales[name];
+      }
+    }
+  }
+  return locales[name];
+}
+// returns locale data
+function getLocale(key) {
+  setDefaultLocale();
+  if (!key) {
+    return globalLocale;
+  }
+  // let locale;
+  const _key = isArray(key) ? key : [key];
+  return chooseLocale(_key);
+}
+function listLocales() {
+  return Object.keys(locales);
+}
+function setDefaultLocale() {
+  if (locales[`en`]) {
+    return undefined;
+  }
+  getSetGlobalLocale('en', {
+    dayOfMonthOrdinalParse: /\d{1,2}(th|st|nd|rd)/,
+    ordinal(num) {
+      const b = num % 10;
+      const output = toInt(num % 100 / 10) === 1 ? 'th' : b === 1 ? 'st' : b === 2 ? 'nd' : b === 3 ? 'rd' : 'th';
+      return num + output;
+    }
+  });
+  initWeek();
+  initWeekYear();
+  initYear();
+  initTimezone();
+  initTimestamp();
+  initSecond();
+  initQuarter();
+  initOffset();
+  initMonth();
+  initMinute();
+  initMillisecond();
+  initHour();
+  initDayOfYear();
+  initDayOfWeek();
+  initDayOfMonth();
+}
+const ordering = ['year', 'quarter', 'month', 'week', 'day', 'hours', 'minutes', 'seconds', 'milliseconds'];
+const orderingHash = ordering.reduce((mem, order) => {
+  mem[order] = true;
+  return mem;
+}, {});
+function isDurationValid(duration) {
+  const durationKeys = Object.keys(duration);
+  if (durationKeys.some(key => {
+    return key in orderingHash && duration[key] === null || isNaN(duration[key]);
+  })) {
+    return false;
+  }
+  // for (let key in duration) {
+  //   if (!(indexOf.call(ordering, key) !== -1 && (duration[key] == null || !isNaN(duration[key])))) {
+  //     return false;
+  //   }
+  // }
+  let unitHasDecimal = false;
+  for (let i = 0; i < ordering.length; ++i) {
+    if (duration[ordering[i]]) {
+      // only allow non-integers for smallest unit
+      if (unitHasDecimal) {
+        return false;
+      }
+      if (duration[ordering[i]] !== toInt(duration[ordering[i]])) {
+        unitHasDecimal = true;
+      }
+    }
+  }
+  return true;
+}
+// export function isValid() {
+//   return this._isValid;
+// }
+//
+// export function createInvalid(): Duration {
+//   return createDuration(NaN);
+// }
+
+function absCeil(number) {
+  return number < 0 ? Math.floor(number) : Math.ceil(number);
+}
+function bubble(dur) {
+  let milliseconds = dur._milliseconds;
+  let days = dur._days;
+  let months = dur._months;
+  const data = dur._data;
+  // if we have a mix of positive and negative values, bubble down first
+  // check: https://github.com/moment/moment/issues/2166
+  if (!(milliseconds >= 0 && days >= 0 && months >= 0 || milliseconds <= 0 && days <= 0 && months <= 0)) {
+    milliseconds += absCeil(monthsToDays(months) + days) * 864e5;
+    days = 0;
+    months = 0;
+  }
+  // The following code bubbles up values, see the tests for
+  // examples of what that means.
+  data.milliseconds = milliseconds % 1000;
+  const seconds = absFloor(milliseconds / 1000);
+  data.seconds = seconds % 60;
+  const minutes = absFloor(seconds / 60);
+  data.minutes = minutes % 60;
+  const hours = absFloor(minutes / 60);
+  data.hours = hours % 24;
+  days += absFloor(hours / 24);
+  // convert days to months
+  const monthsFromDays = absFloor(daysToMonths(days));
+  months += monthsFromDays;
+  days -= absCeil(monthsToDays(monthsFromDays));
+  // 12 months -> 1 year
+  const years = absFloor(months / 12);
+  months %= 12;
+  data.day = days;
+  data.month = months;
+  data.year = years;
+  return dur;
+}
+function daysToMonths(day) {
+  // 400 years have 146097 days (taking into account leap year rules)
+  // 400 years have 12 months === 4800
+  return day * 4800 / 146097;
+}
+function monthsToDays(month) {
+  // the reverse of daysToMonths
+  return month * 146097 / 4800;
+}
+let round = Math.round;
+const thresholds = {
+  ss: 44,
+  s: 45,
+  m: 45,
+  h: 22,
+  d: 26,
+  M: 11 // months to year
+};
+// helper function for moment.fn.from, moment.fn.fromNow, and moment.duration.fn.humanize
+function substituteTimeAgo(str, num, withoutSuffix, isFuture, locale) {
+  return locale.relativeTime(num || 1, !!withoutSuffix, str, isFuture);
+}
+function relativeTime(posNegDuration, withoutSuffix, locale) {
+  const duration = createDuration(posNegDuration).abs();
+  const seconds = round(duration.as('s'));
+  const minutes = round(duration.as('m'));
+  const hours = round(duration.as('h'));
+  const days = round(duration.as('d'));
+  const months = round(duration.as('M'));
+  const years = round(duration.as('y'));
+  const a = seconds <= thresholds["ss"] && ['s', seconds] || seconds < thresholds["s"] && ['ss', seconds] || minutes <= 1 && ['m'] || minutes < thresholds["m"] && ['mm', minutes] || hours <= 1 && ['h'] || hours < thresholds["h"] && ['hh', hours] || days <= 1 && ['d'] || days < thresholds["d"] && ['dd', days] || months <= 1 && ['M'] || months < thresholds["M"] && ['MM', months] || years <= 1 && ['y'] || ['yy', years];
+  const b = [a[0], a[1], withoutSuffix, +posNegDuration > 0, locale];
+  // a[2] = withoutSuffix;
+  // a[3] = +posNegDuration > 0;
+  // a[4] = locale;
+  return substituteTimeAgo.apply(null, b);
+}
+// This function allows you to set the rounding function for relative time strings
+function getSetRelativeTimeRounding(roundingFunction) {
+  if (roundingFunction === undefined) {
+    return round;
+  }
+  if (typeof roundingFunction === 'function') {
+    round = roundingFunction;
+    return true;
+  }
+  return false;
+}
+// This function allows you to set a threshold for relative time strings
+function getSetRelativeTimeThreshold(threshold, limit) {
+  if (thresholds[threshold] === undefined) {
+    return false;
+  }
+  if (limit === undefined) {
+    return thresholds[threshold];
+  }
+  thresholds[threshold] = limit;
+  if (threshold === 's') {
+    thresholds["ss"] = limit - 1;
+  }
+  return true;
+}
+// export function humanize(withSuffix) {
+//   if (!this.isValid()) {
+//     return this.localeData().invalidDate();
+//   }
+//
+//   const locale = this.localeData();
+//   let output = relativeTime(this, !withSuffix, locale);
+//
+//   if (withSuffix) {
+//     output = locale.pastFuture(+this, output);
+//   }
+//
+//   return locale.postformat(output);
+// }
+
+class Duration {
+  constructor(duration, config = {}) {
+    this._data = {};
+    this._locale = getLocale();
+    this._locale = config && config._locale || getLocale();
+    // const normalizedInput = normalizeObjectUnits(duration);
+    const normalizedInput = duration;
+    const years = normalizedInput.year || 0;
+    const quarters = normalizedInput.quarter || 0;
+    const months = normalizedInput.month || 0;
+    const weeks = normalizedInput.week || 0;
+    const days = normalizedInput.day || 0;
+    const hours = normalizedInput.hours || 0;
+    const minutes = normalizedInput.minutes || 0;
+    const seconds = normalizedInput.seconds || 0;
+    const milliseconds = normalizedInput.milliseconds || 0;
+    this._isValid = isDurationValid(normalizedInput);
+    // representation for dateAddRemove
+    this._milliseconds = +milliseconds + seconds * 1000 + minutes * 60 * 1000 +
+    // 1000 * 60
+    hours * 1000 * 60 * 60; // using 1000 * 60 * 60
+    // instead of 36e5 to avoid floating point rounding errors https://github.com/moment/moment/issues/2978
+    // Because of dateAddRemove treats 24 hours as different from a
+    // day when working around DST, we need to store them separately
+    this._days = +days + weeks * 7;
+    // It is impossible to translate months into days without knowing
+    // which months you are are talking about, so we have to store
+    // it separately.
+    this._months = +months + quarters * 3 + years * 12;
+    // this._data = {};
+    // this._locale = getLocale();
+    // this._bubble();
+    return bubble(this);
+  }
+  isValid() {
+    return this._isValid;
+  }
+  humanize(withSuffix) {
+    // throw new Error(`TODO: implement`);
+    if (!this.isValid()) {
+      return this.localeData().invalidDate;
+    }
+    const locale = this.localeData();
+    let output = relativeTime(this, !withSuffix, locale);
+    if (withSuffix) {
+      output = locale.pastFuture(+this, output);
+    }
+    return locale.postformat(output);
+  }
+  localeData() {
+    return this._locale;
+  }
+  locale(localeKey) {
+    if (!localeKey) {
+      return this._locale._abbr;
+    }
+    this._locale = getLocale(localeKey) || this._locale;
+    return this;
+  }
+  abs() {
+    const mathAbs = Math.abs;
+    const data = this._data;
+    this._milliseconds = mathAbs(this._milliseconds);
+    this._days = mathAbs(this._days);
+    this._months = mathAbs(this._months);
+    data.milliseconds = mathAbs(data.milliseconds);
+    data.seconds = mathAbs(data.seconds);
+    data.minutes = mathAbs(data.minutes);
+    data.hours = mathAbs(data.hours);
+    data.month = mathAbs(data.month);
+    data.year = mathAbs(data.year);
+    return this;
+  }
+  as(_units) {
+    if (!this.isValid()) {
+      return NaN;
+    }
+    let days;
+    let months;
+    const milliseconds = this._milliseconds;
+    const units = normalizeUnits(_units);
+    if (units === 'month' || units === 'year') {
+      days = this._days + milliseconds / 864e5;
+      months = this._months + daysToMonths(days);
+      return units === 'month' ? months : months / 12;
+    }
+    // handle milliseconds separately because of floating point math errors (issue #1867)
+    days = this._days + Math.round(monthsToDays(this._months));
+    switch (units) {
+      case 'week':
+        return days / 7 + milliseconds / 6048e5;
+      case 'day':
+        return days + milliseconds / 864e5;
+      case 'hours':
+        return days * 24 + milliseconds / 36e5;
+      case 'minutes':
+        return days * 1440 + milliseconds / 6e4;
+      case 'seconds':
+        return days * 86400 + milliseconds / 1000;
+      // Math.floor prevents floating point math errors here
+      case 'milliseconds':
+        return Math.floor(days * 864e5) + milliseconds;
+      default:
+        throw new Error(`Unknown unit ${units}`);
+    }
+  }
+  valueOf() {
+    if (!this.isValid()) {
+      return NaN;
+    }
+    return this._milliseconds + this._days * 864e5 + this._months % 12 * 2592e6 + toInt(this._months / 12) * 31536e6;
+  }
+}
+function isDuration(obj) {
+  return obj instanceof Duration;
+}
+function isValid(config) {
+  if (config._isValid == null) {
+    const flags = getParsingFlags(config);
+    const parsedParts = Array.prototype.some.call(flags.parsedDateParts, function (i) {
+      return i != null;
+    });
+    let isNowValid = !isNaN(config._d && config._d.getTime()) && flags.overflow < 0 && !flags.empty && !flags.invalidMonth && !flags.invalidWeekday && !flags.weekdayMismatch && !flags.nullInput && !flags.invalidFormat && !flags.userInvalidated && (!flags.meridiem || flags.meridiem && parsedParts);
+    if (config._strict) {
+      isNowValid = isNowValid && flags.charsLeftOver === 0 && flags.unusedTokens.length === 0 && flags.bigHour === undefined;
+    }
+    if (Object.isFrozen == null || !Object.isFrozen(config)) {
+      config._isValid = isNowValid;
+    } else {
+      return isNowValid;
+    }
+  }
+  return config._isValid;
+}
+function createInvalid(config, flags) {
+  config._d = new Date(NaN);
+  Object.assign(getParsingFlags(config), flags || {
+    userInvalidated: true
+  });
+  return config;
+}
+function markInvalid(config) {
+  config._isValid = false;
+  return config;
+}
+
+// iso 8601 regex
+// 0000-00-00 0000-W00 or 0000-W00-0 + T + 00 or 00:00 or 00:00:00 or 00:00:00.000 + +00:00 or +0000 or +00)
+const extendedIsoRegex = /^\s*((?:[+-]\d{6}|\d{4})-(?:\d\d-\d\d|W\d\d-\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?::\d\d(?::\d\d(?:[.,]\d+)?)?)?)([\+\-]\d\d(?::?\d\d)?|\s*Z)?)?$/;
+const basicIsoRegex = /^\s*((?:[+-]\d{6}|\d{4})(?:\d\d\d\d|W\d\d\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?:\d\d(?:\d\d(?:[.,]\d+)?)?)?)([\+\-]\d\d(?::?\d\d)?|\s*Z)?)?$/;
+const tzRegex = /Z|[+-]\d\d(?::?\d\d)?/;
+const isoDates = [['YYYYYY-MM-DD', /[+-]\d{6}-\d\d-\d\d/, true], ['YYYY-MM-DD', /\d{4}-\d\d-\d\d/, true], ['GGGG-[W]WW-E', /\d{4}-W\d\d-\d/, true], ['GGGG-[W]WW', /\d{4}-W\d\d/, false], ['YYYY-DDD', /\d{4}-\d{3}/, true], ['YYYY-MM', /\d{4}-\d\d/, false], ['YYYYYYMMDD', /[+-]\d{10}/, true], ['YYYYMMDD', /\d{8}/, true],
+// YYYYMM is NOT allowed by the standard
+['GGGG[W]WWE', /\d{4}W\d{3}/, true], ['GGGG[W]WW', /\d{4}W\d{2}/, false], ['YYYYDDD', /\d{7}/, true]];
+// iso time formats and regexes
+const isoTimes = [['HH:mm:ss.SSSS', /\d\d:\d\d:\d\d\.\d+/], ['HH:mm:ss,SSSS', /\d\d:\d\d:\d\d,\d+/], ['HH:mm:ss', /\d\d:\d\d:\d\d/], ['HH:mm', /\d\d:\d\d/], ['HHmmss.SSSS', /\d\d\d\d\d\d\.\d+/], ['HHmmss,SSSS', /\d\d\d\d\d\d,\d+/], ['HHmmss', /\d\d\d\d\d\d/], ['HHmm', /\d\d\d\d/], ['HH', /\d\d/]];
+const aspNetJsonRegex = /^\/?Date\((\-?\d+)/i;
+const obsOffsets = {
+  UT: 0,
+  GMT: 0,
+  EDT: -4 * 60,
+  EST: -5 * 60,
+  CDT: -5 * 60,
+  CST: -6 * 60,
+  MDT: -6 * 60,
+  MST: -7 * 60,
+  PDT: -7 * 60,
+  PST: -8 * 60
+};
+// RFC 2822 regex: For details see https://tools.ietf.org/html/rfc2822#section-3.3
+const rfc2822 = /^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/;
+// date from iso format
+function configFromISO(config) {
+  if (!isString(config._i)) {
+    return config;
+  }
+  const input = config._i;
+  const match = extendedIsoRegex.exec(input) || basicIsoRegex.exec(input);
+  let allowTime;
+  let dateFormat;
+  let timeFormat;
+  let tzFormat;
+  if (!match) {
+    config._isValid = false;
+    return config;
+  }
+  // getParsingFlags(config).iso = true;
+  let i;
+  let l;
+  for (i = 0, l = isoDates.length; i < l; i++) {
+    if (isoDates[i][1].exec(match[1])) {
+      dateFormat = isoDates[i][0];
+      allowTime = isoDates[i][2] !== false;
+      break;
+    }
+  }
+  if (dateFormat == null) {
+    config._isValid = false;
+    return config;
+  }
+  if (match[3]) {
+    for (i = 0, l = isoTimes.length; i < l; i++) {
+      if (isoTimes[i][1].exec(match[3])) {
+        // match[2] should be 'T' or space
+        timeFormat = (match[2] || ' ') + isoTimes[i][0];
+        break;
+      }
+    }
+    if (timeFormat == null) {
+      config._isValid = false;
+      return config;
+    }
+  }
+  if (!allowTime && timeFormat != null) {
+    config._isValid = false;
+    return config;
+  }
+  if (match[4]) {
+    if (tzRegex.exec(match[4])) {
+      tzFormat = 'Z';
+    } else {
+      config._isValid = false;
+      return config;
+    }
+  }
+  config._f = dateFormat + (timeFormat || '') + (tzFormat || '');
+  return configFromStringAndFormat(config);
+}
+function extractFromRFC2822Strings(yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr) {
+  const result = [untruncateYear(yearStr), defaultLocaleMonthsShort.indexOf(monthStr), parseInt(dayStr, 10), parseInt(hourStr, 10), parseInt(minuteStr, 10)];
+  if (secondStr) {
+    result.push(parseInt(secondStr, 10));
+  }
+  return result;
+}
+function untruncateYear(yearStr) {
+  const year = parseInt(yearStr, 10);
+  return year <= 49 ? year + 2000 : year;
+}
+function preprocessRFC2822(str) {
+  // Remove comments and folding whitespace and replace multiple-spaces with a single space
+  return str.replace(/\([^)]*\)|[\n\t]/g, ' ').replace(/(\s\s+)/g, ' ').trim();
+}
+function checkWeekday(weekdayStr, parsedInput, config) {
+  if (weekdayStr) {
+    // TODO: Replace the vanilla JS Date object with an indepentent day-of-week check.
+    const weekdayProvided = defaultLocaleWeekdaysShort.indexOf(weekdayStr);
+    const weekdayActual = new Date(parsedInput[0], parsedInput[1], parsedInput[2]).getDay();
+    if (weekdayProvided !== weekdayActual) {
+      getParsingFlags(config).weekdayMismatch = true;
+      config._isValid = false;
+      return false;
+    }
+  }
+  return true;
+}
+function calculateOffset(obsOffset, militaryOffset, numOffset) {
+  if (obsOffset) {
+    return obsOffsets[obsOffset];
+  } else if (militaryOffset) {
+    // the only allowed military tz is Z
+    return 0;
+  } else {
+    const hm = parseInt(numOffset, 10);
+    const m = hm % 100;
+    const h = (hm - m) / 100;
+    return h * 60 + m;
+  }
+}
+// date and time from ref 2822 format
+function configFromRFC2822(config) {
+  if (!isString(config._i)) {
+    return config;
+  }
+  const match = rfc2822.exec(preprocessRFC2822(config._i));
+  if (!match) {
+    return markInvalid(config);
+  }
+  const parsedArray = extractFromRFC2822Strings(match[4], match[3], match[2], match[5], match[6], match[7]);
+  if (!checkWeekday(match[1], parsedArray, config)) {
+    return config;
+  }
+  config._a = parsedArray;
+  config._tzm = calculateOffset(match[8], match[9], match[10]);
+  config._d = createUTCDate.apply(null, config._a);
+  config._d.setUTCMinutes(config._d.getUTCMinutes() - config._tzm);
+  getParsingFlags(config).rfc2822 = true;
+  return config;
+}
+// date from iso format or fallback
+function configFromString(config) {
+  if (!isString(config._i)) {
+    return config;
+  }
+  const matched = aspNetJsonRegex.exec(config._i);
+  if (matched !== null) {
+    config._d = new Date(+matched[1]);
+    return config;
+  }
+  // todo: update logic processing
+  // isISO -> configFromISO
+  // isRFC -> configFromRFC
+  configFromISO(config);
+  if (config._isValid === false) {
+    delete config._isValid;
+  } else {
+    return config;
+  }
+  configFromRFC2822(config);
+  if (config._isValid === false) {
+    delete config._isValid;
+  } else {
+    return config;
+  }
+  // Final attempt, use Input Fallback
+  // hooks.createFromInputFallback(config);
+  return createInvalid(config);
+}
+// hooks.createFromInputFallback = deprecate(
+//     'value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), ' +
+//     'which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are ' +
+//     'discouraged and will be removed in an upcoming major release. Please refer to ' +
+//     'http://momentjs.com/guides/#/warnings/js-date/ for more info.',
+//     function (config) {
+//         config._d = new Date(config._i + (config._useUTC ? ' UTC' : ''));
+//     }
+// );
+
+// moment.js
+function formatDate(date, format, locale, isUTC, offset = 0) {
+  const _locale = getLocale(locale || 'en');
+  if (!_locale) {
+    throw new Error(`Locale "${locale}" is not defined, please add it with "defineLocale(...)"`);
+  }
+  const _format = format || (isUTC ? 'YYYY-MM-DDTHH:mm:ss[Z]' : 'YYYY-MM-DDTHH:mm:ssZ');
+  const output = formatMoment(date, _format, _locale, isUTC, offset);
+  if (!output) {
+    return output;
+  }
+  return _locale.postformat(output);
+}
+// format date using native date object
+function formatMoment(date, _format, locale, isUTC, offset = 0) {
+  if (!isDateValid(date)) {
+    return locale.invalidDate;
+  }
+  const format = expandFormat(_format, locale);
+  formatFunctions[format] = formatFunctions[format] || makeFormatFunction(format);
+  return formatFunctions[format](date, locale, isUTC, offset);
+}
+function expandFormat(_format, locale) {
+  let format = _format;
+  let i = 5;
+  const localFormattingTokens = /(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g;
+  const replaceLongDateFormatTokens = input => {
+    return locale.formatLongDate(input) || input;
+  };
+  localFormattingTokens.lastIndex = 0;
+  while (i >= 0 && localFormattingTokens.test(format)) {
+    format = format.replace(localFormattingTokens, replaceLongDateFormatTokens);
+    localFormattingTokens.lastIndex = 0;
+    i -= 1;
+  }
+  return format;
+}
+
+// Pick the first defined of two or three arguments.
+function defaults(a, b, c) {
+  if (a != null) {
+    return a;
+  }
+  if (b != null) {
+    return b;
+  }
+  return c;
+}
+function currentDateArray(config) {
+  const nowValue = new Date();
+  if (config._useUTC) {
+    return [nowValue.getUTCFullYear(), nowValue.getUTCMonth(), nowValue.getUTCDate()];
+  }
+  return [nowValue.getFullYear(), nowValue.getMonth(), nowValue.getDate()];
+}
+// convert an array to a date.
+// the array should mirror the parameters below
+// note: all values past the year are optional and will default to the lowest possible value.
+// [year, month, day , hour, minute, second, millisecond]
+function configFromArray(config) {
+  const input = [];
+  let i;
+  let date;
+  let yearToUse;
+  if (config._d) {
+    return config;
+  }
+  const currentDate = currentDateArray(config);
+  // compute day of the year from weeks and weekdays
+  if (config._w && config._a[DATE] == null && config._a[MONTH] == null) {
+    dayOfYearFromWeekInfo(config);
+  }
+  // if the day of the year is set, figure out what it is
+  if (config._dayOfYear != null) {
+    yearToUse = defaults(config._a[YEAR], currentDate[YEAR]);
+    if (config._dayOfYear > daysInYear(yearToUse) || config._dayOfYear === 0) {
+      getParsingFlags(config)._overflowDayOfYear = true;
+    }
+    date = new Date(Date.UTC(yearToUse, 0, config._dayOfYear));
+    config._a[MONTH] = date.getUTCMonth();
+    config._a[DATE] = date.getUTCDate();
+  }
+  // Default to current date.
+  // * if no year, month, day of month are given, default to today
+  // * if day of month is given, default month and year
+  // * if month is given, default only year
+  // * if year is given, don't default anything
+  for (i = 0; i < 3 && config._a[i] == null; ++i) {
+    config._a[i] = input[i] = currentDate[i];
+  }
+  // Zero out whatever was not defaulted, including time
+  for (; i < 7; i++) {
+    config._a[i] = input[i] = config._a[i] == null ? i === 2 ? 1 : 0 : config._a[i];
+  }
+  // Check for 24:00:00.000
+  if (config._a[HOUR] === 24 && config._a[MINUTE] === 0 && config._a[SECOND] === 0 && config._a[MILLISECOND] === 0) {
+    config._nextDay = true;
+    config._a[HOUR] = 0;
+  }
+  // eslint-disable-next-line prefer-spread
+  config._d = (config._useUTC ? createUTCDate : createDate).apply(null, input);
+  const expectedWeekday = config._useUTC ? config._d.getUTCDay() : config._d.getDay();
+  // Apply timezone offset from input. The actual utcOffset can be changed
+  // with parseZone.
+  if (config._tzm != null) {
+    config._d.setUTCMinutes(config._d.getUTCMinutes() - config._tzm);
+  }
+  if (config._nextDay) {
+    config._a[HOUR] = 24;
+  }
+  // check for mismatching day of week
+  if (config._w && typeof config._w["d"] !== 'undefined' && config._w["d"] !== expectedWeekday) {
+    getParsingFlags(config).weekdayMismatch = true;
+  }
+  return config;
+}
+function dayOfYearFromWeekInfo(config) {
+  let weekYear, week, weekday, dow, doy, temp, weekdayOverflow;
+  const w = config._w;
+  if (w["GG"] != null || w["W"] != null || w["E"] != null) {
+    dow = 1;
+    doy = 4;
+    // TODO: We need to take the current isoWeekYear, but that depends on
+    // how we interpret now (local, utc, fixed offset). So create
+    // a now version of current config (take local/utc/offset flags, and
+    // create now).
+    weekYear = defaults(w["GG"], config._a[YEAR], weekOfYear(new Date(), 1, 4).year);
+    week = defaults(w["W"], 1);
+    weekday = defaults(w["E"], 1);
+    if (weekday < 1 || weekday > 7) {
+      weekdayOverflow = true;
+    }
+  } else {
+    dow = config._locale._week.dow;
+    doy = config._locale._week.doy;
+    const curWeek = weekOfYear(new Date(), dow, doy);
+    weekYear = defaults(w["gg"], config._a[YEAR], curWeek.year);
+    // Default to current week.
+    week = defaults(w["w"], curWeek.week);
+    if (w["d"] != null) {
+      // weekday -- low day numbers are considered next week
+      weekday = w["d"];
+      if (weekday < 0 || weekday > 6) {
+        weekdayOverflow = true;
+      }
+    } else if (w["e"] != null) {
+      // local weekday -- counting starts from beginning of week
+      weekday = w["e"] + dow;
+      if (w["e"] < 0 || w["e"] > 6) {
+        weekdayOverflow = true;
+      }
+    } else {
+      // default to beginning of week
+      weekday = dow;
+    }
+  }
+  if (week < 1 || week > weeksInYear(weekYear, dow, doy)) {
+    getParsingFlags(config)._overflowWeeks = true;
+  } else if (weekdayOverflow != null) {
+    getParsingFlags(config)._overflowWeekday = true;
+  } else {
+    temp = dayOfYearFromWeeks(weekYear, week, weekday, dow, doy);
+    config._a[YEAR] = temp.year;
+    config._dayOfYear = temp.dayOfYear;
+  }
+  return config;
+}
+function checkOverflow(config) {
+  let overflow;
+  const a = config._a;
+  if (a && getParsingFlags(config).overflow === -2) {
+    // todo: fix this sh*t
+    overflow = a[MONTH] < 0 || a[MONTH] > 11 ? MONTH : a[DATE] < 1 || a[DATE] > daysInMonth(a[YEAR], a[MONTH]) ? DATE : a[HOUR] < 0 || a[HOUR] > 24 || a[HOUR] === 24 && (a[MINUTE] !== 0 || a[SECOND] !== 0 || a[MILLISECOND] !== 0) ? HOUR : a[MINUTE] < 0 || a[MINUTE] > 59 ? MINUTE : a[SECOND] < 0 || a[SECOND] > 59 ? SECOND : a[MILLISECOND] < 0 || a[MILLISECOND] > 999 ? MILLISECOND : -1;
+    if (getParsingFlags(config)._overflowDayOfYear && (overflow < YEAR || overflow > DATE)) {
+      overflow = DATE;
+    }
+    if (getParsingFlags(config)._overflowWeeks && overflow === -1) {
+      overflow = WEEK;
+    }
+    if (getParsingFlags(config)._overflowWeekday && overflow === -1) {
+      overflow = WEEKDAY;
+    }
+    getParsingFlags(config).overflow = overflow;
+  }
+  return config;
+}
+
+// constant that refers to the ISO standard
+// hooks.ISO_8601 = function () {};
+const ISO_8601 = 'ISO_8601';
+// constant that refers to the RFC 2822 form
+// hooks.RFC_2822 = function () {};
+const RFC_2822 = 'RFC_2822';
+// date from string and format string
+function configFromStringAndFormat(config) {
+  // TODO: Move this to another part of the creation flow to prevent circular deps
+  if (config._f === ISO_8601) {
+    return configFromISO(config);
+  }
+  if (config._f === RFC_2822) {
+    return configFromRFC2822(config);
+  }
+  config._a = [];
+  getParsingFlags(config).empty = true;
+  if (isArray(config._f) || !config._i && config._i !== 0) {
+    return config;
+  }
+  // This array is used to make a Date, either with `new Date` or `Date.UTC`
+  let input = config._i.toString();
+  let totalParsedInputLength = 0;
+  const inputLength = input.length;
+  const tokens = expandFormat(config._f, config._locale).match(formattingTokens) || [];
+  let i;
+  let token;
+  let parsedInput;
+  let skipped;
+  for (i = 0; i < tokens.length; i++) {
+    token = tokens[i];
+    parsedInput = (input.match(getParseRegexForToken(token, config._locale)) || [])[0];
+    if (parsedInput) {
+      skipped = input.substr(0, input.indexOf(parsedInput));
+      if (skipped.length > 0) {
+        getParsingFlags(config).unusedInput.push(skipped);
+      }
+      input = input.slice(input.indexOf(parsedInput) + parsedInput.length);
+      totalParsedInputLength += parsedInput.length;
+    }
+    // don't parse if it's not a known token
+    if (formatTokenFunctions[token]) {
+      if (parsedInput) {
+        getParsingFlags(config).empty = false;
+      } else {
+        getParsingFlags(config).unusedTokens.push(token);
+      }
+      addTimeToArrayFromToken(token, parsedInput, config);
+    } else if (config._strict && !parsedInput) {
+      getParsingFlags(config).unusedTokens.push(token);
+    }
+  }
+  // add remaining unparsed input length to the string
+  getParsingFlags(config).charsLeftOver = inputLength - totalParsedInputLength;
+  if (input.length > 0) {
+    getParsingFlags(config).unusedInput.push(input);
+  }
+  // clear _12h flag if hour is <= 12
+  if (config._a[HOUR] <= 12 && getParsingFlags(config).bigHour === true && config._a[HOUR] > 0) {
+    getParsingFlags(config).bigHour = void 0;
+  }
+  getParsingFlags(config).parsedDateParts = config._a.slice(0);
+  getParsingFlags(config).meridiem = config._meridiem;
+  // handle meridiem
+  config._a[HOUR] = meridiemFixWrap(config._locale, config._a[HOUR], config._meridiem);
+  configFromArray(config);
+  return checkOverflow(config);
+}
+function meridiemFixWrap(locale, _hour, meridiem) {
+  let hour = _hour;
+  if (meridiem == null) {
+    // nothing to do
+    return hour;
+  }
+  if (locale.meridiemHour != null) {
+    return locale.meridiemHour(hour, meridiem);
+  }
+  if (locale.isPM == null) {
+    // this is not supposed to happen
+    return hour;
+  }
+  // Fallback
+  const isPm = locale.isPM(meridiem);
+  if (isPm && hour < 12) {
+    hour += 12;
+  }
+  if (!isPm && hour === 12) {
+    hour = 0;
+  }
+  return hour;
+}
+
+// date from string and array of format strings
+function configFromStringAndArray(config) {
+  let tempConfig;
+  let bestMoment;
+  let scoreToBeat;
+  let currentScore;
+  if (!config._f || config._f.length === 0) {
+    getParsingFlags(config).invalidFormat = true;
+    return createInvalid(config);
+  }
+  let i;
+  for (i = 0; i < config._f.length; i++) {
+    currentScore = 0;
+    tempConfig = Object.assign({}, config);
+    if (config._useUTC != null) {
+      tempConfig._useUTC = config._useUTC;
+    }
+    tempConfig._f = config._f[i];
+    configFromStringAndFormat(tempConfig);
+    if (!isValid(tempConfig)) {
+      continue;
+    }
+    // if there is any input that was not parsed add a penalty for that format
+    currentScore += getParsingFlags(tempConfig).charsLeftOver;
+    // or tokens
+    currentScore += getParsingFlags(tempConfig).unusedTokens.length * 10;
+    getParsingFlags(tempConfig).score = currentScore;
+    if (scoreToBeat == null || currentScore < scoreToBeat) {
+      scoreToBeat = currentScore;
+      bestMoment = tempConfig;
+    }
+  }
+  return Object.assign(config, bestMoment || tempConfig);
+}
+function configFromObject(config) {
+  if (config._d) {
+    return config;
+  }
+  const input = config._i;
+  if (isObject(input)) {
+    const i = normalizeObjectUnits(input);
+    config._a = [i.year, i.month, i.day, i.hours, i.minutes, i.seconds, i.milliseconds]
+    // todo: obsolete -> remove it
+    .map(obj => isString(obj) ? parseInt(obj, 10) : obj);
+  }
+  return configFromArray(config);
+}
+function createFromConfig(config) {
+  const res = checkOverflow(prepareConfig(config));
+  // todo: remove, in moment.js it's never called cuz of moment constructor
+  res._d = new Date(res._d != null ? res._d.getTime() : NaN);
+  if (!isValid(Object.assign({}, res, {
+    _isValid: null
+  }))) {
+    res._d = new Date(NaN);
+  }
+  // todo: update offset
+  /*if (res._nextDay) {
+    // Adding is smart enough around DST
+    res._d = add(res._d, 1, 'day');
+    res._nextDay = undefined;
+  }*/
+  return res;
+}
+function prepareConfig(config) {
+  let input = config._i;
+  const format = config._f;
+  config._locale = config._locale || getLocale(config._l);
+  if (input === null || format === undefined && input === '') {
+    return createInvalid(config, {
+      nullInput: true
+    });
+  }
+  if (isString(input)) {
+    config._i = input = config._locale.preparse(input, format);
+  }
+  if (isDate(input)) {
+    config._d = cloneDate(input);
+    return config;
+  }
+  // todo: add check for recursion
+  if (isArray(format)) {
+    configFromStringAndArray(config);
+  } else if (format) {
+    configFromStringAndFormat(config);
+  } else {
+    configFromInput(config);
+  }
+  if (!isValid(config)) {
+    config._d = null;
+  }
+  return config;
+}
+function configFromInput(config) {
+  const input = config._i;
+  if (isUndefined(input)) {
+    config._d = new Date();
+  } else if (isDate(input)) {
+    config._d = cloneDate(input);
+  } else if (isString(input)) {
+    configFromString(config);
+  } else if (isArray(input) && input.length) {
+    const _arr = input.slice(0);
+    config._a = _arr.map(obj => isString(obj) ? parseInt(obj, 10) : obj);
+    configFromArray(config);
+  } else if (isObject(input)) {
+    configFromObject(config);
+  } else if (isNumber(input)) {
+    // from milliseconds
+    config._d = new Date(input);
+  } else {
+    //   hooks.createFromInputFallback(config);
+    return createInvalid(config);
+  }
+  return config;
+}
+function createLocalOrUTC(input, format, localeKey, strict, isUTC) {
+  const config = {};
+  let _input = input;
+  // params switch -> skip; testing it well
+  // if (localeKey === true || localeKey === false) {
+  //     strict = localeKey;
+  //     localeKey = undefined;
+  // }
+  // todo: fail fast and return not valid date
+  if (isObject(_input) && isObjectEmpty(_input) || isArray(_input) && _input.length === 0) {
+    _input = undefined;
+  }
+  // object construction must be done this way.
+  // https://github.com/moment/moment/issues/1423
+  // config._isAMomentObject = true;
+  config._useUTC = config._isUTC = isUTC;
+  config._l = localeKey;
+  config._i = _input;
+  config._f = format;
+  config._strict = strict;
+  return createFromConfig(config);
+}
+function parseDate(input, format, localeKey, strict, isUTC) {
+  if (isDate(input)) {
+    return input;
+  }
+  const config = createLocalOrUTC(input, format, localeKey, strict, isUTC);
+  return config._d;
+}
+function utcAsLocal(date) {
+  if (!(date instanceof Date)) {
+    return null;
+  }
+  return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds(), date.getUTCMilliseconds());
+}
+function absRound(num) {
+  return num < 0 ? Math.round(num * -1) * -1 : Math.round(num);
+}
+function isAfter(date1, date2, units = 'milliseconds') {
+  if (!date1 || !date2) {
+    return false;
+  }
+  if (units === 'milliseconds') {
+    return date1.valueOf() > date2.valueOf();
+  }
+  return date2.valueOf() < startOf(date1, units).valueOf();
+}
+function isBefore(date1, date2, units = 'milliseconds') {
+  if (!date1 || !date2) {
+    return false;
+  }
+  if (units === 'milliseconds') {
+    return date1.valueOf() < date2.valueOf();
+  }
+  return endOf(date1, units).valueOf() < date2.valueOf();
+}
+function isDisabledDay(date, daysDisabled) {
+  if (typeof daysDisabled === 'undefined' || !daysDisabled || !daysDisabled.length) {
+    return false;
+  }
+  return daysDisabled.some(day => day === date.getDay());
+}
+function isBetween(date, from, to, units, inclusivity = '()') {
+  const leftBound = inclusivity[0] === '(' ? isAfter(date, from, units) : !isBefore(date, from, units);
+  const rightBound = inclusivity[1] === ')' ? isBefore(date, to, units) : !isAfter(date, to, units);
+  return leftBound && rightBound;
+}
+function isSame(date1, date2, units = 'milliseconds') {
+  if (!date1 || !date2) {
+    return false;
+  }
+  if (units === 'milliseconds') {
+    return date1.valueOf() === date2.valueOf();
+  }
+  const inputMs = date2.valueOf();
+  return startOf(date1, units).valueOf() <= inputMs && inputMs <= endOf(date1, units).valueOf();
+}
+function isSameDay(date1, date2) {
+  return date1.getDay() == date2.getDay();
+}
+function isSameOrAfter(date1, date2, units) {
+  return isSame(date1, date2, units) || isAfter(date1, date2, units);
+}
+function isSameOrBefore(date1, date2, units) {
+  return isSame(date1, date2, units) || isBefore(date1, date2, units);
+}
+
+// ASP.NET json date format regex
+const aspNetRegex = /^(\-|\+)?(?:(\d*)[. ])?(\d+)\:(\d+)(?:\:(\d+)(\.\d*)?)?$/;
+// from http://docs.closure-library.googlecode.com/git/closure_goog_date_date.js.source.html
+// somewhat more in line with 4.4.3.2 2004 spec, but allows decimal anywhere
+// and further modified to allow for strings containing both week and day
+const isoRegex = /^(-|\+)?P(?:([-+]?[0-9,.]*)Y)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)W)?(?:([-+]?[0-9,.]*)D)?(?:T(?:([-+]?[0-9,.]*)H)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)S)?)?$/;
+function createDuration(input, key, config = {}) {
+  const duration = convertDuration(input, key);
+  // matching against regexp is expensive, do it on demand
+  return new Duration(duration, config);
+}
+function convertDuration(input, key) {
+  // checks for null or undefined
+  if (input == null) {
+    return {};
+  }
+  if (isDuration(input)) {
+    return {
+      milliseconds: input._milliseconds,
+      day: input._days,
+      month: input._months
+    };
+  }
+  if (isNumber(input)) {
+    // duration = {};
+    return key ? {
+      [key]: input
+    } : {
+      milliseconds: input
+    };
+  }
+  if (isString(input)) {
+    let match = aspNetRegex.exec(input);
+    if (match) {
+      const sign = match[1] === '-' ? -1 : 1;
+      return {
+        year: 0,
+        day: toInt(match[DATE]) * sign,
+        hours: toInt(match[HOUR]) * sign,
+        minutes: toInt(match[MINUTE]) * sign,
+        seconds: toInt(match[SECOND]) * sign,
+        // the millisecond decimal point is included in the match
+        milliseconds: toInt(absRound(toInt(match[MILLISECOND]) * 1000)) * sign
+      };
+    }
+    match = isoRegex.exec(input);
+    if (match) {
+      const sign = match[1] === '-' ? -1 : match[1] === '+' ? 1 : 1;
+      return {
+        year: parseIso(match[2], sign),
+        month: parseIso(match[3], sign),
+        week: parseIso(match[4], sign),
+        day: parseIso(match[5], sign),
+        hours: parseIso(match[6], sign),
+        minutes: parseIso(match[7], sign),
+        seconds: parseIso(match[8], sign)
+      };
+    }
+  }
+  if (isObject(input) && ('from' in input || 'to' in input)) {
+    const diffRes = momentsDifference(parseDate(input.from), parseDate(input.to));
+    return {
+      milliseconds: diffRes.milliseconds,
+      month: diffRes.months
+    };
+  }
+  return input;
+}
+// createDuration.fn = Duration.prototype;
+// createDuration.invalid = invalid;
+function parseIso(inp, sign) {
+  // We'd normally use ~~inp for this, but unfortunately it also
+  // converts floats to ints.
+  // inp may be undefined, so careful calling replace on it.
+  const res = inp && parseFloat(inp.replace(',', '.'));
+  // apply sign while we're at it
+  return (isNaN(res) ? 0 : res) * sign;
+}
+function positiveMomentsDifference(base, other) {
+  const res = {
+    milliseconds: 0,
+    months: 0
+  };
+  res.months = getMonth(other) - getMonth(base) + (getFullYear(other) - getFullYear(base)) * 12;
+  const _basePlus = add(cloneDate(base), res.months, 'month');
+  if (isAfter(_basePlus, other)) {
+    --res.months;
+  }
+  res.milliseconds = +other - +add(cloneDate(base), res.months, 'month');
+  return res;
+}
+function momentsDifference(base, other) {
+  if (!(isDateValid(base) && isDateValid(other))) {
+    return {
+      milliseconds: 0,
+      months: 0
+    };
+  }
+  let res;
+  const _other = cloneWithOffset(other, base, {
+    _offset: base.getTimezoneOffset()
+  });
+  if (isBefore(base, _other)) {
+    res = positiveMomentsDifference(base, _other);
+  } else {
+    res = positiveMomentsDifference(_other, base);
+    res.milliseconds = -res.milliseconds;
+    res.months = -res.months;
+  }
+  return res;
+}
+function add(date, val, period, isUTC) {
+  const dur = createDuration(val, period);
+  return addSubtract(date, dur, 1, isUTC);
+}
+function subtract(date, val, period, isUTC) {
+  const dur = createDuration(val, period);
+  return addSubtract(date, dur, -1, isUTC);
+}
+function addSubtract(date, duration, isAdding, isUTC) {
+  const milliseconds = duration._milliseconds;
+  const days = absRound(duration._days);
+  const months = absRound(duration._months);
+  // todo: add timezones support
+  // const _updateOffset = updateOffset == null ? true : updateOffset;
+  if (months) {
+    setMonth(date, getMonth(date, isUTC) + months * isAdding, isUTC);
+  }
+  if (days) {
+    setDate(date, getDate(date, isUTC) + days * isAdding, isUTC);
+  }
+  if (milliseconds) {
+    setTime(date, getTime(date) + milliseconds * isAdding);
+  }
+  return cloneDate(date);
+  // todo: add timezones support
+  // if (_updateOffset) {
+  //   hooks.updateOffset(date, days || months);
+  // }
+}
+
+function initDayOfWeek() {
+  // FORMATTING
+  addFormatToken('d', null, 'do', function (date, opts) {
+    return getDay(date, opts.isUTC).toString(10);
+  });
+  addFormatToken('dd', null, null, function (date, opts) {
+    return opts.locale.weekdaysMin(date, opts.format, opts.isUTC);
+  });
+  addFormatToken('ddd', null, null, function (date, opts) {
+    return opts.locale.weekdaysShort(date, opts.format, opts.isUTC);
+  });
+  addFormatToken('dddd', null, null, function (date, opts) {
+    return opts.locale.weekdays(date, opts.format, opts.isUTC);
+  });
+  addFormatToken('e', null, null, function (date, opts) {
+    return getLocaleDayOfWeek(date, opts.locale, opts.isUTC).toString(10);
+    // return getDay(date, opts.isUTC).toString(10);
+  });
+
+  addFormatToken('E', null, null, function (date, opts) {
+    return getISODayOfWeek(date, opts.isUTC).toString(10);
+  });
+  // ALIASES
+  addUnitAlias('day', 'd');
+  addUnitAlias('weekday', 'e');
+  addUnitAlias('isoWeekday', 'E');
+  // PRIORITY
+  addUnitPriority('day', 11);
+  addUnitPriority('weekday', 11);
+  addUnitPriority('isoWeekday', 11);
+  // PARSING
+  addRegexToken('d', match1to2);
+  addRegexToken('e', match1to2);
+  addRegexToken('E', match1to2);
+  addRegexToken('dd', function (isStrict, locale) {
+    return locale.weekdaysMinRegex(isStrict);
+  });
+  addRegexToken('ddd', function (isStrict, locale) {
+    return locale.weekdaysShortRegex(isStrict);
+  });
+  addRegexToken('dddd', function (isStrict, locale) {
+    return locale.weekdaysRegex(isStrict);
+  });
+  addWeekParseToken(['dd', 'ddd', 'dddd'], function (input, week, config, token) {
+    const weekday = config._locale.weekdaysParse(input, token, config._strict);
+    // if we didn't get a weekday name, mark the date as invalid
+    if (weekday != null) {
+      week["d"] = weekday;
+    } else {
+      getParsingFlags(config).invalidWeekday = !!input;
+    }
+    return config;
+  });
+  addWeekParseToken(['d', 'e', 'E'], function (input, week, config, token) {
+    week[token] = toInt(input);
+    return config;
+  });
+}
+// HELPERS
+function parseWeekday(input, locale) {
+  if (!isString(input)) {
+    return input;
+  }
+  const _num = parseInt(input, 10);
+  if (!isNaN(_num)) {
+    return _num;
+  }
+  const _weekDay = locale.weekdaysParse(input);
+  if (isNumber(_weekDay)) {
+    return _weekDay;
+  }
+  return null;
+}
+function parseIsoWeekday(input, locale = getLocale()) {
+  if (isString(input)) {
+    return locale.weekdaysParse(input) % 7 || 7;
+  }
+  return isNumber(input) && isNaN(input) ? null : input;
+}
+// MOMENTS
+function getSetDayOfWeek(date, input, opts) {
+  if (!input) {
+    return getDayOfWeek(date, opts.isUTC);
+  }
+  return setDayOfWeek(date, input, opts.locale, opts.isUTC);
+}
+function setDayOfWeek(date, input, locale = getLocale(), isUTC) {
+  const day = getDay(date, isUTC);
+  const _input = parseWeekday(input, locale);
+  return add(date, _input - day, 'day');
+}
+function getDayOfWeek(date, isUTC) {
+  return getDay(date, isUTC);
+}
+/********************************************/
+// todo: utc
+// getSetLocaleDayOfWeek
+function getLocaleDayOfWeek(date, locale = getLocale(), isUTC) {
+  return (getDay(date, isUTC) + 7 - locale.firstDayOfWeek()) % 7;
+}
+function setLocaleDayOfWeek(date, input, opts = {}) {
+  const weekday = getLocaleDayOfWeek(date, opts.locale, opts.isUTC);
+  return add(date, input - weekday, 'day');
+}
+// getSetISODayOfWeek
+function getISODayOfWeek(date, isUTC) {
+  return getDay(date, isUTC) || 7;
+}
+function setISODayOfWeek(date, input, opts = {}) {
+  // behaves the same as moment#day except
+  // as a getter, returns 7 instead of 0 (1-7 range instead of 0-6)
+  // as a setter, sunday should belong to the previous week.
+  const weekday = parseIsoWeekday(input, opts.locale);
+  return setDayOfWeek(date, getDayOfWeek(date) % 7 ? weekday : weekday - 7);
+}
+
+//! moment.js locale configuration
+//! locale : Arabic [ar]
+//! author : Abdel Said: https://github.com/abdelsaid
+//! author : Ahmed Elkhatib
+//! author : forabi https://github.com/forabi
+const symbolMap$1 = {
+  1: '١',
+  2: '٢',
+  3: '٣',
+  4: '٤',
+  5: '٥',
+  6: '٦',
+  7: '٧',
+  8: '٨',
+  9: '٩',
+  0: '٠'
+};
+const numberMap$1 = {
+  '١': '1',
+  '٢': '2',
+  '٣': '3',
+  '٤': '4',
+  '٥': '5',
+  '٦': '6',
+  '٧': '7',
+  '٨': '8',
+  '٩': '9',
+  '٠': '0'
+};
+const pluralForm = function (num) {
+  return num === 0 ? 0 : num === 1 ? 1 : num === 2 ? 2 : num % 100 >= 3 && num % 100 <= 10 ? 3 : num % 100 >= 11 ? 4 : 5;
+};
+const plurals = {
+  s: ['أقل من ثانية', 'ثانية واحدة', ['ثانيتان', 'ثانيتين'], '%d ثوان', '%d ثانية', '%d ثانية'],
+  m: ['أقل من دقيقة', 'دقيقة واحدة', ['دقيقتان', 'دقيقتين'], '%d دقائق', '%d دقيقة', '%d دقيقة'],
+  h: ['أقل من ساعة', 'ساعة واحدة', ['ساعتان', 'ساعتين'], '%d ساعات', '%d ساعة', '%d ساعة'],
+  d: ['أقل من يوم', 'يوم واحد', ['يومان', 'يومين'], '%d أيام', '%d يومًا', '%d يوم'],
+  M: ['أقل من شهر', 'شهر واحد', ['شهران', 'شهرين'], '%d أشهر', '%d شهرا', '%d شهر'],
+  y: ['أقل من عام', 'عام واحد', ['عامان', 'عامين'], '%d أعوام', '%d عامًا', '%d عام']
+};
+const pluralize = function (u) {
+  return function (num, withoutSuffix) {
+    const f = pluralForm(num);
+    let str = plurals[u][pluralForm(num)];
+    if (f === 2) {
+      str = str[withoutSuffix ? 0 : 1];
+    }
+    return str.replace(/%d/i, num.toString());
+  };
+};
+const months$2 = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
+const arLocale = {
+  abbr: 'ar',
+  months: months$2,
+  monthsShort: months$2,
+  weekdays: 'الأحد_الإثنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت'.split('_'),
+  weekdaysShort: 'أحد_إثنين_ثلاثاء_أربعاء_خميس_جمعة_سبت'.split('_'),
+  weekdaysMin: 'ح_ن_ث_ر_خ_ج_س'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'D/\u200FM/\u200FYYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd D MMMM YYYY HH:mm'
+  },
+  meridiemParse: /ص|م/,
+  isPM(input) {
+    return 'م' === input;
+  },
+  meridiem(hour, minute, isLower) {
+    if (hour < 12) {
+      return 'ص';
+    } else {
+      return 'م';
+    }
+  },
+  calendar: {
+    sameDay: '[اليوم عند الساعة] LT',
+    nextDay: '[غدًا عند الساعة] LT',
+    nextWeek: 'dddd [عند الساعة] LT',
+    lastDay: '[أمس عند الساعة] LT',
+    lastWeek: 'dddd [عند الساعة] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'بعد %s',
+    past: 'منذ %s',
+    s: pluralize('s'),
+    ss: pluralize('s'),
+    m: pluralize('m'),
+    mm: pluralize('m'),
+    h: pluralize('h'),
+    hh: pluralize('h'),
+    d: pluralize('d'),
+    dd: pluralize('d'),
+    M: pluralize('M'),
+    MM: pluralize('M'),
+    y: pluralize('y'),
+    yy: pluralize('y')
+  },
+  preparse(str) {
+    return str.replace(/[١٢٣٤٥٦٧٨٩٠]/g, function (match) {
+      return numberMap$1[match];
+    }).replace(/،/g, ',');
+  },
+  postformat(str) {
+    return str.replace(/\d/g, function (match) {
+      return symbolMap$1[match];
+    }).replace(/,/g, '،');
+  },
+  week: {
+    dow: 6,
+    doy: 12 // The week that contains Jan 1st is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Bulgarian [bg]
+//! author : Iskren Ivov Chernev : https://github.com/ichernev
+//! author : Kunal Marwaha : https://github.com/marwahaha
+//! author : Matt Grande : https://github.com/mattgrande
+//! author : Isaac Cambron : https://github.com/icambron
+//! author : Venelin Manchev : https://github.com/vmanchev
+const bgLocale = {
+  abbr: 'bg',
+  months: 'януари_февруари_март_април_май_юни_юли_август_септември_октомври_ноември_декември'.split('_'),
+  monthsShort: 'янр_фев_мар_апр_май_юни_юли_авг_сеп_окт_ное_дек'.split('_'),
+  weekdays: 'неделя_понеделник_вторник_сряда_четвъртък_петък_събота'.split('_'),
+  weekdaysShort: 'нед_пон_вто_сря_чет_пет_съб'.split('_'),
+  weekdaysMin: 'нд_пн_вт_ср_чт_пт_сб'.split('_'),
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'D.MM.YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY H:mm',
+    LLLL: 'dddd, D MMMM YYYY H:mm'
+  },
+  calendar: {
+    sameDay: '[Днес в] LT',
+    nextDay: '[Утре в] LT',
+    nextWeek: 'dddd [в] LT',
+    lastDay: '[Вчера в] LT',
+    lastWeek: function (d) {
+      switch (d) {
+        case 0:
+        case 3:
+        case 6:
+          return '[В изминалата] dddd [в] LT';
+        case 1:
+        case 2:
+        case 4:
+        case 5:
+          return '[В изминалия] dddd [в] LT';
+      }
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'след %s',
+    past: 'преди %s',
+    s: 'няколко секунди',
+    ss: '%d секунди',
+    m: 'минута',
+    mm: '%d минути',
+    h: 'час',
+    hh: '%d часа',
+    d: 'ден',
+    dd: '%d дни',
+    M: 'месец',
+    MM: '%d месеца',
+    y: 'година',
+    yy: '%d години'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}-(ев|ен|ти|ви|ри|ми)/,
+  ordinal: function (_num) {
+    const number = Number(_num);
+    let lastDigit = number % 10,
+      last2Digits = number % 100;
+    if (number === 0) {
+      return number + '-ев';
+    } else if (last2Digits === 0) {
+      return number + '-ен';
+    } else if (last2Digits > 10 && last2Digits < 20) {
+      return number + '-ти';
+    } else if (lastDigit === 1) {
+      return number + '-ви';
+    } else if (lastDigit === 2) {
+      return number + '-ри';
+    } else if (lastDigit === 7 || lastDigit === 8) {
+      return number + '-ми';
+    } else {
+      return number + '-ти';
+    }
+  },
+  week: {
+    dow: 1,
+    doy: 7 // The week that contains Jan 1st is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Catalan [ca]
+//! author : Xavier Arbat : https://github.com/XavisaurusRex
+let monthsShortDot$5 = 'gen._feb._mar._abr._mai._jun._jul._ago._set._oct._nov._des.'.split('_'),
+  monthsShort$7 = 'ene_feb_mar_abr_mai_jun_jul_ago_set_oct_nov_des'.split('_');
+let monthsParse$6 = [/^gen/i, /^feb/i, /^mar/i, /^abr/i, /^mai/i, /^jun/i, /^jul/i, /^ago/i, /^set/i, /^oct/i, /^nov/i, /^des/i];
+let monthsRegex$5 = /^(gener|febrer|març|abril|maig|juny|juliol|agost|setembre|octubre|novembre|desembre|gen\.?|feb\.?|mar\.?|abr\.?|mai\.?|jun\.?|jul\.?|ago\.?|set\.?|oct\.?|nov\.?|des\.?)/i;
+const caLocale = {
+  abbr: 'ca',
+  months: 'gener_febrer_març_abril_maig_juny_juliol_agost_setembre_octubre_novembre_desembre'.split('_'),
+  monthsShort(date, format, isUTC) {
+    if (!date) {
+      return monthsShortDot$5;
+    }
+    if (/-MMM-/.test(format)) {
+      return monthsShort$7[getMonth(date, isUTC)];
+    }
+    return monthsShortDot$5[getMonth(date, isUTC)];
+  },
+  monthsRegex: monthsRegex$5,
+  monthsShortRegex: monthsRegex$5,
+  monthsStrictRegex: /^(gener|febrer|març|abril|maig|juny|juliol|agost|setembre|octubre|novembre|desembre)/i,
+  monthsShortStrictRegex: /^(gen\.?|feb\.?|mar\.?|abr\.?|mai\.?|jun\.?|jul\.?|ago\.?|set\.?|oct\.?|nov\.?|des\.?)/i,
+  monthsParse: monthsParse$6,
+  longMonthsParse: monthsParse$6,
+  shortMonthsParse: monthsParse$6,
+  weekdays: 'diumenge_dilluns_dimarts_dimecres_dijous_divendres_dissabte'.split('_'),
+  weekdaysShort: 'diu._dil._dim._dix._dij._div._dis.'.split('_'),
+  weekdaysMin: 'dg_dl_dt_dc_dj_dv_ds'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D [de] MMMM [de] YYYY',
+    LLL: 'D [de] MMMM [de] YYYY H:mm',
+    LLLL: 'dddd, D [de] MMMM [de] YYYY H:mm'
+  },
+  calendar: {
+    sameDay(date) {
+      return '[avui a ' + ('la' + (getHours(date) !== 1) ? 'les' : 0) + '] LT';
+    },
+    nextDay(date) {
+      return '[dema a ' + ('la' + (getHours(date) !== 1) ? 'les' : 0) + '] LT';
+    },
+    nextWeek(date) {
+      return 'dddd [a ' + ('la' + (getHours(date) !== 1) ? 'les' : 0) + '] LT';
+    },
+    lastDay(date) {
+      return '[ahir a ' + ('la' + (getHours(date) !== 1) ? 'les' : 0) + '] LT';
+    },
+    lastWeek(date) {
+      return '[el] dddd [' + ('passada la ' + (getHours(date) !== 1) ? 'passades les' : 0) + '] LT';
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'en %s',
+    past: 'fa %s',
+    s: 'uns segons',
+    ss: '%d segons',
+    m: 'un minut',
+    mm: '%d minuts',
+    h: 'una hora',
+    hh: '%d hores',
+    d: 'un dia',
+    dd: '%d dies',
+    M: 'un mes',
+    MM: '%d mesos',
+    y: 'un any',
+    yy: '%d anys'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}(er|on|er|rt|é)/,
+  ordinal(_num) {
+    const num = Number(_num);
+    const output = num > 4 ? 'é' : num === 1 || num === 3 ? 'r' : num === 2 ? 'n' : num === 4 ? 't' : 'é';
+    return num + output;
+  },
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Czech [cs]
+//! author : petrbela : https://github.com/petrbela
+const months$1 = 'leden_únor_březen_duben_květen_červen_červenec_srpen_září_říjen_listopad_prosinec'.split('_');
+const monthsShort$6 = 'led_úno_bře_dub_kvě_čvn_čvc_srp_zář_říj_lis_pro'.split('_');
+function plural$4(num) {
+  return num > 1 && num < 5 && ~~(num / 10) !== 1;
+}
+function translate$6(num, withoutSuffix, key, isFuture) {
+  const result = num + ' ';
+  switch (key) {
+    case 's':
+      // a few seconds / in a few seconds / a few seconds ago
+      return withoutSuffix || isFuture ? 'pár sekund' : 'pár sekundami';
+    case 'ss':
+      // 9 seconds / in 9 seconds / 9 seconds ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$4(num) ? 'sekundy' : 'sekund');
+      } else {
+        return result + 'sekundami';
+      }
+    // break;
+    case 'm':
+      // a minute / in a minute / a minute ago
+      return withoutSuffix ? 'minuta' : isFuture ? 'minutu' : 'minutou';
+    case 'mm':
+      // 9 minutes / in 9 minutes / 9 minutes ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$4(num) ? 'minuty' : 'minut');
+      } else {
+        return result + 'minutami';
+      }
+    // break;
+    case 'h':
+      // an hour / in an hour / an hour ago
+      return withoutSuffix ? 'hodina' : isFuture ? 'hodinu' : 'hodinou';
+    case 'hh':
+      // 9 hours / in 9 hours / 9 hours ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$4(num) ? 'hodiny' : 'hodin');
+      } else {
+        return result + 'hodinami';
+      }
+    // break;
+    case 'd':
+      // a day / in a day / a day ago
+      return withoutSuffix || isFuture ? 'den' : 'dnem';
+    case 'dd':
+      // 9 days / in 9 days / 9 days ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$4(num) ? 'dny' : 'dní');
+      } else {
+        return result + 'dny';
+      }
+    // break;
+    case 'M':
+      // a month / in a month / a month ago
+      return withoutSuffix || isFuture ? 'měsíc' : 'měsícem';
+    case 'MM':
+      // 9 months / in 9 months / 9 months ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$4(num) ? 'měsíce' : 'měsíců');
+      } else {
+        return result + 'měsíci';
+      }
+    // break;
+    case 'y':
+      // a year / in a year / a year ago
+      return withoutSuffix || isFuture ? 'rok' : 'rokem';
+    case 'yy':
+      // 9 years / in 9 years / 9 years ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$4(num) ? 'roky' : 'let');
+      } else {
+        return result + 'lety';
+      }
+    // break;
+  }
+}
+
+const csLocale = {
+  abbr: 'cs',
+  months: months$1,
+  monthsShort: monthsShort$6,
+  monthsParse: function (months, monthsShort) {
+    let i,
+      _monthsParse = [];
+    for (i = 0; i < 12; i++) {
+      // use custom parser to solve problem with July (červenec)
+      _monthsParse[i] = new RegExp('^' + months[i] + '$|^' + monthsShort[i] + '$', 'i');
+    }
+    return _monthsParse;
+  }(months$1, monthsShort$6),
+  shortMonthsParse: function (monthsShort) {
+    let i,
+      _shortMonthsParse = [];
+    for (i = 0; i < 12; i++) {
+      _shortMonthsParse[i] = new RegExp('^' + monthsShort[i] + '$', 'i');
+    }
+    return _shortMonthsParse;
+  }(monthsShort$6),
+  longMonthsParse: function (months) {
+    let i,
+      _longMonthsParse = [];
+    for (i = 0; i < 12; i++) {
+      _longMonthsParse[i] = new RegExp('^' + months[i] + '$', 'i');
+    }
+    return _longMonthsParse;
+  }(months$1),
+  weekdays: 'neděle_pondělí_úterý_středa_čtvrtek_pátek_sobota'.split('_'),
+  weekdaysShort: 'ne_po_út_st_čt_pá_so'.split('_'),
+  weekdaysMin: 'ne_po_út_st_čt_pá_so'.split('_'),
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D. MMMM YYYY',
+    LLL: 'D. MMMM YYYY H:mm',
+    LLLL: 'dddd D. MMMM YYYY H:mm',
+    l: 'D. M. YYYY'
+  },
+  calendar: {
+    sameDay: '[dnes v] LT',
+    nextDay: '[zítra v] LT',
+    nextWeek(date) {
+      switch (getDayOfWeek(date)) {
+        case 0:
+          return '[v neděli v] LT';
+        case 1:
+        case 2:
+          return '[v] dddd [v] LT';
+        case 3:
+          return '[ve středu v] LT';
+        case 4:
+          return '[ve čtvrtek v] LT';
+        case 5:
+          return '[v pátek v] LT';
+        case 6:
+          return '[v sobotu v] LT';
+      }
+    },
+    lastDay: '[včera v] LT',
+    lastWeek(date) {
+      switch (getDayOfWeek(date)) {
+        case 0:
+          return '[minulou neděli v] LT';
+        case 1:
+        case 2:
+          return '[minulé] dddd [v] LT';
+        case 3:
+          return '[minulou středu v] LT';
+        case 4:
+        case 5:
+          return '[minulý] dddd [v] LT';
+        case 6:
+          return '[minulou sobotu v] LT';
+      }
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'za %s',
+    past: 'před %s',
+    s: translate$6,
+    ss: translate$6,
+    m: translate$6,
+    mm: translate$6,
+    h: translate$6,
+    hh: translate$6,
+    d: translate$6,
+    dd: translate$6,
+    M: translate$6,
+    MM: translate$6,
+    y: translate$6,
+    yy: translate$6
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Danish (Denmark) [da]
+//! author : Per Hansen : https://github.com/perhp
+const daLocale = {
+  abbr: 'da',
+  months: 'Januar_Februar_Marts_April_Maj_Juni_Juli_August_September_Oktober_November_December'.split('_'),
+  monthsShort: 'Jan_Feb_Mar_Apr_Maj_Jun_Jul_Aug_Sep_Okt_Nov_Dec'.split('_'),
+  weekdays: 'Søndag_Mandag_Tirsdag_Onsdag_Torsdag_Fredag_Lørdag'.split('_'),
+  weekdaysShort: 'Søn_Man_Tir_Ons_Tor_Fre_Lør'.split('_'),
+  weekdaysMin: 'Sø_Ma_Ti_On_To_Fr_Lø'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D. MMMM YYYY',
+    LLL: 'D. MMMM YYYY HH:mm',
+    LLLL: 'dddd [d.] D. MMMM YYYY [kl.] HH:mm'
+  },
+  calendar: {
+    sameDay: '[i dag kl.] LT',
+    nextDay: '[i morgen kl.] LT',
+    nextWeek: 'på dddd [kl.] LT',
+    lastDay: '[i går kl.] LT',
+    lastWeek: '[i] dddd[s kl.] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'om %s',
+    past: '%s siden',
+    s: 'få sekunder',
+    m: 'et minut',
+    mm: '%d minutter',
+    h: 'en time',
+    hh: '%d timer',
+    d: 'en dag',
+    dd: '%d dage',
+    M: 'en måned',
+    MM: '%d måneder',
+    y: 'et år',
+    yy: '%d år'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : German [de]
+//! author : lluchs : https://github.com/lluchs
+//! author: Menelion Elensúle: https://github.com/Oire
+//! author : Mikolaj Dadela : https://github.com/mik01aj
+function processRelativeTime$2(num, withoutSuffix, key, isFuture) {
+  const format = {
+    'm': ['eine Minute', 'einer Minute'],
+    'h': ['eine Stunde', 'einer Stunde'],
+    'd': ['ein Tag', 'einem Tag'],
+    'dd': [num + ' Tage', num + ' Tagen'],
+    'M': ['ein Monat', 'einem Monat'],
+    'MM': [num + ' Monate', num + ' Monaten'],
+    'y': ['ein Jahr', 'einem Jahr'],
+    'yy': [num + ' Jahre', num + ' Jahren']
+  };
+  return withoutSuffix ? format[key][0] : format[key][1];
+}
+const deLocale = {
+  abbr: 'de',
+  months: 'Januar_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember'.split('_'),
+  monthsShort: 'Jan._Feb._März_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.'.split('_'),
+  monthsParseExact: true,
+  weekdays: 'Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag'.split('_'),
+  weekdaysShort: 'So._Mo._Di._Mi._Do._Fr._Sa.'.split('_'),
+  weekdaysMin: 'So_Mo_Di_Mi_Do_Fr_Sa'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D. MMMM YYYY',
+    LLL: 'D. MMMM YYYY HH:mm',
+    LLLL: 'dddd, D. MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[heute um] LT [Uhr]',
+    sameElse: 'L',
+    nextDay: '[morgen um] LT [Uhr]',
+    nextWeek: 'dddd [um] LT [Uhr]',
+    lastDay: '[gestern um] LT [Uhr]',
+    lastWeek: '[letzten] dddd [um] LT [Uhr]'
+  },
+  relativeTime: {
+    future: 'in %s',
+    past: 'vor %s',
+    s: 'ein paar Sekunden',
+    ss: '%d Sekunden',
+    m: processRelativeTime$2,
+    mm: '%d Minuten',
+    h: processRelativeTime$2,
+    hh: '%d Stunden',
+    d: processRelativeTime$2,
+    dd: processRelativeTime$2,
+    M: processRelativeTime$2,
+    MM: processRelativeTime$2,
+    y: processRelativeTime$2,
+    yy: processRelativeTime$2
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : English (United Kingdom) [en-gb]
+//! author : Chris Gedrim : https://github.com/chrisgedrim
+const enGbLocale = {
+  abbr: 'en-gb',
+  months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
+  monthsShort: 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
+  weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
+  weekdaysShort: 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
+  weekdaysMin: 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd, D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[Today at] LT',
+    nextDay: '[Tomorrow at] LT',
+    nextWeek: 'dddd [at] LT',
+    lastDay: '[Yesterday at] LT',
+    lastWeek: '[Last] dddd [at] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'in %s',
+    past: '%s ago',
+    s: 'a few seconds',
+    ss: '%d seconds',
+    m: 'a minute',
+    mm: '%d minutes',
+    h: 'an hour',
+    hh: '%d hours',
+    d: 'a day',
+    dd: '%d days',
+    M: 'a month',
+    MM: '%d months',
+    y: 'a year',
+    yy: '%d years'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
+  ordinal(_num) {
+    const num = Number(_num);
+    const b = num % 10,
+      output = ~~(num % 100 / 10) === 1 ? 'th' : b === 1 ? 'st' : b === 2 ? 'nd' : b === 3 ? 'rd' : 'th';
+    return num + output;
+  },
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Spanish (Dominican Republic) [es-do]
+let monthsShortDot$4 = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_'),
+  monthsShort$5 = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_');
+let monthsParse$5 = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i];
+let monthsRegex$4 = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
+const esDoLocale = {
+  abbr: 'es-do',
+  months: 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
+  monthsShort(date, format, isUTC) {
+    if (!date) {
+      return monthsShortDot$4;
+    } else if (/-MMM-/.test(format)) {
+      return monthsShort$5[getMonth(date, isUTC)];
+    } else {
+      return monthsShortDot$4[getMonth(date, isUTC)];
+    }
+  },
+  monthsRegex: monthsRegex$4,
+  monthsShortRegex: monthsRegex$4,
+  monthsStrictRegex: /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)/i,
+  monthsShortStrictRegex: /^(ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i,
+  monthsParse: monthsParse$5,
+  longMonthsParse: monthsParse$5,
+  shortMonthsParse: monthsParse$5,
+  weekdays: 'domingo_lunes_martes_miércoles_jueves_viernes_sábado'.split('_'),
+  weekdaysShort: 'dom._lun._mar._mié._jue._vie._sáb.'.split('_'),
+  weekdaysMin: 'do_lu_ma_mi_ju_vi_sá'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'h:mm A',
+    LTS: 'h:mm:ss A',
+    L: 'DD/MM/YYYY',
+    LL: 'D [de] MMMM [de] YYYY',
+    LLL: 'D [de] MMMM [de] YYYY h:mm A',
+    LLLL: 'dddd, D [de] MMMM [de] YYYY h:mm A'
+  },
+  calendar: {
+    sameDay(date) {
+      return '[hoy a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    nextDay(date) {
+      return '[mañana a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    nextWeek(date) {
+      return 'dddd [a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    lastDay(date) {
+      return '[ayer a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    lastWeek(date) {
+      return '[el] dddd [pasado a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'en %s',
+    past: 'hace %s',
+    s: 'unos segundos',
+    ss: '%d segundos',
+    m: 'un minuto',
+    mm: '%d minutos',
+    h: 'una hora',
+    hh: '%d horas',
+    d: 'un día',
+    dd: '%d días',
+    M: 'un mes',
+    MM: '%d meses',
+    y: 'un año',
+    yy: '%d años'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}º/,
+  ordinal: '%dº',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Spanish [es]
+//! author : Julio Napurí : https://github.com/julionc
+let monthsShortDot$3 = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_'),
+  monthsShort$4 = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_');
+let monthsParse$4 = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i];
+let monthsRegex$3 = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
+const esLocale = {
+  abbr: 'es',
+  months: 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
+  monthsShort(date, format, isUTC) {
+    if (!date) {
+      return monthsShortDot$3;
+    }
+    if (/-MMM-/.test(format)) {
+      return monthsShort$4[getMonth(date, isUTC)];
+    }
+    return monthsShortDot$3[getMonth(date, isUTC)];
+  },
+  monthsRegex: monthsRegex$3,
+  monthsShortRegex: monthsRegex$3,
+  monthsStrictRegex: /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)/i,
+  monthsShortStrictRegex: /^(ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i,
+  monthsParse: monthsParse$4,
+  longMonthsParse: monthsParse$4,
+  shortMonthsParse: monthsParse$4,
+  weekdays: 'domingo_lunes_martes_miércoles_jueves_viernes_sábado'.split('_'),
+  weekdaysShort: 'dom._lun._mar._mié._jue._vie._sáb.'.split('_'),
+  weekdaysMin: 'do_lu_ma_mi_ju_vi_sá'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D [de] MMMM [de] YYYY',
+    LLL: 'D [de] MMMM [de] YYYY H:mm',
+    LLLL: 'dddd, D [de] MMMM [de] YYYY H:mm'
+  },
+  calendar: {
+    sameDay(date) {
+      return '[hoy a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    nextDay(date) {
+      return '[mañana a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    nextWeek(date) {
+      return 'dddd [a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    lastDay(date) {
+      return '[ayer a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    lastWeek(date) {
+      return '[el] dddd [pasado a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'en %s',
+    past: 'hace %s',
+    s: 'unos segundos',
+    ss: '%d segundos',
+    m: 'un minuto',
+    mm: '%d minutos',
+    h: 'una hora',
+    hh: '%d horas',
+    d: 'un día',
+    dd: '%d días',
+    M: 'un mes',
+    MM: '%d meses',
+    y: 'un año',
+    yy: '%d años'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}º/,
+  ordinal: '%dº',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Spanish (Puerto Rico) [es-pr]
+let monthsShortDot$2 = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_');
+let monthsShort$3 = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_');
+const esPrLocale = {
+  abbr: 'es-pr',
+  months: 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
+  monthsShort(date, format, isUTC) {
+    if (!date) {
+      return monthsShortDot$2;
+    } else if (/-MMM-/.test(format)) {
+      return monthsShort$3[getMonth(date, isUTC)];
+    } else {
+      return monthsShortDot$2[getMonth(date, isUTC)];
+    }
+  },
+  monthsParseExact: true,
+  weekdays: 'domingo_lunes_martes_miércoles_jueves_viernes_sábado'.split('_'),
+  weekdaysShort: 'dom._lun._mar._mié._jue._vie._sáb.'.split('_'),
+  weekdaysMin: 'do_lu_ma_mi_ju_vi_sá'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'h:mm A',
+    LTS: 'h:mm:ss A',
+    L: 'MM/DD/YYYY',
+    LL: 'D [de] MMMM [de] YYYY',
+    LLL: 'D [de] MMMM [de] YYYY h:mm A',
+    LLLL: 'dddd, D [de] MMMM [de] YYYY h:mm A'
+  },
+  calendar: {
+    sameDay(date) {
+      return '[hoy a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    nextDay(date) {
+      return '[mañana a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    nextWeek(date) {
+      return 'dddd [a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    lastDay(date) {
+      return '[ayer a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    lastWeek(date) {
+      return '[el] dddd [pasado a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'en %s',
+    past: 'hace %s',
+    s: 'unos segundos',
+    ss: '%d segundos',
+    m: 'un minuto',
+    mm: '%d minutos',
+    h: 'una hora',
+    hh: '%d horas',
+    d: 'un día',
+    dd: '%d días',
+    M: 'un mes',
+    MM: '%d meses',
+    y: 'un año',
+    yy: '%d años'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}º/,
+  ordinal: '%dº',
+  week: {
+    dow: 0,
+    doy: 6 // The week that contains Jan 1st is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Spanish (United States) [es-us]
+//! author : bustta : https://github.com/bustta
+let monthsShortDot$1 = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_');
+let monthsShort$2 = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_');
+const esUsLocale = {
+  abbr: 'es-us',
+  months: 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
+  monthsShort(date, format, isUTC) {
+    if (!date) {
+      return monthsShortDot$1;
+    } else if (/-MMM-/.test(format)) {
+      return monthsShort$2[getMonth(date, isUTC)];
+    } else {
+      return monthsShortDot$1[getMonth(date, isUTC)];
+    }
+  },
+  monthsParseExact: true,
+  weekdays: 'domingo_lunes_martes_miércoles_jueves_viernes_sábado'.split('_'),
+  weekdaysShort: 'dom._lun._mar._mié._jue._vie._sáb.'.split('_'),
+  weekdaysMin: 'do_lu_ma_mi_ju_vi_sá'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'h:mm A',
+    LTS: 'h:mm:ss A',
+    L: 'MM/DD/YYYY',
+    LL: 'MMMM [de] D [de] YYYY',
+    LLL: 'MMMM [de] D [de] YYYY h:mm A',
+    LLLL: 'dddd, MMMM [de] D [de] YYYY h:mm A'
+  },
+  calendar: {
+    sameDay(date) {
+      return '[hoy a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    nextDay(date) {
+      return '[mañana a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    nextWeek(date) {
+      return 'dddd [a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    lastDay(date) {
+      return '[ayer a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    lastWeek(date) {
+      return '[el] dddd [pasado a la' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'en %s',
+    past: 'hace %s',
+    s: 'unos segundos',
+    ss: '%d segundos',
+    m: 'un minuto',
+    mm: '%d minutos',
+    h: 'una hora',
+    hh: '%d horas',
+    d: 'un día',
+    dd: '%d días',
+    M: 'un mes',
+    MM: '%d meses',
+    y: 'un año',
+    yy: '%d años'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}º/,
+  ordinal: '%dº',
+  week: {
+    dow: 0,
+    doy: 6 // The week that contains Jan 1st is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Estonian [et]
+//! author : Chris Gedrim : https://github.com/a90machado
+const processRelativeTime$1 = function (num, withoutSuffix, key, isFuture) {
+  const format = {
+    s: ['mõne sekundi', 'mõni sekund', 'paar sekundit'],
+    ss: [num + 'sekundi', num + 'sekundit'],
+    m: ['ühe minuti', 'üks minut'],
+    mm: [num + ' minuti', num + ' minutit'],
+    h: ['ühe tunni', 'tund aega', 'üks tund'],
+    hh: [num + ' tunni', num + ' tundi'],
+    d: ['ühe päeva', 'üks päev'],
+    M: ['kuu aja', 'kuu aega', 'üks kuu'],
+    MM: [num + ' kuu', num + ' kuud'],
+    y: ['ühe aasta', 'aasta', 'üks aasta'],
+    yy: [num + ' aasta', num + ' aastat']
+  };
+  if (withoutSuffix) {
+    return format[key][2] ? format[key][2] : format[key][1];
+  }
+  return isFuture ? format[key][0] : format[key][1];
+};
+const etLocale = {
+  abbr: 'et',
+  months: 'jaanuar_veebruar_märts_aprill_mai_juuni_juuli_august_september_oktoober_november_detsember'.split('_'),
+  monthsShort: 'jaan_veebr_märts_apr_mai_juuni_juuli_aug_sept_okt_nov_dets'.split('_'),
+  weekdays: 'pühapäev_esmaspäev_teisipäev_kolmapäev_neljapäev_reede_laupäev'.split('_'),
+  weekdaysShort: 'P_E_T_K_N_R_L'.split('_'),
+  weekdaysMin: 'P_E_T_K_N_R_L'.split('_'),
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D. MMMM YYYY',
+    LLL: 'D. MMMM YYYY H:mm',
+    LLLL: 'dddd, D. MMMM YYYY H:mm'
+  },
+  calendar: {
+    sameDay: '[Täna,] LT',
+    nextDay: '[Homme,] LT',
+    nextWeek: '[Järgmine] dddd LT',
+    lastDay: '[Eile,] LT',
+    lastWeek: '[Eelmine] dddd LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: '%s pärast',
+    past: '%s tagasi',
+    s: processRelativeTime$1,
+    ss: processRelativeTime$1,
+    m: processRelativeTime$1,
+    mm: processRelativeTime$1,
+    h: processRelativeTime$1,
+    hh: processRelativeTime$1,
+    d: processRelativeTime$1,
+    dd: '%d päeva',
+    M: processRelativeTime$1,
+    MM: processRelativeTime$1,
+    y: processRelativeTime$1,
+    yy: processRelativeTime$1
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+// https://github.com/moment/moment/blob/develop/locale/fi.js
+var numbersPast = 'nolla yksi kaksi kolme neljä viisi kuusi seitsemän kahdeksan yhdeksän'.split(' '),
+  numbersFuture = ['nolla', 'yhden', 'kahden', 'kolmen', 'neljän', 'viiden', 'kuuden', numbersPast[7], numbersPast[8], numbersPast[9]];
+function translate$5(num, withoutSuffix, key, isFuture) {
+  var result = '';
+  switch (key) {
+    case 's':
+      return isFuture ? 'muutaman sekunnin' : 'muutama sekunti';
+    case 'ss':
+      return isFuture ? 'sekunnin' : 'sekuntia';
+    case 'm':
+      return isFuture ? 'minuutin' : 'minuutti';
+    case 'mm':
+      result = isFuture ? 'minuutin' : 'minuuttia';
+      break;
+    case 'h':
+      return isFuture ? 'tunnin' : 'tunti';
+    case 'hh':
+      result = isFuture ? 'tunnin' : 'tuntia';
+      break;
+    case 'd':
+      return isFuture ? 'päivän' : 'päivä';
+    case 'dd':
+      result = isFuture ? 'päivän' : 'päivää';
+      break;
+    case 'M':
+      return isFuture ? 'kuukauden' : 'kuukausi';
+    case 'MM':
+      result = isFuture ? 'kuukauden' : 'kuukautta';
+      break;
+    case 'y':
+      return isFuture ? 'vuoden' : 'vuosi';
+    case 'yy':
+      result = isFuture ? 'vuoden' : 'vuotta';
+      break;
+  }
+  result = verbalNumber(num, isFuture) + ' ' + result;
+  return result;
+}
+function verbalNumber(num, isFuture) {
+  return num < 10 ? isFuture ? numbersFuture[num] : numbersPast[num] : num;
+}
+const fiLocale = {
+  abbr: 'fi',
+  months: 'tammikuu_helmikuu_maaliskuu_huhtikuu_toukokuu_kesäkuu_heinäkuu_elokuu_syyskuu_lokakuu_marraskuu_joulukuu'.split('_'),
+  monthsShort: 'tammi_helmi_maalis_huhti_touko_kesä_heinä_elo_syys_loka_marras_joulu'.split('_'),
+  weekdays: 'sunnuntai_maanantai_tiistai_keskiviikko_torstai_perjantai_lauantai'.split('_'),
+  weekdaysShort: 'su_ma_ti_ke_to_pe_la'.split('_'),
+  weekdaysMin: 'su_ma_ti_ke_to_pe_la'.split('_'),
+  longDateFormat: {
+    LT: 'HH.mm',
+    LTS: 'HH.mm.ss',
+    L: 'DD.MM.YYYY',
+    LL: 'Do MMMM[ta] YYYY',
+    LLL: 'Do MMMM[ta] YYYY, [klo] HH.mm',
+    LLLL: 'dddd, Do MMMM[ta] YYYY, [klo] HH.mm',
+    l: 'D.M.YYYY',
+    ll: 'Do MMM YYYY',
+    lll: 'Do MMM YYYY, [klo] HH.mm',
+    llll: 'ddd, Do MMM YYYY, [klo] HH.mm'
+  },
+  calendar: {
+    sameDay: '[tänään] [klo] LT',
+    nextDay: '[huomenna] [klo] LT',
+    nextWeek: 'dddd [klo] LT',
+    lastDay: '[eilen] [klo] LT',
+    lastWeek: '[viime] dddd[na] [klo] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: '%s päästä',
+    past: '%s sitten',
+    s: translate$5,
+    ss: translate$5,
+    m: translate$5,
+    mm: translate$5,
+    h: translate$5,
+    hh: translate$5,
+    d: translate$5,
+    dd: translate$5,
+    M: translate$5,
+    MM: translate$5,
+    y: translate$5,
+    yy: translate$5
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : French [fr]
+//! author : John Fischer : https://github.com/jfroffice
+const frLocale = {
+  abbr: 'fr',
+  months: 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
+  monthsShort: 'janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.'.split('_'),
+  monthsParseExact: true,
+  weekdays: 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
+  weekdaysShort: 'dim._lun._mar._mer._jeu._ven._sam.'.split('_'),
+  weekdaysMin: 'di_lu_ma_me_je_ve_sa'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[Aujourd’hui à] LT',
+    nextDay: '[Demain à] LT',
+    nextWeek: 'dddd [à] LT',
+    lastDay: '[Hier à] LT',
+    lastWeek: 'dddd [dernier à] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'dans %s',
+    past: 'il y a %s',
+    s: 'quelques secondes',
+    ss: '%d secondes',
+    m: 'une minute',
+    mm: '%d minutes',
+    h: 'une heure',
+    hh: '%d heures',
+    d: 'un jour',
+    dd: '%d jours',
+    M: 'un mois',
+    MM: '%d mois',
+    y: 'un an',
+    yy: '%d ans'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}(er|)/,
+  ordinal(_num, period) {
+    const num = Number(_num);
+    switch (period) {
+      // TODO: Return 'e' when day of month > 1. Move this case inside
+      // block for masculine words below.
+      // See https://github.com/moment/moment/issues/3375
+      case 'D':
+        return num + (num === 1 ? 'er' : '');
+      // Words with masculine grammatical gender: mois, trimestre, jour
+      default:
+      case 'M':
+      case 'Q':
+      case 'DDD':
+      case 'd':
+        return num + (num === 1 ? 'er' : 'e');
+      // Words with feminine grammatical gender: semaine
+      case 'w':
+      case 'W':
+        return num + (num === 1 ? 're' : 'e');
+    }
+  },
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Galician [gl]
+//! author : Darío Beiró : https://github.com/quinobravo
+let monthsShortDot = 'xan._feb._mar._abr._mai._xuñ._xul._ago._set._out._nov._dec.'.split('_'),
+  monthsShort$1 = 'xan_feb_mar_abr_mai_xuñ_xul_ago_set_out_nov_dec'.split('_');
+let monthsParse$3 = [/^xan/i, /^feb/i, /^mar/i, /^abr/i, /^mai/i, /^xuñ/i, /^xul/i, /^ago/i, /^set/i, /^out/i, /^nov/i, /^dec/i];
+let monthsRegex$2 = /^(xaneiro|febreiro|marzo|abril|maio|xuño|xullo|agosto|setembro|outubro|novembro|decembro|xan\.?|feb\.?|mar\.?|abr\.?|mai\.?|xuñ\.?|xul\.?|ago\.?|set\.?|out\.?|nov\.?|dec\.?)/i;
+const glLocale = {
+  abbr: 'gl',
+  months: 'xaneiro_febreiro_marzo_abril_maio_xuño_xullo_agosto_setembro_outubro_novembro_decembro'.split('_'),
+  monthsShort(date, format, isUTC) {
+    if (!date) {
+      return monthsShortDot;
+    }
+    if (/-MMM-/.test(format)) {
+      return monthsShort$1[getMonth(date, isUTC)];
+    }
+    return monthsShortDot[getMonth(date, isUTC)];
+  },
+  monthsRegex: monthsRegex$2,
+  monthsShortRegex: monthsRegex$2,
+  monthsStrictRegex: /^(xaneiro|febreiro|marzo|abril|maio|xuño|xullo|agosto|setembro|outubro|novembro|decembro)/i,
+  monthsShortStrictRegex: /^(xan\.?|feb\.?|mar\.?|abr\.?|mai\.?|xuñ\.?|xul\.?|ago\.?|set\.?|out\.?|nov\.?|dec\.?)/i,
+  monthsParse: monthsParse$3,
+  longMonthsParse: monthsParse$3,
+  shortMonthsParse: monthsParse$3,
+  weekdays: 'domingo_luns_martes_mércores_xoves_venres_sábado'.split('_'),
+  weekdaysShort: 'dom._lun._mar._mér._xov._ven._sáb.'.split('_'),
+  weekdaysMin: 'do_lu_ma_mé_xo_ve_sá'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D [de] MMMM [de] YYYY',
+    LLL: 'D [de] MMMM [de] YYYY H:mm',
+    LLLL: 'dddd, D [de] MMMM [de] YYYY H:mm'
+  },
+  calendar: {
+    sameDay(date) {
+      return '[hoxe á' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    nextDay(date) {
+      return '[mañan á' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    nextWeek(date) {
+      return 'dddd [á' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    lastDay(date) {
+      return '[onte á' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    lastWeek(date) {
+      return '[o] dddd [pasado á' + (getHours(date) !== 1 ? 's' : '') + '] LT';
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'en %s',
+    past: 'fai %s',
+    s: 'uns segundos',
+    ss: '%d segundos',
+    m: 'un minuto',
+    mm: '%d minutos',
+    h: 'unha hora',
+    hh: '%d horas',
+    d: 'un día',
+    dd: '%d días',
+    M: 'un mes',
+    MM: '%d meses',
+    y: 'un ano',
+    yy: '%d anos'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}º/,
+  ordinal: '%dº',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Hebrew [he]
+//! author : Tomer Cohen : https://github.com/tomer
+//! author : Moshe Simantov : https://github.com/DevelopmentIL
+//! author : Tal Ater : https://github.com/TalAter
+const heLocale = {
+  abbr: 'he',
+  months: 'ינואר_פברואר_מרץ_אפריל_מאי_יוני_יולי_אוגוסט_ספטמבר_אוקטובר_נובמבר_דצמבר'.split('_'),
+  monthsShort: 'ינו׳_פבר׳_מרץ_אפר׳_מאי_יוני_יולי_אוג׳_ספט׳_אוק׳_נוב׳_דצמ׳'.split('_'),
+  weekdays: 'ראשון_שני_שלישי_רביעי_חמישי_שישי_שבת'.split('_'),
+  weekdaysShort: 'א׳_ב׳_ג׳_ד׳_ה׳_ו׳_ש׳'.split('_'),
+  weekdaysMin: 'א_ב_ג_ד_ה_ו_ש'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D [ב]MMMM YYYY',
+    LLL: 'D [ב]MMMM YYYY HH:mm',
+    LLLL: 'dddd, D [ב]MMMM YYYY HH:mm',
+    l: 'D/M/YYYY',
+    ll: 'D MMM YYYY',
+    lll: 'D MMM YYYY HH:mm',
+    llll: 'ddd, D MMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[היום ב־]LT',
+    nextDay: '[מחר ב־]LT',
+    nextWeek: 'dddd [בשעה] LT',
+    lastDay: '[אתמול ב־]LT',
+    lastWeek: '[ביום] dddd [האחרון בשעה] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'בעוד %s',
+    past: 'לפני %s',
+    s: 'מספר שניות',
+    ss: '%d שניות',
+    m: 'דקה',
+    mm: '%d דקות',
+    h: 'שעה',
+    hh(num) {
+      if (num === 2) {
+        return 'שעתיים';
+      }
+      return num + ' שעות';
+    },
+    d: 'יום',
+    dd(num) {
+      if (num === 2) {
+        return 'יומיים';
+      }
+      return num + ' ימים';
+    },
+    M: 'חודש',
+    MM(num) {
+      if (num === 2) {
+        return 'חודשיים';
+      }
+      return num + ' חודשים';
+    },
+    y: 'שנה',
+    yy(num) {
+      if (num === 2) {
+        return 'שנתיים';
+      } else if (num % 10 === 0 && num !== 10) {
+        return num + ' שנה';
+      }
+      return num + ' שנים';
+    }
+  },
+  meridiemParse: /אחה"צ|לפנה"צ|אחרי הצהריים|לפני הצהריים|לפנות בוקר|בבוקר|בערב/i,
+  isPM(input) {
+    return /^(אחה"צ|אחרי הצהריים|בערב)$/.test(input);
+  },
+  meridiem(hour, minute, isLower) {
+    if (hour < 5) {
+      return 'לפנות בוקר';
+    } else if (hour < 10) {
+      return 'בבוקר';
+    } else if (hour < 12) {
+      return isLower ? 'לפנה"צ' : 'לפני הצהריים';
+    } else if (hour < 18) {
+      return isLower ? 'אחה"צ' : 'אחרי הצהריים';
+    } else {
+      return 'בערב';
+    }
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Hindi [hi]
+//! author : Mayank Singhal : https://github.com/mayanksinghal
+let symbolMap = {
+    1: '१',
+    2: '२',
+    3: '३',
+    4: '४',
+    5: '५',
+    6: '६',
+    7: '७',
+    8: '८',
+    9: '९',
+    0: '०'
+  },
+  numberMap = {
+    '१': '1',
+    '२': '2',
+    '३': '3',
+    '४': '4',
+    '५': '5',
+    '६': '6',
+    '७': '7',
+    '८': '8',
+    '९': '9',
+    '०': '0'
+  };
+const hiLocale = {
+  abbr: 'hi',
+  months: 'जनवरी_फ़रवरी_मार्च_अप्रैल_मई_जून_जुलाई_अगस्त_सितम्बर_अक्टूबर_नवम्बर_दिसम्बर'.split('_'),
+  monthsShort: 'जन._फ़र._मार्च_अप्रै._मई_जून_जुल._अग._सित._अक्टू._नव._दिस.'.split('_'),
+  monthsParseExact: true,
+  weekdays: 'रविवार_सोमवार_मंगलवार_बुधवार_गुरूवार_शुक्रवार_शनिवार'.split('_'),
+  weekdaysShort: 'रवि_सोम_मंगल_बुध_गुरू_शुक्र_शनि'.split('_'),
+  weekdaysMin: 'र_सो_मं_बु_गु_शु_श'.split('_'),
+  longDateFormat: {
+    LT: 'A h:mm बजे',
+    LTS: 'A h:mm:ss बजे',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY, A h:mm बजे',
+    LLLL: 'dddd, D MMMM YYYY, A h:mm बजे'
+  },
+  calendar: {
+    sameDay: '[आज] LT',
+    nextDay: '[कल] LT',
+    nextWeek: 'dddd, LT',
+    lastDay: '[कल] LT',
+    lastWeek: '[पिछले] dddd, LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: '%s में',
+    past: '%s पहले',
+    s: 'कुछ ही क्षण',
+    ss: '%d सेकंड',
+    m: 'एक मिनट',
+    mm: '%d मिनट',
+    h: 'एक घंटा',
+    hh: '%d घंटे',
+    d: 'एक दिन',
+    dd: '%d दिन',
+    M: 'एक महीने',
+    MM: '%d महीने',
+    y: 'एक वर्ष',
+    yy: '%d वर्ष'
+  },
+  preparse(str) {
+    return str.replace(/[१२३४५६७८९०]/g, function (match) {
+      return numberMap[match];
+    });
+  },
+  postformat(str) {
+    return str.replace(/\d/g, function (match) {
+      return symbolMap[match];
+    });
+  },
+  // Hindi notation for meridiems are quite fuzzy in practice. While there exists
+  // a rigid notion of a 'Pahar' it is not used as rigidly in modern Hindi.
+  meridiemParse: /रात|सुबह|दोपहर|शाम/,
+  meridiemHour(hour, meridiem) {
+    if (hour === 12) {
+      hour = 0;
+    }
+    if (meridiem === 'रात') {
+      return hour < 4 ? hour : hour + 12;
+    } else if (meridiem === 'सुबह') {
+      return hour;
+    } else if (meridiem === 'दोपहर') {
+      return hour >= 10 ? hour : hour + 12;
+    } else if (meridiem === 'शाम') {
+      return hour + 12;
+    }
+  },
+  meridiem(hour, minute, isLower) {
+    if (hour < 4) {
+      return 'रात';
+    } else if (hour < 10) {
+      return 'सुबह';
+    } else if (hour < 17) {
+      return 'दोपहर';
+    } else if (hour < 20) {
+      return 'शाम';
+    } else {
+      return 'रात';
+    }
+  },
+  week: {
+    dow: 0,
+    doy: 6 // The week that contains Jan 1st is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Hungarian [hu]
+//! author : Adam Brunner : https://github.com/adambrunner
+let weekEndings = 'vasárnap hétfőn kedden szerdán csütörtökön pénteken szombaton'.split(' ');
+function translate$4(num, withoutSuffix, key, isFuture) {
+  switch (key) {
+    case 's':
+      return isFuture || withoutSuffix ? 'néhány másodperc' : 'néhány másodperce';
+    case 'ss':
+      return num + (isFuture || withoutSuffix ? ' másodperc' : ' másodperce');
+    case 'm':
+      return 'egy' + (isFuture || withoutSuffix ? ' perc' : ' perce');
+    case 'mm':
+      return num + (isFuture || withoutSuffix ? ' perc' : ' perce');
+    case 'h':
+      return 'egy' + (isFuture || withoutSuffix ? ' óra' : ' órája');
+    case 'hh':
+      return num + (isFuture || withoutSuffix ? ' óra' : ' órája');
+    case 'd':
+      return 'egy' + (isFuture || withoutSuffix ? ' nap' : ' napja');
+    case 'dd':
+      return num + (isFuture || withoutSuffix ? ' nap' : ' napja');
+    case 'M':
+      return 'egy' + (isFuture || withoutSuffix ? ' hónap' : ' hónapja');
+    case 'MM':
+      return num + (isFuture || withoutSuffix ? ' hónap' : ' hónapja');
+    case 'y':
+      return 'egy' + (isFuture || withoutSuffix ? ' év' : ' éve');
+    case 'yy':
+      return num + (isFuture || withoutSuffix ? ' év' : ' éve');
+  }
+  return '';
+}
+function week(date, isFuture) {
+  return (isFuture ? '' : '[múlt] ') + '[' + weekEndings[getDayOfWeek(date)] + '] LT[-kor]';
+}
+const huLocale = {
+  abbr: 'hu',
+  months: 'január_február_március_április_május_június_július_augusztus_szeptember_október_november_december'.split('_'),
+  monthsShort: 'jan_feb_márc_ápr_máj_jún_júl_aug_szept_okt_nov_dec'.split('_'),
+  weekdays: 'vasárnap_hétfő_kedd_szerda_csütörtök_péntek_szombat'.split('_'),
+  weekdaysShort: 'vas_hét_kedd_sze_csüt_pén_szo'.split('_'),
+  weekdaysMin: 'v_h_k_sze_cs_p_szo'.split('_'),
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'YYYY.MM.DD.',
+    LL: 'YYYY. MMMM D.',
+    LLL: 'YYYY. MMMM D. H:mm',
+    LLLL: 'YYYY. MMMM D., dddd H:mm'
+  },
+  meridiemParse: /de|du/i,
+  isPM(input) {
+    return input.charAt(1).toLowerCase() === 'u';
+  },
+  meridiem(hours, minutes, isLower) {
+    if (hours < 12) {
+      return isLower === true ? 'de' : 'DE';
+    } else {
+      return isLower === true ? 'du' : 'DU';
+    }
+  },
+  calendar: {
+    sameDay: '[ma] LT[-kor]',
+    nextDay: '[holnap] LT[-kor]',
+    nextWeek(date) {
+      return week(date, true);
+    },
+    lastDay: '[tegnap] LT[-kor]',
+    lastWeek(date) {
+      return week(date, false);
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: '%s múlva',
+    past: '%s',
+    s: translate$4,
+    ss: translate$4,
+    m: translate$4,
+    mm: translate$4,
+    h: translate$4,
+    hh: translate$4,
+    d: translate$4,
+    dd: translate$4,
+    M: translate$4,
+    MM: translate$4,
+    y: translate$4,
+    yy: translate$4
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Croatian [hr]
+//! author : Danijel Grmec : https://github.com/cobaltsis
+const hrLocale = {
+  abbr: 'hr',
+  months: 'Siječanj_Veljača_Ožujak_Travanj_Svibanj_Lipanj_Srpanj_Kolovoz_Rujan_Listopad_Studeni_Prosinac'.split('_'),
+  monthsShort: 'Sij_Velj_Ožu_Tra_Svi_Lip_Srp_Kol_Ruj_Lis_Stu_Pro'.split('_'),
+  weekdays: 'Nedjelja_Ponedjeljak_Utorak_Srijeda_Četvrtak_Petak_Subota'.split('_'),
+  weekdaysShort: 'Ned_Pon_Uto_Sri_Čet_Pet_Sub'.split('_'),
+  weekdaysMin: 'Ne_Po_Ut_Sr_Če_Pe_Su'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd, D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[Danas u] LT',
+    nextDay: '[Sutra u] LT',
+    nextWeek: 'dddd [u] LT',
+    lastDay: '[Jučer u] LT',
+    lastWeek: '[Zadnji] dddd [u] LT',
+    sameElse: 'L'
+  },
+  invalidDate: 'Neispravan datum',
+  relativeTime: {
+    future: 'za %s',
+    past: '%s prije',
+    s: 'nekoliko sekundi',
+    ss: '%d sekundi',
+    m: 'minuta',
+    mm: '%d minuta',
+    h: 'sat',
+    hh: '%d sati',
+    d: 'dan',
+    dd: '%d dana',
+    M: 'mjesec',
+    MM: '%d mjeseci',
+    y: 'godina',
+    yy: '%d godina'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
+  ordinal(_num) {
+    const num = Number(_num);
+    const b = num % 10,
+      output = ~~(num % 100 / 10) === 1 ? '.' : b === 1 ? '.' : b === 2 ? '.' : b === 3 ? '.' : '.';
+    return num + output;
+  },
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Indonesia [id]
+//! author : Romy Kusuma : https://github.com/rkusuma
+//! reference: https://github.com/moment/moment/blob/develop/locale/id.js
+const idLocale = {
+  abbr: 'id',
+  months: 'Januari_Februari_Maret_April_Mei_Juni_Juli_Agustus_September_Oktober_November_Desember'.split('_'),
+  monthsShort: 'Jan_Feb_Mar_Apr_Mei_Jun_Jul_Ags_Sep_Okt_Nov_Des'.split('_'),
+  weekdays: 'Minggu_Senin_Selasa_Rabu_Kamis_Jumat_Sabtu'.split('_'),
+  weekdaysShort: 'Min_Sen_Sel_Rab_Kam_Jum_Sab'.split('_'),
+  weekdaysMin: 'Mg_Sn_Sl_Rb_Km_Jm_Sb'.split('_'),
+  longDateFormat: {
+    LT: 'HH.mm',
+    LTS: 'HH.mm.ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY [pukul] HH.mm',
+    LLLL: 'dddd, D MMMM YYYY [pukul] HH.mm'
+  },
+  meridiemParse: /pagi|siang|sore|malam/,
+  meridiemHour(hour, meridiem) {
+    if (hour === 12) {
+      hour = 0;
+    }
+    if (meridiem === 'pagi') {
+      return hour;
+    } else if (meridiem === 'siang') {
+      return hour >= 11 ? hour : hour + 12;
+    } else if (meridiem === 'sore' || meridiem === 'malam') {
+      return hour + 12;
+    }
+  },
+  meridiem(hours, minutes, isLower) {
+    if (hours < 11) {
+      return 'pagi';
+    } else if (hours < 15) {
+      return 'siang';
+    } else if (hours < 19) {
+      return 'sore';
+    } else {
+      return 'malam';
+    }
+  },
+  calendar: {
+    sameDay: '[Hari ini pukul] LT',
+    nextDay: '[Besok pukul] LT',
+    nextWeek: 'dddd [pukul] LT',
+    lastDay: '[Kemarin pukul] LT',
+    lastWeek: 'dddd [lalu pukul] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'dalam %s',
+    past: '%s yang lalu',
+    s: 'beberapa detik',
+    ss: '%d detik',
+    m: 'semenit',
+    mm: '%d menit',
+    h: 'sejam',
+    hh: '%d jam',
+    d: 'sehari',
+    dd: '%d hari',
+    M: 'sebulan',
+    MM: '%d bulan',
+    y: 'setahun',
+    yy: '%d tahun'
+  },
+  week: {
+    dow: 1,
+    doy: 7 // The week that contains Jan 1st is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Italian [it]
+//! author : Lorenzo : https://github.com/aliem
+//! author: Mattia Larentis: https://github.com/nostalgiaz
+const itLocale = {
+  abbr: 'it',
+  months: 'gennaio_febbraio_marzo_aprile_maggio_giugno_luglio_agosto_settembre_ottobre_novembre_dicembre'.split('_'),
+  monthsShort: 'gen_feb_mar_apr_mag_giu_lug_ago_set_ott_nov_dic'.split('_'),
+  weekdays: 'domenica_lunedì_martedì_mercoledì_giovedì_venerdì_sabato'.split('_'),
+  weekdaysShort: 'dom_lun_mar_mer_gio_ven_sab'.split('_'),
+  weekdaysMin: 'do_lu_ma_me_gi_ve_sa'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[Oggi alle] LT',
+    nextDay: '[Domani alle] LT',
+    nextWeek: 'dddd [alle] LT',
+    lastDay: '[Ieri alle] LT',
+    lastWeek(date) {
+      switch (getDayOfWeek(date)) {
+        case 0:
+          return '[la scorsa] dddd [alle] LT';
+        default:
+          return '[lo scorso] dddd [alle] LT';
+      }
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future(num) {
+      return (/^[0-9].+$/.test(num.toString(10)) ? 'tra' : 'in') + ' ' + num;
+    },
+    past: '%s fa',
+    s: 'alcuni secondi',
+    ss: '%d secondi',
+    m: 'un minuto',
+    mm: '%d minuti',
+    h: 'un\'ora',
+    hh: '%d ore',
+    d: 'un giorno',
+    dd: '%d giorni',
+    M: 'un mese',
+    MM: '%d mesi',
+    y: 'un anno',
+    yy: '%d anni'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}º/,
+  ordinal: '%dº',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Japanese [ja]
+//! author : LI Long : https://github.com/baryon
+const jaLocale = {
+  abbr: 'ja',
+  months: '1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月'.split('_'),
+  monthsShort: '1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月'.split('_'),
+  weekdays: '日曜日_月曜日_火曜日_水曜日_木曜日_金曜日_土曜日'.split('_'),
+  weekdaysShort: '日_月_火_水_木_金_土'.split('_'),
+  weekdaysMin: '日_月_火_水_木_金_土'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'YYYY/MM/DD',
+    LL: 'YYYY年M月D日',
+    LLL: 'YYYY年M月D日 HH:mm',
+    LLLL: 'YYYY年M月D日 HH:mm dddd',
+    l: 'YYYY/MM/DD',
+    ll: 'YYYY年M月D日',
+    lll: 'YYYY年M月D日 HH:mm',
+    llll: 'YYYY年M月D日 HH:mm dddd'
+  },
+  meridiemParse: /午前|午後/i,
+  isPM(input) {
+    return input === '午後';
+  },
+  meridiem(hour, minute, isLower) {
+    if (hour < 12) {
+      return '午前';
+    } else {
+      return '午後';
+    }
+  },
+  calendar: {
+    sameDay: '[今日] LT',
+    nextDay: '[明日] LT',
+    nextWeek: '[来週]dddd LT',
+    lastDay: '[昨日] LT',
+    lastWeek: '[前週]dddd LT',
+    sameElse: 'L'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}日/,
+  ordinal(num, period) {
+    switch (period) {
+      case 'd':
+      case 'D':
+      case 'DDD':
+        return num + '日';
+      default:
+        return num.toString(10);
+    }
+  },
+  relativeTime: {
+    future: '%s後',
+    past: '%s前',
+    s: '数秒',
+    ss: '%d秒',
+    m: '1分',
+    mm: '%d分',
+    h: '1時間',
+    hh: '%d時間',
+    d: '1日',
+    dd: '%d日',
+    M: '1ヶ月',
+    MM: '%dヶ月',
+    y: '1年',
+    yy: '%d年'
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Georgian [ka]
+//! author : Irakli Janiashvili : https://github.com/irakli-janiashvili
+//! author : Levan Tskipuri : https://github.com/tskipa
+const kaLocale = {
+  abbr: 'ka',
+  months: {
+    format: 'იანვარს_თებერვალს_მარტს_აპრილის_მაისს_ივნისს_ივლისს_აგვისტს_სექტემბერს_ოქტომბერს_ნოემბერს_დეკემბერს'.split('_'),
+    standalone: 'იანვარი_თებერვალი_მარტი_აპრილი_მაისი_ივნისი_ივლისი_აგვისტო_სექტემბერი_ოქტომბერი_ნოემბერი_დეკემბერი'.split('_')
+  },
+  monthsShort: 'იან_თებ_მარ_აპრ_მაი_ივნ_ივლ_აგვ_სექ_ოქტ_ნოე_დეკ'.split('_'),
+  weekdays: {
+    standalone: 'კვირა_ორშაბათი_სამშაბათი_ოთხშაბათი_ხუთშაბათი_პარასკევი_შაბათი'.split('_'),
+    format: 'კვირას_ორშაბათს_სამშაბათს_ოთხშაბათს_ხუთშაბათს_პარასკევს_შაბათს'.split('_'),
+    isFormat: /(წინა|შემდეგ)/
+  },
+  weekdaysShort: 'კვი_ორშ_სამ_ოთხ_ხუთ_პარ_შაბ'.split('_'),
+  weekdaysMin: 'კვ_ორ_სა_ოთ_ხუ_პა_შა'.split('_'),
+  longDateFormat: {
+    LT: 'h:mm A',
+    LTS: 'h:mm:ss A',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY h:mm A',
+    LLLL: 'dddd, D MMMM YYYY h:mm A'
+  },
+  calendar: {
+    sameDay: '[დღეს] LT[-ზე]',
+    nextDay: '[ხვალ] LT[-ზე]',
+    lastDay: '[გუშინ] LT[-ზე]',
+    nextWeek: '[შემდეგ] dddd LT[-ზე]',
+    lastWeek: '[წინა] dddd LT-ზე',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future(s) {
+      var st = s.toString();
+      return /(წამი|წუთი|საათი|წელი)/.test(st) ? st.replace(/ი$/, 'ში') : st + 'ში';
+    },
+    past(s) {
+      var st = s.toString();
+      if (/(წამი|წუთი|საათი|დღე|თვე)/.test(st)) {
+        return st.replace(/(ი|ე)$/, 'ის წინ');
+      }
+      if (/წელი/.test(st)) {
+        return st.replace(/წელი$/, 'წლის წინ');
+      }
+    },
+    s: 'რამდენიმე წამი',
+    ss: '%d წამი',
+    m: 'წუთი',
+    mm: '%d წუთი',
+    h: 'საათი',
+    hh: '%d საათი',
+    d: 'დღე',
+    dd: '%d დღე',
+    M: 'თვე',
+    MM: '%d თვე',
+    y: 'წელი',
+    yy: '%d წელი'
+  },
+  dayOfMonthOrdinalParse: /0|1-ლი|მე-\d{1,2}|\d{1,2}-ე/,
+  ordinal(_num, _period) {
+    const num = Number(_num);
+    if (num === 0) {
+      return num.toString();
+    }
+    if (num === 1) {
+      return num + '-ლი';
+    }
+    if (num < 20 || num <= 100 && num % 20 === 0 || num % 100 === 0) {
+      return 'მე-' + num;
+    }
+    return num + '-ე';
+  },
+  week: {
+    dow: 1,
+    doy: 4
+  }
+};
+
+// ! moment.js locale configuration
+// ! locale : Kazakh [kk]
+// ! authors : Nurlan Rakhimzhanov : https://github.com/nurlan
+const suffixes$1 = {
+  0: '-ші',
+  1: '-ші',
+  2: '-ші',
+  3: '-ші',
+  4: '-ші',
+  5: '-ші',
+  6: '-шы',
+  7: '-ші',
+  8: '-ші',
+  9: '-шы',
+  10: '-шы',
+  20: '-шы',
+  30: '-шы',
+  40: '-шы',
+  50: '-ші',
+  60: '-шы',
+  70: '-ші',
+  80: '-ші',
+  90: '-шы',
+  100: '-ші'
+};
+const kkLocale = {
+  abbr: 'kk',
+  months: 'қаңтар_ақпан_наурыз_сәуір_мамыр_маусым_шілде_тамыз_қыркүйек_қазан_қараша_желтоқсан'.split('_'),
+  monthsShort: 'қаң_ақп_нау_сәу_мам_мау_шіл_там_қыр_қаз_қар_жел'.split('_'),
+  weekdays: 'жексенбі_дүйсенбі_сейсенбі_сәрсенбі_бейсенбі_жұма_сенбі'.split('_'),
+  weekdaysShort: 'жек_дүй_сей_сәр_бей_жұм_сен'.split('_'),
+  weekdaysMin: 'жк_дй_сй_ср_бй_жм_сн'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd, D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[Бүгін сағат] LT',
+    nextDay: '[Ертең сағат] LT',
+    nextWeek: 'dddd [сағат] LT',
+    lastDay: '[Кеше сағат] LT',
+    lastWeek: '[Өткен аптаның] dddd [сағат] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: '%s ішінде',
+    past: '%s бұрын',
+    s: 'бірнеше секунд',
+    ss: '%d секунд',
+    m: 'бір минут',
+    mm: '%d минут',
+    h: 'бір сағат',
+    hh: '%d сағат',
+    d: 'бір күн',
+    dd: '%d күн',
+    M: 'бір ай',
+    MM: '%d ай',
+    y: 'бір жыл',
+    yy: '%d жыл'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}-(ші|шы)/,
+  ordinal(_num) {
+    const a = _num % 10;
+    const b = _num >= 100 ? 100 : null;
+    return _num + (suffixes$1[_num] || suffixes$1[a] || suffixes$1[b]);
+  },
+  week: {
+    dow: 1,
+    doy: 7 // The week that contains Jan 7th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Korean [ko]
+//! author : Kyungwook, Park : https://github.com/kyungw00k
+//! author : Jeeeyul Lee <jeeeyul@gmail.com>
+const koLocale = {
+  abbr: 'ko',
+  months: '1월_2월_3월_4월_5월_6월_7월_8월_9월_10월_11월_12월'.split('_'),
+  monthsShort: '1월_2월_3월_4월_5월_6월_7월_8월_9월_10월_11월_12월'.split('_'),
+  weekdays: '일요일_월요일_화요일_수요일_목요일_금요일_토요일'.split('_'),
+  weekdaysShort: '일_월_화_수_목_금_토'.split('_'),
+  weekdaysMin: '일_월_화_수_목_금_토'.split('_'),
+  longDateFormat: {
+    LT: 'A h:mm',
+    LTS: 'A h:mm:ss',
+    L: 'YYYY.MM.DD',
+    LL: 'YYYY년 MMMM D일',
+    LLL: 'YYYY년 MMMM D일 A h:mm',
+    LLLL: 'YYYY년 MMMM D일 dddd A h:mm',
+    l: 'YYYY.MM.DD',
+    ll: 'YYYY년 MMMM D일',
+    lll: 'YYYY년 MMMM D일 A h:mm',
+    llll: 'YYYY년 MMMM D일 dddd A h:mm'
+  },
+  calendar: {
+    sameDay: '오늘 LT',
+    nextDay: '내일 LT',
+    nextWeek: 'dddd LT',
+    lastDay: '어제 LT',
+    lastWeek: '지난주 dddd LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: '%s 후',
+    past: '%s 전',
+    s: '몇 초',
+    ss: '%d초',
+    m: '1분',
+    mm: '%d분',
+    h: '한 시간',
+    hh: '%d시간',
+    d: '하루',
+    dd: '%d일',
+    M: '한 달',
+    MM: '%d달',
+    y: '일 년',
+    yy: '%d년'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}(일|월|주)/,
+  ordinal: function (num, period) {
+    switch (period) {
+      case 'd':
+      case 'D':
+      case 'DDD':
+        return num + '일';
+      case 'M':
+        return num + '월';
+      case 'w':
+      case 'W':
+        return num + '주';
+      default:
+        return num.toString(10);
+    }
+  },
+  meridiemParse: /오전|오후/,
+  isPM: function (token) {
+    return token === '오후';
+  },
+  meridiem: function (hour, minute, isUpper) {
+    return hour < 12 ? '오전' : '오후';
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Lithuanian [lt]
+//! author : Stanislavas Guk : https://github.com/ixoster
+const units = {
+  ss: 'sekundė_sekundžių_sekundes',
+  m: 'minutė_minutės_minutę',
+  mm: 'minutės_minučių_minutes',
+  h: 'valanda_valandos_valandą',
+  hh: 'valandos_valandų_valandas',
+  d: 'diena_dienos_dieną',
+  dd: 'dienos_dienų_dienas',
+  M: 'mėnuo_mėnesio_mėnesį',
+  MM: 'mėnesiai_mėnesių_mėnesius',
+  y: 'metai_metų_metus',
+  yy: 'metai_metų_metus'
+};
+function translateSeconds(num, withoutSuffix, key, isFuture) {
+  if (withoutSuffix) {
+    return 'kelios sekundės';
+  } else {
+    return isFuture ? 'kelių sekundžių' : 'kelias sekundes';
+  }
+}
+function translateSingular(num, withoutSuffix, key, isFuture) {
+  return withoutSuffix ? forms(key)[0] : isFuture ? forms(key)[1] : forms(key)[2];
+}
+function special(num) {
+  return num % 10 === 0 || num > 10 && num < 20;
+}
+function forms(key) {
+  return units[key].split('_');
+}
+function translate$3(num, withoutSuffix, key, isFuture) {
+  let result = num + ' ';
+  if (num === 1) {
+    return result + translateSingular(num, withoutSuffix, key[0], isFuture);
+  } else if (withoutSuffix) {
+    return result + (special(num) ? forms(key)[1] : forms(key)[0]);
+  } else {
+    if (isFuture) {
+      return result + forms(key)[1];
+    } else {
+      return result + (special(num) ? forms(key)[1] : forms(key)[2]);
+    }
+  }
+}
+const ltLocale = {
+  abbr: 'lt',
+  months: {
+    format: 'sausio_vasario_kovo_balandžio_gegužės_birželio_liepos_rugpjūčio_rugsėjo_spalio_lapkričio_gruodžio'.split('_'),
+    standalone: 'sausis_vasaris_kovas_balandis_gegužė_birželis_liepa_rugpjūtis_rugsėjis_spalis_lapkritis_gruodis'.split('_'),
+    isFormat: /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?|MMMM?(\[[^\[\]]*\]|\s)+D[oD]?/
+  },
+  monthsShort: 'sau_vas_kov_bal_geg_bir_lie_rgp_rgs_spa_lap_grd'.split('_'),
+  weekdays: {
+    format: 'sekmadienį_pirmadienį_antradienį_trečiadienį_ketvirtadienį_penktadienį_šeštadienį'.split('_'),
+    standalone: 'sekmadienis_pirmadienis_antradienis_trečiadienis_ketvirtadienis_penktadienis_šeštadienis'.split('_'),
+    isFormat: /dddd HH:mm/
+  },
+  weekdaysShort: 'Sek_Pir_Ant_Tre_Ket_Pen_Šeš'.split('_'),
+  weekdaysMin: 'S_P_A_T_K_Pn_Š'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'YYYY-MM-DD',
+    LL: 'YYYY [m.] MMMM D [d.]',
+    LLL: 'YYYY [m.] MMMM D [d.], HH:mm [val.]',
+    LLLL: 'YYYY [m.] MMMM D [d.], dddd, HH:mm [val.]',
+    l: 'YYYY-MM-DD',
+    ll: 'YYYY [m.] MMMM D [d.]',
+    lll: 'YYYY [m.] MMMM D [d.], HH:mm [val.]',
+    llll: 'YYYY [m.] MMMM D [d.], ddd, HH:mm [val.]'
+  },
+  calendar: {
+    sameDay: '[Šiandien] LT',
+    nextDay: '[Rytoj] LT',
+    nextWeek: 'dddd LT',
+    lastDay: '[Vakar] LT',
+    lastWeek: '[Praėjusį] dddd LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'po %s',
+    past: 'prieš %s',
+    s: translateSeconds,
+    ss: translate$3,
+    m: translateSingular,
+    mm: translate$3,
+    h: translateSingular,
+    hh: translate$3,
+    d: translateSingular,
+    dd: translate$3,
+    M: translateSingular,
+    MM: translate$3,
+    y: translateSingular,
+    yy: translate$3
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}-oji/,
+  ordinal(num) {
+    return num + '-oji';
+  },
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Latvian [lv]
+//! author : Matiss Janis Aboltins : https://github.com/matissjanis
+const lvLocale = {
+  abbr: 'lv',
+  months: 'Janvāris_Februāris_Marts_Aprīlis_Maijs_Jūnijs_Jūlijs_Augusts_Septembris_Oktobris_Novembris_Decembris'.split('_'),
+  monthsShort: 'Jan_Feb_Mar_Apr_Mai_Jūn_Jūl_Aug_Sep_Okt_Nov_Dec'.split('_'),
+  weekdays: 'Svētdiena_Pirmdiena_Otrdiena_Trešdiena_Ceturtdiena_Piektdiena_Sestdiena'.split('_'),
+  weekdaysShort: 'Svētd_Pirmd_Otrd_Trešd_Ceturtd_Piektd_Sestd'.split('_'),
+  weekdaysMin: 'Sv_Pi_Ot_Tr_Ce_Pk_Se'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd, D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[Today at] LT',
+    nextDay: '[Tomorrow at] LT',
+    nextWeek: 'dddd [at] LT',
+    lastDay: '[Yesterday at] LT',
+    lastWeek: '[Last] dddd [at] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'pēc %s',
+    past: 'pirms %s',
+    s: 'dažām sekundēm',
+    ss: '%d sekundēm',
+    m: 'minūtes',
+    mm: '%d minūtēm',
+    h: 'stundas',
+    hh: '%d stundām',
+    d: 'dienas',
+    dd: '%d dienām',
+    M: 'mēneša',
+    MM: '%d mēnešiem',
+    y: 'gada',
+    yy: '%d gadiem'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal(num) {
+    return num + '.';
+  },
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Mongolian [mn]
+//! author : Javkhlantugs Nyamdorj : https://github.com/javkhaanj7
+function translate$2(num, withoutSuffix, key, isFuture) {
+  switch (key) {
+    case 's':
+      return withoutSuffix ? 'хэдхэн секунд' : 'хэдхэн секундын';
+    case 'ss':
+      return num + (withoutSuffix ? ' секунд' : ' секундын');
+    case 'm':
+    case 'mm':
+      return num + (withoutSuffix ? ' минут' : ' минутын');
+    case 'h':
+    case 'hh':
+      return num + (withoutSuffix ? ' цаг' : ' цагийн');
+    case 'd':
+    case 'dd':
+      return num + (withoutSuffix ? ' өдөр' : ' өдрийн');
+    case 'M':
+    case 'MM':
+      return num + (withoutSuffix ? ' сар' : ' сарын');
+    case 'y':
+    case 'yy':
+      return num + (withoutSuffix ? ' жил' : ' жилийн');
+    default:
+      return num.toString(10);
+  }
+}
+const mnLocale = {
+  abbr: 'mn',
+  months: 'Нэгдүгээр сар_Хоёрдугаар сар_Гуравдугаар сар_Дөрөвдүгээр сар_Тавдугаар сар_Зургадугаар сар_Долдугаар сар_Наймдугаар сар_Есдүгээр сар_Аравдугаар сар_Арван нэгдүгээр сар_Арван хоёрдугаар сар'.split('_'),
+  monthsShort: '1 сар_2 сар_3 сар_4 сар_5 сар_6 сар_7 сар_8 сар_9 сар_10 сар_11 сар_12 сар'.split('_'),
+  monthsParseExact: true,
+  weekdays: 'Ням_Даваа_Мягмар_Лхагва_Пүрэв_Баасан_Бямба'.split('_'),
+  weekdaysShort: 'Ням_Дав_Мяг_Лха_Пүр_Баа_Бям'.split('_'),
+  weekdaysMin: 'Ня_Да_Мя_Лх_Пү_Ба_Бя'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'YYYY-MM-DD',
+    LL: 'YYYY оны MMMMын D',
+    LLL: 'YYYY оны MMMMын D HH:mm',
+    LLLL: 'dddd, YYYY оны MMMMын D HH:mm'
+  },
+  meridiemParse: /ҮӨ|ҮХ/i,
+  isPM: function (input) {
+    return input === 'ҮХ';
+  },
+  meridiem: function (hour, minute, isLower) {
+    if (hour < 12) {
+      return 'ҮӨ';
+    } else {
+      return 'ҮХ';
+    }
+  },
+  calendar: {
+    sameDay: '[Өнөөдөр] LT',
+    nextDay: '[Маргааш] LT',
+    nextWeek: '[Ирэх] dddd LT',
+    lastDay: '[Өчигдөр] LT',
+    lastWeek: '[Өнгөрсөн] dddd LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: '%s дараа',
+    past: '%s өмнө',
+    s: translate$2,
+    ss: translate$2,
+    m: translate$2,
+    mm: translate$2,
+    h: translate$2,
+    hh: translate$2,
+    d: translate$2,
+    dd: translate$2,
+    M: translate$2,
+    MM: translate$2,
+    y: translate$2,
+    yy: translate$2
+  },
+  dayOfMonthOrdinalParse: /\d{1,2} өдөр/,
+  ordinal: function (num, period) {
+    switch (period) {
+      case 'd':
+      case 'D':
+      case 'DDD':
+        return num + ' өдөр';
+      default:
+        return num.toString(10);
+    }
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Norwegian Bokmål [nb]
+//! authors : Espen Hovlandsdal : https://github.com/rexxars
+//!           Sigurd Gartmann : https://github.com/sigurdga
+const nbLocale = {
+  abbr: 'nb',
+  months: 'januar_februar_mars_april_mai_juni_juli_august_september_oktober_november_desember'.split('_'),
+  monthsShort: 'jan._feb._mars_april_mai_juni_juli_aug._sep._okt._nov._des.'.split('_'),
+  monthsParseExact: true,
+  weekdays: 'søndag_mandag_tirsdag_onsdag_torsdag_fredag_lørdag'.split('_'),
+  weekdaysShort: 'sø._ma._ti._on._to._fr._lø.'.split('_'),
+  weekdaysMin: 'sø_ma_ti_on_to_fr_lø'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D. MMMM YYYY',
+    LLL: 'D. MMMM YYYY [kl.] HH:mm',
+    LLLL: 'dddd D. MMMM YYYY [kl.] HH:mm'
+  },
+  calendar: {
+    sameDay: '[i dag kl.] LT',
+    nextDay: '[i morgen kl.] LT',
+    nextWeek: 'dddd [kl.] LT',
+    lastDay: '[i går kl.] LT',
+    lastWeek: '[forrige] dddd [kl.] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'om %s',
+    past: '%s siden',
+    s: 'noen sekunder',
+    ss: '%d sekunder',
+    m: 'ett minutt',
+    mm: '%d minutter',
+    h: 'en time',
+    hh: '%d timer',
+    d: 'en dag',
+    dd: '%d dager',
+    M: 'en måned',
+    MM: '%d måneder',
+    y: 'ett år',
+    yy: '%d år'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Dutch (Belgium) [nl-be]
+//! author : Joris Röling : https://github.com/jorisroling
+//! author : Jacob Middag : https://github.com/middagj
+let monthsShortWithDots$1 = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_');
+let monthsShortWithoutDots$1 = 'jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec'.split('_');
+let monthsParse$2 = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i];
+let monthsRegex$1 = /^(januari|februari|maart|april|mei|april|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
+const nlBeLocale = {
+  abbr: 'nl-be',
+  months: 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split('_'),
+  monthsShort(date, format, isUTC) {
+    if (!date) {
+      return monthsShortWithDots$1;
+    } else if (/-MMM-/.test(format)) {
+      return monthsShortWithoutDots$1[getMonth(date, isUTC)];
+    } else {
+      return monthsShortWithDots$1[getMonth(date, isUTC)];
+    }
+  },
+  monthsRegex: monthsRegex$1,
+  monthsShortRegex: monthsRegex$1,
+  monthsStrictRegex: /^(januari|februari|maart|mei|ju[nl]i|april|augustus|september|oktober|november|december)/i,
+  monthsShortStrictRegex: /^(jan\.?|feb\.?|mrt\.?|apr\.?|mei|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i,
+  monthsParse: monthsParse$2,
+  longMonthsParse: monthsParse$2,
+  shortMonthsParse: monthsParse$2,
+  weekdays: 'zondag_maandag_dinsdag_woensdag_donderdag_vrijdag_zaterdag'.split('_'),
+  weekdaysShort: 'zo._ma._di._wo._do._vr._za.'.split('_'),
+  weekdaysMin: 'zo_ma_di_wo_do_vr_za'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[vandaag om] LT',
+    nextDay: '[morgen om] LT',
+    nextWeek: 'dddd [om] LT',
+    lastDay: '[gisteren om] LT',
+    lastWeek: '[afgelopen] dddd [om] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'over %s',
+    past: '%s geleden',
+    s: 'een paar seconden',
+    ss: '%d seconden',
+    m: 'één minuut',
+    mm: '%d minuten',
+    h: 'één uur',
+    hh: '%d uur',
+    d: 'één dag',
+    dd: '%d dagen',
+    M: 'één maand',
+    MM: '%d maanden',
+    y: 'één jaar',
+    yy: '%d jaar'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
+  ordinal(_num) {
+    const num = Number(_num);
+    return num + (num === 1 || num === 8 || num >= 20 ? 'ste' : 'de');
+  },
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Dutch [nl]
+//! author : Joris Röling : https://github.com/jorisroling
+//! author : Jacob Middag : https://github.com/middagj
+let monthsShortWithDots = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_'),
+  monthsShortWithoutDots = 'jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec'.split('_');
+let monthsParse$1 = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i];
+let monthsRegex = /^(januari|februari|maart|april|mei|april|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
+const nlLocale = {
+  abbr: 'nl',
+  months: 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split('_'),
+  monthsShort(date, format, isUTC) {
+    if (!date) {
+      return monthsShortWithDots;
+    } else if (/-MMM-/.test(format)) {
+      return monthsShortWithoutDots[getMonth(date, isUTC)];
+    } else {
+      return monthsShortWithDots[getMonth(date, isUTC)];
+    }
+  },
+  monthsRegex,
+  monthsShortRegex: monthsRegex,
+  monthsStrictRegex: /^(januari|februari|maart|mei|ju[nl]i|april|augustus|september|oktober|november|december)/i,
+  monthsShortStrictRegex: /^(jan\.?|feb\.?|mrt\.?|apr\.?|mei|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i,
+  monthsParse: monthsParse$1,
+  longMonthsParse: monthsParse$1,
+  shortMonthsParse: monthsParse$1,
+  weekdays: 'zondag_maandag_dinsdag_woensdag_donderdag_vrijdag_zaterdag'.split('_'),
+  weekdaysShort: 'zo._ma._di._wo._do._vr._za.'.split('_'),
+  weekdaysMin: 'zo_ma_di_wo_do_vr_za'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD-MM-YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[vandaag om] LT',
+    nextDay: '[morgen om] LT',
+    nextWeek: 'dddd [om] LT',
+    lastDay: '[gisteren om] LT',
+    lastWeek: '[afgelopen] dddd [om] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'over %s',
+    past: '%s geleden',
+    s: 'een paar seconden',
+    ss: '%d seconden',
+    m: 'één minuut',
+    mm: '%d minuten',
+    h: 'één uur',
+    hh: '%d uur',
+    d: 'één dag',
+    dd: '%d dagen',
+    M: 'één maand',
+    MM: '%d maanden',
+    y: 'één jaar',
+    yy: '%d jaar'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
+  ordinal(_num) {
+    const num = Number(_num);
+    return num + (num === 1 || num === 8 || num >= 20 ? 'ste' : 'de');
+  },
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Polish [pl]
+//! author : Rafal Hirsz : https://github.com/evoL
+let monthsNominative = 'styczeń_luty_marzec_kwiecień_maj_czerwiec_lipiec_sierpień_wrzesień_październik_listopad_grudzień'.split('_');
+let monthsSubjective = 'stycznia_lutego_marca_kwietnia_maja_czerwca_lipca_sierpnia_września_października_listopada_grudnia'.split('_');
+function plural$3(num) {
+  return num % 10 < 5 && num % 10 > 1 && ~~(num / 10) % 10 !== 1;
+}
+function translate$1(num, withoutSuffix, key) {
+  let result = num + ' ';
+  switch (key) {
+    case 'ss':
+      return result + (plural$3(num) ? 'sekundy' : 'sekund');
+    case 'm':
+      return withoutSuffix ? 'minuta' : 'minutę';
+    case 'mm':
+      return result + (plural$3(num) ? 'minuty' : 'minut');
+    case 'h':
+      return withoutSuffix ? 'godzina' : 'godzinę';
+    case 'hh':
+      return result + (plural$3(num) ? 'godziny' : 'godzin');
+    case 'MM':
+      return result + (plural$3(num) ? 'miesiące' : 'miesięcy');
+    case 'yy':
+      return result + (plural$3(num) ? 'lata' : 'lat');
+  }
+}
+const plLocale = {
+  abbr: 'pl',
+  months(date, format, isUTC) {
+    if (!date) {
+      return monthsNominative;
+    } else if (format === '') {
+      // Hack: if format empty we know this is used to generate
+      // RegExp by moment. Give then back both valid forms of months
+      // in RegExp ready format.
+      return '(' + monthsSubjective[getMonth(date, isUTC)] + '|' + monthsNominative[getMonth(date, isUTC)] + ')';
+    } else if (/D MMMM/.test(format)) {
+      return monthsSubjective[getMonth(date, isUTC)];
+    } else {
+      return monthsNominative[getMonth(date, isUTC)];
+    }
+  },
+  monthsShort: 'sty_lut_mar_kwi_maj_cze_lip_sie_wrz_paź_lis_gru'.split('_'),
+  weekdays: 'niedziela_poniedziałek_wtorek_środa_czwartek_piątek_sobota'.split('_'),
+  weekdaysShort: 'ndz_pon_wt_śr_czw_pt_sob'.split('_'),
+  weekdaysMin: 'Nd_Pn_Wt_Śr_Cz_Pt_So'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd, D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[Dziś o] LT',
+    nextDay: '[Jutro o] LT',
+    nextWeek(date) {
+      switch (getDayOfWeek(date)) {
+        case 0:
+          return '[W niedzielę o] LT';
+        case 2:
+          return '[We wtorek o] LT';
+        case 3:
+          return '[W środę o] LT';
+        case 5:
+          return '[W piątek o] LT';
+        case 6:
+          return '[W sobotę o] LT';
+        default:
+          return '[W] dddd [o] LT';
+      }
+    },
+    lastDay: '[Wczoraj o] LT',
+    lastWeek(date) {
+      switch (getDayOfWeek(date)) {
+        case 0:
+          return '[W zeszłą niedzielę o] LT';
+        case 3:
+          return '[W zeszłą środę o] LT';
+        case 4:
+          return '[W zeszłą czwartek o] LT';
+        case 5:
+          return '[W zeszłą piątek o] LT';
+        case 6:
+          return '[W zeszłą sobotę o] LT';
+        default:
+          return '[W zeszły] dddd [o] LT';
+      }
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'za %s',
+    past: '%s temu',
+    s: 'kilka sekund',
+    ss: translate$1,
+    m: translate$1,
+    mm: translate$1,
+    h: translate$1,
+    hh: translate$1,
+    d: '1 dzień',
+    dd: '%d dni',
+    M: 'miesiąc',
+    MM: translate$1,
+    y: 'rok',
+    yy: translate$1
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Portuguese (Brazil) [pt-br]
+//! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
+const ptBrLocale = {
+  abbr: 'pt-br',
+  months: 'Janeiro_Fevereiro_Março_Abril_Maio_Junho_Julho_Agosto_Setembro_Outubro_Novembro_Dezembro'.split('_'),
+  monthsShort: 'Jan_Fev_Mar_Abr_Mai_Jun_Jul_Ago_Set_Out_Nov_Dez'.split('_'),
+  weekdays: 'Domingo_Segunda-feira_Terça-feira_Quarta-feira_Quinta-feira_Sexta-feira_Sábado'.split('_'),
+  weekdaysShort: 'Dom_Seg_Ter_Qua_Qui_Sex_Sáb'.split('_'),
+  weekdaysMin: 'Do_2ª_3ª_4ª_5ª_6ª_Sá'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D [de] MMMM [de] YYYY',
+    LLL: 'D [de] MMMM [de] YYYY [às] HH:mm',
+    LLLL: 'dddd, D [de] MMMM [de] YYYY [às] HH:mm'
+  },
+  calendar: {
+    sameDay: '[Hoje às] LT',
+    nextDay: '[Amanhã às] LT',
+    nextWeek: 'dddd [às] LT',
+    lastDay: '[Ontem às] LT',
+    lastWeek(date) {
+      return getDayOfWeek(date) === 0 || getDayOfWeek(date) === 6 ? '[Último] dddd [às] LT' :
+      // Saturday + Sunday
+      '[Última] dddd [às] LT'; // Monday - Friday
+    },
+
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'em %s',
+    past: '%s atrás',
+    s: 'poucos segundos',
+    ss: '%d segundos',
+    m: 'um minuto',
+    mm: '%d minutos',
+    h: 'uma hora',
+    hh: '%d horas',
+    d: 'um dia',
+    dd: '%d dias',
+    M: 'um mês',
+    MM: '%d meses',
+    y: 'um ano',
+    yy: '%d anos'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}º/,
+  ordinal: '%dº'
+};
+
+// ! moment.js locale configuration
+// ! locale : Romanian [ro]
+//! author : Vlad Gurdiga : https://github.com/gurdiga
+//! author : Valentin Agachi : https://github.com/avaly
+// ! author : Earle white: https://github.com/5earle
+function relativeTimeWithPlural$2(num, withoutSuffix, key) {
+  let format = {
+    ss: 'secunde',
+    mm: 'minute',
+    hh: 'ore',
+    dd: 'zile',
+    MM: 'luni',
+    yy: 'ani'
+  };
+  let separator = ' ';
+  if (num % 100 >= 20 || num >= 100 && num % 100 === 0) {
+    separator = ' de ';
+  }
+  return num + separator + format[key];
+}
+const roLocale = {
+  abbr: 'ro',
+  months: 'ianuarie_februarie_martie_aprilie_mai_iunie_iulie_august_septembrie_octombrie_noiembrie_decembrie'.split('_'),
+  monthsShort: 'ian._febr._mart._apr._mai_iun._iul._aug._sept._oct._nov._dec.'.split('_'),
+  monthsParseExact: true,
+  weekdays: 'duminică_luni_marți_miercuri_joi_vineri_sâmbătă'.split('_'),
+  weekdaysShort: 'Dum_Lun_Mar_Mie_Joi_Vin_Sâm'.split('_'),
+  weekdaysMin: 'Du_Lu_Ma_Mi_Jo_Vi_Sâ'.split('_'),
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY H:mm',
+    LLLL: 'dddd, D MMMM YYYY H:mm'
+  },
+  calendar: {
+    sameDay: '[azi la] LT',
+    nextDay: '[mâine la] LT',
+    nextWeek: 'dddd [la] LT',
+    lastDay: '[ieri la] LT',
+    lastWeek: '[fosta] dddd [la] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'peste %s',
+    past: '%s în urmă',
+    s: 'câteva secunde',
+    ss: relativeTimeWithPlural$2,
+    m: 'un minut',
+    mm: relativeTimeWithPlural$2,
+    h: 'o oră',
+    hh: relativeTimeWithPlural$2,
+    d: 'o zi',
+    dd: relativeTimeWithPlural$2,
+    M: 'o lună',
+    MM: relativeTimeWithPlural$2,
+    y: 'un an',
+    yy: relativeTimeWithPlural$2
+  },
+  week: {
+    dow: 1,
+    doy: 7 // The week that contains Jan 1st is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Russian [ru]
+//! author : Viktorminator : https://github.com/Viktorminator
+//! Author : Menelion Elensúle : https://github.com/Oire
+//! author : Коренберг Марк : https://github.com/socketpair
+function plural$2(word, num) {
+  let forms = word.split('_');
+  return num % 10 === 1 && num % 100 !== 11 ? forms[0] : num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2];
+}
+function relativeTimeWithPlural$1(num, withoutSuffix, key) {
+  let format = {
+    ss: withoutSuffix ? 'секунда_секунды_секунд' : 'секунду_секунды_секунд',
+    mm: withoutSuffix ? 'минута_минуты_минут' : 'минуту_минуты_минут',
+    hh: 'час_часа_часов',
+    dd: 'день_дня_дней',
+    MM: 'месяц_месяца_месяцев',
+    yy: 'год_года_лет'
+  };
+  if (key === 'm') {
+    return withoutSuffix ? 'минута' : 'минуту';
+  }
+  return num + ' ' + plural$2(format[key], +num);
+}
+let monthsParse = [/^янв/i, /^фев/i, /^мар/i, /^апр/i, /^ма[йя]/i, /^июн/i, /^июл/i, /^авг/i, /^сен/i, /^окт/i, /^ноя/i, /^дек/i];
+// http://new.gramota.ru/spravka/rules/139-prop : § 103
+// Сокращения месяцев: http://new.gramota.ru/spravka/buro/search-answer?s=242637
+// CLDR data:          http://www.unicode.org/cldr/charts/28/summary/ru.html#1753
+const ruLocale = {
+  abbr: 'ru',
+  months: {
+    format: 'января_февраля_марта_апреля_мая_июня_июля_августа_сентября_октября_ноября_декабря'.split('_'),
+    standalone: 'январь_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь'.split('_')
+  },
+  monthsShort: {
+    // по CLDR именно "июл." и "июн.", но какой смысл менять букву на точку ?
+    format: 'янв._февр._мар._апр._мая_июня_июля_авг._сент._окт._нояб._дек.'.split('_'),
+    standalone: 'янв._февр._март_апр._май_июнь_июль_авг._сент._окт._нояб._дек.'.split('_')
+  },
+  weekdays: {
+    standalone: 'воскресенье_понедельник_вторник_среда_четверг_пятница_суббота'.split('_'),
+    format: 'воскресенье_понедельник_вторник_среду_четверг_пятницу_субботу'.split('_'),
+    isFormat: /\[ ?[Вв] ?(?:прошлую|следующую|эту)? ?\] ?dddd/
+  },
+  weekdaysShort: 'вс_пн_вт_ср_чт_пт_сб'.split('_'),
+  weekdaysMin: 'вс_пн_вт_ср_чт_пт_сб'.split('_'),
+  monthsParse,
+  longMonthsParse: monthsParse,
+  shortMonthsParse: monthsParse,
+  // полные названия с падежами, по три буквы, для некоторых, по 4 буквы, сокращения с точкой и без точки
+  monthsRegex: /^(январ[ья]|янв\.?|феврал[ья]|февр?\.?|марта?|мар\.?|апрел[ья]|апр\.?|ма[йя]|июн[ья]|июн\.?|июл[ья]|июл\.?|августа?|авг\.?|сентябр[ья]|сент?\.?|октябр[ья]|окт\.?|ноябр[ья]|нояб?\.?|декабр[ья]|дек\.?)/i,
+  // копия предыдущего
+  monthsShortRegex: /^(январ[ья]|янв\.?|феврал[ья]|февр?\.?|марта?|мар\.?|апрел[ья]|апр\.?|ма[йя]|июн[ья]|июн\.?|июл[ья]|июл\.?|августа?|авг\.?|сентябр[ья]|сент?\.?|октябр[ья]|окт\.?|ноябр[ья]|нояб?\.?|декабр[ья]|дек\.?)/i,
+  // полные названия с падежами
+  monthsStrictRegex: /^(январ[яь]|феврал[яь]|марта?|апрел[яь]|ма[яй]|июн[яь]|июл[яь]|августа?|сентябр[яь]|октябр[яь]|ноябр[яь]|декабр[яь])/i,
+  // Выражение, которое соотвествует только сокращённым формам
+  monthsShortStrictRegex: /^(янв\.|февр?\.|мар[т.]|апр\.|ма[яй]|июн[ья.]|июл[ья.]|авг\.|сент?\.|окт\.|нояб?\.|дек\.)/i,
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D MMMM YYYY г.',
+    LLL: 'D MMMM YYYY г., H:mm',
+    LLLL: 'dddd, D MMMM YYYY г., H:mm'
+  },
+  calendar: {
+    sameDay: '[Сегодня в] LT',
+    nextDay: '[Завтра в] LT',
+    lastDay: '[Вчера в] LT',
+    nextWeek(date, now) {
+      if (getWeek(now) !== getWeek(date)) {
+        switch (getDayOfWeek(date)) {
+          case 0:
+            return '[В следующее] dddd [в] LT';
+          case 1:
+          case 2:
+          case 4:
+            return '[В следующий] dddd [в] LT';
+          case 3:
+          case 5:
+          case 6:
+            return '[В следующую] dddd [в] LT';
+        }
+      } else {
+        if (getDayOfWeek(date) === 2) {
+          return '[Во] dddd [в] LT';
+        } else {
+          return '[В] dddd [в] LT';
+        }
+      }
+    },
+    lastWeek(date, now) {
+      if (getWeek(now) !== getWeek(date)) {
+        switch (getDayOfWeek(date)) {
+          case 0:
+            return '[В прошлое] dddd [в] LT';
+          case 1:
+          case 2:
+          case 4:
+            return '[В прошлый] dddd [в] LT';
+          case 3:
+          case 5:
+          case 6:
+            return '[В прошлую] dddd [в] LT';
+        }
+      } else {
+        if (getDayOfWeek(date) === 2) {
+          return '[Во] dddd [в] LT';
+        } else {
+          return '[В] dddd [в] LT';
+        }
+      }
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'через %s',
+    past: '%s назад',
+    s: 'несколько секунд',
+    ss: relativeTimeWithPlural$1,
+    m: relativeTimeWithPlural$1,
+    mm: relativeTimeWithPlural$1,
+    h: 'час',
+    hh: relativeTimeWithPlural$1,
+    d: 'день',
+    dd: relativeTimeWithPlural$1,
+    M: 'месяц',
+    MM: relativeTimeWithPlural$1,
+    y: 'год',
+    yy: relativeTimeWithPlural$1
+  },
+  meridiemParse: /ночи|утра|дня|вечера/i,
+  isPM(input) {
+    return /^(дня|вечера)$/.test(input);
+  },
+  meridiem(hour, minute, isLower) {
+    if (hour < 4) {
+      return 'ночи';
+    } else if (hour < 12) {
+      return 'утра';
+    } else if (hour < 17) {
+      return 'дня';
+    } else {
+      return 'вечера';
+    }
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}-(й|го|я)/,
+  ordinal(_num, period) {
+    const num = Number(_num);
+    switch (period) {
+      case 'M':
+      case 'd':
+      case 'DDD':
+        return num + '-й';
+      case 'D':
+        return num + '-го';
+      case 'w':
+      case 'W':
+        return num + '-я';
+      default:
+        return num.toString(10);
+    }
+  },
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Slovak [sk]
+//! author : Jozef Pažin : https://github.com/atiris
+const months = 'január_február_marec_apríl_máj_jún_júl_august_september_október_november_december'.split('_');
+const monthsShort = 'jan_feb_mar_apr_máj_jún_júl_aug_sep_okt_nov_dec'.split('_');
+function plural$1(num) {
+  return num > 1 && num < 5 && ~~(num / 10) !== 1;
+}
+function translate(num, withoutSuffix, key, isFuture) {
+  const result = num + ' ';
+  switch (key) {
+    case 's':
+      // a few seconds / in a few seconds / a few seconds ago
+      return withoutSuffix || isFuture ? 'pár sekúnd' : 'pár sekundami';
+    case 'ss':
+      // 9 seconds / in 9 seconds / 9 seconds ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$1(num) ? 'sekundy' : 'sekúnd');
+      } else {
+        return result + 'sekundami';
+      }
+    // break;
+    case 'm':
+      // a minute / in a minute / a minute ago
+      return withoutSuffix ? 'minúta' : isFuture ? 'minútu' : 'minútou';
+    case 'mm':
+      // 9 minutes / in 9 minutes / 9 minutes ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$1(num) ? 'minúty' : 'minút');
+      } else {
+        return result + 'minútami';
+      }
+    // break;
+    case 'h':
+      // an hour / in an hour / an hour ago
+      return withoutSuffix ? 'hodina' : isFuture ? 'hodinu' : 'hodinou';
+    case 'hh':
+      // 9 hours / in 9 hours / 9 hours ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$1(num) ? 'hodiny' : 'hodín');
+      } else {
+        return result + 'hodinami';
+      }
+    // break;
+    case 'd':
+      // a day / in a day / a day ago
+      return withoutSuffix || isFuture ? 'deň' : 'dňom';
+    case 'dd':
+      // 9 days / in 9 days / 9 days ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$1(num) ? 'dni' : 'dní');
+      } else {
+        return result + 'dňami';
+      }
+    // break;
+    case 'M':
+      // a month / in a month / a month ago
+      return withoutSuffix || isFuture ? 'mesiac' : 'mesiacom';
+    case 'MM':
+      // 9 months / in 9 months / 9 months ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$1(num) ? 'mesiace' : 'mesiacov');
+      } else {
+        return result + 'mesiacmi';
+      }
+    // break;
+    case 'y':
+      // a year / in a year / a year ago
+      return withoutSuffix || isFuture ? 'rok' : 'rokom';
+    case 'yy':
+      // 9 years / in 9 years / 9 years ago
+      if (withoutSuffix || isFuture) {
+        return result + (plural$1(num) ? 'roky' : 'rokov');
+      } else {
+        return result + 'rokmi';
+      }
+    // break;
+  }
+}
+
+const skLocale = {
+  abbr: 'sk',
+  months,
+  monthsShort,
+  weekdays: 'nedeľa_pondelok_utorok_streda_štvrtok_piatok_sobota'.split('_'),
+  weekdaysShort: 'ne_po_ut_st_št_pi_so'.split('_'),
+  weekdaysMin: 'ne_po_ut_st_št_pi_so'.split('_'),
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D. MMMM YYYY',
+    LLL: 'D. MMMM YYYY H:mm',
+    LLLL: 'dddd D. MMMM YYYY H:mm',
+    l: 'D. M. YYYY'
+  },
+  calendar: {
+    sameDay: '[dnes o] LT',
+    nextDay: '[zajtra o] LT',
+    nextWeek(date) {
+      switch (getDayOfWeek(date)) {
+        case 0:
+          return '[v nedeľu o] LT';
+        case 1:
+        case 2:
+          return '[v] dddd [o] LT';
+        case 3:
+          return '[v stredu o] LT';
+        case 4:
+          return '[vo štvrtok o] LT';
+        case 5:
+          return '[v piatok o] LT';
+        case 6:
+          return '[v sobotu o] LT';
+      }
+    },
+    lastDay: '[včera o] LT',
+    lastWeek(date) {
+      switch (getDayOfWeek(date)) {
+        case 0:
+          return '[minulú nedeľu o] LT';
+        case 1:
+        case 2:
+          return '[minulý] dddd [o] LT';
+        case 3:
+          return '[minulú stredu o] LT';
+        case 4:
+        case 5:
+          return '[minulý] dddd [o] LT';
+        case 6:
+          return '[minulú sobotu o] LT';
+      }
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'o %s',
+    past: 'pred %s',
+    s: translate,
+    ss: translate,
+    m: translate,
+    mm: translate,
+    h: translate,
+    hh: translate,
+    d: translate,
+    dd: translate,
+    M: translate,
+    MM: translate,
+    y: translate,
+    yy: translate
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Slovenian [sl]
+//! author : mihan : https://github.com/mihan
+function processRelativeTime(number, withoutSuffix, key, isFuture) {
+  var result = number + ' ';
+  switch (key) {
+    case 's':
+      return withoutSuffix || isFuture ? 'nekaj sekund' : 'nekaj sekundami';
+    case 'ss':
+      if (number === 1) {
+        result += withoutSuffix ? 'sekundo' : 'sekundi';
+      } else if (number === 2) {
+        result += withoutSuffix || isFuture ? 'sekundi' : 'sekundah';
+      } else if (number < 5) {
+        result += withoutSuffix || isFuture ? 'sekunde' : 'sekundah';
+      } else {
+        result += withoutSuffix || isFuture ? 'sekund' : 'sekund';
+      }
+      return result;
+    case 'm':
+      return withoutSuffix ? 'ena minuta' : 'eno minuto';
+    case 'mm':
+      if (number === 1) {
+        result += withoutSuffix ? 'minuta' : 'minuto';
+      } else if (number === 2) {
+        result += withoutSuffix || isFuture ? 'minuti' : 'minutama';
+      } else if (number < 5) {
+        result += withoutSuffix || isFuture ? 'minute' : 'minutami';
+      } else {
+        result += withoutSuffix || isFuture ? 'minut' : 'minutami';
+      }
+      return result;
+    case 'h':
+      return withoutSuffix ? 'ena ura' : 'eno uro';
+    case 'hh':
+      if (number === 1) {
+        result += withoutSuffix ? 'ura' : 'uro';
+      } else if (number === 2) {
+        result += withoutSuffix || isFuture ? 'uri' : 'urama';
+      } else if (number < 5) {
+        result += withoutSuffix || isFuture ? 'ure' : 'urami';
+      } else {
+        result += withoutSuffix || isFuture ? 'ur' : 'urami';
+      }
+      return result;
+    case 'd':
+      return withoutSuffix || isFuture ? 'en dan' : 'enim dnem';
+    case 'dd':
+      if (number === 1) {
+        result += withoutSuffix || isFuture ? 'dan' : 'dnem';
+      } else if (number === 2) {
+        result += withoutSuffix || isFuture ? 'dni' : 'dnevoma';
+      } else {
+        result += withoutSuffix || isFuture ? 'dni' : 'dnevi';
+      }
+      return result;
+    case 'M':
+      return withoutSuffix || isFuture ? 'en mesec' : 'enim mesecem';
+    case 'MM':
+      if (number === 1) {
+        result += withoutSuffix || isFuture ? 'mesec' : 'mesecem';
+      } else if (number === 2) {
+        result += withoutSuffix || isFuture ? 'meseca' : 'mesecema';
+      } else if (number < 5) {
+        result += withoutSuffix || isFuture ? 'mesece' : 'meseci';
+      } else {
+        result += withoutSuffix || isFuture ? 'mesecev' : 'meseci';
+      }
+      return result;
+    case 'y':
+      return withoutSuffix || isFuture ? 'eno leto' : 'enim letom';
+    case 'yy':
+      if (number === 1) {
+        result += withoutSuffix || isFuture ? 'leto' : 'letom';
+      } else if (number === 2) {
+        result += withoutSuffix || isFuture ? 'leti' : 'letoma';
+      } else if (number < 5) {
+        result += withoutSuffix || isFuture ? 'leta' : 'leti';
+      } else {
+        result += withoutSuffix || isFuture ? 'let' : 'leti';
+      }
+      return result;
+  }
+}
+const slLocale = {
+  abbr: 'sl',
+  months: 'januar_februar_marec_april_maj_junij_julij_avgust_september_oktober_november_december'.split('_'),
+  monthsShort: 'jan._feb._mar._apr._maj._jun._jul._avg._sep._okt._nov._dec.'.split('_'),
+  monthsParseExact: true,
+  weekdays: 'nedelja_ponedeljek_torek_sreda_četrtek_petek_sobota'.split('_'),
+  weekdaysShort: 'ned._pon._tor._sre._čet._pet._sob.'.split('_'),
+  weekdaysMin: 'ne_po_to_sr_če_pe_so'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D. MMMM YYYY',
+    LLL: 'D. MMMM YYYY H:mm',
+    LLLL: 'dddd, D. MMMM YYYY H:mm'
+  },
+  calendar: {
+    sameDay: '[danes ob] LT',
+    nextDay: '[jutri ob] LT',
+    nextWeek(date) {
+      switch (getDayOfWeek(date)) {
+        case 0:
+          return '[v] [nedeljo] [ob] LT';
+        case 3:
+          return '[v] [sredo] [ob] LT';
+        case 6:
+          return '[v] [soboto] [ob] LT';
+        case 1:
+        case 2:
+        case 4:
+        case 5:
+          return '[v] dddd [ob] LT';
+      }
+    },
+    lastDay: '[včeraj ob] LT',
+    lastWeek(date) {
+      switch (getDayOfWeek(date)) {
+        case 0:
+          return '[prejšnjo] [nedeljo] [ob] LT';
+        case 3:
+          return '[prejšnjo] [sredo] [ob] LT';
+        case 6:
+          return '[prejšnjo] [soboto] [ob] LT';
+        case 1:
+        case 2:
+        case 4:
+        case 5:
+          return '[prejšnji] dddd [ob] LT';
+      }
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'čez %s',
+    past: 'pred %s',
+    s: processRelativeTime,
+    ss: processRelativeTime,
+    m: processRelativeTime,
+    mm: processRelativeTime,
+    h: processRelativeTime,
+    hh: processRelativeTime,
+    d: processRelativeTime,
+    dd: processRelativeTime,
+    M: processRelativeTime,
+    MM: processRelativeTime,
+    y: processRelativeTime,
+    yy: processRelativeTime
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 7 // The week that contains Jan 1st is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Albanian [sq]
+//! author : Agon Cecelia : https://github.com/agoncecelia
+const sqLocale = {
+  abbr: 'sq',
+  months: 'Janar_Shkurt_Mars_Prill_Maj_Qershor_Korrik_Gusht_Shtator_Tetor_Nëntor_Dhjetor'.split('_'),
+  monthsShort: 'Jan_Shk_Mar_Pri_Maj_Qer_Kor_Gus_Sht_Tet_Nën_Dhj'.split('_'),
+  weekdays: 'E Dielë_E Hënë_E Martë_E Mërkurë_E Enjte_E Premte_E Shtunë'.split('_'),
+  weekdaysShort: 'Die_Hën_Mar_Mër_Enj_Pre_Sht'.split('_'),
+  weekdaysMin: 'Di_He_Ma_Me_En_Pr_Sh'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd, D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[Sot në] LT',
+    nextDay: '[Nesër në] LT',
+    nextWeek: 'dddd [në] LT',
+    lastDay: '[Dje në] LT',
+    lastWeek: 'dddd [e kaluar në] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'në %s',
+    past: 'para %sve',
+    s: 'disa sekonda',
+    ss: '%d sekonda',
+    m: 'një minut',
+    mm: '%d minuta',
+    h: 'një orë',
+    hh: '%d orë',
+    d: 'një ditë',
+    dd: '%d ditë',
+    M: 'një muaj',
+    MM: '%d muaj',
+    y: 'një vit',
+    yy: '%d vite'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}\./,
+  ordinal: '%d.',
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Swedish [sv]
+//! author : Jens Alm : https://github.com/ulmus
+const svLocale = {
+  abbr: 'sv',
+  months: 'januari_februari_mars_april_maj_juni_juli_augusti_september_oktober_november_december'.split('_'),
+  monthsShort: 'jan_feb_mar_apr_maj_jun_jul_aug_sep_okt_nov_dec'.split('_'),
+  weekdays: 'söndag_måndag_tisdag_onsdag_torsdag_fredag_lördag'.split('_'),
+  weekdaysShort: 'sön_mån_tis_ons_tor_fre_lör'.split('_'),
+  weekdaysMin: 'sö_må_ti_on_to_fr_lö'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'YYYY-MM-DD',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY [kl.] HH:mm',
+    LLLL: 'dddd D MMMM YYYY [kl.] HH:mm',
+    lll: 'D MMM YYYY HH:mm',
+    llll: 'ddd D MMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[Idag] LT',
+    nextDay: '[Imorgon] LT',
+    lastDay: '[Igår] LT',
+    nextWeek: '[På] dddd LT',
+    lastWeek: '[I] dddd[s] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'om %s',
+    past: 'för %s sedan',
+    s: 'några sekunder',
+    ss: '%d sekunder',
+    m: 'en minut',
+    mm: '%d minuter',
+    h: 'en timme',
+    hh: '%d timmar',
+    d: 'en dag',
+    dd: '%d dagar',
+    M: 'en månad',
+    MM: '%d månader',
+    y: 'ett år',
+    yy: '%d år'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}(e|a)/,
+  ordinal(_num) {
+    const num = Number(_num);
+    let b = num % 10,
+      output = ~~(num % 100 / 10) === 1 ? 'e' : b === 1 ? 'a' : b === 2 ? 'a' : b === 3 ? 'e' : 'e';
+    return num + output;
+  },
+  week: {
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+// moment.js locale configuration
+// locale : Thai [th]
+// author : Watcharapol Sanitwong : https://github.com/tumit
+const thLocale = {
+  abbr: 'th',
+  months: 'มกราคม_กุมภาพันธ์_มีนาคม_เมษายน_พฤษภาคม_มิถุนายน_กรกฎาคม_สิงหาคม_กันยายน_ตุลาคม_พฤศจิกายน_ธันวาคม'.split('_'),
+  monthsShort: 'ม.ค._ก.พ._มี.ค._เม.ย._พ.ค._มิ.ย._ก.ค._ส.ค._ก.ย._ต.ค._พ.ย._ธ.ค.'.split('_'),
+  monthsParseExact: true,
+  weekdays: 'อาทิตย์_จันทร์_อังคาร_พุธ_พฤหัสบดี_ศุกร์_เสาร์'.split('_'),
+  weekdaysShort: 'อา._จ._อ._พ._พฤ._ศ._ส.'.split('_'),
+  weekdaysMin: 'อา._จ._อ._พ._พฤ._ศ._ส.'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY เวลา H:mm',
+    LLLL: 'วันddddที่ D MMMM YYYY เวลา H:mm'
+  },
+  meridiemParse: /ก่อนเที่ยง|หลังเที่ยง/,
+  isPM(input) {
+    return input === 'หลังเที่ยง';
+  },
+  meridiem(hour, minute, isLower) {
+    if (hour < 12) {
+      return 'ก่อนเที่ยง';
+    } else {
+      return 'หลังเที่ยง';
+    }
+  },
+  calendar: {
+    sameDay: '[วันนี้ เวลา] LT',
+    nextDay: '[พรุ่งนี้ เวลา] LT',
+    nextWeek: 'dddd[หน้า เวลา] LT',
+    lastDay: '[เมื่อวานนี้ เวลา] LT',
+    lastWeek: '[วัน]dddd[ที่แล้ว เวลา] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'อีก %s',
+    past: '%sที่แล้ว',
+    s: 'ไม่กี่วินาที',
+    ss: '%d วินาที',
+    m: '1 นาที',
+    mm: '%d นาที',
+    h: '1 ชั่วโมง',
+    hh: '%d ชั่วโมง',
+    d: '1 วัน',
+    dd: '%d วัน',
+    M: '1 เดือน',
+    MM: '%d เดือน',
+    y: '1 ปี',
+    yy: '%d ปี'
+  }
+};
+
+// moment.js locale configuration
+// locale : Thai-Buddhist Era [th-be]
+// author : Watcharapol Sanitwong : https://github.com/tumit
+const thBeLocale = {
+  abbr: 'th-be',
+  months: 'มกราคม_กุมภาพันธ์_มีนาคม_เมษายน_พฤษภาคม_มิถุนายน_กรกฎาคม_สิงหาคม_กันยายน_ตุลาคม_พฤศจิกายน_ธันวาคม'.split('_'),
+  monthsShort: 'ม.ค._ก.พ._มี.ค._เม.ย._พ.ค._มิ.ย._ก.ค._ส.ค._ก.ย._ต.ค._พ.ย._ธ.ค.'.split('_'),
+  monthsParseExact: true,
+  weekdays: 'อาทิตย์_จันทร์_อังคาร_พุธ_พฤหัสบดี_ศุกร์_เสาร์'.split('_'),
+  weekdaysShort: 'อา._จ._อ._พ._พฤ._ศ._ส.'.split('_'),
+  weekdaysMin: 'อา._จ._อ._พ._พฤ._ศ._ส.'.split('_'),
+  weekdaysParseExact: true,
+  longDateFormat: {
+    LT: 'H:mm',
+    LTS: 'H:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY เวลา H:mm',
+    LLLL: 'วันddddที่ D MMMM YYYY เวลา H:mm'
+  },
+  meridiemParse: /ก่อนเที่ยง|หลังเที่ยง/,
+  isPM(input) {
+    return input === 'หลังเที่ยง';
+  },
+  meridiem(hour, minute, isLower) {
+    if (hour < 12) {
+      return 'ก่อนเที่ยง';
+    } else {
+      return 'หลังเที่ยง';
+    }
+  },
+  calendar: {
+    sameDay: '[วันนี้ เวลา] LT',
+    nextDay: '[พรุ่งนี้ เวลา] LT',
+    nextWeek: 'dddd[หน้า เวลา] LT',
+    lastDay: '[เมื่อวานนี้ เวลา] LT',
+    lastWeek: '[วัน]dddd[ที่แล้ว เวลา] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'อีก %s',
+    past: '%sที่แล้ว',
+    s: 'ไม่กี่วินาที',
+    ss: '%d วินาที',
+    m: '1 นาที',
+    mm: '%d นาที',
+    h: '1 ชั่วโมง',
+    hh: '%d ชั่วโมง',
+    d: '1 วัน',
+    dd: '%d วัน',
+    M: '1 เดือน',
+    MM: '%d เดือน',
+    y: '1 ปี',
+    yy: '%d ปี'
+  },
+  preparse(str, format) {
+    const _format = thBeLocale.longDateFormat[format] ? thBeLocale.longDateFormat[format] : format;
+    // endsWith('YYYY')
+    if (_format.indexOf('YYYY', _format.length - 'YYYY'.length) !== -1) {
+      const ddMM = str.substr(0, str.length - 4);
+      const yyyy = parseInt(str.substr(str.length - 4), 10) - 543;
+      return ddMM + yyyy;
+    }
+    return str;
+  },
+  getFullYear(date, isUTC = false) {
+    return 543 + (isUTC ? date.getUTCFullYear() : date.getFullYear());
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Turkish [tr]
+//! authors : Erhan Gundogan : https://github.com/erhangundogan,
+//!           Burak Yiğit Kaya: https://github.com/BYK
+let suffixes = {
+  1: '\'inci',
+  5: '\'inci',
+  8: '\'inci',
+  70: '\'inci',
+  80: '\'inci',
+  2: '\'nci',
+  7: '\'nci',
+  20: '\'nci',
+  50: '\'nci',
+  3: '\'üncü',
+  4: '\'üncü',
+  100: '\'üncü',
+  6: '\'ncı',
+  9: '\'uncu',
+  10: '\'uncu',
+  30: '\'uncu',
+  60: '\'ıncı',
+  90: '\'ıncı'
+};
+const trLocale = {
+  abbr: 'tr',
+  months: 'Ocak_Şubat_Mart_Nisan_Mayıs_Haziran_Temmuz_Ağustos_Eylül_Ekim_Kasım_Aralık'.split('_'),
+  monthsShort: 'Oca_Şub_Mar_Nis_May_Haz_Tem_Ağu_Eyl_Eki_Kas_Ara'.split('_'),
+  weekdays: 'Pazar_Pazartesi_Salı_Çarşamba_Perşembe_Cuma_Cumartesi'.split('_'),
+  weekdaysShort: 'Paz_Pts_Sal_Çar_Per_Cum_Cts'.split('_'),
+  weekdaysMin: 'Pz_Pt_Sa_Ça_Pe_Cu_Ct'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd, D MMMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[bugün saat] LT',
+    nextDay: '[yarın saat] LT',
+    nextWeek: '[gelecek] dddd [saat] LT',
+    lastDay: '[dün] LT',
+    lastWeek: '[geçen] dddd [saat] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: '%s sonra',
+    past: '%s önce',
+    s: 'birkaç saniye',
+    ss: '%d saniye',
+    m: 'bir dakika',
+    mm: '%d dakika',
+    h: 'bir saat',
+    hh: '%d saat',
+    d: 'bir gün',
+    dd: '%d gün',
+    M: 'bir ay',
+    MM: '%d ay',
+    y: 'bir yıl',
+    yy: '%d yıl'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}'(inci|nci|üncü|ncı|uncu|ıncı)/,
+  ordinal(_num) {
+    const num = Number(_num);
+    if (num === 0) {
+      // special case for zero
+      return num + '\'ıncı';
+    }
+    let a = num % 10,
+      b = num % 100 - a,
+      c = num >= 100 ? 100 : null;
+    return num + (suffixes[a] || suffixes[b] || suffixes[c]);
+  },
+  week: {
+    dow: 1,
+    doy: 7 // The week that contains Jan 1st is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Ukrainian [uk]
+//! author : zemlanin : https://github.com/zemlanin
+//! Author : Menelion Elensúle : https://github.com/Oire
+function plural(word, num) {
+  let forms = word.split('_');
+  return num % 10 === 1 && num % 100 !== 11 ? forms[0] : num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2];
+}
+function relativeTimeWithPlural(num, withoutSuffix, key) {
+  let format = {
+    ss: withoutSuffix ? 'секунда_секунди_секунд' : 'секунду_секунди_секунд',
+    mm: withoutSuffix ? 'хвилина_хвилини_хвилин' : 'хвилину_хвилини_хвилин',
+    hh: withoutSuffix ? 'година_години_годин' : 'годину_години_годин',
+    dd: 'день_дні_днів',
+    MM: 'місяць_місяці_місяців',
+    yy: 'рік_роки_років'
+  };
+  if (key === 'm') {
+    return withoutSuffix ? 'хвилина' : 'хвилину';
+  }
+  if (key === 'h') {
+    return withoutSuffix ? 'година' : 'годину';
+  }
+  return num + ' ' + plural(format[key], +num);
+}
+function weekdaysCaseReplace(date, format, isUTC) {
+  let weekdays = {
+    nominative: 'неділя_понеділок_вівторок_середа_четвер_п’ятниця_субота'.split('_'),
+    accusative: 'неділю_понеділок_вівторок_середу_четвер_п’ятницю_суботу'.split('_'),
+    genitive: 'неділі_понеділка_вівторка_середи_четверга_п’ятниці_суботи'.split('_')
+  };
+  if (!date) {
+    return weekdays.nominative;
+  }
+  let nounCase = /(\[[ВвУу]\]) ?dddd/.test(format) ? 'accusative' : /\[?(?:минулої|наступної)? ?\] ?dddd/.test(format) ? 'genitive' : 'nominative';
+  return weekdays[nounCase][getDayOfWeek(date, isUTC)];
+}
+function processHoursFunction(str) {
+  return function (date) {
+    return str + 'о' + (getHours(date) === 11 ? 'б' : '') + '] LT';
+  };
+}
+const ukLocale = {
+  abbr: 'uk',
+  months: {
+    format: 'січня_лютого_березня_квітня_травня_червня_липня_серпня_вересня_жовтня_листопада_грудня'.split('_'),
+    standalone: 'січень_лютий_березень_квітень_травень_червень_липень_серпень_вересень_жовтень_листопад_грудень'.split('_')
+  },
+  monthsShort: 'січ_лют_бер_квіт_трав_черв_лип_серп_вер_жовт_лист_груд'.split('_'),
+  weekdays: weekdaysCaseReplace,
+  weekdaysShort: 'нд_пн_вт_ср_чт_пт_сб'.split('_'),
+  weekdaysMin: 'нд_пн_вт_ср_чт_пт_сб'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D MMMM YYYY р.',
+    LLL: 'D MMMM YYYY р., HH:mm',
+    LLLL: 'dddd, D MMMM YYYY р., HH:mm'
+  },
+  calendar: {
+    sameDay: processHoursFunction('[Сьогодні '),
+    nextDay: processHoursFunction('[Завтра '),
+    lastDay: processHoursFunction('[Вчора '),
+    nextWeek: processHoursFunction('[У] dddd ['),
+    lastWeek(date) {
+      switch (getDayOfWeek(date)) {
+        case 0:
+        case 3:
+        case 5:
+        case 6:
+          return processHoursFunction('[Минулої] dddd [')(date);
+        case 1:
+        case 2:
+        case 4:
+          return processHoursFunction('[Минулого] dddd [')(date);
+      }
+    },
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: 'за %s',
+    past: '%s тому',
+    s: 'декілька секунд',
+    ss: relativeTimeWithPlural,
+    m: relativeTimeWithPlural,
+    mm: relativeTimeWithPlural,
+    h: 'годину',
+    hh: relativeTimeWithPlural,
+    d: 'день',
+    dd: relativeTimeWithPlural,
+    M: 'місяць',
+    MM: relativeTimeWithPlural,
+    y: 'рік',
+    yy: relativeTimeWithPlural
+  },
+  // M. E.: those two are virtually unused but a user might want to implement them for his/her website for some reason
+  meridiemParse: /ночі|ранку|дня|вечора/,
+  isPM(input) {
+    return /^(дня|вечора)$/.test(input);
+  },
+  meridiem(hour, minute, isLower) {
+    if (hour < 4) {
+      return 'ночі';
+    } else if (hour < 12) {
+      return 'ранку';
+    } else if (hour < 17) {
+      return 'дня';
+    } else {
+      return 'вечора';
+    }
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}-(й|го)/,
+  ordinal(_num, period) {
+    const num = Number(_num);
+    switch (period) {
+      case 'M':
+      case 'd':
+      case 'DDD':
+      case 'w':
+      case 'W':
+        return num + '-й';
+      case 'D':
+        return num + '-го';
+      default:
+        return num.toString();
+    }
+  },
+  week: {
+    dow: 1,
+    doy: 7 // The week that contains Jan 1st is the first week of the year.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Việt Nam [vi]
+//! author : Chris Gedrim : https://github.com/chrisgedrim
+const viLocale = {
+  abbr: 'vi',
+  months: 'tháng 1_tháng 2_tháng 3_tháng 4_tháng 5_tháng 6_tháng 7_tháng 8_tháng 9_tháng 10_tháng 11_tháng 12'.split('_'),
+  monthsShort: 'Th01_Th02_Th03_Th04_Th05_Th06_Th07_Th08_Th09_Th10_Th11_Th12'.split('_'),
+  monthsParseExact: true,
+  weekdays: 'chủ nhật_thứ hai_thứ ba_thứ tư_thứ năm_thứ sáu_thứ bảy'.split('_'),
+  weekdaysShort: 'CN_T2_T3_T4_T5_T6_T7'.split('_'),
+  weekdaysMin: 'CN_T2_T3_T4_T5_T6_T7'.split('_'),
+  weekdaysParseExact: true,
+  meridiemParse: /sa|ch/i,
+  isPM(input) {
+    return /^ch$/i.test(input);
+  },
+  meridiem(hours, minutes, isLower) {
+    if (hours < 12) {
+      return isLower ? 'sa' : 'SA';
+    } else {
+      return isLower ? 'ch' : 'CH';
+    }
+  },
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D MMMM [năm] YYYY',
+    LLL: 'D MMMM [năm] YYYY HH:mm',
+    LLLL: 'dddd, D MMMM [năm] YYYY HH:mm',
+    l: 'DD/M/YYYY',
+    ll: 'D MMM YYYY',
+    lll: 'D MMM YYYY HH:mm',
+    llll: 'ddd, D MMM YYYY HH:mm'
+  },
+  calendar: {
+    sameDay: '[Hôm nay lúc] LT',
+    nextDay: '[Ngày mai lúc] LT',
+    nextWeek: 'dddd [tuần tới lúc] LT',
+    lastDay: '[Hôm qua lúc] LT',
+    lastWeek: 'dddd [tuần trước lúc] LT',
+    sameElse: 'L'
+  },
+  relativeTime: {
+    future: '%s tới',
+    past: '%s trước',
+    s: 'vài giây',
+    ss: '%d giây',
+    m: 'một phút',
+    mm: '%d phút',
+    h: 'một giờ',
+    hh: '%d giờ',
+    d: 'một ngày',
+    dd: '%d ngày',
+    M: 'một tháng',
+    MM: '%d tháng',
+    y: 'một năm',
+    yy: '%d năm'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}/,
+  ordinal(_num) {
+    return '' + _num;
+  },
+  week: {
+    dow: 1,
+    doy: 4 // Tuần chứa ngày 4 tháng 1 là tuần đầu tiên trong năm.
+  }
+};
+
+//! moment.js locale configuration
+//! locale : Chinese (China) [zh-cn]
+//! author : suupic : https://github.com/suupic
+//! author : Zeno Zeng : https://github.com/zenozeng
+const zhCnLocale = {
+  abbr: 'zh-cn',
+  months: '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split('_'),
+  monthsShort: '1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月'.split('_'),
+  weekdays: '星期日_星期一_星期二_星期三_星期四_星期五_星期六'.split('_'),
+  weekdaysShort: '周日_周一_周二_周三_周四_周五_周六'.split('_'),
+  weekdaysMin: '日_一_二_三_四_五_六'.split('_'),
+  longDateFormat: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'YYYY/MM/DD',
+    LL: 'YYYY年M月D日',
+    LLL: 'YYYY年M月D日Ah点mm分',
+    LLLL: 'YYYY年M月D日ddddAh点mm分',
+    l: 'YYYY/M/D',
+    ll: 'YYYY年M月D日',
+    lll: 'YYYY年M月D日 HH:mm',
+    llll: 'YYYY年M月D日dddd HH:mm'
+  },
+  meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
+  meridiemHour(hour, meridiem) {
+    if (hour === 12) {
+      hour = 0;
+    }
+    if (meridiem === '凌晨' || meridiem === '早上' || meridiem === '上午') {
+      return hour;
+    } else if (meridiem === '下午' || meridiem === '晚上') {
+      return hour + 12;
+    } else {
+      // '中午'
+      return hour >= 11 ? hour : hour + 12;
+    }
+  },
+  meridiem(hour, minute, isLower) {
+    let hm = hour * 100 + minute;
+    if (hm < 600) {
+      return '凌晨';
+    } else if (hm < 900) {
+      return '早上';
+    } else if (hm < 1130) {
+      return '上午';
+    } else if (hm < 1230) {
+      return '中午';
+    } else if (hm < 1800) {
+      return '下午';
+    } else {
+      return '晚上';
+    }
+  },
+  calendar: {
+    sameDay: '[今天]LT',
+    nextDay: '[明天]LT',
+    nextWeek: '[下]ddddLT',
+    lastDay: '[昨天]LT',
+    lastWeek: '[上]ddddLT',
+    sameElse: 'L'
+  },
+  dayOfMonthOrdinalParse: /\d{1,2}(日|月|周)/,
+  ordinal(_num, period) {
+    const num = Number(_num);
+    switch (period) {
+      case 'd':
+      case 'D':
+      case 'DDD':
+        return num + '日';
+      case 'M':
+        return num + '月';
+      case 'w':
+      case 'W':
+        return num + '周';
+      default:
+        return num.toString();
+    }
+  },
+  relativeTime: {
+    future: '%s内',
+    past: '%s前',
+    s: '几秒',
+    ss: '%d 秒',
+    m: '1 分钟',
+    mm: '%d 分钟',
+    h: '1 小时',
+    hh: '%d 小时',
+    d: '1 天',
+    dd: '%d 天',
+    M: '1 个月',
+    MM: '%d 个月',
+    y: '1 年',
+    yy: '%d 年'
+  },
+  week: {
+    // GB/T 7408-1994《数据元和交换格式·信息交换·日期和时间表示法》与ISO 8601:1988等效
+    dow: 1,
+    doy: 4 // The week that contains Jan 4th is the first week of the year.
+  }
+};
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
+/***/ 755:
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/component-loader/fesm2020/ngx-bootstrap-component-loader.mjs ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BsComponentRef": () => (/* binding */ BsComponentRef),
+/* harmony export */   "ComponentLoader": () => (/* binding */ ComponentLoader),
+/* harmony export */   "ComponentLoaderFactory": () => (/* binding */ ComponentLoaderFactory),
+/* harmony export */   "ContentRef": () => (/* binding */ ContentRef)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-bootstrap/utils */ 8132);
+/* harmony import */ var ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-bootstrap/positioning */ 2623);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 4666);
+
+
+
+
+
+class BsComponentRef {}
+
+/**
+ * @copyright Valor Software
+ * @copyright Angular ng-bootstrap team
+ */
+class ContentRef {
+  constructor(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  nodes, viewRef,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  componentRef) {
+    this.nodes = nodes;
+    this.viewRef = viewRef;
+    this.componentRef = componentRef;
+  }
+}
+
+// todo: add delay support
+class ComponentLoader {
+  /**
+   * Do not use this directly, it should be instanced via
+   * `ComponentLoadFactory.attach`
+   * @internal
+   */
+  constructor(_viewContainerRef, _renderer, _elementRef, _injector, _componentFactoryResolver, _ngZone, _applicationRef, _posService, _document) {
+    this._viewContainerRef = _viewContainerRef;
+    this._renderer = _renderer;
+    this._elementRef = _elementRef;
+    this._injector = _injector;
+    this._componentFactoryResolver = _componentFactoryResolver;
+    this._ngZone = _ngZone;
+    this._applicationRef = _applicationRef;
+    this._posService = _posService;
+    this._document = _document;
+    this.onBeforeShow = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onShown = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onBeforeHide = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onHidden = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this._providers = [];
+    this._isHiding = false;
+    /**
+     * A selector used if container element was not found
+     */
+    this.containerDefaultSelector = 'body';
+    this._listenOpts = {};
+    this._globalListener = Function.prototype;
+  }
+  get isShown() {
+    if (this._isHiding) {
+      return false;
+    }
+    return !!this._componentRef;
+  }
+  attach(compType) {
+    this._componentFactory = this._componentFactoryResolver.resolveComponentFactory(compType);
+    return this;
+  }
+  // todo: add behaviour: to target element, `body`, custom element
+  to(container) {
+    this.container = container || this.container;
+    return this;
+  }
+  position(opts) {
+    if (!opts) {
+      return this;
+    }
+    this.attachment = opts.attachment || this.attachment;
+    this._elementRef = opts.target || this._elementRef;
+    return this;
+  }
+  provide(provider) {
+    this._providers.push(provider);
+    return this;
+  }
+  // todo: appendChild to element or document.querySelector(this.container)
+  show(opts = {}) {
+    this._subscribePositioning();
+    this._innerComponent = void 0;
+    if (!this._componentRef) {
+      this.onBeforeShow.emit();
+      this._contentRef = this._getContentRef(opts.content, opts.context, opts.initialState);
+      const injector = _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector.create({
+        providers: this._providers,
+        parent: this._injector
+      });
+      if (!this._componentFactory) {
+        return;
+      }
+      this._componentRef = this._componentFactory.create(injector, this._contentRef.nodes);
+      this._applicationRef.attachView(this._componentRef.hostView);
+      // this._componentRef = this._viewContainerRef
+      //   .createComponent(this._componentFactory, 0, injector, this._contentRef.nodes);
+      this.instance = this._componentRef.instance;
+      Object.assign(this._componentRef.instance, opts);
+      if (this.container instanceof _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef) {
+        this.container.nativeElement.appendChild(this._componentRef.location.nativeElement);
+      }
+      if (typeof this.container === 'string' && typeof this._document !== 'undefined') {
+        const selectedElement = this._document.querySelector(this.container) || this._document.querySelector(this.containerDefaultSelector);
+        if (!selectedElement) {
+          return;
+        }
+        selectedElement.appendChild(this._componentRef.location.nativeElement);
+      }
+      if (!this.container && this._elementRef && this._elementRef.nativeElement.parentElement) {
+        this._elementRef.nativeElement.parentElement.appendChild(this._componentRef.location.nativeElement);
+      }
+      // we need to manually invoke change detection since events registered
+      // via
+      // Renderer::listen() are not picked up by change detection with the
+      // OnPush strategy
+      if (this._contentRef.componentRef) {
+        this._innerComponent = this._contentRef.componentRef.instance;
+        this._contentRef.componentRef.changeDetectorRef.markForCheck();
+        this._contentRef.componentRef.changeDetectorRef.detectChanges();
+      }
+      this._componentRef.changeDetectorRef.markForCheck();
+      this._componentRef.changeDetectorRef.detectChanges();
+      this.onShown.emit(opts.id ? {
+        id: opts.id
+      } : this._componentRef.instance);
+    }
+    this._registerOutsideClick();
+    return this._componentRef;
+  }
+  hide(id) {
+    if (!this._componentRef) {
+      return this;
+    }
+    this._posService.deletePositionElement(this._componentRef.location);
+    this.onBeforeHide.emit(this._componentRef.instance);
+    const componentEl = this._componentRef.location.nativeElement;
+    componentEl.parentNode?.removeChild(componentEl);
+    this._contentRef?.componentRef?.destroy();
+    if (this._viewContainerRef && this._contentRef?.viewRef) {
+      this._viewContainerRef.remove(this._viewContainerRef.indexOf(this._contentRef.viewRef));
+    }
+    this._contentRef?.viewRef?.destroy();
+    this._contentRef = void 0;
+    this._componentRef = void 0;
+    this._removeGlobalListener();
+    this.onHidden.emit(id ? {
+      id
+    } : null);
+    return this;
+  }
+  toggle() {
+    if (this.isShown) {
+      this.hide();
+      return;
+    }
+    this.show();
+  }
+  dispose() {
+    if (this.isShown) {
+      this.hide();
+    }
+    this._unsubscribePositioning();
+    if (this._unregisterListenersFn) {
+      this._unregisterListenersFn();
+    }
+  }
+  listen(listenOpts) {
+    this.triggers = listenOpts.triggers || this.triggers;
+    this._listenOpts.outsideClick = listenOpts.outsideClick;
+    this._listenOpts.outsideEsc = listenOpts.outsideEsc;
+    listenOpts.target = listenOpts.target || this._elementRef?.nativeElement;
+    const hide = this._listenOpts.hide = () => listenOpts.hide ? listenOpts.hide() : void this.hide();
+    const show = this._listenOpts.show = registerHide => {
+      listenOpts.show ? listenOpts.show(registerHide) : this.show(registerHide);
+      registerHide();
+    };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const toggle = registerHide => {
+      this.isShown ? hide() : show(registerHide);
+    };
+    if (this._renderer) {
+      this._unregisterListenersFn = (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.listenToTriggersV2)(this._renderer, {
+        target: listenOpts.target,
+        triggers: listenOpts.triggers,
+        show,
+        hide,
+        toggle
+      });
+    }
+    return this;
+  }
+  _removeGlobalListener() {
+    if (this._globalListener) {
+      this._globalListener();
+      this._globalListener = Function.prototype;
+    }
+  }
+  attachInline(vRef,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  template) {
+    if (vRef && template) {
+      this._inlineViewRef = vRef.createEmbeddedView(template);
+    }
+    return this;
+  }
+  _registerOutsideClick() {
+    if (!this._componentRef || !this._componentRef.location) {
+      return;
+    }
+    // why: should run after first event bubble
+    if (this._listenOpts.outsideClick) {
+      const target = this._componentRef.location.nativeElement;
+      setTimeout(() => {
+        if (this._renderer && this._elementRef) {
+          this._globalListener = (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.registerOutsideClick)(this._renderer, {
+            targets: [target, this._elementRef.nativeElement],
+            outsideClick: this._listenOpts.outsideClick,
+            hide: () => this._listenOpts.hide && this._listenOpts.hide()
+          });
+        }
+      });
+    }
+    if (this._listenOpts.outsideEsc && this._renderer && this._elementRef) {
+      const target = this._componentRef.location.nativeElement;
+      this._globalListener = (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.registerEscClick)(this._renderer, {
+        targets: [target, this._elementRef.nativeElement],
+        outsideEsc: this._listenOpts.outsideEsc,
+        hide: () => this._listenOpts.hide && this._listenOpts.hide()
+      });
+    }
+  }
+  getInnerComponent() {
+    return this._innerComponent;
+  }
+  _subscribePositioning() {
+    if (this._zoneSubscription || !this.attachment) {
+      return;
+    }
+    this.onShown.subscribe(() => {
+      this._posService.position({
+        element: this._componentRef?.location,
+        target: this._elementRef,
+        attachment: this.attachment,
+        appendToBody: this.container === 'body'
+      });
+    });
+    this._zoneSubscription = this._ngZone.onStable.subscribe(() => {
+      if (!this._componentRef) {
+        return;
+      }
+      this._posService.calcPosition();
+    });
+  }
+  _unsubscribePositioning() {
+    if (!this._zoneSubscription) {
+      return;
+    }
+    this._zoneSubscription.unsubscribe();
+    this._zoneSubscription = void 0;
+  }
+  _getContentRef(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  content,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  context,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  initialState) {
+    if (!content) {
+      return new ContentRef([]);
+    }
+    if (content instanceof _angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef) {
+      if (this._viewContainerRef) {
+        const _viewRef = this._viewContainerRef.createEmbeddedView(content, context);
+        _viewRef.markForCheck();
+        return new ContentRef([_viewRef.rootNodes], _viewRef);
+      }
+      const viewRef = content.createEmbeddedView({});
+      this._applicationRef.attachView(viewRef);
+      return new ContentRef([viewRef.rootNodes], viewRef);
+    }
+    if (typeof content === 'function') {
+      const contentCmptFactory = this._componentFactoryResolver.resolveComponentFactory(content);
+      const modalContentInjector = _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector.create({
+        providers: this._providers,
+        parent: this._injector
+      });
+      const componentRef = contentCmptFactory.create(modalContentInjector);
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      Object.assign(componentRef.instance, initialState);
+      this._applicationRef.attachView(componentRef.hostView);
+      return new ContentRef([[componentRef.location.nativeElement]], componentRef.hostView, componentRef);
+    }
+    const nodes = this._renderer ? [this._renderer.createText(`${content}`)] : [];
+    return new ContentRef([nodes]);
+  }
+}
+class ComponentLoaderFactory {
+  constructor(_componentFactoryResolver, _ngZone, _injector, _posService, _applicationRef, _document) {
+    this._componentFactoryResolver = _componentFactoryResolver;
+    this._ngZone = _ngZone;
+    this._injector = _injector;
+    this._posService = _posService;
+    this._applicationRef = _applicationRef;
+    this._document = _document;
+  }
+  /**
+   *
+   * @param _elementRef
+   * @param _viewContainerRef
+   * @param _renderer
+   */
+  createLoader(_elementRef, _viewContainerRef, _renderer) {
+    return new ComponentLoader(_viewContainerRef, _renderer, _elementRef, this._injector, this._componentFactoryResolver, this._ngZone, this._applicationRef, this._posService, this._document);
+  }
+}
+ComponentLoaderFactory.ɵfac = function ComponentLoaderFactory_Factory(t) {
+  return new (t || ComponentLoaderFactory)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ComponentFactoryResolver), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ApplicationRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_3__.DOCUMENT));
+};
+ComponentLoaderFactory.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: ComponentLoaderFactory,
+  factory: ComponentLoaderFactory.ɵfac,
+  providedIn: 'root'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ComponentLoaderFactory, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'root'
+    }]
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ComponentFactoryResolver
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector
+    }, {
+      type: ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ApplicationRef
+    }, {
+      type: Document,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+        args: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.DOCUMENT]
+      }]
+    }];
+  }, null);
+})();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
+/***/ 1863:
+/*!*************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/datepicker/fesm2020/ngx-bootstrap-datepicker.mjs ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BsDatepickerConfig": () => (/* binding */ BsDatepickerConfig),
+/* harmony export */   "BsDatepickerContainerComponent": () => (/* binding */ BsDatepickerContainerComponent),
+/* harmony export */   "BsDatepickerDirective": () => (/* binding */ BsDatepickerDirective),
+/* harmony export */   "BsDatepickerInlineConfig": () => (/* binding */ BsDatepickerInlineConfig),
+/* harmony export */   "BsDatepickerInlineContainerComponent": () => (/* binding */ BsDatepickerInlineContainerComponent),
+/* harmony export */   "BsDatepickerInlineDirective": () => (/* binding */ BsDatepickerInlineDirective),
+/* harmony export */   "BsDatepickerInputDirective": () => (/* binding */ BsDatepickerInputDirective),
+/* harmony export */   "BsDatepickerModule": () => (/* binding */ BsDatepickerModule),
+/* harmony export */   "BsDaterangepickerConfig": () => (/* binding */ BsDaterangepickerConfig),
+/* harmony export */   "BsDaterangepickerContainerComponent": () => (/* binding */ BsDaterangepickerContainerComponent),
+/* harmony export */   "BsDaterangepickerDirective": () => (/* binding */ BsDaterangepickerDirective),
+/* harmony export */   "BsDaterangepickerInlineConfig": () => (/* binding */ BsDaterangepickerInlineConfig),
+/* harmony export */   "BsDaterangepickerInlineContainerComponent": () => (/* binding */ BsDaterangepickerInlineContainerComponent),
+/* harmony export */   "BsDaterangepickerInlineDirective": () => (/* binding */ BsDaterangepickerInlineDirective),
+/* harmony export */   "BsDaterangepickerInputDirective": () => (/* binding */ BsDaterangepickerInputDirective),
+/* harmony export */   "BsLocaleService": () => (/* binding */ BsLocaleService)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ 116);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ 635);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs/operators */ 9295);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! rxjs/operators */ 8951);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! rxjs/operators */ 8977);
+/* harmony import */ var ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-bootstrap/chronos */ 10);
+/* harmony import */ var ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-bootstrap/positioning */ 2623);
+/* harmony import */ var ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ngx-bootstrap/timepicker */ 2318);
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/animations */ 4851);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 6078);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 6317);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ 6562);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! rxjs */ 228);
+/* harmony import */ var ngx_bootstrap_mini_ngrx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ngx-bootstrap/mini-ngrx */ 9272);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ 4666);
+/* harmony import */ var ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-bootstrap/tooltip */ 7618);
+/* harmony import */ var ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ngx-bootstrap/component-loader */ 755);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/forms */ 2508);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * For date range picker there are `BsDaterangepickerConfig` which inherits all properties,
+ * except `displayMonths`, for range picker it default to `2`
+ */
+function BsCustomDatesViewComponent_button_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsCustomDatesViewComponent_button_1_Template_button_click_0_listener() {
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3);
+      const range_r1 = restoredCtx.$implicit;
+      const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r2.selectFromRanges(range_r1));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const range_r1 = ctx.$implicit;
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("selected", range_r1.value === ctx_r0.selectedRange);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", range_r1.label, " ");
+  }
+}
+function BsCalendarLayoutComponent_bs_current_date_0_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "bs-current-date", 4);
+  }
+}
+function BsCalendarLayoutComponent_bs_timepicker_5_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "bs-timepicker");
+  }
+}
+const _c0 = [[["bs-datepicker-navigation-view"]], "*"];
+const _c1 = ["bs-datepicker-navigation-view", "*"];
+const _c2 = ["bsDatepickerDayDecorator", ""];
+function BsDatepickerNavigationViewComponent_ng_container_3_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " \u200B ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDatepickerNavigationViewComponent_ng_container_3_Template_button_click_2_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r1.view("month"));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r0.isDisabled);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.calendar.monthTitle);
+  }
+}
+function BsDaysCalendarViewComponent_th_5_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "th");
+  }
+}
+function BsDaysCalendarViewComponent_th_6_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const i_r4 = ctx.index;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", ctx_r1.calendar.weekdays[i_r4], " ");
+  }
+}
+function BsDaysCalendarViewComponent_tr_8_td_1_span_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaysCalendarViewComponent_tr_8_td_1_span_1_Template_span_click_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13);
+      const week_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2).$implicit;
+      const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r11.selectWeek(week_r5));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const i_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2).index;
+    const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r9.calendar.weekNumbers[i_r6]);
+  }
+}
+function BsDaysCalendarViewComponent_tr_8_td_1_span_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaysCalendarViewComponent_tr_8_td_1_span_2_Template_span_click_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r17);
+      const week_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2).$implicit;
+      const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r15.selectWeek(week_r5));
+    })("mouseenter", function BsDaysCalendarViewComponent_tr_8_td_1_span_2_Template_span_mouseenter_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r17);
+      const week_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2).$implicit;
+      const ctx_r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r18.weekHoverHandler(week_r5, true));
+    })("mouseleave", function BsDaysCalendarViewComponent_tr_8_td_1_span_2_Template_span_mouseleave_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r17);
+      const week_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2).$implicit;
+      const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r20.weekHoverHandler(week_r5, false));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const i_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2).index;
+    const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r10.calendar.weekNumbers[i_r6]);
+  }
+}
+function BsDaysCalendarViewComponent_tr_8_td_1_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDaysCalendarViewComponent_tr_8_td_1_span_1_Template, 2, 1, "span", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDaysCalendarViewComponent_tr_8_td_1_span_2_Template, 2, 1, "span", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("active-week", ctx_r7.isWeekHovered);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r7.isiOS);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx_r7.isiOS);
+  }
+}
+function BsDaysCalendarViewComponent_tr_8_td_2_span_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r29 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaysCalendarViewComponent_tr_8_td_2_span_1_Template_span_click_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const day_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+      const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r27.selectDay(day_r23));
+    })("mouseenter", function BsDaysCalendarViewComponent_tr_8_td_2_span_1_Template_span_mouseenter_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const day_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+      const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r30.hoverDay(day_r23, true));
+    })("mouseleave", function BsDaysCalendarViewComponent_tr_8_td_2_span_1_Template_span_mouseleave_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const day_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+      const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r32.hoverDay(day_r23, false));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const day_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("tooltip", day_r23.tooltipText);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("day", day_r23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", day_r23.label, " 3");
+  }
+}
+function BsDaysCalendarViewComponent_tr_8_td_2_span_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r37 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaysCalendarViewComponent_tr_8_td_2_span_2_Template_span_click_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r37);
+      const day_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+      const ctx_r35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r35.selectDay(day_r23));
+    })("mouseenter", function BsDaysCalendarViewComponent_tr_8_td_2_span_2_Template_span_mouseenter_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r37);
+      const day_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+      const ctx_r38 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r38.hoverDay(day_r23, true));
+    })("mouseleave", function BsDaysCalendarViewComponent_tr_8_td_2_span_2_Template_span_mouseleave_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r37);
+      const day_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+      const ctx_r40 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r40.hoverDay(day_r23, false));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const day_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("day", day_r23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", day_r23.label, " 2");
+  }
+}
+function BsDaysCalendarViewComponent_tr_8_td_2_span_3_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r45 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaysCalendarViewComponent_tr_8_td_2_span_3_Template_span_click_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r45);
+      const day_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+      const ctx_r43 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r43.selectDay(day_r23));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const day_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("day", day_r23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", day_r23.label, " 1");
+  }
+}
+function BsDaysCalendarViewComponent_tr_8_td_2_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDaysCalendarViewComponent_tr_8_td_2_span_1_Template, 2, 3, "span", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDaysCalendarViewComponent_tr_8_td_2_span_2_Template, 2, 2, "span", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, BsDaysCalendarViewComponent_tr_8_td_2_span_3_Template, 2, 2, "span", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx_r8.isiOS && ctx_r8.isShowTooltip);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx_r8.isiOS && !ctx_r8.isShowTooltip);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r8.isiOS);
+  }
+}
+function BsDaysCalendarViewComponent_tr_8_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDaysCalendarViewComponent_tr_8_td_1_Template, 3, 4, "td", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDaysCalendarViewComponent_tr_8_td_2_Template, 4, 3, "td", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const week_r5 = ctx.$implicit;
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r2.options && ctx_r2.options.showWeekNumbers);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", week_r5.days);
+  }
+}
+function BsMonthCalendarViewComponent_tr_4_td_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsMonthCalendarViewComponent_tr_4_td_1_Template_td_click_0_listener() {
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
+      const month_r3 = restoredCtx.$implicit;
+      const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r4.viewMonth(month_r3));
+    })("mouseenter", function BsMonthCalendarViewComponent_tr_4_td_1_Template_td_mouseenter_0_listener() {
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
+      const month_r3 = restoredCtx.$implicit;
+      const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r6.hoverMonth(month_r3, true));
+    })("mouseleave", function BsMonthCalendarViewComponent_tr_4_td_1_Template_td_mouseleave_0_listener() {
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
+      const month_r3 = restoredCtx.$implicit;
+      const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r7.hoverMonth(month_r3, false));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const month_r3 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", month_r3.isDisabled)("is-highlighted", month_r3.isHovered);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("selected", month_r3.isSelected);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](month_r3.label);
+  }
+}
+function BsMonthCalendarViewComponent_tr_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsMonthCalendarViewComponent_tr_4_td_1_Template, 3, 7, "td", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const row_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", row_r1);
+  }
+}
+function BsYearsCalendarViewComponent_tr_4_td_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsYearsCalendarViewComponent_tr_4_td_1_Template_td_click_0_listener() {
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
+      const year_r3 = restoredCtx.$implicit;
+      const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r4.viewYear(year_r3));
+    })("mouseenter", function BsYearsCalendarViewComponent_tr_4_td_1_Template_td_mouseenter_0_listener() {
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
+      const year_r3 = restoredCtx.$implicit;
+      const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r6.hoverYear(year_r3, true));
+    })("mouseleave", function BsYearsCalendarViewComponent_tr_4_td_1_Template_td_mouseleave_0_listener() {
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
+      const year_r3 = restoredCtx.$implicit;
+      const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r7.hoverYear(year_r3, false));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const year_r3 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", year_r3.isDisabled)("is-highlighted", year_r3.isHovered);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("selected", year_r3.isSelected);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](year_r3.label);
+  }
+}
+function BsYearsCalendarViewComponent_tr_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsYearsCalendarViewComponent_tr_4_td_1_Template, 3, 7, "td", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const row_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", row_r1);
+  }
+}
+const _c3 = ["startTP"];
+function BsDatepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-days-calendar-view", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDatepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r10.navigateTo($event));
+    })("onViewMode", function BsDatepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r12.setViewMode($event));
+    })("onHover", function BsDatepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r13.dayHoverHandler($event));
+    })("onHoverWeek", function BsDatepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onHoverWeek_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r14.weekHoverHandler($event));
+    })("onSelect", function BsDatepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r15.daySelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r9 = ctx.$implicit;
+    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r7.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r9)("isDisabled", ctx_r7.isDatePickerDisabled)("options", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](1, 5, ctx_r7.options$));
+  }
+}
+function BsDatepickerContainerComponent_div_0_ng_container_4_div_4_timepicker_3_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "timepicker", 13, 16);
+  }
+  if (rf & 2) {
+    const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r17.isDatePickerDisabled);
+  }
+}
+function BsDatepickerContainerComponent_div_0_ng_container_4_div_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "timepicker", 13, 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, BsDatepickerContainerComponent_div_0_ng_container_4_div_4_timepicker_3_Template, 2, 1, "timepicker", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r8.isDatePickerDisabled);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r8.isRangePicker);
+  }
+}
+function BsDatepickerContainerComponent_div_0_ng_container_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDatepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template, 2, 7, "bs-days-calendar-view", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BsDatepickerContainerComponent_div_0_ng_container_4_div_4_Template, 4, 2, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 2, ctx_r1.daysCalendar$));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r1.withTimepicker);
+  }
+}
+function BsDatepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-month-calendar-view", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDatepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r21.navigateTo($event));
+    })("onViewMode", function BsDatepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r23.setViewMode($event));
+    })("onHover", function BsDatepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r24.monthHoverHandler($event));
+    })("onSelect", function BsDatepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r25.monthSelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r20 = ctx.$implicit;
+    const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r19.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r20);
+  }
+}
+function BsDatepickerContainerComponent_div_0_div_5_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDatepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template, 1, 3, "bs-month-calendar-view", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 1, ctx_r2.monthsCalendar));
+  }
+}
+function BsDatepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r29 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-years-calendar-view", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDatepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r28 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r28.navigateTo($event));
+    })("onViewMode", function BsDatepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r30.setViewMode($event));
+    })("onHover", function BsDatepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r31.yearHoverHandler($event));
+    })("onSelect", function BsDatepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r32.yearSelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r27 = ctx.$implicit;
+    const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r26.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r27);
+  }
+}
+function BsDatepickerContainerComponent_div_0_div_6_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDatepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template, 1, 3, "bs-years-calendar-view", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 1, ctx_r3.yearsCalendar));
+  }
+}
+function BsDatepickerContainerComponent_div_0_div_7_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19)(1, "button", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Apply");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Cancel");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+}
+function BsDatepickerContainerComponent_div_0_div_8_div_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r36 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 24)(1, "button", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDatepickerContainerComponent_div_0_div_8_div_1_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r36);
+      const ctx_r35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r35.setToday());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r33 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("today-left", ctx_r33.todayPos === "left")("today-right", ctx_r33.todayPos === "right")("today-center", ctx_r33.todayPos === "center");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r33.todayBtnLbl);
+  }
+}
+function BsDatepickerContainerComponent_div_0_div_8_div_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r38 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 26)(1, "button", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDatepickerContainerComponent_div_0_div_8_div_2_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r38);
+      const ctx_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r37.clearDate());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r34 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("clear-left", ctx_r34.clearPos === "left")("clear-right", ctx_r34.clearPos === "right")("clear-center", ctx_r34.clearPos === "center");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r34.clearBtnLbl);
+  }
+}
+function BsDatepickerContainerComponent_div_0_div_8_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDatepickerContainerComponent_div_0_div_8_div_1_Template, 3, 7, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDatepickerContainerComponent_div_0_div_8_div_2_Template, 3, 7, "div", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r5.showTodayBtn);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r5.showClearBtn);
+  }
+}
+function BsDatepickerContainerComponent_div_0_div_9_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r40 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 27)(1, "bs-custom-date-view", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onSelect", function BsDatepickerContainerComponent_div_0_div_9_Template_bs_custom_date_view_onSelect_1_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r40);
+      const ctx_r39 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r39.setRangeOnCalendar($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("selectedRange", ctx_r6.chosenRange)("ranges", ctx_r6.customRanges)("customRangeLabel", ctx_r6.customRangeBtnLbl);
+  }
+}
+function BsDatepickerContainerComponent_div_0_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r42 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 1)(1, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("@datepickerAnimation.done", function BsDatepickerContainerComponent_div_0_Template_div_animation_datepickerAnimation_done_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r42);
+      const ctx_r41 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r41.positionServiceEnable());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BsDatepickerContainerComponent_div_0_ng_container_4_Template, 5, 4, "ng-container", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BsDatepickerContainerComponent_div_0_div_5_Template, 3, 3, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, BsDatepickerContainerComponent_div_0_div_6_Template, 3, 3, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, BsDatepickerContainerComponent_div_0_div_7_Template, 5, 0, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, BsDatepickerContainerComponent_div_0_div_8_Template, 3, 2, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, BsDatepickerContainerComponent_div_0_div_9_Template, 2, 3, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx_r0.containerClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("@datepickerAnimation", ctx_r0.animationState);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitch", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 9, ctx_r0.viewMode));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "day");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "month");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "year");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", false);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.showTodayBtn || ctx_r0.showClearBtn);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.customRanges && ctx_r0.customRanges.length > 0);
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-days-calendar-view", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDatepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r10.navigateTo($event));
+    })("onViewMode", function BsDatepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r12.setViewMode($event));
+    })("onHover", function BsDatepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r13.dayHoverHandler($event));
+    })("onHoverWeek", function BsDatepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onHoverWeek_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r14.weekHoverHandler($event));
+    })("onSelect", function BsDatepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r15.daySelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r9 = ctx.$implicit;
+    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r7.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r9)("isDisabled", ctx_r7.isDatePickerDisabled)("options", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](1, 5, ctx_r7.options$));
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_ng_container_4_div_4_timepicker_3_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "timepicker", 13, 16);
+  }
+  if (rf & 2) {
+    const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r17.isDatePickerDisabled);
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_ng_container_4_div_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "timepicker", 13, 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, BsDatepickerInlineContainerComponent_div_0_ng_container_4_div_4_timepicker_3_Template, 2, 1, "timepicker", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r8.isDatePickerDisabled);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r8.isRangePicker);
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_ng_container_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDatepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template, 2, 7, "bs-days-calendar-view", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BsDatepickerInlineContainerComponent_div_0_ng_container_4_div_4_Template, 4, 2, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 2, ctx_r1.daysCalendar$));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r1.withTimepicker);
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-month-calendar-view", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDatepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r21.navigateTo($event));
+    })("onViewMode", function BsDatepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r23.setViewMode($event));
+    })("onHover", function BsDatepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r24.monthHoverHandler($event));
+    })("onSelect", function BsDatepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r25.monthSelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r20 = ctx.$implicit;
+    const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r19.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r20);
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_div_5_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDatepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template, 1, 3, "bs-month-calendar-view", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 1, ctx_r2.monthsCalendar));
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r29 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-years-calendar-view", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDatepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r28 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r28.navigateTo($event));
+    })("onViewMode", function BsDatepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r30.setViewMode($event));
+    })("onHover", function BsDatepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r31.yearHoverHandler($event));
+    })("onSelect", function BsDatepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r32.yearSelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r27 = ctx.$implicit;
+    const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r26.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r27);
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_div_6_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDatepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template, 1, 3, "bs-years-calendar-view", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 1, ctx_r3.yearsCalendar));
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_div_7_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19)(1, "button", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Apply");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Cancel");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_div_8_div_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r36 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 24)(1, "button", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDatepickerInlineContainerComponent_div_0_div_8_div_1_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r36);
+      const ctx_r35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r35.setToday());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r33 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("today-left", ctx_r33.todayPos === "left")("today-right", ctx_r33.todayPos === "right")("today-center", ctx_r33.todayPos === "center");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r33.todayBtnLbl);
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_div_8_div_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r38 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 26)(1, "button", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDatepickerInlineContainerComponent_div_0_div_8_div_2_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r38);
+      const ctx_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r37.clearDate());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r34 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("clear-left", ctx_r34.clearPos === "left")("clear-right", ctx_r34.clearPos === "right")("clear-center", ctx_r34.clearPos === "center");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r34.clearBtnLbl);
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_div_8_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDatepickerInlineContainerComponent_div_0_div_8_div_1_Template, 3, 7, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDatepickerInlineContainerComponent_div_0_div_8_div_2_Template, 3, 7, "div", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r5.showTodayBtn);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r5.showClearBtn);
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_div_9_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r40 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 27)(1, "bs-custom-date-view", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onSelect", function BsDatepickerInlineContainerComponent_div_0_div_9_Template_bs_custom_date_view_onSelect_1_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r40);
+      const ctx_r39 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r39.setRangeOnCalendar($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("selectedRange", ctx_r6.chosenRange)("ranges", ctx_r6.customRanges)("customRangeLabel", ctx_r6.customRangeBtnLbl);
+  }
+}
+function BsDatepickerInlineContainerComponent_div_0_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r42 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 1)(1, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("@datepickerAnimation.done", function BsDatepickerInlineContainerComponent_div_0_Template_div_animation_datepickerAnimation_done_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r42);
+      const ctx_r41 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r41.positionServiceEnable());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BsDatepickerInlineContainerComponent_div_0_ng_container_4_Template, 5, 4, "ng-container", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BsDatepickerInlineContainerComponent_div_0_div_5_Template, 3, 3, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, BsDatepickerInlineContainerComponent_div_0_div_6_Template, 3, 3, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, BsDatepickerInlineContainerComponent_div_0_div_7_Template, 5, 0, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, BsDatepickerInlineContainerComponent_div_0_div_8_Template, 3, 2, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, BsDatepickerInlineContainerComponent_div_0_div_9_Template, 2, 3, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx_r0.containerClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("@datepickerAnimation", ctx_r0.animationState);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitch", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 9, ctx_r0.viewMode));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "day");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "month");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "year");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", false);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.showTodayBtn || ctx_r0.showClearBtn);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.customRanges && ctx_r0.customRanges.length > 0);
+  }
+}
+const _c4 = ["endTP"];
+function BsDaterangepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-days-calendar-view", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDaterangepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r10.navigateTo($event));
+    })("onViewMode", function BsDaterangepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r12.setViewMode($event));
+    })("onHover", function BsDaterangepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r13.dayHoverHandler($event));
+    })("onHoverWeek", function BsDaterangepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onHoverWeek_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r14.weekHoverHandler($event));
+    })("onSelect", function BsDaterangepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r15.daySelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r9 = ctx.$implicit;
+    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r7.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r9)("isDisabled", ctx_r7.isDatePickerDisabled)("options", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](1, 5, ctx_r7.options$));
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_ng_container_4_div_4_timepicker_3_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "timepicker", 13, 16);
+  }
+  if (rf & 2) {
+    const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r17.isDatePickerDisabled);
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_ng_container_4_div_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "timepicker", 13, 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, BsDaterangepickerContainerComponent_div_0_ng_container_4_div_4_timepicker_3_Template, 2, 1, "timepicker", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r8.isDatePickerDisabled);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r8.isRangePicker);
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_ng_container_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDaterangepickerContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template, 2, 7, "bs-days-calendar-view", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BsDaterangepickerContainerComponent_div_0_ng_container_4_div_4_Template, 4, 2, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 2, ctx_r1.daysCalendar$));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r1.withTimepicker);
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-month-calendar-view", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDaterangepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r21.navigateTo($event));
+    })("onViewMode", function BsDaterangepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r23.setViewMode($event));
+    })("onHover", function BsDaterangepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r24.monthHoverHandler($event));
+    })("onSelect", function BsDaterangepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r25.monthSelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r20 = ctx.$implicit;
+    const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r19.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r20);
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_div_5_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDaterangepickerContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template, 1, 3, "bs-month-calendar-view", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 1, ctx_r2.monthsCalendar));
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r29 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-years-calendar-view", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDaterangepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r28 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r28.navigateTo($event));
+    })("onViewMode", function BsDaterangepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r30.setViewMode($event));
+    })("onHover", function BsDaterangepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r31.yearHoverHandler($event));
+    })("onSelect", function BsDaterangepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r32.yearSelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r27 = ctx.$implicit;
+    const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r26.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r27);
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_div_6_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDaterangepickerContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template, 1, 3, "bs-years-calendar-view", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 1, ctx_r3.yearsCalendar));
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_div_7_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19)(1, "button", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Apply");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Cancel");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_div_8_div_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r36 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 24)(1, "button", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaterangepickerContainerComponent_div_0_div_8_div_1_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r36);
+      const ctx_r35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r35.setToday());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r33 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("today-left", ctx_r33.todayPos === "left")("today-right", ctx_r33.todayPos === "right")("today-center", ctx_r33.todayPos === "center");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r33.todayBtnLbl);
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_div_8_div_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r38 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 26)(1, "button", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaterangepickerContainerComponent_div_0_div_8_div_2_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r38);
+      const ctx_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r37.clearDate());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r34 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("clear-left", ctx_r34.clearPos === "left")("clear-right", ctx_r34.clearPos === "right")("clear-center", ctx_r34.clearPos === "center");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r34.clearBtnLbl);
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_div_8_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDaterangepickerContainerComponent_div_0_div_8_div_1_Template, 3, 7, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDaterangepickerContainerComponent_div_0_div_8_div_2_Template, 3, 7, "div", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r5.showTodayBtn);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r5.showClearBtn);
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_div_9_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r40 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 27)(1, "bs-custom-date-view", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onSelect", function BsDaterangepickerContainerComponent_div_0_div_9_Template_bs_custom_date_view_onSelect_1_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r40);
+      const ctx_r39 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r39.setRangeOnCalendar($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("selectedRange", ctx_r6.chosenRange)("ranges", ctx_r6.customRanges)("customRangeLabel", ctx_r6.customRangeBtnLbl);
+  }
+}
+function BsDaterangepickerContainerComponent_div_0_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r42 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 1)(1, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("@datepickerAnimation.done", function BsDaterangepickerContainerComponent_div_0_Template_div_animation_datepickerAnimation_done_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r42);
+      const ctx_r41 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r41.positionServiceEnable());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BsDaterangepickerContainerComponent_div_0_ng_container_4_Template, 5, 4, "ng-container", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BsDaterangepickerContainerComponent_div_0_div_5_Template, 3, 3, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, BsDaterangepickerContainerComponent_div_0_div_6_Template, 3, 3, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, BsDaterangepickerContainerComponent_div_0_div_7_Template, 5, 0, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, BsDaterangepickerContainerComponent_div_0_div_8_Template, 3, 2, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, BsDaterangepickerContainerComponent_div_0_div_9_Template, 2, 3, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx_r0.containerClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("@datepickerAnimation", ctx_r0.animationState);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitch", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 9, ctx_r0.viewMode));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "day");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "month");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "year");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", false);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.showTodayBtn || ctx_r0.showClearBtn);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.customRanges && ctx_r0.customRanges.length > 0);
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-days-calendar-view", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r10.navigateTo($event));
+    })("onViewMode", function BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r12.setViewMode($event));
+    })("onHover", function BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r13.dayHoverHandler($event));
+    })("onHoverWeek", function BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onHoverWeek_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r14.weekHoverHandler($event));
+    })("onSelect", function BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template_bs_days_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
+      const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r15.daySelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r9 = ctx.$implicit;
+    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r7.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r9)("isDisabled", ctx_r7.isDatePickerDisabled)("options", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](1, 5, ctx_r7.options$));
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_div_4_timepicker_3_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "timepicker", 13, 16);
+  }
+  if (rf & 2) {
+    const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r17.isDatePickerDisabled);
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_div_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "timepicker", 13, 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_div_4_timepicker_3_Template, 2, 1, "timepicker", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r8.isDatePickerDisabled);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r8.isRangePicker);
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_bs_days_calendar_view_2_Template, 2, 7, "bs-days-calendar-view", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_div_4_Template, 4, 2, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 2, ctx_r1.daysCalendar$));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r1.withTimepicker);
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-month-calendar-view", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDaterangepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r21.navigateTo($event));
+    })("onViewMode", function BsDaterangepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r23.setViewMode($event));
+    })("onHover", function BsDaterangepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r24.monthHoverHandler($event));
+    })("onSelect", function BsDaterangepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template_bs_month_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
+      const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r25.monthSelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r20 = ctx.$implicit;
+    const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r19.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r20);
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_div_5_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDaterangepickerInlineContainerComponent_div_0_div_5_bs_month_calendar_view_1_Template, 1, 3, "bs-month-calendar-view", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 1, ctx_r2.monthsCalendar));
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r29 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-years-calendar-view", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDaterangepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onNavigate_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r28 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r28.navigateTo($event));
+    })("onViewMode", function BsDaterangepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onViewMode_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r30.setViewMode($event));
+    })("onHover", function BsDaterangepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onHover_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r31.yearHoverHandler($event));
+    })("onSelect", function BsDaterangepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template_bs_years_calendar_view_onSelect_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r29);
+      const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r32.yearSelectHandler($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const calendar_r27 = ctx.$implicit;
+    const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("bs-datepicker-multiple", ctx_r26.multipleCalendars);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", calendar_r27);
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_div_6_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDaterangepickerInlineContainerComponent_div_0_div_6_bs_years_calendar_view_1_Template, 1, 3, "bs-years-calendar-view", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 1, ctx_r3.yearsCalendar));
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_div_7_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19)(1, "button", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Apply");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Cancel");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_div_8_div_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r36 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 24)(1, "button", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaterangepickerInlineContainerComponent_div_0_div_8_div_1_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r36);
+      const ctx_r35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r35.setToday());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r33 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("today-left", ctx_r33.todayPos === "left")("today-right", ctx_r33.todayPos === "right")("today-center", ctx_r33.todayPos === "center");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r33.todayBtnLbl);
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_div_8_div_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r38 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 26)(1, "button", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaterangepickerInlineContainerComponent_div_0_div_8_div_2_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r38);
+      const ctx_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r37.clearDate());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r34 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("clear-left", ctx_r34.clearPos === "left")("clear-right", ctx_r34.clearPos === "right")("clear-center", ctx_r34.clearPos === "center");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r34.clearBtnLbl);
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_div_8_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsDaterangepickerInlineContainerComponent_div_0_div_8_div_1_Template, 3, 7, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BsDaterangepickerInlineContainerComponent_div_0_div_8_div_2_Template, 3, 7, "div", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r5.showTodayBtn);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r5.showClearBtn);
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_div_9_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r40 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 27)(1, "bs-custom-date-view", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onSelect", function BsDaterangepickerInlineContainerComponent_div_0_div_9_Template_bs_custom_date_view_onSelect_1_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r40);
+      const ctx_r39 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r39.setRangeOnCalendar($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("selectedRange", ctx_r6.chosenRange)("ranges", ctx_r6.customRanges)("customRangeLabel", ctx_r6.customRangeBtnLbl);
+  }
+}
+function BsDaterangepickerInlineContainerComponent_div_0_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r42 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 1)(1, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("@datepickerAnimation.done", function BsDaterangepickerInlineContainerComponent_div_0_Template_div_animation_datepickerAnimation_done_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r42);
+      const ctx_r41 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r41.positionServiceEnable());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "async");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BsDaterangepickerInlineContainerComponent_div_0_ng_container_4_Template, 5, 4, "ng-container", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BsDaterangepickerInlineContainerComponent_div_0_div_5_Template, 3, 3, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, BsDaterangepickerInlineContainerComponent_div_0_div_6_Template, 3, 3, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, BsDaterangepickerInlineContainerComponent_div_0_div_7_Template, 5, 0, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, BsDaterangepickerInlineContainerComponent_div_0_div_8_Template, 3, 2, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, BsDaterangepickerInlineContainerComponent_div_0_div_9_Template, 2, 3, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx_r0.containerClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("@datepickerAnimation", ctx_r0.animationState);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitch", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 9, ctx_r0.viewMode));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "day");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "month");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "year");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", false);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.showTodayBtn || ctx_r0.showClearBtn);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.customRanges && ctx_r0.customRanges.length > 0);
+  }
+}
+class BsDatepickerConfig {
+  constructor() {
+    /** sets use adaptive position */
+    this.adaptivePosition = false;
+    /** sets use UTC date time format */
+    this.useUtc = false;
+    /** turn on/off animation */
+    this.isAnimated = false;
+    /**
+     * The view that the datepicker should start in
+     */
+    this.startView = 'day';
+    /**
+     * If true, returns focus to the datepicker / daterangepicker input after date selection
+     */
+    this.returnFocusToInput = false;
+    /** CSS class which will be applied to datepicker container,
+     * usually used to set color theme
+     */
+    this.containerClass = 'theme-green';
+    // DatepickerRenderOptions
+    this.displayMonths = 1;
+    /**
+     * Allows to hide week numbers in datepicker
+     */
+    this.showWeekNumbers = true;
+    this.dateInputFormat = 'L';
+    // range picker
+    this.rangeSeparator = ' - ';
+    /**
+     * Date format for date range input field
+     */
+    this.rangeInputFormat = 'L';
+    // DatepickerFormatOptions
+    this.monthTitle = 'MMMM';
+    this.yearTitle = 'YYYY';
+    this.dayLabel = 'D';
+    this.monthLabel = 'MMMM';
+    this.yearLabel = 'YYYY';
+    this.weekNumbers = 'w';
+    /**
+     * Shows 'today' button
+     */
+    this.showTodayButton = false;
+    /**
+     * Shows clear button
+     */
+    this.showClearButton = false;
+    /**
+     * Positioning of 'today' button
+     */
+    this.todayPosition = 'center';
+    /**
+     * Positioning of 'clear' button
+     */
+    this.clearPosition = 'right';
+    /**
+     * Label for 'today' button
+     */
+    this.todayButtonLabel = 'Today';
+    /**
+     * Label for 'clear' button
+     */
+    this.clearButtonLabel = 'Clear';
+    /**
+     * Label for 'custom range' button
+     */
+    this.customRangeButtonLabel = 'Custom Range';
+    /**
+     * Shows timepicker under datepicker
+     */
+    this.withTimepicker = false;
+    /**
+     * Set allowed positions of container.
+     */
+    this.allowedPositions = ['top', 'bottom'];
+    /**
+     * Set rule for datepicker closing. If value is true datepicker closes only if date is changed, if user changes only time datepicker doesn't close. It is available only if property withTimepicker is set true
+     * */
+    this.keepDatepickerOpened = false;
+  }
+}
+BsDatepickerConfig.ɵfac = function BsDatepickerConfig_Factory(t) {
+  return new (t || BsDatepickerConfig)();
+};
+BsDatepickerConfig.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: BsDatepickerConfig,
+  factory: BsDatepickerConfig.ɵfac,
+  providedIn: 'root'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerConfig, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'root'
+    }]
+  }], null, null);
+})();
+const DATEPICKER_ANIMATION_TIMING = '220ms cubic-bezier(0, 0, 0.2, 1)';
+const datepickerAnimation = (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.trigger)('datepickerAnimation', [(0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.state)('animated-down', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.style)({
+  height: '*',
+  overflow: 'hidden'
+})), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.transition)('* => animated-down', [(0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.style)({
+  height: 0,
+  overflow: 'hidden'
+}), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.animate)(DATEPICKER_ANIMATION_TIMING)]), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.state)('animated-up', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.style)({
+  height: '*',
+  overflow: 'hidden'
+})), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.transition)('* => animated-up', [(0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.style)({
+  height: '*',
+  overflow: 'hidden'
+}), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.animate)(DATEPICKER_ANIMATION_TIMING)]), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.transition)('* => unanimated', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.animate)('0s'))]);
+class BsDatepickerAbstractComponent {
+  constructor() {
+    this.containerClass = '';
+    this.customRanges = [];
+    this.chosenRange = [];
+    this._daysCalendarSub = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subscription();
+    this.selectedTimeSub = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subscription();
+  }
+  set minDate(value) {
+    this._effects?.setMinDate(value);
+  }
+  set maxDate(value) {
+    this._effects?.setMaxDate(value);
+  }
+  set daysDisabled(value) {
+    this._effects?.setDaysDisabled(value);
+  }
+  set datesDisabled(value) {
+    this._effects?.setDatesDisabled(value);
+  }
+  set datesEnabled(value) {
+    this._effects?.setDatesEnabled(value);
+  }
+  set isDisabled(value) {
+    this._effects?.setDisabled(value);
+  }
+  set dateCustomClasses(value) {
+    this._effects?.setDateCustomClasses(value);
+  }
+  set dateTooltipTexts(value) {
+    this._effects?.setDateTooltipTexts(value);
+  }
+  set daysCalendar$(value) {
+    this._daysCalendar$ = value;
+    this._daysCalendarSub.unsubscribe();
+    this._daysCalendarSub.add(this._daysCalendar$.subscribe(value => {
+      this.multipleCalendars = !!value && value.length > 1;
+    }));
+  }
+  get daysCalendar$() {
+    return this._daysCalendar$;
+  }
+  // todo: valorkin fix
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars,@typescript-eslint/no-empty-function
+  setViewMode(event) {}
+  // eslint-disable-next-line
+  navigateTo(event) {}
+  // eslint-disable-next-line
+  dayHoverHandler(event) {}
+  // eslint-disable-next-line
+  weekHoverHandler(event) {}
+  // eslint-disable-next-line
+  monthHoverHandler(event) {}
+  // eslint-disable-next-line
+  yearHoverHandler(event) {}
+  // eslint-disable-next-line
+  timeSelectHandler(date, index) {}
+  // eslint-disable-next-line
+  daySelectHandler(day) {}
+  // eslint-disable-next-line
+  monthSelectHandler(event) {}
+  // eslint-disable-next-line
+  yearSelectHandler(event) {}
+  // eslint-disable-next-line
+  setRangeOnCalendar(dates) {}
+  // eslint-disable-next-line
+  setToday() {}
+  // eslint-disable-next-line
+  clearDate() {}
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  _stopPropagation(event) {
+    event.stopPropagation();
+  }
+}
+class BsDatepickerActions {
+  calculate() {
+    return {
+      type: BsDatepickerActions.CALCULATE
+    };
+  }
+  format() {
+    return {
+      type: BsDatepickerActions.FORMAT
+    };
+  }
+  flag() {
+    return {
+      type: BsDatepickerActions.FLAG
+    };
+  }
+  select(date) {
+    return {
+      type: BsDatepickerActions.SELECT,
+      payload: date
+    };
+  }
+  selectTime(date, index) {
+    return {
+      type: BsDatepickerActions.SELECT_TIME,
+      payload: {
+        date,
+        index
+      }
+    };
+  }
+  changeViewMode(event) {
+    return {
+      type: BsDatepickerActions.CHANGE_VIEWMODE,
+      payload: event
+    };
+  }
+  navigateTo(event) {
+    return {
+      type: BsDatepickerActions.NAVIGATE_TO,
+      payload: event
+    };
+  }
+  navigateStep(step) {
+    return {
+      type: BsDatepickerActions.NAVIGATE_OFFSET,
+      payload: step
+    };
+  }
+  setOptions(options) {
+    return {
+      type: BsDatepickerActions.SET_OPTIONS,
+      payload: options
+    };
+  }
+  // date range picker
+  selectRange(value) {
+    return {
+      type: BsDatepickerActions.SELECT_RANGE,
+      payload: value
+    };
+  }
+  hoverDay(event) {
+    return {
+      type: BsDatepickerActions.HOVER,
+      payload: event.isHovered ? event.cell.date : null
+    };
+  }
+  minDate(date) {
+    return {
+      type: BsDatepickerActions.SET_MIN_DATE,
+      payload: date
+    };
+  }
+  maxDate(date) {
+    return {
+      type: BsDatepickerActions.SET_MAX_DATE,
+      payload: date
+    };
+  }
+  daysDisabled(days) {
+    return {
+      type: BsDatepickerActions.SET_DAYSDISABLED,
+      payload: days
+    };
+  }
+  datesDisabled(dates) {
+    return {
+      type: BsDatepickerActions.SET_DATESDISABLED,
+      payload: dates
+    };
+  }
+  datesEnabled(dates) {
+    return {
+      type: BsDatepickerActions.SET_DATESENABLED,
+      payload: dates
+    };
+  }
+  isDisabled(value) {
+    return {
+      type: BsDatepickerActions.SET_IS_DISABLED,
+      payload: value
+    };
+  }
+  setDateCustomClasses(value) {
+    return {
+      type: BsDatepickerActions.SET_DATE_CUSTOM_CLASSES,
+      payload: value
+    };
+  }
+  setDateTooltipTexts(value) {
+    return {
+      type: BsDatepickerActions.SET_DATE_TOOLTIP_TEXTS,
+      payload: value
+    };
+  }
+  setLocale(locale) {
+    return {
+      type: BsDatepickerActions.SET_LOCALE,
+      payload: locale
+    };
+  }
+}
+BsDatepickerActions.CALCULATE = '[datepicker] calculate dates matrix';
+BsDatepickerActions.FORMAT = '[datepicker] format datepicker values';
+BsDatepickerActions.FLAG = '[datepicker] set flags';
+BsDatepickerActions.SELECT = '[datepicker] select date';
+BsDatepickerActions.NAVIGATE_OFFSET = '[datepicker] shift view date';
+BsDatepickerActions.NAVIGATE_TO = '[datepicker] change view date';
+BsDatepickerActions.SET_OPTIONS = '[datepicker] update render options';
+BsDatepickerActions.HOVER = '[datepicker] hover date';
+BsDatepickerActions.CHANGE_VIEWMODE = '[datepicker] switch view mode';
+BsDatepickerActions.SET_MIN_DATE = '[datepicker] set min date';
+BsDatepickerActions.SET_MAX_DATE = '[datepicker] set max date';
+BsDatepickerActions.SET_DAYSDISABLED = '[datepicker] set days disabled';
+BsDatepickerActions.SET_DATESDISABLED = '[datepicker] set dates disabled';
+BsDatepickerActions.SET_DATESENABLED = '[datepicker] set dates enabled';
+BsDatepickerActions.SET_IS_DISABLED = '[datepicker] set is disabled';
+BsDatepickerActions.SET_DATE_CUSTOM_CLASSES = '[datepicker] set date custom classes';
+BsDatepickerActions.SET_DATE_TOOLTIP_TEXTS = '[datepicker] set date tooltip texts';
+BsDatepickerActions.SET_LOCALE = '[datepicker] set datepicker locale';
+BsDatepickerActions.SELECT_TIME = '[datepicker] select time';
+BsDatepickerActions.SELECT_RANGE = '[daterangepicker] select dates range';
+BsDatepickerActions.ɵfac = function BsDatepickerActions_Factory(t) {
+  return new (t || BsDatepickerActions)();
+};
+BsDatepickerActions.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: BsDatepickerActions,
+  factory: BsDatepickerActions.ɵfac,
+  providedIn: 'platform'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerActions, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'platform'
+    }]
+  }], null, null);
+})();
+class BsLocaleService {
+  constructor() {
+    this._defaultLocale = 'en';
+    this._locale = new rxjs__WEBPACK_IMPORTED_MODULE_3__.BehaviorSubject(this._defaultLocale);
+    this._localeChange = this._locale.asObservable();
+  }
+  get locale() {
+    return this._locale;
+  }
+  get localeChange() {
+    return this._localeChange;
+  }
+  get currentLocale() {
+    return this._locale.getValue();
+  }
+  use(locale) {
+    if (locale === this.currentLocale) {
+      return;
+    }
+    this._locale.next(locale);
+  }
+}
+BsLocaleService.ɵfac = function BsLocaleService_Factory(t) {
+  return new (t || BsLocaleService)();
+};
+BsLocaleService.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: BsLocaleService,
+  factory: BsLocaleService.ɵfac,
+  providedIn: 'platform'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsLocaleService, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'platform'
+    }]
+  }], null, null);
+})();
+class BsDatepickerEffects {
+  constructor(_actions, _localeService) {
+    this._actions = _actions;
+    this._localeService = _localeService;
+    this._subs = [];
+  }
+  init(_bsDatepickerStore) {
+    this._store = _bsDatepickerStore;
+    return this;
+  }
+  /** setters */
+  setValue(value) {
+    this._store?.dispatch(this._actions.select(value));
+  }
+  setRangeValue(value) {
+    this._store?.dispatch(this._actions.selectRange(value));
+  }
+  setMinDate(value) {
+    this._store?.dispatch(this._actions.minDate(value));
+    return this;
+  }
+  setMaxDate(value) {
+    this._store?.dispatch(this._actions.maxDate(value));
+    return this;
+  }
+  setDaysDisabled(value) {
+    this._store?.dispatch(this._actions.daysDisabled(value));
+    return this;
+  }
+  setDatesDisabled(value) {
+    this._store?.dispatch(this._actions.datesDisabled(value));
+    return this;
+  }
+  setDatesEnabled(value) {
+    this._store?.dispatch(this._actions.datesEnabled(value));
+    return this;
+  }
+  setDisabled(value) {
+    this._store?.dispatch(this._actions.isDisabled(value));
+    return this;
+  }
+  setDateCustomClasses(value) {
+    this._store?.dispatch(this._actions.setDateCustomClasses(value));
+    return this;
+  }
+  setDateTooltipTexts(value) {
+    this._store?.dispatch(this._actions.setDateTooltipTexts(value));
+    return this;
+  }
+  /* Set rendering options */
+  setOptions(_config) {
+    const _options = Object.assign({
+      locale: this._localeService.currentLocale
+    }, _config);
+    this._store?.dispatch(this._actions.setOptions(_options));
+    return this;
+  }
+  /** view to mode bindings */
+  setBindings(container) {
+    if (!this._store) {
+      return this;
+    }
+    container.selectedTime = this._store.select(state => state.selectedTime).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(times => !!times));
+    container.daysCalendar$ = this._store.select(state => state.flaggedMonths).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(months => !!months));
+    // month calendar
+    container.monthsCalendar = this._store.select(state => state.flaggedMonthsCalendar).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(months => !!months));
+    // year calendar
+    container.yearsCalendar = this._store.select(state => state.yearsCalendarFlagged).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(years => !!years));
+    container.viewMode = this._store.select(state => state.view?.mode);
+    container.options$ = (0,rxjs__WEBPACK_IMPORTED_MODULE_5__.combineLatest)([this._store.select(state => state.showWeekNumbers), this._store.select(state => state.displayMonths)]).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(latest => ({
+      showWeekNumbers: latest[0],
+      displayMonths: latest[1]
+    })));
+    return this;
+  }
+  /** event handlers */
+  setEventHandlers(container) {
+    container.setViewMode = event => {
+      this._store?.dispatch(this._actions.changeViewMode(event));
+    };
+    container.navigateTo = event => {
+      this._store?.dispatch(this._actions.navigateStep(event.step));
+    };
+    container.dayHoverHandler = event => {
+      const _cell = event.cell;
+      if (_cell.isOtherMonth || _cell.isDisabled) {
+        return;
+      }
+      this._store?.dispatch(this._actions.hoverDay(event));
+      _cell.isHovered = event.isHovered;
+    };
+    container.monthHoverHandler = event => {
+      event.cell.isHovered = event.isHovered;
+    };
+    container.yearHoverHandler = event => {
+      event.cell.isHovered = event.isHovered;
+    };
+    return this;
+  }
+  registerDatepickerSideEffects() {
+    if (!this._store) {
+      return this;
+    }
+    this._subs.push(this._store.select(state => state.view).subscribe(() => {
+      this._store?.dispatch(this._actions.calculate());
+    }));
+    // format calendar values on month model change
+    this._subs.push(this._store.select(state => state.monthsModel).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(monthModel => !!monthModel)).subscribe(() => this._store?.dispatch(this._actions.format())));
+    // flag day values
+    this._subs.push(this._store.select(state => state.formattedMonths).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(month => !!month)).subscribe(() => this._store?.dispatch(this._actions.flag())));
+    // flag day values
+    this._subs.push(this._store.select(state => state.selectedDate).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(selectedDate => !!selectedDate)).subscribe(() => this._store?.dispatch(this._actions.flag())));
+    // flag for date range picker
+    this._subs.push(this._store.select(state => state.selectedRange).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(selectedRange => !!selectedRange)).subscribe(() => this._store?.dispatch(this._actions.flag())));
+    // monthsCalendar
+    this._subs.push(this._store.select(state => state.monthsCalendar).subscribe(() => this._store?.dispatch(this._actions.flag())));
+    // years calendar
+    this._subs.push(this._store.select(state => state.yearsCalendarModel).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(state => !!state)).subscribe(() => this._store?.dispatch(this._actions.flag())));
+    // on hover
+    this._subs.push(this._store.select(state => state.hoveredDate).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(hoveredDate => !!hoveredDate)).subscribe(() => this._store?.dispatch(this._actions.flag())));
+    // date custom classes
+    this._subs.push(this._store.select(state => state.dateCustomClasses).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(dateCustomClasses => !!dateCustomClasses)).subscribe(() => this._store?.dispatch(this._actions.flag())));
+    // date tooltip texts
+    this._subs.push(this._store.select(state => state.dateTooltipTexts).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(dateTooltipTexts => !!dateTooltipTexts)).subscribe(() => this._store?.dispatch(this._actions.flag())));
+    // on locale change
+    this._subs.push(this._localeService.localeChange.subscribe(locale => this._store?.dispatch(this._actions.setLocale(locale))));
+    return this;
+  }
+  destroy() {
+    for (const sub of this._subs) {
+      sub.unsubscribe();
+    }
+  }
+}
+BsDatepickerEffects.ɵfac = function BsDatepickerEffects_Factory(t) {
+  return new (t || BsDatepickerEffects)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](BsDatepickerActions), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](BsLocaleService));
+};
+BsDatepickerEffects.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: BsDatepickerEffects,
+  factory: BsDatepickerEffects.ɵfac,
+  providedIn: 'platform'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerEffects, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'platform'
+    }]
+  }], function () {
+    return [{
+      type: BsDatepickerActions
+    }, {
+      type: BsLocaleService
+    }];
+  }, null);
+})();
+const defaultMonthOptions = {
+  width: 7,
+  height: 6
+};
+const dayInMilliseconds = 24 * 60 * 60 * 1000;
+class BsDatepickerState {
+  constructor() {
+    // DatepickerRenderOptions
+    this.showWeekNumbers = true;
+    this.displayMonths = 1;
+  }
+}
+const _initialView = {
+  date: new Date(),
+  mode: 'day'
+};
+const initialDatepickerState = Object.assign(new BsDatepickerConfig(), {
+  locale: 'en',
+  view: _initialView,
+  selectedRange: [],
+  selectedTime: [],
+  monthViewOptions: defaultMonthOptions
+});
+function getStartingDayOfCalendar(date, options) {
+  if ((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isFirstDayOfWeek)(date, options.firstDayOfWeek)) {
+    return date;
+  }
+  const weekDay = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getDay)(date);
+  const offset = calculateDateOffset(weekDay, options.firstDayOfWeek);
+  return (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(date, {
+    day: -offset
+  });
+}
+function calculateDateOffset(weekday, startingDayOffset) {
+  const _startingDayOffset = Number(startingDayOffset);
+  if (isNaN(_startingDayOffset)) {
+    return 0;
+  }
+  if (_startingDayOffset === 0) {
+    return weekday;
+  }
+  const offset = weekday - _startingDayOffset % 7;
+  return offset < 0 ? offset + 7 : offset;
+}
+function isMonthDisabled(date, min, max) {
+  const minBound = min && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isBefore)((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.endOf)(date, 'month'), min, 'day');
+  const maxBound = max && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isAfter)((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.startOf)(date, 'month'), max, 'day');
+  return minBound || maxBound || false;
+}
+function isYearDisabled(date, min, max) {
+  const minBound = min && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isBefore)((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.endOf)(date, 'year'), min, 'day');
+  const maxBound = max && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isAfter)((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.startOf)(date, 'year'), max, 'day');
+  return minBound || maxBound || false;
+}
+function isDisabledDate(date, datesDisabled, unit) {
+  if (!datesDisabled || !(0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isArray)(datesDisabled) || !datesDisabled.length) {
+    return false;
+  }
+  if (unit && unit === 'year' && !datesDisabled[0].getDate()) {
+    return datesDisabled.some(dateDisabled => (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSame)(date, dateDisabled, 'year'));
+  }
+  return datesDisabled.some(dateDisabled => (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSame)(date, dateDisabled, 'date'));
+}
+function isEnabledDate(date, datesEnabled, unit) {
+  if (!datesEnabled || !(0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isArray)(datesEnabled) || !datesEnabled.length) {
+    return false;
+  }
+  return !datesEnabled.some(enabledDate => (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSame)(date, enabledDate, unit || 'date'));
+}
+function getYearsCalendarInitialDate(state, calendarIndex = 0) {
+  const model = state && state.yearsCalendarModel && state.yearsCalendarModel[calendarIndex];
+  return model?.years[0] && model.years[0][0] && model.years[0][0].date;
+}
+function checkRangesWithMaxDate(ranges, maxDate) {
+  if (!ranges) return ranges;
+  if (!maxDate) return ranges;
+  if (!ranges.length && !ranges[0].value) return ranges;
+  ranges.forEach(item => {
+    if (!item || !item.value) return ranges;
+    if (item.value instanceof Date) return ranges;
+    if (!(item.value instanceof Array && item.value.length)) return ranges;
+    item.value = compareDateWithMaxDateHelper(item.value, maxDate);
+    return ranges;
+  });
+  return ranges;
+}
+function checkBsValue(date, maxDate) {
+  if (!date) return date;
+  if (!maxDate) return date;
+  if (date instanceof Array && !date.length) return date;
+  if (date instanceof Date) return date;
+  return compareDateWithMaxDateHelper(date, maxDate);
+}
+function compareDateWithMaxDateHelper(date, maxDate) {
+  if (date instanceof Array) {
+    const editedValues = date.map(item => {
+      if (!item) return item;
+      if ((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isAfter)(item, maxDate, 'date')) item = maxDate;
+      return item;
+    });
+    return editedValues;
+  }
+  return date;
+}
+function setCurrentTimeOnDateSelect(value) {
+  if (!value) return value;
+  return setCurrentTimeHelper(value);
+}
+function setDateRangesCurrentTimeOnDateSelect(value) {
+  if (!value?.length) return value;
+  value.map(date => {
+    if (!date) {
+      return date;
+    }
+    return setCurrentTimeHelper(date);
+  });
+  return value;
+}
+function setCurrentTimeHelper(date) {
+  const now = new Date();
+  date.setMilliseconds(now.getMilliseconds());
+  date.setSeconds(now.getSeconds());
+  date.setMinutes(now.getMinutes());
+  date.setHours(now.getHours());
+  return date;
+}
+function createMatrix(options, fn) {
+  let prevValue = options.initialDate;
+  const matrix = new Array(options.height);
+  for (let i = 0; i < options.height; i++) {
+    matrix[i] = new Array(options.width);
+    for (let j = 0; j < options.width; j++) {
+      matrix[i][j] = fn(prevValue);
+      prevValue = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(prevValue, options.shift);
+    }
+  }
+  return matrix;
+}
+
+// user and model input should handle parsing and validating input values
+function calcDaysCalendar(startingDate, options) {
+  const firstDay = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getFirstDayOfMonth)(startingDate);
+  const initialDate = getStartingDayOfCalendar(firstDay, options);
+  // todo test
+  const matrixOptions = {
+    width: options.width || 0,
+    height: options.height || 0,
+    initialDate,
+    shift: {
+      day: 1
+    }
+  };
+  const daysMatrix = createMatrix(matrixOptions, date => date);
+  return {
+    daysMatrix,
+    month: firstDay
+  };
+}
+function formatDaysCalendar(daysCalendar, formatOptions, monthIndex) {
+  return {
+    month: daysCalendar.month,
+    monthTitle: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(daysCalendar.month, formatOptions.monthTitle, formatOptions.locale),
+    yearTitle: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(daysCalendar.month, formatOptions.yearTitle, formatOptions.locale),
+    weekNumbers: getWeekNumbers(daysCalendar.daysMatrix, formatOptions.weekNumbers, formatOptions.locale),
+    weekdays: getShiftedWeekdays(formatOptions.locale),
+    weeks: daysCalendar.daysMatrix.map((week, weekIndex) => ({
+      days: week.map((date, dayIndex) => ({
+        date,
+        label: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(date, formatOptions.dayLabel, formatOptions.locale),
+        monthIndex,
+        weekIndex,
+        dayIndex
+      }))
+    })),
+    hideLeftArrow: false,
+    hideRightArrow: false,
+    disableLeftArrow: false,
+    disableRightArrow: false
+  };
+}
+function getWeekNumbers(daysMatrix, format, locale) {
+  return daysMatrix.map(days => days[0] ? (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(days[0], format, locale) : '');
+}
+function getShiftedWeekdays(locale) {
+  const _locale = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getLocale)(locale);
+  const weekdays = _locale.weekdaysShort();
+  const firstDayOfWeek = _locale.firstDayOfWeek();
+  return [...weekdays.slice(firstDayOfWeek), ...weekdays.slice(0, firstDayOfWeek)];
+}
+function flagDaysCalendar(formattedMonth, options) {
+  formattedMonth.weeks.forEach(week => {
+    week.days.forEach((day, dayIndex) => {
+      // datepicker
+      const isOtherMonth = !(0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameMonth)(day.date, formattedMonth.month);
+      const isHovered = !isOtherMonth && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameDay)(day.date, options.hoveredDate);
+      // date range picker
+      const isSelectionStart = !isOtherMonth && options.selectedRange && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameDay)(day.date, options.selectedRange[0]);
+      const isSelectionEnd = !isOtherMonth && options.selectedRange && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameDay)(day.date, options.selectedRange[1]);
+      const isSelected = !isOtherMonth && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameDay)(day.date, options.selectedDate) || isSelectionStart || isSelectionEnd;
+      const isInRange = !isOtherMonth && options.selectedRange && isDateInRange(day.date, options.selectedRange, options.hoveredDate);
+      const isDisabled = options.isDisabled || (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isBefore)(day.date, options.minDate, 'day') || (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isAfter)(day.date, options.maxDate, 'day') || (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isDisabledDay)(day.date, options.daysDisabled) || isDisabledDate(day.date, options.datesDisabled) || isEnabledDate(day.date, options.datesEnabled);
+      const currentDate = new Date();
+      const isToday = !isOtherMonth && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameDay)(day.date, currentDate);
+      const customClasses = options.dateCustomClasses && options.dateCustomClasses.map(dcc => (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameDay)(day.date, dcc.date) ? dcc.classes : []).reduce((previousValue, currentValue) => previousValue.concat(currentValue), []).join(' ') || '';
+      const tooltipText = options.dateTooltipTexts && options.dateTooltipTexts.map(tt => (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameDay)(day.date, tt.date) ? tt.tooltipText : '').reduce((previousValue, currentValue) => {
+        previousValue.push(currentValue);
+        return previousValue;
+      }, []).join(' ') || '';
+      // decide update or not
+      const newDay = Object.assign({}, day, {
+        isOtherMonth,
+        isHovered,
+        isSelected,
+        isSelectionStart,
+        isSelectionEnd,
+        isInRange,
+        isDisabled,
+        isToday,
+        customClasses,
+        tooltipText
+      });
+      if (day.isOtherMonth !== newDay.isOtherMonth || day.isHovered !== newDay.isHovered || day.isSelected !== newDay.isSelected || day.isSelectionStart !== newDay.isSelectionStart || day.isSelectionEnd !== newDay.isSelectionEnd || day.isDisabled !== newDay.isDisabled || day.isInRange !== newDay.isInRange || day.customClasses !== newDay.customClasses || day.tooltipText !== newDay.tooltipText) {
+        week.days[dayIndex] = newDay;
+      }
+    });
+  });
+  // todo: add check for linked calendars
+  formattedMonth.hideLeftArrow = options.isDisabled || !!options.monthIndex && options.monthIndex > 0 && options.monthIndex !== options.displayMonths;
+  formattedMonth.hideRightArrow = options.isDisabled || (!!options.monthIndex || options.monthIndex === 0) && !!options.displayMonths && options.monthIndex < options.displayMonths && options.monthIndex + 1 !== options.displayMonths;
+  formattedMonth.disableLeftArrow = isMonthDisabled((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(formattedMonth.month, {
+    month: -1
+  }), options.minDate, options.maxDate);
+  formattedMonth.disableRightArrow = isMonthDisabled((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(formattedMonth.month, {
+    month: 1
+  }), options.minDate, options.maxDate);
+  return formattedMonth;
+}
+function isDateInRange(date, selectedRange, hoveredDate) {
+  if (!date || !selectedRange || !selectedRange[0]) {
+    return false;
+  }
+  if (selectedRange[1]) {
+    return date > selectedRange[0] && date <= selectedRange[1];
+  }
+  if (hoveredDate) {
+    return date > selectedRange[0] && date <= hoveredDate;
+  }
+  return false;
+}
+function canSwitchMode(mode, minMode) {
+  return minMode ? mode >= minMode : true;
+}
+const height$1 = 4;
+const width$1 = 3;
+const shift$1 = {
+  month: 1
+};
+function formatMonthsCalendar(viewDate, formatOptions) {
+  const initialDate = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.startOf)(viewDate, 'year');
+  const matrixOptions = {
+    width: width$1,
+    height: height$1,
+    initialDate,
+    shift: shift$1
+  };
+  const monthMatrix = createMatrix(matrixOptions, date => ({
+    date,
+    label: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(date, formatOptions.monthLabel, formatOptions.locale)
+  }));
+  return {
+    months: monthMatrix,
+    monthTitle: '',
+    yearTitle: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(viewDate, formatOptions.yearTitle, formatOptions.locale),
+    hideRightArrow: false,
+    hideLeftArrow: false,
+    disableRightArrow: false,
+    disableLeftArrow: false
+  };
+}
+function flagMonthsCalendar(monthCalendar, options) {
+  monthCalendar.months.forEach((months, rowIndex) => {
+    months.forEach((month, monthIndex) => {
+      let isSelected;
+      const isHovered = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameMonth)(month.date, options.hoveredMonth);
+      const isDisabled = options.isDisabled || isDisabledDate(month.date, options.datesDisabled) || isEnabledDate(month.date, options.datesEnabled, 'month') || isMonthDisabled(month.date, options.minDate, options.maxDate);
+      if (!options.selectedDate && options.selectedRange) {
+        isSelected = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameMonth)(month.date, options.selectedRange[0]);
+        if (!isSelected) {
+          isSelected = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameMonth)(month.date, options.selectedRange[1]);
+        }
+      } else {
+        isSelected = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameMonth)(month.date, options.selectedDate);
+      }
+      const newMonth = Object.assign( /*{},*/month, {
+        isHovered,
+        isDisabled,
+        isSelected
+      });
+      if (month.isHovered !== newMonth.isHovered || month.isDisabled !== newMonth.isDisabled || month.isSelected !== newMonth.isSelected) {
+        monthCalendar.months[rowIndex][monthIndex] = newMonth;
+      }
+    });
+  });
+  // todo: add check for linked calendars
+  monthCalendar.hideLeftArrow = !!options.monthIndex && options.monthIndex > 0 && options.monthIndex !== options.displayMonths;
+  monthCalendar.hideRightArrow = (!!options.monthIndex || options.monthIndex === 0) && (!!options.displayMonths || options.displayMonths === 0) && options.monthIndex < options.displayMonths && options.monthIndex + 1 !== options.displayMonths;
+  monthCalendar.disableLeftArrow = isYearDisabled((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(monthCalendar.months[0][0].date, {
+    year: -1
+  }), options.minDate, options.maxDate);
+  monthCalendar.disableRightArrow = isYearDisabled((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(monthCalendar.months[0][0].date, {
+    year: 1
+  }), options.minDate, options.maxDate);
+  return monthCalendar;
+}
+const height = 4;
+const width = 4;
+const yearsPerCalendar = height * width;
+const initialYearShift = (Math.floor(yearsPerCalendar / 2) - 1) * -1;
+const shift = {
+  year: 1
+};
+function formatYearsCalendar(viewDate, formatOptions, previousInitialDate) {
+  const initialDate = calculateInitialDate(viewDate, previousInitialDate);
+  const matrixOptions = {
+    width,
+    height,
+    initialDate,
+    shift
+  };
+  const yearsMatrix = createMatrix(matrixOptions, date => ({
+    date,
+    label: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(date, formatOptions.yearLabel, formatOptions.locale)
+  }));
+  const yearTitle = formatYearRangeTitle(yearsMatrix, formatOptions);
+  return {
+    years: yearsMatrix,
+    monthTitle: '',
+    yearTitle,
+    hideLeftArrow: false,
+    hideRightArrow: false,
+    disableLeftArrow: false,
+    disableRightArrow: false
+  };
+}
+function calculateInitialDate(viewDate, previousInitialDate) {
+  if (previousInitialDate && viewDate.getFullYear() >= previousInitialDate.getFullYear() && viewDate.getFullYear() < previousInitialDate.getFullYear() + yearsPerCalendar) {
+    return previousInitialDate;
+  }
+  return (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(viewDate, {
+    year: initialYearShift
+  });
+}
+function formatYearRangeTitle(yearsMatrix, formatOptions) {
+  const from = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(yearsMatrix[0][0].date, formatOptions.yearTitle, formatOptions.locale);
+  const to = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(yearsMatrix[height - 1][width - 1].date, formatOptions.yearTitle, formatOptions.locale);
+  return `${from} - ${to}`;
+}
+function flagYearsCalendar(yearsCalendar, options) {
+  yearsCalendar.years.forEach((years, rowIndex) => {
+    years.forEach((year, yearIndex) => {
+      let isSelected;
+      const isHovered = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameYear)(year.date, options.hoveredYear);
+      const isDisabled = options.isDisabled || isDisabledDate(year.date, options.datesDisabled, 'year') || isEnabledDate(year.date, options.datesEnabled, 'year') || isYearDisabled(year.date, options.minDate, options.maxDate);
+      if (!options.selectedDate && options.selectedRange) {
+        isSelected = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameYear)(year.date, options.selectedRange[0]);
+        if (!isSelected) {
+          isSelected = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameYear)(year.date, options.selectedRange[1]);
+        }
+      } else {
+        isSelected = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameYear)(year.date, options.selectedDate);
+      }
+      const newMonth = Object.assign( /*{},*/year, {
+        isHovered,
+        isDisabled,
+        isSelected
+      });
+      if (year.isHovered !== newMonth.isHovered || year.isDisabled !== newMonth.isDisabled || year.isSelected !== newMonth.isSelected) {
+        yearsCalendar.years[rowIndex][yearIndex] = newMonth;
+      }
+    });
+  });
+  // todo: add check for linked calendars
+  yearsCalendar.hideLeftArrow = !!options.yearIndex && options.yearIndex > 0 && options.yearIndex !== options.displayMonths;
+  yearsCalendar.hideRightArrow = !!options.yearIndex && !!options.displayMonths && options.yearIndex < options.displayMonths && options.yearIndex + 1 !== options.displayMonths;
+  yearsCalendar.disableLeftArrow = isYearDisabled((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(yearsCalendar.years[0][0].date, {
+    year: -1
+  }), options.minDate, options.maxDate);
+  const i = yearsCalendar.years.length - 1;
+  const j = yearsCalendar.years[i].length - 1;
+  yearsCalendar.disableRightArrow = isYearDisabled((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(yearsCalendar.years[i][j].date, {
+    year: 1
+  }), options.minDate, options.maxDate);
+  return yearsCalendar;
+}
+function copyTime(sourceDate, time) {
+  if (!sourceDate || !isNaN(sourceDate.getTime())) {
+    return;
+  }
+  sourceDate.setHours(time.getHours());
+  sourceDate.setMinutes(time.getMinutes());
+  sourceDate.setSeconds(time.getSeconds());
+  sourceDate.setMilliseconds(time.getMilliseconds());
+}
+function bsDatepickerReducer(state = initialDatepickerState, action) {
+  switch (action.type) {
+    case BsDatepickerActions.CALCULATE:
+      {
+        return calculateReducer(state);
+      }
+    case BsDatepickerActions.FORMAT:
+      {
+        return formatReducer(state);
+      }
+    case BsDatepickerActions.FLAG:
+      {
+        return flagReducer(state);
+      }
+    case BsDatepickerActions.NAVIGATE_OFFSET:
+      {
+        return navigateOffsetReducer(state, action);
+      }
+    case BsDatepickerActions.NAVIGATE_TO:
+      {
+        const payload = action.payload;
+        if (!state.view || !payload.unit) {
+          return state;
+        }
+        const date = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.setFullDate)(state.view.date, payload.unit);
+        let newState;
+        let mode;
+        if (canSwitchMode(payload.viewMode, state.minMode)) {
+          mode = payload.viewMode;
+          newState = {
+            view: {
+              date,
+              mode
+            }
+          };
+        } else {
+          mode = state.view.mode;
+          newState = {
+            selectedDate: date,
+            view: {
+              date,
+              mode
+            }
+          };
+        }
+        return Object.assign({}, state, newState);
+      }
+    case BsDatepickerActions.CHANGE_VIEWMODE:
+      {
+        if (!canSwitchMode(action.payload, state.minMode) || !state.view) {
+          return state;
+        }
+        const date = state.view.date;
+        const mode = action.payload;
+        const newState = {
+          view: {
+            date,
+            mode
+          }
+        };
+        return Object.assign({}, state, newState);
+      }
+    case BsDatepickerActions.HOVER:
+      {
+        return Object.assign({}, state, {
+          hoveredDate: action.payload
+        });
+      }
+    case BsDatepickerActions.SELECT:
+      {
+        if (!state.view) {
+          return state;
+        }
+        const newState = {
+          selectedDate: action.payload,
+          view: state.view
+        };
+        if (Array.isArray(state.selectedTime)) {
+          const _time = state.selectedTime[0];
+          if (newState.selectedDate && _time) {
+            copyTime(newState.selectedDate, _time);
+          }
+        }
+        const mode = state.view.mode;
+        const _date = action.payload || state.view.date;
+        const date = getViewDate(_date, state.minDate, state.maxDate);
+        newState.view = {
+          mode,
+          date
+        };
+        return Object.assign({}, state, newState);
+      }
+    case BsDatepickerActions.SELECT_TIME:
+      {
+        const {
+          date,
+          index
+        } = action.payload;
+        const selectedTime = state.selectedTime ? [...state.selectedTime] : [];
+        selectedTime[index] = date;
+        return Object.assign({}, state, {
+          selectedTime
+        });
+      }
+    case BsDatepickerActions.SET_OPTIONS:
+      {
+        if (!state.view) {
+          return state;
+        }
+        const newState = action.payload;
+        // preserve view mode
+        const mode = newState.minMode ? newState.minMode : state.view.mode;
+        const _viewDate = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isDateValid)(newState.value) && newState.value || (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isArray)(newState.value) && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isDateValid)(newState.value[0]) && newState.value[0] || state.view.date;
+        const date = getViewDate(_viewDate, newState.minDate, newState.maxDate);
+        newState.view = {
+          mode,
+          date
+        };
+        // update selected value
+        if (newState.value) {
+          // if new value is array we work with date range
+          if ((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isArray)(newState.value)) {
+            newState.selectedRange = newState.value;
+            newState.selectedTime = newState.value.map(i => i);
+          }
+          // if new value is a date -> datepicker
+          if (newState.value instanceof Date) {
+            newState.selectedDate = newState.value;
+            newState.selectedTime = [newState.value];
+          }
+          // provided value is not supported :)
+          // need to report it somehow
+        }
+
+        return Object.assign({}, state, newState);
+      }
+    // date range picker
+    case BsDatepickerActions.SELECT_RANGE:
+      {
+        if (!state.view) {
+          return state;
+        }
+        const newState = {
+          selectedRange: action.payload,
+          view: state.view
+        };
+        newState.selectedRange?.forEach((dte, index) => {
+          if (Array.isArray(state.selectedTime)) {
+            const _time = state.selectedTime[index];
+            if (_time) {
+              copyTime(dte, _time);
+            }
+          }
+        });
+        const mode = state.view.mode;
+        const _date = action.payload && action.payload[0] || state.view.date;
+        const date = getViewDate(_date, state.minDate, state.maxDate);
+        newState.view = {
+          mode,
+          date
+        };
+        return Object.assign({}, state, newState);
+      }
+    case BsDatepickerActions.SET_MIN_DATE:
+      {
+        return Object.assign({}, state, {
+          minDate: action.payload
+        });
+      }
+    case BsDatepickerActions.SET_MAX_DATE:
+      {
+        return Object.assign({}, state, {
+          maxDate: action.payload
+        });
+      }
+    case BsDatepickerActions.SET_IS_DISABLED:
+      {
+        return Object.assign({}, state, {
+          isDisabled: action.payload
+        });
+      }
+    case BsDatepickerActions.SET_DATE_CUSTOM_CLASSES:
+      {
+        return Object.assign({}, state, {
+          dateCustomClasses: action.payload
+        });
+      }
+    case BsDatepickerActions.SET_DATE_TOOLTIP_TEXTS:
+      {
+        return Object.assign({}, state, {
+          dateTooltipTexts: action.payload
+        });
+      }
+    default:
+      return state;
+  }
+}
+function calculateReducer(state) {
+  if (!state.view) {
+    return state;
+  }
+  // how many calendars
+  let displayMonths;
+  if (state.displayOneMonthRange && isDisplayOneMonth(state.view.date, state.minDate, state.maxDate)) {
+    displayMonths = 1;
+  } else {
+    displayMonths = state.displayMonths || 1;
+  }
+  // use selected date on initial rendering if set
+  let viewDate = state.view.date;
+  if (state.view.mode === 'day' && state.monthViewOptions) {
+    if (state.showPreviousMonth && state.selectedRange && state.selectedRange.length === 0) {
+      viewDate = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(viewDate, {
+        month: -1
+      });
+    }
+    state.monthViewOptions.firstDayOfWeek = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getLocale)(state.locale).firstDayOfWeek();
+    let monthsModel = new Array(displayMonths);
+    for (let monthIndex = 0; monthIndex < displayMonths; monthIndex++) {
+      // todo: for unlinked calendars it will be harder
+      monthsModel[monthIndex] = calcDaysCalendar(viewDate, state.monthViewOptions);
+      viewDate = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(viewDate, {
+        month: 1
+      });
+    }
+    // Check if parameter enabled and check if it's not months navigation event
+    if (state.preventChangeToNextMonth && state.flaggedMonths && state.hoveredDate) {
+      const viewMonth = calcDaysCalendar(state.view.date, state.monthViewOptions);
+      // Check if viewed right month same as in flaggedMonths state, then override months model with flaggedMonths
+      if (state.flaggedMonths.length && state.flaggedMonths[1].month.getMonth() === viewMonth.month.getMonth()) {
+        monthsModel = state.flaggedMonths.map(item => {
+          if (state.monthViewOptions) {
+            return calcDaysCalendar(item.month, state.monthViewOptions);
+          }
+          return null;
+        }).filter(item => item !== null);
+      }
+    }
+    return Object.assign({}, state, {
+      monthsModel
+    });
+  }
+  if (state.view.mode === 'month') {
+    const monthsCalendar = new Array(displayMonths);
+    for (let calendarIndex = 0; calendarIndex < displayMonths; calendarIndex++) {
+      // todo: for unlinked calendars it will be harder
+      monthsCalendar[calendarIndex] = formatMonthsCalendar(viewDate, getFormatOptions(state));
+      viewDate = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(viewDate, {
+        year: 1
+      });
+    }
+    return Object.assign({}, state, {
+      monthsCalendar
+    });
+  }
+  if (state.view.mode === 'year') {
+    const yearsCalendarModel = new Array(displayMonths);
+    for (let calendarIndex = 0; calendarIndex < displayMonths; calendarIndex++) {
+      // todo: for unlinked calendars it will be harder
+      yearsCalendarModel[calendarIndex] = formatYearsCalendar(viewDate, getFormatOptions(state), state.minMode === 'year' ? getYearsCalendarInitialDate(state, calendarIndex) : undefined);
+      viewDate = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(viewDate, {
+        year: yearsPerCalendar
+      });
+    }
+    return Object.assign({}, state, {
+      yearsCalendarModel
+    });
+  }
+  return state;
+}
+function formatReducer(state) {
+  if (!state.view) {
+    return state;
+  }
+  if (state.view.mode === 'day' && state.monthsModel) {
+    const formattedMonths = state.monthsModel.map((month, monthIndex) => formatDaysCalendar(month, getFormatOptions(state), monthIndex));
+    return Object.assign({}, state, {
+      formattedMonths
+    });
+  }
+  // how many calendars
+  const displayMonths = state.displayMonths || 1;
+  // check initial rendering
+  // use selected date on initial rendering if set
+  let viewDate = state.view.date;
+  if (state.view.mode === 'month') {
+    const monthsCalendar = new Array(displayMonths);
+    for (let calendarIndex = 0; calendarIndex < displayMonths; calendarIndex++) {
+      // todo: for unlinked calendars it will be harder
+      monthsCalendar[calendarIndex] = formatMonthsCalendar(viewDate, getFormatOptions(state));
+      viewDate = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(viewDate, {
+        year: 1
+      });
+    }
+    return Object.assign({}, state, {
+      monthsCalendar
+    });
+  }
+  if (state.view.mode === 'year') {
+    const yearsCalendarModel = new Array(displayMonths);
+    for (let calendarIndex = 0; calendarIndex < displayMonths; calendarIndex++) {
+      // todo: for unlinked calendars it will be harder
+      yearsCalendarModel[calendarIndex] = formatYearsCalendar(viewDate, getFormatOptions(state));
+      viewDate = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(viewDate, {
+        year: 16
+      });
+    }
+    return Object.assign({}, state, {
+      yearsCalendarModel
+    });
+  }
+  return state;
+}
+function flagReducer(state) {
+  if (!state.view) {
+    return state;
+  }
+  const displayMonths = isDisplayOneMonth(state.view.date, state.minDate, state.maxDate) ? 1 : state.displayMonths;
+  if (state.formattedMonths && state.view.mode === 'day') {
+    const flaggedMonths = state.formattedMonths.map((formattedMonth, monthIndex) => flagDaysCalendar(formattedMonth, {
+      isDisabled: state.isDisabled,
+      minDate: state.minDate,
+      maxDate: state.maxDate,
+      daysDisabled: state.daysDisabled,
+      datesDisabled: state.datesDisabled,
+      datesEnabled: state.datesEnabled,
+      hoveredDate: state.hoveredDate,
+      selectedDate: state.selectedDate,
+      selectedRange: state.selectedRange,
+      displayMonths,
+      dateCustomClasses: state.dateCustomClasses,
+      dateTooltipTexts: state.dateTooltipTexts,
+      monthIndex
+    }));
+    return Object.assign({}, state, {
+      flaggedMonths
+    });
+  }
+  if (state.view.mode === 'month' && state.monthsCalendar) {
+    const flaggedMonthsCalendar = state.monthsCalendar.map((formattedMonth, monthIndex) => flagMonthsCalendar(formattedMonth, {
+      isDisabled: state.isDisabled,
+      minDate: state.minDate,
+      maxDate: state.maxDate,
+      hoveredMonth: state.hoveredMonth,
+      selectedDate: state.selectedDate,
+      datesDisabled: state.datesDisabled,
+      datesEnabled: state.datesEnabled,
+      selectedRange: state.selectedRange,
+      displayMonths,
+      monthIndex
+    }));
+    return Object.assign({}, state, {
+      flaggedMonthsCalendar
+    });
+  }
+  if (state.view.mode === 'year' && state.yearsCalendarModel) {
+    const yearsCalendarFlagged = state.yearsCalendarModel.map((formattedMonth, yearIndex) => flagYearsCalendar(formattedMonth, {
+      isDisabled: state.isDisabled,
+      minDate: state.minDate,
+      maxDate: state.maxDate,
+      hoveredYear: state.hoveredYear,
+      selectedDate: state.selectedDate,
+      datesDisabled: state.datesDisabled,
+      datesEnabled: state.datesEnabled,
+      selectedRange: state.selectedRange,
+      displayMonths,
+      yearIndex
+    }));
+    return Object.assign({}, state, {
+      yearsCalendarFlagged
+    });
+  }
+  return state;
+}
+function navigateOffsetReducer(state, action) {
+  if (!state.view) {
+    return state;
+  }
+  const date = shiftViewDate(state, action);
+  if (!date) {
+    return state;
+  }
+  const newState = {
+    view: {
+      mode: state.view.mode,
+      date
+    }
+  };
+  return Object.assign({}, state, newState);
+}
+function shiftViewDate(state, action) {
+  if (!state.view) {
+    return undefined;
+  }
+  if (state.view.mode === 'year' && state.minMode === 'year') {
+    const initialDate = getYearsCalendarInitialDate(state, 0);
+    if (initialDate) {
+      const middleDate = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(initialDate, {
+        year: -initialYearShift
+      });
+      return (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)(middleDate, action.payload);
+    }
+  }
+  return (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.shiftDate)((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.startOf)(state.view.date, 'month'), action.payload);
+}
+function getFormatOptions(state) {
+  return {
+    locale: state.locale,
+    monthTitle: state.monthTitle,
+    yearTitle: state.yearTitle,
+    dayLabel: state.dayLabel,
+    monthLabel: state.monthLabel,
+    yearLabel: state.yearLabel,
+    weekNumbers: state.weekNumbers
+  };
+}
+/**
+ * if view date is provided (bsValue|ngModel) it should be shown
+ * if view date is not provider:
+ * if minDate>currentDate (default view value), show minDate
+ * if maxDate<currentDate(default view value) show maxDate
+ */
+function getViewDate(viewDate, minDate, maxDate) {
+  const _date = Array.isArray(viewDate) ? viewDate[0] : viewDate;
+  if (minDate && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isAfter)(minDate, _date, 'day')) {
+    return minDate;
+  }
+  if (maxDate && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isBefore)(maxDate, _date, 'day')) {
+    return maxDate;
+  }
+  return _date;
+}
+function isDisplayOneMonth(viewDate, minDate, maxDate) {
+  if (maxDate && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSame)(maxDate, viewDate, 'day')) {
+    return true;
+  }
+  return minDate && maxDate && minDate.getMonth() === maxDate.getMonth();
+}
+class BsDatepickerStore extends ngx_bootstrap_mini_ngrx__WEBPACK_IMPORTED_MODULE_8__.MiniStore {
+  constructor() {
+    const _dispatcher = new rxjs__WEBPACK_IMPORTED_MODULE_3__.BehaviorSubject({
+      type: '[datepicker] dispatcher init'
+    });
+    const state = new ngx_bootstrap_mini_ngrx__WEBPACK_IMPORTED_MODULE_8__.MiniState(initialDatepickerState, _dispatcher, bsDatepickerReducer);
+    super(_dispatcher, bsDatepickerReducer, state);
+  }
+}
+BsDatepickerStore.ɵfac = function BsDatepickerStore_Factory(t) {
+  return new (t || BsDatepickerStore)();
+};
+BsDatepickerStore.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: BsDatepickerStore,
+  factory: BsDatepickerStore.ɵfac,
+  providedIn: 'platform'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerStore, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'platform'
+    }]
+  }], function () {
+    return [];
+  }, null);
+})();
+class BsCustomDatesViewComponent {
+  constructor() {
+    this.onSelect = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+  }
+  selectFromRanges(range) {
+    this.onSelect.emit(range);
+  }
+}
+BsCustomDatesViewComponent.ɵfac = function BsCustomDatesViewComponent_Factory(t) {
+  return new (t || BsCustomDatesViewComponent)();
+};
+BsCustomDatesViewComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsCustomDatesViewComponent,
+  selectors: [["bs-custom-date-view"]],
+  inputs: {
+    ranges: "ranges",
+    selectedRange: "selectedRange",
+    customRangeLabel: "customRangeLabel"
+  },
+  outputs: {
+    onSelect: "onSelect"
+  },
+  decls: 2,
+  vars: 1,
+  consts: [[1, "bs-datepicker-predefined-btns"], ["type", "button", "class", "btn", 3, "selected", "click", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", 3, "click"]],
+  template: function BsCustomDatesViewComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BsCustomDatesViewComponent_button_1_Template, 2, 3, "button", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.ranges);
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgForOf],
+  encapsulation: 2,
+  changeDetection: 0
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsCustomDatesViewComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-custom-date-view',
+      template: `
+    <div class="bs-datepicker-predefined-btns">
+      <button *ngFor="let range of ranges"
+        type="button"
+        class="btn"
+        (click)="selectFromRanges(range)"
+        [class.selected]="range.value === selectedRange">
+        {{ range.label }}
+      </button>
+    </div>
+  `,
+      changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectionStrategy.OnPush
+    }]
+  }], null, {
+    ranges: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    selectedRange: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    customRangeLabel: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    onSelect: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }]
+  });
+})();
+
+/** *************** */
+// events
+/** *************** */
+var BsNavigationDirection;
+(function (BsNavigationDirection) {
+  BsNavigationDirection[BsNavigationDirection["UP"] = 0] = "UP";
+  BsNavigationDirection[BsNavigationDirection["DOWN"] = 1] = "DOWN";
+})(BsNavigationDirection || (BsNavigationDirection = {}));
+class BsCurrentDateViewComponent {}
+BsCurrentDateViewComponent.ɵfac = function BsCurrentDateViewComponent_Factory(t) {
+  return new (t || BsCurrentDateViewComponent)();
+};
+BsCurrentDateViewComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsCurrentDateViewComponent,
+  selectors: [["bs-current-date"]],
+  inputs: {
+    title: "title"
+  },
+  decls: 3,
+  vars: 1,
+  consts: [[1, "current-timedate"]],
+  template: function BsCurrentDateViewComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "span");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.title);
+    }
+  },
+  encapsulation: 2
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsCurrentDateViewComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-current-date',
+      template: `<div class="current-timedate"><span>{{ title }}</span></div>`
+    }]
+  }], null, {
+    title: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }]
+  });
+})();
+class BsTimepickerViewComponent {
+  constructor() {
+    this.ampm = 'ok';
+    this.hours = 0;
+    this.minutes = 0;
+  }
+}
+BsTimepickerViewComponent.ɵfac = function BsTimepickerViewComponent_Factory(t) {
+  return new (t || BsTimepickerViewComponent)();
+};
+BsTimepickerViewComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsTimepickerViewComponent,
+  selectors: [["bs-timepicker"]],
+  decls: 16,
+  vars: 3,
+  consts: [[1, "bs-timepicker-container"], [1, "bs-timepicker-controls"], ["type", "button", 1, "bs-decrease"], ["type", "text", "placeholder", "00", 3, "value"], ["type", "button", 1, "bs-increase"], ["type", "button", 1, "switch-time-format"], ["src", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAABSElEQVQYV3XQPUvDUBQG4HNuagtVqc6KgouCv6GIuIntYBLB9hcIQpLStCAIV7DYmpTcRWcXqZio3Vwc/UCc/QEqfgyKGbr0I7nS1EiHeqYzPO/h5SD0jaxUZjmSLCB+OFb+UFINFwASAEAdpu9gaGXVyAHHFQBkHpKHc6a9dzECvADyY9sqlAMsK9W0jzxDXqeytr3mhQckxSji27TJJ5/rPmIpwJJq3HrtduriYOurv1a4i1p5HnhkG9OFymi0ReoO05cGwb+ayv4dysVygjeFmsP05f8wpZQ8fsdvfmuY9zjWSNqUtgYFVnOVReILYoBFzdQI5/GGFzNHhGbeZnopDGU29sZbscgldmC99w35VOATTycIMMcBXIfpSVGzZhA6C8hh00conln6VQ9TGgV32OEAKQC4DrBq7CJwd0ggR7Vq/rPrfgB+C3sGypY5DAAAAABJRU5ErkJggg==", "alt", ""]],
+  template: function BsTimepickerViewComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "button", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "-");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "input", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "button", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "+");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 1)(8, "button", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "-");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "input", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "button", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "+");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "button", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "img", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", ctx.hours);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", ctx.minutes);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", ctx.ampm, " ");
+    }
+  },
+  encapsulation: 2
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsTimepickerViewComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-timepicker',
+      template: `
+    <div class="bs-timepicker-container">
+      <div class="bs-timepicker-controls">
+        <button class="bs-decrease" type="button">-</button>
+        <input type="text" [value]="hours" placeholder="00">
+        <button class="bs-increase" type="button">+</button>
+      </div>
+      <div class="bs-timepicker-controls">
+        <button class="bs-decrease" type="button">-</button>
+        <input type="text" [value]="minutes" placeholder="00">
+        <button class="bs-increase" type="button">+</button>
+      </div>
+      <button class="switch-time-format" type="button">{{ ampm }}
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAABSElEQVQYV3XQPUvDUBQG4HNuagtVqc6KgouCv6GIuIntYBLB9hcIQpLStCAIV7DYmpTcRWcXqZio3Vwc/UCc/QEqfgyKGbr0I7nS1EiHeqYzPO/h5SD0jaxUZjmSLCB+OFb+UFINFwASAEAdpu9gaGXVyAHHFQBkHpKHc6a9dzECvADyY9sqlAMsK9W0jzxDXqeytr3mhQckxSji27TJJ5/rPmIpwJJq3HrtduriYOurv1a4i1p5HnhkG9OFymi0ReoO05cGwb+ayv4dysVygjeFmsP05f8wpZQ8fsdvfmuY9zjWSNqUtgYFVnOVReILYoBFzdQI5/GGFzNHhGbeZnopDGU29sZbscgldmC99w35VOATTycIMMcBXIfpSVGzZhA6C8hh00conln6VQ9TGgV32OEAKQC4DrBq7CJwd0ggR7Vq/rPrfgB+C3sGypY5DAAAAABJRU5ErkJggg=="
+          alt="">
+      </button>
+    </div>
+  `
+    }]
+  }], null, null);
+})();
+class BsCalendarLayoutComponent {}
+BsCalendarLayoutComponent.ɵfac = function BsCalendarLayoutComponent_Factory(t) {
+  return new (t || BsCalendarLayoutComponent)();
+};
+BsCalendarLayoutComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsCalendarLayoutComponent,
+  selectors: [["bs-calendar-layout"]],
+  ngContentSelectors: _c1,
+  decls: 6,
+  vars: 2,
+  consts: [["title", "hey there", 4, "ngIf"], [1, "bs-datepicker-head"], [1, "bs-datepicker-body"], [4, "ngIf"], ["title", "hey there"]],
+  template: function BsCalendarLayoutComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, BsCalendarLayoutComponent_bs_current_date_0_Template, 1, 0, "bs-current-date", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](4, 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BsCalendarLayoutComponent_bs_timepicker_5_Template, 1, 0, "bs-timepicker", 3);
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", false);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", false);
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgIf, BsCurrentDateViewComponent, BsTimepickerViewComponent],
+  encapsulation: 2
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsCalendarLayoutComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-calendar-layout',
+      template: `
+    <!-- current date, will be added in nearest releases -->
+    <bs-current-date title="hey there" *ngIf="false"></bs-current-date>
+
+    <!--navigation-->
+    <div class="bs-datepicker-head">
+      <ng-content select="bs-datepicker-navigation-view"></ng-content>
+    </div>
+
+    <div class="bs-datepicker-body">
+      <ng-content></ng-content>
+    </div>
+
+    <!--timepicker-->
+    <bs-timepicker *ngIf="false"></bs-timepicker>
+  `
+    }]
+  }], null, null);
+})();
+class BsDatepickerDayDecoratorComponent {
+  constructor(_config, _elRef, _renderer) {
+    this._config = _config;
+    this._elRef = _elRef;
+    this._renderer = _renderer;
+    this.day = {
+      date: new Date(),
+      label: ''
+    };
+  }
+  ngOnInit() {
+    if (this.day?.isToday && this._config && this._config.customTodayClass) {
+      this._renderer.addClass(this._elRef.nativeElement, this._config.customTodayClass);
+    }
+    if (typeof this.day?.customClasses === 'string') {
+      this.day?.customClasses.split(' ').filter(className => className).forEach(className => {
+        this._renderer.addClass(this._elRef.nativeElement, className);
+      });
+    }
+  }
+}
+BsDatepickerDayDecoratorComponent.ɵfac = function BsDatepickerDayDecoratorComponent_Factory(t) {
+  return new (t || BsDatepickerDayDecoratorComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2));
+};
+BsDatepickerDayDecoratorComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsDatepickerDayDecoratorComponent,
+  selectors: [["", "bsDatepickerDayDecorator", ""]],
+  hostVars: 16,
+  hostBindings: function BsDatepickerDayDecoratorComponent_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", ctx.day.isDisabled)("is-highlighted", ctx.day.isHovered)("is-other-month", ctx.day.isOtherMonth)("is-active-other-month", ctx.day.isOtherMonthHovered)("in-range", ctx.day.isInRange)("select-start", ctx.day.isSelectionStart)("select-end", ctx.day.isSelectionEnd)("selected", ctx.day.isSelected);
+    }
+  },
+  inputs: {
+    day: "day"
+  },
+  attrs: _c2,
+  decls: 1,
+  vars: 1,
+  template: function BsDatepickerDayDecoratorComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0);
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.day && ctx.day.label || "");
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerDayDecoratorComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: '[bsDatepickerDayDecorator]',
+      changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectionStrategy.OnPush,
+      host: {
+        '[class.disabled]': 'day.isDisabled',
+        '[class.is-highlighted]': 'day.isHovered',
+        '[class.is-other-month]': 'day.isOtherMonth',
+        '[class.is-active-other-month]': 'day.isOtherMonthHovered',
+        '[class.in-range]': 'day.isInRange',
+        '[class.select-start]': 'day.isSelectionStart',
+        '[class.select-end]': 'day.isSelectionEnd',
+        '[class.selected]': 'day.isSelected'
+      },
+      template: `{{ day && day.label || '' }}`
+    }]
+  }], function () {
+    return [{
+      type: BsDatepickerConfig
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }];
+  }, {
+    day: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }]
+  });
+})();
+class BsDatepickerNavigationViewComponent {
+  constructor() {
+    this.isDisabled = false;
+    this.onNavigate = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onViewMode = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+  }
+  navTo(down) {
+    this.onNavigate.emit(down ? BsNavigationDirection.DOWN : BsNavigationDirection.UP);
+  }
+  view(viewMode) {
+    if (this.isDisabled) {
+      return;
+    }
+    this.onViewMode.emit(viewMode);
+  }
+}
+BsDatepickerNavigationViewComponent.ɵfac = function BsDatepickerNavigationViewComponent_Factory(t) {
+  return new (t || BsDatepickerNavigationViewComponent)();
+};
+BsDatepickerNavigationViewComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsDatepickerNavigationViewComponent,
+  selectors: [["bs-datepicker-navigation-view"]],
+  inputs: {
+    calendar: "calendar",
+    isDisabled: "isDisabled"
+  },
+  outputs: {
+    onNavigate: "onNavigate",
+    onViewMode: "onViewMode"
+  },
+  decls: 12,
+  vars: 9,
+  consts: [["type", "button", 1, "previous", 3, "disabled", "click"], [4, "ngIf"], ["type", "button", 1, "current", 3, "disabled", "click"], ["type", "button", 1, "next", 3, "disabled", "click"]],
+  template: function BsDatepickerNavigationViewComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDatepickerNavigationViewComponent_Template_button_click_0_listener() {
+        return ctx.navTo(true);
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "\u2039");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, BsDatepickerNavigationViewComponent_ng_container_3_Template, 5, 2, "ng-container", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " \u200B ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "button", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDatepickerNavigationViewComponent_Template_button_click_5_listener() {
+        return ctx.view("year");
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "span");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " \u200B ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "button", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDatepickerNavigationViewComponent_Template_button_click_9_listener() {
+        return ctx.navTo(false);
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "\u203A");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("visibility", ctx.calendar.hideLeftArrow ? "hidden" : "visible");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.calendar.disableLeftArrow);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.calendar && ctx.calendar.monthTitle);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.isDisabled);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.calendar.yearTitle);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("visibility", ctx.calendar.hideRightArrow ? "hidden" : "visible");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.calendar.disableRightArrow);
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgIf],
+  encapsulation: 2,
+  changeDetection: 0
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerNavigationViewComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-datepicker-navigation-view',
+      changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectionStrategy.OnPush,
+      template: `
+    <button class="previous"
+            [disabled]="calendar.disableLeftArrow"
+            [style.visibility]="calendar.hideLeftArrow ? 'hidden' : 'visible'"
+            type="button"
+            (click)="navTo(true)">
+      <span>&lsaquo;</span>
+    </button>
+
+    <ng-container *ngIf="calendar && calendar.monthTitle">
+      &#8203;  <!-- zero-width space needed for correct alignment
+                  with preserveWhitespaces: false in Angular -->
+
+      <button class="current"
+            type="button"
+              (click)="view('month')"
+              [disabled]="isDisabled"
+      ><span>{{ calendar.monthTitle }}</span>
+      </button>
+    </ng-container>
+
+    &#8203;  <!-- zero-width space needed for correct alignment
+                  with preserveWhitespaces: false in Angular -->
+
+    <button
+      class="current"
+      (click)="view('year')"
+      type="button"
+      [disabled]="isDisabled"
+    >
+      <span>{{ calendar.yearTitle }}</span>
+    </button>
+
+    &#8203;  <!-- zero-width space needed for correct alignment
+                  with preserveWhitespaces: false in Angular -->
+
+    <button class="next"
+            [disabled]="calendar.disableRightArrow"
+            [style.visibility]="calendar.hideRightArrow ? 'hidden' : 'visible'"
+            type="button"
+            (click)="navTo(false)"><span>&rsaquo;</span>
+    </button>
+  `
+    }]
+  }], null, {
+    calendar: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    isDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    onNavigate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onViewMode: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }]
+  });
+})();
+class BsDaysCalendarViewComponent {
+  constructor(_config) {
+    this._config = _config;
+    this.onNavigate = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onViewMode = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onSelect = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onHover = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onHoverWeek = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.isiOS = /iPad|iPhone|iPod/.test(navigator.platform) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+    if (this._config.dateTooltipTexts && this._config.dateTooltipTexts.length > 0) {
+      this.isShowTooltip = true;
+    }
+  }
+  navigateTo(event) {
+    const step = BsNavigationDirection.DOWN === event ? -1 : 1;
+    this.onNavigate.emit({
+      step: {
+        month: step
+      }
+    });
+  }
+  changeViewMode(event) {
+    this.onViewMode.emit(event);
+  }
+  selectDay(event) {
+    this.onSelect.emit(event);
+  }
+  selectWeek(week) {
+    if (!this._config.selectWeek && !this._config.selectWeekDateRange) {
+      return;
+    }
+    if (week.days.length === 0) {
+      return;
+    }
+    if (this._config.selectWeek && week.days[0] && !week.days[0].isDisabled && this._config.selectFromOtherMonth) {
+      this.onSelect.emit(week.days[0]);
+      return;
+    }
+    const selectedDay = week.days.find(day => {
+      return this._config.selectFromOtherMonth ? !day.isDisabled : !day.isOtherMonth && !day.isDisabled;
+    });
+    this.onSelect.emit(selectedDay);
+    if (this._config.selectWeekDateRange) {
+      const days = week.days.slice(0);
+      const lastDayOfRange = days.reverse().find(day => {
+        return this._config.selectFromOtherMonth ? !day.isDisabled : !day.isOtherMonth && !day.isDisabled;
+      });
+      this.onSelect.emit(lastDayOfRange);
+    }
+  }
+  weekHoverHandler(cell, isHovered) {
+    if (!this._config.selectWeek && !this._config.selectWeekDateRange) {
+      return;
+    }
+    const hasActiveDays = cell.days.find(day => {
+      return this._config.selectFromOtherMonth ? !day.isDisabled : !day.isOtherMonth && !day.isDisabled;
+    });
+    if (hasActiveDays) {
+      cell.isHovered = isHovered;
+      this.isWeekHovered = isHovered;
+      this.onHoverWeek.emit(cell);
+    }
+  }
+  hoverDay(cell, isHovered) {
+    if (this._config.selectFromOtherMonth && cell.isOtherMonth) {
+      cell.isOtherMonthHovered = isHovered;
+    }
+    if (this._config.dateTooltipTexts) {
+      cell.tooltipText = '';
+      this._config.dateTooltipTexts.forEach(dateData => {
+        if ((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isSameDay)(dateData.date, cell.date)) {
+          cell.tooltipText = dateData.tooltipText;
+          return;
+        }
+      });
+    }
+    this.onHover.emit({
+      cell,
+      isHovered
+    });
+  }
+}
+BsDaysCalendarViewComponent.ɵfac = function BsDaysCalendarViewComponent_Factory(t) {
+  return new (t || BsDaysCalendarViewComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerConfig));
+};
+BsDaysCalendarViewComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsDaysCalendarViewComponent,
+  selectors: [["bs-days-calendar-view"]],
+  inputs: {
+    calendar: "calendar",
+    options: "options",
+    isDisabled: "isDisabled"
+  },
+  outputs: {
+    onNavigate: "onNavigate",
+    onViewMode: "onViewMode",
+    onSelect: "onSelect",
+    onHover: "onHover",
+    onHoverWeek: "onHoverWeek"
+  },
+  decls: 9,
+  vars: 5,
+  consts: [[3, "calendar", "isDisabled", "onNavigate", "onViewMode"], ["role", "grid", 1, "days", "weeks"], [4, "ngIf"], ["aria-label", "weekday", 4, "ngFor", "ngForOf"], [4, "ngFor", "ngForOf"], ["aria-label", "weekday"], ["class", "week", 3, "active-week", 4, "ngIf"], ["role", "gridcell", 4, "ngFor", "ngForOf"], [1, "week"], [3, "click", 4, "ngIf"], [3, "click", "mouseenter", "mouseleave", 4, "ngIf"], [3, "click"], [3, "click", "mouseenter", "mouseleave"], ["role", "gridcell"], ["bsDatepickerDayDecorator", "", 3, "day", "tooltip", "click", "mouseenter", "mouseleave", 4, "ngIf"], ["bsDatepickerDayDecorator", "", 3, "day", "click", "mouseenter", "mouseleave", 4, "ngIf"], ["bsDatepickerDayDecorator", "", 3, "day", "click", 4, "ngIf"], ["bsDatepickerDayDecorator", "", 3, "day", "tooltip", "click", "mouseenter", "mouseleave"], ["bsDatepickerDayDecorator", "", 3, "day", "click", "mouseenter", "mouseleave"], ["bsDatepickerDayDecorator", "", 3, "day", "click"]],
+  template: function BsDaysCalendarViewComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-calendar-layout")(1, "bs-datepicker-navigation-view", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsDaysCalendarViewComponent_Template_bs_datepicker_navigation_view_onNavigate_1_listener($event) {
+        return ctx.navigateTo($event);
+      })("onViewMode", function BsDaysCalendarViewComponent_Template_bs_datepicker_navigation_view_onViewMode_1_listener($event) {
+        return ctx.changeViewMode($event);
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "table", 1)(3, "thead")(4, "tr");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BsDaysCalendarViewComponent_th_5_Template, 1, 0, "th", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, BsDaysCalendarViewComponent_th_6_Template, 2, 1, "th", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "tbody");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, BsDaysCalendarViewComponent_tr_8_Template, 3, 2, "tr", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", ctx.calendar)("isDisabled", !!ctx.isDisabled);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.options && ctx.options.showWeekNumbers);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.calendar.weekdays);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.calendar.weeks);
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgIf, ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_10__.TooltipDirective, BsCalendarLayoutComponent, BsDatepickerDayDecoratorComponent, BsDatepickerNavigationViewComponent],
+  encapsulation: 2
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDaysCalendarViewComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-days-calendar-view',
+      // changeDetection: ChangeDetectionStrategy.OnPush,
+      template: `
+    <bs-calendar-layout>
+      <bs-datepicker-navigation-view
+        [calendar]="calendar"
+        [isDisabled]="!!isDisabled"
+        (onNavigate)="navigateTo($event)"
+        (onViewMode)="changeViewMode($event)"
+      ></bs-datepicker-navigation-view>
+      <!--days matrix-->
+      <table role="grid" class="days weeks">
+        <thead>
+        <tr>
+          <!--if show weeks-->
+          <th *ngIf="options && options.showWeekNumbers"></th>
+          <th *ngFor="let weekday of calendar.weekdays; let i = index"
+              aria-label="weekday">{{ calendar.weekdays[i] }}
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let week of calendar.weeks; let i = index">
+          <td class="week" [class.active-week]="isWeekHovered"  *ngIf="options && options.showWeekNumbers">
+            <span *ngIf="isiOS" (click)="selectWeek(week)">{{ calendar.weekNumbers[i] }}</span>
+            <span *ngIf="!isiOS"
+                (click)="selectWeek(week)"
+                (mouseenter)="weekHoverHandler(week, true)"
+                (mouseleave)="weekHoverHandler(week, false)">{{ calendar.weekNumbers[i] }}</span>
+          </td>
+          <td *ngFor="let day of week.days" role="gridcell">
+
+            <!-- When we want to show tooltips for dates -->
+            <span *ngIf="!isiOS && isShowTooltip" bsDatepickerDayDecorator
+                [day]="day"
+                (click)="selectDay(day)"
+                tooltip="{{day.tooltipText}}"
+                (mouseenter)="hoverDay(day, true)"
+                (mouseleave)="hoverDay(day, false)">{{ day.label }} 3</span>
+            <!-- When tooltips for dates are disabled -->
+            <span *ngIf="!isiOS && !isShowTooltip" bsDatepickerDayDecorator
+                  [day]="day"
+                  (click)="selectDay(day)"
+                  (mouseenter)="hoverDay(day, true)"
+                  (mouseleave)="hoverDay(day, false)">{{ day.label }} 2</span>
+
+            <!-- For mobile iOS view, tooltips are not needed -->
+            <span *ngIf="isiOS" bsDatepickerDayDecorator
+                  [day]="day"
+                  (click)="selectDay(day)">{{ day.label }} 1</span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+    </bs-calendar-layout>
+  `
+    }]
+  }], function () {
+    return [{
+      type: BsDatepickerConfig
+    }];
+  }, {
+    calendar: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    options: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    isDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    onNavigate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onViewMode: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onSelect: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onHover: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onHoverWeek: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }]
+  });
+})();
+class BsMonthCalendarViewComponent {
+  constructor() {
+    this.onNavigate = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onViewMode = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onSelect = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onHover = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+  }
+  navigateTo(event) {
+    const step = BsNavigationDirection.DOWN === event ? -1 : 1;
+    this.onNavigate.emit({
+      step: {
+        year: step
+      }
+    });
+  }
+  viewMonth(month) {
+    this.onSelect.emit(month);
+  }
+  hoverMonth(cell, isHovered) {
+    this.onHover.emit({
+      cell,
+      isHovered
+    });
+  }
+  changeViewMode(event) {
+    this.onViewMode.emit(event);
+  }
+}
+BsMonthCalendarViewComponent.ɵfac = function BsMonthCalendarViewComponent_Factory(t) {
+  return new (t || BsMonthCalendarViewComponent)();
+};
+BsMonthCalendarViewComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsMonthCalendarViewComponent,
+  selectors: [["bs-month-calendar-view"]],
+  inputs: {
+    calendar: "calendar"
+  },
+  outputs: {
+    onNavigate: "onNavigate",
+    onViewMode: "onViewMode",
+    onSelect: "onSelect",
+    onHover: "onHover"
+  },
+  decls: 5,
+  vars: 2,
+  consts: [[3, "calendar", "onNavigate", "onViewMode"], ["role", "grid", 1, "months"], [4, "ngFor", "ngForOf"], ["role", "gridcell", 3, "disabled", "is-highlighted", "click", "mouseenter", "mouseleave", 4, "ngFor", "ngForOf"], ["role", "gridcell", 3, "click", "mouseenter", "mouseleave"]],
+  template: function BsMonthCalendarViewComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-calendar-layout")(1, "bs-datepicker-navigation-view", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsMonthCalendarViewComponent_Template_bs_datepicker_navigation_view_onNavigate_1_listener($event) {
+        return ctx.navigateTo($event);
+      })("onViewMode", function BsMonthCalendarViewComponent_Template_bs_datepicker_navigation_view_onViewMode_1_listener($event) {
+        return ctx.changeViewMode($event);
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "table", 1)(3, "tbody");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BsMonthCalendarViewComponent_tr_4_Template, 2, 1, "tr", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", ctx.calendar);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.calendar == null ? null : ctx.calendar.months);
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgForOf, BsCalendarLayoutComponent, BsDatepickerNavigationViewComponent],
+  encapsulation: 2
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsMonthCalendarViewComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-month-calendar-view',
+      template: `
+    <bs-calendar-layout>
+      <bs-datepicker-navigation-view
+        [calendar]="calendar"
+        (onNavigate)="navigateTo($event)"
+        (onViewMode)="changeViewMode($event)"
+      ></bs-datepicker-navigation-view>
+
+      <table role="grid" class="months">
+        <tbody>
+        <tr *ngFor="let row of calendar?.months">
+          <td *ngFor="let month of row" role="gridcell"
+              (click)="viewMonth(month)"
+              (mouseenter)="hoverMonth(month, true)"
+              (mouseleave)="hoverMonth(month, false)"
+              [class.disabled]="month.isDisabled"
+              [class.is-highlighted]="month.isHovered">
+            <span [class.selected]="month.isSelected">{{ month.label }}</span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </bs-calendar-layout>
+  `
+    }]
+  }], null, {
+    calendar: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    onNavigate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onViewMode: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onSelect: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onHover: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }]
+  });
+})();
+class BsYearsCalendarViewComponent {
+  constructor() {
+    this.onNavigate = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onViewMode = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onSelect = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.onHover = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+  }
+  navigateTo(event) {
+    const step = BsNavigationDirection.DOWN === event ? -1 : 1;
+    this.onNavigate.emit({
+      step: {
+        year: step * yearsPerCalendar
+      }
+    });
+  }
+  viewYear(year) {
+    this.onSelect.emit(year);
+  }
+  hoverYear(cell, isHovered) {
+    this.onHover.emit({
+      cell,
+      isHovered
+    });
+  }
+  changeViewMode(event) {
+    this.onViewMode.emit(event);
+  }
+}
+BsYearsCalendarViewComponent.ɵfac = function BsYearsCalendarViewComponent_Factory(t) {
+  return new (t || BsYearsCalendarViewComponent)();
+};
+BsYearsCalendarViewComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsYearsCalendarViewComponent,
+  selectors: [["bs-years-calendar-view"]],
+  inputs: {
+    calendar: "calendar"
+  },
+  outputs: {
+    onNavigate: "onNavigate",
+    onViewMode: "onViewMode",
+    onSelect: "onSelect",
+    onHover: "onHover"
+  },
+  decls: 5,
+  vars: 2,
+  consts: [[3, "calendar", "onNavigate", "onViewMode"], ["role", "grid", 1, "years"], [4, "ngFor", "ngForOf"], ["role", "gridcell", 3, "disabled", "is-highlighted", "click", "mouseenter", "mouseleave", 4, "ngFor", "ngForOf"], ["role", "gridcell", 3, "click", "mouseenter", "mouseleave"]],
+  template: function BsYearsCalendarViewComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "bs-calendar-layout")(1, "bs-datepicker-navigation-view", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onNavigate", function BsYearsCalendarViewComponent_Template_bs_datepicker_navigation_view_onNavigate_1_listener($event) {
+        return ctx.navigateTo($event);
+      })("onViewMode", function BsYearsCalendarViewComponent_Template_bs_datepicker_navigation_view_onViewMode_1_listener($event) {
+        return ctx.changeViewMode($event);
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "table", 1)(3, "tbody");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BsYearsCalendarViewComponent_tr_4_Template, 2, 1, "tr", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("calendar", ctx.calendar);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.calendar == null ? null : ctx.calendar.years);
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgForOf, BsCalendarLayoutComponent, BsDatepickerNavigationViewComponent],
+  encapsulation: 2
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsYearsCalendarViewComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-years-calendar-view',
+      template: `
+    <bs-calendar-layout>
+      <bs-datepicker-navigation-view
+        [calendar]="calendar"
+        (onNavigate)="navigateTo($event)"
+        (onViewMode)="changeViewMode($event)"
+      ></bs-datepicker-navigation-view>
+
+      <table role="grid" class="years">
+        <tbody>
+        <tr *ngFor="let row of calendar?.years">
+          <td *ngFor="let year of row" role="gridcell"
+              (click)="viewYear(year)"
+              (mouseenter)="hoverYear(year, true)"
+              (mouseleave)="hoverYear(year, false)"
+              [class.disabled]="year.isDisabled"
+              [class.is-highlighted]="year.isHovered">
+            <span [class.selected]="year.isSelected">{{ year.label }}</span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </bs-calendar-layout>
+  `
+    }]
+  }], null, {
+    calendar: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    onNavigate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onViewMode: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onSelect: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onHover: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }]
+  });
+})();
+class BsDatepickerContainerComponent extends BsDatepickerAbstractComponent {
+  constructor(_renderer, _config, _store, _element, _actions, _effects, _positionService) {
+    super();
+    this._config = _config;
+    this._store = _store;
+    this._element = _element;
+    this._actions = _actions;
+    this._positionService = _positionService;
+    this.valueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.animationState = 'void';
+    this.isRangePicker = false;
+    this._subs = [];
+    this._effects = _effects;
+    _renderer.setStyle(_element.nativeElement, 'display', 'block');
+    _renderer.setStyle(_element.nativeElement, 'position', 'absolute');
+  }
+  set value(value) {
+    this._effects?.setValue(value);
+  }
+  get isDatePickerDisabled() {
+    return !!this._config.isDisabled;
+  }
+  get isDatepickerDisabled() {
+    return this.isDatePickerDisabled ? '' : null;
+  }
+  get isDatepickerReadonly() {
+    return this.isDatePickerDisabled ? '' : null;
+  }
+  ngOnInit() {
+    this._positionService.setOptions({
+      modifiers: {
+        flip: {
+          enabled: this._config.adaptivePosition
+        },
+        preventOverflow: {
+          enabled: this._config.adaptivePosition
+        }
+      },
+      allowedPositions: this._config.allowedPositions
+    });
+    this._positionService.event$?.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.take)(1)).subscribe(() => {
+      this._positionService.disable();
+      if (this._config.isAnimated) {
+        this.animationState = this.isTopPosition ? 'animated-up' : 'animated-down';
+        return;
+      }
+      this.animationState = 'unanimated';
+    });
+    this.isOtherMonthsActive = this._config.selectFromOtherMonth;
+    this.containerClass = this._config.containerClass;
+    this.showTodayBtn = this._config.showTodayButton;
+    this.todayBtnLbl = this._config.todayButtonLabel;
+    this.todayPos = this._config.todayPosition;
+    this.showClearBtn = this._config.showClearButton;
+    this.clearBtnLbl = this._config.clearButtonLabel;
+    this.clearPos = this._config.clearPosition;
+    this.customRangeBtnLbl = this._config.customRangeButtonLabel;
+    this.withTimepicker = this._config.withTimepicker;
+    this._effects?.init(this._store)
+    // intial state options
+    .setOptions(this._config)
+    // data binding view --> model
+    .setBindings(this)
+    // set event handlers
+    .setEventHandlers(this).registerDatepickerSideEffects();
+    let currentDate;
+    // todo: move it somewhere else
+    // on selected date change
+    this._subs.push(this._store.select(state => state.selectedDate).subscribe(date => {
+      currentDate = date;
+      this.valueChange.emit(date);
+    }));
+    this._subs.push(this._store.select(state => state.selectedTime).subscribe(time => {
+      if (!time[0] || !(time[0] instanceof Date) || time[0] === currentDate) {
+        return;
+      }
+      this.valueChange.emit(time[0]);
+    }));
+    this._store.dispatch(this._actions.changeViewMode(this._config.startView));
+  }
+  ngAfterViewInit() {
+    this.selectedTimeSub.add(this.selectedTime?.subscribe(val => {
+      if (Array.isArray(val) && val.length >= 1) {
+        this.startTimepicker?.writeValue(val[0]);
+      }
+    }));
+    this.startTimepicker?.registerOnChange(val => {
+      this.timeSelectHandler(val, 0);
+    });
+  }
+  get isTopPosition() {
+    return this._element.nativeElement.classList.contains('top');
+  }
+  positionServiceEnable() {
+    this._positionService.enable();
+  }
+  timeSelectHandler(date, index) {
+    this._store.dispatch(this._actions.selectTime(date, index));
+  }
+  daySelectHandler(day) {
+    if (!day) {
+      return;
+    }
+    const isDisabled = this.isOtherMonthsActive ? day.isDisabled : day.isOtherMonth || day.isDisabled;
+    if (isDisabled) {
+      return;
+    }
+    this._store.dispatch(this._actions.select(day.date));
+  }
+  monthSelectHandler(day) {
+    if (!day || day.isDisabled) {
+      return;
+    }
+    this._store.dispatch(this._actions.navigateTo({
+      unit: {
+        month: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getMonth)(day.date),
+        year: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getFullYear)(day.date)
+      },
+      viewMode: 'day'
+    }));
+  }
+  yearSelectHandler(day) {
+    if (!day || day.isDisabled) {
+      return;
+    }
+    this._store.dispatch(this._actions.navigateTo({
+      unit: {
+        year: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getFullYear)(day.date)
+      },
+      viewMode: 'month'
+    }));
+  }
+  setToday() {
+    this._store.dispatch(this._actions.select(new Date()));
+  }
+  clearDate() {
+    this._store.dispatch(this._actions.select(undefined));
+  }
+  ngOnDestroy() {
+    for (const sub of this._subs) {
+      sub.unsubscribe();
+    }
+    this.selectedTimeSub.unsubscribe();
+    this._effects?.destroy();
+  }
+}
+BsDatepickerContainerComponent.ɵfac = function BsDatepickerContainerComponent_Factory(t) {
+  return new (t || BsDatepickerContainerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerStore), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerActions), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerEffects), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_12__.PositioningService));
+};
+BsDatepickerContainerComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsDatepickerContainerComponent,
+  selectors: [["bs-datepicker-container"]],
+  viewQuery: function BsDatepickerContainerComponent_Query(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c3, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.startTimepicker = _t.first);
+    }
+  },
+  hostAttrs: ["role", "dialog", "aria-label", "calendar", 1, "bottom"],
+  hostVars: 2,
+  hostBindings: function BsDatepickerContainerComponent_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDatepickerContainerComponent_click_HostBindingHandler($event) {
+        return ctx._stopPropagation($event);
+      });
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("disabled", ctx.isDatepickerDisabled)("readonly", ctx.isDatepickerReadonly);
+    }
+  },
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([BsDatepickerStore, BsDatepickerEffects]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]],
+  decls: 2,
+  vars: 3,
+  consts: [["class", "bs-datepicker", 3, "ngClass", 4, "ngIf"], [1, "bs-datepicker", 3, "ngClass"], [1, "bs-datepicker-container"], ["role", "application", 1, "bs-calendar-container", 3, "ngSwitch"], [4, "ngSwitchCase"], ["class", "bs-media-container", 4, "ngSwitchCase"], ["class", "bs-datepicker-buttons", 4, "ngIf"], ["class", "bs-datepicker-custom-range", 4, "ngIf"], [1, "bs-media-container"], [3, "bs-datepicker-multiple", "calendar", "isDisabled", "options", "onNavigate", "onViewMode", "onHover", "onHoverWeek", "onSelect", 4, "ngFor", "ngForOf"], ["class", "bs-timepicker-in-datepicker-container", 4, "ngIf"], [3, "calendar", "isDisabled", "options", "onNavigate", "onViewMode", "onHover", "onHoverWeek", "onSelect"], [1, "bs-timepicker-in-datepicker-container"], [3, "disabled"], ["startTP", ""], [3, "disabled", 4, "ngIf"], ["endTP", ""], [3, "bs-datepicker-multiple", "calendar", "onNavigate", "onViewMode", "onHover", "onSelect", 4, "ngFor", "ngForOf"], [3, "calendar", "onNavigate", "onViewMode", "onHover", "onSelect"], [1, "bs-datepicker-buttons"], ["type", "button", 1, "btn", "btn-success"], ["type", "button", 1, "btn", "btn-default"], ["class", "btn-today-wrapper", 3, "today-left", "today-right", "today-center", 4, "ngIf"], ["class", "btn-clear-wrapper", 3, "clear-left", "clear-right", "clear-center", 4, "ngIf"], [1, "btn-today-wrapper"], [1, "btn", "btn-success", 3, "click"], [1, "btn-clear-wrapper"], [1, "bs-datepicker-custom-range"], [3, "selectedRange", "ranges", "customRangeLabel", "onSelect"]],
+  template: function BsDatepickerContainerComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, BsDatepickerContainerComponent_div_0_Template, 10, 11, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "async");
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](1, 1, ctx.viewMode));
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgSwitch, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgSwitchCase, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_13__.TimepickerComponent, BsCustomDatesViewComponent, BsDaysCalendarViewComponent, BsMonthCalendarViewComponent, BsYearsCalendarViewComponent, _angular_common__WEBPACK_IMPORTED_MODULE_9__.AsyncPipe],
+  encapsulation: 2,
+  data: {
+    animation: [datepickerAnimation]
+  }
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerContainerComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-datepicker-container',
+      providers: [BsDatepickerStore, BsDatepickerEffects],
+      host: {
+        class: 'bottom',
+        '(click)': '_stopPropagation($event)',
+        role: 'dialog',
+        'aria-label': 'calendar'
+      },
+      animations: [datepickerAnimation],
+      template: "<!-- days calendar view mode -->\n<div class=\"bs-datepicker\" [ngClass]=\"containerClass\" *ngIf=\"viewMode | async\">\n  <div class=\"bs-datepicker-container\"\n    [@datepickerAnimation]=\"animationState\"\n    (@datepickerAnimation.done)=\"positionServiceEnable()\">\n    <!--calendars-->\n    <div class=\"bs-calendar-container\" [ngSwitch]=\"viewMode | async\" role=\"application\">\n      <!--days calendar-->\n      <ng-container *ngSwitchCase=\"'day'\">\n        <div class=\"bs-media-container\">\n          <bs-days-calendar-view\n            *ngFor=\"let calendar of daysCalendar$ | async\"\n            [class.bs-datepicker-multiple]=\"multipleCalendars\"\n            [calendar]=\"calendar\"\n            [isDisabled]=\"isDatePickerDisabled\"\n            [options]=\"options$ | async\"\n            (onNavigate)=\"navigateTo($event)\"\n            (onViewMode)=\"setViewMode($event)\"\n            (onHover)=\"dayHoverHandler($event)\"\n            (onHoverWeek)=\"weekHoverHandler($event)\"\n            (onSelect)=\"daySelectHandler($event)\">\n          </bs-days-calendar-view>\n        </div>\n        <div *ngIf=\"withTimepicker\" class=\"bs-timepicker-in-datepicker-container\">\n          <timepicker #startTP [disabled]=\"isDatePickerDisabled\"></timepicker>\n          <timepicker #endTP *ngIf=\"isRangePicker\" [disabled]=\"isDatePickerDisabled\"></timepicker>\n        </div>\n      </ng-container>\n\n      <!--months calendar-->\n      <div *ngSwitchCase=\"'month'\" class=\"bs-media-container\">\n        <bs-month-calendar-view\n          *ngFor=\"let calendar of monthsCalendar | async\"\n          [class.bs-datepicker-multiple]=\"multipleCalendars\"\n          [calendar]=\"calendar\"\n          (onNavigate)=\"navigateTo($event)\"\n          (onViewMode)=\"setViewMode($event)\"\n          (onHover)=\"monthHoverHandler($event)\"\n          (onSelect)=\"monthSelectHandler($event)\">\n        </bs-month-calendar-view>\n      </div>\n\n      <!--years calendar-->\n      <div *ngSwitchCase=\"'year'\" class=\"bs-media-container\">\n        <bs-years-calendar-view\n          *ngFor=\"let calendar of yearsCalendar | async\"\n          [class.bs-datepicker-multiple]=\"multipleCalendars\"\n          [calendar]=\"calendar\"\n          (onNavigate)=\"navigateTo($event)\"\n          (onViewMode)=\"setViewMode($event)\"\n          (onHover)=\"yearHoverHandler($event)\"\n          (onSelect)=\"yearSelectHandler($event)\">\n        </bs-years-calendar-view>\n      </div>\n    </div>\n\n    <!--applycancel buttons-->\n    <div class=\"bs-datepicker-buttons\" *ngIf=\"false\">\n      <button class=\"btn btn-success\" type=\"button\">Apply</button>\n      <button class=\"btn btn-default\" type=\"button\">Cancel</button>\n    </div>\n\n    <div class=\"bs-datepicker-buttons\" *ngIf=\"showTodayBtn || showClearBtn\">\n      <div class=\"btn-today-wrapper\"\n           [class.today-left]=\"todayPos === 'left'\"\n           [class.today-right]=\"todayPos === 'right'\"\n           [class.today-center]=\"todayPos === 'center'\"\n           *ngIf=\"showTodayBtn\">\n        <button class=\"btn btn-success\" (click)=\"setToday()\">{{todayBtnLbl}}</button>\n      </div>\n\n        <div class=\"btn-clear-wrapper\"\n        [class.clear-left]=\"clearPos === 'left'\"\n        [class.clear-right]=\"clearPos === 'right'\"\n        [class.clear-center]=\"clearPos === 'center'\"\n        *ngIf=\"showClearBtn\">\n          <button class=\"btn btn-success\" (click)=\"clearDate()\">{{clearBtnLbl}}</button>\n        </div>\n    </div>\n\n  </div>\n\n  <!--custom dates or date ranges picker-->\n  <div class=\"bs-datepicker-custom-range\" *ngIf=\"customRanges && customRanges.length > 0\">\n    <bs-custom-date-view\n      [selectedRange]=\"chosenRange\"\n      [ranges]=\"customRanges\"\n      [customRangeLabel]=\"customRangeBtnLbl\"\n      (onSelect)=\"setRangeOnCalendar($event)\">\n    </bs-custom-date-view>\n  </div>\n</div>\n"
+    }]
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: BsDatepickerConfig
+    }, {
+      type: BsDatepickerStore
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: BsDatepickerActions
+    }, {
+      type: BsDatepickerEffects
+    }, {
+      type: ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_12__.PositioningService
+    }];
+  }, {
+    startTimepicker: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewChild,
+      args: ['startTP']
+    }],
+    isDatepickerDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+      args: ['attr.disabled']
+    }],
+    isDatepickerReadonly: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+      args: ['attr.readonly']
+    }]
+  });
+})();
+let previousDate$1;
+class BsDatepickerDirective {
+  constructor(_config, _elementRef, _renderer, _viewContainerRef, cis) {
+    this._config = _config;
+    this._elementRef = _elementRef;
+    this._renderer = _renderer;
+    /**
+     * Placement of a datepicker. Accepts: "top", "bottom", "left", "right"
+     */
+    this.placement = 'bottom';
+    /**
+     * Specifies events that should trigger. Supports a space separated list of
+     * event names.
+     */
+    this.triggers = 'click';
+    /**
+     * Close datepicker on outside click
+     */
+    this.outsideClick = true;
+    /**
+     * A selector specifying the element the datepicker should be appended to.
+     */
+    this.container = 'body';
+    this.outsideEsc = true;
+    this.isDestroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_14__.Subject();
+    /**
+     * Indicates whether datepicker's content is enabled or not
+     */
+    this.isDisabled = false;
+    /**
+     * Emits when datepicker value has been changed
+     */
+    this.bsValueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this._subs = [];
+    this._dateInputFormat$ = new rxjs__WEBPACK_IMPORTED_MODULE_14__.Subject();
+    // todo: assign only subset of fields
+    Object.assign(this, this._config);
+    this._datepicker = cis.createLoader(_elementRef, _viewContainerRef, _renderer);
+    this.onShown = this._datepicker.onShown;
+    this.onHidden = this._datepicker.onHidden;
+    this.isOpen$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__.BehaviorSubject(this.isOpen);
+  }
+  get readonlyValue() {
+    return this.isDisabled ? '' : null;
+  }
+  /**
+   * Returns whether or not the datepicker is currently being shown
+   */
+  get isOpen() {
+    return this._datepicker.isShown;
+  }
+  set isOpen(value) {
+    this.isOpen$.next(value);
+  }
+  /**
+   * Initial value of datepicker
+   */
+  set bsValue(value) {
+    if (this._bsValue && value && this._bsValue.getTime() === value.getTime()) {
+      return;
+    }
+    if (!this._bsValue && value && !this._config.withTimepicker) {
+      const now = new Date();
+      copyTime(value, now);
+    }
+    if (value && this.bsConfig?.initCurrentTime) {
+      value = setCurrentTimeOnDateSelect(value);
+    }
+    this.initPreviousValue();
+    this._bsValue = value;
+    this.bsValueChange.emit(value);
+  }
+  get dateInputFormat$() {
+    return this._dateInputFormat$;
+  }
+  ngOnInit() {
+    this._datepicker.listen({
+      outsideClick: this.outsideClick,
+      outsideEsc: this.outsideEsc,
+      triggers: this.triggers,
+      show: () => this.show()
+    });
+    this.setConfig();
+    this.initPreviousValue();
+  }
+  initPreviousValue() {
+    previousDate$1 = this._bsValue;
+  }
+  ngOnChanges(changes) {
+    if (changes["bsConfig"]) {
+      if (changes["bsConfig"].currentValue?.initCurrentTime && changes["bsConfig"].currentValue?.initCurrentTime !== changes["bsConfig"].previousValue?.initCurrentTime && this._bsValue) {
+        this.initPreviousValue();
+        this._bsValue = setCurrentTimeOnDateSelect(this._bsValue);
+        this.bsValueChange.emit(this._bsValue);
+      }
+      this.setConfig();
+      this._dateInputFormat$.next(this.bsConfig && this.bsConfig.dateInputFormat);
+    }
+    if (!this._datepickerRef || !this._datepickerRef.instance) {
+      return;
+    }
+    if (changes["minDate"]) {
+      this._datepickerRef.instance.minDate = this.minDate;
+    }
+    if (changes["maxDate"]) {
+      this._datepickerRef.instance.maxDate = this.maxDate;
+    }
+    if (changes["daysDisabled"]) {
+      this._datepickerRef.instance.daysDisabled = this.daysDisabled;
+    }
+    if (changes["datesDisabled"]) {
+      this._datepickerRef.instance.datesDisabled = this.datesDisabled;
+    }
+    if (changes["datesEnabled"]) {
+      this._datepickerRef.instance.datesEnabled = this.datesEnabled;
+    }
+    if (changes["isDisabled"]) {
+      this._datepickerRef.instance.isDisabled = this.isDisabled;
+    }
+    if (changes["dateCustomClasses"]) {
+      this._datepickerRef.instance.dateCustomClasses = this.dateCustomClasses;
+    }
+    if (changes["dateTooltipTexts"]) {
+      this._datepickerRef.instance.dateTooltipTexts = this.dateTooltipTexts;
+    }
+  }
+  initSubscribes() {
+    // if date changes from external source (model -> view)
+    this._subs.push(this.bsValueChange.subscribe(value => {
+      if (this._datepickerRef) {
+        this._datepickerRef.instance.value = value;
+      }
+    }));
+    // if date changes from picker (view -> model)
+    if (this._datepickerRef) {
+      this._subs.push(this._datepickerRef.instance.valueChange.subscribe(value => {
+        this.initPreviousValue();
+        this.bsValue = value;
+        if (this.keepDatepickerModalOpened()) {
+          return;
+        }
+        this.hide();
+      }));
+    }
+  }
+  keepDatepickerModalOpened() {
+    if (!previousDate$1 || !this.bsConfig?.keepDatepickerOpened || !this._config.withTimepicker) {
+      return false;
+    }
+    return this.isDateSame();
+  }
+  isDateSame() {
+    return previousDate$1 instanceof Date && this._bsValue?.getDate() === previousDate$1?.getDate() && this._bsValue?.getMonth() === previousDate$1?.getMonth() && this._bsValue?.getFullYear() === previousDate$1?.getFullYear();
+  }
+  ngAfterViewInit() {
+    this.isOpen$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(isOpen => isOpen !== this.isOpen), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_15__.takeUntil)(this.isDestroy$)).subscribe(() => this.toggle());
+  }
+  /**
+   * Opens an element’s datepicker. This is considered a “manual” triggering of
+   * the datepicker.
+   */
+  show() {
+    if (this._datepicker.isShown) {
+      return;
+    }
+    this.setConfig();
+    this._datepickerRef = this._datepicker.provide({
+      provide: BsDatepickerConfig,
+      useValue: this._config
+    }).attach(BsDatepickerContainerComponent).to(this.container).position({
+      attachment: this.placement
+    }).show({
+      placement: this.placement
+    });
+    this.initSubscribes();
+  }
+  /**
+   * Closes an element’s datepicker. This is considered a “manual” triggering of
+   * the datepicker.
+   */
+  hide() {
+    if (this.isOpen) {
+      this._datepicker.hide();
+    }
+    for (const sub of this._subs) {
+      sub.unsubscribe();
+    }
+    if (this._config.returnFocusToInput) {
+      this._renderer.selectRootElement(this._elementRef.nativeElement).focus();
+    }
+  }
+  /**
+   * Toggles an element’s datepicker. This is considered a “manual” triggering
+   * of the datepicker.
+   */
+  toggle() {
+    if (this.isOpen) {
+      return this.hide();
+    }
+    this.show();
+  }
+  /**
+   * Set config for datepicker
+   */
+  setConfig() {
+    this._config = Object.assign({}, this._config, this.bsConfig, {
+      value: checkBsValue(this._bsValue, this.maxDate || this.bsConfig && this.bsConfig.maxDate),
+      isDisabled: this.isDisabled,
+      minDate: this.minDate || this.bsConfig && this.bsConfig.minDate,
+      maxDate: this.maxDate || this.bsConfig && this.bsConfig.maxDate,
+      daysDisabled: this.daysDisabled || this.bsConfig && this.bsConfig.daysDisabled,
+      dateCustomClasses: this.dateCustomClasses || this.bsConfig && this.bsConfig.dateCustomClasses,
+      dateTooltipTexts: this.dateTooltipTexts || this.bsConfig && this.bsConfig.dateTooltipTexts,
+      datesDisabled: this.datesDisabled || this.bsConfig && this.bsConfig.datesDisabled,
+      datesEnabled: this.datesEnabled || this.bsConfig && this.bsConfig.datesEnabled,
+      minMode: this.minMode || this.bsConfig && this.bsConfig.minMode,
+      initCurrentTime: this.bsConfig?.initCurrentTime,
+      keepDatepickerOpened: this.bsConfig?.keepDatepickerOpened
+    });
+  }
+  unsubscribeSubscriptions() {
+    if (this._subs?.length) {
+      this._subs.map(sub => sub.unsubscribe());
+      this._subs.length = 0;
+    }
+  }
+  ngOnDestroy() {
+    this._datepicker.dispose();
+    this.isOpen$.next(false);
+    if (this.isDestroy$) {
+      this.isDestroy$.next(null);
+      this.isDestroy$.complete();
+    }
+    this.unsubscribeSubscriptions();
+  }
+}
+BsDatepickerDirective.ɵfac = function BsDatepickerDirective_Factory(t) {
+  return new (t || BsDatepickerDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_16__.ComponentLoaderFactory));
+};
+BsDatepickerDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: BsDatepickerDirective,
+  selectors: [["", "bsDatepicker", ""]],
+  hostVars: 1,
+  hostBindings: function BsDatepickerDirective_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("readonly", ctx.readonlyValue);
+    }
+  },
+  inputs: {
+    placement: "placement",
+    triggers: "triggers",
+    outsideClick: "outsideClick",
+    container: "container",
+    outsideEsc: "outsideEsc",
+    isDisabled: "isDisabled",
+    minDate: "minDate",
+    maxDate: "maxDate",
+    minMode: "minMode",
+    daysDisabled: "daysDisabled",
+    datesDisabled: "datesDisabled",
+    datesEnabled: "datesEnabled",
+    dateCustomClasses: "dateCustomClasses",
+    dateTooltipTexts: "dateTooltipTexts",
+    isOpen: "isOpen",
+    bsValue: "bsValue",
+    bsConfig: "bsConfig"
+  },
+  outputs: {
+    onShown: "onShown",
+    onHidden: "onHidden",
+    bsValueChange: "bsValueChange"
+  },
+  exportAs: ["bsDatepicker"],
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+    args: [{
+      selector: '[bsDatepicker]',
+      exportAs: 'bsDatepicker'
+    }]
+  }], function () {
+    return [{
+      type: BsDatepickerConfig
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef
+    }, {
+      type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_16__.ComponentLoaderFactory
+    }];
+  }, {
+    placement: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    triggers: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    outsideClick: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    container: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    outsideEsc: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    onShown: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onHidden: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    isDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    minDate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    maxDate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    minMode: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    daysDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    datesDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    datesEnabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    dateCustomClasses: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    dateTooltipTexts: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    bsValueChange: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    readonlyValue: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+      args: ['attr.readonly']
+    }],
+    isOpen: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    bsValue: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    bsConfig: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }]
+  });
+})();
+class BsDatepickerInlineConfig extends BsDatepickerConfig {}
+BsDatepickerInlineConfig.ɵfac = /* @__PURE__ */function () {
+  let ɵBsDatepickerInlineConfig_BaseFactory;
+  return function BsDatepickerInlineConfig_Factory(t) {
+    return (ɵBsDatepickerInlineConfig_BaseFactory || (ɵBsDatepickerInlineConfig_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](BsDatepickerInlineConfig)))(t || BsDatepickerInlineConfig);
+  };
+}();
+BsDatepickerInlineConfig.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: BsDatepickerInlineConfig,
+  factory: BsDatepickerInlineConfig.ɵfac,
+  providedIn: 'root'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerInlineConfig, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'root'
+    }]
+  }], null, null);
+})();
+class BsDatepickerInlineContainerComponent extends BsDatepickerContainerComponent {
+  constructor(_renderer, _config, _store, _element, _actions, _effects, _positioningService) {
+    super(_renderer, _config, _store, _element, _actions, _effects, _positioningService);
+    _renderer.setStyle(_element.nativeElement, 'display', 'inline-block');
+    _renderer.setStyle(_element.nativeElement, 'position', 'static');
+  }
+  get disabledValue() {
+    return this.isDatePickerDisabled ? '' : null;
+  }
+  get readonlyValue() {
+    return this.isDatePickerDisabled ? '' : null;
+  }
+}
+BsDatepickerInlineContainerComponent.ɵfac = function BsDatepickerInlineContainerComponent_Factory(t) {
+  return new (t || BsDatepickerInlineContainerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerStore), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerActions), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerEffects), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_12__.PositioningService));
+};
+BsDatepickerInlineContainerComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsDatepickerInlineContainerComponent,
+  selectors: [["bs-datepicker-inline-container"]],
+  hostVars: 2,
+  hostBindings: function BsDatepickerInlineContainerComponent_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDatepickerInlineContainerComponent_click_HostBindingHandler($event) {
+        return ctx._stopPropagation($event);
+      });
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("disabled", ctx.disabledValue)("readonly", ctx.readonlyValue);
+    }
+  },
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([BsDatepickerStore, BsDatepickerEffects]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]],
+  decls: 2,
+  vars: 3,
+  consts: [["class", "bs-datepicker", 3, "ngClass", 4, "ngIf"], [1, "bs-datepicker", 3, "ngClass"], [1, "bs-datepicker-container"], ["role", "application", 1, "bs-calendar-container", 3, "ngSwitch"], [4, "ngSwitchCase"], ["class", "bs-media-container", 4, "ngSwitchCase"], ["class", "bs-datepicker-buttons", 4, "ngIf"], ["class", "bs-datepicker-custom-range", 4, "ngIf"], [1, "bs-media-container"], [3, "bs-datepicker-multiple", "calendar", "isDisabled", "options", "onNavigate", "onViewMode", "onHover", "onHoverWeek", "onSelect", 4, "ngFor", "ngForOf"], ["class", "bs-timepicker-in-datepicker-container", 4, "ngIf"], [3, "calendar", "isDisabled", "options", "onNavigate", "onViewMode", "onHover", "onHoverWeek", "onSelect"], [1, "bs-timepicker-in-datepicker-container"], [3, "disabled"], ["startTP", ""], [3, "disabled", 4, "ngIf"], ["endTP", ""], [3, "bs-datepicker-multiple", "calendar", "onNavigate", "onViewMode", "onHover", "onSelect", 4, "ngFor", "ngForOf"], [3, "calendar", "onNavigate", "onViewMode", "onHover", "onSelect"], [1, "bs-datepicker-buttons"], ["type", "button", 1, "btn", "btn-success"], ["type", "button", 1, "btn", "btn-default"], ["class", "btn-today-wrapper", 3, "today-left", "today-right", "today-center", 4, "ngIf"], ["class", "btn-clear-wrapper", 3, "clear-left", "clear-right", "clear-center", 4, "ngIf"], [1, "btn-today-wrapper"], [1, "btn", "btn-success", 3, "click"], [1, "btn-clear-wrapper"], [1, "bs-datepicker-custom-range"], [3, "selectedRange", "ranges", "customRangeLabel", "onSelect"]],
+  template: function BsDatepickerInlineContainerComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, BsDatepickerInlineContainerComponent_div_0_Template, 10, 11, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "async");
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](1, 1, ctx.viewMode));
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgSwitch, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgSwitchCase, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_13__.TimepickerComponent, BsCustomDatesViewComponent, BsDaysCalendarViewComponent, BsMonthCalendarViewComponent, BsYearsCalendarViewComponent, _angular_common__WEBPACK_IMPORTED_MODULE_9__.AsyncPipe],
+  encapsulation: 2,
+  data: {
+    animation: [datepickerAnimation]
+  }
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerInlineContainerComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-datepicker-inline-container',
+      providers: [BsDatepickerStore, BsDatepickerEffects],
+      host: {
+        '(click)': '_stopPropagation($event)'
+      },
+      animations: [datepickerAnimation],
+      template: "<!-- days calendar view mode -->\n<div class=\"bs-datepicker\" [ngClass]=\"containerClass\" *ngIf=\"viewMode | async\">\n  <div class=\"bs-datepicker-container\"\n    [@datepickerAnimation]=\"animationState\"\n    (@datepickerAnimation.done)=\"positionServiceEnable()\">\n    <!--calendars-->\n    <div class=\"bs-calendar-container\" [ngSwitch]=\"viewMode | async\" role=\"application\">\n      <!--days calendar-->\n      <ng-container *ngSwitchCase=\"'day'\">\n        <div class=\"bs-media-container\">\n          <bs-days-calendar-view\n            *ngFor=\"let calendar of daysCalendar$ | async\"\n            [class.bs-datepicker-multiple]=\"multipleCalendars\"\n            [calendar]=\"calendar\"\n            [isDisabled]=\"isDatePickerDisabled\"\n            [options]=\"options$ | async\"\n            (onNavigate)=\"navigateTo($event)\"\n            (onViewMode)=\"setViewMode($event)\"\n            (onHover)=\"dayHoverHandler($event)\"\n            (onHoverWeek)=\"weekHoverHandler($event)\"\n            (onSelect)=\"daySelectHandler($event)\">\n          </bs-days-calendar-view>\n        </div>\n        <div *ngIf=\"withTimepicker\" class=\"bs-timepicker-in-datepicker-container\">\n          <timepicker #startTP [disabled]=\"isDatePickerDisabled\"></timepicker>\n          <timepicker #endTP *ngIf=\"isRangePicker\" [disabled]=\"isDatePickerDisabled\"></timepicker>\n        </div>\n      </ng-container>\n\n      <!--months calendar-->\n      <div *ngSwitchCase=\"'month'\" class=\"bs-media-container\">\n        <bs-month-calendar-view\n          *ngFor=\"let calendar of monthsCalendar | async\"\n          [class.bs-datepicker-multiple]=\"multipleCalendars\"\n          [calendar]=\"calendar\"\n          (onNavigate)=\"navigateTo($event)\"\n          (onViewMode)=\"setViewMode($event)\"\n          (onHover)=\"monthHoverHandler($event)\"\n          (onSelect)=\"monthSelectHandler($event)\">\n        </bs-month-calendar-view>\n      </div>\n\n      <!--years calendar-->\n      <div *ngSwitchCase=\"'year'\" class=\"bs-media-container\">\n        <bs-years-calendar-view\n          *ngFor=\"let calendar of yearsCalendar | async\"\n          [class.bs-datepicker-multiple]=\"multipleCalendars\"\n          [calendar]=\"calendar\"\n          (onNavigate)=\"navigateTo($event)\"\n          (onViewMode)=\"setViewMode($event)\"\n          (onHover)=\"yearHoverHandler($event)\"\n          (onSelect)=\"yearSelectHandler($event)\">\n        </bs-years-calendar-view>\n      </div>\n    </div>\n\n    <!--applycancel buttons-->\n    <div class=\"bs-datepicker-buttons\" *ngIf=\"false\">\n      <button class=\"btn btn-success\" type=\"button\">Apply</button>\n      <button class=\"btn btn-default\" type=\"button\">Cancel</button>\n    </div>\n\n    <div class=\"bs-datepicker-buttons\" *ngIf=\"showTodayBtn || showClearBtn\">\n      <div class=\"btn-today-wrapper\"\n           [class.today-left]=\"todayPos === 'left'\"\n           [class.today-right]=\"todayPos === 'right'\"\n           [class.today-center]=\"todayPos === 'center'\"\n           *ngIf=\"showTodayBtn\">\n        <button class=\"btn btn-success\" (click)=\"setToday()\">{{todayBtnLbl}}</button>\n      </div>\n\n        <div class=\"btn-clear-wrapper\"\n        [class.clear-left]=\"clearPos === 'left'\"\n        [class.clear-right]=\"clearPos === 'right'\"\n        [class.clear-center]=\"clearPos === 'center'\"\n        *ngIf=\"showClearBtn\">\n          <button class=\"btn btn-success\" (click)=\"clearDate()\">{{clearBtnLbl}}</button>\n        </div>\n    </div>\n\n  </div>\n\n  <!--custom dates or date ranges picker-->\n  <div class=\"bs-datepicker-custom-range\" *ngIf=\"customRanges && customRanges.length > 0\">\n    <bs-custom-date-view\n      [selectedRange]=\"chosenRange\"\n      [ranges]=\"customRanges\"\n      [customRangeLabel]=\"customRangeBtnLbl\"\n      (onSelect)=\"setRangeOnCalendar($event)\">\n    </bs-custom-date-view>\n  </div>\n</div>\n"
+    }]
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: BsDatepickerConfig
+    }, {
+      type: BsDatepickerStore
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: BsDatepickerActions
+    }, {
+      type: BsDatepickerEffects
+    }, {
+      type: ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_12__.PositioningService
+    }];
+  }, {
+    disabledValue: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+      args: ['attr.disabled']
+    }],
+    readonlyValue: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+      args: ['attr.readonly']
+    }]
+  });
+})();
+class BsDatepickerInlineDirective {
+  constructor(_config, _elementRef, _renderer, _viewContainerRef, cis) {
+    this._config = _config;
+    this._elementRef = _elementRef;
+    /**
+     * Indicates whether datepicker is enabled or not
+     */
+    this.isDisabled = false;
+    /**
+     * Emits when datepicker value has been changed
+     */
+    this.bsValueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this._subs = [];
+    // todo: assign only subset of fields
+    Object.assign(this, this._config);
+    this._datepicker = cis.createLoader(_elementRef, _viewContainerRef, _renderer);
+  }
+  /**
+   * Initial value of datepicker
+   */
+  set bsValue(value) {
+    if (this._bsValue === value) {
+      return;
+    }
+    if (!this._bsValue && value && !this._config.withTimepicker) {
+      const now = new Date();
+      copyTime(value, now);
+    }
+    if (value && this.bsConfig?.initCurrentTime) {
+      value = setCurrentTimeOnDateSelect(value);
+    }
+    this._bsValue = value;
+    this.bsValueChange.emit(value);
+  }
+  ngOnInit() {
+    this.setConfig();
+    this.initSubscribes();
+  }
+  initSubscribes() {
+    this.unsubscribeSubscriptions();
+    this._subs.push(this.bsValueChange.subscribe(value => {
+      if (this._datepickerRef) {
+        this._datepickerRef.instance.value = value;
+      }
+    }));
+    if (this._datepickerRef) {
+      this._subs.push(this._datepickerRef.instance.valueChange.subscribe(value => {
+        this.bsValue = value;
+      }));
+    }
+  }
+  unsubscribeSubscriptions() {
+    if (this._subs?.length) {
+      this._subs.map(sub => sub.unsubscribe());
+      this._subs.length = 0;
+    }
+  }
+  ngOnChanges(changes) {
+    if (changes["bsConfig"]) {
+      if (changes["bsConfig"].currentValue?.initCurrentTime && changes["bsConfig"].currentValue?.initCurrentTime !== changes["bsConfig"].previousValue?.initCurrentTime && this._bsValue) {
+        this._bsValue = setCurrentTimeOnDateSelect(this._bsValue);
+        this.bsValueChange.emit(this._bsValue);
+      }
+    }
+    if (!this._datepickerRef || !this._datepickerRef.instance) {
+      return;
+    }
+    if (changes["minDate"]) {
+      this._datepickerRef.instance.minDate = this.minDate;
+    }
+    if (changes["maxDate"]) {
+      this._datepickerRef.instance.maxDate = this.maxDate;
+    }
+    if (changes["datesDisabled"]) {
+      this._datepickerRef.instance.datesDisabled = this.datesDisabled;
+    }
+    if (changes["datesEnabled"]) {
+      this._datepickerRef.instance.datesEnabled = this.datesEnabled;
+      this._datepickerRef.instance.value = this._bsValue;
+    }
+    if (changes["isDisabled"]) {
+      this._datepickerRef.instance.isDisabled = this.isDisabled;
+    }
+    if (changes["dateCustomClasses"]) {
+      this._datepickerRef.instance.dateCustomClasses = this.dateCustomClasses;
+    }
+    if (changes["dateTooltipTexts"]) {
+      this._datepickerRef.instance.dateTooltipTexts = this.dateTooltipTexts;
+    }
+    this.setConfig();
+  }
+  /**
+   * Set config for datepicker
+   */
+  setConfig() {
+    if (this._datepicker) {
+      this._datepicker.hide();
+    }
+    this._config = Object.assign({}, this._config, this.bsConfig, {
+      value: checkBsValue(this._bsValue, this.maxDate || this.bsConfig && this.bsConfig.maxDate),
+      isDisabled: this.isDisabled,
+      minDate: this.minDate || this.bsConfig && this.bsConfig.minDate,
+      maxDate: this.maxDate || this.bsConfig && this.bsConfig.maxDate,
+      dateCustomClasses: this.dateCustomClasses || this.bsConfig && this.bsConfig.dateCustomClasses,
+      dateTooltipTexts: this.dateTooltipTexts || this.bsConfig && this.bsConfig.dateTooltipTexts,
+      datesDisabled: this.datesDisabled || this.bsConfig && this.bsConfig.datesDisabled,
+      datesEnabled: this.datesEnabled || this.bsConfig && this.bsConfig.datesEnabled,
+      initCurrentTime: this.bsConfig?.initCurrentTime
+    });
+    this._datepickerRef = this._datepicker.provide({
+      provide: BsDatepickerConfig,
+      useValue: this._config
+    }).attach(BsDatepickerInlineContainerComponent).to(this._elementRef).show();
+    this.initSubscribes();
+  }
+  ngOnDestroy() {
+    this._datepicker.dispose();
+    this.unsubscribeSubscriptions();
+  }
+}
+BsDatepickerInlineDirective.ɵfac = function BsDatepickerInlineDirective_Factory(t) {
+  return new (t || BsDatepickerInlineDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerInlineConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_16__.ComponentLoaderFactory));
+};
+BsDatepickerInlineDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: BsDatepickerInlineDirective,
+  selectors: [["bs-datepicker-inline"]],
+  inputs: {
+    bsConfig: "bsConfig",
+    isDisabled: "isDisabled",
+    minDate: "minDate",
+    maxDate: "maxDate",
+    dateCustomClasses: "dateCustomClasses",
+    dateTooltipTexts: "dateTooltipTexts",
+    datesEnabled: "datesEnabled",
+    datesDisabled: "datesDisabled",
+    bsValue: "bsValue"
+  },
+  outputs: {
+    bsValueChange: "bsValueChange"
+  },
+  exportAs: ["bsDatepickerInline"],
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerInlineDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+    args: [{
+      selector: 'bs-datepicker-inline',
+      exportAs: 'bsDatepickerInline'
+    }]
+  }], function () {
+    return [{
+      type: BsDatepickerInlineConfig
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef
+    }, {
+      type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_16__.ComponentLoaderFactory
+    }];
+  }, {
+    bsConfig: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    isDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    minDate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    maxDate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    dateCustomClasses: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    dateTooltipTexts: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    datesEnabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    datesDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    bsValueChange: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    bsValue: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }]
+  });
+})();
+class BsDaterangepickerInlineConfig extends BsDatepickerConfig {
+  constructor() {
+    super(...arguments);
+    // DatepickerRenderOptions
+    this.displayMonths = 2;
+    /** turn on/off animation */
+    this.isAnimated = false;
+  }
+}
+BsDaterangepickerInlineConfig.ɵfac = /* @__PURE__ */function () {
+  let ɵBsDaterangepickerInlineConfig_BaseFactory;
+  return function BsDaterangepickerInlineConfig_Factory(t) {
+    return (ɵBsDaterangepickerInlineConfig_BaseFactory || (ɵBsDaterangepickerInlineConfig_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](BsDaterangepickerInlineConfig)))(t || BsDaterangepickerInlineConfig);
+  };
+}();
+BsDaterangepickerInlineConfig.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: BsDaterangepickerInlineConfig,
+  factory: BsDaterangepickerInlineConfig.ɵfac,
+  providedIn: 'root'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDaterangepickerInlineConfig, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'root'
+    }]
+  }], null, null);
+})();
+class BsDaterangepickerContainerComponent extends BsDatepickerAbstractComponent {
+  constructor(_renderer, _config, _store, _element, _actions, _effects, _positionService) {
+    super();
+    this._config = _config;
+    this._store = _store;
+    this._element = _element;
+    this._actions = _actions;
+    this._positionService = _positionService;
+    this.valueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.animationState = 'void';
+    this._rangeStack = [];
+    this.chosenRange = [];
+    this._subs = [];
+    this.isRangePicker = true;
+    this._effects = _effects;
+    this.customRanges = this._config.ranges || [];
+    this.customRangeBtnLbl = this._config.customRangeButtonLabel;
+    _renderer.setStyle(_element.nativeElement, 'display', 'block');
+    _renderer.setStyle(_element.nativeElement, 'position', 'absolute');
+  }
+  set value(value) {
+    this._effects?.setRangeValue(value);
+  }
+  get isDatePickerDisabled() {
+    return !!this._config.isDisabled;
+  }
+  get isDatepickerDisabled() {
+    return this.isDatePickerDisabled ? '' : null;
+  }
+  get isDatepickerReadonly() {
+    return this.isDatePickerDisabled ? '' : null;
+  }
+  ngOnInit() {
+    this._positionService.setOptions({
+      modifiers: {
+        flip: {
+          enabled: this._config.adaptivePosition
+        },
+        preventOverflow: {
+          enabled: this._config.adaptivePosition
+        }
+      },
+      allowedPositions: this._config.allowedPositions
+    });
+    this._positionService.event$?.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.take)(1)).subscribe(() => {
+      this._positionService.disable();
+      if (this._config.isAnimated) {
+        this.animationState = this.isTopPosition ? 'animated-up' : 'animated-down';
+        return;
+      }
+      this.animationState = 'unanimated';
+    });
+    this.containerClass = this._config.containerClass;
+    this.isOtherMonthsActive = this._config.selectFromOtherMonth;
+    this.withTimepicker = this._config.withTimepicker;
+    this._effects?.init(this._store)
+    // intial state options
+    // todo: fix this, split configs
+    .setOptions(this._config)
+    // data binding view --> model
+    .setBindings(this)
+    // set event handlers
+    .setEventHandlers(this).registerDatepickerSideEffects();
+    let currentDate;
+    // todo: move it somewhere else
+    // on selected date change
+    this._subs.push(this._store.select(state => state.selectedRange).subscribe(dateRange => {
+      currentDate = dateRange;
+      this.valueChange.emit(dateRange);
+      this.chosenRange = dateRange || [];
+    }));
+    this._subs.push(this._store.select(state => state.selectedTime).subscribe(time => {
+      if (!time[0] || !time[1] || !(time[0] instanceof Date) || !(time[1] instanceof Date) || currentDate && time[0] === currentDate[0] && time[1] === currentDate[1]) {
+        return;
+      }
+      this.valueChange.emit(time);
+      this.chosenRange = time || [];
+    }));
+  }
+  ngAfterViewInit() {
+    this.selectedTimeSub.add(this.selectedTime?.subscribe(val => {
+      if (Array.isArray(val) && val.length >= 2) {
+        this.startTimepicker?.writeValue(val[0]);
+        this.endTimepicker?.writeValue(val[1]);
+      }
+    }));
+    this.startTimepicker?.registerOnChange(val => {
+      this.timeSelectHandler(val, 0);
+    });
+    this.endTimepicker?.registerOnChange(val => {
+      this.timeSelectHandler(val, 1);
+    });
+  }
+  get isTopPosition() {
+    return this._element.nativeElement.classList.contains('top');
+  }
+  positionServiceEnable() {
+    this._positionService.enable();
+  }
+  timeSelectHandler(date, index) {
+    this._store.dispatch(this._actions.selectTime(date, index));
+  }
+  daySelectHandler(day) {
+    if (!day) {
+      return;
+    }
+    const isDisabled = this.isOtherMonthsActive ? day.isDisabled : day.isOtherMonth || day.isDisabled;
+    if (isDisabled) {
+      return;
+    }
+    this.rangesProcessing(day);
+  }
+  monthSelectHandler(day) {
+    if (!day || day.isDisabled) {
+      return;
+    }
+    day.isSelected = true;
+    if (this._config.minMode !== 'month') {
+      if (day.isDisabled) {
+        return;
+      }
+      this._store.dispatch(this._actions.navigateTo({
+        unit: {
+          month: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getMonth)(day.date),
+          year: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getFullYear)(day.date)
+        },
+        viewMode: 'day'
+      }));
+      return;
+    }
+    this.rangesProcessing(day);
+  }
+  yearSelectHandler(day) {
+    if (!day || day.isDisabled) {
+      return;
+    }
+    day.isSelected = true;
+    if (this._config.minMode !== 'year') {
+      if (day.isDisabled) {
+        return;
+      }
+      this._store.dispatch(this._actions.navigateTo({
+        unit: {
+          year: (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getFullYear)(day.date)
+        },
+        viewMode: 'month'
+      }));
+      return;
+    }
+    this.rangesProcessing(day);
+  }
+  rangesProcessing(day) {
+    // if only one date is already selected
+    // and user clicks on previous date
+    // start selection from new date
+    // but if new date is after initial one
+    // than finish selection
+    if (this._rangeStack.length === 1) {
+      this._rangeStack = day.date >= this._rangeStack[0] ? [this._rangeStack[0], day.date] : [day.date];
+    }
+    if (this._config.maxDateRange) {
+      this.setMaxDateRangeOnCalendar(day.date);
+    }
+    if (this._rangeStack.length === 0) {
+      this._rangeStack = [day.date];
+      if (this._config.maxDateRange) {
+        this.setMaxDateRangeOnCalendar(day.date);
+      }
+    }
+    this._store.dispatch(this._actions.selectRange(this._rangeStack));
+    if (this._rangeStack.length === 2) {
+      this._rangeStack = [];
+    }
+  }
+  ngOnDestroy() {
+    for (const sub of this._subs) {
+      sub.unsubscribe();
+    }
+    this.selectedTimeSub.unsubscribe();
+    this._effects?.destroy();
+  }
+  setRangeOnCalendar(dates) {
+    if (dates) {
+      this._rangeStack = dates.value instanceof Date ? [dates.value] : dates.value;
+    }
+    this._store.dispatch(this._actions.selectRange(this._rangeStack));
+  }
+  setMaxDateRangeOnCalendar(currentSelection) {
+    let maxDateRange = new Date(currentSelection);
+    if (this._config.maxDate) {
+      const maxDateValueInMilliseconds = this._config.maxDate.getTime();
+      const maxDateRangeInMilliseconds = currentSelection.getTime() + (this._config.maxDateRange || 0) * dayInMilliseconds;
+      maxDateRange = maxDateRangeInMilliseconds > maxDateValueInMilliseconds ? new Date(this._config.maxDate) : new Date(maxDateRangeInMilliseconds);
+    } else {
+      maxDateRange.setDate(currentSelection.getDate() + (this._config.maxDateRange || 0));
+    }
+    this._effects?.setMaxDate(maxDateRange);
+  }
+}
+BsDaterangepickerContainerComponent.ɵfac = function BsDaterangepickerContainerComponent_Factory(t) {
+  return new (t || BsDaterangepickerContainerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerStore), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerActions), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerEffects), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_12__.PositioningService));
+};
+BsDaterangepickerContainerComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsDaterangepickerContainerComponent,
+  selectors: [["bs-daterangepicker-container"]],
+  viewQuery: function BsDaterangepickerContainerComponent_Query(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c3, 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c4, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.startTimepicker = _t.first);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.endTimepicker = _t.first);
+    }
+  },
+  hostAttrs: ["role", "dialog", "aria-label", "calendar", 1, "bottom"],
+  hostVars: 2,
+  hostBindings: function BsDaterangepickerContainerComponent_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaterangepickerContainerComponent_click_HostBindingHandler($event) {
+        return ctx._stopPropagation($event);
+      });
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("disabled", ctx.isDatepickerDisabled)("readonly", ctx.isDatepickerReadonly);
+    }
+  },
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([BsDatepickerStore, BsDatepickerEffects]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]],
+  decls: 2,
+  vars: 3,
+  consts: [["class", "bs-datepicker", 3, "ngClass", 4, "ngIf"], [1, "bs-datepicker", 3, "ngClass"], [1, "bs-datepicker-container"], ["role", "application", 1, "bs-calendar-container", 3, "ngSwitch"], [4, "ngSwitchCase"], ["class", "bs-media-container", 4, "ngSwitchCase"], ["class", "bs-datepicker-buttons", 4, "ngIf"], ["class", "bs-datepicker-custom-range", 4, "ngIf"], [1, "bs-media-container"], [3, "bs-datepicker-multiple", "calendar", "isDisabled", "options", "onNavigate", "onViewMode", "onHover", "onHoverWeek", "onSelect", 4, "ngFor", "ngForOf"], ["class", "bs-timepicker-in-datepicker-container", 4, "ngIf"], [3, "calendar", "isDisabled", "options", "onNavigate", "onViewMode", "onHover", "onHoverWeek", "onSelect"], [1, "bs-timepicker-in-datepicker-container"], [3, "disabled"], ["startTP", ""], [3, "disabled", 4, "ngIf"], ["endTP", ""], [3, "bs-datepicker-multiple", "calendar", "onNavigate", "onViewMode", "onHover", "onSelect", 4, "ngFor", "ngForOf"], [3, "calendar", "onNavigate", "onViewMode", "onHover", "onSelect"], [1, "bs-datepicker-buttons"], ["type", "button", 1, "btn", "btn-success"], ["type", "button", 1, "btn", "btn-default"], ["class", "btn-today-wrapper", 3, "today-left", "today-right", "today-center", 4, "ngIf"], ["class", "btn-clear-wrapper", 3, "clear-left", "clear-right", "clear-center", 4, "ngIf"], [1, "btn-today-wrapper"], [1, "btn", "btn-success", 3, "click"], [1, "btn-clear-wrapper"], [1, "bs-datepicker-custom-range"], [3, "selectedRange", "ranges", "customRangeLabel", "onSelect"]],
+  template: function BsDaterangepickerContainerComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, BsDaterangepickerContainerComponent_div_0_Template, 10, 11, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "async");
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](1, 1, ctx.viewMode));
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgSwitch, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgSwitchCase, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_13__.TimepickerComponent, BsCustomDatesViewComponent, BsDaysCalendarViewComponent, BsMonthCalendarViewComponent, BsYearsCalendarViewComponent, _angular_common__WEBPACK_IMPORTED_MODULE_9__.AsyncPipe],
+  encapsulation: 2,
+  data: {
+    animation: [datepickerAnimation]
+  }
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDaterangepickerContainerComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-daterangepicker-container',
+      providers: [BsDatepickerStore, BsDatepickerEffects],
+      host: {
+        class: 'bottom',
+        '(click)': '_stopPropagation($event)',
+        role: 'dialog',
+        'aria-label': 'calendar'
+      },
+      animations: [datepickerAnimation],
+      template: "<!-- days calendar view mode -->\n<div class=\"bs-datepicker\" [ngClass]=\"containerClass\" *ngIf=\"viewMode | async\">\n  <div class=\"bs-datepicker-container\"\n    [@datepickerAnimation]=\"animationState\"\n    (@datepickerAnimation.done)=\"positionServiceEnable()\">\n    <!--calendars-->\n    <div class=\"bs-calendar-container\" [ngSwitch]=\"viewMode | async\" role=\"application\">\n      <!--days calendar-->\n      <ng-container *ngSwitchCase=\"'day'\">\n        <div class=\"bs-media-container\">\n          <bs-days-calendar-view\n            *ngFor=\"let calendar of daysCalendar$ | async\"\n            [class.bs-datepicker-multiple]=\"multipleCalendars\"\n            [calendar]=\"calendar\"\n            [isDisabled]=\"isDatePickerDisabled\"\n            [options]=\"options$ | async\"\n            (onNavigate)=\"navigateTo($event)\"\n            (onViewMode)=\"setViewMode($event)\"\n            (onHover)=\"dayHoverHandler($event)\"\n            (onHoverWeek)=\"weekHoverHandler($event)\"\n            (onSelect)=\"daySelectHandler($event)\">\n          </bs-days-calendar-view>\n        </div>\n        <div *ngIf=\"withTimepicker\" class=\"bs-timepicker-in-datepicker-container\">\n          <timepicker #startTP [disabled]=\"isDatePickerDisabled\"></timepicker>\n          <timepicker #endTP *ngIf=\"isRangePicker\" [disabled]=\"isDatePickerDisabled\"></timepicker>\n        </div>\n      </ng-container>\n\n      <!--months calendar-->\n      <div *ngSwitchCase=\"'month'\" class=\"bs-media-container\">\n        <bs-month-calendar-view\n          *ngFor=\"let calendar of monthsCalendar | async\"\n          [class.bs-datepicker-multiple]=\"multipleCalendars\"\n          [calendar]=\"calendar\"\n          (onNavigate)=\"navigateTo($event)\"\n          (onViewMode)=\"setViewMode($event)\"\n          (onHover)=\"monthHoverHandler($event)\"\n          (onSelect)=\"monthSelectHandler($event)\">\n        </bs-month-calendar-view>\n      </div>\n\n      <!--years calendar-->\n      <div *ngSwitchCase=\"'year'\" class=\"bs-media-container\">\n        <bs-years-calendar-view\n          *ngFor=\"let calendar of yearsCalendar | async\"\n          [class.bs-datepicker-multiple]=\"multipleCalendars\"\n          [calendar]=\"calendar\"\n          (onNavigate)=\"navigateTo($event)\"\n          (onViewMode)=\"setViewMode($event)\"\n          (onHover)=\"yearHoverHandler($event)\"\n          (onSelect)=\"yearSelectHandler($event)\">\n        </bs-years-calendar-view>\n      </div>\n    </div>\n\n    <!--applycancel buttons-->\n    <div class=\"bs-datepicker-buttons\" *ngIf=\"false\">\n      <button class=\"btn btn-success\" type=\"button\">Apply</button>\n      <button class=\"btn btn-default\" type=\"button\">Cancel</button>\n    </div>\n\n    <div class=\"bs-datepicker-buttons\" *ngIf=\"showTodayBtn || showClearBtn\">\n      <div class=\"btn-today-wrapper\"\n           [class.today-left]=\"todayPos === 'left'\"\n           [class.today-right]=\"todayPos === 'right'\"\n           [class.today-center]=\"todayPos === 'center'\"\n           *ngIf=\"showTodayBtn\">\n        <button class=\"btn btn-success\" (click)=\"setToday()\">{{todayBtnLbl}}</button>\n      </div>\n\n        <div class=\"btn-clear-wrapper\"\n        [class.clear-left]=\"clearPos === 'left'\"\n        [class.clear-right]=\"clearPos === 'right'\"\n        [class.clear-center]=\"clearPos === 'center'\"\n        *ngIf=\"showClearBtn\">\n          <button class=\"btn btn-success\" (click)=\"clearDate()\">{{clearBtnLbl}}</button>\n        </div>\n    </div>\n\n  </div>\n\n  <!--custom dates or date ranges picker-->\n  <div class=\"bs-datepicker-custom-range\" *ngIf=\"customRanges && customRanges.length > 0\">\n    <bs-custom-date-view\n      [selectedRange]=\"chosenRange\"\n      [ranges]=\"customRanges\"\n      [customRangeLabel]=\"customRangeBtnLbl\"\n      (onSelect)=\"setRangeOnCalendar($event)\">\n    </bs-custom-date-view>\n  </div>\n</div>\n"
+    }]
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: BsDatepickerConfig
+    }, {
+      type: BsDatepickerStore
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: BsDatepickerActions
+    }, {
+      type: BsDatepickerEffects
+    }, {
+      type: ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_12__.PositioningService
+    }];
+  }, {
+    startTimepicker: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewChild,
+      args: ['startTP']
+    }],
+    endTimepicker: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewChild,
+      args: ['endTP']
+    }],
+    isDatepickerDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+      args: ['attr.disabled']
+    }],
+    isDatepickerReadonly: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+      args: ['attr.readonly']
+    }]
+  });
+})();
+class BsDaterangepickerInlineContainerComponent extends BsDaterangepickerContainerComponent {
+  constructor(_renderer, _config, _store, _element, _actions, _effects, _positioningService) {
+    super(_renderer, _config, _store, _element, _actions, _effects, _positioningService);
+    _renderer.setStyle(_element.nativeElement, 'display', 'inline-block');
+    _renderer.setStyle(_element.nativeElement, 'position', 'static');
+  }
+  get disabledValue() {
+    return this.isDatePickerDisabled ? '' : null;
+  }
+  get readonlyValue() {
+    return this.isDatePickerDisabled ? '' : null;
+  }
+}
+BsDaterangepickerInlineContainerComponent.ɵfac = function BsDaterangepickerInlineContainerComponent_Factory(t) {
+  return new (t || BsDaterangepickerInlineContainerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerStore), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerActions), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerEffects), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_12__.PositioningService));
+};
+BsDaterangepickerInlineContainerComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: BsDaterangepickerInlineContainerComponent,
+  selectors: [["bs-daterangepicker-inline-container"]],
+  hostVars: 2,
+  hostBindings: function BsDaterangepickerInlineContainerComponent_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BsDaterangepickerInlineContainerComponent_click_HostBindingHandler($event) {
+        return ctx._stopPropagation($event);
+      });
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("disabled", ctx.disabledValue)("readonly", ctx.readonlyValue);
+    }
+  },
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([BsDatepickerStore, BsDatepickerEffects]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]],
+  decls: 2,
+  vars: 3,
+  consts: [["class", "bs-datepicker", 3, "ngClass", 4, "ngIf"], [1, "bs-datepicker", 3, "ngClass"], [1, "bs-datepicker-container"], ["role", "application", 1, "bs-calendar-container", 3, "ngSwitch"], [4, "ngSwitchCase"], ["class", "bs-media-container", 4, "ngSwitchCase"], ["class", "bs-datepicker-buttons", 4, "ngIf"], ["class", "bs-datepicker-custom-range", 4, "ngIf"], [1, "bs-media-container"], [3, "bs-datepicker-multiple", "calendar", "isDisabled", "options", "onNavigate", "onViewMode", "onHover", "onHoverWeek", "onSelect", 4, "ngFor", "ngForOf"], ["class", "bs-timepicker-in-datepicker-container", 4, "ngIf"], [3, "calendar", "isDisabled", "options", "onNavigate", "onViewMode", "onHover", "onHoverWeek", "onSelect"], [1, "bs-timepicker-in-datepicker-container"], [3, "disabled"], ["startTP", ""], [3, "disabled", 4, "ngIf"], ["endTP", ""], [3, "bs-datepicker-multiple", "calendar", "onNavigate", "onViewMode", "onHover", "onSelect", 4, "ngFor", "ngForOf"], [3, "calendar", "onNavigate", "onViewMode", "onHover", "onSelect"], [1, "bs-datepicker-buttons"], ["type", "button", 1, "btn", "btn-success"], ["type", "button", 1, "btn", "btn-default"], ["class", "btn-today-wrapper", 3, "today-left", "today-right", "today-center", 4, "ngIf"], ["class", "btn-clear-wrapper", 3, "clear-left", "clear-right", "clear-center", 4, "ngIf"], [1, "btn-today-wrapper"], [1, "btn", "btn-success", 3, "click"], [1, "btn-clear-wrapper"], [1, "bs-datepicker-custom-range"], [3, "selectedRange", "ranges", "customRangeLabel", "onSelect"]],
+  template: function BsDaterangepickerInlineContainerComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, BsDaterangepickerInlineContainerComponent_div_0_Template, 10, 11, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "async");
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](1, 1, ctx.viewMode));
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgSwitch, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgSwitchCase, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_13__.TimepickerComponent, BsCustomDatesViewComponent, BsDaysCalendarViewComponent, BsMonthCalendarViewComponent, BsYearsCalendarViewComponent, _angular_common__WEBPACK_IMPORTED_MODULE_9__.AsyncPipe],
+  encapsulation: 2,
+  data: {
+    animation: [datepickerAnimation]
+  }
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDaterangepickerInlineContainerComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-daterangepicker-inline-container',
+      providers: [BsDatepickerStore, BsDatepickerEffects],
+      host: {
+        '(click)': '_stopPropagation($event)'
+      },
+      animations: [datepickerAnimation],
+      template: "<!-- days calendar view mode -->\n<div class=\"bs-datepicker\" [ngClass]=\"containerClass\" *ngIf=\"viewMode | async\">\n  <div class=\"bs-datepicker-container\"\n    [@datepickerAnimation]=\"animationState\"\n    (@datepickerAnimation.done)=\"positionServiceEnable()\">\n    <!--calendars-->\n    <div class=\"bs-calendar-container\" [ngSwitch]=\"viewMode | async\" role=\"application\">\n      <!--days calendar-->\n      <ng-container *ngSwitchCase=\"'day'\">\n        <div class=\"bs-media-container\">\n          <bs-days-calendar-view\n            *ngFor=\"let calendar of daysCalendar$ | async\"\n            [class.bs-datepicker-multiple]=\"multipleCalendars\"\n            [calendar]=\"calendar\"\n            [isDisabled]=\"isDatePickerDisabled\"\n            [options]=\"options$ | async\"\n            (onNavigate)=\"navigateTo($event)\"\n            (onViewMode)=\"setViewMode($event)\"\n            (onHover)=\"dayHoverHandler($event)\"\n            (onHoverWeek)=\"weekHoverHandler($event)\"\n            (onSelect)=\"daySelectHandler($event)\">\n          </bs-days-calendar-view>\n        </div>\n        <div *ngIf=\"withTimepicker\" class=\"bs-timepicker-in-datepicker-container\">\n          <timepicker #startTP [disabled]=\"isDatePickerDisabled\"></timepicker>\n          <timepicker #endTP *ngIf=\"isRangePicker\" [disabled]=\"isDatePickerDisabled\"></timepicker>\n        </div>\n      </ng-container>\n\n      <!--months calendar-->\n      <div *ngSwitchCase=\"'month'\" class=\"bs-media-container\">\n        <bs-month-calendar-view\n          *ngFor=\"let calendar of monthsCalendar | async\"\n          [class.bs-datepicker-multiple]=\"multipleCalendars\"\n          [calendar]=\"calendar\"\n          (onNavigate)=\"navigateTo($event)\"\n          (onViewMode)=\"setViewMode($event)\"\n          (onHover)=\"monthHoverHandler($event)\"\n          (onSelect)=\"monthSelectHandler($event)\">\n        </bs-month-calendar-view>\n      </div>\n\n      <!--years calendar-->\n      <div *ngSwitchCase=\"'year'\" class=\"bs-media-container\">\n        <bs-years-calendar-view\n          *ngFor=\"let calendar of yearsCalendar | async\"\n          [class.bs-datepicker-multiple]=\"multipleCalendars\"\n          [calendar]=\"calendar\"\n          (onNavigate)=\"navigateTo($event)\"\n          (onViewMode)=\"setViewMode($event)\"\n          (onHover)=\"yearHoverHandler($event)\"\n          (onSelect)=\"yearSelectHandler($event)\">\n        </bs-years-calendar-view>\n      </div>\n    </div>\n\n    <!--applycancel buttons-->\n    <div class=\"bs-datepicker-buttons\" *ngIf=\"false\">\n      <button class=\"btn btn-success\" type=\"button\">Apply</button>\n      <button class=\"btn btn-default\" type=\"button\">Cancel</button>\n    </div>\n\n    <div class=\"bs-datepicker-buttons\" *ngIf=\"showTodayBtn || showClearBtn\">\n      <div class=\"btn-today-wrapper\"\n           [class.today-left]=\"todayPos === 'left'\"\n           [class.today-right]=\"todayPos === 'right'\"\n           [class.today-center]=\"todayPos === 'center'\"\n           *ngIf=\"showTodayBtn\">\n        <button class=\"btn btn-success\" (click)=\"setToday()\">{{todayBtnLbl}}</button>\n      </div>\n\n        <div class=\"btn-clear-wrapper\"\n        [class.clear-left]=\"clearPos === 'left'\"\n        [class.clear-right]=\"clearPos === 'right'\"\n        [class.clear-center]=\"clearPos === 'center'\"\n        *ngIf=\"showClearBtn\">\n          <button class=\"btn btn-success\" (click)=\"clearDate()\">{{clearBtnLbl}}</button>\n        </div>\n    </div>\n\n  </div>\n\n  <!--custom dates or date ranges picker-->\n  <div class=\"bs-datepicker-custom-range\" *ngIf=\"customRanges && customRanges.length > 0\">\n    <bs-custom-date-view\n      [selectedRange]=\"chosenRange\"\n      [ranges]=\"customRanges\"\n      [customRangeLabel]=\"customRangeBtnLbl\"\n      (onSelect)=\"setRangeOnCalendar($event)\">\n    </bs-custom-date-view>\n  </div>\n</div>\n"
+    }]
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: BsDatepickerConfig
+    }, {
+      type: BsDatepickerStore
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: BsDatepickerActions
+    }, {
+      type: BsDatepickerEffects
+    }, {
+      type: ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_12__.PositioningService
+    }];
+  }, {
+    disabledValue: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+      args: ['attr.disabled']
+    }],
+    readonlyValue: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+      args: ['attr.readonly']
+    }]
+  });
+})();
+class BsDaterangepickerInlineDirective {
+  constructor(_config, _elementRef, _renderer, _viewContainerRef, cis) {
+    this._config = _config;
+    this._elementRef = _elementRef;
+    /**
+     * Indicates whether datepicker is enabled or not
+     */
+    this.isDisabled = false;
+    /**
+     * Emits when daterangepicker value has been changed
+     */
+    this.bsValueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this._subs = [];
+    // todo: assign only subset of fields
+    Object.assign(this, this._config);
+    this._datepicker = cis.createLoader(_elementRef, _viewContainerRef, _renderer);
+  }
+  /**
+   * Initial value of datepicker
+   */
+  set bsValue(value) {
+    if (this._bsValue === value) {
+      return;
+    }
+    if (value && this.bsConfig?.initCurrentTime) {
+      value = setDateRangesCurrentTimeOnDateSelect(value);
+    }
+    this._bsValue = value;
+    this.bsValueChange.emit(value);
+  }
+  ngOnInit() {
+    this.setConfig();
+    this.initSubscribes();
+  }
+  ngOnChanges(changes) {
+    if (changes["bsConfig"]) {
+      if (changes["bsConfig"].currentValue.initCurrentTime && changes["bsConfig"].currentValue.initCurrentTime !== changes["bsConfig"].previousValue.initCurrentTime && this._bsValue) {
+        this._bsValue = setDateRangesCurrentTimeOnDateSelect(this._bsValue);
+        this.bsValueChange.emit(this._bsValue);
+      }
+    }
+    if (!this._datepickerRef || !this._datepickerRef.instance) {
+      return;
+    }
+    if (changes["minDate"]) {
+      this._datepickerRef.instance.minDate = this.minDate;
+    }
+    if (changes["maxDate"]) {
+      this._datepickerRef.instance.maxDate = this.maxDate;
+    }
+    if (changes["datesEnabled"]) {
+      this._datepickerRef.instance.datesEnabled = this.datesEnabled;
+      this._datepickerRef.instance.value = this._bsValue;
+    }
+    if (changes["datesDisabled"]) {
+      this._datepickerRef.instance.datesDisabled = this.datesDisabled;
+    }
+    if (changes["daysDisabled"]) {
+      this._datepickerRef.instance.daysDisabled = this.daysDisabled;
+    }
+    if (changes["isDisabled"]) {
+      this._datepickerRef.instance.isDisabled = this.isDisabled;
+    }
+    if (changes["dateCustomClasses"]) {
+      this._datepickerRef.instance.dateCustomClasses = this.dateCustomClasses;
+    }
+    this.setConfig();
+  }
+  /**
+   * Set config for datepicker
+   */
+  setConfig() {
+    if (this._datepicker) {
+      this._datepicker.hide();
+    }
+    this._config = Object.assign({}, this._config, this.bsConfig, {
+      value: checkBsValue(this._bsValue, this.maxDate || this.bsConfig && this.bsConfig.maxDate),
+      isDisabled: this.isDisabled,
+      minDate: this.minDate || this.bsConfig && this.bsConfig.minDate,
+      maxDate: this.maxDate || this.bsConfig && this.bsConfig.maxDate,
+      daysDisabled: this.daysDisabled || this.bsConfig && this.bsConfig.daysDisabled,
+      dateCustomClasses: this.dateCustomClasses || this.bsConfig && this.bsConfig.dateCustomClasses,
+      datesDisabled: this.datesDisabled || this.bsConfig && this.bsConfig.datesDisabled,
+      datesEnabled: this.datesEnabled || this.bsConfig && this.bsConfig.datesEnabled,
+      ranges: checkRangesWithMaxDate(this.bsConfig && this.bsConfig.ranges, this.maxDate || this.bsConfig && this.bsConfig.maxDate),
+      maxDateRange: this.bsConfig && this.bsConfig.maxDateRange,
+      initCurrentTime: this.bsConfig?.initCurrentTime
+    });
+    this._datepickerRef = this._datepicker.provide({
+      provide: BsDatepickerConfig,
+      useValue: this._config
+    }).attach(BsDaterangepickerInlineContainerComponent).to(this._elementRef).show();
+    this.initSubscribes();
+  }
+  initSubscribes() {
+    this.unsubscribeSubscriptions();
+    // if date changes from external source (model -> view)
+    this._subs.push(this.bsValueChange.subscribe(value => {
+      if (this._datepickerRef) {
+        this._datepickerRef.instance.value = value;
+      }
+    }));
+    // if date changes from picker (view -> model)
+    if (this._datepickerRef) {
+      this._subs.push(this._datepickerRef.instance.valueChange.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(range => range && range[0] && !!range[1])).subscribe(value => {
+        this.bsValue = value;
+      }));
+    }
+  }
+  unsubscribeSubscriptions() {
+    if (this._subs?.length) {
+      this._subs.map(sub => sub.unsubscribe());
+      this._subs.length = 0;
+    }
+  }
+  ngOnDestroy() {
+    this._datepicker.dispose();
+    this.unsubscribeSubscriptions();
+  }
+}
+BsDaterangepickerInlineDirective.ɵfac = function BsDaterangepickerInlineDirective_Factory(t) {
+  return new (t || BsDaterangepickerInlineDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDaterangepickerInlineConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_16__.ComponentLoaderFactory));
+};
+BsDaterangepickerInlineDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: BsDaterangepickerInlineDirective,
+  selectors: [["bs-daterangepicker-inline"]],
+  inputs: {
+    bsValue: "bsValue",
+    bsConfig: "bsConfig",
+    isDisabled: "isDisabled",
+    minDate: "minDate",
+    maxDate: "maxDate",
+    dateCustomClasses: "dateCustomClasses",
+    daysDisabled: "daysDisabled",
+    datesDisabled: "datesDisabled",
+    datesEnabled: "datesEnabled"
+  },
+  outputs: {
+    bsValueChange: "bsValueChange"
+  },
+  exportAs: ["bsDaterangepickerInline"],
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDaterangepickerInlineDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+    args: [{
+      selector: 'bs-daterangepicker-inline',
+      exportAs: 'bsDaterangepickerInline'
+    }]
+  }], function () {
+    return [{
+      type: BsDaterangepickerInlineConfig
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef
+    }, {
+      type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_16__.ComponentLoaderFactory
+    }];
+  }, {
+    bsValue: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    bsConfig: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    isDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    minDate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    maxDate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    dateCustomClasses: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    daysDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    datesDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    datesEnabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    bsValueChange: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }]
+  });
+})();
+const BS_DATEPICKER_VALUE_ACCESSOR = {
+  provide: _angular_forms__WEBPACK_IMPORTED_MODULE_17__.NG_VALUE_ACCESSOR,
+  useExisting: (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(() => BsDatepickerInputDirective),
+  multi: true
+};
+const BS_DATEPICKER_VALIDATOR = {
+  provide: _angular_forms__WEBPACK_IMPORTED_MODULE_17__.NG_VALIDATORS,
+  useExisting: (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(() => BsDatepickerInputDirective),
+  multi: true
+};
+class BsDatepickerInputDirective {
+  constructor(_picker, _localeService, _renderer, _elRef, changeDetection) {
+    this._picker = _picker;
+    this._localeService = _localeService;
+    this._renderer = _renderer;
+    this._elRef = _elRef;
+    this.changeDetection = changeDetection;
+    this._onChange = Function.prototype;
+    this._onTouched = Function.prototype;
+    this._validatorChange = Function.prototype;
+    this._subs = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subscription();
+  }
+  ngOnInit() {
+    const setBsValue = value => {
+      this._setInputValue(value);
+      if (this._value !== value) {
+        this._value = value;
+        this._onChange(value);
+        this._onTouched();
+      }
+      this.changeDetection.markForCheck();
+    };
+    // if value set via [bsValue] it will not get into value change
+    if (this._picker._bsValue) {
+      setBsValue(this._picker._bsValue);
+    }
+    // update input value on datepicker value update
+    this._subs.add(this._picker.bsValueChange.subscribe(setBsValue));
+    // update input value on locale change
+    this._subs.add(this._localeService.localeChange.subscribe(() => {
+      this._setInputValue(this._value);
+    }));
+    this._subs.add(this._picker.dateInputFormat$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.distinctUntilChanged)()).subscribe(() => {
+      this._setInputValue(this._value);
+    }));
+  }
+  ngOnDestroy() {
+    this._subs.unsubscribe();
+  }
+  onKeydownEvent(event) {
+    if (event.keyCode === 13 || event.code === 'Enter') {
+      this.hide();
+    }
+  }
+  _setInputValue(value) {
+    const initialDate = !value ? '' : (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(value, this._picker._config.dateInputFormat, this._localeService.currentLocale);
+    this._renderer.setProperty(this._elRef.nativeElement, 'value', initialDate);
+  }
+  onChange(event) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    this.writeValue(event.target.value);
+    this._onChange(this._value);
+    if (this._picker._config.returnFocusToInput) {
+      this._renderer.selectRootElement(this._elRef.nativeElement).focus();
+    }
+    this._onTouched();
+  }
+  validate(c) {
+    const _value = c.value;
+    if (_value === null || _value === undefined || _value === '') {
+      return null;
+    }
+    if ((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isDate)(_value)) {
+      const _isDateValid = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isDateValid)(_value);
+      if (!_isDateValid) {
+        return {
+          bsDate: {
+            invalid: _value
+          }
+        };
+      }
+      if (this._picker && this._picker.minDate && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isBefore)(_value, this._picker.minDate, 'date')) {
+        this.writeValue(this._picker.minDate);
+        return {
+          bsDate: {
+            minDate: this._picker.minDate
+          }
+        };
+      }
+      if (this._picker && this._picker.maxDate && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isAfter)(_value, this._picker.maxDate, 'date')) {
+        this.writeValue(this._picker.maxDate);
+        return {
+          bsDate: {
+            maxDate: this._picker.maxDate
+          }
+        };
+      }
+    }
+    return null;
+  }
+  registerOnValidatorChange(fn) {
+    this._validatorChange = fn;
+  }
+  writeValue(value) {
+    if (!value) {
+      this._value = void 0;
+    } else {
+      const _localeKey = this._localeService.currentLocale;
+      const _locale = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getLocale)(_localeKey);
+      if (!_locale) {
+        throw new Error(`Locale "${_localeKey}" is not defined, please add it with "defineLocale(...)"`);
+      }
+      this._value = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.parseDate)(value, this._picker._config.dateInputFormat, this._localeService.currentLocale);
+      if (this._picker._config.useUtc) {
+        this._value = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.utcAsLocal)(this._value);
+      }
+    }
+    this._picker.bsValue = this._value;
+  }
+  setDisabledState(isDisabled) {
+    this._picker.isDisabled = isDisabled;
+    if (isDisabled) {
+      this._renderer.setAttribute(this._elRef.nativeElement, 'disabled', 'disabled');
+      return;
+    }
+    this._renderer.removeAttribute(this._elRef.nativeElement, 'disabled');
+  }
+  registerOnChange(fn) {
+    this._onChange = fn;
+  }
+  registerOnTouched(fn) {
+    this._onTouched = fn;
+  }
+  onBlur() {
+    this._onTouched();
+  }
+  hide() {
+    this._picker.hide();
+    this._renderer.selectRootElement(this._elRef.nativeElement).blur();
+    if (this._picker._config.returnFocusToInput) {
+      this._renderer.selectRootElement(this._elRef.nativeElement).focus();
+    }
+  }
+}
+BsDatepickerInputDirective.ɵfac = function BsDatepickerInputDirective_Factory(t) {
+  return new (t || BsDatepickerInputDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDatepickerDirective, 1), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsLocaleService), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef));
+};
+BsDatepickerInputDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: BsDatepickerInputDirective,
+  selectors: [["input", "bsDatepicker", ""]],
+  hostBindings: function BsDatepickerInputDirective_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function BsDatepickerInputDirective_change_HostBindingHandler($event) {
+        return ctx.onChange($event);
+      })("keyup.esc", function BsDatepickerInputDirective_keyup_esc_HostBindingHandler() {
+        return ctx.hide();
+      })("keydown", function BsDatepickerInputDirective_keydown_HostBindingHandler($event) {
+        return ctx.onKeydownEvent($event);
+      })("blur", function BsDatepickerInputDirective_blur_HostBindingHandler() {
+        return ctx.onBlur();
+      });
+    }
+  },
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([BS_DATEPICKER_VALUE_ACCESSOR, BS_DATEPICKER_VALIDATOR])]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerInputDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+    args: [{
+      selector: `input[bsDatepicker]`,
+      // eslint-disable-next-line @angular-eslint/no-host-metadata-property
+      host: {
+        '(change)': 'onChange($event)',
+        '(keyup.esc)': 'hide()',
+        '(keydown)': 'onKeydownEvent($event)',
+        '(blur)': 'onBlur()'
+      },
+      providers: [BS_DATEPICKER_VALUE_ACCESSOR, BS_DATEPICKER_VALIDATOR]
+    }]
+  }], function () {
+    return [{
+      type: BsDatepickerDirective,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Host
+      }]
+    }, {
+      type: BsLocaleService
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef
+    }];
+  }, null);
+})();
+class BsDaterangepickerConfig extends BsDatepickerConfig {
+  constructor() {
+    super(...arguments);
+    // DatepickerRenderOptions
+    this.displayMonths = 2;
+  }
+}
+BsDaterangepickerConfig.ɵfac = /* @__PURE__ */function () {
+  let ɵBsDaterangepickerConfig_BaseFactory;
+  return function BsDaterangepickerConfig_Factory(t) {
+    return (ɵBsDaterangepickerConfig_BaseFactory || (ɵBsDaterangepickerConfig_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](BsDaterangepickerConfig)))(t || BsDaterangepickerConfig);
+  };
+}();
+BsDaterangepickerConfig.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: BsDaterangepickerConfig,
+  factory: BsDaterangepickerConfig.ɵfac,
+  providedIn: 'root'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDaterangepickerConfig, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'root'
+    }]
+  }], null, null);
+})();
+let previousDate;
+class BsDaterangepickerDirective {
+  constructor(_config, _elementRef, _renderer, _viewContainerRef, cis) {
+    this._config = _config;
+    this._elementRef = _elementRef;
+    this._renderer = _renderer;
+    /**
+     * Placement of a daterangepicker. Accepts: "top", "bottom", "left", "right"
+     */
+    this.placement = 'bottom';
+    /**
+     * Specifies events that should trigger. Supports a space separated list of
+     * event names.
+     */
+    this.triggers = 'click';
+    /**
+     * Close daterangepicker on outside click
+     */
+    this.outsideClick = true;
+    /**
+     * A selector specifying the element the daterangepicker should be appended to.
+     */
+    this.container = 'body';
+    this.outsideEsc = true;
+    this.isDestroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_14__.Subject();
+    /**
+     * Indicates whether daterangepicker's content is enabled or not
+     */
+    this.isDisabled = false;
+    /**
+     * Emits when daterangepicker value has been changed
+     */
+    this.bsValueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this._subs = [];
+    this._rangeInputFormat$ = new rxjs__WEBPACK_IMPORTED_MODULE_14__.Subject();
+    this._datepicker = cis.createLoader(_elementRef, _viewContainerRef, _renderer);
+    Object.assign(this, _config);
+    this.onShown = this._datepicker.onShown;
+    this.onHidden = this._datepicker.onHidden;
+    this.isOpen$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__.BehaviorSubject(this.isOpen);
+  }
+  /**
+   * Returns whether or not the daterangepicker is currently being shown
+   */
+  get isOpen() {
+    return this._datepicker.isShown;
+  }
+  set isOpen(value) {
+    this.isOpen$.next(value);
+  }
+  /**
+   * Initial value of daterangepicker
+   */
+  set bsValue(value) {
+    if (this._bsValue === value) {
+      return;
+    }
+    if (value && this.bsConfig?.initCurrentTime) {
+      value = setDateRangesCurrentTimeOnDateSelect(value);
+    }
+    this.initPreviousValue();
+    this._bsValue = value;
+    this.bsValueChange.emit(value);
+  }
+  get isDatepickerReadonly() {
+    return this.isDisabled ? '' : null;
+  }
+  get rangeInputFormat$() {
+    return this._rangeInputFormat$;
+  }
+  ngOnInit() {
+    this.isDestroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_14__.Subject();
+    this._datepicker.listen({
+      outsideClick: this.outsideClick,
+      outsideEsc: this.outsideEsc,
+      triggers: this.triggers,
+      show: () => this.show()
+    });
+    this.initPreviousValue();
+    this.setConfig();
+  }
+  ngOnChanges(changes) {
+    if (changes["bsConfig"]) {
+      if (changes["bsConfig"].currentValue?.initCurrentTime && changes["bsConfig"].currentValue?.initCurrentTime !== changes["bsConfig"].previousValue?.initCurrentTime && this._bsValue) {
+        this.initPreviousValue();
+        this._bsValue = setDateRangesCurrentTimeOnDateSelect(this._bsValue);
+        this.bsValueChange.emit(this._bsValue);
+      }
+      this.setConfig();
+      this._rangeInputFormat$.next(changes["bsConfig"].currentValue && changes["bsConfig"].currentValue.rangeInputFormat);
+    }
+    if (!this._datepickerRef || !this._datepickerRef.instance) {
+      return;
+    }
+    if (changes["minDate"]) {
+      this._datepickerRef.instance.minDate = this.minDate;
+    }
+    if (changes["maxDate"]) {
+      this._datepickerRef.instance.maxDate = this.maxDate;
+    }
+    if (changes["datesDisabled"]) {
+      this._datepickerRef.instance.datesDisabled = this.datesDisabled;
+    }
+    if (changes["datesEnabled"]) {
+      this._datepickerRef.instance.datesEnabled = this.datesEnabled;
+    }
+    if (changes["daysDisabled"]) {
+      this._datepickerRef.instance.daysDisabled = this.daysDisabled;
+    }
+    if (changes["isDisabled"]) {
+      this._datepickerRef.instance.isDisabled = this.isDisabled;
+    }
+    if (changes["dateCustomClasses"]) {
+      this._datepickerRef.instance.dateCustomClasses = this.dateCustomClasses;
+    }
+  }
+  ngAfterViewInit() {
+    this.isOpen$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(isOpen => isOpen !== this.isOpen), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_15__.takeUntil)(this.isDestroy$)).subscribe(() => this.toggle());
+  }
+  /**
+   * Opens an element’s datepicker. This is considered a “manual” triggering of
+   * the datepicker.
+   */
+  show() {
+    if (this._datepicker.isShown) {
+      return;
+    }
+    this.setConfig();
+    this._datepickerRef = this._datepicker.provide({
+      provide: BsDatepickerConfig,
+      useValue: this._config
+    }).attach(BsDaterangepickerContainerComponent).to(this.container).position({
+      attachment: this.placement
+    }).show({
+      placement: this.placement
+    });
+    this.initSubscribes();
+  }
+  initSubscribes() {
+    // if date changes from external source (model -> view)
+    this._subs.push(this.bsValueChange.subscribe(value => {
+      if (this._datepickerRef) {
+        this._datepickerRef.instance.value = value;
+      }
+    }));
+    // if date changes from picker (view -> model)
+    if (this._datepickerRef) {
+      this._subs.push(this._datepickerRef.instance.valueChange.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.filter)(range => range && range[0] && !!range[1])).subscribe(value => {
+        this.initPreviousValue();
+        this.bsValue = value;
+        if (this.keepDatepickerModalOpened()) {
+          return;
+        }
+        this.hide();
+      }));
+    }
+  }
+  initPreviousValue() {
+    previousDate = this._bsValue;
+  }
+  keepDatepickerModalOpened() {
+    if (!previousDate || !this.bsConfig?.keepDatepickerOpened || !this._config.withTimepicker) {
+      return false;
+    }
+    return this.isDateSame();
+  }
+  isDateSame() {
+    return this._bsValue?.[0]?.getDate() === previousDate?.[0]?.getDate() && this._bsValue?.[0]?.getMonth() === previousDate?.[0]?.getMonth() && this._bsValue?.[0]?.getFullYear() === previousDate?.[0]?.getFullYear() && this._bsValue?.[1]?.getDate() === previousDate?.[1]?.getDate() && this._bsValue?.[1]?.getMonth() === previousDate?.[1]?.getMonth() && this._bsValue?.[1]?.getFullYear() === previousDate?.[1]?.getFullYear();
+  }
+  /**
+   * Set config for daterangepicker
+   */
+  setConfig() {
+    this._config = Object.assign({}, this._config, this.bsConfig, {
+      value: checkBsValue(this._bsValue, this.maxDate || this.bsConfig && this.bsConfig.maxDate),
+      isDisabled: this.isDisabled,
+      minDate: this.minDate || this.bsConfig && this.bsConfig.minDate,
+      maxDate: this.maxDate || this.bsConfig && this.bsConfig.maxDate,
+      daysDisabled: this.daysDisabled || this.bsConfig && this.bsConfig.daysDisabled,
+      dateCustomClasses: this.dateCustomClasses || this.bsConfig && this.bsConfig.dateCustomClasses,
+      datesDisabled: this.datesDisabled || this.bsConfig && this.bsConfig.datesDisabled,
+      datesEnabled: this.datesEnabled || this.bsConfig && this.bsConfig.datesEnabled,
+      ranges: checkRangesWithMaxDate(this.bsConfig && this.bsConfig.ranges, this.maxDate || this.bsConfig && this.bsConfig.maxDate),
+      maxDateRange: this.bsConfig && this.bsConfig.maxDateRange,
+      initCurrentTime: this.bsConfig?.initCurrentTime,
+      keepDatepickerOpened: this.bsConfig?.keepDatepickerOpened
+    });
+  }
+  /**
+   * Closes an element’s datepicker. This is considered a “manual” triggering of
+   * the datepicker.
+   */
+  hide() {
+    if (this.isOpen) {
+      this._datepicker.hide();
+    }
+    for (const sub of this._subs) {
+      sub.unsubscribe();
+    }
+    if (this._config.returnFocusToInput) {
+      this._renderer.selectRootElement(this._elementRef.nativeElement).focus();
+    }
+  }
+  /**
+   * Toggles an element’s datepicker. This is considered a “manual” triggering
+   * of the datepicker.
+   */
+  toggle() {
+    if (this.isOpen) {
+      return this.hide();
+    }
+    this.show();
+  }
+  unsubscribeSubscriptions() {
+    if (this._subs?.length) {
+      this._subs.map(sub => sub.unsubscribe());
+      this._subs.length = 0;
+    }
+  }
+  ngOnDestroy() {
+    this._datepicker.dispose();
+    this.isOpen$.next(false);
+    if (this.isDestroy$) {
+      this.isDestroy$.next(null);
+      this.isDestroy$.complete();
+    }
+    this.unsubscribeSubscriptions();
+  }
+}
+BsDaterangepickerDirective.ɵfac = function BsDaterangepickerDirective_Factory(t) {
+  return new (t || BsDaterangepickerDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDaterangepickerConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_16__.ComponentLoaderFactory));
+};
+BsDaterangepickerDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: BsDaterangepickerDirective,
+  selectors: [["", "bsDaterangepicker", ""]],
+  hostVars: 1,
+  hostBindings: function BsDaterangepickerDirective_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("readonly", ctx.isDatepickerReadonly);
+    }
+  },
+  inputs: {
+    placement: "placement",
+    triggers: "triggers",
+    outsideClick: "outsideClick",
+    container: "container",
+    outsideEsc: "outsideEsc",
+    isOpen: "isOpen",
+    bsValue: "bsValue",
+    bsConfig: "bsConfig",
+    isDisabled: "isDisabled",
+    minDate: "minDate",
+    maxDate: "maxDate",
+    dateCustomClasses: "dateCustomClasses",
+    daysDisabled: "daysDisabled",
+    datesDisabled: "datesDisabled",
+    datesEnabled: "datesEnabled"
+  },
+  outputs: {
+    onShown: "onShown",
+    onHidden: "onHidden",
+    bsValueChange: "bsValueChange"
+  },
+  exportAs: ["bsDaterangepicker"],
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDaterangepickerDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+    args: [{
+      selector: '[bsDaterangepicker]',
+      exportAs: 'bsDaterangepicker'
+    }]
+  }], function () {
+    return [{
+      type: BsDaterangepickerConfig
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef
+    }, {
+      type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_16__.ComponentLoaderFactory
+    }];
+  }, {
+    placement: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    triggers: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    outsideClick: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    container: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    outsideEsc: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    isOpen: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    onShown: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onHidden: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    bsValue: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    bsConfig: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    isDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    minDate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    maxDate: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    dateCustomClasses: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    daysDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    datesDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    datesEnabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    bsValueChange: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    isDatepickerReadonly: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+      args: ['attr.readonly']
+    }]
+  });
+})();
+const BS_DATERANGEPICKER_VALUE_ACCESSOR = {
+  provide: _angular_forms__WEBPACK_IMPORTED_MODULE_17__.NG_VALUE_ACCESSOR,
+  useExisting: (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(() => BsDaterangepickerInputDirective),
+  multi: true
+};
+const BS_DATERANGEPICKER_VALIDATOR = {
+  provide: _angular_forms__WEBPACK_IMPORTED_MODULE_17__.NG_VALIDATORS,
+  useExisting: (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(() => BsDaterangepickerInputDirective),
+  multi: true
+};
+class BsDaterangepickerInputDirective {
+  constructor(_picker, _localeService, _renderer, _elRef, changeDetection) {
+    this._picker = _picker;
+    this._localeService = _localeService;
+    this._renderer = _renderer;
+    this._elRef = _elRef;
+    this.changeDetection = changeDetection;
+    this._onChange = Function.prototype;
+    this._onTouched = Function.prototype;
+    this._validatorChange = Function.prototype;
+    this._subs = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subscription();
+  }
+  ngOnInit() {
+    const setBsValue = value => {
+      this._setInputValue(value);
+      if (this._value !== value) {
+        this._value = value;
+        this._onChange(value);
+        this._onTouched();
+      }
+      this.changeDetection.markForCheck();
+    };
+    // if value set via [bsValue] it will not get into value change
+    if (this._picker._bsValue) {
+      setBsValue(this._picker._bsValue);
+    }
+    // update input value on datepicker value update
+    this._subs.add(this._picker.bsValueChange.subscribe(value => {
+      this._setInputValue(value);
+      if (this._value !== value) {
+        this._value = value;
+        this._onChange(value);
+        this._onTouched();
+      }
+      this.changeDetection.markForCheck();
+    }));
+    // update input value on locale change
+    this._subs.add(this._localeService.localeChange.subscribe(() => {
+      this._setInputValue(this._value);
+    }));
+    this._subs.add(
+    // update input value on format change
+    this._picker.rangeInputFormat$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.distinctUntilChanged)()).subscribe(() => {
+      this._setInputValue(this._value);
+    }));
+  }
+  ngOnDestroy() {
+    this._subs.unsubscribe();
+  }
+  onKeydownEvent(event) {
+    if (event.keyCode === 13 || event.code === 'Enter') {
+      this.hide();
+    }
+  }
+  _setInputValue(date) {
+    let range = '';
+    if (date) {
+      const start = !date[0] ? '' : (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(date[0], this._picker._config.rangeInputFormat, this._localeService.currentLocale);
+      const end = !date[1] ? '' : (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.formatDate)(date[1], this._picker._config.rangeInputFormat, this._localeService.currentLocale);
+      range = start && end ? start + this._picker._config.rangeSeparator + end : '';
+    }
+    this._renderer.setProperty(this._elRef.nativeElement, 'value', range);
+  }
+  onChange(event) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    this.writeValue(event.target.value);
+    this._onChange(this._value);
+    if (this._picker._config.returnFocusToInput) {
+      this._renderer.selectRootElement(this._elRef.nativeElement).focus();
+    }
+    this._onTouched();
+  }
+  validate(c) {
+    let _value = c.value;
+    const errors = [];
+    if (_value === null || _value === undefined || !(0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isArray)(_value)) {
+      return null;
+    }
+    _value = _value.slice().sort((a, b) => a.getTime() - b.getTime());
+    const _isFirstDateValid = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isDateValid)(_value[0]);
+    const _isSecondDateValid = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isDateValid)(_value[1]);
+    if (!_isFirstDateValid) {
+      return {
+        bsDate: {
+          invalid: _value[0]
+        }
+      };
+    }
+    if (!_isSecondDateValid) {
+      return {
+        bsDate: {
+          invalid: _value[1]
+        }
+      };
+    }
+    if (this._picker && this._picker.minDate && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isBefore)(_value[0], this._picker.minDate, 'date')) {
+      _value[0] = this._picker.minDate;
+      errors.push({
+        bsDate: {
+          minDate: this._picker.minDate
+        }
+      });
+    }
+    if (this._picker && this._picker.maxDate && (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.isAfter)(_value[1], this._picker.maxDate, 'date')) {
+      _value[1] = this._picker.maxDate;
+      errors.push({
+        bsDate: {
+          maxDate: this._picker.maxDate
+        }
+      });
+    }
+    if (errors.length > 0) {
+      this.writeValue(_value);
+      return errors;
+    }
+    return null;
+  }
+  registerOnValidatorChange(fn) {
+    this._validatorChange = fn;
+  }
+  writeValue(value) {
+    if (!value) {
+      this._value = void 0;
+    } else {
+      const _localeKey = this._localeService.currentLocale;
+      const _locale = (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.getLocale)(_localeKey);
+      if (!_locale) {
+        throw new Error(`Locale "${_localeKey}" is not defined, please add it with "defineLocale(...)"`);
+      }
+      let _input = [];
+      if (typeof value === 'string') {
+        const trimmedSeparator = this._picker._config.rangeSeparator.trim();
+        if (value.replace(/[^-]/g, '').length > 1) {
+          _input = value.split(this._picker._config.rangeSeparator);
+        } else {
+          _input = value.split(trimmedSeparator.length > 0 ? trimmedSeparator : this._picker._config.rangeSeparator).map(_val => _val.trim());
+        }
+      }
+      if (Array.isArray(value)) {
+        _input = value;
+      }
+      this._value = _input.map(_val => {
+        if (this._picker._config.useUtc) {
+          return (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.utcAsLocal)((0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.parseDate)(_val, this._picker._config.rangeInputFormat, this._localeService.currentLocale));
+        }
+        return (0,ngx_bootstrap_chronos__WEBPACK_IMPORTED_MODULE_7__.parseDate)(_val, this._picker._config.rangeInputFormat, this._localeService.currentLocale);
+      }).map(date => isNaN(date.valueOf()) ? void 0 : date);
+    }
+    this._picker.bsValue = this._value;
+  }
+  setDisabledState(isDisabled) {
+    this._picker.isDisabled = isDisabled;
+    if (isDisabled) {
+      this._renderer.setAttribute(this._elRef.nativeElement, 'disabled', 'disabled');
+      return;
+    }
+    this._renderer.removeAttribute(this._elRef.nativeElement, 'disabled');
+  }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  registerOnChange(fn) {
+    this._onChange = fn;
+  }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  registerOnTouched(fn) {
+    this._onTouched = fn;
+  }
+  onBlur() {
+    this._onTouched();
+  }
+  hide() {
+    this._picker.hide();
+    this._renderer.selectRootElement(this._elRef.nativeElement).blur();
+    if (this._picker._config.returnFocusToInput) {
+      this._renderer.selectRootElement(this._elRef.nativeElement).focus();
+    }
+  }
+}
+BsDaterangepickerInputDirective.ɵfac = function BsDaterangepickerInputDirective_Factory(t) {
+  return new (t || BsDaterangepickerInputDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsDaterangepickerDirective, 1), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](BsLocaleService), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef));
+};
+BsDaterangepickerInputDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: BsDaterangepickerInputDirective,
+  selectors: [["input", "bsDaterangepicker", ""]],
+  hostBindings: function BsDaterangepickerInputDirective_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function BsDaterangepickerInputDirective_change_HostBindingHandler($event) {
+        return ctx.onChange($event);
+      })("keyup.esc", function BsDaterangepickerInputDirective_keyup_esc_HostBindingHandler() {
+        return ctx.hide();
+      })("keydown", function BsDaterangepickerInputDirective_keydown_HostBindingHandler($event) {
+        return ctx.onKeydownEvent($event);
+      })("blur", function BsDaterangepickerInputDirective_blur_HostBindingHandler() {
+        return ctx.onBlur();
+      });
+    }
+  },
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([BS_DATERANGEPICKER_VALUE_ACCESSOR, BS_DATERANGEPICKER_VALIDATOR])]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDaterangepickerInputDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+    args: [{
+      selector: `input[bsDaterangepicker]`,
+      // eslint-disable-next-line @angular-eslint/no-host-metadata-property
+      host: {
+        '(change)': 'onChange($event)',
+        '(keyup.esc)': 'hide()',
+        '(keydown)': 'onKeydownEvent($event)',
+        '(blur)': 'onBlur()'
+      },
+      providers: [BS_DATERANGEPICKER_VALUE_ACCESSOR, BS_DATERANGEPICKER_VALIDATOR]
+    }]
+  }], function () {
+    return [{
+      type: BsDaterangepickerDirective,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Host
+      }]
+    }, {
+      type: BsLocaleService
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef
+    }];
+  }, null);
+})();
+class BsDatepickerModule {
+  static forRoot() {
+    return {
+      ngModule: BsDatepickerModule,
+      providers: [ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_16__.ComponentLoaderFactory, ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_12__.PositioningService, BsDatepickerStore, BsDatepickerActions, BsDatepickerEffects, BsLocaleService, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_13__.TimepickerActions]
+    };
+  }
+}
+BsDatepickerModule.ɵfac = function BsDatepickerModule_Factory(t) {
+  return new (t || BsDatepickerModule)();
+};
+BsDatepickerModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
+  type: BsDatepickerModule
+});
+BsDatepickerModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
+  imports: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.CommonModule, ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_10__.TooltipModule, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_13__.TimepickerModule]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsDatepickerModule, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
+    args: [{
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.CommonModule, ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_10__.TooltipModule, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_13__.TimepickerModule],
+      declarations: [BsCalendarLayoutComponent, BsCurrentDateViewComponent, BsCustomDatesViewComponent, BsDatepickerDayDecoratorComponent, BsDatepickerNavigationViewComponent, BsDaysCalendarViewComponent, BsMonthCalendarViewComponent, BsTimepickerViewComponent, BsYearsCalendarViewComponent, BsDatepickerContainerComponent, BsDatepickerDirective, BsDatepickerInlineContainerComponent, BsDatepickerInlineDirective, BsDatepickerInputDirective, BsDaterangepickerContainerComponent, BsDaterangepickerDirective, BsDaterangepickerInlineContainerComponent, BsDaterangepickerInlineDirective, BsDaterangepickerInputDirective],
+      exports: [BsDatepickerContainerComponent, BsDatepickerDirective, BsDatepickerInlineContainerComponent, BsDatepickerInlineDirective, BsDatepickerInputDirective, BsDaterangepickerContainerComponent, BsDaterangepickerDirective, BsDaterangepickerInlineContainerComponent, BsDaterangepickerInlineDirective, BsDaterangepickerInputDirective]
+    }]
+  }], null, null);
+})();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
+/***/ 9272:
+/*!***********************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/mini-ngrx/fesm2020/ngx-bootstrap-mini-ngrx.mjs ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MiniState": () => (/* binding */ MiniState),
+/* harmony export */   "MiniStore": () => (/* binding */ MiniStore)
+/* harmony export */ });
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ 6317);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 5650);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 833);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ 8728);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ 4503);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ 635);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ 8977);
+
+
+class MiniState extends rxjs__WEBPACK_IMPORTED_MODULE_0__.BehaviorSubject {
+  constructor(_initialState, actionsDispatcher$, reducer) {
+    super(_initialState);
+    const actionInQueue$ = actionsDispatcher$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_1__.observeOn)(rxjs__WEBPACK_IMPORTED_MODULE_2__.queueScheduler));
+    const state$ = actionInQueue$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_3__.scan)((state, action) => {
+      if (!action) {
+        return state;
+      }
+      return reducer(state, action);
+    }, _initialState));
+    state$.subscribe(value => this.next(value));
+  }
+}
+
+/**
+ * @copyright ngrx
+ */
+class MiniStore extends rxjs__WEBPACK_IMPORTED_MODULE_4__.Observable {
+  constructor(_dispatcher,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  _reducer,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  state$) {
+    super();
+    this._dispatcher = _dispatcher;
+    this._reducer = _reducer;
+    this.source = state$;
+  }
+  select(pathOrMapFn) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    const mapped$ = this.source?.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(pathOrMapFn)) || new rxjs__WEBPACK_IMPORTED_MODULE_4__.Observable().pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(pathOrMapFn));
+    return mapped$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.distinctUntilChanged)());
+  }
+  lift(operator) {
+    const store = new MiniStore(this._dispatcher, this._reducer, this);
+    store.operator = operator;
+    return store;
+  }
+  dispatch(action) {
+    this._dispatcher.next(action);
+  }
+  next(action) {
+    this._dispatcher.next(action);
+  }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  error(err) {
+    this._dispatcher.error(err);
+  }
+  complete() {
+    /*noop*/
+  }
+}
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
 /***/ 4448:
 /*!*************************************************************************************!*\
   !*** ./node_modules/ngx-bootstrap/pagination/fesm2020/ngx-bootstrap-pagination.mjs ***!
@@ -29111,6 +43477,3495 @@ PaginationModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0
     }]
   }], null, null);
 })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
+/***/ 2623:
+/*!***************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/positioning/fesm2020/ngx-bootstrap-positioning.mjs ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PlacementForBs5": () => (/* binding */ PlacementForBs5),
+/* harmony export */   "Positioning": () => (/* binding */ Positioning),
+/* harmony export */   "PositioningService": () => (/* binding */ PositioningService),
+/* harmony export */   "checkMargins": () => (/* binding */ checkMargins),
+/* harmony export */   "positionElements": () => (/* binding */ positionElements)
+/* harmony export */ });
+/* harmony import */ var ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ngx-bootstrap/utils */ 8132);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 4666);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 228);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 6646);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 3280);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ 745);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 8184);
+
+
+
+
+
+var MapPlacementInToRL;
+(function (MapPlacementInToRL) {
+  MapPlacementInToRL["top"] = "top";
+  MapPlacementInToRL["bottom"] = "bottom";
+  MapPlacementInToRL["left"] = "left";
+  MapPlacementInToRL["right"] = "right";
+  MapPlacementInToRL["auto"] = "auto";
+  MapPlacementInToRL["end"] = "right";
+  MapPlacementInToRL["start"] = "left";
+  MapPlacementInToRL["top left"] = "top left";
+  MapPlacementInToRL["top right"] = "top right";
+  MapPlacementInToRL["right top"] = "right top";
+  MapPlacementInToRL["right bottom"] = "right bottom";
+  MapPlacementInToRL["bottom right"] = "bottom right";
+  MapPlacementInToRL["bottom left"] = "bottom left";
+  MapPlacementInToRL["left bottom"] = "left bottom";
+  MapPlacementInToRL["left top"] = "left top";
+  MapPlacementInToRL["top start"] = "top left";
+  MapPlacementInToRL["top end"] = "top right";
+  MapPlacementInToRL["end top"] = "right top";
+  MapPlacementInToRL["end bottom"] = "right bottom";
+  MapPlacementInToRL["bottom end"] = "bottom right";
+  MapPlacementInToRL["bottom start"] = "bottom left";
+  MapPlacementInToRL["start bottom"] = "start bottom";
+  MapPlacementInToRL["start top"] = "left top";
+})(MapPlacementInToRL || (MapPlacementInToRL = {}));
+var PlacementForBs5;
+(function (PlacementForBs5) {
+  PlacementForBs5["top"] = "top";
+  PlacementForBs5["bottom"] = "bottom";
+  PlacementForBs5["left"] = "start";
+  PlacementForBs5["right"] = "end";
+  PlacementForBs5["auto"] = "auto";
+  PlacementForBs5["end"] = "end";
+  PlacementForBs5["start"] = "start";
+  PlacementForBs5["top left"] = "top start";
+  PlacementForBs5["top right"] = "top end";
+  PlacementForBs5["right top"] = "end top";
+  PlacementForBs5["right bottom"] = "end bottom";
+  PlacementForBs5["bottom right"] = "bottom end";
+  PlacementForBs5["bottom left"] = "bottom start";
+  PlacementForBs5["left bottom"] = "start bottom";
+  PlacementForBs5["left top"] = "start top";
+  PlacementForBs5["top start"] = "top start";
+  PlacementForBs5["top end"] = "top end";
+  PlacementForBs5["end top"] = "end top";
+  PlacementForBs5["end bottom"] = "end bottom";
+  PlacementForBs5["bottom end"] = "bottom end";
+  PlacementForBs5["bottom start"] = "bottom start";
+  PlacementForBs5["start bottom"] = "start bottom";
+  PlacementForBs5["start top"] = "start top";
+})(PlacementForBs5 || (PlacementForBs5 = {}));
+function getStyleComputedProperty(element, property) {
+  if (element.nodeType !== 1) {
+    return [];
+  }
+  // NOTE: 1 DOM access here
+  const window = element.ownerDocument.defaultView;
+  const css = window?.getComputedStyle(element, null);
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  return property ? css && css[property] : css;
+}
+
+/**
+ * Returns the offset parent of the given element
+ */
+function getOffsetParent(element) {
+  if (!element) {
+    return document.documentElement;
+  }
+  const noOffsetParent = null;
+  // NOTE: 1 DOM access here
+  let offsetParent = element?.offsetParent;
+  // Skip hidden elements which don't have an offsetParent
+  let sibling = void 0;
+  while (offsetParent === noOffsetParent && element.nextElementSibling && sibling !== element.nextElementSibling) {
+    // todo: valorkin fix
+    sibling = element.nextElementSibling;
+    offsetParent = sibling.offsetParent;
+  }
+  const nodeName = offsetParent && offsetParent.nodeName;
+  if (!nodeName || nodeName === 'BODY' || nodeName === 'HTML') {
+    return sibling ? sibling.ownerDocument.documentElement : document.documentElement;
+  }
+  // .offsetParent will return the closest TH, TD or TABLE in case
+  if (offsetParent && ['TH', 'TD', 'TABLE'].indexOf(offsetParent.nodeName) !== -1 && getStyleComputedProperty(offsetParent, 'position') === 'static') {
+    return getOffsetParent(offsetParent);
+  }
+  return offsetParent;
+}
+
+// todo: valorkin fix
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function isOffsetContainer(element) {
+  const {
+    nodeName
+  } = element;
+  if (nodeName === 'BODY') {
+    return false;
+  }
+  return nodeName === 'HTML' || getOffsetParent(element.firstElementChild) === element;
+}
+
+/**
+ * Finds the root node (document, shadowDOM root) of the given element
+ */
+function getRoot(node) {
+  if (node.parentNode !== null) {
+    return getRoot(node.parentNode);
+  }
+  return node;
+}
+
+/**
+ * Finds the offset parent common to the two provided nodes
+ */
+function findCommonOffsetParent(element1, element2) {
+  // This check is needed to avoid errors in case one of the elements isn't defined for any reason
+  if (!element1 || !element1.nodeType || !element2 || !element2.nodeType) {
+    return document.documentElement;
+  }
+  // Here we make sure to give as "start" the element that comes first in the DOM
+  const order = element1.compareDocumentPosition(element2) & Node.DOCUMENT_POSITION_FOLLOWING;
+  const start = order ? element1 : element2;
+  const end = order ? element2 : element1;
+  // Get common ancestor container
+  const range = document.createRange();
+  range.setStart(start, 0);
+  range.setEnd(end, 0);
+  // todo: valorkin fix
+  const commonAncestorContainer = range.commonAncestorContainer;
+  // Both nodes are inside #document
+  if (element1 !== commonAncestorContainer && element2 !== commonAncestorContainer || start.contains(end)) {
+    if (isOffsetContainer(commonAncestorContainer)) {
+      return commonAncestorContainer;
+    }
+    return getOffsetParent(commonAncestorContainer);
+  }
+  // one of the nodes is inside shadowDOM, find which one
+  const element1root = getRoot(element1);
+  if (element1root.host) {
+    return findCommonOffsetParent(element1root.host, element2);
+  } else {
+    return findCommonOffsetParent(element1, getRoot(element2).host);
+  }
+}
+
+/**
+ * Finds the first parent of an element that has a transformed property defined
+ */
+function getFixedPositionOffsetParent(element) {
+  // This check is needed to avoid errors in case one of the elements isn't defined for any reason
+  if (!element || !element.parentElement) {
+    return document.documentElement;
+  }
+  let el = element.parentElement;
+  while (el?.parentElement && getStyleComputedProperty(el, 'transform') === 'none') {
+    el = el.parentElement;
+  }
+  return el || document.documentElement;
+}
+
+/**
+ * Helper to detect borders of a given element
+ */
+function getBordersSize(styles, axis) {
+  const sideA = axis === 'x' ? 'Left' : 'Top';
+  const sideB = sideA === 'Left' ? 'Right' : 'Bottom';
+  return parseFloat(styles[`border${sideA}Width`]) + parseFloat(styles[`border${sideB}Width`]);
+}
+function getSize(axis, body, html, computedStyle) {
+  const _body = body;
+  const _html = html;
+  const _computedStyle = computedStyle;
+  return Math.max(_body[`offset${axis}`], _body[`scroll${axis}`], _html[`client${axis}`], _html[`offset${axis}`], _html[`scroll${axis}`], 0);
+}
+function getWindowSizes(document) {
+  const body = document.body;
+  const html = document.documentElement;
+  const computedStyle = void 0;
+  return {
+    height: getSize('Height', body, html, computedStyle),
+    width: getSize('Width', body, html, computedStyle)
+  };
+}
+function getClientRect(offsets) {
+  return {
+    ...offsets,
+    right: (offsets.left || 0) + offsets.width,
+    bottom: (offsets.top || 0) + offsets.height
+  };
+}
+
+/**
+ * Tells if a given input is a number
+ */
+function isNumeric(n) {
+  return n !== '' && !isNaN(parseFloat(n)) && isFinite(Number(n));
+}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function isNumber(value) {
+  return typeof value === 'number' || Object.prototype.toString.call(value) === '[object Number]';
+}
+
+/**
+ * Get bounding client rect of given element
+ */
+function getBoundingClientRect(element) {
+  const rect = element.getBoundingClientRect();
+  // IE10 10 FIX: Please, don't ask, the element isn't
+  // considered in DOM in some circumstances...
+  // This isn't reproducible in IE10 compatibility mode of IE11
+  // try {
+  //   if (isIE(10)) {
+  //     const scrollTop = getScroll(element, 'top');
+  //     const scrollLeft = getScroll(element, 'left');
+  //     if (rect && isNumber(rect.top) && isNumber(rect.left) && isNumber(rect.bottom) && isNumber(rect.right)) {
+  //       rect.top += scrollTop;
+  //       rect.left += scrollLeft;
+  //       rect.bottom += scrollTop;
+  //       rect.right += scrollLeft;
+  //     }
+  //   }
+  // } catch (e) {
+  //   return rect;
+  // }
+  if (!(rect && isNumber(rect.top) && isNumber(rect.left) && isNumber(rect.bottom) && isNumber(rect.right))) {
+    return rect;
+  }
+  const result = {
+    left: rect.left,
+    top: rect.top,
+    width: rect.right - rect.left,
+    height: rect.bottom - rect.top
+  };
+  // subtract scrollbar size from sizes
+  const sizes = element.nodeName === 'HTML' ? getWindowSizes(element.ownerDocument) : undefined;
+  const width = sizes?.width || element.clientWidth || isNumber(rect.right) && isNumber(result.left) && rect.right - result.left || 0;
+  const height = sizes?.height || element.clientHeight || isNumber(rect.bottom) && isNumber(result.top) && rect.bottom - result.top || 0;
+  let horizScrollbar = element.offsetWidth - width;
+  let vertScrollbar = element.offsetHeight - height;
+  // if an hypothetical scrollbar is detected, we must be sure it's not a `border`
+  // we make this check conditional for performance reasons
+  if (horizScrollbar || vertScrollbar) {
+    const styles = getStyleComputedProperty(element);
+    horizScrollbar -= getBordersSize(styles, 'x');
+    vertScrollbar -= getBordersSize(styles, 'y');
+    result.width -= horizScrollbar;
+    result.height -= vertScrollbar;
+  }
+  return getClientRect(result);
+}
+
+/**
+ * Returns the parentNode or the host of the element
+ */
+// todo: valorkin fix
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function getParentNode(element) {
+  if (element.nodeName === 'HTML') {
+    return element;
+  }
+  return element.parentNode || element.host;
+}
+
+/**
+ * Returns the scrolling parent of the given element
+ */
+// todo: valorkin fix
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function getScrollParent(element) {
+  // Return body, `getScroll` will take care to get the correct `scrollTop` from it
+  if (!element) {
+    return document.body;
+  }
+  switch (element.nodeName) {
+    case 'HTML':
+    case 'BODY':
+      return element.ownerDocument.body;
+    case '#document':
+      return element.body;
+    default:
+  }
+  // Firefox want us to check `-x` and `-y` variations as well
+  const {
+    overflow,
+    overflowX,
+    overflowY
+  } = getStyleComputedProperty(element);
+  if (/(auto|scroll|overlay)/.test(String(overflow) + String(overflowY) + String(overflowX))) {
+    return element;
+  }
+  return getScrollParent(getParentNode(element));
+}
+function getOffsetRectRelativeToArbitraryNode(children, parent, fixedPosition = false) {
+  const isHTML = parent.nodeName === 'HTML';
+  const childrenRect = getBoundingClientRect(children);
+  const parentRect = getBoundingClientRect(parent);
+  const scrollParent = getScrollParent(children);
+  const styles = getStyleComputedProperty(parent);
+  const borderTopWidth = parseFloat(styles.borderTopWidth);
+  const borderLeftWidth = parseFloat(styles.borderLeftWidth);
+  // In cases where the parent is fixed, we must ignore negative scroll in offset calc
+  if (fixedPosition && isHTML) {
+    parentRect.top = Math.max(parentRect.top ?? 0, 0);
+    parentRect.left = Math.max(parentRect.left ?? 0, 0);
+  }
+  const offsets = getClientRect({
+    top: (childrenRect.top ?? 0) - (parentRect.top ?? 0) - borderTopWidth,
+    left: (childrenRect.left ?? 0) - (parentRect.left ?? 0) - borderLeftWidth,
+    width: childrenRect.width,
+    height: childrenRect.height
+  });
+  offsets.marginTop = 0;
+  offsets.marginLeft = 0;
+  // Subtract margins of documentElement in case it's being used as parent
+  // we do this only on HTML because it's the only element that behaves
+  // differently when margins are applied to it. The margins are included in
+  // the box of the documentElement, in the other cases not.
+  if (isHTML) {
+    const marginTop = parseFloat(styles.marginTop);
+    const marginLeft = parseFloat(styles.marginLeft);
+    if (isNumber(offsets.top)) {
+      offsets.top -= borderTopWidth - marginTop;
+    }
+    if (isNumber(offsets.bottom)) {
+      offsets.bottom -= borderTopWidth - marginTop;
+    }
+    if (isNumber(offsets.left)) {
+      offsets.left -= borderLeftWidth - marginLeft;
+    }
+    if (isNumber(offsets.right)) {
+      offsets.right -= borderLeftWidth - marginLeft;
+    }
+    // Attach marginTop and marginLeft because in some circumstances we may need them
+    offsets.marginTop = marginTop;
+    offsets.marginLeft = marginLeft;
+  }
+  return offsets;
+}
+
+/**
+ * Gets the scroll value of the given element in the given side (top and left)
+ */
+function getScroll(element, side = 'top') {
+  const upperSide = side === 'top' ? 'scrollTop' : 'scrollLeft';
+  const nodeName = element.nodeName;
+  if (nodeName === 'BODY' || nodeName === 'HTML') {
+    const html = element.ownerDocument.documentElement;
+    const scrollingElement = element.ownerDocument.scrollingElement || html;
+    return scrollingElement[upperSide];
+  }
+  return element[upperSide];
+}
+function getViewportOffsetRectRelativeToArtbitraryNode(element, excludeScroll = false) {
+  const html = element.ownerDocument.documentElement;
+  const relativeOffset = getOffsetRectRelativeToArbitraryNode(element, html);
+  const width = Math.max(html.clientWidth, window.innerWidth || 0);
+  const height = Math.max(html.clientHeight, window.innerHeight || 0);
+  const scrollTop = !excludeScroll ? getScroll(html) : 0;
+  const scrollLeft = !excludeScroll ? getScroll(html, 'left') : 0;
+  const offset = {
+    top: scrollTop - Number(relativeOffset?.top) + Number(relativeOffset?.marginTop),
+    left: scrollLeft - Number(relativeOffset?.left) + Number(relativeOffset?.marginLeft),
+    width,
+    height
+  };
+  return getClientRect(offset);
+}
+
+/**
+ * Check if the given element is fixed or is inside a fixed parent
+ */
+function isFixed(element) {
+  const nodeName = element.nodeName;
+  if (nodeName === 'BODY' || nodeName === 'HTML') {
+    return false;
+  }
+  if (getStyleComputedProperty(element, 'position') === 'fixed') {
+    return true;
+  }
+  return isFixed(getParentNode(element));
+}
+function getBoundaries(target, host, padding = 0, boundariesElement, fixedPosition = false) {
+  // NOTE: 1 DOM access here
+  let boundaries = {
+    top: 0,
+    left: 0
+  };
+  const offsetParent = fixedPosition ? getFixedPositionOffsetParent(target) : findCommonOffsetParent(target, host);
+  // Handle viewport case
+  if (boundariesElement === 'viewport') {
+    boundaries = getViewportOffsetRectRelativeToArtbitraryNode(offsetParent, fixedPosition);
+  } else {
+    // Handle other cases based on DOM element used as boundaries
+    let boundariesNode;
+    if (boundariesElement === 'scrollParent') {
+      boundariesNode = getScrollParent(getParentNode(host));
+      if (boundariesNode.nodeName === 'BODY') {
+        boundariesNode = target.ownerDocument.documentElement;
+      }
+    } else if (boundariesElement === 'window') {
+      boundariesNode = target.ownerDocument.documentElement;
+    } else {
+      boundariesNode = boundariesElement;
+    }
+    const offsets = getOffsetRectRelativeToArbitraryNode(boundariesNode, offsetParent, fixedPosition);
+    // In case of HTML, we need a different computation
+    if (offsets && boundariesNode.nodeName === 'HTML' && !isFixed(offsetParent)) {
+      const {
+        height,
+        width
+      } = getWindowSizes(target.ownerDocument);
+      if (isNumber(boundaries.top) && isNumber(offsets.top) && isNumber(offsets.marginTop)) {
+        boundaries.top += offsets.top - offsets.marginTop;
+      }
+      if (isNumber(boundaries.top)) {
+        boundaries.bottom = Number(height) + Number(offsets.top);
+      }
+      if (isNumber(boundaries.left) && isNumber(offsets.left) && isNumber(offsets.marginLeft)) {
+        boundaries.left += offsets.left - offsets.marginLeft;
+      }
+      if (isNumber(boundaries.top)) {
+        boundaries.right = Number(width) + Number(offsets.left);
+      }
+    } else if (offsets) {
+      // for all the other DOM elements, this one is good
+      boundaries = offsets;
+    }
+  }
+  // Add paddings
+  if (isNumber(boundaries.left)) {
+    boundaries.left += padding;
+  }
+  if (isNumber(boundaries.top)) {
+    boundaries.top += padding;
+  }
+  if (isNumber(boundaries.right)) {
+    boundaries.right -= padding;
+  }
+  if (isNumber(boundaries.bottom)) {
+    boundaries.bottom -= padding;
+  }
+  return boundaries;
+}
+
+/**
+ * Utility used to transform the `auto` placement to the placement with more
+ * available space.
+ */
+function getArea({
+  width,
+  height
+}) {
+  return width * height;
+}
+function computeAutoPlacement(placement, refRect, target, host, allowedPositions = ['top', 'bottom', 'right', 'left'], boundariesElement = 'viewport', padding = 0) {
+  if (placement.indexOf('auto') === -1) {
+    return placement;
+  }
+  const boundaries = getBoundaries(target, host, padding, boundariesElement);
+  const rects = {
+    top: {
+      width: boundaries?.width ?? 0,
+      height: (refRect?.top ?? 0) - (boundaries?.top ?? 0)
+    },
+    right: {
+      width: (boundaries?.right ?? 0) - (refRect?.right ?? 0),
+      height: boundaries?.height ?? 0
+    },
+    bottom: {
+      width: boundaries?.width ?? 0,
+      height: (boundaries?.bottom ?? 0) - (refRect?.bottom ?? 0)
+    },
+    left: {
+      width: (refRect.left ?? 0) - (boundaries?.left ?? 0),
+      height: boundaries?.height ?? 0
+    }
+  };
+  const sortedAreas = Object.keys(rects).map(key => ({
+    position: key,
+    ...rects[key],
+    area: getArea(rects[key])
+  })).sort((a, b) => b.area - a.area);
+  let filteredAreas = sortedAreas.filter(({
+    width,
+    height
+  }) => {
+    return width >= target.clientWidth && height >= target.clientHeight;
+  });
+  filteredAreas = filteredAreas.filter(({
+    position
+  }) => {
+    return allowedPositions.some(allowedPosition => {
+      return allowedPosition === position;
+    });
+  });
+  const computedPlacement = filteredAreas.length > 0 ? filteredAreas[0].position : sortedAreas[0].position;
+  const variation = placement.split(' ')[1];
+  // for tooltip on auto position
+  target.className = target.className.replace(/bs-tooltip-auto/g, `bs-tooltip-${(0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_0__.getBsVer)().isBs5 ? PlacementForBs5[computedPlacement] : computedPlacement}`);
+  return computedPlacement + (variation ? `-${variation}` : '');
+}
+function getOffsets(data) {
+  return {
+    width: data.offsets.target.width,
+    height: data.offsets.target.height,
+    left: Math.floor(data.offsets.target.left ?? 0),
+    top: Math.round(data.offsets.target.top ?? 0),
+    bottom: Math.round(data.offsets.target.bottom ?? 0),
+    right: Math.floor(data.offsets.target.right ?? 0)
+  };
+}
+
+/**
+ * Get the opposite placement of the given one
+ */
+function getOppositePlacement(placement) {
+  const hash = {
+    left: 'right',
+    right: 'left',
+    bottom: 'top',
+    top: 'bottom'
+  };
+  return placement.replace(/left|right|bottom|top/g, matched => hash[matched]);
+}
+
+/**
+ * Get the opposite placement variation of the given one
+ */
+function getOppositeVariation(variation) {
+  if (variation === 'right') {
+    return 'left';
+  } else if (variation === 'left') {
+    return 'right';
+  }
+  return variation;
+}
+const parse = (value, def = 0) => value ? parseFloat(value) : def;
+function getOuterSizes(element) {
+  const window = element.ownerDocument.defaultView;
+  const styles = window?.getComputedStyle(element);
+  const x = parse(styles?.marginTop) + parse(styles?.marginBottom);
+  const y = parse(styles?.marginLeft) + parse(styles?.marginRight);
+  return {
+    width: Number(element.offsetWidth) + y,
+    height: Number(element.offsetHeight) + x
+  };
+}
+
+/**
+ * Get offsets to the reference element
+ */
+function getReferenceOffsets(target, host, fixedPosition) {
+  const commonOffsetParent = fixedPosition ? getFixedPositionOffsetParent(target) : findCommonOffsetParent(target, host);
+  return getOffsetRectRelativeToArbitraryNode(host, commonOffsetParent, fixedPosition);
+}
+
+/**
+ * Get offsets to the target
+ */
+function getTargetOffsets(target, hostOffsets, position) {
+  const placement = position.split(' ')[0];
+  // Get target node sizes
+  const targetRect = getOuterSizes(target);
+  // Add position, width and height to our offsets object
+  const targetOffsets = {
+    width: targetRect.width,
+    height: targetRect.height
+  };
+  // depending by the target placement we have to compute its offsets slightly differently
+  const isHoriz = ['right', 'left'].indexOf(placement) !== -1;
+  const mainSide = isHoriz ? 'top' : 'left';
+  const secondarySide = isHoriz ? 'left' : 'top';
+  const measurement = isHoriz ? 'height' : 'width';
+  const secondaryMeasurement = !isHoriz ? 'height' : 'width';
+  targetOffsets[mainSide] = (hostOffsets[mainSide] ?? 0) + hostOffsets[measurement] / 2 - targetRect[measurement] / 2;
+  targetOffsets[secondarySide] = placement === secondarySide ? (hostOffsets[secondarySide] ?? 0) - targetRect[secondaryMeasurement] : hostOffsets[getOppositePlacement(secondarySide)] ?? 0;
+  return targetOffsets;
+}
+function isModifierEnabled(options, modifierName) {
+  return !!options.modifiers[modifierName]?.enabled;
+}
+const availablePositions = {
+  top: ['top', 'top start', 'top end'],
+  bottom: ['bottom', 'bottom start', 'bottom end'],
+  start: ['start', 'start top', 'start bottom'],
+  end: ['end', 'end top', 'end bottom']
+};
+function checkPopoverMargin(placement, checkPosition) {
+  if (!(0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_0__.getBsVer)().isBs5) {
+    return false;
+  }
+  return availablePositions[checkPosition].includes(placement);
+}
+function checkMargins(placement) {
+  if (!(0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_0__.getBsVer)().isBs5) {
+    return '';
+  }
+  if (checkPopoverMargin(placement, 'end')) {
+    return 'ms-2';
+  }
+  if (checkPopoverMargin(placement, 'start')) {
+    return 'me-2';
+  }
+  if (checkPopoverMargin(placement, 'top')) {
+    return 'mb-2';
+  }
+  if (checkPopoverMargin(placement, 'bottom')) {
+    return 'mt-2';
+  }
+  return '';
+}
+function updateContainerClass(data, renderer) {
+  const target = data.instance.target;
+  let containerClass = target.className;
+  const dataPlacement = (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_0__.getBsVer)().isBs5 ? PlacementForBs5[data.placement] : data.placement;
+  if (data.placementAuto) {
+    containerClass = containerClass.replace(/bs-popover-auto/g, `bs-popover-${dataPlacement}`);
+    containerClass = containerClass.replace(/ms-2|me-2|mb-2|mt-2/g, '');
+    containerClass = containerClass.replace(/bs-tooltip-auto/g, `bs-tooltip-${dataPlacement}`);
+    containerClass = containerClass.replace(/\sauto/g, ` ${dataPlacement}`);
+    if (containerClass.indexOf('popover') !== -1) {
+      containerClass = containerClass + ' ' + checkMargins(dataPlacement);
+    }
+    if (containerClass.indexOf('popover') !== -1 && containerClass.indexOf('popover-auto') === -1) {
+      containerClass += ' popover-auto';
+    }
+    if (containerClass.indexOf('tooltip') !== -1 && containerClass.indexOf('tooltip-auto') === -1) {
+      containerClass += ' tooltip-auto';
+    }
+  }
+  containerClass = containerClass.replace(/left|right|top|bottom|end|start/g, `${dataPlacement.split(' ')[0]}`);
+  if (renderer) {
+    renderer.setAttribute(target, 'class', containerClass);
+    return;
+  }
+  target.className = containerClass;
+}
+function setStyles(element, styles, renderer) {
+  if (!element || !styles) {
+    return;
+  }
+  Object.keys(styles).forEach(prop => {
+    let unit = '';
+    // add unit if the value is numeric and is one of the following
+    if (['width', 'height', 'top', 'right', 'bottom', 'left'].indexOf(prop) !== -1 && isNumeric(styles[prop])) {
+      unit = 'px';
+    }
+    if (renderer) {
+      renderer.setStyle(element, prop, `${String(styles[prop])}${unit}`);
+      return;
+    }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    element.style[prop] = String(styles[prop]) + unit;
+  });
+}
+function arrow(data) {
+  let targetOffsets = data.offsets.target;
+  // if arrowElement is a string, suppose it's a CSS selector
+  const arrowElement = data.instance.target.querySelector('.arrow');
+  // if arrowElement is not found, don't run the modifier
+  if (!arrowElement) {
+    return data;
+  }
+  const isVertical = ['left', 'right'].indexOf(data.placement.split(' ')[0]) !== -1;
+  const len = isVertical ? 'height' : 'width';
+  const sideCapitalized = isVertical ? 'Top' : 'Left';
+  const side = sideCapitalized.toLowerCase();
+  const altSide = isVertical ? 'left' : 'top';
+  const opSide = isVertical ? 'bottom' : 'right';
+  const arrowElementSize = getOuterSizes(arrowElement)[len];
+  const placementVariation = data.placement.split(' ')[1];
+  // top/left side
+  if ((data.offsets.host[opSide] ?? 0) - arrowElementSize < (targetOffsets[side] ?? 0)) {
+    targetOffsets[side] -= (targetOffsets[side] ?? 0) - ((data.offsets.host[opSide] ?? 0) - arrowElementSize);
+  }
+  // bottom/right side
+  if (Number(data.offsets.host[side]) + Number(arrowElementSize) > (targetOffsets[opSide] ?? 0)) {
+    targetOffsets[side] += Number(data.offsets.host[side]) + Number(arrowElementSize) - Number(targetOffsets[opSide]);
+  }
+  targetOffsets = getClientRect(targetOffsets);
+  // Compute the sideValue using the updated target offsets
+  // take target margin in account because we don't have this info available
+  const css = getStyleComputedProperty(data.instance.target);
+  const targetMarginSide = parseFloat(css[`margin${sideCapitalized}`]) || 0;
+  const targetBorderSide = parseFloat(css[`border${sideCapitalized}Width`]) || 0;
+  // compute center of the target
+  let center;
+  if (!placementVariation) {
+    center = Number(data.offsets.host[side]) + Number(data.offsets.host[len] / 2 - arrowElementSize / 2);
+  } else {
+    const targetBorderRadius = parseFloat(css["borderRadius"]) || 0;
+    const targetSideArrowOffset = Number(targetMarginSide + targetBorderSide + targetBorderRadius);
+    center = side === placementVariation ? Number(data.offsets.host[side]) + targetSideArrowOffset : Number(data.offsets.host[side]) + Number(data.offsets.host[len] - targetSideArrowOffset);
+  }
+  let sideValue = center - (targetOffsets[side] ?? 0) - targetMarginSide - targetBorderSide;
+  // prevent arrowElement from being placed not contiguously to its target
+  sideValue = Math.max(Math.min(targetOffsets[len] - (arrowElementSize + 5), sideValue), 0);
+  data.offsets.arrow = {
+    [side]: Math.round(sideValue),
+    [altSide]: '' // make sure to unset any eventual altSide value from the DOM node
+  };
+
+  data.instance.arrow = arrowElement;
+  return data;
+}
+function flip(data) {
+  data.offsets.target = getClientRect(data.offsets.target);
+  if (!isModifierEnabled(data.options, 'flip')) {
+    data.offsets.target = {
+      ...data.offsets.target,
+      ...getTargetOffsets(data.instance.target, data.offsets.host, data.placement)
+    };
+    return data;
+  }
+  const boundaries = getBoundaries(data.instance.target, data.instance.host, 0,
+  // padding
+  'viewport', false // positionFixed
+  );
+
+  let placement = data.placement.split(' ')[0];
+  let variation = data.placement.split(' ')[1] || '';
+  const offsetsHost = data.offsets.host;
+  const target = data.instance.target;
+  const host = data.instance.host;
+  const adaptivePosition = computeAutoPlacement('auto', offsetsHost, target, host, data.options.allowedPositions);
+  const flipOrder = [placement, adaptivePosition];
+  flipOrder.forEach((step, index) => {
+    if (placement !== step || flipOrder.length === index + 1) {
+      return;
+    }
+    placement = data.placement.split(' ')[0];
+    // using floor because the host offsets may contain decimals we are not going to consider here
+    const overlapsRef = placement === 'left' && Math.floor(data.offsets.target.right ?? 0) > Math.floor(data.offsets.host.left ?? 0) || placement === 'right' && Math.floor(data.offsets.target.left ?? 0) < Math.floor(data.offsets.host.right ?? 0) || placement === 'top' && Math.floor(data.offsets.target.bottom ?? 0) > Math.floor(data.offsets.host.top ?? 0) || placement === 'bottom' && Math.floor(data.offsets.target.top ?? 0) < Math.floor(data.offsets.host.bottom ?? 0);
+    const overflowsLeft = Math.floor(data.offsets.target.left ?? 0) < Math.floor(boundaries.left ?? 0);
+    const overflowsRight = Math.floor(data.offsets.target.right ?? 0) > Math.floor(boundaries.right ?? 0);
+    const overflowsTop = Math.floor(data.offsets.target.top ?? 0) < Math.floor(boundaries.top ?? 0);
+    const overflowsBottom = Math.floor(data.offsets.target.bottom ?? 0) > Math.floor(boundaries.bottom ?? 0);
+    const overflowsBoundaries = placement === 'left' && overflowsLeft || placement === 'right' && overflowsRight || placement === 'top' && overflowsTop || placement === 'bottom' && overflowsBottom;
+    // flip the variation if required
+    const isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
+    const flippedVariation = isVertical && variation === 'left' && overflowsLeft || isVertical && variation === 'right' && overflowsRight || !isVertical && variation === 'left' && overflowsTop || !isVertical && variation === 'right' && overflowsBottom;
+    if (overlapsRef || overflowsBoundaries || flippedVariation) {
+      if (overlapsRef || overflowsBoundaries) {
+        placement = flipOrder[index + 1];
+      }
+      if (flippedVariation) {
+        variation = getOppositeVariation(variation);
+      }
+      data.placement = placement + (variation ? ` ${variation}` : '');
+      data.offsets.target = {
+        ...data.offsets.target,
+        ...getTargetOffsets(data.instance.target, data.offsets.host, data.placement)
+      };
+    }
+  });
+  return data;
+}
+function initData(targetElement, hostElement, position, options) {
+  if (!targetElement || !hostElement) {
+    return;
+  }
+  const hostElPosition = getReferenceOffsets(targetElement, hostElement);
+  if (!position.match(/^(auto)*\s*(left|right|top|bottom|start|end)*$/) && !position.match(/^(left|right|top|bottom|start|end)*(?: (left|right|top|bottom|start|end))*$/)) {
+    position = 'auto';
+  }
+  const placementAuto = !!position.match(/auto/g);
+  // support old placements 'auto left|right|top|bottom'
+  let placement = position.match(/auto\s(left|right|top|bottom|start|end)/) ? position.split(' ')[1] || 'auto' : position;
+  // Normalize placements that have identical main placement and variation ("right right" => "right").
+  const matches = placement.match(/^(left|right|top|bottom|start|end)* ?(?!\1)(left|right|top|bottom|start|end)?/);
+  if (matches) {
+    placement = matches[1] + (matches[2] ? ` ${matches[2]}` : '');
+  }
+  // "left right", "top bottom" etc. placements also considered incorrect.
+  if (['left right', 'right left', 'top bottom', 'bottom top'].indexOf(placement) !== -1) {
+    placement = 'auto';
+  }
+  placement = computeAutoPlacement(placement, hostElPosition, targetElement, hostElement, options ? options.allowedPositions : undefined);
+  const targetOffset = getTargetOffsets(targetElement, hostElPosition, placement);
+  return {
+    options: options || {
+      modifiers: {}
+    },
+    instance: {
+      target: targetElement,
+      host: hostElement,
+      arrow: void 0
+    },
+    offsets: {
+      target: targetOffset,
+      host: hostElPosition,
+      arrow: void 0
+    },
+    positionFixed: false,
+    placement,
+    placementAuto
+  };
+}
+function preventOverflow(data) {
+  if (!isModifierEnabled(data.options, 'preventOverflow')) {
+    return data;
+  }
+  // NOTE: DOM access here
+  // resets the target Offsets's position so that the document size can be calculated excluding
+  // the size of the targetOffsets element itself
+  const transformProp = 'transform';
+  const targetStyles = data.instance.target.style; // assignment to help minification
+  const {
+    top,
+    left,
+    [transformProp]: transform
+  } = targetStyles;
+  targetStyles.top = '';
+  targetStyles.left = '';
+  targetStyles[transformProp] = '';
+  const boundaries = getBoundaries(data.instance.target, data.instance.host, 0,
+  // padding
+  data.options.modifiers.preventOverflow?.boundariesElement || 'scrollParent', false // positionFixed
+  );
+  // NOTE: DOM access here
+  // restores the original style properties after the offsets have been computed
+  targetStyles.top = top;
+  targetStyles.left = left;
+  targetStyles[transformProp] = transform;
+  const order = ['left', 'right', 'top', 'bottom'];
+  const check = {
+    primary(placement) {
+      let value = data.offsets.target[placement];
+      // options.escapeWithReference
+      if ((data.offsets.target[placement] ?? 0) < (boundaries[placement] ?? 0)) {
+        value = Math.max(data.offsets.target[placement] ?? 0, boundaries[placement] ?? 0);
+      }
+      return {
+        [placement]: value
+      };
+    },
+    secondary(placement) {
+      const isPlacementHorizontal = placement === 'right';
+      const mainSide = isPlacementHorizontal ? 'left' : 'top';
+      const measurement = isPlacementHorizontal ? 'width' : 'height';
+      let value = data.offsets.target[mainSide];
+      // escapeWithReference
+      if ((data.offsets.target[placement] ?? 0) > (boundaries[placement] ?? 0)) {
+        value = Math.min(data.offsets.target[mainSide] ?? 0, (boundaries[placement] ?? 0) - data.offsets.target[measurement]);
+      }
+      return {
+        [mainSide]: value
+      };
+    }
+  };
+  order.forEach(placement => {
+    const side = ['left', 'top', 'start'].indexOf(placement) !== -1 ? check['primary'] : check['secondary'];
+    data.offsets.target = {
+      ...data.offsets.target,
+      ...side(placement)
+    };
+  });
+  return data;
+}
+function shift(data) {
+  const placement = data.placement;
+  const basePlacement = placement.split(' ')[0];
+  const shiftVariation = placement.split(' ')[1];
+  if (shiftVariation) {
+    const {
+      host,
+      target
+    } = data.offsets;
+    const isVertical = ['bottom', 'top'].indexOf(basePlacement) !== -1;
+    const side = isVertical ? 'left' : 'top';
+    const measurement = isVertical ? 'width' : 'height';
+    const shiftOffsets = {
+      start: {
+        [side]: host[side]
+      },
+      end: {
+        [side]: (host[side] ?? 0) + host[measurement] - target[measurement]
+      }
+    };
+    data.offsets.target = {
+      ...target,
+      ...{
+        [side]: side === shiftVariation ? shiftOffsets.start[side] : shiftOffsets.end[side]
+      }
+    };
+  }
+  return data;
+}
+class Positioning {
+  position(hostElement, targetElement /*, round = true*/) {
+    return this.offset(hostElement, targetElement /*, false*/);
+  }
+
+  offset(hostElement, targetElement /*, round = true*/) {
+    return getReferenceOffsets(targetElement, hostElement);
+  }
+  positionElements(hostElement, targetElement, position, appendToBody, options) {
+    const chainOfModifiers = [flip, shift, preventOverflow, arrow];
+    const _position = MapPlacementInToRL[position];
+    const data = initData(targetElement, hostElement, _position, options);
+    if (!data) {
+      return;
+    }
+    return chainOfModifiers.reduce((modifiedData, modifier) => modifier(modifiedData), data);
+  }
+}
+const positionService = new Positioning();
+function positionElements(hostElement, targetElement, placement, appendToBody, options, renderer) {
+  const data = positionService.positionElements(hostElement, targetElement, placement, appendToBody, options);
+  if (!data) {
+    return;
+  }
+  const offsets = getOffsets(data);
+  setStyles(targetElement, {
+    'will-change': 'transform',
+    top: '0px',
+    left: '0px',
+    transform: `translate3d(${offsets.left}px, ${offsets.top}px, 0px)`
+  }, renderer);
+  if (data.instance.arrow) {
+    setStyles(data.instance.arrow, data.offsets.arrow, renderer);
+  }
+  updateContainerClass(data, renderer);
+}
+class PositioningService {
+  constructor(ngZone, rendererFactory, platformId) {
+    this.update$$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__.Subject();
+    this.positionElements = new Map();
+    this.isDisabled = false;
+    if ((0,_angular_common__WEBPACK_IMPORTED_MODULE_2__.isPlatformBrowser)(platformId)) {
+      ngZone.runOutsideAngular(() => {
+        this.triggerEvent$ = (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.merge)((0,rxjs__WEBPACK_IMPORTED_MODULE_4__.fromEvent)(window, 'scroll', {
+          passive: true
+        }), (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.fromEvent)(window, 'resize', {
+          passive: true
+        }), (0,rxjs__WEBPACK_IMPORTED_MODULE_5__.of)(0, rxjs__WEBPACK_IMPORTED_MODULE_6__.animationFrameScheduler), this.update$$);
+        this.triggerEvent$.subscribe(() => {
+          if (this.isDisabled) {
+            return;
+          }
+          this.positionElements
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          .forEach(positionElement => {
+            positionElements(_getHtmlElement(positionElement.target), _getHtmlElement(positionElement.element), positionElement.attachment, positionElement.appendToBody, this.options, rendererFactory.createRenderer(null, null));
+          });
+        });
+      });
+    }
+  }
+  position(options) {
+    this.addPositionElement(options);
+  }
+  get event$() {
+    return this.triggerEvent$;
+  }
+  disable() {
+    this.isDisabled = true;
+  }
+  enable() {
+    this.isDisabled = false;
+  }
+  addPositionElement(options) {
+    this.positionElements.set(_getHtmlElement(options.element), options);
+  }
+  calcPosition() {
+    this.update$$.next(null);
+  }
+  deletePositionElement(elRef) {
+    this.positionElements.delete(_getHtmlElement(elRef));
+  }
+  setOptions(options) {
+    this.options = options;
+  }
+}
+PositioningService.ɵfac = function PositioningService_Factory(t) {
+  return new (t || PositioningService)(_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__.RendererFactory2), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__.PLATFORM_ID));
+};
+PositioningService.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjectable"]({
+  token: PositioningService,
+  factory: PositioningService.ɵfac,
+  providedIn: 'root'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](PositioningService, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.Injectable,
+    args: [{
+      providedIn: 'root'
+    }]
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.NgZone
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.RendererFactory2
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.Inject,
+        args: [_angular_core__WEBPACK_IMPORTED_MODULE_7__.PLATFORM_ID]
+      }]
+    }];
+  }, null);
+})();
+function _getHtmlElement(element) {
+  // it means that we got a selector
+  if (typeof element === 'string') {
+    return document.querySelector(element);
+  }
+  if (element instanceof _angular_core__WEBPACK_IMPORTED_MODULE_7__.ElementRef) {
+    return element.nativeElement;
+  }
+  return element ?? null;
+}
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
+/***/ 2318:
+/*!*************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/timepicker/fesm2020/ngx-bootstrap-timepicker.mjs ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TimepickerActions": () => (/* binding */ TimepickerActions),
+/* harmony export */   "TimepickerComponent": () => (/* binding */ TimepickerComponent),
+/* harmony export */   "TimepickerConfig": () => (/* binding */ TimepickerConfig),
+/* harmony export */   "TimepickerModule": () => (/* binding */ TimepickerModule),
+/* harmony export */   "TimepickerStore": () => (/* binding */ TimepickerStore)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 6317);
+/* harmony import */ var ngx_bootstrap_mini_ngrx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-bootstrap/mini-ngrx */ 9272);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 4666);
+
+
+
+
+
+
+
+function TimepickerComponent_td_6_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\xA0\xA0\xA0");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+function TimepickerComponent_td_7_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r19 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td")(1, "a", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TimepickerComponent_td_7_Template_a_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r19);
+      const ctx_r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r18.changeMinutes(ctx_r18.minuteStep));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "span", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", !ctx_r1.canIncrementMinutes || !ctx_r1.isEditable);
+  }
+}
+function TimepickerComponent_td_8_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\xA0");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+function TimepickerComponent_td_9_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td")(1, "a", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TimepickerComponent_td_9_Template_a_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r21);
+      const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r20.changeSeconds(ctx_r20.secondsStep));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "span", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", !ctx_r3.canIncrementSeconds || !ctx_r3.isEditable);
+  }
+}
+function TimepickerComponent_td_10_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\xA0\xA0\xA0");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+function TimepickerComponent_td_11_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "td");
+  }
+}
+function TimepickerComponent_td_15_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\xA0:\xA0");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+function TimepickerComponent_td_16_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 4)(1, "input", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("wheel", function TimepickerComponent_td_16_Template_input_wheel_1_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r23);
+      const ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      ctx_r22.prevDef($event);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r22.changeMinutes(ctx_r22.minuteStep * ctx_r22.wheelSign($event), "wheel"));
+    })("keydown.ArrowUp", function TimepickerComponent_td_16_Template_input_keydown_ArrowUp_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r23);
+      const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r24.changeMinutes(ctx_r24.minuteStep, "key"));
+    })("keydown.ArrowDown", function TimepickerComponent_td_16_Template_input_keydown_ArrowDown_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r23);
+      const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r25.changeMinutes(-ctx_r25.minuteStep, "key"));
+    })("change", function TimepickerComponent_td_16_Template_input_change_1_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r23);
+      const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r26.updateMinutes($event.target));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("has-error", ctx_r7.invalidMinutes);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("is-invalid", ctx_r7.invalidMinutes);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("placeholder", ctx_r7.minutesPlaceholder)("readonly", ctx_r7.readonlyInput)("disabled", ctx_r7.disabled)("value", ctx_r7.minutes);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-label", ctx_r7.labelMinutes);
+  }
+}
+function TimepickerComponent_td_17_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\xA0:\xA0");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+function TimepickerComponent_td_18_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r28 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 4)(1, "input", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("wheel", function TimepickerComponent_td_18_Template_input_wheel_1_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r28);
+      const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      ctx_r27.prevDef($event);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r27.changeSeconds(ctx_r27.secondsStep * ctx_r27.wheelSign($event), "wheel"));
+    })("keydown.ArrowUp", function TimepickerComponent_td_18_Template_input_keydown_ArrowUp_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r28);
+      const ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r29.changeSeconds(ctx_r29.secondsStep, "key"));
+    })("keydown.ArrowDown", function TimepickerComponent_td_18_Template_input_keydown_ArrowDown_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r28);
+      const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r30.changeSeconds(-ctx_r30.secondsStep, "key"));
+    })("change", function TimepickerComponent_td_18_Template_input_change_1_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r28);
+      const ctx_r31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r31.updateSeconds($event.target));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("has-error", ctx_r9.invalidSeconds);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("is-invalid", ctx_r9.invalidSeconds);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("placeholder", ctx_r9.secondsPlaceholder)("readonly", ctx_r9.readonlyInput)("disabled", ctx_r9.disabled)("value", ctx_r9.seconds);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-label", ctx_r9.labelSeconds);
+  }
+}
+function TimepickerComponent_td_19_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\xA0\xA0\xA0");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+function TimepickerComponent_td_20_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r33 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td")(1, "button", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TimepickerComponent_td_20_Template_button_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r33);
+      const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r32.toggleMeridian());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", !ctx_r11.isEditable || !ctx_r11.canToggleMeridian);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", !ctx_r11.isEditable || !ctx_r11.canToggleMeridian);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", ctx_r11.meridian, " ");
+  }
+}
+function TimepickerComponent_td_25_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\xA0\xA0\xA0");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+function TimepickerComponent_td_26_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td")(1, "a", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TimepickerComponent_td_26_Template_a_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r35);
+      const ctx_r34 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r34.changeMinutes(-ctx_r34.minuteStep));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "span", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", !ctx_r13.canDecrementMinutes || !ctx_r13.isEditable);
+  }
+}
+function TimepickerComponent_td_27_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\xA0");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+function TimepickerComponent_td_28_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r37 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td")(1, "a", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TimepickerComponent_td_28_Template_a_click_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r37);
+      const ctx_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r36.changeSeconds(-ctx_r36.secondsStep));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "span", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", !ctx_r15.canDecrementSeconds || !ctx_r15.isEditable);
+  }
+}
+function TimepickerComponent_td_29_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\xA0\xA0\xA0");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+function TimepickerComponent_td_30_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "td");
+  }
+}
+class TimepickerActions {
+  writeValue(value) {
+    return {
+      type: TimepickerActions.WRITE_VALUE,
+      payload: value
+    };
+  }
+  changeHours(event) {
+    return {
+      type: TimepickerActions.CHANGE_HOURS,
+      payload: event
+    };
+  }
+  changeMinutes(event) {
+    return {
+      type: TimepickerActions.CHANGE_MINUTES,
+      payload: event
+    };
+  }
+  changeSeconds(event) {
+    return {
+      type: TimepickerActions.CHANGE_SECONDS,
+      payload: event
+    };
+  }
+  setTime(value) {
+    return {
+      type: TimepickerActions.SET_TIME_UNIT,
+      payload: value
+    };
+  }
+  updateControls(value) {
+    return {
+      type: TimepickerActions.UPDATE_CONTROLS,
+      payload: value
+    };
+  }
+}
+TimepickerActions.WRITE_VALUE = '[timepicker] write value from ng model';
+TimepickerActions.CHANGE_HOURS = '[timepicker] change hours';
+TimepickerActions.CHANGE_MINUTES = '[timepicker] change minutes';
+TimepickerActions.CHANGE_SECONDS = '[timepicker] change seconds';
+TimepickerActions.SET_TIME_UNIT = '[timepicker] set time unit';
+TimepickerActions.UPDATE_CONTROLS = '[timepicker] update controls';
+TimepickerActions.ɵfac = function TimepickerActions_Factory(t) {
+  return new (t || TimepickerActions)();
+};
+TimepickerActions.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: TimepickerActions,
+  factory: TimepickerActions.ɵfac,
+  providedIn: 'platform'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TimepickerActions, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'platform'
+    }]
+  }], null, null);
+})();
+const dex = 10;
+const hoursPerDay = 24;
+const hoursPerDayHalf = 12;
+const minutesPerHour = 60;
+const secondsPerMinute = 60;
+function isValidDate(value) {
+  if (!value) {
+    return false;
+  }
+  if (value instanceof Date && isNaN(value.getHours())) {
+    return false;
+  }
+  if (typeof value === 'string') {
+    return isValidDate(new Date(value));
+  }
+  return true;
+}
+function isValidLimit(controls, newDate) {
+  if (controls.min && newDate < controls.min) {
+    return false;
+  }
+  if (controls.max && newDate > controls.max) {
+    return false;
+  }
+  return true;
+}
+function toNumber(value) {
+  if (typeof value === 'undefined') {
+    return NaN;
+  }
+  if (typeof value === 'number') {
+    return value;
+  }
+  return parseInt(value, dex);
+}
+function isNumber(value) {
+  return !isNaN(toNumber(value));
+}
+function parseHours(value, isPM = false) {
+  const hour = toNumber(value);
+  if (isNaN(hour) || hour < 0 || hour > (isPM ? hoursPerDayHalf : hoursPerDay)) {
+    return NaN;
+  }
+  return hour;
+}
+function parseMinutes(value) {
+  const minute = toNumber(value);
+  if (isNaN(minute) || minute < 0 || minute > minutesPerHour) {
+    return NaN;
+  }
+  return minute;
+}
+function parseSeconds(value) {
+  const seconds = toNumber(value);
+  if (isNaN(seconds) || seconds < 0 || seconds > secondsPerMinute) {
+    return NaN;
+  }
+  return seconds;
+}
+function parseTime(value) {
+  if (typeof value === 'string') {
+    return new Date(value);
+  }
+  return value;
+}
+function changeTime(value, diff) {
+  if (!value) {
+    return changeTime(createDate(new Date(), 0, 0, 0), diff);
+  }
+  if (!diff) {
+    return value;
+  }
+  let hour = value.getHours();
+  let minutes = value.getMinutes();
+  let seconds = value.getSeconds();
+  if (diff.hour) {
+    hour = hour + toNumber(diff.hour);
+  }
+  if (diff.minute) {
+    minutes = minutes + toNumber(diff.minute);
+  }
+  if (diff.seconds) {
+    seconds = seconds + toNumber(diff.seconds);
+  }
+  return createDate(value, hour, minutes, seconds);
+}
+function setTime(value, opts) {
+  let hour = parseHours(opts.hour);
+  const minute = parseMinutes(opts.minute);
+  const seconds = parseSeconds(opts.seconds) || 0;
+  if (opts.isPM && hour !== 12) {
+    hour += hoursPerDayHalf;
+  }
+  if (!value) {
+    if (!isNaN(hour) && !isNaN(minute)) {
+      return createDate(new Date(), hour, minute, seconds);
+    }
+    return value;
+  }
+  if (isNaN(hour) || isNaN(minute)) {
+    return value;
+  }
+  return createDate(value, hour, minute, seconds);
+}
+function createDate(value, hours, minutes, seconds) {
+  const newValue = new Date(value.getFullYear(), value.getMonth(), value.getDate(), hours, minutes, seconds, value.getMilliseconds());
+  // #3139 ensure date part remains unchanged
+  newValue.setFullYear(value.getFullYear());
+  newValue.setMonth(value.getMonth());
+  newValue.setDate(value.getDate());
+  return newValue;
+}
+function padNumber(value) {
+  const _value = value.toString();
+  if (_value.length > 1) {
+    return _value;
+  }
+  return `0${_value}`;
+}
+function isHourInputValid(hours, isPM) {
+  return !isNaN(parseHours(hours, isPM));
+}
+function isMinuteInputValid(minutes) {
+  return !isNaN(parseMinutes(minutes));
+}
+function isSecondInputValid(seconds) {
+  return !isNaN(parseSeconds(seconds));
+}
+function isInputLimitValid(diff, max, min) {
+  const newDate = setTime(new Date(), diff);
+  if (!newDate) {
+    return false;
+  }
+  if (max && newDate > max) {
+    return false;
+  }
+  if (min && newDate < min) {
+    return false;
+  }
+  return true;
+}
+function isOneOfDatesEmpty(hours, minutes, seconds) {
+  return hours.length === 0 || minutes.length === 0 || seconds.length === 0;
+}
+function isInputValid(hours, minutes = '0', seconds = '0', isPM) {
+  return isHourInputValid(hours, isPM) && isMinuteInputValid(minutes) && isSecondInputValid(seconds);
+}
+function canChangeValue(state, event) {
+  if (state.readonlyInput || state.disabled) {
+    return false;
+  }
+  if (event) {
+    if (event.source === 'wheel' && !state.mousewheel) {
+      return false;
+    }
+    if (event.source === 'key' && !state.arrowkeys) {
+      return false;
+    }
+  }
+  return true;
+}
+function canChangeHours(event, controls) {
+  if (!event.step) {
+    return false;
+  }
+  if (event.step > 0 && !controls.canIncrementHours) {
+    return false;
+  }
+  if (event.step < 0 && !controls.canDecrementHours) {
+    return false;
+  }
+  return true;
+}
+function canChangeMinutes(event, controls) {
+  if (!event.step) {
+    return false;
+  }
+  if (event.step > 0 && !controls.canIncrementMinutes) {
+    return false;
+  }
+  if (event.step < 0 && !controls.canDecrementMinutes) {
+    return false;
+  }
+  return true;
+}
+function canChangeSeconds(event, controls) {
+  if (!event.step) {
+    return false;
+  }
+  if (event.step > 0 && !controls.canIncrementSeconds) {
+    return false;
+  }
+  if (event.step < 0 && !controls.canDecrementSeconds) {
+    return false;
+  }
+  return true;
+}
+function getControlsValue(state) {
+  const {
+    hourStep,
+    minuteStep,
+    secondsStep,
+    readonlyInput,
+    disabled,
+    mousewheel,
+    arrowkeys,
+    showSpinners,
+    showMeridian,
+    showSeconds,
+    meridians,
+    min,
+    max
+  } = state;
+  return {
+    hourStep,
+    minuteStep,
+    secondsStep,
+    readonlyInput,
+    disabled,
+    mousewheel,
+    arrowkeys,
+    showSpinners,
+    showMeridian,
+    showSeconds,
+    meridians,
+    min,
+    max
+  };
+}
+function timepickerControls(value, state) {
+  const hoursPerDay = 24;
+  const hoursPerDayHalf = 12;
+  const {
+    min,
+    max,
+    hourStep,
+    minuteStep,
+    secondsStep,
+    showSeconds
+  } = state;
+  const res = {
+    canIncrementHours: true,
+    canIncrementMinutes: true,
+    canIncrementSeconds: true,
+    canDecrementHours: true,
+    canDecrementMinutes: true,
+    canDecrementSeconds: true,
+    canToggleMeridian: true
+  };
+  if (!value) {
+    return res;
+  }
+  // compare dates
+  if (max) {
+    const _newHour = changeTime(value, {
+      hour: hourStep
+    });
+    res.canIncrementHours = max > _newHour && value.getHours() + hourStep < hoursPerDay;
+    if (!res.canIncrementHours) {
+      const _newMinutes = changeTime(value, {
+        minute: minuteStep
+      });
+      res.canIncrementMinutes = showSeconds ? max > _newMinutes : max >= _newMinutes;
+    }
+    if (!res.canIncrementMinutes) {
+      const _newSeconds = changeTime(value, {
+        seconds: secondsStep
+      });
+      res.canIncrementSeconds = max >= _newSeconds;
+    }
+    if (value.getHours() < hoursPerDayHalf) {
+      res.canToggleMeridian = changeTime(value, {
+        hour: hoursPerDayHalf
+      }) < max;
+    }
+  }
+  if (min) {
+    const _newHour = changeTime(value, {
+      hour: -hourStep
+    });
+    res.canDecrementHours = min < _newHour;
+    if (!res.canDecrementHours) {
+      const _newMinutes = changeTime(value, {
+        minute: -minuteStep
+      });
+      res.canDecrementMinutes = showSeconds ? min < _newMinutes : min <= _newMinutes;
+    }
+    if (!res.canDecrementMinutes) {
+      const _newSeconds = changeTime(value, {
+        seconds: -secondsStep
+      });
+      res.canDecrementSeconds = min <= _newSeconds;
+    }
+    if (value.getHours() >= hoursPerDayHalf) {
+      res.canToggleMeridian = changeTime(value, {
+        hour: -hoursPerDayHalf
+      }) > min;
+    }
+  }
+  return res;
+}
+
+/** Provides default configuration values for timepicker */
+class TimepickerConfig {
+  constructor() {
+    /** hours change step */
+    this.hourStep = 1;
+    /** minutes change step */
+    this.minuteStep = 5;
+    /** seconds changes step */
+    this.secondsStep = 10;
+    /** if true works in 12H mode and displays AM/PM. If false works in 24H mode and hides AM/PM */
+    this.showMeridian = true;
+    /** meridian labels based on locale */
+    this.meridians = ['AM', 'PM'];
+    /** if true hours and minutes fields will be readonly */
+    this.readonlyInput = false;
+    /** if true hours and minutes fields will be disabled */
+    this.disabled = false;
+    /** if true emptyTime is not marked as invalid */
+    this.allowEmptyTime = false;
+    /** if true scroll inside hours and minutes inputs will change time */
+    this.mousewheel = true;
+    /** if true the values of hours and minutes can be changed using the up/down arrow keys on the keyboard */
+    this.arrowkeys = true;
+    /** if true spinner arrows above and below the inputs will be shown */
+    this.showSpinners = true;
+    /** show seconds in timepicker */
+    this.showSeconds = false;
+    /** show minutes in timepicker */
+    this.showMinutes = true;
+    /** placeholder for hours field in timepicker */
+    this.hoursPlaceholder = 'HH';
+    /** placeholder for minutes field in timepicker */
+    this.minutesPlaceholder = 'MM';
+    /** placeholder for seconds field in timepicker */
+    this.secondsPlaceholder = 'SS';
+    /** hours aria label */
+    this.ariaLabelHours = 'hours';
+    /** minutes aria label */
+    this.ariaLabelMinutes = 'minutes';
+    /** seconds aria label */
+    this.ariaLabelSeconds = 'seconds';
+  }
+}
+TimepickerConfig.ɵfac = function TimepickerConfig_Factory(t) {
+  return new (t || TimepickerConfig)();
+};
+TimepickerConfig.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: TimepickerConfig,
+  factory: TimepickerConfig.ɵfac,
+  providedIn: 'root'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TimepickerConfig, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'root'
+    }]
+  }], null, null);
+})();
+const initialState = {
+  value: void 0,
+  config: new TimepickerConfig(),
+  controls: {
+    canIncrementHours: true,
+    canIncrementMinutes: true,
+    canIncrementSeconds: true,
+    canDecrementHours: true,
+    canDecrementMinutes: true,
+    canDecrementSeconds: true,
+    canToggleMeridian: true
+  }
+};
+function timepickerReducer(state = initialState, action) {
+  switch (action.type) {
+    case TimepickerActions.WRITE_VALUE:
+      {
+        return Object.assign({}, state, {
+          value: action.payload
+        });
+      }
+    case TimepickerActions.CHANGE_HOURS:
+      {
+        if (!canChangeValue(state.config, action.payload) || !canChangeHours(action.payload, state.controls)) {
+          return state;
+        }
+        const _newTime = changeTime(state.value, {
+          hour: action.payload.step
+        });
+        if ((state.config.max || state.config.min) && !isValidLimit(state.config, _newTime)) {
+          return state;
+        }
+        return Object.assign({}, state, {
+          value: _newTime
+        });
+      }
+    case TimepickerActions.CHANGE_MINUTES:
+      {
+        if (!canChangeValue(state.config, action.payload) || !canChangeMinutes(action.payload, state.controls)) {
+          return state;
+        }
+        const _newTime = changeTime(state.value, {
+          minute: action.payload.step
+        });
+        if ((state.config.max || state.config.min) && !isValidLimit(state.config, _newTime)) {
+          return state;
+        }
+        return Object.assign({}, state, {
+          value: _newTime
+        });
+      }
+    case TimepickerActions.CHANGE_SECONDS:
+      {
+        if (!canChangeValue(state.config, action.payload) || !canChangeSeconds(action.payload, state.controls)) {
+          return state;
+        }
+        const _newTime = changeTime(state.value, {
+          seconds: action.payload.step
+        });
+        if ((state.config.max || state.config.min) && !isValidLimit(state.config, _newTime)) {
+          return state;
+        }
+        return Object.assign({}, state, {
+          value: _newTime
+        });
+      }
+    case TimepickerActions.SET_TIME_UNIT:
+      {
+        if (!canChangeValue(state.config)) {
+          return state;
+        }
+        const _newTime = setTime(state.value, action.payload);
+        return Object.assign({}, state, {
+          value: _newTime
+        });
+      }
+    case TimepickerActions.UPDATE_CONTROLS:
+      {
+        const _newControlsState = timepickerControls(state.value, action.payload);
+        const _newState = {
+          value: state.value,
+          config: action.payload,
+          controls: _newControlsState
+        };
+        if (state.config.showMeridian !== _newState.config.showMeridian) {
+          if (state.value) {
+            _newState.value = new Date(state.value);
+          }
+        }
+        return Object.assign({}, state, _newState);
+      }
+    default:
+      return state;
+  }
+}
+class TimepickerStore extends ngx_bootstrap_mini_ngrx__WEBPACK_IMPORTED_MODULE_1__.MiniStore {
+  constructor() {
+    const _dispatcher = new rxjs__WEBPACK_IMPORTED_MODULE_2__.BehaviorSubject({
+      type: '[mini-ngrx] dispatcher init'
+    });
+    const state = new ngx_bootstrap_mini_ngrx__WEBPACK_IMPORTED_MODULE_1__.MiniState(initialState, _dispatcher, timepickerReducer);
+    super(_dispatcher, timepickerReducer, state);
+  }
+}
+TimepickerStore.ɵfac = function TimepickerStore_Factory(t) {
+  return new (t || TimepickerStore)();
+};
+TimepickerStore.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: TimepickerStore,
+  factory: TimepickerStore.ɵfac,
+  providedIn: 'platform'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TimepickerStore, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'platform'
+    }]
+  }], function () {
+    return [];
+  }, null);
+})();
+const TIMEPICKER_CONTROL_VALUE_ACCESSOR = {
+  provide: _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NG_VALUE_ACCESSOR,
+  useExisting: (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(() => TimepickerComponent),
+  multi: true
+};
+class TimepickerComponent {
+  constructor(_config, _cd, _store, _timepickerActions) {
+    this._cd = _cd;
+    this._store = _store;
+    this._timepickerActions = _timepickerActions;
+    /** hours change step */
+    this.hourStep = 1;
+    /** minutes change step */
+    this.minuteStep = 5;
+    /** seconds change step */
+    this.secondsStep = 10;
+    /** if true hours and minutes fields will be readonly */
+    this.readonlyInput = false;
+    /** if true hours and minutes fields will be disabled */
+    this.disabled = false;
+    /** if true scroll inside hours and minutes inputs will change time */
+    this.mousewheel = true;
+    /** if true the values of hours and minutes can be changed using the up/down arrow keys on the keyboard */
+    this.arrowkeys = true;
+    /** if true spinner arrows above and below the inputs will be shown */
+    this.showSpinners = true;
+    /** if true meridian button will be shown */
+    this.showMeridian = true;
+    /** show minutes in timepicker */
+    this.showMinutes = true;
+    /** show seconds in timepicker */
+    this.showSeconds = false;
+    /** meridian labels based on locale */
+    this.meridians = ['AM', 'PM'];
+    /** placeholder for hours field in timepicker */
+    this.hoursPlaceholder = 'HH';
+    /** placeholder for minutes field in timepicker */
+    this.minutesPlaceholder = 'MM';
+    /** placeholder for seconds field in timepicker */
+    this.secondsPlaceholder = 'SS';
+    /** emits true if value is a valid date */
+    this.isValid = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    /** emits value of meridian*/
+    this.meridianChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    // ui variables
+    this.hours = '';
+    this.minutes = '';
+    this.seconds = '';
+    this.meridian = '';
+    // min\max validation for input fields
+    this.invalidHours = false;
+    this.invalidMinutes = false;
+    this.invalidSeconds = false;
+    // aria-label variables
+    this.labelHours = 'hours';
+    this.labelMinutes = 'minutes';
+    this.labelSeconds = 'seconds';
+    // time picker controls state
+    this.canIncrementHours = true;
+    this.canIncrementMinutes = true;
+    this.canIncrementSeconds = true;
+    this.canDecrementHours = true;
+    this.canDecrementMinutes = true;
+    this.canDecrementSeconds = true;
+    this.canToggleMeridian = true;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    this.onChange = Function.prototype;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    this.onTouched = Function.prototype;
+    this.config = _config;
+    Object.assign(this, this.config);
+    this.timepickerSub = _store.select(state => state.value).subscribe(value => {
+      // update UI values if date changed
+      this._renderTime(value);
+      this.onChange(value);
+      this._store.dispatch(this._timepickerActions.updateControls(getControlsValue(this)));
+    });
+    _store.select(state => state.controls).subscribe(controlsState => {
+      const isTimepickerInputValid = isInputValid(this.hours, this.minutes, this.seconds, this.isPM());
+      const isValid = this.config.allowEmptyTime ? this.isOneOfDatesIsEmpty() || isTimepickerInputValid : isTimepickerInputValid;
+      this.isValid.emit(isValid);
+      Object.assign(this, controlsState);
+      _cd.markForCheck();
+    });
+  }
+  /** @deprecated - please use `isEditable` instead */
+  get isSpinnersVisible() {
+    return this.showSpinners && !this.readonlyInput;
+  }
+  get isEditable() {
+    return !(this.readonlyInput || this.disabled);
+  }
+  resetValidation() {
+    this.invalidHours = false;
+    this.invalidMinutes = false;
+    this.invalidSeconds = false;
+  }
+  isPM() {
+    return this.showMeridian && this.meridian === this.meridians[1];
+  }
+  prevDef($event) {
+    $event.preventDefault();
+  }
+  wheelSign($event) {
+    return Math.sign($event.deltaY || 0) * -1;
+  }
+  ngOnChanges() {
+    this._store.dispatch(this._timepickerActions.updateControls(getControlsValue(this)));
+  }
+  changeHours(step, source = '') {
+    this.resetValidation();
+    this._store.dispatch(this._timepickerActions.changeHours({
+      step,
+      source
+    }));
+  }
+  changeMinutes(step, source = '') {
+    this.resetValidation();
+    this._store.dispatch(this._timepickerActions.changeMinutes({
+      step,
+      source
+    }));
+  }
+  changeSeconds(step, source = '') {
+    this.resetValidation();
+    this._store.dispatch(this._timepickerActions.changeSeconds({
+      step,
+      source
+    }));
+  }
+  updateHours(target) {
+    this.resetValidation();
+    this.hours = target.value;
+    const isTimepickerInputValid = isHourInputValid(this.hours, this.isPM()) && this.isValidLimit();
+    const isValid = this.config.allowEmptyTime ? this.isOneOfDatesIsEmpty() || isTimepickerInputValid : isTimepickerInputValid;
+    if (!isValid) {
+      this.invalidHours = true;
+      this.isValid.emit(false);
+      this.onChange(null);
+      return;
+    }
+    this._updateTime();
+  }
+  updateMinutes(target) {
+    this.resetValidation();
+    this.minutes = target.value;
+    const isTimepickerInputValid = isMinuteInputValid(this.minutes) && this.isValidLimit();
+    const isValid = this.config.allowEmptyTime ? this.isOneOfDatesIsEmpty() || isTimepickerInputValid : isTimepickerInputValid;
+    if (!isValid) {
+      this.invalidMinutes = true;
+      this.isValid.emit(false);
+      this.onChange(null);
+      return;
+    }
+    this._updateTime();
+  }
+  updateSeconds(target) {
+    this.resetValidation();
+    this.seconds = target.value;
+    const isTimepickerInputValid = isSecondInputValid(this.seconds) && this.isValidLimit();
+    const isValid = this.config.allowEmptyTime ? this.isOneOfDatesIsEmpty() || isTimepickerInputValid : isTimepickerInputValid;
+    if (!isValid) {
+      this.invalidSeconds = true;
+      this.isValid.emit(false);
+      this.onChange(null);
+      return;
+    }
+    this._updateTime();
+  }
+  isValidLimit() {
+    return isInputLimitValid({
+      hour: this.hours,
+      minute: this.minutes,
+      seconds: this.seconds,
+      isPM: this.isPM()
+    }, this.max, this.min);
+  }
+  isOneOfDatesIsEmpty() {
+    return isOneOfDatesEmpty(this.hours, this.minutes, this.seconds);
+  }
+  _updateTime() {
+    const _seconds = this.showSeconds ? this.seconds : void 0;
+    const _minutes = this.showMinutes ? this.minutes : void 0;
+    const isTimepickerInputValid = isInputValid(this.hours, _minutes, _seconds, this.isPM());
+    const isValid = this.config.allowEmptyTime ? this.isOneOfDatesIsEmpty() || isTimepickerInputValid : isTimepickerInputValid;
+    if (!isValid) {
+      this.isValid.emit(false);
+      this.onChange(null);
+      return;
+    }
+    this._store.dispatch(this._timepickerActions.setTime({
+      hour: this.hours,
+      minute: this.minutes,
+      seconds: this.seconds,
+      isPM: this.isPM()
+    }));
+  }
+  toggleMeridian() {
+    if (!this.showMeridian || !this.isEditable) {
+      return;
+    }
+    const _hoursPerDayHalf = 12;
+    this._store.dispatch(this._timepickerActions.changeHours({
+      step: _hoursPerDayHalf,
+      source: ''
+    }));
+  }
+  /**
+   * Write a new value to the element.
+   */
+  writeValue(obj) {
+    if (isValidDate(obj)) {
+      this.resetValidation();
+      this._store.dispatch(this._timepickerActions.writeValue(parseTime(obj)));
+    } else if (obj == null) {
+      this._store.dispatch(this._timepickerActions.writeValue());
+    }
+  }
+  /**
+   * Set the function to be called when the control receives a change event.
+   */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  registerOnChange(fn) {
+    this.onChange = fn;
+  }
+  /**
+   * Set the function to be called when the control receives a touch event.
+   */
+  registerOnTouched(fn) {
+    this.onTouched = fn;
+  }
+  /**
+   * This function is called when the control status changes to or from "disabled".
+   * Depending on the value, it will enable or disable the appropriate DOM element.
+   *
+   * @param isDisabled
+   */
+  setDisabledState(isDisabled) {
+    this.disabled = isDisabled;
+    this._cd.markForCheck();
+  }
+  ngOnDestroy() {
+    this.timepickerSub?.unsubscribe();
+  }
+  _renderTime(value) {
+    if (!value || !isValidDate(value)) {
+      this.hours = '';
+      this.minutes = '';
+      this.seconds = '';
+      this.meridian = this.meridians[0];
+      this.meridianChange.emit(this.meridian);
+      return;
+    }
+    const _value = parseTime(value);
+    if (!_value) {
+      return;
+    }
+    const _hoursPerDayHalf = 12;
+    let _hours = _value.getHours();
+    if (this.showMeridian) {
+      this.meridian = this.meridians[_hours >= _hoursPerDayHalf ? 1 : 0];
+      this.meridianChange.emit(this.meridian);
+      _hours = _hours % _hoursPerDayHalf;
+      // should be 12 PM, not 00 PM
+      if (_hours === 0) {
+        _hours = _hoursPerDayHalf;
+      }
+    }
+    this.hours = padNumber(_hours);
+    this.minutes = padNumber(_value.getMinutes());
+    this.seconds = padNumber(_value.getUTCSeconds());
+  }
+}
+TimepickerComponent.ɵfac = function TimepickerComponent_Factory(t) {
+  return new (t || TimepickerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TimepickerConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TimepickerStore), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TimepickerActions));
+};
+TimepickerComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: TimepickerComponent,
+  selectors: [["timepicker"]],
+  inputs: {
+    hourStep: "hourStep",
+    minuteStep: "minuteStep",
+    secondsStep: "secondsStep",
+    readonlyInput: "readonlyInput",
+    disabled: "disabled",
+    mousewheel: "mousewheel",
+    arrowkeys: "arrowkeys",
+    showSpinners: "showSpinners",
+    showMeridian: "showMeridian",
+    showMinutes: "showMinutes",
+    showSeconds: "showSeconds",
+    meridians: "meridians",
+    min: "min",
+    max: "max",
+    hoursPlaceholder: "hoursPlaceholder",
+    minutesPlaceholder: "minutesPlaceholder",
+    secondsPlaceholder: "secondsPlaceholder"
+  },
+  outputs: {
+    isValid: "isValid",
+    meridianChange: "meridianChange"
+  },
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([TIMEPICKER_CONTROL_VALUE_ACCESSOR, TimepickerStore]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]],
+  decls: 31,
+  vars: 33,
+  consts: [[1, "text-center", 3, "hidden"], ["href", "javascript:void(0);", 1, "btn", "btn-link", 3, "click"], [1, "bs-chevron", "bs-chevron-up"], [4, "ngIf"], [1, "form-group", "mb-3"], ["type", "text", "maxlength", "2", 1, "form-control", "text-center", "bs-timepicker-field", 3, "placeholder", "readonly", "disabled", "value", "wheel", "keydown.ArrowUp", "keydown.ArrowDown", "change"], ["class", "form-group mb-3", 3, "has-error", 4, "ngIf"], [1, "bs-chevron", "bs-chevron-down"], ["type", "button", 1, "btn", "btn-default", "text-center", 3, "disabled", "click"]],
+  template: function TimepickerComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "table")(1, "tbody")(2, "tr", 0)(3, "td")(4, "a", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TimepickerComponent_Template_a_click_4_listener() {
+        return ctx.changeHours(ctx.hourStep);
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "span", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, TimepickerComponent_td_6_Template, 2, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, TimepickerComponent_td_7_Template, 3, 2, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, TimepickerComponent_td_8_Template, 2, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, TimepickerComponent_td_9_Template, 3, 2, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, TimepickerComponent_td_10_Template, 2, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, TimepickerComponent_td_11_Template, 1, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "tr")(13, "td", 4)(14, "input", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("wheel", function TimepickerComponent_Template_input_wheel_14_listener($event) {
+        ctx.prevDef($event);
+        return ctx.changeHours(ctx.hourStep * ctx.wheelSign($event), "wheel");
+      })("keydown.ArrowUp", function TimepickerComponent_Template_input_keydown_ArrowUp_14_listener() {
+        return ctx.changeHours(ctx.hourStep, "key");
+      })("keydown.ArrowDown", function TimepickerComponent_Template_input_keydown_ArrowDown_14_listener() {
+        return ctx.changeHours(-ctx.hourStep, "key");
+      })("change", function TimepickerComponent_Template_input_change_14_listener($event) {
+        return ctx.updateHours($event.target);
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, TimepickerComponent_td_15_Template, 2, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](16, TimepickerComponent_td_16_Template, 2, 9, "td", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](17, TimepickerComponent_td_17_Template, 2, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](18, TimepickerComponent_td_18_Template, 2, 9, "td", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](19, TimepickerComponent_td_19_Template, 2, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](20, TimepickerComponent_td_20_Template, 3, 4, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "tr", 0)(22, "td")(23, "a", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TimepickerComponent_Template_a_click_23_listener() {
+        return ctx.changeHours(-ctx.hourStep);
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "span", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](25, TimepickerComponent_td_25_Template, 2, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](26, TimepickerComponent_td_26_Template, 3, 2, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](27, TimepickerComponent_td_27_Template, 2, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](28, TimepickerComponent_td_28_Template, 3, 2, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](29, TimepickerComponent_td_29_Template, 2, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](30, TimepickerComponent_td_30_Template, 1, 0, "td", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", !ctx.showSpinners);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", !ctx.canIncrementHours || !ctx.isEditable);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMinutes);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMinutes);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showSeconds);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showSeconds);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMeridian);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMeridian);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("has-error", ctx.invalidHours);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("is-invalid", ctx.invalidHours);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("placeholder", ctx.hoursPlaceholder)("readonly", ctx.readonlyInput)("disabled", ctx.disabled)("value", ctx.hours);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-label", ctx.labelHours);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMinutes);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMinutes);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showSeconds);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showSeconds);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMeridian);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMeridian);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", !ctx.showSpinners);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", !ctx.canDecrementHours || !ctx.isEditable);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMinutes);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMinutes);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showSeconds);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showSeconds);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMeridian);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showMeridian);
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf],
+  styles: [".bs-chevron{border-style:solid;display:block;width:9px;height:9px;position:relative;border-width:3px 0px 0 3px}.bs-chevron-up{transform:rotate(45deg);top:2px}.bs-chevron-down{transform:rotate(-135deg);top:-2px}.bs-timepicker-field{width:65px;padding:.375rem .55rem}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TimepickerComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'timepicker',
+      changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectionStrategy.OnPush,
+      providers: [TIMEPICKER_CONTROL_VALUE_ACCESSOR, TimepickerStore],
+      encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewEncapsulation.None,
+      template: "<table>\n  <tbody>\n  <tr class=\"text-center\" [hidden]=\"!showSpinners\">\n    <!-- increment hours button-->\n    <td>\n      <a class=\"btn btn-link\" [class.disabled]=\"!canIncrementHours || !isEditable\"\n         (click)=\"changeHours(hourStep)\"\n         href=\"javascript:void(0);\"\n      ><span class=\"bs-chevron bs-chevron-up\"></span></a>\n    </td>\n    <!-- divider -->\n    <td *ngIf=\"showMinutes\">&nbsp;&nbsp;&nbsp;</td>\n    <!-- increment minutes button -->\n    <td *ngIf=\"showMinutes\">\n      <a class=\"btn btn-link\" [class.disabled]=\"!canIncrementMinutes || !isEditable\"\n         (click)=\"changeMinutes(minuteStep)\"\n         href=\"javascript:void(0);\"\n      ><span class=\"bs-chevron bs-chevron-up\"></span></a>\n    </td>\n    <!-- divider -->\n    <td *ngIf=\"showSeconds\">&nbsp;</td>\n    <!-- increment seconds button -->\n    <td *ngIf=\"showSeconds\">\n      <a class=\"btn btn-link\" [class.disabled]=\"!canIncrementSeconds || !isEditable\"\n         (click)=\"changeSeconds(secondsStep)\"\n         href=\"javascript:void(0);\"\n      >\n        <span class=\"bs-chevron bs-chevron-up\"></span>\n      </a>\n    </td>\n    <!-- space between -->\n    <td *ngIf=\"showMeridian\">&nbsp;&nbsp;&nbsp;</td>\n    <!-- meridian placeholder-->\n    <td *ngIf=\"showMeridian\"></td>\n  </tr>\n  <tr>\n    <!-- hours -->\n    <td class=\"form-group mb-3\" [class.has-error]=\"invalidHours\">\n      <input type=\"text\" [class.is-invalid]=\"invalidHours\"\n             class=\"form-control text-center bs-timepicker-field\"\n             [placeholder]=\"hoursPlaceholder\"\n             maxlength=\"2\"\n             [readonly]=\"readonlyInput\"\n             [disabled]=\"disabled\"\n             [value]=\"hours\"\n             (wheel)=\"prevDef($event);changeHours(hourStep * wheelSign($event), 'wheel')\"\n             (keydown.ArrowUp)=\"changeHours(hourStep, 'key')\"\n             (keydown.ArrowDown)=\"changeHours(-hourStep, 'key')\"\n             (change)=\"updateHours($event.target)\" [attr.aria-label]=\"labelHours\"></td>\n    <!-- divider -->\n    <td *ngIf=\"showMinutes\">&nbsp;:&nbsp;</td>\n    <!-- minutes -->\n    <td class=\"form-group mb-3\" *ngIf=\"showMinutes\" [class.has-error]=\"invalidMinutes\">\n      <input type=\"text\" [class.is-invalid]=\"invalidMinutes\"\n             class=\"form-control text-center bs-timepicker-field\"\n             [placeholder]=\"minutesPlaceholder\"\n             maxlength=\"2\"\n             [readonly]=\"readonlyInput\"\n             [disabled]=\"disabled\"\n             [value]=\"minutes\"\n             (wheel)=\"prevDef($event);changeMinutes(minuteStep * wheelSign($event), 'wheel')\"\n             (keydown.ArrowUp)=\"changeMinutes(minuteStep, 'key')\"\n             (keydown.ArrowDown)=\"changeMinutes(-minuteStep, 'key')\"\n             (change)=\"updateMinutes($event.target)\" [attr.aria-label]=\"labelMinutes\">\n    </td>\n    <!-- divider -->\n    <td *ngIf=\"showSeconds\">&nbsp;:&nbsp;</td>\n    <!-- seconds -->\n    <td class=\"form-group mb-3\" *ngIf=\"showSeconds\" [class.has-error]=\"invalidSeconds\">\n      <input type=\"text\" [class.is-invalid]=\"invalidSeconds\"\n             class=\"form-control text-center bs-timepicker-field\"\n             [placeholder]=\"secondsPlaceholder\"\n             maxlength=\"2\"\n             [readonly]=\"readonlyInput\"\n             [disabled]=\"disabled\"\n             [value]=\"seconds\"\n             (wheel)=\"prevDef($event);changeSeconds(secondsStep * wheelSign($event), 'wheel')\"\n             (keydown.ArrowUp)=\"changeSeconds(secondsStep, 'key')\"\n             (keydown.ArrowDown)=\"changeSeconds(-secondsStep, 'key')\"\n             (change)=\"updateSeconds($event.target)\" [attr.aria-label]=\"labelSeconds\">\n    </td>\n    <!-- space between -->\n    <td *ngIf=\"showMeridian\">&nbsp;&nbsp;&nbsp;</td>\n    <!-- meridian -->\n    <td *ngIf=\"showMeridian\">\n      <button type=\"button\" class=\"btn btn-default text-center\"\n              [disabled]=\"!isEditable || !canToggleMeridian\"\n              [class.disabled]=\"!isEditable || !canToggleMeridian\"\n              (click)=\"toggleMeridian()\"\n      >{{ meridian }}\n      </button>\n    </td>\n  </tr>\n  <tr class=\"text-center\" [hidden]=\"!showSpinners\">\n    <!-- decrement hours button-->\n    <td>\n      <a class=\"btn btn-link\" [class.disabled]=\"!canDecrementHours || !isEditable\"\n         (click)=\"changeHours(-hourStep)\"\n         href=\"javascript:void(0);\"\n      >\n        <span class=\"bs-chevron bs-chevron-down\"></span>\n      </a>\n    </td>\n    <!-- divider -->\n    <td *ngIf=\"showMinutes\">&nbsp;&nbsp;&nbsp;</td>\n    <!-- decrement minutes button-->\n    <td *ngIf=\"showMinutes\">\n      <a class=\"btn btn-link\" [class.disabled]=\"!canDecrementMinutes || !isEditable\"\n         (click)=\"changeMinutes(-minuteStep)\"\n         href=\"javascript:void(0);\"\n      >\n        <span class=\"bs-chevron bs-chevron-down\"></span>\n      </a>\n    </td>\n    <!-- divider -->\n    <td *ngIf=\"showSeconds\">&nbsp;</td>\n    <!-- decrement seconds button-->\n    <td *ngIf=\"showSeconds\">\n      <a class=\"btn btn-link\" [class.disabled]=\"!canDecrementSeconds || !isEditable\"\n         (click)=\"changeSeconds(-secondsStep)\"\n         href=\"javascript:void(0);\"\n      >\n        <span class=\"bs-chevron bs-chevron-down\"></span>\n      </a>\n    </td>\n    <!-- space between -->\n    <td *ngIf=\"showMeridian\">&nbsp;&nbsp;&nbsp;</td>\n    <!-- meridian placeholder-->\n    <td *ngIf=\"showMeridian\"></td>\n  </tr>\n  </tbody>\n</table>\n",
+      styles: [".bs-chevron{border-style:solid;display:block;width:9px;height:9px;position:relative;border-width:3px 0px 0 3px}.bs-chevron-up{transform:rotate(45deg);top:2px}.bs-chevron-down{transform:rotate(-135deg);top:-2px}.bs-timepicker-field{width:65px;padding:.375rem .55rem}\n"]
+    }]
+  }], function () {
+    return [{
+      type: TimepickerConfig
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef
+    }, {
+      type: TimepickerStore
+    }, {
+      type: TimepickerActions
+    }];
+  }, {
+    hourStep: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    minuteStep: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    secondsStep: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    readonlyInput: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    disabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    mousewheel: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    arrowkeys: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    showSpinners: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    showMeridian: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    showMinutes: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    showSeconds: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    meridians: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    min: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    max: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    hoursPlaceholder: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    minutesPlaceholder: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    secondsPlaceholder: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    isValid: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    meridianChange: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }]
+  });
+})();
+class TimepickerModule {
+  static forRoot() {
+    return {
+      ngModule: TimepickerModule,
+      providers: [TimepickerActions, TimepickerStore]
+    };
+  }
+}
+TimepickerModule.ɵfac = function TimepickerModule_Factory(t) {
+  return new (t || TimepickerModule)();
+};
+TimepickerModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
+  type: TimepickerModule
+});
+TimepickerModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
+  providers: [TimepickerStore],
+  imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TimepickerModule, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
+    args: [{
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule],
+      declarations: [TimepickerComponent],
+      exports: [TimepickerComponent],
+      providers: [TimepickerStore]
+    }]
+  }], null, null);
+})();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
+/***/ 7618:
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/tooltip/fesm2020/ngx-bootstrap-tooltip.mjs ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TooltipConfig": () => (/* binding */ TooltipConfig),
+/* harmony export */   "TooltipContainerComponent": () => (/* binding */ TooltipContainerComponent),
+/* harmony export */   "TooltipDirective": () => (/* binding */ TooltipDirective),
+/* harmony export */   "TooltipModule": () => (/* binding */ TooltipModule)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-bootstrap/utils */ 8132);
+/* harmony import */ var ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-bootstrap/positioning */ 2623);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-bootstrap/component-loader */ 755);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 8947);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ 4666);
+
+
+
+
+
+
+
+
+
+
+
+/** Default values provider for tooltip */
+const _c0 = ["*"];
+class TooltipConfig {
+  constructor() {
+    /** sets disable adaptive position */
+    this.adaptivePosition = true;
+    /** tooltip placement, supported positions: 'top', 'bottom', 'left', 'right' */
+    this.placement = 'top';
+    /** array of event names which triggers tooltip opening */
+    this.triggers = 'hover focus';
+    /** delay before showing the tooltip */
+    this.delay = 0;
+  }
+}
+TooltipConfig.ɵfac = function TooltipConfig_Factory(t) {
+  return new (t || TooltipConfig)();
+};
+TooltipConfig.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+  token: TooltipConfig,
+  factory: TooltipConfig.ɵfac,
+  providedIn: 'root'
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TooltipConfig, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+    args: [{
+      providedIn: 'root'
+    }]
+  }], null, null);
+})();
+class TooltipContainerComponent {
+  constructor(config) {
+    Object.assign(this, config);
+  }
+  get _bsVersions() {
+    return (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.getBsVer)();
+  }
+  ngAfterViewInit() {
+    this.classMap = {
+      in: false,
+      fade: false
+    };
+    if (this.placement) {
+      if (this._bsVersions.isBs5) {
+        this.placement = ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PlacementForBs5[this.placement];
+      }
+      this.classMap[this.placement] = true;
+    }
+    this.classMap[`tooltip-${this.placement}`] = true;
+    this.classMap["in"] = true;
+    if (this.animation) {
+      this.classMap["fade"] = true;
+    }
+    if (this.containerClass) {
+      this.classMap[this.containerClass] = true;
+    }
+  }
+}
+TooltipContainerComponent.ɵfac = function TooltipContainerComponent_Factory(t) {
+  return new (t || TooltipContainerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TooltipConfig));
+};
+TooltipContainerComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: TooltipContainerComponent,
+  selectors: [["bs-tooltip-container"]],
+  hostAttrs: ["role", "tooltip"],
+  hostVars: 3,
+  hostBindings: function TooltipContainerComponent_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("id", ctx.id);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"]("show tooltip in tooltip-" + ctx.placement + " " + "bs-tooltip-" + ctx.placement + " " + ctx.placement + " " + ctx.containerClass);
+    }
+  },
+  ngContentSelectors: _c0,
+  decls: 3,
+  vars: 0,
+  consts: [[1, "tooltip-arrow", "arrow"], [1, "tooltip-inner"]],
+  template: function TooltipContainerComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    }
+  },
+  styles: [".tooltip[_nghost-%COMP%]{display:block;pointer-events:none}.bs3.tooltip.top[_nghost-%COMP%] > .arrow[_ngcontent-%COMP%]{margin-left:-2px}.bs3.tooltip.bottom[_nghost-%COMP%]{margin-top:0}.bs3.bs-tooltip-left[_nghost-%COMP%], .bs3.bs-tooltip-right[_nghost-%COMP%]{margin:0}.bs3.bs-tooltip-right[_nghost-%COMP%]   .arrow[_ngcontent-%COMP%], .bs3.bs-tooltip-left[_nghost-%COMP%]   .arrow[_ngcontent-%COMP%]{margin:.3rem 0}"],
+  changeDetection: 0
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TooltipContainerComponent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'bs-tooltip-container',
+      changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectionStrategy.OnPush,
+      host: {
+        '[class]': '"show tooltip in tooltip-" + placement + " " + "bs-tooltip-" + placement + " " + placement + " " + containerClass',
+        '[attr.id]': 'this.id',
+        role: 'tooltip'
+      },
+      template: `
+    <div class="tooltip-arrow arrow"></div>
+    <div class="tooltip-inner"><ng-content></ng-content></div>
+    `,
+      styles: [":host.tooltip{display:block;pointer-events:none}:host.bs3.tooltip.top>.arrow{margin-left:-2px}:host.bs3.tooltip.bottom{margin-top:0}:host.bs3.bs-tooltip-left,:host.bs3.bs-tooltip-right{margin:0}:host.bs3.bs-tooltip-right .arrow,:host.bs3.bs-tooltip-left .arrow{margin:.3rem 0}\n"]
+    }]
+  }], function () {
+    return [{
+      type: TooltipConfig
+    }];
+  }, null);
+})();
+let id = 0;
+class TooltipDirective {
+  constructor(_viewContainerRef, cis, config, _elementRef, _renderer, _positionService) {
+    this._elementRef = _elementRef;
+    this._renderer = _renderer;
+    this._positionService = _positionService;
+    this.tooltipId = id++;
+    /** sets disable adaptive position */
+    this.adaptivePosition = true;
+    /** Fired when tooltip content changes */
+    this.tooltipChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    /**
+     * Placement of a tooltip. Accepts: "top", "bottom", "left", "right"
+     */
+    this.placement = 'top';
+    /**
+     * Specifies events that should trigger. Supports a space separated list of
+     * event names.
+     */
+    this.triggers = 'hover focus';
+    /**
+     * Css class for tooltip container
+     */
+    this.containerClass = '';
+    /**
+     * Allows to disable tooltip
+     */
+    this.isDisabled = false;
+    /**
+     * Delay before showing the tooltip
+     */
+    this.delay = 0;
+    /** @deprecated - removed, will be added to configuration */
+    this.tooltipAnimation = true;
+    /** @deprecated */
+    this.tooltipFadeDuration = 150;
+    /** @deprecated */
+    this.tooltipStateChanged = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this._tooltip = cis.createLoader(this._elementRef, _viewContainerRef, this._renderer).provide({
+      provide: TooltipConfig,
+      useValue: config
+    });
+    Object.assign(this, config);
+    this.onShown = this._tooltip.onShown;
+    this.onHidden = this._tooltip.onHidden;
+  }
+  /**
+   * Returns whether or not the tooltip is currently being shown
+   */
+  get isOpen() {
+    return this._tooltip.isShown;
+  }
+  set isOpen(value) {
+    if (value) {
+      this.show();
+    } else {
+      this.hide();
+    }
+  }
+  /** @deprecated - please use `tooltip` instead */
+  set htmlContent(value) {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipHtml was deprecated, please use `tooltip` instead');
+    this.tooltip = value;
+  }
+  /** @deprecated - please use `placement` instead */
+  // eslint-disable-next-line @angular-eslint/no-input-rename
+  set _placement(value) {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipPlacement was deprecated, please use `placement` instead');
+    this.placement = value;
+  }
+  /** @deprecated - please use `isOpen` instead */
+  // eslint-disable-next-line @angular-eslint/no-input-rename
+  set _isOpen(value) {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipIsOpen was deprecated, please use `isOpen` instead');
+    this.isOpen = value;
+  }
+  get _isOpen() {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipIsOpen was deprecated, please use `isOpen` instead');
+    return this.isOpen;
+  }
+  /** @deprecated - please use `isDisabled` instead */
+  // eslint-disable-next-line @angular-eslint/no-input-rename
+  set _enable(value) {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipEnable was deprecated, please use `isDisabled` instead');
+    this.isDisabled = !value;
+  }
+  get _enable() {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipEnable was deprecated, please use `isDisabled` instead');
+    return this.isDisabled;
+  }
+  /** @deprecated - please use `container="body"` instead */
+  // eslint-disable-next-line @angular-eslint/no-input-rename
+  set _appendToBody(value) {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipAppendToBody was deprecated, please use `container="body"` instead');
+    this.container = value ? 'body' : this.container;
+  }
+  get _appendToBody() {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipAppendToBody was deprecated, please use `container="body"` instead');
+    return this.container === 'body';
+  }
+  /** @deprecated - will replaced with customClass */
+  // eslint-disable-next-line @angular-eslint/no-input-rename
+  set _popupClass(value) {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipClass deprecated');
+  }
+  /** @deprecated - removed */
+  // eslint-disable-next-line @angular-eslint/no-input-rename
+  set _tooltipContext(value) {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipContext deprecated');
+  }
+  /** @deprecated */
+  // eslint-disable-next-line @angular-eslint/no-input-rename
+  set _tooltipPopupDelay(value) {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipPopupDelay is deprecated, use `delay` instead');
+    this.delay = value;
+  }
+  /** @deprecated -  please use `triggers` instead */
+  get _tooltipTrigger() {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipTrigger was deprecated, please use `triggers` instead');
+    return this.triggers;
+  }
+  set _tooltipTrigger(value) {
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipTrigger was deprecated, please use `triggers` instead');
+    this.triggers = (value || '').toString();
+  }
+  ngOnInit() {
+    this._tooltip.listen({
+      triggers: this.triggers,
+      show: () => this.show()
+    });
+    this.tooltipChange.subscribe(value => {
+      if (!value) {
+        this._tooltip.hide();
+      }
+    });
+    this.onShown.subscribe(() => {
+      this.setAriaDescribedBy();
+    });
+    this.onHidden.subscribe(() => {
+      this.setAriaDescribedBy();
+    });
+  }
+  setAriaDescribedBy() {
+    this._ariaDescribedby = this.isOpen ? `tooltip-${this.tooltipId}` : void 0;
+    if (this._ariaDescribedby) {
+      this._renderer.setAttribute(this._elementRef.nativeElement, 'aria-describedby', this._ariaDescribedby);
+    } else {
+      this._renderer.removeAttribute(this._elementRef.nativeElement, 'aria-describedby');
+    }
+  }
+  /**
+   * Toggles an element’s tooltip. This is considered a “manual” triggering of
+   * the tooltip.
+   */
+  toggle() {
+    if (this.isOpen) {
+      return this.hide();
+    }
+    this.show();
+  }
+  /**
+   * Opens an element’s tooltip. This is considered a “manual” triggering of
+   * the tooltip.
+   */
+  show() {
+    this._positionService.setOptions({
+      modifiers: {
+        flip: {
+          enabled: this.adaptivePosition
+        },
+        preventOverflow: {
+          enabled: this.adaptivePosition,
+          boundariesElement: this.boundariesElement || 'scrollParent'
+        }
+      }
+    });
+    if (this.isOpen || this.isDisabled || this._delayTimeoutId || !this.tooltip) {
+      return;
+    }
+    const showTooltip = () => {
+      if (this._delayTimeoutId) {
+        this._delayTimeoutId = undefined;
+      }
+      this._tooltip.attach(TooltipContainerComponent).to(this.container).position({
+        attachment: this.placement
+      }).show({
+        content: this.tooltip,
+        placement: this.placement,
+        containerClass: this.containerClass,
+        id: `tooltip-${this.tooltipId}`
+      });
+    };
+    const cancelDelayedTooltipShowing = () => {
+      if (this._tooltipCancelShowFn) {
+        this._tooltipCancelShowFn();
+      }
+    };
+    if (this.delay) {
+      if (this._delaySubscription) {
+        this._delaySubscription.unsubscribe();
+      }
+      this._delaySubscription = (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.timer)(this.delay).subscribe(() => {
+        showTooltip();
+        cancelDelayedTooltipShowing();
+      });
+      if (this.triggers) {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.parseTriggers)(this.triggers).forEach(trigger => {
+          if (!trigger.close) {
+            return;
+          }
+          this._tooltipCancelShowFn = this._renderer.listen(this._elementRef.nativeElement, trigger.close, () => {
+            this._delaySubscription?.unsubscribe();
+            cancelDelayedTooltipShowing();
+          });
+        });
+      }
+    } else {
+      showTooltip();
+    }
+  }
+  /**
+   * Closes an element’s tooltip. This is considered a “manual” triggering of
+   * the tooltip.
+   */
+  hide() {
+    if (this._delayTimeoutId) {
+      clearTimeout(this._delayTimeoutId);
+      this._delayTimeoutId = undefined;
+    }
+    if (!this._tooltip.isShown) {
+      return;
+    }
+    if (this._tooltip.instance?.classMap) {
+      this._tooltip.instance.classMap["in"] = false;
+    }
+    setTimeout(() => {
+      this._tooltip.hide();
+    }, this.tooltipFadeDuration);
+  }
+  ngOnDestroy() {
+    this._tooltip.dispose();
+    this.tooltipChange.unsubscribe();
+    if (this._delaySubscription) {
+      this._delaySubscription.unsubscribe();
+    }
+    this.onShown.unsubscribe();
+    this.onHidden.unsubscribe();
+  }
+}
+TooltipDirective.ɵfac = function TooltipDirective_Factory(t) {
+  return new (t || TooltipDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_4__.ComponentLoaderFactory), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TooltipConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService));
+};
+TooltipDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: TooltipDirective,
+  selectors: [["", "tooltip", ""], ["", "tooltipHtml", ""]],
+  inputs: {
+    adaptivePosition: "adaptivePosition",
+    tooltip: "tooltip",
+    placement: "placement",
+    triggers: "triggers",
+    container: "container",
+    containerClass: "containerClass",
+    boundariesElement: "boundariesElement",
+    isOpen: "isOpen",
+    isDisabled: "isDisabled",
+    delay: "delay",
+    htmlContent: ["tooltipHtml", "htmlContent"],
+    _placement: ["tooltipPlacement", "_placement"],
+    _isOpen: ["tooltipIsOpen", "_isOpen"],
+    _enable: ["tooltipEnable", "_enable"],
+    _appendToBody: ["tooltipAppendToBody", "_appendToBody"],
+    tooltipAnimation: "tooltipAnimation",
+    _popupClass: ["tooltipClass", "_popupClass"],
+    _tooltipContext: ["tooltipContext", "_tooltipContext"],
+    _tooltipPopupDelay: ["tooltipPopupDelay", "_tooltipPopupDelay"],
+    tooltipFadeDuration: "tooltipFadeDuration",
+    _tooltipTrigger: ["tooltipTrigger", "_tooltipTrigger"]
+  },
+  outputs: {
+    tooltipChange: "tooltipChange",
+    onShown: "onShown",
+    onHidden: "onHidden",
+    tooltipStateChanged: "tooltipStateChanged"
+  },
+  exportAs: ["bs-tooltip"]
+});
+(0,tslib__WEBPACK_IMPORTED_MODULE_5__.__decorate)([(0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.OnChange)(), (0,tslib__WEBPACK_IMPORTED_MODULE_5__.__metadata)("design:type", Object)], TooltipDirective.prototype, "tooltip", void 0);
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TooltipDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+    args: [{
+      selector: '[tooltip], [tooltipHtml]',
+      exportAs: 'bs-tooltip'
+    }]
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef
+    }, {
+      type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_4__.ComponentLoaderFactory
+    }, {
+      type: TooltipConfig
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
+    }, {
+      type: ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService
+    }];
+  }, {
+    adaptivePosition: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    tooltip: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    tooltipChange: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    placement: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    triggers: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    container: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    containerClass: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    boundariesElement: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    isOpen: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    isDisabled: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    delay: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    onShown: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onHidden: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    htmlContent: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['tooltipHtml']
+    }],
+    _placement: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['tooltipPlacement']
+    }],
+    _isOpen: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['tooltipIsOpen']
+    }],
+    _enable: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['tooltipEnable']
+    }],
+    _appendToBody: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['tooltipAppendToBody']
+    }],
+    tooltipAnimation: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    _popupClass: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['tooltipClass']
+    }],
+    _tooltipContext: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['tooltipContext']
+    }],
+    _tooltipPopupDelay: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['tooltipPopupDelay']
+    }],
+    tooltipFadeDuration: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    _tooltipTrigger: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['tooltipTrigger']
+    }],
+    tooltipStateChanged: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }]
+  });
+})();
+class TooltipModule {
+  static forRoot() {
+    return {
+      ngModule: TooltipModule,
+      providers: [ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_4__.ComponentLoaderFactory, ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService]
+    };
+  }
+}
+TooltipModule.ɵfac = function TooltipModule_Factory(t) {
+  return new (t || TooltipModule)();
+};
+TooltipModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
+  type: TooltipModule
+});
+TooltipModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
+  imports: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TooltipModule, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
+    args: [{
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule],
+      declarations: [TooltipDirective, TooltipContainerComponent],
+      exports: [TooltipDirective]
+    }]
+  }], null, null);
+})();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
+/***/ 8132:
+/*!***************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/utils/fesm2020/ngx-bootstrap-utils.mjs ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BsVerions": () => (/* binding */ BsVerions),
+/* harmony export */   "LinkedList": () => (/* binding */ LinkedList),
+/* harmony export */   "OnChange": () => (/* binding */ OnChange),
+/* harmony export */   "Trigger": () => (/* binding */ Trigger),
+/* harmony export */   "Utils": () => (/* binding */ Utils),
+/* harmony export */   "currentBsVersion": () => (/* binding */ currentBsVersion),
+/* harmony export */   "document": () => (/* binding */ document),
+/* harmony export */   "getBsVer": () => (/* binding */ getBsVer),
+/* harmony export */   "listenToTriggers": () => (/* binding */ listenToTriggers),
+/* harmony export */   "listenToTriggersV2": () => (/* binding */ listenToTriggersV2),
+/* harmony export */   "parseTriggers": () => (/* binding */ parseTriggers),
+/* harmony export */   "registerEscClick": () => (/* binding */ registerEscClick),
+/* harmony export */   "registerOutsideClick": () => (/* binding */ registerOutsideClick),
+/* harmony export */   "setTheme": () => (/* binding */ setTheme),
+/* harmony export */   "warnOnce": () => (/* binding */ warnOnce),
+/* harmony export */   "window": () => (/* binding */ win)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+/**
+ * @copyright Valor Software
+ * @copyright Angular ng-bootstrap team
+ */
+class Trigger {
+  constructor(open, close) {
+    this.open = open;
+    this.close = close || open;
+  }
+  isManual() {
+    return this.open === 'manual' || this.close === 'manual';
+  }
+}
+const DEFAULT_ALIASES = {
+  hover: ['mouseover', 'mouseout'],
+  focus: ['focusin', 'focusout']
+};
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function parseTriggers(triggers, aliases = DEFAULT_ALIASES) {
+  const trimmedTriggers = (triggers || '').trim();
+  if (trimmedTriggers.length === 0) {
+    return [];
+  }
+  const parsedTriggers = trimmedTriggers.split(/\s+/).map(trigger => trigger.split(':')).map(triggerPair => {
+    const alias = aliases[triggerPair[0]] || triggerPair;
+    return new Trigger(alias[0], alias[1]);
+  });
+  const manualTriggers = parsedTriggers.filter(triggerPair => triggerPair.isManual());
+  if (manualTriggers.length > 1) {
+    throw new Error('Triggers parse error: only one manual trigger is allowed');
+  }
+  if (manualTriggers.length === 1 && parsedTriggers.length > 1) {
+    throw new Error('Triggers parse error: manual trigger can\'t be mixed with other triggers');
+  }
+  return parsedTriggers;
+}
+function listenToTriggers(renderer,
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+target, triggers, showFn, hideFn, toggleFn) {
+  const parsedTriggers = parseTriggers(triggers);
+  const listeners = [];
+  if (parsedTriggers.length === 1 && parsedTriggers[0].isManual()) {
+    return Function.prototype;
+  }
+  parsedTriggers.forEach(trigger => {
+    if (trigger.open === trigger.close) {
+      listeners.push(renderer.listen(target, trigger.open, toggleFn));
+      return;
+    }
+    listeners.push(renderer.listen(target, trigger.open, showFn));
+    if (trigger.close) {
+      listeners.push(renderer.listen(target, trigger.close, hideFn));
+    }
+  });
+  return () => {
+    listeners.forEach(unsubscribeFn => unsubscribeFn());
+  };
+}
+function listenToTriggersV2(renderer, options) {
+  const parsedTriggers = parseTriggers(options.triggers);
+  const target = options.target;
+  // do nothing
+  if (parsedTriggers.length === 1 && parsedTriggers[0].isManual()) {
+    return Function.prototype;
+  }
+  // all listeners
+  const listeners = [];
+  // lazy listeners registration
+  const _registerHide = [];
+  const registerHide = () => {
+    // add hide listeners to unregister array
+    _registerHide.forEach(fn => listeners.push(fn()));
+    // register hide events only once
+    _registerHide.length = 0;
+  };
+  // register open\close\toggle listeners
+  parsedTriggers.forEach(trigger => {
+    const useToggle = trigger.open === trigger.close;
+    const showFn = useToggle ? options.toggle : options.show;
+    if (!useToggle && trigger.close && options.hide) {
+      const _hide = renderer.listen(target, trigger.close, options.hide);
+      _registerHide.push(() => _hide);
+    }
+    if (showFn) {
+      listeners.push(renderer.listen(target, trigger.open, () => showFn(registerHide)));
+    }
+  });
+  return () => {
+    listeners.forEach(unsubscribeFn => unsubscribeFn());
+  };
+}
+function registerOutsideClick(renderer, options) {
+  if (!options.outsideClick) {
+    return Function.prototype;
+  }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return renderer.listen('document', 'click', event => {
+    if (options.target && options.target.contains(event.target)) {
+      return;
+    }
+    if (options.targets && options.targets.some(target => target.contains(event.target))) {
+      return;
+    }
+    if (options.hide) {
+      options.hide();
+    }
+  });
+}
+function registerEscClick(renderer, options) {
+  if (!options.outsideEsc) {
+    return Function.prototype;
+  }
+  return renderer.listen('document', 'keyup.esc', event => {
+    if (options.target && options.target.contains(event.target)) {
+      return;
+    }
+    if (options.targets && options.targets.some(target => target.contains(event.target))) {
+      return;
+    }
+    if (options.hide) {
+      options.hide();
+    }
+  });
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * JS version of browser APIs. This library can only run in the browser.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const win = typeof window !== 'undefined' && window || {};
+const document = win.document;
+const location = win.location;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const gc = win.gc ? () => win.gc() : () => null;
+const performance = win.performance ? win.performance : null;
+const Event = win.Event;
+const MouseEvent = win.MouseEvent;
+const KeyboardEvent = win.KeyboardEvent;
+const EventTarget = win.EventTarget;
+const History = win.History;
+const Location = win.Location;
+const EventListener = win.EventListener;
+var BsVerions;
+(function (BsVerions) {
+  BsVerions["isBs4"] = "bs4";
+  BsVerions["isBs5"] = "bs5";
+})(BsVerions || (BsVerions = {}));
+let guessedVersion;
+function _guessBsVersion() {
+  const spanEl = win.document.createElement('span');
+  spanEl.innerText = 'testing bs version';
+  spanEl.classList.add('d-none');
+  spanEl.classList.add('pl-1');
+  win.document.head.appendChild(spanEl);
+  const checkPadding = win.getComputedStyle(spanEl).paddingLeft;
+  if (checkPadding && parseFloat(checkPadding)) {
+    win.document.head.removeChild(spanEl);
+    return 'bs4';
+  }
+  win.document.head.removeChild(spanEl);
+  return 'bs5';
+}
+function setTheme(theme) {
+  guessedVersion = theme;
+}
+function isBs4() {
+  if (guessedVersion) return guessedVersion === 'bs4';
+  guessedVersion = _guessBsVersion();
+  return guessedVersion === 'bs4';
+}
+function isBs5() {
+  if (guessedVersion) return guessedVersion === 'bs5';
+  guessedVersion = _guessBsVersion();
+  return guessedVersion === 'bs5';
+}
+function getBsVer() {
+  return {
+    isBs4: isBs4(),
+    isBs5: isBs5()
+  };
+}
+function currentBsVersion() {
+  const bsVer = getBsVer();
+  const resVersion = Object.keys(bsVer).find(key => bsVer[key]);
+  return BsVerions[resVersion];
+}
+class LinkedList {
+  constructor() {
+    this.length = 0;
+    this.asArray = [];
+    // Array methods overriding END
+  }
+
+  get(position) {
+    if (this.length === 0 || position < 0 || position >= this.length) {
+      return void 0;
+    }
+    let current = this.head;
+    for (let index = 0; index < position; index++) {
+      current = current?.next;
+    }
+    return current?.value;
+  }
+  add(value, position = this.length) {
+    if (position < 0 || position > this.length) {
+      throw new Error('Position is out of the list');
+    }
+    const node = {
+      value,
+      next: undefined,
+      previous: undefined
+    };
+    if (this.length === 0) {
+      this.head = node;
+      this.tail = node;
+      this.current = node;
+    } else {
+      if (position === 0 && this.head) {
+        // first node
+        node.next = this.head;
+        this.head.previous = node;
+        this.head = node;
+      } else if (position === this.length && this.tail) {
+        // last node
+        this.tail.next = node;
+        node.previous = this.tail;
+        this.tail = node;
+      } else {
+        // node in middle
+        const currentPreviousNode = this.getNode(position - 1);
+        const currentNextNode = currentPreviousNode?.next;
+        if (currentPreviousNode && currentNextNode) {
+          currentPreviousNode.next = node;
+          currentNextNode.previous = node;
+          node.previous = currentPreviousNode;
+          node.next = currentNextNode;
+        }
+      }
+    }
+    this.length++;
+    this.createInternalArrayRepresentation();
+  }
+  remove(position = 0) {
+    if (this.length === 0 || position < 0 || position >= this.length) {
+      throw new Error('Position is out of the list');
+    }
+    if (position === 0 && this.head) {
+      // first node
+      this.head = this.head.next;
+      if (this.head) {
+        // there is no second node
+        this.head.previous = undefined;
+      } else {
+        // there is no second node
+        this.tail = undefined;
+      }
+    } else if (position === this.length - 1 && this.tail?.previous) {
+      // last node
+      this.tail = this.tail.previous;
+      this.tail.next = undefined;
+    } else {
+      // middle node
+      const removedNode = this.getNode(position);
+      if (removedNode?.next && removedNode.previous) {
+        removedNode.next.previous = removedNode.previous;
+        removedNode.previous.next = removedNode.next;
+      }
+    }
+    this.length--;
+    this.createInternalArrayRepresentation();
+  }
+  set(position, value) {
+    if (this.length === 0 || position < 0 || position >= this.length) {
+      throw new Error('Position is out of the list');
+    }
+    const node = this.getNode(position);
+    if (node) {
+      node.value = value;
+      this.createInternalArrayRepresentation();
+    }
+  }
+  toArray() {
+    return this.asArray;
+  }
+  findAll(fn) {
+    let current = this.head;
+    const result = [];
+    if (!current) {
+      return result;
+    }
+    for (let index = 0; index < this.length; index++) {
+      if (!current) {
+        return result;
+      }
+      if (fn(current.value, index)) {
+        result.push({
+          index,
+          value: current.value
+        });
+      }
+      current = current.next;
+    }
+    return result;
+  }
+  // Array methods overriding start
+  push(...args) {
+    args.forEach(arg => {
+      this.add(arg);
+    });
+    return this.length;
+  }
+  pop() {
+    if (this.length === 0) {
+      return undefined;
+    }
+    const last = this.tail;
+    this.remove(this.length - 1);
+    return last?.value;
+  }
+  unshift(...args) {
+    args.reverse();
+    args.forEach(arg => {
+      this.add(arg, 0);
+    });
+    return this.length;
+  }
+  shift() {
+    if (this.length === 0) {
+      return undefined;
+    }
+    const lastItem = this.head?.value;
+    this.remove();
+    return lastItem;
+  }
+  forEach(fn) {
+    let current = this.head;
+    for (let index = 0; index < this.length; index++) {
+      if (!current) {
+        return;
+      }
+      fn(current.value, index);
+      current = current.next;
+    }
+  }
+  indexOf(value) {
+    let current = this.head;
+    let position = -1;
+    for (let index = 0; index < this.length; index++) {
+      if (!current) {
+        return position;
+      }
+      if (current.value === value) {
+        position = index;
+        break;
+      }
+      current = current.next;
+    }
+    return position;
+  }
+  some(fn) {
+    let current = this.head;
+    let result = false;
+    while (current && !result) {
+      if (fn(current.value)) {
+        result = true;
+        break;
+      }
+      current = current.next;
+    }
+    return result;
+  }
+  every(fn) {
+    let current = this.head;
+    let result = true;
+    while (current && result) {
+      if (!fn(current.value)) {
+        result = false;
+      }
+      current = current.next;
+    }
+    return result;
+  }
+  toString() {
+    return '[Linked List]';
+  }
+  find(fn) {
+    let current = this.head;
+    for (let index = 0; index < this.length; index++) {
+      if (!current) {
+        return;
+      }
+      if (fn(current.value, index)) {
+        return current.value;
+      }
+      current = current.next;
+    }
+  }
+  findIndex(fn) {
+    let current = this.head;
+    for (let index = 0; index < this.length; index++) {
+      if (!current) {
+        return -1;
+      }
+      if (fn(current.value, index)) {
+        return index;
+      }
+      current = current.next;
+    }
+    return -1;
+  }
+  getNode(position) {
+    if (this.length === 0 || position < 0 || position >= this.length) {
+      throw new Error('Position is out of the list');
+    }
+    let current = this.head;
+    for (let index = 0; index < position; index++) {
+      current = current?.next;
+    }
+    return current;
+  }
+  createInternalArrayRepresentation() {
+    const outArray = [];
+    let current = this.head;
+    while (current) {
+      outArray.push(current.value);
+      current = current.next;
+    }
+    this.asArray = outArray;
+  }
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function OnChange() {
+  const sufix = 'Change';
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return function OnChangeHandler(target, propertyKey) {
+    const _key = ` __${propertyKey}Value`;
+    Object.defineProperty(target, propertyKey, {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      get() {
+        return this[_key];
+      },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      set(value) {
+        const prevValue = this[_key];
+        this[_key] = value;
+        if (prevValue !== value && this[propertyKey + sufix]) {
+          this[propertyKey + sufix].emit(value);
+        }
+      }
+    });
+  };
+}
+class Utils {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  static reflow(element) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (bs => bs)(element.offsetHeight);
+  }
+  // source: https://github.com/jquery/jquery/blob/master/src/css/var/getStyles.js
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  static getStyles(elem) {
+    // Support: IE <=11 only, Firefox <=30 (#15098, #14150)
+    // IE throws on elements created in popups
+    // FF meanwhile throws on frame elements through "defaultView.getComputedStyle"
+    let view = elem.ownerDocument.defaultView;
+    if (!view || !view.opener) {
+      view = win;
+    }
+    return view.getComputedStyle(elem);
+  }
+  static stackOverflowConfig() {
+    const bsVer = currentBsVersion();
+    return {
+      crossorigin: "anonymous",
+      integrity: bsVer === 'bs5' ? 'sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We' : 'sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2',
+      cdnLink: bsVer === 'bs5' ? 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' : 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css'
+    };
+  }
+}
+const _messagesHash = {};
+const _hideMsg = typeof console === 'undefined' || !('warn' in console);
+function warnOnce(msg) {
+  if (!(0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.isDevMode)() || _hideMsg || msg in _messagesHash) {
+    return;
+  }
+  _messagesHash[msg] = true;
+  console.warn(msg);
+}
 
 /**
  * Generated bundle index. Do not edit.
