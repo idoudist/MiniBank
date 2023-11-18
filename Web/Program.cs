@@ -1,10 +1,5 @@
 /*create builder*/
 
-using Data.SeedData;
-using Domain.Entities.Identity;
-using Microsoft.AspNetCore.Identity;
-using System.Text.Json.Serialization;
-
 var builder = WebApplication.CreateBuilder(args);
 
 /* Add services to the container. */
@@ -12,7 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddApplicationServices(builder.Configuration);
 builder.Services.AddIdentityServices(builder.Configuration);
 builder.Services.AddControllers();
-
 builder.Services.AddCors();
 // swagger
 builder.Services.AddSwaggerGen(c =>
@@ -44,10 +38,14 @@ app
 app.UseAuthentication();
 //4 authorize
 app.UseAuthorization();
-//5 defined endpoints
+//5 serve angular app on kestrel server(serve the static build in wwwroot)
+app.UseDefaultFiles();
+app.UseStaticFiles();
+//6 defined endpoints
 app.MapControllers();
-
-//6 Seed Data
+//7 Map fallback Controller (link to the web app) 
+app.MapFallbackToController("Index", "Fallback");
+//8 Seed Data
 using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
 try

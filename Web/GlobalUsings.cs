@@ -1,8 +1,16 @@
-﻿global using Microsoft.EntityFrameworkCore;
+﻿// Microsoft libraries
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.EntityFrameworkCore;
 global using Microsoft.OpenApi.Models;
+global using Microsoft.IdentityModel.Tokens;
 global using System.Text;
+// application libraries
 global using Domain.Automapper;
+global using Domain.Entities.Identity;
 global using Data.Configurations;
+global using Data.SeedData;
 global using Application.Transactions;
 global using Application.Utils;
 global using Application.Users;
@@ -10,5 +18,6 @@ global using Application.BankAccounts;
 global using Infrastructure.Services;
 global using Infrastructure.Utils;
 global using Api.Middleware;
-global using Web.Extensions;
 global using Api.Helpers;
+global using Web.Extensions;
+

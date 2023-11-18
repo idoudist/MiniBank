@@ -1,9 +1,4 @@
-﻿using Domain.Entities.Identity;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.IdentityModel.Tokens;
-
-namespace Web.Extensions;
+﻿namespace Web.Extensions;
 
 public static class IdentityServiceExtensions
 {
