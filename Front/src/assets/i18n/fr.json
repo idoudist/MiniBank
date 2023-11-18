@@ -25,5 +25,13 @@
       "DATE": "Date",
       "OPERATION": "Operation",
       "BALANCE": "Solde Courant"
+    },
+    "SIGN-IN": {
+      "WELCOME": "Welcome to Mini-Bank",
+      "LOGIN": "Login",
+      "USERNAME": "Username",
+      "PASSWORD": "Password",
+      "NO-ACCOUNT": "Don't have an account? ",
+      "REGISTER": "Register here"
     }
 }

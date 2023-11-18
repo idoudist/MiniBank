@@ -24,5 +24,13 @@
     "DATE": "Date",
     "OPERATION": "Operation",
     "BALANCE": "Current balance"
+  },
+  "SIGN-IN": {
+    "WELCOME": "Welcome to Mini-Bank",
+    "LOGIN": "Login",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "NO-ACCOUNT": "Don't have an account? ",
+    "REGISTER": "Register here"
   }
 }
