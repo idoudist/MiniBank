@@ -6,6 +6,8 @@
 @import "assets/scss/ltr-style.scss";
 @import "src/assets/scss/_ltr.scss";
 @import "src/assets/scss/web-mobile.scss";
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
 /*template*/
 
