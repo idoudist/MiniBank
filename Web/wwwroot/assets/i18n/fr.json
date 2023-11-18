@@ -1,0 +1,37 @@
+{
+    "SHARED": {
+        "ENGLISH": "Anglais",
+        "FRENCH": "Français"
+    },
+    "HEADER": {
+        "HOME": "Accueil",
+        "TRANSACTION": "Transaction",
+        "HISTORY": "Historique"
+    },
+    "FOOTER": {
+    },
+    "HOME": {
+      "TITLE": "Bienvenue à Mini Bank",
+      "SLOGAN": "Petite Appli, Grandes Économies"
+    },
+    "TRANSACTION": {
+      "DEPOSIT": "Dépot",
+      "WITHDROW": "Retrait",
+      "AMOUNT": "Montant",
+      "SUBMIT": "Valider"
+    },
+    "HISTORY": {
+      "AMOUNT": "Montant",
+      "DATE": "Date",
+      "OPERATION": "Operation",
+      "BALANCE": "Solde Courant"
+    },
+    "SIGN-IN": {
+      "WELCOME": "Welcome to Mini-Bank",
+      "LOGIN": "Login",
+      "USERNAME": "Username",
+      "PASSWORD": "Password",
+      "NO-ACCOUNT": "Don't have an account? ",
+      "REGISTER": "Register here"
+    }
+}

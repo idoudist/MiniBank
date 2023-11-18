@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="300"
+   height="300"
+   viewBox="0 0 300 300"
+   xml:space="preserve"
+   id="svg91"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview93"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="0.76464844"
+   inkscape:cx="526.38569"
+   inkscape:cy="301.44572"
+   inkscape:window-width="1920"
+   inkscape:window-height="1001"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg91"
+   width="1279px" />
+<desc
+   id="desc52">Created with Fabric.js 3.6.3</desc>
+<defs
+   id="defs54">
+</defs>
+
+
+<g
+   transform="matrix(1.1526172,0,0,1.1526172,149.53456,148.87234)"
+   id="logo-logo">
+<g
+   paint-order="stroke"
+   id="g80">
+		<g
+   transform="scale(1.2461168)"
+   id="g78">
+<g
+   paint-order="stroke"
+   id="g76">
+		<g
+   id="g74">
+<linearGradient
+   id="SVGID_1_389309"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="translate(-100,-100)"
+   x1="0"
+   y1="0"
+   x2="0"
+   y2="201">
+<stop
+   offset="0%"
+   style="stop-color:rgb(91,36,122);stop-opacity: 1"
+   id="stop67" />
+<stop
+   offset="100%"
+   style="stop-color:rgb(27,206,223);stop-opacity: 1"
+   id="stop69" />
+</linearGradient>
+<polygon
+   style="opacity:1;fill:url(#SVGID_1_389309);fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+   paint-order="stroke"
+   points="-95.12,0 -100,0 -100,-100 100,-100 100,100 0,100 0,95.12 95.12,95.12 95.12,-95.12 -95.12,-95.12 "
+   id="polygon72" />
+</g>
+</g>
+</g>
+</g>
+</g>
+<g
+   transform="matrix(1.969278,0,0,1.969278,153.74476,147.38423)"
+   id="tagline-3a78d944-c0db-44d4-8ad5-60158c925687-logo-path">
+<linearGradient
+   id="SVGID_13_389311"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="translate(13.91,-90.34)"
+   x1="0"
+   y1="0"
+   x2="0"
+   y2="157">
+<stop
+   offset="0%"
+   style="stop-color:rgb(91,36,122);stop-opacity: 1"
+   id="stop83" />
+<stop
+   offset="100%"
+   style="stop-color:rgb(27,206,223);stop-opacity: 1"
+   id="stop85" />
+</linearGradient>
+<path
+   style="opacity:1;fill:url(#SVGID_13_389311);fill-rule:nonzero;stroke:#ffffff;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+   paint-order="stroke"
+   transform="translate(-52.465,45.17)"
+   d="m 23.62,0 h -9.71 v -90.34 h 38.22 v 8.35 H 23.62 v 31.97 h 22.94 v 8.35 H 23.62 Z m 67.4,0 H 67.33 v -8.35 h 6.99 v -73.64 h -6.99 v -8.35 h 23.69 v 8.35 h -7 v 73.64 h 7 z"
+   stroke-linecap="round"
+   id="path88" />
+</g>
+</svg>

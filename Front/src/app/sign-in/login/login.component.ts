@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AccountService } from 'src/app/services/api/account.service';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -10,8 +11,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  swaggerUrl = environment.swaggerUrl;
   loginForm: FormGroup = new FormGroup({});
-
 
   constructor(private accountService: AccountService,
     private toastr: ToastrService,

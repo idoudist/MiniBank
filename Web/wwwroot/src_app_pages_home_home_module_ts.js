@@ -1,0 +1,232 @@
+"use strict";
+(self["webpackChunkMiniBank"] = self["webpackChunkMiniBank"] || []).push([["src_app_pages_home_home_module_ts"],{
+
+/***/ 9340:
+/*!*********************************************************!*\
+  !*** ./src/app/pages/home/details/details.component.ts ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DetailsComponent": () => (/* binding */ DetailsComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ngx-translate/core */ 3935);
+
+
+class DetailsComponent {
+  constructor() {}
+  static #_ = this.ɵfac = function DetailsComponent_Factory(t) {
+    return new (t || DetailsComponent)();
+  };
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+    type: DetailsComponent,
+    selectors: [["app-details"]],
+    decls: 7,
+    vars: 6,
+    consts: [[1, "details", "page-content"]],
+    template: function DetailsComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "translate");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](6, "translate");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      }
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 2, "HOME.TITLE"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](6, 4, "HOME.SLOGAN"));
+      }
+    },
+    dependencies: [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__.TranslatePipe],
+    styles: [".details[_ngcontent-%COMP%] {\n  padding-top: 40px;\n}\n.details[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  padding-bottom: 10px;\n  text-align: center;\n}\n.details[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hc3NldHMvc2Nzcy90ZW1wbGF0ZS12YXJpYWJsZXMuc2NzcyIsIndlYnBhY2s6Ly8uL3NyYy9hcHAvcGFnZXMvaG9tZS9kZXRhaWxzL2RldGFpbHMuY29tcG9uZW50LnNjc3MiLCJ3ZWJwYWNrOi8vLi8uLi8uLi8uLi8uLi8yJTIwR2l0SHViL01pbmlCYW5rL01pbmlCYW5rL0Zyb250L3NyYy9hcHAvcGFnZXMvaG9tZS9kZXRhaWxzL2RldGFpbHMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsa0JBQUE7QUNFQTtFQUNJLGlCQUFBO0FDQUo7QURDSTtFQUNJLG9CQUFBO0VBQ0Esa0JBQUE7QUNDUjtBRENJO0VBQ0ksa0JBQUE7QUNDUiIsInNvdXJjZXNDb250ZW50IjpbIi8qdGVtcGxhdGUgY29sb3JzKi9cclxuJGJsYWNraXNoOiAjMEQwRTJDO1xyXG4kYmx1ZWlzaDogIzBCNDFCMTtcclxuJHNlY29uZGFyeS1jb2xvcjogI0QxQzJBRTtcclxuJHNlY29uZGFyeS1jb2xvci0yOiAjQUY5RDg3O1xyXG4kc2hhZGU6ICNGOEY2RjM7XHJcbiRsaWdodDogI2ZmZmZmZjtcclxuJGRhbmdlcjogI0Y1NTk0QjsiLCJAaW1wb3J0IFwic3JjL2Fzc2V0cy9zY3NzL3RlbXBsYXRlLXZhcmlhYmxlcy5zY3NzXCI7XHJcblxyXG4uZGV0YWlsc3tcclxuICAgIHBhZGRpbmctdG9wOiA0MHB4O1xyXG4gICAgaDEge1xyXG4gICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIH1cclxuICAgIGgyIHtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICB9XHJcbn1cclxuIiwiLyp0ZW1wbGF0ZSBjb2xvcnMqL1xuLmRldGFpbHMge1xuICBwYWRkaW5nLXRvcDogNDBweDtcbn1cbi5kZXRhaWxzIGgxIHtcbiAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5kZXRhaWxzIGgyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdLCJzb3VyY2VSb290IjoiIn0= */"]
+  });
+}
+
+/***/ }),
+
+/***/ 6610:
+/*!***************************************************!*\
+  !*** ./src/app/pages/home/home-routing.module.ts ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HomeRoutingModule": () => (/* binding */ HomeRoutingModule)
+/* harmony export */ });
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 124);
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/home.component */ 9328);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+
+
+const routes = [{
+  path: '',
+  component: _home_home_component__WEBPACK_IMPORTED_MODULE_0__.HomeComponent
+}];
+class HomeRoutingModule {
+  static #_ = this.ɵfac = function HomeRoutingModule_Factory(t) {
+    return new (t || HomeRoutingModule)();
+  };
+  static #_2 = this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
+    type: HomeRoutingModule
+  });
+  static #_3 = this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterModule.forChild(routes), _angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterModule]
+  });
+}
+(function () {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](HomeRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterModule]
+  });
+})();
+
+/***/ }),
+
+/***/ 7994:
+/*!*******************************************!*\
+  !*** ./src/app/pages/home/home.module.ts ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HomeModule": () => (/* binding */ HomeModule)
+/* harmony export */ });
+/* harmony import */ var src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/shared/shared.module */ 4466);
+/* harmony import */ var _home_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home-routing.module */ 6610);
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ 9328);
+/* harmony import */ var _intro_intro_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./intro/intro.component */ 8202);
+/* harmony import */ var _details_details_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./details/details.component */ 9340);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+
+
+
+
+class HomeModule {
+  static #_ = this.ɵfac = function HomeModule_Factory(t) {
+    return new (t || HomeModule)();
+  };
+  static #_2 = this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNgModule"]({
+    type: HomeModule
+  });
+  static #_3 = this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({
+    imports: [
+    // routing
+    _home_routing_module__WEBPACK_IMPORTED_MODULE_1__.HomeRoutingModule,
+    // shared module
+    src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule]
+  });
+}
+(function () {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](HomeModule, {
+    declarations: [_home_home_component__WEBPACK_IMPORTED_MODULE_2__.HomeComponent, _intro_intro_component__WEBPACK_IMPORTED_MODULE_3__.IntroComponent, _details_details_component__WEBPACK_IMPORTED_MODULE_4__.DetailsComponent],
+    imports: [
+    // routing
+    _home_routing_module__WEBPACK_IMPORTED_MODULE_1__.HomeRoutingModule,
+    // shared module
+    src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule]
+  });
+})();
+
+/***/ }),
+
+/***/ 9328:
+/*!***************************************************!*\
+  !*** ./src/app/pages/home/home/home.component.ts ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HomeComponent": () => (/* binding */ HomeComponent)
+/* harmony export */ });
+/* harmony import */ var src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/constants/seo.constant */ 3529);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var src_app_services_internal_seo_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/internal/seo.service */ 2191);
+/* harmony import */ var _intro_intro_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../intro/intro.component */ 8202);
+/* harmony import */ var _details_details_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../details/details.component */ 9340);
+
+
+
+
+
+class HomeComponent {
+  constructor(seoService) {
+    this.seoService = seoService;
+  }
+  ngOnInit() {
+    this.seoService.setPageSeoData(src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_0__.HOME_META_DATA);
+  }
+  static #_ = this.ɵfac = function HomeComponent_Factory(t) {
+    return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](src_app_services_internal_seo_service__WEBPACK_IMPORTED_MODULE_1__.SeoService));
+  };
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({
+    type: HomeComponent,
+    selectors: [["app-home"]],
+    decls: 3,
+    vars: 0,
+    consts: [[1, "home"]],
+    template: function HomeComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "app-intro")(2, "app-details");
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+      }
+    },
+    dependencies: [_intro_intro_component__WEBPACK_IMPORTED_MODULE_2__.IntroComponent, _details_details_component__WEBPACK_IMPORTED_MODULE_3__.DetailsComponent],
+    styles: ["\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+  });
+}
+
+/***/ }),
+
+/***/ 8202:
+/*!*****************************************************!*\
+  !*** ./src/app/pages/home/intro/intro.component.ts ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "IntroComponent": () => (/* binding */ IntroComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+
+class IntroComponent {
+  constructor() {}
+  static #_ = this.ɵfac = function IntroComponent_Factory(t) {
+    return new (t || IntroComponent)();
+  };
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+    type: IntroComponent,
+    selectors: [["app-intro"]],
+    decls: 4,
+    vars: 0,
+    consts: [[1, "intro"], [1, "full-image-wrap"], [1, "img-wrapper"], ["src", "/assets/images/photos/intro-1.png", "alt", "main-photo"]],
+    template: function IntroComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      }
+    },
+    styles: [".intro[_ngcontent-%COMP%]   .img-wrapper[_ngcontent-%COMP%] {\n  height: 600px;\n}\n@media screen and (max-width: 767px) {\n  .intro[_ngcontent-%COMP%]   .img-wrapper[_ngcontent-%COMP%] {\n    height: 350px;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvcGFnZXMvaG9tZS9pbnRyby9pbnRyby5jb21wb25lbnQuc2NzcyIsIndlYnBhY2s6Ly8uLy4uLy4uLy4uLy4uLzIlMjBHaXRIdWIvTWluaUJhbmsvTWluaUJhbmsvRnJvbnQvc3JjL2FwcC9wYWdlcy9ob21lL2ludHJvL2ludHJvLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNJO0VBQ0ksYUFBQTtBQ0FSO0FEQ1E7RUFGSjtJQUdRLGFBQUE7RUNFVjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLmludHJvIHtcclxuICAgIC5pbWctd3JhcHBlcntcclxuICAgICAgICBoZWlnaHQ6IDYwMHB4O1xyXG4gICAgICAgIEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2N3B4KSB7XHJcbiAgICAgICAgICAgIGhlaWdodDogMzUwcHg7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59IiwiLmludHJvIC5pbWctd3JhcHBlciB7XG4gIGhlaWdodDogNjAwcHg7XG59XG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3NjdweCkge1xuICAuaW50cm8gLmltZy13cmFwcGVyIHtcbiAgICBoZWlnaHQ6IDM1MHB4O1xuICB9XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
+  });
+}
+
+/***/ })
+
+}]);
+//# sourceMappingURL=src_app_pages_home_home_module_ts.js.map

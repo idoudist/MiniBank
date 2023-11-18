@@ -19,7 +19,8 @@ export class AuthGuard implements CanActivate {
       this.router.navigateByUrl('/login');
       return false;
     }
-    return this.accountService.currentUser$.pipe(
+    return true;
+    /*return this.accountService.currentUser$.pipe(
       map((user: User) => {
         if (user) {
           return true;
@@ -35,7 +36,7 @@ export class AuthGuard implements CanActivate {
         this.router.navigateByUrl('/login');
         return of(false);
       }),
-    );
+    );*/
   }
 
 }
