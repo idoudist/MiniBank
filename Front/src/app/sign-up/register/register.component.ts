@@ -48,7 +48,6 @@ export class RegisterComponent implements OnInit {
 
   matchValues(matchTo: string): ValidatorFn {
     return (control: AbstractControl) => {
-      // return control?.value === control?.parent?.controls[matchTo].value ? null: {isMatching: true}
       const controls = control?.parent?.controls as { [key: string]: AbstractControl; };
       let matchToControl = null;
       if (controls) {
@@ -62,8 +61,7 @@ export class RegisterComponent implements OnInit {
   register() {
     this.accountService.register(this.registerForm.value).subscribe({
       next: response => {
-        // this.cancel();
-        this.router.navigateByUrl('/members');
+        this.router.navigateByUrl('/');
       },
       error: error => {
         this.validationErrors = error;
