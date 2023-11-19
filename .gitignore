@@ -413,3 +413,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Sqlight
+*.db
+*.db-shm
+*.db-wal
