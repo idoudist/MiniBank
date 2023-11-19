@@ -8,11 +8,12 @@ import {
 import { Observable, take } from 'rxjs';
 import { AccountService } from '../services/api/account.service';
 import { User } from '../models/dtos/user.model';
+import { ToastrService } from 'ngx-toastr';
 
 @Injectable()
 export class JwtInterceptor implements HttpInterceptor {
 
-  constructor(private accountService: AccountService) {}
+  constructor(private accountService: AccountService, private toastr: ToastrService) {}
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     let currentUser: User ;
@@ -28,6 +29,9 @@ export class JwtInterceptor implements HttpInterceptor {
             }
           });
         }
+      },
+      error: error => {
+        this.toastr.error(error.error);
       }
     })
 

@@ -367,12 +367,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 9295);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
 /* harmony import */ var _services_api_account_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/api/account.service */ 3913);
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-toastr */ 4817);
+
 
 
 
 class JwtInterceptor {
-  constructor(accountService) {
+  constructor(accountService, toastr) {
     this.accountService = accountService;
+    this.toastr = toastr;
   }
   intercept(request, next) {
     let currentUser;
@@ -388,12 +391,15 @@ class JwtInterceptor {
             }
           });
         }
+      },
+      error: error => {
+        this.toastr.error(error.error);
       }
     });
     return next.handle(request);
   }
   static #_ = this.ɵfac = function JwtInterceptor_Factory(t) {
-    return new (t || JwtInterceptor)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_services_api_account_service__WEBPACK_IMPORTED_MODULE_0__.AccountService));
+    return new (t || JwtInterceptor)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_services_api_account_service__WEBPACK_IMPORTED_MODULE_0__.AccountService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](ngx_toastr__WEBPACK_IMPORTED_MODULE_3__.ToastrService));
   };
   static #_2 = this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
     token: JwtInterceptor,

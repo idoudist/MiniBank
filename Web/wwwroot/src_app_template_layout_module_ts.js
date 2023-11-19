@@ -811,7 +811,9 @@ class AsapAction extends _AsyncAction__WEBPACK_IMPORTED_MODULE_0__.AsyncAction {
     } = scheduler;
     if (id != null && ((_a = actions[actions.length - 1]) === null || _a === void 0 ? void 0 : _a.id) !== id) {
       _immediateProvider__WEBPACK_IMPORTED_MODULE_1__.immediateProvider.clearImmediate(id);
-      scheduler._scheduled = undefined;
+      if (scheduler._scheduled === id) {
+        scheduler._scheduled = undefined;
+      }
     }
     return undefined;
   }
