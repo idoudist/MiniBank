@@ -43,6 +43,6 @@
       "DOB": "Date Of Birth",
       "CITY": "City",
       "COUNTRY": "Country",
-      "PASSWORD": "Password",
+      "PASSWORD": "Password"
     }
 }

@@ -19,7 +19,9 @@
                   (ngSubmit)="registerForm.valid && register()"
                   autocomplete="off"
                 >
-                  <h2 class="text-center text-primary">{{"SIGN-UP.REGISTER" | translate}}</h2>
+                  <h2 class="text-center text-primary">
+                    {{ "SIGN-UP.REGISTER" | translate }}
+                  </h2>
                   <hr />
                   <!-- Gender radio button-->
                   <div class="form-group">
@@ -107,7 +109,11 @@
                     >
                       Register
                     </button>
-                    <button routerLink="/login" class="btn btn-light me-2" type="button">
+                    <button
+                      routerLink="/login"
+                      class="btn btn-light me-2"
+                      type="button"
+                    >
                       Login
                     </button>
                   </div>

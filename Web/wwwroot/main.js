@@ -204,7 +204,7 @@ __webpack_require__.r(__webpack_exports__);
 const APP_DATA = {
   name: 'MiniBank',
   country: 'France',
-  logo: src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.apiUrl + '/assets/images/logos/logo.svg'
+  logo: src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.apiUrl + '/assets/images/logos/logo.png'
 };
 
 /***/ }),
