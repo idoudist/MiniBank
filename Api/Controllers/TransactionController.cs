@@ -1,18 +1,22 @@
-﻿
-
-namespace Web.Controllers
+﻿namespace Web.Controllers
 {
+    [Authorize]
     public class TransactionController : BaseApiController
     {
         private readonly ITransactionService _transactionService;
-        public TransactionController(ITransactionService transactionService)
+        private readonly IUserService _userService;
+        public TransactionController(ITransactionService transactionService, IUserService userService)
         {
             _transactionService = transactionService;
+            _userService = userService;
         }
 
         [HttpPost("deposit")]
         public async Task<ActionResult> AddDeposit([FromBody] OperationDto operation)
         {
+            var userId = User.GetUserId();
+            var currentUser = await _userService.GetUserByIdAsync(userId);
+            operation.BankAccountId = currentUser.BankAccounts.FirstOrDefault().Id;
             var result = await _transactionService.AddDepositAsync(operation);
             if (result)
             {
@@ -24,6 +28,9 @@ namespace Web.Controllers
         [HttpPost("withdrow")]
         public async Task<ActionResult> Withdrow([FromBody] OperationDto operation)
         {
+            var userId = User.GetUserId();
+            var currentUser = await _userService.GetUserByIdAsync(userId);
+            operation.BankAccountId = currentUser.BankAccounts.FirstOrDefault().Id;
             var result = await _transactionService.WithdrowAsync(operation);
             if (result)
             {
@@ -33,9 +40,11 @@ namespace Web.Controllers
         }
 
         [HttpGet("balance")]
-        public async Task<ActionResult<float>> GetBalance(int accountId)
+        public async Task<ActionResult<float>> GetBalance()
         {
-            // TODO: you may need to add same control to check that this account belong to the current user
+            var userId = User.GetUserId();
+            var currentUser = await _userService.GetUserByIdAsync(userId);
+            var accountId = currentUser.BankAccounts.FirstOrDefault().Id;
             float balance = await _transactionService.GetBalanceAsync(accountId);
             return Ok(balance);
         }
@@ -43,6 +52,9 @@ namespace Web.Controllers
         [HttpGet("transactions")]
         public async Task<ActionResult<IEnumerable<TransactionDto>>> GetTransactions([FromQuery] TransactionParams transactionParams)
         {
+            var userId = User.GetUserId();
+            var currentUser = await _userService.GetUserByIdAsync(userId);
+            transactionParams.AccountId = currentUser.BankAccounts.FirstOrDefault().Id;
             var transactions = await _transactionService.GetTransactionsAsync(transactionParams);
             // add pagination header
             Response.AddPaginationHeader(transactions.CurrentPage, transactions.PageSize, transactions.TotalCount, transactions.TotalPages);

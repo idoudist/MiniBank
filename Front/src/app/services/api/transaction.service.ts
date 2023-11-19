@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 })
 export class TransactionService {
 
-  baseUrl = environment.apiUrl + 'api/Transaction/';
+  baseUrl = environment.apiUrl + 'Transaction/';
   memberCache = new Map();
   constructor(private http: HttpClient) { }
 

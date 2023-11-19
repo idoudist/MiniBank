@@ -27,9 +27,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C59F47C5-4
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{D539BA7B-36EE-4BFD-93EC-BBC902139DBF}"
-	ProjectSection(SolutionItems) = preProject
-		minibank.db = minibank.db
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

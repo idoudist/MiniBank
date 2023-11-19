@@ -75,7 +75,7 @@ __webpack_require__.r(__webpack_exports__);
 class TransactionService {
   constructor(http) {
     this.http = http;
-    this.baseUrl = src_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.apiUrl + 'api/Transaction/';
+    this.baseUrl = src_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.apiUrl + 'Transaction/';
     this.memberCache = new Map();
   }
   deposit(operation) {
