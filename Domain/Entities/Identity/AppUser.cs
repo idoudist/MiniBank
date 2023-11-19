@@ -11,7 +11,6 @@ public class AppUser : IdentityUser<int>
     public string City { get; set; }
     public string Country { get; set; }
     /*one to many relationship */
-    [JsonIgnore]
     public virtual ICollection<BankAccountEntity> BankAccounts { get; set; }
     // roles
     public virtual ICollection<AppUserRole> UserRoles { get; set; }

@@ -3,7 +3,7 @@
 public class BankAccountEntity : BaseEntity
 {
     public string Name { get; set; }
-    public string CurrentBalance { get; set; }
+    public double CurrentBalance { get; set; }
     public bool IsMain { get; set; }
     public bool IsLocked { get; set; }
 

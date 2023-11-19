@@ -5,7 +5,7 @@ public class BankAccountDto
     public string Name { get; set; }
     public bool IsMain { get; set; }
     public bool IsLocked { get; set; }
-    public string CurrentBalance { get; set; }
+    public double CurrentBalance { get; set; }
     public AppUser AppUser { get; set; }
     public int AppUserId { get; set; }
 }

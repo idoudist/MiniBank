@@ -11,7 +11,8 @@
       {
         "Name": "Main",
         "IsMain": true,
-        "IsLocked": false
+        "IsLocked": false,
+        "CurrentBalance": 0
       }
     ]
   },
