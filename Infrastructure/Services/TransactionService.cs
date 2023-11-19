@@ -25,7 +25,7 @@ public class TransactionService : ITransactionService
         return await _unitOfWork.Complete();
     }
 
-    public async Task<float> GetBalanceAsync(int accountId)
+    public async Task<double> GetBalanceAsync(int accountId)
     {
         return await _unitOfWork.TransactionRepository.GetBalanceAsync(accountId);
     }

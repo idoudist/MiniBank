@@ -15,7 +15,7 @@ public class TransactionRepository : ITransactionRepository
         await _context.Transactions.AddAsync(transaction);
     }
 
-    public async Task<float> GetBalanceAsync(int accountId)
+    public async Task<double> GetBalanceAsync(int accountId)
     {
         return await _context.Transactions.Where(x => x.BankAccountId == accountId).SumAsync( t => t.Credit - t.Debit );
     }

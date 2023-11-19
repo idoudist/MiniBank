@@ -36,7 +36,7 @@ export class TransactionComponent implements OnInit {
   }
 
   withdrow(){
-    this.transactionService.withdrow(this.depositForm.value).subscribe();
+    this.transactionService.withdrow(this.withdrowForm.value).subscribe();
   }
 
 }

@@ -14,6 +14,10 @@
         [HttpPost("deposit")]
         public async Task<ActionResult> AddDeposit([FromBody] OperationDto operation)
         {
+            if(operation.Amount <= 0)
+            {
+                return BadRequest();
+            }
             var userId = User.GetUserId();
             var currentUser = await _userService.GetUserByIdAsync(userId);
             operation.BankAccountId = currentUser.BankAccounts.FirstOrDefault().Id;
@@ -28,9 +32,21 @@
         [HttpPost("withdrow")]
         public async Task<ActionResult> Withdrow([FromBody] OperationDto operation)
         {
+            if (operation.Amount <= 0)
+            {
+                return BadRequest();
+            }
+            
             var userId = User.GetUserId();
             var currentUser = await _userService.GetUserByIdAsync(userId);
             operation.BankAccountId = currentUser.BankAccounts.FirstOrDefault().Id;
+            var balance = await _transactionService.GetBalanceAsync(operation.BankAccountId);
+
+            if((balance - operation.Amount) < 0)
+            {
+                return BadRequest("Insuffissiant balance");
+            }
+
             var result = await _transactionService.WithdrowAsync(operation);
             if (result)
             {
@@ -40,12 +56,12 @@
         }
 
         [HttpGet("balance")]
-        public async Task<ActionResult<float>> GetBalance()
+        public async Task<ActionResult<double>> GetBalance()
         {
             var userId = User.GetUserId();
             var currentUser = await _userService.GetUserByIdAsync(userId);
             var accountId = currentUser.BankAccounts.FirstOrDefault().Id;
-            float balance = await _transactionService.GetBalanceAsync(accountId);
+            double balance = await _transactionService.GetBalanceAsync(accountId);
             return Ok(balance);
         }
 

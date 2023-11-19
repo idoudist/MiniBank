@@ -132,7 +132,7 @@ class TransactionComponent {
     this.transactionService.deposit(this.depositForm.value).subscribe();
   }
   withdrow() {
-    this.transactionService.withdrow(this.depositForm.value).subscribe();
+    this.transactionService.withdrow(this.withdrowForm.value).subscribe();
   }
   static #_ = this.ɵfac = function TransactionComponent_Factory(t) {
     return new (t || TransactionComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](src_app_services_api_transaction_service__WEBPACK_IMPORTED_MODULE_0__.TransactionService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormBuilder));

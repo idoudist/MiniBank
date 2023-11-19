@@ -3,7 +3,7 @@
 public interface ITransactionRepository
 {
     Task AddTransactionAsync(TransactionEntity transaction);
-    Task<float> GetBalanceAsync(int accountId);
+    Task<double> GetBalanceAsync(int accountId);
     Task<PagedList<TransactionDto>> GetTransactionsAsync(TransactionParams transactionParams);
     Task<TransactionEntity> GetTransactionAsync(int id);
 
