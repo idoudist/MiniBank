@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { catchError, filter, map, Observable, of } from 'rxjs';
-import { User } from '../models/dtos/user.model';
+import { Observable } from 'rxjs';
 import { AccountService } from '../services/api/account.service';
 
 @Injectable({
@@ -10,7 +9,7 @@ import { AccountService } from '../services/api/account.service';
 })
 export class AuthGuard implements CanActivate {
 
-  constructor(private accountService: AccountService, private toastr: ToastrService, private router: Router) {
+  constructor(private toastr: ToastrService, private router: Router) {
 
   }
   canActivate(): Observable<boolean> | boolean {

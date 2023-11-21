@@ -364,11 +364,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "JwtInterceptor": () => (/* binding */ JwtInterceptor)
 /* harmony export */ });
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 9295);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2560);
 /* harmony import */ var _services_api_account_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/api/account.service */ 3913);
-/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-toastr */ 4817);
-
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-toastr */ 4817);
 
 
 
@@ -378,30 +376,25 @@ class JwtInterceptor {
     this.toastr = toastr;
   }
   intercept(request, next) {
-    let currentUser;
-    // the take 1 will make the observable work like a promise
-    this.accountService.currentUser$.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.take)(1)).subscribe({
-      next: user => {
-        currentUser = user;
-        if (currentUser) {
-          request = request.clone({
-            setHeaders: {
-              // the space ' ' after Bearer is very important dont miss it
-              Authorization: `Bearer ${currentUser.token}`
-            }
-          });
+    const storedUser = localStorage.getItem('user');
+    if (storedUser === null || storedUser === undefined) {
+      console.log("no token");
+    } else {
+      const currentUser = JSON.parse(storedUser);
+      request = request.clone({
+        setHeaders: {
+          // the space ' ' after Bearer is very important dont miss it
+          Authorization: `Bearer ${currentUser.token}`
         }
-      },
-      error: error => {
-        this.toastr.error(error.error);
-      }
-    });
+      });
+    }
+    // the take 1 will make the observable work like a promise
     return next.handle(request);
   }
   static #_ = this.ɵfac = function JwtInterceptor_Factory(t) {
-    return new (t || JwtInterceptor)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_services_api_account_service__WEBPACK_IMPORTED_MODULE_0__.AccountService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](ngx_toastr__WEBPACK_IMPORTED_MODULE_3__.ToastrService));
+    return new (t || JwtInterceptor)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_services_api_account_service__WEBPACK_IMPORTED_MODULE_0__.AccountService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](ngx_toastr__WEBPACK_IMPORTED_MODULE_2__.ToastrService));
   };
-  static #_2 = this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+  static #_2 = this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
     token: JwtInterceptor,
     factory: JwtInterceptor.ɵfac
   });
