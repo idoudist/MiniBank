@@ -19,5 +19,3 @@ global using Application.Utils;
 global using Application.BankAccounts;
 global using Api.Extensions;
 global using Api.Errors;
-global using Api.Controllers;
-

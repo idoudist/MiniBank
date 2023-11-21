@@ -1,8 +1,4 @@
-﻿using Api.Controllers;
-using Data.Migrations;
-using Domain.Dtos.Requests;
-
-namespace Api.Unit.Tests.Controllers;
+﻿namespace Api.Unit.Tests.Controllers;
 
 public class AccountControllerTests
 {
@@ -59,7 +55,7 @@ public class AccountControllerTests
 
     [Theory]
     [MemberData(nameof(RegisterTestCases))]
-    public void Register_ReturnOk(RegisterDto registerDto)
+    public async void Register_ReturnOkWithUserDto(RegisterDto registerDto)
     {
         #region Arrange
         AppUser user = A.Fake<AppUser>();
@@ -67,10 +63,11 @@ public class AccountControllerTests
         var controller = new AccountController(_userManager, _signInManager, _tokenService, _bankAccountService, _mapper);
         #endregion
         #region Act
-        var result = controller.Register(registerDto);
+        var result = await controller.Register(registerDto);
         #endregion
         #region Assert
         result.Should().NotBeNull();
+        result.Should().BeOfType<ActionResult<UserDto>>();
         #endregion
     }
 }

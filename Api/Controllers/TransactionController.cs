@@ -1,4 +1,4 @@
-﻿namespace Web.Controllers
+﻿namespace Api.Controllers
 {
     [Authorize]
     public class TransactionController : BaseApiController
