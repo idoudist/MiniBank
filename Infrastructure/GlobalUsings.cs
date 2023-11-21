@@ -1,4 +1,6 @@
-﻿global using Domain.Entities;
+﻿global using Microsoft.AspNetCore.Identity;
+global using Microsoft.EntityFrameworkCore;
+global using Domain.Entities;
 global using Domain.Entities.Identity;
 global using Domain.Enums;
 global using Domain.Dtos.Requests;

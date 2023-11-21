@@ -6,22 +6,24 @@ public class AccountController : BaseApiController
     private readonly SignInManager<AppUser> _signInManager;
     private readonly ITokenService _tokenService;
     private readonly IBankAccountService _bankAccountService;
+    private readonly IUserService _userService;
     private readonly IMapper _mapper;
 
     public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
-        ITokenService tokenService, IBankAccountService bankAccountService, IMapper mapper)
+        ITokenService tokenService, IBankAccountService bankAccountService, IUserService userService, IMapper mapper)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _tokenService = tokenService;
         _bankAccountService = bankAccountService;
+        _userService = userService;
         _mapper = mapper;
     }
 
     [HttpPost("register")]
     public async Task<ActionResult<UserDto>> Register(RegisterDto model)
     {
-        bool usernameExist = await UsernameExist(model.Username);
+        bool usernameExist = await _userService.UsernameExist(model.Username);
 
         if (usernameExist)
         {
@@ -96,9 +98,5 @@ public class AccountController : BaseApiController
             Token = await _tokenService.CreateToken(user),
             Gender = user.Gender
         };
-    }
-    private async Task<bool> UsernameExist(string username)
-    {
-        return await _userManager.Users.AnyAsync(user => user.UserName == username.ToLowerInvariant());
     }
 }

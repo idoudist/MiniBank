@@ -54,9 +54,9 @@ public class TransactionControllerTests
         result.Should().NotBeNull();
         result.Should().BeOfType<ActionResult<double>>();
         // Check if the result is OkObjectResult and get the Value property
-        var okObjectResult = result.Result.Should().BeOfType<OkObjectResult>().Subject;
-        var actualBalance = okObjectResult.Value.Should().BeAssignableTo<double>().Subject;
-        actualBalance.Should().Be(expectedBalance);
+        result.Result.Should().BeOfType<OkObjectResult>()
+            .Which.Value.Should().BeAssignableTo<double>()
+            .Which.Should().Be(expectedBalance);
         #endregion
     }
 }
