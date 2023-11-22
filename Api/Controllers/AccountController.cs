@@ -23,30 +23,19 @@ public class AccountController : BaseApiController
     [HttpPost("register")]
     public async Task<ActionResult<UserDto>> Register(RegisterDto model)
     {
-        bool usernameExist = await _userService.UsernameExist(model.Username);
+        bool usernameExist = await _userService.UsernameExistAsync(model.Username);
 
         if (usernameExist)
         {
             return BadRequest("Username is taken");
         }
 
-        var user = _mapper.Map<AppUser>(model);
+        // create Client
+        var user = await _userService.AddClientAsync(model);
 
-
-        // assign password and username
-        user.UserName = model.Username.ToLowerInvariant();
-        var result = await _userManager.CreateAsync(user, model.Password);
-
-        if (!result.Succeeded)
+        if(user == null)
         {
-            return BadRequest(result.Errors);
-        }
-
-        // assign Member role to user
-        var roleResult = await _userManager.AddToRoleAsync(user, "Client");
-        if (!roleResult.Succeeded)
-        {
-            return BadRequest(result.Errors);
+            return BadRequest("Error Adding Client");
         }
 
         // create Bank Account

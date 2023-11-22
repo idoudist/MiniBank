@@ -62,12 +62,11 @@ public class AccountControllerTests
     public async void Register_ReturnOkWithUserDto(RegisterDto model)
     {
         #region Arrange
-        A.CallTo(() => _userService.UsernameExist(model.Username)).Returns(Task.FromResult(false));
+        A.CallTo(() => _userService.UsernameExistAsync(model.Username)).Returns(Task.FromResult(false));
         AppUser user = A.Fake<AppUser>();
         A.CallTo(() => _mapper.Map<AppUser>(model)).Returns(user);
         var success = new IdentityResult();
-        A.CallTo(() => _userManager.CreateAsync(user, model.Password)).Returns(success);
-        A.CallTo(() => _userManager.AddToRoleAsync(user, "Client")).Returns(success);
+        A.CallTo(() => _userService.AddClientAsync(model)).Returns(user);
         var bankAccount = new BankAccountCreationRequest{
             Name = "Main Account",
             AppUserId = user.Id,
