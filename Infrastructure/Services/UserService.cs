@@ -1,6 +1,4 @@
-﻿using Domain.Dtos.Shared;
-
-namespace Infrastructure.Services;
+﻿namespace Infrastructure.Services;
 
 public class UserService: IUserService
 {
@@ -22,7 +20,10 @@ public class UserService: IUserService
 
     public async Task<AppUser> GetUserByUsernameAsync(string username)
     {
-        return await _unitOfWork.UserRepository.GetUserByUsernameAsync(username);
+        var user = await _userManager.Users
+            .Include(user => user.BankAccounts)
+            .FirstOrDefaultAsync(user => user.UserName == username.ToLowerInvariant());
+        return user;
     }
 
     public async Task<bool> UsernameExistAsync(string username)

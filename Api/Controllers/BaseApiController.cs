@@ -1,6 +1,4 @@
-﻿using Api.Helpers;
-
-namespace Api.Controllers;
+﻿namespace Api.Controllers;
 
 [ServiceFilter(typeof(LogUserActivity))]
 [Route("api/[controller]")]

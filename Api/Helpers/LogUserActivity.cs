@@ -1,5 +1,4 @@
-﻿using Application.Utils;
-using Microsoft.AspNetCore.Mvc.Filters;
+﻿using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Api.Helpers;

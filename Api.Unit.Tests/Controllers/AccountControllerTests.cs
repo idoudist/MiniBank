@@ -1,10 +1,7 @@
-﻿using Infrastructure.Services;
-
-namespace Api.Unit.Tests.Controllers;
+﻿namespace Api.Unit.Tests.Controllers;
 
 public class AccountControllerTests
 {
-    private readonly UserManager<AppUser> _userManager;
     private readonly SignInManager<AppUser> _signInManager;
     private readonly ITokenService _tokenService;
     private readonly IBankAccountService _bankAccountService;
@@ -12,7 +9,6 @@ public class AccountControllerTests
     private readonly IMapper _mapper;
     public AccountControllerTests()
     {
-        _userManager = A.Fake<UserManager<AppUser>>();
         _signInManager = A.Fake<SignInManager<AppUser>>();
         _tokenService = A.Fake<ITokenService>();
         _bankAccountService = A.Fake<IBankAccountService>();
@@ -74,7 +70,7 @@ public class AccountControllerTests
             IsMain = true
         };
         A.CallTo(() => _bankAccountService.AddBankAccountAsync(bankAccount)).Returns(true);
-        var controller = new AccountController(_userManager, _signInManager, _tokenService, _bankAccountService, _userService, _mapper);
+        var controller = new AccountController(_signInManager, _tokenService, _bankAccountService, _userService, _mapper);
         #endregion
         #region Act
         var result = await controller.Register(model);

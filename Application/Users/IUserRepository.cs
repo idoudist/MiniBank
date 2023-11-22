@@ -1,9 +1,6 @@
-﻿using Domain.Entities.Identity;
-
-namespace Application.Users;
+﻿namespace Application.Users;
 
 public interface IUserRepository
 {
     Task<AppUser> GetUserByIdAsync(int id);
-    Task<AppUser> GetUserByUsernameAsync(string username);
 }

@@ -1,7 +1,4 @@
-﻿using Domain.Dtos.Shared;
-using Domain.Entities.Identity;
-
-namespace Application.Users;
+﻿namespace Application.Users;
 
 public interface IUserService
 {

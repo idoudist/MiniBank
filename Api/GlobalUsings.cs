@@ -1,5 +1,4 @@
-﻿global using Microsoft.EntityFrameworkCore;
-global using Microsoft.AspNetCore.Http;
+﻿global using Microsoft.AspNetCore.Http;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Logging;
@@ -18,4 +17,5 @@ global using Application.Users;
 global using Application.Utils;
 global using Application.BankAccounts;
 global using Api.Extensions;
+global using Api.Helpers;
 global using Api.Errors;

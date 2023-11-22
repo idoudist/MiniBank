@@ -2,17 +2,15 @@
 
 public class AccountController : BaseApiController
 {
-    private readonly UserManager<AppUser> _userManager;
     private readonly SignInManager<AppUser> _signInManager;
     private readonly ITokenService _tokenService;
     private readonly IBankAccountService _bankAccountService;
     private readonly IUserService _userService;
     private readonly IMapper _mapper;
 
-    public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
+    public AccountController(SignInManager<AppUser> signInManager,
         ITokenService tokenService, IBankAccountService bankAccountService, IUserService userService, IMapper mapper)
     {
-        _userManager = userManager;
         _signInManager = signInManager;
         _tokenService = tokenService;
         _bankAccountService = bankAccountService;
@@ -65,9 +63,8 @@ public class AccountController : BaseApiController
     [HttpPost("login")]
     public async Task<ActionResult<UserDto>> Login(LoginDto model)
     {
-        var user = await _userManager.Users
-            .Include(user => user.BankAccounts)
-            .FirstOrDefaultAsync(user => user.UserName == model.Username.ToLowerInvariant());
+        var user = await _userService.GetUserByUsernameAsync(model.Username);
+        
         if (user == null)
         {
             return Unauthorized("Invalid Username");
