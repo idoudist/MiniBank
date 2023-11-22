@@ -21,6 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C59F47C5-4F94-4771-97ED-7AB5201E56DB}"
 	ProjectSection(SolutionItems) = preProject
+		assets\Architecture.png = assets\Architecture.png
 		database.md = database.md
 	EndProjectSection
 EndProject
