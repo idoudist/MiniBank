@@ -1,6 +1,140 @@
 "use strict";
 (self["webpackChunkMiniBank"] = self["webpackChunkMiniBank"] || []).push([["src_app_pages_home_home_module_ts"],{
 
+/***/ 7817:
+/*!*******************************************!*\
+  !*** ./src/app/constants/App.constant.ts ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "APP_DATA": () => (/* binding */ APP_DATA)
+/* harmony export */ });
+/* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environment */ 2340);
+
+const APP_DATA = {
+  name: 'MiniBank',
+  country: 'France',
+  logo: src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.apiUrl + '/assets/images/logos/logo.png'
+};
+
+/***/ }),
+
+/***/ 4339:
+/*!*********************************************!*\
+  !*** ./src/app/constants/regex.constant.ts ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ProfileNameHolder": () => (/* binding */ ProfileNameHolder),
+/* harmony export */   "REGEX_HOLDER": () => (/* binding */ REGEX_HOLDER),
+/* harmony export */   "SiteNameHolder": () => (/* binding */ SiteNameHolder)
+/* harmony export */ });
+/*
+   /g : global case sensitive
+   /gi: global case insensitive
+ */
+// profile regex
+const SiteNameHolder = /SiteNameHolder/g;
+const ProfileNameHolder = /ProfileNameHolder/g;
+// regex constants
+const REGEX_HOLDER = {
+  siteNameHolder: 'SiteNameHolder',
+  profileNameHolder: 'ProfileNameHolder'
+};
+
+/***/ }),
+
+/***/ 1142:
+/*!**********************************************!*\
+  !*** ./src/app/constants/routes.constant.ts ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "APP_ROUTES": () => (/* binding */ APP_ROUTES),
+/* harmony export */   "APP_URLS": () => (/* binding */ APP_URLS)
+/* harmony export */ });
+/* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environment */ 2340);
+
+const baseUrl = src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.apiUrl + '/';
+const APP_URLS = {
+  home: baseUrl,
+  transaction: baseUrl + 'transaction',
+  history: baseUrl + 'history'
+};
+const APP_ROUTES = {
+  home: '/',
+  transaction: '/' + 'transaction',
+  history: '/' + 'history'
+};
+
+/***/ }),
+
+/***/ 3529:
+/*!*******************************************!*\
+  !*** ./src/app/constants/seo.constant.ts ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HISTORY_META_DATA": () => (/* binding */ HISTORY_META_DATA),
+/* harmony export */   "HOME_META_DATA": () => (/* binding */ HOME_META_DATA),
+/* harmony export */   "META_DATA": () => (/* binding */ META_DATA),
+/* harmony export */   "TRANSACTION_META_DATA": () => (/* binding */ TRANSACTION_META_DATA)
+/* harmony export */ });
+/* harmony import */ var _models_common_meta_config_model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/common/meta-config.model */ 7283);
+/* harmony import */ var _regex_constant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./regex.constant */ 4339);
+/* harmony import */ var _routes_constant__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes.constant */ 1142);
+
+
+
+const META_DATA = {
+  ogType: 'og:type',
+  ogCountryName: 'og:country-name',
+  ogSiteName: 'og:site_name',
+  ogUrl: 'og:url',
+  ogTitle: 'og:title',
+  ogDescription: 'og:description',
+  ogImage: 'og:image',
+  title: 'title',
+  description: 'description',
+  website: 'website'
+};
+const FullName = _regex_constant__WEBPACK_IMPORTED_MODULE_1__.REGEX_HOLDER.profileNameHolder;
+const SiteName = _regex_constant__WEBPACK_IMPORTED_MODULE_1__.REGEX_HOLDER.siteNameHolder;
+const HOME_META_DATA = new _models_common_meta_config_model__WEBPACK_IMPORTED_MODULE_0__.MetaConfig(`Home - ${SiteName}`, _routes_constant__WEBPACK_IMPORTED_MODULE_2__.APP_URLS.home, META_DATA.website, `this is ${FullName} personal website home page it contains a welcoming message`);
+const TRANSACTION_META_DATA = new _models_common_meta_config_model__WEBPACK_IMPORTED_MODULE_0__.MetaConfig(`Transaction - ${SiteName}`, _routes_constant__WEBPACK_IMPORTED_MODULE_2__.APP_URLS.transaction, META_DATA.website, `this is ${FullName} personal website it contains account operations`);
+const HISTORY_META_DATA = new _models_common_meta_config_model__WEBPACK_IMPORTED_MODULE_0__.MetaConfig(`History - ${SiteName}`, _routes_constant__WEBPACK_IMPORTED_MODULE_2__.APP_URLS.history, META_DATA.website, `this is ${FullName} personal website it contains transaction history`);
+
+/***/ }),
+
+/***/ 7283:
+/*!****************************************************!*\
+  !*** ./src/app/models/common/meta-config.model.ts ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MetaConfig": () => (/* binding */ MetaConfig)
+/* harmony export */ });
+class MetaConfig {
+  constructor(title, url, description, type) {
+    this.title = title;
+    this.url = url;
+    this.description = description;
+    this.type = type;
+  }
+}
+
+/***/ }),
+
 /***/ 9340:
 /*!*********************************************************!*\
   !*** ./src/app/pages/home/details/details.component.ts ***!
@@ -240,6 +374,90 @@ class IntroComponent {
       }
     },
     styles: [".intro[_ngcontent-%COMP%]   .img-wrapper[_ngcontent-%COMP%] {\n  height: 600px;\n}\n@media screen and (max-width: 767px) {\n  .intro[_ngcontent-%COMP%]   .img-wrapper[_ngcontent-%COMP%] {\n    height: 350px;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvcGFnZXMvaG9tZS9pbnRyby9pbnRyby5jb21wb25lbnQuc2NzcyIsIndlYnBhY2s6Ly8uLy4uLy4uLy4uLy4uLzIlMjBHaXRIdWIvTWluaUJhbmsvTWluaUJhbmsvRnJvbnQvc3JjL2FwcC9wYWdlcy9ob21lL2ludHJvL2ludHJvLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNJO0VBQ0ksYUFBQTtBQ0FSO0FEQ1E7RUFGSjtJQUdRLGFBQUE7RUNFVjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLmludHJvIHtcclxuICAgIC5pbWctd3JhcHBlcntcclxuICAgICAgICBoZWlnaHQ6IDYwMHB4O1xyXG4gICAgICAgIEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2N3B4KSB7XHJcbiAgICAgICAgICAgIGhlaWdodDogMzUwcHg7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59IiwiLmludHJvIC5pbWctd3JhcHBlciB7XG4gIGhlaWdodDogNjAwcHg7XG59XG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3NjdweCkge1xuICAuaW50cm8gLmltZy13cmFwcGVyIHtcbiAgICBoZWlnaHQ6IDM1MHB4O1xuICB9XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
+  });
+}
+
+/***/ }),
+
+/***/ 2191:
+/*!**************************************************!*\
+  !*** ./src/app/services/internal/seo.service.ts ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SeoService": () => (/* binding */ SeoService)
+/* harmony export */ });
+/* harmony import */ var src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/constants/App.constant */ 7817);
+/* harmony import */ var src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/constants/regex.constant */ 4339);
+/* harmony import */ var src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/constants/seo.constant */ 3529);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
+
+
+
+
+
+class SeoService {
+  constructor(metaService, titleService) {
+    this.metaService = metaService;
+    this.titleService = titleService;
+  }
+  setPageSeoData(config) {
+    this.generateMetaTags(config);
+    this.setPageTitle(config.title);
+  }
+  generateMetaTags(config) {
+    // meta data name tags
+    this.metaService.updateTag({
+      name: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.title,
+      content: config.title.replace(src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__.SiteNameHolder, src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name)
+    });
+    this.metaService.updateTag({
+      name: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.description,
+      content: config.description.replace(src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__.ProfileNameHolder, src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name)
+    });
+    // meta data property tags
+    this.metaService.updateTag({
+      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogTitle,
+      content: config.title.replace(src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__.SiteNameHolder, src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name)
+    });
+    this.metaService.updateTag({
+      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogUrl,
+      content: config.url
+    });
+    this.metaService.updateTag({
+      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogDescription,
+      content: config.description.replace(src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__.ProfileNameHolder, src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name)
+    });
+    this.metaService.updateTag({
+      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogCountryName,
+      content: src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.country
+    });
+    this.metaService.updateTag({
+      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogSiteName,
+      content: src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name
+    });
+    this.metaService.updateTag({
+      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogType,
+      content: config.type
+    });
+    this.metaService.updateTag({
+      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogImage,
+      content: src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.logo
+    });
+  }
+  setPageTitle(title) {
+    this.titleService.setTitle(title.replace(src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__.SiteNameHolder, src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name));
+  }
+  static #_ = this.ɵfac = function SeoService_Factory(t) {
+    return new (t || SeoService)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.Meta), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.Title));
+  };
+  static #_2 = this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({
+    token: SeoService,
+    factory: SeoService.ɵfac,
+    providedIn: 'root'
   });
 }
 

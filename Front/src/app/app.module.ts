@@ -38,12 +38,8 @@ export const createTranslateLoader = (httpClient: HttpClient) : TranslateHttpLoa
     ToastrModule.forRoot(),
   ],
   providers: [
-    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
-    LanguesService,
-    SsrService,
-    SeoService,
-    HttpClient,
-    NotificationService],
+    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true}
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

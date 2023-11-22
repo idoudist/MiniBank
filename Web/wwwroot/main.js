@@ -112,25 +112,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AppModule": () => (/* binding */ AppModule),
 /* harmony export */   "createTranslateLoader": () => (/* binding */ createTranslateLoader)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 158);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5041);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/http */ 8987);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ 7146);
-/* harmony import */ var _services_internal_langues_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/internal/langues.service */ 9650);
-/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @ngx-translate/core */ 3935);
-/* harmony import */ var _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ngx-translate/http-loader */ 2202);
-/* harmony import */ var _services_internal_ssr_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/internal/ssr.service */ 6107);
-/* harmony import */ var _nguniversal_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @nguniversal/common */ 9506);
-/* harmony import */ var _services_internal_seo_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/internal/seo.service */ 2191);
-/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ngx-toastr */ 4817);
-/* harmony import */ var _services_internal_notification_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/internal/notification.service */ 5028);
-/* harmony import */ var _interceptors_jwt_interceptor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./interceptors/jwt.interceptor */ 3543);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ 2560);
-
-
-
-
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ 8987);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/platform-browser/animations */ 7146);
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ngx-translate/core */ 3935);
+/* harmony import */ var _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ngx-translate/http-loader */ 2202);
+/* harmony import */ var _nguniversal_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @nguniversal/common */ 9506);
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-toastr */ 4817);
+/* harmony import */ var _interceptors_jwt_interceptor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./interceptors/jwt.interceptor */ 3543);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 2560);
 
 
 
@@ -147,65 +139,45 @@ __webpack_require__.r(__webpack_exports__);
 
 // AoT requires an exported function for factories
 const createTranslateLoader = httpClient => {
-  return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_8__.TranslateHttpLoader(httpClient, '/assets/i18n/', '.json');
+  return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_4__.TranslateHttpLoader(httpClient, '/assets/i18n/', '.json');
 };
 class AppModule {
   static #_ = this.ɵfac = function AppModule_Factory(t) {
     return new (t || AppModule)();
   };
-  static #_2 = this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({
+  static #_2 = this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNgModule"]({
     type: AppModule,
     bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
   });
-  static #_3 = this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({
+  static #_3 = this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({
     providers: [{
-      provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_10__.HTTP_INTERCEPTORS,
-      useClass: _interceptors_jwt_interceptor__WEBPACK_IMPORTED_MODULE_7__.JwtInterceptor,
+      provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HTTP_INTERCEPTORS,
+      useClass: _interceptors_jwt_interceptor__WEBPACK_IMPORTED_MODULE_3__.JwtInterceptor,
       multi: true
-    }, _services_internal_langues_service__WEBPACK_IMPORTED_MODULE_2__.LanguesService, _services_internal_ssr_service__WEBPACK_IMPORTED_MODULE_3__.SsrService, _services_internal_seo_service__WEBPACK_IMPORTED_MODULE_5__.SeoService, _angular_common_http__WEBPACK_IMPORTED_MODULE_10__.HttpClient, _services_internal_notification_service__WEBPACK_IMPORTED_MODULE_6__.NotificationService],
-    imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule.withServerTransition({
+    }],
+    imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_7__.BrowserModule.withServerTransition({
       appId: 'serverApp'
-    }), _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_10__.HttpClientModule,
+    }), _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__.BrowserAnimationsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClientModule,
     // translation server side
-    _nguniversal_common__WEBPACK_IMPORTED_MODULE_4__.TransferHttpCacheModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_13__.TranslateModule.forRoot({
+    _nguniversal_common__WEBPACK_IMPORTED_MODULE_2__.TransferHttpCacheModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_9__.TranslateModule.forRoot({
       loader: {
-        provide: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_13__.TranslateLoader,
+        provide: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_9__.TranslateLoader,
         useFactory: createTranslateLoader,
-        deps: [_angular_common_http__WEBPACK_IMPORTED_MODULE_10__.HttpClient, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.TransferState]
+        deps: [_angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClient, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_7__.TransferState]
       }
     }),
     // toaster
-    ngx_toastr__WEBPACK_IMPORTED_MODULE_14__.ToastrModule.forRoot()]
+    ngx_toastr__WEBPACK_IMPORTED_MODULE_10__.ToastrModule.forRoot()]
   });
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](AppModule, {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](AppModule, {
     declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent],
-    imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_10__.HttpClientModule,
+    imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_7__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__.BrowserAnimationsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClientModule,
     // translation server side
-    _nguniversal_common__WEBPACK_IMPORTED_MODULE_4__.TransferHttpCacheModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_13__.TranslateModule, ngx_toastr__WEBPACK_IMPORTED_MODULE_14__.ToastrModule]
+    _nguniversal_common__WEBPACK_IMPORTED_MODULE_2__.TransferHttpCacheModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_9__.TranslateModule, ngx_toastr__WEBPACK_IMPORTED_MODULE_10__.ToastrModule]
   });
 })();
-
-/***/ }),
-
-/***/ 7817:
-/*!*******************************************!*\
-  !*** ./src/app/constants/App.constant.ts ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "APP_DATA": () => (/* binding */ APP_DATA)
-/* harmony export */ });
-/* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environment */ 2340);
-
-const APP_DATA = {
-  name: 'MiniBank',
-  country: 'France',
-  logo: src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.apiUrl + '/assets/images/logos/logo.png'
-};
 
 /***/ }),
 
@@ -242,99 +214,6 @@ const FrLangue = {
 };
 const Langues = [EnLangue, FrLangue];
 const DefaultLang = EnLangue;
-
-/***/ }),
-
-/***/ 4339:
-/*!*********************************************!*\
-  !*** ./src/app/constants/regex.constant.ts ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ProfileNameHolder": () => (/* binding */ ProfileNameHolder),
-/* harmony export */   "REGEX_HOLDER": () => (/* binding */ REGEX_HOLDER),
-/* harmony export */   "SiteNameHolder": () => (/* binding */ SiteNameHolder)
-/* harmony export */ });
-/*
-   /g : global case sensitive
-   /gi: global case insensitive
- */
-// profile regex
-const SiteNameHolder = /SiteNameHolder/g;
-const ProfileNameHolder = /ProfileNameHolder/g;
-// regex constants
-const REGEX_HOLDER = {
-  siteNameHolder: 'SiteNameHolder',
-  profileNameHolder: 'ProfileNameHolder'
-};
-
-/***/ }),
-
-/***/ 1142:
-/*!**********************************************!*\
-  !*** ./src/app/constants/routes.constant.ts ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "APP_ROUTES": () => (/* binding */ APP_ROUTES),
-/* harmony export */   "APP_URLS": () => (/* binding */ APP_URLS)
-/* harmony export */ });
-/* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environment */ 2340);
-
-const baseUrl = src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.apiUrl + '/';
-const APP_URLS = {
-  home: baseUrl,
-  transaction: baseUrl + 'transaction',
-  history: baseUrl + 'history'
-};
-const APP_ROUTES = {
-  home: '/',
-  transaction: '/' + 'transaction',
-  history: '/' + 'history'
-};
-
-/***/ }),
-
-/***/ 3529:
-/*!*******************************************!*\
-  !*** ./src/app/constants/seo.constant.ts ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "HISTORY_META_DATA": () => (/* binding */ HISTORY_META_DATA),
-/* harmony export */   "HOME_META_DATA": () => (/* binding */ HOME_META_DATA),
-/* harmony export */   "META_DATA": () => (/* binding */ META_DATA),
-/* harmony export */   "TRANSACTION_META_DATA": () => (/* binding */ TRANSACTION_META_DATA)
-/* harmony export */ });
-/* harmony import */ var _models_common_meta_config_model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/common/meta-config.model */ 7283);
-/* harmony import */ var _regex_constant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./regex.constant */ 4339);
-/* harmony import */ var _routes_constant__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes.constant */ 1142);
-
-
-
-const META_DATA = {
-  ogType: 'og:type',
-  ogCountryName: 'og:country-name',
-  ogSiteName: 'og:site_name',
-  ogUrl: 'og:url',
-  ogTitle: 'og:title',
-  ogDescription: 'og:description',
-  ogImage: 'og:image',
-  title: 'title',
-  description: 'description',
-  website: 'website'
-};
-const FullName = _regex_constant__WEBPACK_IMPORTED_MODULE_1__.REGEX_HOLDER.profileNameHolder;
-const SiteName = _regex_constant__WEBPACK_IMPORTED_MODULE_1__.REGEX_HOLDER.siteNameHolder;
-const HOME_META_DATA = new _models_common_meta_config_model__WEBPACK_IMPORTED_MODULE_0__.MetaConfig(`Home - ${SiteName}`, _routes_constant__WEBPACK_IMPORTED_MODULE_2__.APP_URLS.home, META_DATA.website, `this is ${FullName} personal website home page it contains a welcoming message`);
-const TRANSACTION_META_DATA = new _models_common_meta_config_model__WEBPACK_IMPORTED_MODULE_0__.MetaConfig(`Transaction - ${SiteName}`, _routes_constant__WEBPACK_IMPORTED_MODULE_2__.APP_URLS.transaction, META_DATA.website, `this is ${FullName} personal website it contains account operations`);
-const HISTORY_META_DATA = new _models_common_meta_config_model__WEBPACK_IMPORTED_MODULE_0__.MetaConfig(`History - ${SiteName}`, _routes_constant__WEBPACK_IMPORTED_MODULE_2__.APP_URLS.history, META_DATA.website, `this is ${FullName} personal website it contains transaction history`);
 
 /***/ }),
 
@@ -398,27 +277,6 @@ class JwtInterceptor {
     token: JwtInterceptor,
     factory: JwtInterceptor.ɵfac
   });
-}
-
-/***/ }),
-
-/***/ 7283:
-/*!****************************************************!*\
-  !*** ./src/app/models/common/meta-config.model.ts ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "MetaConfig": () => (/* binding */ MetaConfig)
-/* harmony export */ });
-class MetaConfig {
-  constructor(title, url, description, type) {
-    this.title = title;
-    this.url = url;
-    this.description = description;
-    this.type = type;
-  }
 }
 
 /***/ }),
@@ -564,132 +422,6 @@ class LanguesService {
   static #_2 = this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({
     token: LanguesService,
     factory: LanguesService.ɵfac,
-    providedIn: 'root'
-  });
-}
-
-/***/ }),
-
-/***/ 5028:
-/*!***********************************************************!*\
-  !*** ./src/app/services/internal/notification.service.ts ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "NotificationService": () => (/* binding */ NotificationService)
-/* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-toastr */ 4817);
-
-
-class NotificationService {
-  constructor(toastr) {
-    this.toastr = toastr;
-  }
-  showSuccess(message, title) {
-    this.toastr.success(message, title);
-  }
-  showError(message, title) {
-    this.toastr.error(message, title);
-  }
-  showInfo(message, title) {
-    this.toastr.info(message, title);
-  }
-  showWarning(message, title) {
-    this.toastr.warning(message, title);
-  }
-  static #_ = this.ɵfac = function NotificationService_Factory(t) {
-    return new (t || NotificationService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](ngx_toastr__WEBPACK_IMPORTED_MODULE_1__.ToastrService));
-  };
-  static #_2 = this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-    token: NotificationService,
-    factory: NotificationService.ɵfac,
-    providedIn: 'root'
-  });
-}
-
-/***/ }),
-
-/***/ 2191:
-/*!**************************************************!*\
-  !*** ./src/app/services/internal/seo.service.ts ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "SeoService": () => (/* binding */ SeoService)
-/* harmony export */ });
-/* harmony import */ var src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/constants/App.constant */ 7817);
-/* harmony import */ var src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/constants/regex.constant */ 4339);
-/* harmony import */ var src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/constants/seo.constant */ 3529);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
-
-
-
-
-
-class SeoService {
-  constructor(metaService, titleService) {
-    this.metaService = metaService;
-    this.titleService = titleService;
-  }
-  setPageSeoData(config) {
-    this.generateMetaTags(config);
-    this.setPageTitle(config.title);
-  }
-  generateMetaTags(config) {
-    // meta data name tags
-    this.metaService.updateTag({
-      name: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.title,
-      content: config.title.replace(src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__.SiteNameHolder, src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name)
-    });
-    this.metaService.updateTag({
-      name: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.description,
-      content: config.description.replace(src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__.ProfileNameHolder, src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name)
-    });
-    // meta data property tags
-    this.metaService.updateTag({
-      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogTitle,
-      content: config.title.replace(src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__.SiteNameHolder, src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name)
-    });
-    this.metaService.updateTag({
-      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogUrl,
-      content: config.url
-    });
-    this.metaService.updateTag({
-      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogDescription,
-      content: config.description.replace(src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__.ProfileNameHolder, src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name)
-    });
-    this.metaService.updateTag({
-      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogCountryName,
-      content: src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.country
-    });
-    this.metaService.updateTag({
-      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogSiteName,
-      content: src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name
-    });
-    this.metaService.updateTag({
-      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogType,
-      content: config.type
-    });
-    this.metaService.updateTag({
-      property: src_app_constants_seo_constant__WEBPACK_IMPORTED_MODULE_2__.META_DATA.ogImage,
-      content: src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.logo
-    });
-  }
-  setPageTitle(title) {
-    this.titleService.setTitle(title.replace(src_app_constants_regex_constant__WEBPACK_IMPORTED_MODULE_1__.SiteNameHolder, src_app_constants_App_constant__WEBPACK_IMPORTED_MODULE_0__.APP_DATA.name));
-  }
-  static #_ = this.ɵfac = function SeoService_Factory(t) {
-    return new (t || SeoService)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.Meta), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.Title));
-  };
-  static #_2 = this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({
-    token: SeoService,
-    factory: SeoService.ɵfac,
     providedIn: 'root'
   });
 }
