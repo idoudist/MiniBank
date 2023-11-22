@@ -61,7 +61,6 @@ public class AccountControllerTests
         A.CallTo(() => _userService.UsernameExistAsync(model.Username)).Returns(Task.FromResult(false));
         AppUser user = A.Fake<AppUser>();
         A.CallTo(() => _mapper.Map<AppUser>(model)).Returns(user);
-        var success = new IdentityResult();
         A.CallTo(() => _userService.AddClientAsync(model)).Returns(user);
         var bankAccount = new BankAccountCreationRequest{
             Name = "Main Account",
