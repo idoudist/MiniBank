@@ -81,6 +81,10 @@
         public async Task<ActionResult<IEnumerable<TransactionDto>>> GetTransactionById(int id)
         {
             var transaction = await _transactionService.GetTransactionAsync(id);
+            if(transaction == null)
+            {
+                return NotFound("Transaction Not Found");
+            }
             return Ok(transaction);
         }
 
