@@ -1,8 +1,8 @@
 ﻿using Application.Transactions.Dtos;
 using Application.Transactions.Interfaces;
-using Infrastructure.Common;
+using Infrastructure.Persistence.Context;
 
-namespace Infrastructure.Repositories;
+namespace Infrastructure.Persistence.Repositories;
 
 public class TransactionRepository : ITransactionRepository
 {

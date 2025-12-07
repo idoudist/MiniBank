@@ -1,6 +1,6 @@
-﻿using Infrastructure.Common;
+﻿using Infrastructure.Persistence.Context;
 
-namespace Infrastructure.Repositories;
+namespace Infrastructure.Persistence.Repositories;
 
 public class BankAccountRepository : IBankAccountRepository
 {

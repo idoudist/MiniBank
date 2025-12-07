@@ -1,7 +1,4 @@
-﻿using Application.Common.Interfaces;
-using System.Text.Json;
-
-namespace Infrastructure.SeedData;
+﻿namespace Infrastructure.Persistence.SeedData;
 
 public class Seed
 {

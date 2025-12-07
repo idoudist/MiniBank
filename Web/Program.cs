@@ -1,7 +1,8 @@
 /*create builder*/
 
 using Application.Common.Interfaces;
-using Infrastructure.Common;
+using Infrastructure.Persistence.Context;
+using Infrastructure.Persistence.SeedData;
 
 var builder = WebApplication.CreateBuilder(args);
 

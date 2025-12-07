@@ -15,7 +15,6 @@ global using Application.Transactions.Interfaces;
 global using Application.Users.Interfaces;
 global using Application.Bank.Services;
 global using Application.Transactions.Services;
-global using Infrastructure.SeedData;
 global using Api.Middleware;
 global using Api.Helpers;
 // Inner Project

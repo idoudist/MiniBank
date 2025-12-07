@@ -1,5 +1,6 @@
 ﻿using Infrastructure.Common;
 using Infrastructure.Identity.Services;
+using Infrastructure.Persistence.Context;
 
 namespace Web.Extensions;
 
