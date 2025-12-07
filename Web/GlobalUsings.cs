@@ -9,12 +9,12 @@ global using System.Text;
 // Application libraries
 global using Domain.Automapper;
 global using Domain.Entities.Identity;
-global using Data.Configurations;
-global using Data.SeedData;
 global using Application.Contracts.ApplicationServices;
 global using Application.Utils;
 global using Infrastructure.ApplicationServices;
 global using Infrastructure.Utils;
+global using Infrastructure.Configurations;
+global using Infrastructure.SeedData;
 global using Api.Middleware;
 global using Api.Helpers;
 global using Web.Extensions;

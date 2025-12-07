@@ -1,6 +1,4 @@
-﻿using Application.Contracts.Repositories;
-
-namespace Data.Repositories;
+﻿namespace Infrastructure.Repositories;
 
 public class TransactionRepository : ITransactionRepository
 {

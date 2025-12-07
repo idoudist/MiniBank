@@ -1,8 +1,6 @@
-﻿using Domain.Entities.Identity;
-using Microsoft.AspNetCore.Identity;
-using System.Text.Json;
+﻿using System.Text.Json;
 
-namespace Data.SeedData;
+namespace Infrastructure.SeedData;
 
 public class Seed
 {
