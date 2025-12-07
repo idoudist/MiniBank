@@ -6,9 +6,9 @@ global using Microsoft.EntityFrameworkCore;
 global using Microsoft.OpenApi.Models;
 global using Microsoft.IdentityModel.Tokens;
 global using System.Text;
-// Application libraries
-global using Domain.Automapper;
+// Projects
 global using Domain.Entities.Identity;
+global using Application.Automapper;
 global using Application.Contracts.ApplicationServices;
 global using Application.Utils;
 global using Infrastructure.ApplicationServices;

@@ -1,4 +1,4 @@
-﻿namespace Domain.Dtos.Shared;
+﻿namespace Application.Dtos.Shared;
 
 public class UserDto
 {

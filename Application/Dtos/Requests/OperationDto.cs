@@ -1,4 +1,4 @@
-﻿namespace Domain.Dtos.Requests;
+﻿namespace Application.Dtos.Requests;
 
 public class OperationDto
 {

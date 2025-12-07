@@ -1,4 +1,4 @@
-﻿namespace Domain.Automapper;
+﻿namespace Application.Automapper;
 
 public class AutoMapperMappings
 {

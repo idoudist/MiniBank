@@ -1,4 +1,4 @@
-﻿namespace Domain.Automapper.Profiles;
+﻿namespace Application.Automapper.Profiles;
 
 public class BankAccountProfile : Profile
 {

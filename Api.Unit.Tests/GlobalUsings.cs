@@ -12,8 +12,8 @@ global using FluentAssertions;
 global using Api.Controllers;
 //project libraries
 global using Domain.Entities.Identity;
-global using Domain.Dtos.Requests;
 global using Domain.Entities;
-global using Domain.Dtos.Shared;
+global using Application.Dtos.Requests;
+global using Application.Dtos.Shared;
 global using Application.Contracts.ApplicationServices;
 global using Application.Utils;

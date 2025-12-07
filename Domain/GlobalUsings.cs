@@ -1,14 +1,6 @@
 ﻿global using Microsoft.EntityFrameworkCore;
 global using Microsoft.AspNetCore.Identity;
 global using System.Text.Json.Serialization;
-global using System.ComponentModel.DataAnnotations;
-global using AutoMapper;
-global using Domain.Entities;
-global using Domain.Dtos.Responses;
-global using Domain.Dtos.Requests;
 global using Domain.Enums;
-global using Domain.Helpers.Pagination;
 global using Domain.Entities.Base;
 global using Domain.Entities.Identity;
-global using Domain.Dtos.Shared;
-global using Domain.Automapper.Profiles;

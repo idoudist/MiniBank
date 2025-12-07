@@ -7,6 +7,6 @@ global using FakeItEasy;
 global using FluentAssertions;
 //Project libraries
 global using Domain.Entities.Identity;
-global using Domain.Dtos.Requests;
+global using Application.Dtos.Requests;
 global using Application.Utils;
 global using Infrastructure.ApplicationServices;

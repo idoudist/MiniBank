@@ -1,6 +1,4 @@
-﻿using Application.Contracts.ApplicationServices;
-
-namespace Api.Unit.Tests.Controllers;
+﻿namespace Api.Unit.Tests.Controllers;
 
 public class AccountControllerTests
 {
