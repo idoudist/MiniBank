@@ -1,16 +1,20 @@
-﻿namespace Infrastructure.ApplicationServices;
+﻿using FluentValidation;
+
+namespace Infrastructure.ApplicationServices;
 
 public class UserApplicationService: IUserApplicationService
 {
     private readonly UserManager<AppUser> _userManager;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
+    private readonly IValidator<RegisterDto> _registerValidator;
 
-    public UserApplicationService(IUnitOfWork unitOfWork, UserManager<AppUser> userManager, IMapper mapper)
+    public UserApplicationService(IUnitOfWork unitOfWork, UserManager<AppUser> userManager, IMapper mapper, IValidator<RegisterDto> registerValidator)
     {
         _unitOfWork = unitOfWork;
         _userManager = userManager;
         _mapper = mapper;
+        _registerValidator = registerValidator;
     }
 
     public async Task<AppUser> GetUserByIdAsync(int id)
@@ -33,6 +37,13 @@ public class UserApplicationService: IUserApplicationService
 
     public async Task<AppUser> AddClientAsync(RegisterDto model)
     {
+        // using fluent validation to validate the model
+        var validationResult = await _registerValidator.ValidateAsync(model);
+        if (!validationResult.IsValid)
+        {
+            throw new ValidationException(validationResult.Errors);
+        }
+        // map RegisterDto to AppUser entity
         var user = _mapper.Map<AppUser>(model);
         
         // assign password and username

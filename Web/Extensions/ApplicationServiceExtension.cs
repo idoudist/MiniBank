@@ -2,7 +2,7 @@
 
 namespace Web.Extensions;
 
-public static class ApplicationServiceExtensions
+public static class ApplicationServiceExtension
 {
     public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
     {

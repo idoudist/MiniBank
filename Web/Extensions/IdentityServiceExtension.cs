@@ -1,6 +1,6 @@
 ﻿namespace Web.Extensions;
 
-public static class IdentityServiceExtensions
+public static class IdentityServiceExtension
 {
     public static IServiceCollection AddIdentityServices(this IServiceCollection services, IConfiguration config)
     {
