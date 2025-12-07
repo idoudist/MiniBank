@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Configurations;
+﻿namespace Infrastructure.Common;
 
 public class DataContext : IdentityDbContext<AppUser, AppRole, int, IdentityUserClaim<int>, AppUserRole,
         IdentityUserLogin<int>, IdentityRoleClaim<int>, IdentityUserToken<int>>

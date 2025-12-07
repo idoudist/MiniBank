@@ -5,11 +5,11 @@ public class AccountController : BaseApiController
     private readonly SignInManager<AppUser> _signInManager;
     private readonly ITokenService _tokenService;
     private readonly IBankAccountApplicationService _bankAccountService;
-    private readonly IUserApplicationService _userService;
+    private readonly IUserIdentityService _userService;
     private readonly IMapper _mapper;
 
     public AccountController(SignInManager<AppUser> signInManager,
-        ITokenService tokenService, IBankAccountApplicationService bankAccountService, IUserApplicationService userService, IMapper mapper)
+        ITokenService tokenService, IBankAccountApplicationService bankAccountService, IUserIdentityService userService, IMapper mapper)
     {
         _signInManager = signInManager;
         _tokenService = tokenService;

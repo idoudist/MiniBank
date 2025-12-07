@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Configurations;
+﻿namespace Infrastructure.Common;
 
 public class UnitOfWork : IUnitOfWork
 {

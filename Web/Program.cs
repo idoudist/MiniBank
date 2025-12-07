@@ -1,6 +1,7 @@
 /*create builder*/
 
 using Application.Common.Interfaces;
+using Infrastructure.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,18 +1,17 @@
 ﻿using Application.Common.Interfaces;
 using Application.Users.Dtos;
-using Application.Users.Interfaces;
 using FluentValidation;
 
-namespace Infrastructure.ApplicationServices;
+namespace Infrastructure.Identity.Services;
 
-public class UserApplicationService: IUserApplicationService
+public class UserIdentityService: IUserIdentityService
 {
     private readonly UserManager<AppUser> _userManager;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
     private readonly IValidator<RegisterDto> _registerValidator;
 
-    public UserApplicationService(IUnitOfWork unitOfWork, UserManager<AppUser> userManager, IMapper mapper, IValidator<RegisterDto> registerValidator)
+    public UserIdentityService(IUnitOfWork unitOfWork, UserManager<AppUser> userManager, IMapper mapper, IValidator<RegisterDto> registerValidator)
     {
         _unitOfWork = unitOfWork;
         _userManager = userManager;

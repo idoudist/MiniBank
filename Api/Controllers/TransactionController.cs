@@ -1,6 +1,5 @@
 ﻿using Application.Transactions.Dtos;
 using Application.Transactions.Interfaces;
-using Application.Users.Interfaces;
 
 namespace Api.Controllers
 {
@@ -8,8 +7,8 @@ namespace Api.Controllers
     public class TransactionController : BaseApiController
     {
         private readonly ITransactionApplicationService _transactionService;
-        private readonly IUserApplicationService _userService;
-        public TransactionController(ITransactionApplicationService transactionService, IUserApplicationService userService)
+        private readonly IUserIdentityService _userService;
+        public TransactionController(ITransactionApplicationService transactionService, IUserIdentityService userService)
         {
             _transactionService = transactionService;
             _userService = userService;

@@ -1,4 +1,7 @@
-﻿namespace Web.Extensions;
+﻿using Infrastructure.Common;
+using Infrastructure.Identity.Services;
+
+namespace Web.Extensions;
 
 public static class ApplicationServiceExtension
 {
@@ -11,7 +14,7 @@ public static class ApplicationServiceExtension
         /* add service Filter */
         services.AddScoped<LogUserActivity>();
         /* add services */
-        services.AddScoped<IUserApplicationService, UserApplicationService>();
+        services.AddScoped<IUserIdentityService, UserIdentityService>();
         services.AddScoped<ITransactionApplicationService, TransactionApplicationService>();
         services.AddScoped<IBankAccountApplicationService, BankAccountApplicationService>();
         services.AddScoped<ITokenService, TokenService>();

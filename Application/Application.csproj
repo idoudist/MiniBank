@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <Folder Include="Bank\Validations\" />
-    <Folder Include="Bank\Services\" />
   </ItemGroup>
 
 </Project>

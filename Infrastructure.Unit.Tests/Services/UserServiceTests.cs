@@ -3,6 +3,7 @@ using Application.Users.Dtos;
 using Application.Users.Interfaces;
 using Application.Users.Validation;
 using Domain.Entities;
+using Infrastructure.Identity.Services;
 using Infrastructure.Unit.Tests.Helpers;
 
 namespace Infrastructure.Unit.Tests.Services;
@@ -69,7 +70,7 @@ public class UserServiceTests
         A.CallTo(() => _unitOfWork.UserRepository).Returns(repo);
         A.CallTo(() => repo.GetUserByIdAsync(userId)).Returns(Task.FromResult(expectedUser));
 
-        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper, _validator);
+        var service = new UserIdentityService(_unitOfWork, _userManager, _mapper, _validator);
 
         // Act
         var result = await service.GetUserByIdAsync(userId);
@@ -100,7 +101,7 @@ public class UserServiceTests
 
         A.CallTo(() => _userManager.Users).Returns(asyncUsers);
 
-        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper, _validator);
+        var service = new UserIdentityService(_unitOfWork, _userManager, _mapper, _validator);
 
         // Act
         var result = await service.GetUserByUsernameAsync(userName);
@@ -121,7 +122,7 @@ public class UserServiceTests
         var users = new List<AppUser> { new AppUser { UserName = userName } };
         A.CallTo(() => _userManager.Users).Returns(new TestAsyncEnumerable<AppUser>(users));
 
-        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper, _validator);
+        var service = new UserIdentityService(_unitOfWork, _userManager, _mapper, _validator);
 
         // Act
         var exists = await service.UsernameExistAsync(userName);
@@ -156,7 +157,7 @@ public class UserServiceTests
         A.CallTo(() => _userManager.AddToRoleAsync(mappedUser, "Client"))
             .Returns(IdentityResult.Success);
 
-        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper, _validator);
+        var service = new UserIdentityService(_unitOfWork, _userManager, _mapper, _validator);
 
         // Act
         var result = await service.AddClientAsync(model);
@@ -186,7 +187,7 @@ public class UserServiceTests
         A.CallTo(() => _userManager.CreateAsync(mappedUser, model.Password))
             .Returns(IdentityResult.Failed(new IdentityError { Description = "Invalid" }));
 
-        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper, _validator);
+        var service = new UserIdentityService(_unitOfWork, _userManager, _mapper, _validator);
 
         // Act
         var result = await service.AddClientAsync(model);
@@ -213,7 +214,7 @@ public class UserServiceTests
         A.CallTo(() => _userManager.AddToRoleAsync(mappedUser, "Client"))
             .Returns(IdentityResult.Failed(new IdentityError { Description = "Role error" }));
 
-        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper, _validator);
+        var service = new UserIdentityService(_unitOfWork, _userManager, _mapper, _validator);
 
         // Act
         var result = await service.AddClientAsync(model);

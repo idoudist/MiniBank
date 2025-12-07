@@ -1,10 +1,9 @@
-//Application dependencies
+// Application dependencies
 global using Microsoft.AspNetCore.Identity;
 global using AutoMapper;
-//Unit testing
+// Unit testing
 global using Xunit;
 global using FakeItEasy;
 global using FluentAssertions;
-//Project libraries
+// Project libraries
 global using Domain.Entities.Identity;
-global using Infrastructure.ApplicationServices;

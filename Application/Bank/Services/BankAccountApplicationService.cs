@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.ApplicationServices;
+﻿namespace Application.Bank.Services;
 
 public class BankAccountApplicationService : IBankAccountApplicationService
 {

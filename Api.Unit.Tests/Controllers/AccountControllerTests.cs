@@ -5,14 +5,14 @@ public class AccountControllerTests
     private readonly SignInManager<AppUser> _signInManager;
     private readonly ITokenService _tokenService;
     private readonly IBankAccountApplicationService _bankAccountService;
-    private readonly IUserApplicationService _userService;
+    private readonly IUserIdentityService _userService;
     private readonly IMapper _mapper;
     public AccountControllerTests()
     {
         _signInManager = A.Fake<SignInManager<AppUser>>();
         _tokenService = A.Fake<ITokenService>();
         _bankAccountService = A.Fake<IBankAccountApplicationService>();
-        _userService = A.Fake<IUserApplicationService>();
+        _userService = A.Fake<IUserIdentityService>();
         _mapper = A.Fake<IMapper>();
     }
 

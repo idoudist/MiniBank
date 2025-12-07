@@ -1,4 +1,6 @@
-﻿namespace Infrastructure.Repositories;
+﻿using Infrastructure.Common;
+
+namespace Infrastructure.Repositories;
 
 public class BankAccountRepository : IBankAccountRepository
 {

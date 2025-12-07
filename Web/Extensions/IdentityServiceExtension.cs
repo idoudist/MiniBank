@@ -1,4 +1,6 @@
-﻿namespace Web.Extensions;
+﻿using Infrastructure.Common;
+
+namespace Web.Extensions;
 
 public static class IdentityServiceExtension
 {

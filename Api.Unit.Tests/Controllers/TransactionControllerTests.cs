@@ -1,16 +1,15 @@
 ﻿using Application.Transactions.Interfaces;
-using Application.Users.Interfaces;
 
 namespace Api.Unit.Tests.Controllers;
 
 public class TransactionControllerTests
 {
     private readonly ITransactionApplicationService _transactionService;
-    private readonly IUserApplicationService _userService;
+    private readonly IUserIdentityService _userService;
     public TransactionControllerTests()
     {
         _transactionService = A.Fake< ITransactionApplicationService > ();
-        _userService = A.Fake < IUserApplicationService >();
+        _userService = A.Fake < IUserIdentityService >();
     }
 
     [Fact]

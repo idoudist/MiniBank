@@ -1,20 +1,17 @@
-﻿//Microsoft dependencies
+﻿// Microsoft dependencies
 global using Microsoft.AspNetCore.Identity;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-//Libraries
+// Libraries
 global using AutoMapper;
 global using AutoMapper.QueryableExtensions;
-//Projects
+// Projects
 global using Domain.Entities;
 global using Domain.Entities.Identity;
-global using Domain.Enums;
 global using Domain.Helpers.Pagination;
-global using Application.Bank.Dtos;
 global using Application.Bank.Interfaces;
 global using Application.Common.Interfaces;
 global using Application.Transactions.Interfaces;
 global using Application.Users.Interfaces;
-//Inner Project
-global using Infrastructure.Configurations;
+// Inner Project
 global using Infrastructure.Repositories;

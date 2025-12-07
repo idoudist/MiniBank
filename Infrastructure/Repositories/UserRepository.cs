@@ -1,4 +1,5 @@
 ﻿using Application.Users.Interfaces;
+using Infrastructure.Common;
 
 namespace Infrastructure.Repositories;
 

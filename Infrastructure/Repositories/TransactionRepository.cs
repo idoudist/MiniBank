@@ -1,5 +1,6 @@
 ﻿using Application.Transactions.Dtos;
 using Application.Transactions.Interfaces;
+using Infrastructure.Common;
 
 namespace Infrastructure.Repositories;
 
