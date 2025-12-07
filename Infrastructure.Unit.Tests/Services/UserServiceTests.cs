@@ -1,4 +1,8 @@
-﻿namespace Infrastructure.Unit.Tests.Services;
+﻿using Application.Contracts.Repositories;
+using Domain.Entities;
+using Infrastructure.Unit.Tests.Helpers;
+
+namespace Infrastructure.Unit.Tests.Services;
 
 public class UserServiceTests
 {
@@ -48,6 +52,81 @@ public class UserServiceTests
         };
 
     }
+    #region GetUserByIdAsync Tests
+    [Fact]
+    public async Task GetUserByIdAsync_ShouldReturnUser_WhenFound()
+    {
+        // Arrange
+        var userId = 42;
+        var expectedUser = new AppUser { Id = userId, UserName = "user42" };
+
+        var repo = A.Fake<IUserRepository>();
+        A.CallTo(() => _unitOfWork.UserRepository).Returns(repo);
+        A.CallTo(() => repo.GetUserByIdAsync(userId)).Returns(Task.FromResult(expectedUser));
+
+        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper);
+
+        // Act
+        var result = await service.GetUserByIdAsync(userId);
+
+        // Assert
+        result.Should().NotBeNull();
+        result.Should().Be(expectedUser);
+    }
+    #endregion
+
+    #region GetUserByUsernameAsync Tests
+    [Fact]
+    public async Task GetUserByUsernameAsync_ShouldReturnUserWithBankAccounts_WhenUserExists()
+    {
+        // Arrange
+        var userName = "testuser";
+        var expectedUser = new AppUser
+        {
+            UserName = userName,
+            BankAccounts = new List<BankAccountEntity>
+            {
+                new BankAccountEntity { Id = 1, Name = "Main", CurrentBalance = 100 }
+            }
+        };
+
+        var users = new List<AppUser> { expectedUser };
+        var asyncUsers = new TestAsyncEnumerable<AppUser>(users);
+
+        A.CallTo(() => _userManager.Users).Returns(asyncUsers);
+
+        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper);
+
+        // Act
+        var result = await service.GetUserByUsernameAsync(userName);
+
+        // Assert
+        result.Should().NotBeNull();
+        result.Should().BeEquivalentTo(expectedUser);
+        result.BankAccounts.Should().NotBeNull().And.HaveCount(1);
+    }
+    #endregion
+
+    #region UsernameExistAsync Tests
+    [Fact]
+    public async Task UsernameExistAsync_ShouldReturnTrue_WhenUserExists()
+    {
+        // Arrange
+        var userName = "exists";
+        var users = new List<AppUser> { new AppUser { UserName = userName } };
+        A.CallTo(() => _userManager.Users).Returns(new TestAsyncEnumerable<AppUser>(users));
+
+        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper);
+
+        // Act
+        var exists = await service.UsernameExistAsync(userName);
+
+        // Assert
+        exists.Should().BeTrue();
+    }
+    #endregion
+
+    #region AddClientAsync Tests
 
     [Theory]
     [MemberData(nameof(AddClientTestCases))]
@@ -137,5 +216,6 @@ public class UserServiceTests
         // Assert
         result.Should().BeNull();
     }
+    #endregion
 
 }
