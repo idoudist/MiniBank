@@ -1,6 +1,6 @@
-﻿namespace Application.Users;
+﻿namespace Application.Contracts.ApplicationServices;
 
-public interface IUserService
+public interface IUserApplicationService
 {
     Task<AppUser> GetUserByIdAsync(int id);
     Task<AppUser> GetUserByUsernameAsync(string username);

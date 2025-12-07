@@ -15,7 +15,5 @@ global using Domain.Entities.Identity;
 global using Domain.Dtos.Requests;
 global using Domain.Entities;
 global using Domain.Dtos.Shared;
-global using Application.Transactions;
-global using Application.Users;
-global using Application.BankAccounts;
+global using Application.Contracts.ApplicationServices;
 global using Application.Utils;

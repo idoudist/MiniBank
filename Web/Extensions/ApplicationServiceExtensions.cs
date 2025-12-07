@@ -1,4 +1,6 @@
-﻿namespace Web.Extensions;
+﻿using Application.Contracts.ApplicationServices;
+
+namespace Web.Extensions;
 
 public static class ApplicationServiceExtensions
 {
@@ -11,9 +13,9 @@ public static class ApplicationServiceExtensions
         /* add service Filter */
         services.AddScoped<LogUserActivity>();
         /* add services */
-        services.AddScoped<IUserService, UserService>();
-        services.AddScoped<ITransactionService, TransactionService>();
-        services.AddScoped<IBankAccountService, BankAccountService>();
+        services.AddScoped<IUserApplicationService, UserApplicationService>();
+        services.AddScoped<ITransactionApplicationService, TransactionApplicationService>();
+        services.AddScoped<IBankAccountApplicationService, BankAccountApplicationService>();
         services.AddScoped<ITokenService, TokenService>();
         /* add unit of work */
         services.AddScoped<IUnitOfWork, UnitOfWork>();

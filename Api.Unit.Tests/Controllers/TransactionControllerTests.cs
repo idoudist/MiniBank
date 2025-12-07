@@ -1,13 +1,15 @@
-﻿namespace Api.Unit.Tests.Controllers;
+﻿using Application.Contracts.ApplicationServices;
+
+namespace Api.Unit.Tests.Controllers;
 
 public class TransactionControllerTests
 {
-    private readonly ITransactionService _transactionService;
-    private readonly IUserService _userService;
+    private readonly ITransactionApplicationService _transactionService;
+    private readonly IUserApplicationService _userService;
     public TransactionControllerTests()
     {
-        _transactionService = A.Fake< ITransactionService > ();
-        _userService = A.Fake < IUserService >();
+        _transactionService = A.Fake< ITransactionApplicationService > ();
+        _userService = A.Fake < IUserApplicationService >();
     }
 
     [Fact]

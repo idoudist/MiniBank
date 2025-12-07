@@ -1,11 +1,13 @@
-﻿namespace Infrastructure.Services;
+﻿using Application.Contracts.ApplicationServices;
 
-public class TransactionService : ITransactionService
+namespace Infrastructure.Services;
+
+public class TransactionApplicationService : ITransactionApplicationService
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
-    public TransactionService(IUnitOfWork unitOfWork, IMapper mapper)
+    public TransactionApplicationService(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;

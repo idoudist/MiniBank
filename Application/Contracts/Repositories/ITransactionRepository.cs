@@ -1,4 +1,4 @@
-﻿namespace Application.Transactions;
+﻿namespace Application.Contracts.Repositories;
 
 public interface ITransactionRepository
 {

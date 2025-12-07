@@ -1,5 +1,7 @@
 ﻿
 
+using Application.Contracts.Repositories;
+
 namespace Application.Utils;
 
 public interface IUnitOfWork

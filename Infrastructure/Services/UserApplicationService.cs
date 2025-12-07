@@ -1,12 +1,14 @@
-﻿namespace Infrastructure.Services;
+﻿using Application.Contracts.ApplicationServices;
 
-public class UserService: IUserService
+namespace Infrastructure.Services;
+
+public class UserApplicationService: IUserApplicationService
 {
     private readonly UserManager<AppUser> _userManager;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
-    public UserService(IUnitOfWork unitOfWork, UserManager<AppUser> userManager, IMapper mapper)
+    public UserApplicationService(IUnitOfWork unitOfWork, UserManager<AppUser> userManager, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _userManager = userManager;

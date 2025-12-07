@@ -1,11 +1,13 @@
-﻿namespace Infrastructure.Services;
+﻿using Application.Contracts.ApplicationServices;
 
-public class BankAccountService : IBankAccountService
+namespace Infrastructure.Services;
+
+public class BankAccountApplicationService : IBankAccountApplicationService
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
-    public BankAccountService(IUnitOfWork unitOfWork, IMapper mapper)
+    public BankAccountApplicationService(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;

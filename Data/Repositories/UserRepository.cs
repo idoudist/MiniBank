@@ -1,4 +1,6 @@
-﻿namespace Data.Repositories;
+﻿using Application.Contracts.Repositories;
+
+namespace Data.Repositories;
 
 public class UserRepository : IUserRepository
 {

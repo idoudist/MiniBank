@@ -59,7 +59,7 @@ public class UserServiceTests
         var successResult = IdentityResult.Success;
         A.CallTo(() => _userManager.CreateAsync(user, model.Password)).Returns(successResult);
         A.CallTo(() => _userManager.AddToRoleAsync(user, "Client")).Returns(successResult);
-        var service = new UserService(_unitOfWork, _userManager, _mapper);
+        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper);
         #endregion
         #region Act
         var result = await service.AddClientAsync(model);

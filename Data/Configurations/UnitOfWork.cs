@@ -1,4 +1,6 @@
-﻿namespace Data.Configurations;
+﻿using Application.Contracts.Repositories;
+
+namespace Data.Configurations;
 
 public class UnitOfWork : IUnitOfWork
 {

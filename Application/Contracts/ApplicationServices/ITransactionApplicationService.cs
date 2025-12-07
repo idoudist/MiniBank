@@ -1,6 +1,6 @@
-﻿namespace Application.Transactions;
+﻿namespace Application.Contracts.ApplicationServices;
 
-public interface ITransactionService
+public interface ITransactionApplicationService
 {
     Task<bool> AddDepositAsync(OperationDto operation);
     Task<bool> WithdrowAsync(OperationDto operation);

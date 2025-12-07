@@ -1,18 +1,20 @@
-﻿namespace Api.Unit.Tests.Controllers;
+﻿using Application.Contracts.ApplicationServices;
+
+namespace Api.Unit.Tests.Controllers;
 
 public class AccountControllerTests
 {
     private readonly SignInManager<AppUser> _signInManager;
     private readonly ITokenService _tokenService;
-    private readonly IBankAccountService _bankAccountService;
-    private readonly IUserService _userService;
+    private readonly IBankAccountApplicationService _bankAccountService;
+    private readonly IUserApplicationService _userService;
     private readonly IMapper _mapper;
     public AccountControllerTests()
     {
         _signInManager = A.Fake<SignInManager<AppUser>>();
         _tokenService = A.Fake<ITokenService>();
-        _bankAccountService = A.Fake<IBankAccountService>();
-        _userService = A.Fake<IUserService>();
+        _bankAccountService = A.Fake<IBankAccountApplicationService>();
+        _userService = A.Fake<IUserApplicationService>();
         _mapper = A.Fake<IMapper>();
     }
 

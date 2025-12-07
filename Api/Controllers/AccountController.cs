@@ -1,15 +1,17 @@
-﻿namespace Api.Controllers;
+﻿using Application.Contracts.ApplicationServices;
+
+namespace Api.Controllers;
 
 public class AccountController : BaseApiController
 {
     private readonly SignInManager<AppUser> _signInManager;
     private readonly ITokenService _tokenService;
-    private readonly IBankAccountService _bankAccountService;
-    private readonly IUserService _userService;
+    private readonly IBankAccountApplicationService _bankAccountService;
+    private readonly IUserApplicationService _userService;
     private readonly IMapper _mapper;
 
     public AccountController(SignInManager<AppUser> signInManager,
-        ITokenService tokenService, IBankAccountService bankAccountService, IUserService userService, IMapper mapper)
+        ITokenService tokenService, IBankAccountApplicationService bankAccountService, IUserApplicationService userService, IMapper mapper)
     {
         _signInManager = signInManager;
         _tokenService = tokenService;

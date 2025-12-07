@@ -1,4 +1,4 @@
-﻿namespace Application.BankAccounts;
+﻿namespace Application.Contracts.Repositories;
 
 public interface IBankAccountRepository
 {

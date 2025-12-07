@@ -1,11 +1,13 @@
-﻿namespace Api.Controllers
+﻿using Application.Contracts.ApplicationServices;
+
+namespace Api.Controllers
 {
     [Authorize]
     public class TransactionController : BaseApiController
     {
-        private readonly ITransactionService _transactionService;
-        private readonly IUserService _userService;
-        public TransactionController(ITransactionService transactionService, IUserService userService)
+        private readonly ITransactionApplicationService _transactionService;
+        private readonly IUserApplicationService _userService;
+        public TransactionController(ITransactionApplicationService transactionService, IUserApplicationService userService)
         {
             _transactionService = transactionService;
             _userService = userService;
