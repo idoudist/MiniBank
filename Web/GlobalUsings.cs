@@ -6,14 +6,14 @@ global using Microsoft.EntityFrameworkCore;
 global using Microsoft.OpenApi.Models;
 global using Microsoft.IdentityModel.Tokens;
 global using System.Text;
-// application libraries
+// Application libraries
 global using Domain.Automapper;
 global using Domain.Entities.Identity;
 global using Data.Configurations;
 global using Data.SeedData;
 global using Application.Contracts.ApplicationServices;
 global using Application.Utils;
-global using Infrastructure.Services;
+global using Infrastructure.ApplicationServices;
 global using Infrastructure.Utils;
 global using Api.Middleware;
 global using Api.Helpers;

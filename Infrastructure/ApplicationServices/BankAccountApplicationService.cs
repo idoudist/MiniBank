@@ -1,6 +1,4 @@
-﻿using Application.Contracts.ApplicationServices;
-
-namespace Infrastructure.Services;
+﻿namespace Infrastructure.ApplicationServices;
 
 public class BankAccountApplicationService : IBankAccountApplicationService
 {

@@ -5,9 +5,8 @@ global using AutoMapper;
 global using Xunit;
 global using FakeItEasy;
 global using FluentAssertions;
-//tested library
-global using Infrastructure.Services;
-//project libraries
+//Project libraries
 global using Domain.Entities.Identity;
 global using Domain.Dtos.Requests;
 global using Application.Utils;
+global using Infrastructure.ApplicationServices;
