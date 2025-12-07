@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using Application.Common.Interfaces;
+using System.Text.Json;
 
 namespace Infrastructure.SeedData;
 

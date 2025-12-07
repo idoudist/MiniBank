@@ -1,5 +1,7 @@
-﻿using Application.Contracts.Repositories;
-using Application.Validation;
+﻿using Application.Common.Interfaces;
+using Application.Users.Dtos;
+using Application.Users.Interfaces;
+using Application.Users.Validation;
 using Domain.Entities;
 using Infrastructure.Unit.Tests.Helpers;
 

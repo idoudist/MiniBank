@@ -1,4 +1,6 @@
-﻿using Application.Contracts.ApplicationServices;
+﻿using Application.Transactions.Dtos;
+using Application.Transactions.Interfaces;
+using Application.Users.Interfaces;
 
 namespace Api.Controllers
 {

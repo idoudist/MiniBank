@@ -1,4 +1,8 @@
-﻿namespace Infrastructure.ApplicationServices;
+﻿using Application.Common.Interfaces;
+using Application.Transactions.Dtos;
+using Application.Transactions.Interfaces;
+
+namespace Infrastructure.ApplicationServices;
 
 public class TransactionApplicationService : ITransactionApplicationService
 {

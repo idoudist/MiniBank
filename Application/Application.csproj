@@ -14,4 +14,9 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Bank\Validations\" />
+    <Folder Include="Bank\Services\" />
+  </ItemGroup>
+
 </Project>

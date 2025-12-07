@@ -1,4 +1,7 @@
-﻿namespace Infrastructure.Repositories;
+﻿using Application.Transactions.Dtos;
+using Application.Transactions.Interfaces;
+
+namespace Infrastructure.Repositories;
 
 public class TransactionRepository : ITransactionRepository
 {

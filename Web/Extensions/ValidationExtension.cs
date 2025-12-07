@@ -1,4 +1,4 @@
-﻿using Application.Dtos.Requests;
+﻿using Application.Users.Dtos;
 using FluentValidation;
 
 namespace Web.Extensions;

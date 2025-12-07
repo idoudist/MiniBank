@@ -10,10 +10,11 @@ global using Domain.Entities;
 global using Domain.Entities.Identity;
 global using Domain.Enums;
 global using Domain.Helpers.Pagination;
-global using Application.Dtos.Requests;
-global using Application.Dtos.Responses;
-global using Application.Contracts.ApplicationServices;
-global using Application.Utils;
-global using Application.Contracts.Repositories;
+global using Application.Bank.Dtos;
+global using Application.Bank.Interfaces;
+global using Application.Common.Interfaces;
+global using Application.Transactions.Interfaces;
+global using Application.Users.Interfaces;
+//Inner Project
 global using Infrastructure.Configurations;
 global using Infrastructure.Repositories;

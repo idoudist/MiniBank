@@ -13,11 +13,12 @@ global using AutoMapper;
 //Projects
 global using Domain.Helpers.Pagination;
 global using Domain.Entities.Identity;
-global using Application.Dtos.Requests;
-global using Application.Dtos.Responses;
-global using Application.Dtos.Shared;
-global using Application.Contracts.ApplicationServices;
-global using Application.Utils;
+global using Application.Bank.Interfaces;
+global using Application.Common.Interfaces;
+global using Application.Users.Dtos;
+global using Application.Users.Interfaces;
+global using Application.Bank.Dtos;
+//Inner Project
 global using Api.Extensions;
 global using Api.Helpers;
 global using Api.Errors;

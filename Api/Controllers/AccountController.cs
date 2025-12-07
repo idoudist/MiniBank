@@ -1,6 +1,4 @@
-﻿using Application.Contracts.ApplicationServices;
-
-namespace Api.Controllers;
+﻿namespace Api.Controllers;
 
 public class AccountController : BaseApiController
 {

@@ -13,7 +13,8 @@ global using Api.Controllers;
 //project libraries
 global using Domain.Entities.Identity;
 global using Domain.Entities;
-global using Application.Dtos.Requests;
-global using Application.Dtos.Shared;
-global using Application.Contracts.ApplicationServices;
-global using Application.Utils;
+global using Application.Bank.Interfaces;
+global using Application.Common.Interfaces;
+global using Application.Users.Dtos;
+global using Application.Users.Interfaces;
+global using Application.Bank.Dtos;

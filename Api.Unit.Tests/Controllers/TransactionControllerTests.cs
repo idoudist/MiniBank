@@ -1,4 +1,5 @@
-﻿using Application.Contracts.ApplicationServices;
+﻿using Application.Transactions.Interfaces;
+using Application.Users.Interfaces;
 
 namespace Api.Unit.Tests.Controllers;
 

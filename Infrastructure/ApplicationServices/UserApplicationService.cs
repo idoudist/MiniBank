@@ -1,4 +1,7 @@
-﻿using FluentValidation;
+﻿using Application.Common.Interfaces;
+using Application.Users.Dtos;
+using Application.Users.Interfaces;
+using FluentValidation;
 
 namespace Infrastructure.ApplicationServices;
 
