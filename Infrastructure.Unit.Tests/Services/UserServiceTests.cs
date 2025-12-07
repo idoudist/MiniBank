@@ -51,22 +51,91 @@ public class UserServiceTests
 
     [Theory]
     [MemberData(nameof(AddClientTestCases))]
-    public async void AddClient_ReturnAppUser(RegisterDto model)
+    public async Task AddClientAsync_ShouldReturnUser_WhenCreationAndRoleAssignmentSucceed(RegisterDto model)
     {
-        #region Arrange
-        AppUser user = A.Fake<AppUser>();
-        A.CallTo(() => _mapper.Map<AppUser>(model)).Returns(user);
-        var successResult = IdentityResult.Success;
-        A.CallTo(() => _userManager.CreateAsync(user, model.Password)).Returns(successResult);
-        A.CallTo(() => _userManager.AddToRoleAsync(user, "Client")).Returns(successResult);
+        // Arrange
+        var mappedUser = new AppUser
+        {
+            UserName = model.Username,
+            Gender = model.Gender,
+            DateOfBirth = model.DateOfBirth,
+            City = model.City,
+            Country = model.Country
+        };
+
+        A.CallTo(() => _mapper.Map<AppUser>(model))
+            .Returns(mappedUser);
+
+        A.CallTo(() => _userManager.CreateAsync(mappedUser, model.Password))
+            .Returns(IdentityResult.Success);
+
+        A.CallTo(() => _userManager.AddToRoleAsync(mappedUser, "Client"))
+            .Returns(IdentityResult.Success);
+
         var service = new UserApplicationService(_unitOfWork, _userManager, _mapper);
-        #endregion
-        #region Act
+
+        // Act
         var result = await service.AddClientAsync(model);
-        #endregion
-        #region Assert
+
+        // Assert
         result.Should().NotBeNull();
-        result.Should().BeAssignableTo<AppUser>();
-        #endregion
+        result.Should().Be(mappedUser);
+
+        mappedUser.UserName.Should().Be(model.Username.ToLowerInvariant());
+
+        A.CallTo(() => _userManager.CreateAsync(mappedUser, model.Password))
+            .MustHaveHappenedOnceExactly();
+
+        A.CallTo(() => _userManager.AddToRoleAsync(mappedUser, "Client"))
+            .MustHaveHappenedOnceExactly();
     }
+
+    [Fact]
+    public async Task AddClientAsync_ShouldReturnNull_WhenUserCreationFails()
+    {
+        // Arrange
+        var model = new RegisterDto { Username = "John", Password = "123456" };
+
+        var mappedUser = new AppUser();
+        A.CallTo(() => _mapper.Map<AppUser>(model)).Returns(mappedUser);
+
+        A.CallTo(() => _userManager.CreateAsync(mappedUser, model.Password))
+            .Returns(IdentityResult.Failed(new IdentityError { Description = "Invalid" }));
+
+        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper);
+
+        // Act
+        var result = await service.AddClientAsync(model);
+
+        // Assert
+        result.Should().BeNull();
+
+        A.CallTo(() => _userManager.AddToRoleAsync(A<AppUser>._, A<string>._))
+            .MustNotHaveHappened();
+    }
+
+    [Fact]
+    public async Task AddClientAsync_ShouldReturnNull_WhenAddToRoleFails()
+    {
+        // Arrange
+        var model = new RegisterDto { Username = "John", Password = "123456" };
+
+        var mappedUser = new AppUser();
+        A.CallTo(() => _mapper.Map<AppUser>(model)).Returns(mappedUser);
+
+        A.CallTo(() => _userManager.CreateAsync(mappedUser, model.Password))
+            .Returns(IdentityResult.Success);
+
+        A.CallTo(() => _userManager.AddToRoleAsync(mappedUser, "Client"))
+            .Returns(IdentityResult.Failed(new IdentityError { Description = "Role error" }));
+
+        var service = new UserApplicationService(_unitOfWork, _userManager, _mapper);
+
+        // Act
+        var result = await service.AddClientAsync(model);
+
+        // Assert
+        result.Should().BeNull();
+    }
+
 }
