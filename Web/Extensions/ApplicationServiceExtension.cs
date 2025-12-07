@@ -11,7 +11,7 @@ public static class ApplicationServiceExtension
         /* configure db context*/
         services.RegisterDbConnection(config);
         /* configure automapper */
-        services.AddAutoMapper(typeof(AutoMapperMappings).Assembly);
+        services.AddSingleton(AutoMapperSetup.CreateMapper());
         /* add service Filter */
         services.AddScoped<LogUserActivity>();
         /* add services */
