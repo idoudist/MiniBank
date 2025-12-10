@@ -1,11 +1,12 @@
-﻿// Microsoft libraries
+﻿// .Net
+global using System.Text;
+// Microsoft libraries
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.AspNetCore.Authentication.JwtBearer;
 global using Microsoft.AspNetCore.Identity;
 global using Microsoft.EntityFrameworkCore;
-global using Microsoft.OpenApi.Models;
 global using Microsoft.IdentityModel.Tokens;
-global using System.Text;
+global using Microsoft.OpenApi;
 // Projects
 global using Domain.Entities.Identity;
 global using Application.Bank.Interfaces;
