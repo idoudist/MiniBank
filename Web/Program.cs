@@ -1,6 +1,4 @@
 /*create builder*/
-
-using Application.Common.Interfaces;
 using Infrastructure.Persistence.Context;
 using Infrastructure.Persistence.SeedData;
 
@@ -8,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 /* Add services to the container. */
 
+builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddApplicationServices(builder.Configuration);
 builder.Services.AddIdentityServices(builder.Configuration);
 builder.Services.AddFluentValidations(builder.Configuration);
